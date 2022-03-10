@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Thu, 10 Mar 2022 13:30:25",
+	"@generated": "Thu, 10 Mar 2022 17:43:48",
 	"site":[ 
 		{
 			"@name": "https://faq.zenika.com",
@@ -248,21 +248,28 @@
 							"evidence": "sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs"
 						},
 						{
+							"uri": "https://faq.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2FmLMiWYIsoe4P7o73pKsI34sWk44cyh3UcIZtkezCm0BGWsEv"
+						},
+						{
 							"uri": "https://faq.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "8L6GT3zETR639dx0ZW8Qbkk9Vjyicng7fy27j2UufUqas3gLgz8OTXzy8IBJCLfdSck6xNnUb07MSopjS6cbfMvxPM7IZzmr2FVr"
+							"evidence": "2F0WGPL6xD1Fu4Km9GZ2OKCIGmY5oZq"
 						},
 						{
 							"uri": "https://faq.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FQFThQMEIEkwelmnvweRPAcqmxcDEyvT4Xp71MS"
+							"evidence": "2BTUqgVKQ8KdV13o07afdazm6Kf7PR4DemzGqrSkmMUPWOo7W19NKWnchM3YopxTlMsrY9OLpOUQ1YXbMGx39zWglymDy4aaTmKqS9s3JODlD1"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD\\x0016\uFFFD\uDAFE\uDCA1J\u01CA\\x000e\uFFFD!:\uFFFDhBz\uFFFD\uFFFD\uFFFDN\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\uFFFD\uFFFD\uFFFDN\u5017 \u06BE\uFFFDD\u0458H\uFFFD\\x000b\uFFFD)\uFFFD;6-\uFFFD;</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -334,7 +341,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",

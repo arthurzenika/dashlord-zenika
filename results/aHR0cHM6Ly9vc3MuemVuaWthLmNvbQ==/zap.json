@@ -1,0 +1,1078 @@
+{
+	"@version": "2.11.1",
+	"@generated": "Thu, 10 Mar 2022 13:05:00",
+	"site":[ 
+		{
+			"@name": "https://oss.zenika.com",
+			"@host": "oss.zenika.com",
+			"@port": "443",
+			"@ssl": "true",
+			"alerts": [ 
+				{
+					"pluginid": "10038",
+					"alertRef": "10038",
+					"alert": "Content Security Policy (CSP) Header Not Set",
+					"name": "Content Security Policy (CSP) Header Not Set",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/hacktoberfest/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/terms/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/getting-started%5C",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/getting-started/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/licenses/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/licenses/www.fsf.org",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/promotion/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "11",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: \"Content-Security-Policy\" for Chrome 25+, Firefox 23+ and Safari 7+, \"X-Content-Security-Policy\" for Firefox 4.0+ and Internet Explorer 10+, and \"X-WebKit-CSP\" for Chrome 14+ and Safari 6+.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10020",
+					"alertRef": "10020-1",
+					"alert": "Missing Anti-clickjacking Header",
+					"name": "Missing Anti-clickjacking Header",
+					"riskcode": "2",
+					"confidence": "2",
+					"riskdesc": "Medium (Medium)",
+					"desc": "<p>The response does not include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options to protect against 'ClickJacking' attacks.</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/hacktoberfest/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/terms/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/getting-started/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/licenses/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/promotion/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "8",
+					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
+					"cweid": "1021",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "90003",
+					"alertRef": "90003",
+					"alert": "Sub Resource Integrity Attribute Missing",
+					"name": "Sub Resource Integrity Attribute Missing",
+					"riskcode": "2",
+					"confidence": "3",
+					"riskdesc": "Medium (High)",
+					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link data-react-helmet=\"true\" href=\"https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap\" rel=\"stylesheet\"/>"
+						},
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link data-react-helmet=\"true\" rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css\"/>"
+						},
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"dns-prefetch\" href=\"https://www.google-analytics.com\"/>"
+						},
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"preconnect\" href=\"https://www.google-analytics.com\"/>"
+						},
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" async=\"\" defer=\"\" src=\"https://buttons.github.io/buttons.js\"></script>"
+						},
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" src=\"https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js\"></script>"
+						}
+					],
+					"count": "6",
+					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
+					"cweid": "345",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10044",
+					"alertRef": "10044",
+					"alert": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"name": "Big Redirect Detected (Potential Sensitive Information Leak)",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com/terms",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/getting-started",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/licenses",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/promotion",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "5",
+					"solution": "<p>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</p>",
+					"otherinfo": "<p>Location header URI length: 7 [/terms/].</p><p>Predicted response size: 307.</p><p>Response Body Length: 28,592.</p>",
+					"reference": "",
+					"cweid": "201",
+					"wascid": "13",
+					"sourceid": "54"
+				},
+				{
+					"pluginid": "10017",
+					"alertRef": "10017",
+					"alert": "Cross-Domain JavaScript Source File Inclusion",
+					"name": "Cross-Domain JavaScript Source File Inclusion",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "https://buttons.github.io/buttons.js",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" async=\"\" defer=\"\" src=\"https://buttons.github.io/buttons.js\"></script>"
+						},
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" src=\"https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js\"></script>"
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "https://buttons.github.io/buttons.js",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" async=\"\" defer=\"\" src=\"https://buttons.github.io/buttons.js\"></script>"
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" src=\"https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js\"></script>"
+						},
+						{
+							"uri": "https://oss.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" src=\"https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js\"></script>"
+						},
+						{
+							"uri": "https://oss.zenika.com/terms",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" src=\"https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js\"></script>"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/getting-started",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" src=\"https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js\"></script>"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/licenses",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" src=\"https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js\"></script>"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" src=\"https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js\"></script>"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/promotion",
+							"method": "GET",
+							"param": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+							"attack": "",
+							"evidence": "<script data-react-helmet=\"true\" src=\"https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js\"></script>"
+						}
+					],
+					"count": "10",
+					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "829",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10063",
+					"alertRef": "10063",
+					"alert": "Permissions Policy Header Not Set",
+					"name": "Permissions Policy Header Not Set",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/0c4c63ba36255ef63c5755f46b16690584b05066-116023251d8223cf5460.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/app-42838097a60b694938f8.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/component---src-pages-index-jsx-a161a06d9b4771c7c7b6.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/cookie.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/framework-1ec709e235f166b31ef1.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/polyfill-e2881509948c23874ca7.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/webpack-runtime-9c66aa878bebcee3c801.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/getting-started/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "11",
+					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
+					"otherinfo": "",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10096",
+					"alertRef": "10096",
+					"alert": "Timestamp Disclosure - Unix",
+					"name": "Timestamp Disclosure - Unix",
+					"riskcode": "1",
+					"confidence": "1",
+					"riskdesc": "Low (Low)",
+					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "138180707"
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "138180707"
+						},
+						{
+							"uri": "https://oss.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "138180707"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/getting-started",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "138180707"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "138180707"
+						}
+					],
+					"count": "5",
+					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
+					"otherinfo": "<p>138180707, which evaluates to: 1974-05-19 07:31:47</p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10021",
+					"alertRef": "10021",
+					"alert": "X-Content-Type-Options Header Missing",
+					"name": "X-Content-Type-Options Header Missing",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/icons/icon-144x144.png?v=d834fecdaadf793d83245a6f56be0c0f",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/icons/icon-192x192.png?v=d834fecdaadf793d83245a6f56be0c0f",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/icons/icon-384x384.png?v=d834fecdaadf793d83245a6f56be0c0f",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/icons/icon-48x48.png?v=d834fecdaadf793d83245a6f56be0c0f",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/icons/icon-72x72.png?v=d834fecdaadf793d83245a6f56be0c0f",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/icons/icon-96x96.png?v=d834fecdaadf793d83245a6f56be0c0f",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/manifest.webmanifest",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/robots.txt",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						}
+					],
+					"count": "11",
+					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
+					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
+					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
+					"cweid": "693",
+					"wascid": "15",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10094",
+					"alertRef": "10094",
+					"alert": "Base64 Disclosure",
+					"name": "Base64 Disclosure",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MiIgaGVpZ2h0PSI4OS43MjMiIHZpZXdCb3g9IjAgMCA5MiA4OS43MjMiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiMwMDA7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDgsMkE0Niw0NiwwLDAsMCwzMy40NTksOTEuNjQ5YzIuMy40MTQsMy4xMzctMSwzLjEzNy0yLjIyNiwwLTEuMDg2LS4wNDEtMy45ODQtLjA2NC03LjgxNS0xMi44LDIuNzY5LTE1LjUtNi4xNjQtMTUuNS02LjE2NC0yLjA5My01LjMyMi01LjEwNi02LjczOS01LjEwNi02LjczOS00LjE4MS0yLjg1Mi4zMTctMi44LjMxNy0yLjgsNC42MTguMzI3LDcuMDQ3LDQuNzM4LDcuMDQ3LDQuNzM4LDQuMSw3LjAzMywxMC43NjksNS4wMDksMTMuMzg2LDMuODMyYTkuODMsOS44MywwLDAsMSwyLjkyMS02LjE1QzI5LjM4OCw2Ny4xNzMsMTguNjQ3LDYzLjIxNywxOC42NDcsNDUuNTlhMTcuNzU3LDE3Ljc1NywwLDAsMSw0LjczOC0xMi4zMzdjLS40NzQtMS4xNjgtMi4wNTYtNS44NDIuNDQ2LTEyLjE3MiwwLDAsMy44NjQtMS4yMzcsMTIuNjUsNC43MTVhNDMuNjMsNDMuNjMsMCwwLDEsMjMuMDM3LDBjOC43ODEtNS45NTIsMTIuNjQxLTQuNzE1LDEyLjY0MS00LjcxNSwyLjUxMiw2LjMzLjkyOSwxMS4wMTIuNDYsMTIuMTcyYTE3Ljc1MiwxNy43NTIsMCwwLDEsNC43MiwxMi4zMzdjMCwxNy42NjktMTAuNzUsMjEuNTYtMjEsMjIuNywxLjY1MSwxLjQxMiwzLjEyMyw0LjIxOCwzLjEyMyw4LjUxOSwwLDYuMTQxLS4wNTUsMTEuMTA5LS4wNTUsMTIuNjA5LDAsMS4yMzcuODI4LDIuNjYzLDMuMTY1LDIuMjEzQTQ2LDQ2LDAsMCwwLDQ4LDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMiAtMikiLz48L3N2Zz4K"
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MiIgaGVpZ2h0PSI4OS43MjMiIHZpZXdCb3g9IjAgMCA5MiA4OS43MjMiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiMwMDA7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDgsMkE0Niw0NiwwLDAsMCwzMy40NTksOTEuNjQ5YzIuMy40MTQsMy4xMzctMSwzLjEzNy0yLjIyNiwwLTEuMDg2LS4wNDEtMy45ODQtLjA2NC03LjgxNS0xMi44LDIuNzY5LTE1LjUtNi4xNjQtMTUuNS02LjE2NC0yLjA5My01LjMyMi01LjEwNi02LjczOS01LjEwNi02LjczOS00LjE4MS0yLjg1Mi4zMTctMi44LjMxNy0yLjgsNC42MTguMzI3LDcuMDQ3LDQuNzM4LDcuMDQ3LDQuNzM4LDQuMSw3LjAzMywxMC43NjksNS4wMDksMTMuMzg2LDMuODMyYTkuODMsOS44MywwLDAsMSwyLjkyMS02LjE1QzI5LjM4OCw2Ny4xNzMsMTguNjQ3LDYzLjIxNywxOC42NDcsNDUuNTlhMTcuNzU3LDE3Ljc1NywwLDAsMSw0LjczOC0xMi4zMzdjLS40NzQtMS4xNjgtMi4wNTYtNS44NDIuNDQ2LTEyLjE3MiwwLDAsMy44NjQtMS4yMzcsMTIuNjUsNC43MTVhNDMuNjMsNDMuNjMsMCwwLDEsMjMuMDM3LDBjOC43ODEtNS45NTIsMTIuNjQxLTQuNzE1LDEyLjY0MS00LjcxNSwyLjUxMiw2LjMzLjkyOSwxMS4wMTIuNDYsMTIuMTcyYTE3Ljc1MiwxNy43NTIsMCwwLDEsNC43MiwxMi4zMzdjMCwxNy42NjktMTAuNzUsMjEuNTYtMjEsMjIuNywxLjY1MSwxLjQxMiwzLjEyMyw0LjIxOCwzLjEyMyw4LjUxOSwwLDYuMTQxLS4wNTUsMTEuMTA5LS4wNTUsMTIuNjA5LDAsMS4yMzcuODI4LDIuNjYzLDMuMTY1LDIuMjEzQTQ2LDQ2LDAsMCwwLDQ4LDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMiAtMikiLz48L3N2Zz4K"
+						},
+						{
+							"uri": "https://oss.zenika.com/component---src-pages-index-jsx-a161a06d9b4771c7c7b6.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTYiIGhlaWdodD0iMTU2IiB2aWV3Qm94PSIwIDAgMTU2IDE1NiI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6IzNkMzMzMzt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik00MDMuNSwzOUExOS41LDE5LjUsMCwxLDEsNDIzLDE5LjUsMTkuNTIyLDE5LjUyMiwwLDAsMSw0MDMuNSwzOVptMC0zNC4xMjVBMTQuNjI1LDE0LjYyNSwwLDEsMCw0MTguMTI1LDE5LjUsMTQuNjM5LDE0LjYzOSwwLDAsMCw0MDMuNSw0Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjY3KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDMxLjMxMyw1NC42MjVhNy4zMTMsNy4zMTMsMCwxLDEsNy4zMTMtNy4zMTJBNy4zMjIsNy4zMjIsMCwwLDEsNDMxLjMxMyw1NC42MjVabTAtOS43NWEyLjQzOCwyLjQzOCwwLDEsMCwyLjQzOCwyLjQzOEEyLjQzOSwyLjQzOSwwLDAsMCw0MzEuMzEzLDQ0Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjk0LjgxMyAtMjcuODEzKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDI5Ljk0Nyw4Ni4wMTZhMi40MzUsMi40MzUsMCwwLDEtMi40My0yLjI4Niw3LjMxMyw3LjMxMywwLDAsMC0xNC42LDAsMi40MzksMi40MzksMCwwLDEtNC44NjgtLjMsMTIuMTg4LDEyLjE4OCwwLDAsMSwyNC4zMjksMCwyLjQzOSwyLjQzOSwwLDAsMS0yLjI4NCwyLjU4NGMtLjA0OCwwLS4xLDAtLjE1LDBabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4My43MjEgLTUwLjA2MykiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQwMy41LDQyM0ExOS41LDE5LjUsMCwxLDEsNDIzLDQwMy41LDE5LjUyMiwxOS41MjIsMCwwLDEsNDAzLjUsNDIzWm0wLTM0LjEyNUExNC42MjUsMTQuNjI1LDAsMSwwLDQxOC4xMjUsNDAzLjUsMTQuNjM5LDE0LjYzOSwwLDAsMCw0MDMuNSwzODguODc1Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNjcgLTI2NykiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQzMS4zMTMsNDM4LjYyNWE3LjMxMyw3LjMxMywwLDEsMSw3LjMxMy03LjMxMkE3LjMyMiw3LjMyMiwwLDAsMSw0MzEuMzEzLDQzOC42MjVabTAtOS43NWEyLjQzOCwyLjQzOCwwLDEsMCwyLjQzOCwyLjQzOEEyLjQzOSwyLjQzOSwwLDAsMCw0MzEuMzEzLDQyOC44NzVabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI5NC44MTMgLTI5NC44MTMpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik00MjkuOTQ3LDQ3MC4wMTZhMi40MzUsMi40MzUsMCwwLDEtMi40My0yLjI4Niw3LjMxMyw3LjMxMywwLDAsMC0xNC42LDAsMi40NjQsMi40NjQsMCwwLDEtMi41ODQsMi4yODQsMi40MzksMi40MzksMCwwLDEtMi4yODQtMi41ODQsMTIuMTg4LDEyLjE4OCwwLDAsMSwyNC4zMjksMCwyLjQzOSwyLjQzOSwwLDAsMS0yLjI4NCwyLjU4NGMtLjA0OCwwLS4xLDAtLjE1LDBabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4My43MjEgLTMxNy4wNjMpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xOS41LDQyM0ExOS41LDE5LjUsMCwxLDEsMzksNDAzLjUsMTkuNTIyLDE5LjUyMiwwLDAsMSwxOS41LDQyM1ptMC0zNC4xMjVBMTQuNjI1LDE0LjYyNSwwLDEsMCwzNC4xMjUsNDAzLjUsMTQuNjM5LDE0LjYzOSwwLDAsMCwxOS41LDM4OC44NzVabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMjY3KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDcuMzEzLDQzOC42MjVhNy4zMTMsNy4zMTMsMCwxLDEsNy4zMTMtNy4zMTJBNy4zMjIsNy4zMjIsMCwwLDEsNDcuMzEzLDQzOC42MjVabTAtOS43NWEyLjQzOCwyLjQzOCwwLDEsMCwyLjQzOCwyLjQzOEEyLjQzOSwyLjQzOSwwLDAsMCw0Ny4zMTMsNDI4Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjcuODEzIC0yOTQuODEzKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDUuOTQ3LDQ3MC4wMTZhMi40MzUsMi40MzUsMCwwLDEtMi40My0yLjI4Niw3LjMxMyw3LjMxMywwLDAsMC0xNC42LDAsMi40NzIsMi40NzIsMCwwLDEtMi41ODQsMi4yODQsMi40MzksMi40MzksMCwwLDEtMi4yODQtMi41ODQsMTIuMTg4LDEyLjE4OCwwLDAsMSwyNC4zMjksMCwyLjQzOSwyLjQzOSwwLDAsMS0yLjI4NCwyLjU4NGMtLjA0OCwwLS4xLDAtLjE1LDBabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2LjcyIC0zMTcuMDYzKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTkuNSwzOUExOS41LDE5LjUsMCwxLDEsMzksMTkuNSwxOS41MjIsMTkuNTIyLDAsMCwxLDE5LjUsMzlabTAtMzQuMTI1QTE0LjYyNSwxNC42MjUsMCwxLDAsMzQuMTI1LDE5LjUsMTQuNjM5LDE0LjYzOSwwLDAsMCwxOS41LDQuODc1Wm0wLDAiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQ3LjMxMyw1NC42MjVhNy4zMTMsNy4zMTMsMCwxLDEsNy4zMTMtNy4zMTJBNy4zMjIsNy4zMjIsMCwwLDEsNDcuMzEzLDU0LjYyNVptMC05Ljc1YTIuNDM4LDIuNDM4LDAsMSwwLDIuNDM4LDIuNDM4QTIuNDM5LDIuNDM5LDAsMCwwLDQ3LjMxMyw0NC44NzVabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI3LjgxMyAtMjcuODEzKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDUuOTQ3LDg2LjAxNmEyLjQzNSwyLjQzNSwwLDAsMS0yLjQzLTIuMjg2LDcuMzEzLDcuMzEzLDAsMCwwLTE0LjYsMCwyLjQzOSwyLjQzOSwwLDAsMS00Ljg2OC0uMywxMi4xODgsMTIuMTg4LDAsMCwxLDI0LjMyOSwwQTIuNDM5LDIuNDM5LDAsMCwxLDQ2LjEsODYuMDExYy0uMDQ4LDAtLjEsMC0uMTUsMFptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTYuNzIgLTUwLjA2MykiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTI1MC40MzgsMzg3LjVBMi40MzUsMi40MzUsMCwwLDEsMjQ4LDM4NS4wNjNWMzcwLjQzOGEyLjQzOCwyLjQzOCwwLDAsMSw0Ljg3NSwwdjE0LjYyNUEyLjQzNSwyLjQzNSwwLDAsMSwyNTAuNDM4LDM4Ny41Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzIuNDM4IC0yNTUuODc1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTUwLjMxMywxNzIuNjI1YTQ2LjMxMyw0Ni4zMTMsMCwxLDEsNDYuMzEzLTQ2LjMxMkE0Ni4zNjQsNDYuMzY0LDAsMCwxLDE1MC4zMTMsMTcyLjYyNVptMC04Ny43NWE0MS40MzgsNDEuNDM4LDAsMSwwLDQxLjQzOCw0MS40MzhBNDEuNDg0LDQxLjQ4NCwwLDAsMCwxNTAuMzEzLDg0Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzIuMzEzIC01NS42MjUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xNTAuMzEzLDMyMC43NUE0Ni4zNjQsNDYuMzY0LDAsMCwxLDEwNCwyNzQuNDM4YTIuNDM4LDIuNDM4LDAsMCwxLDQuODc1LDAsNDEuNDM4LDQxLjQzOCwwLDAsMCw4Mi44NzUsMCwyLjQzOCwyLjQzOCwwLDAsMSw0Ljg3NSwwQTQ2LjM2NCw0Ni4zNjQsMCwwLDEsMTUwLjMxMywzMjAuNzVabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcyLjMxMyAtMTg5LjEyNSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTM5NC40MzgsMjQ1LjkzOEEyLjQzNSwyLjQzNSwwLDAsMSwzOTIsMjQzLjVWMjI2LjQzOGEyLjQzOCwyLjQzOCwwLDAsMSw0Ljg3NSwwVjI0My41QTIuNDM1LDIuNDM1LDAsMCwxLDM5NC40MzgsMjQ1LjkzOFptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjcyLjU2MyAtMTU1Ljc1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTA2LjQzOCwyNDUuOTM4QTIuNDM1LDIuNDM1LDAsMCwxLDEwNCwyNDMuNVYyMjYuNDM4YTIuNDM4LDIuNDM4LDAsMCwxLDQuODc1LDBWMjQzLjVBMi40MzUsMi40MzUsMCwwLDEsMTA2LjQzOCwyNDUuOTM4Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03Mi4zMTMgLTE1NS43NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTMzMC40MzgsMzYzLjQyNUEyLjQzNSwyLjQzNSwwLDAsMSwzMjgsMzYwLjk4OHYtMTQuNTVhMi40MzgsMi40MzgsMCwwLDEsNC44NzUsMHYxNC41NUEyLjQzNywyLjQzNywwLDAsMSwzMzAuNDM4LDM2My40MjVabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyOC4wNjMgLTIzOS4xODgpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xNzAuNDM4LDM2My4yNDJBMi40MzUsMi40MzUsMCwwLDEsMTY4LDM2MC44VjM0Ni4xOGEyLjQzNywyLjQzNywwLDEsMSw0Ljg3NSwwVjM2MC44QTIuNDM1LDIuNDM1LDAsMCwxLDE3MC40MzgsMzYzLjI0MlptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTE2LjgxMyAtMjM5LjAwOCkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTEwOS45OTMsMTEyLjQzYTIuNDMzLDIuNDMzLDAsMCwxLTEuNzIzLS43MTRMOTYuMzE0LDk5Ljc2MWEyLjQzNywyLjQzNywwLDAsMSwzLjQ0Ny0zLjQ0N2wxMS45NTUsMTEuOTU1YTIuNDM4LDIuNDM4LDAsMCwxLTEuNzIzLDQuMTYxWm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02Ni40NzEgLTY2LjQ3MSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTM2My42LDExMi40M2EyLjQzOCwyLjQzOCwwLDAsMS0xLjcyMy00LjE2MWwxMS45NTUtMTEuOTU1YTIuNDM3LDIuNDM3LDAsMCwxLDMuNDQ3LDMuNDQ3bC0xMS45NTUsMTEuOTU1QTIuNDMzLDIuNDMzLDAsMCwxLDM2My42LDExMi40M1ptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjUxLjExNyAtNjYuNDcxKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNOTguMDM3LDM3Ny45ODhhMi40MzgsMi40MzgsMCwwLDEtMS43MjMtNC4xNjFsMTEuOTU1LTExLjk1NWEyLjQzNywyLjQzNywwLDAsMSwzLjQ0NywzLjQ0N0w5OS43NjEsMzc3LjI3NGEyLjQzLDIuNDMsMCwwLDEtMS43MjMuNzE0Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02Ni40NzEgLTI1MS4xMTcpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0zNzUuNTUxLDM3Ny45ODhhMi40MywyLjQzLDAsMCwxLTEuNzIzLS43MTRsLTExLjk1NS0xMS45NTVhMi40MzcsMi40MzcsMCwwLDEsMy40NDctMy40NDdsMTEuOTU1LDExLjk1NWEyLjQzOCwyLjQzOCwwLDAsMS0xLjcyMyw0LjE2MVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjUxLjExNyAtMjUxLjExNykiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIzNy45MzgsMjg0Ljg3NWgtMTkuNWEyLjQzOCwyLjQzOCwwLDAsMSwwLTQuODc1aDE5LjVhMi40MzgsMi40MzgsMCwwLDEsMCw0Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTUwLjE4OCAtMTk0LjY4OCkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTI1MC40MzgsMjQwLjM3NUEyLjQzNSwyLjQzNSwwLDAsMSwyNDgsMjM3LjkzOHYtMTkuNWEyLjQzOCwyLjQzOCwwLDAsMSw0Ljg3NSwwdjE5LjVBMi40MzUsMi40MzUsMCwwLDEsMjUwLjQzOCwyNDAuMzc1Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzIuNDM4IC0xNTAuMTg4KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjQ0LjE4OCwyMjAuODc1aC05Ljc1YTIuNDM4LDIuNDM4LDAsMCwxLDAtNC44NzVoOS43NWEyLjQzOCwyLjQzOCwwLDAsMSwwLDQuODc1Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuMzEzIC0xNTAuMTg4KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjE4LjQzOCwyODAuNjg1QTIuNDM1LDIuNDM1LDAsMCwxLDIxNiwyNzguMjQ3VjI2NS44OTVhMi40MzgsMi40MzgsMCwwLDEsNC44NzUsMHYxMi4zNTNBMi40MzUsMi40MzUsMCwwLDEsMjE4LjQzOCwyODAuNjg1Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNTAuMTg4IC0xODMuMTg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjIwLjg3MywzMTEuMzFhMi40MzMsMi40MzMsMCwwLDEtMS43MjMtLjcxNGwtMi40MzctMi40MzdhMi40MzcsMi40MzcsMCwwLDEsMy40NDctMy40NDdsMi40MzgsMi40MzhhMi40MzgsMi40MzgsMCwwLDEtMS43MjMsNC4xNjFabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1MC4xODUgLTIxMS4zNzMpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yODIuNDM4LDI4MC42NjlBMi40MzUsMi40MzUsMCwwLDEsMjgwLDI3OC4yMzF2LTEyLjM2YTIuNDM4LDIuNDM4LDAsMCwxLDQuODc1LDB2MTIuMzZBMi40MzUsMi40MzUsMCwwLDEsMjgyLjQzOCwyODAuNjY5Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOTQuNjg4IC0xODMuMTY5KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjc0LjQzNSwzMTEuMzFhMi40MzgsMi40MzgsMCwwLDEtMS43MjMtNC4xNjFsMi40MzgtMi40MzdhMi40MzcsMi40MzcsMCwwLDEsMy40NDcsMy40NDdsLTIuNDM3LDIuNDM4QTIuNDMzLDIuNDMzLDAsMCwxLDI3NC40MzUsMzExLjMxWm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODkuMTIzIC0yMTEuMzczKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjQxLjA2MywzMTYuODc1SDIyNi40MzhhMi40MzgsMi40MzgsMCwwLDEsMC00Ljg3NWgxNC42MjVhMi40MzgsMi40MzgsMCwwLDEsMCw0Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTU1Ljc1IC0yMTYuOTM4KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTk2LjE5LDE4NS4yNzJhMi40MDcsMi40MDcsMCwwLDEtMS4yMTktLjMzLDIxLjk0LDIxLjk0LDAsMSwxLDIxLjk0LS4wMDcsMi40MzcsMi40MzcsMCwwLDEtMi40NDItNC4yMTcsMTcuMDYyLDE3LjA2MiwwLDEsMC0xNy4wNTUsMCwyLjQzOSwyLjQzOSwwLDAsMS0xLjIyNCw0LjU0OVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTI3LjkzOCAtMTAwLjEyNSkiLz48L3N2Zz4="
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/promotion",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/FranckAbgrall/status/1139470547492978688"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/promotion/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/FranckAbgrall/status/1139470547492978688"
+						}
+					],
+					"count": "5",
+					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
+					"otherinfo": "<p><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"92\" height=\"89.723\" viewBox=\"0 0 92 89.723\"><defs><style>.a{fill:#000;}</style></defs><path class=\"a\" d=\"M48,2A46,46,0,0,0,33.459,91.649c2.3.414,3.137-1,3.137-2.226,0-1.086-.041-3.984-.064-7.815-12.8,2.769-15.5-6.164-15.5-6.164-2.093-5.322-5.106-6.739-5.106-6.739-4.181-2.852.317-2.8.317-2.8,4.618.327,7.047,4.738,7.047,4.738,4.1,7.033,10.769,5.009,13.386,3.832a9.83,9.83,0,0,1,2.921-6.15C29.388,67.173,18.647,63.217,18.647,45.59a17.757,17.757,0,0,1,4.738-12.337c-.474-1.168-2.056-5.842.446-12.172,0,0,3.864-1.237,12.65,4.715a43.63,43.63,0,0,1,23.037,0c8.781-5.952,12.641-4.715,12.641-4.715,2.512,6.33.929,11.012.46,12.172a17.752,17.752,0,0,1,4.72,12.337c0,17.669-10.75,21.56-21,22.7,1.651,1.412,3.123,4.218,3.123,8.519,0,6.141-.055,11.109-.055,12.609,0,1.237.828,2.663,3.165,2.213A46,46,0,0,0,48,2Z\" transform=\"translate(-2 -2)\"/></svg></p><p></p>",
+					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10027",
+					"alertRef": "10027",
+					"alert": "Information Disclosure - Suspicious Comments",
+					"name": "Information Disclosure - Suspicious Comments",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com/0c4c63ba36255ef63c5755f46b16690584b05066-116023251d8223cf5460.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://oss.zenika.com/app-42838097a60b694938f8.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "bug"
+						},
+						{
+							"uri": "https://oss.zenika.com/component---src-pages-hacktoberfest-jsx-d6f7295c8b70c68e10b0.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user"
+						},
+						{
+							"uri": "https://oss.zenika.com/component---src-pages-index-jsx-a161a06d9b4771c7c7b6.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "from"
+						},
+						{
+							"uri": "https://oss.zenika.com/framework-1ec709e235f166b31ef1.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "select"
+						},
+						{
+							"uri": "https://oss.zenika.com/polyfill-e2881509948c23874ca7.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "username"
+						}
+					],
+					"count": "6",
+					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"(self.webpackChunkinsights_website=self.webpackChunkinsights_website||[]).push([[404],{5900:function(e,t){var r;!function(){\"use\", see evidence field for the suspicious comment/snippet.</p>",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "72"
+				},
+				{
+					"pluginid": "10109",
+					"alertRef": "10109",
+					"alert": "Modern Web Application",
+					"name": "Modern Web Application",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com/framework-1ec709e235f166b31ef1.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script>"
+						},
+						{
+							"uri": "https://oss.zenika.com/polyfill-e2881509948c23874ca7.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script>"
+						}
+					],
+					"count": "2",
+					"solution": "<p>This is an informational alert and so no changes are required.</p>",
+					"otherinfo": "<p>No links have been found while there are scripts, which is an indication that this is a modern web application.</p>",
+					"reference": "",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "70"
+				},
+				{
+					"pluginid": "10015",
+					"alertRef": "10015",
+					"alert": "Re-examine Cache-control Directives",
+					"name": "Re-examine Cache-control Directives",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://oss.zenika.com/page-data/404.html/page-data.json",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://oss.zenika.com/page-data/app-data.json",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://oss.zenika.com/page-data/index/page-data.json",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://oss.zenika.com/page-data/sq/d/3537562275.json",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://oss.zenika.com/page-data/sq/d/3649515864.json",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://oss.zenika.com/robots.txt",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://oss.zenika.com/sitemap/sitemap-index.xml",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/getting-started/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "public, max-age=0, must-revalidate"
+						}
+					],
+					"count": "11",
+					"solution": "<p>Whenever possible ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
+					"otherinfo": "",
+					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
+					"cweid": "525",
+					"wascid": "13",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10050",
+					"alertRef": "10050",
+					"alert": "Retrieved from Cache",
+					"name": "Retrieved from Cache",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 1"
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 1"
+						},
+						{
+							"uri": "https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://oss.zenika.com/manifest.webmanifest",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://oss.zenika.com/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://oss.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://oss.zenika.com/terms",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/getting-started",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/licenses",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/promotion",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0"
+						}
+					],
+					"count": "12",
+					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
+					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "-1",
+					"wascid": "-1",
+					"sourceid": "1"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049",
+					"alert": "Storable but Non-Cacheable Content",
+					"name": "Storable but Non-Cacheable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>",
+					"instances":[ 
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://oss.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://oss.zenika.com/manifest.webmanifest",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://oss.zenika.com/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://oss.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://oss.zenika.com/terms",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/getting-started",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/licenses",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://oss.zenika.com/white-paper/promotion",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						}
+					],
+					"count": "11",
+					"solution": "",
+					"otherinfo": "",
+					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "1"
+				}
+			]
+		}
+	]
+}

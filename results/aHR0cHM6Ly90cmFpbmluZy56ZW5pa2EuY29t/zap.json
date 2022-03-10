@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Thu, 10 Mar 2022 12:47:39",
+	"@generated": "Thu, 10 Mar 2022 17:05:52",
 	"site":[ 
 		{
 			"@name": "https://training.zenika.com",
@@ -87,9 +87,23 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/angular-avance/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/angular/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"home-search-bar-input\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -198,7 +212,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1046"
+					"sourceid": "1049"
 				},
 				{
 					"pluginid": "10038",
@@ -437,7 +451,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1086"
+					"sourceid": "1085"
 				},
 				{
 					"pluginid": "10063",
@@ -553,13 +567,6 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"uri": "https://training.zenika.com/_nuxt/1ea3718.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://training.zenika.com/_nuxt/42dc36e.js",
 							"method": "GET",
 							"param": "",
@@ -582,6 +589,13 @@
 						},
 						{
 							"uri": "https://training.zenika.com/_nuxt/b7f5ede.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://training.zenika.com/_nuxt/c8c968c.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -971,35 +985,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1a713a-OaSA8131uoNR984TzN3Q7V4wWG0"
+							"evidence": "1a7138-BJXTg1JSYjtZA77nM7jRo9Taagk"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/exclusives",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1a6fe6-mgI6vKAlZp4xXD2veKtLGJcHDYg"
+							"evidence": "1a6fe8-4M/0+9fDJx5mNEvam/z7KK/Kq+Y"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/next-sessions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1fd1cc-C3ba2ViNm2CDqSobyBKJ9GzUH/M"
+							"evidence": "1fd1c3-7+LfP/WJEiO7T3jTQMLhdfgA2h8"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1cc250-lmln3Llu4wc6ser2CiAxS+1mtcs"
+							"evidence": "1cc24f-DmnvyAPr8CS1PiKenv3I4fRJOOs"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/practical-informations",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1018ad-C29CceOHXcr6i4vu7zoUW/IRf/E"
+							"evidence": "1018ad-dyNEC2Dji2ERiYzTVRX3meUVi+s"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/subscription",
@@ -1013,21 +1027,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1a6e4d-f9eOc4DzTQJByOEiEwg2kR5ZR3s"
+							"evidence": "1a6e7d-6c9D75T5JGU5HXVMlnmRL52rZmw"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/universe/agilite",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1d6f68-L6MtH5AeTTpE6KAmcTmu6ed6PhM"
+							"evidence": "1d6f6f-+MbIQ6XmfgBqQBFiJp+Ts7jiysg"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/workshops",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1a6e90-uYEIbPIP8TDIjT01I8SuAgwOizI"
+							"evidence": "1a6edd-zI6euryjUQHH8ysUSDRkvEZVhus"
 						}
 					],
 					"count": "12",
@@ -1275,7 +1289,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -1412,14 +1426,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/certifyings",
+							"uri": "https://training.zenika.com/fr-fr/next-sessions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
+							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "",
 							"attack": "",

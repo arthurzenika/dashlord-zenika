@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Fri, 11 Mar 2022 09:08:01",
+	"@generated": "Sun, 13 Mar 2022 01:31:24",
 	"site":[ 
 		{
 			"@name": "https://oss.zenika.com",
@@ -292,7 +292,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "52"
+					"sourceid": "53"
 				},
 				{
 					"pluginid": "10017",
@@ -775,7 +775,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "83"
+					"sourceid": "69"
 				},
 				{
 					"pluginid": "10015",
@@ -888,80 +888,87 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56717"
+							"evidence": "Age: 0"
+						},
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 1"
 						},
 						{
 							"uri": "https://oss.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56718"
+							"evidence": "Age: 1"
 						},
 						{
 							"uri": "https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56716"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://oss.zenika.com/manifest.webmanifest",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56716"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://oss.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56716"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://oss.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56718"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://oss.zenika.com/terms",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56716"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://oss.zenika.com/white-paper/getting-started",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56716"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://oss.zenika.com/white-paper/licenses",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56716"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56716"
+							"evidence": "Age: 0"
 						},
 						{
 							"uri": "https://oss.zenika.com/white-paper/promotion",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 56716"
+							"evidence": "Age: 0"
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",

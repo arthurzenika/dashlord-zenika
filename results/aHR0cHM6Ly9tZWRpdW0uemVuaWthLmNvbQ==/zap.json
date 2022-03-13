@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Fri, 11 Mar 2022 09:16:16",
+	"@generated": "Sun, 13 Mar 2022 01:46:07",
 	"site":[ 
 		{
 			"@name": "https://medium.zenika.com",
@@ -171,7 +171,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.xFQf9PpHSksZ5coOc8wu5w.12.js\" async></script>"
+							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.n6Qq3Nt-KSuW-P_cjkNX_w.12.js\" async></script>"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -254,9 +254,9 @@
 						{
 							"uri": "https://medium.zenika.com",
 							"method": "GET",
-							"param": "https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.xFQf9PpHSksZ5coOc8wu5w.12.js",
+							"param": "https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.n6Qq3Nt-KSuW-P_cjkNX_w.12.js",
 							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.xFQf9PpHSksZ5coOc8wu5w.12.js\" async></script>"
+							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.n6Qq3Nt-KSuW-P_cjkNX_w.12.js\" async></script>"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -451,6 +451,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "20220311"
+						},
+						{
+							"uri": "https://medium.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "24232453"
 						},
 						{
@@ -482,7 +489,7 @@
 							"evidence": "20220310"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>20220310, which evaluates to: 1970-08-23 00:45:10</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -531,19 +538,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "vvKgECdM3VSXYH9VLk1OU6ruvcYQaSYte6h+78/54tNHAwRasGOIZU30yjR4mhWA"
+							"evidence": "vvKgECdM3VSXYH9VLk1OUyVp2yjgWzfGNhjbKb5iOBmi8hwqU+0E0xGboIJOdpz4"
 						},
 						{
 							"uri": "https://medium.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "FiGy1TlGNTK/+dusPPFp82lPnWCM89wjJP6GLGP9Pgub6AYcTaBumNEvQVRnOVM2P0OkyRjrokw="
+							"evidence": "ZOPoiDtvcACACzdp8PUAXRfj9A06uOU5bd5BHJWTvrrmFKr1DaZ7bcM8zCMr8aaojY8jkIZ6Inc="
 						}
 					],
 					"count": "2",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS\uFFFD\uFFFD\uFFFD\\x0010i&-{\uFFFD~\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDG\\x0003\\x0004Z\uFFFDc\uFFFDeM\uFFFD\uFFFD4x\uFFFD\\x0015\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS%i\uFFFD(\uFFFD[7\uFFFD6\\x0018\uFFFD)\uFFFDb8\\x0019\uFFFD\uFFFD\\x001c*S\uFFFD\\x0004\uFFFD\\x0011\uFFFD\uFFFD\uFFFDNv\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",

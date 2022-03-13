@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Fri, 11 Mar 2022 10:05:29",
+	"@generated": "Sun, 13 Mar 2022 02:42:22",
 	"site":[ 
 		{
 			"@name": "https://blog.zenika.com",
@@ -47,35 +47,42 @@
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/",
+							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/",
+							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com\" method=\"get\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/",
+							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"#\" method=\"post\" accept-charset=\"utf-8\" id=\"subscribe-blog-blog_subscription-4\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/",
+							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"commentform\" class=\"comment-form\">"
 						}
 					],
-					"count": "8",
+					"count": "9",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -231,7 +238,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1926"
+					"sourceid": "1983"
 				},
 				{
 					"pluginid": "10020",
@@ -353,7 +360,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1604"
+					"sourceid": "1652"
 				},
 				{
 					"pluginid": "10099",
@@ -365,13 +372,6 @@
 					"riskdesc": "Medium (Medium)",
 					"desc": "<p>Application Source Code was disclosed by the web server - SQL</p>",
 					"instances":[ 
-						{
-							"uri": "https://blog.zenika.com/2015/02/23/spark-et-cassandra/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select host, avg(value) from metric where name"
-						},
 						{
 							"uri": "https://blog.zenika.com/2021/06/01/securisation-oauth2-dune-single-page-application/",
 							"method": "GET",
@@ -392,22 +392,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "SELECT COUNT FROM CUSTOMER_ARRIVAL WHERE arrivaltime "
-						},
-						{
-							"uri": "https://blog.zenika.com/category/themes/web/feed/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Delete from Cart"
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
-					"otherinfo": "<p>select host, avg(value) from metric where name</p>",
+					"otherinfo": "<p>Delete from Cart</p>",
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2168"
+					"sourceid": "1333"
 				},
 				{
 					"pluginid": "90003",
@@ -522,7 +515,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1529"
+					"sourceid": "1480"
 				},
 				{
 					"pluginid": "10054",
@@ -684,7 +677,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1504"
+					"sourceid": "1506"
 				},
 				{
 					"pluginid": "10063",
@@ -821,35 +814,28 @@
 							"evidence": "19927536"
 						},
 						{
-							"uri": "https://blog.zenika.com/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1638896208"
-						},
-						{
-							"uri": "https://blog.zenika.com/",
+							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "1646919531"
 						},
 						{
-							"uri": "https://blog.zenika.com/",
+							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "169840740"
 						},
 						{
-							"uri": "https://blog.zenika.com/",
+							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "19927536"
 						}
 					],
-					"count": "8",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1638896208, which evaluates to: 2021-12-07 16:56:48</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -1108,7 +1094,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1510"
+					"sourceid": "1509"
 				},
 				{
 					"pluginid": "10024",
@@ -1129,13 +1115,6 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/03/03/afficher-et-masquer-des-elements-sur-le-web/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
-							"method": "GET",
-							"param": "email",
-							"attack": "",
-							"evidence": "foo-bar@example.com"
-						},
-						{
-							"uri": "https://blog.zenika.com/author/ceudeline/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
@@ -1168,22 +1147,15 @@
 							"param": "email",
 							"attack": "",
 							"evidence": "foo-bar@example.com"
-						},
-						{
-							"uri": "https://blog.zenika.com/category/themes/web/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
-							"method": "GET",
-							"param": "email",
-							"attack": "",
-							"evidence": "foo-bar@example.com"
 						}
 					],
-					"count": "8",
+					"count": "6",
 					"solution": "<p>Do not pass sensitive information in URIs.</p>",
 					"otherinfo": "<p>The URL contains email address(es).</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2245"
+					"sourceid": "2309"
 				},
 				{
 					"pluginid": "10027",
@@ -1286,7 +1258,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "210"
+					"sourceid": "197"
 				},
 				{
 					"pluginid": "10109",
@@ -1593,7 +1565,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "114"
+					"sourceid": "99"
 				},
 				{
 					"pluginid": "10031",
@@ -4181,7 +4153,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1529"
+					"sourceid": "1480"
 				}
 			]
 		}

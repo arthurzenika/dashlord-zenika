@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 13 Mar 2022 02:42:22",
+	"@generated": "Sun, 20 Mar 2022 02:49:06",
 	"site":[ 
 		{
 			"@name": "https://blog.zenika.com",
@@ -47,42 +47,35 @@
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com\" method=\"get\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"#\" method=\"post\" accept-charset=\"utf-8\" id=\"subscribe-blog-blog_subscription-4\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"commentform\" class=\"comment-form\">"
 						}
 					],
-					"count": "9",
+					"count": "8",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -115,20 +108,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/02/11/de-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/02/11/zik-projet-de-rd-en-collaboration-avec-limt-atlantique/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/03/afficher-et-masquer-des-elements-sur-le-web/",
 							"method": "GET",
 							"param": "",
@@ -150,21 +129,35 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/author/jpbaconnais/",
+							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/category/la-zlife/",
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/java/",
+							"uri": "https://blog.zenika.com/category/themes/cloud/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/securite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -197,20 +190,6 @@
 					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.zenika.com/wp-content/uploads/2022/02/Blog-zenika-ZIK-Projet-RD-IMT-Atlantique.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *"
-						},
-						{
-							"uri": "https://blog.zenika.com/wp-content/uploads/2022/02/Blog_zenika_De-lalgorithme-a%CC%80-la-solution-exemple-dexploitation-dun-algorithme-dintelligence-artificielle_5.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *"
-						},
-						{
 							"uri": "https://blog.zenika.com/wp-content/uploads/2022/03/blog-zenika-afficher-masquer-e%CC%81le%CC%81ments-sur-le-web.png",
 							"method": "GET",
 							"param": "",
@@ -225,7 +204,21 @@
 							"evidence": "Access-Control-Allow-Origin: *"
 						},
 						{
+							"uri": "https://blog.zenika.com/wp-content/uploads/2022/03/blog-zenika-decouverte-Alibaba-Cloud.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
 							"uri": "https://blog.zenika.com/wp-content/uploads/2022/03/blog-zenika-donner-visibilite-femmes-parcours-women-empowerment.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-content/uploads/2022/03/blog-zenika-Kubernetes-quest-ce-qui-va-remplacer-les-PodSecurityPolicies.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -238,7 +231,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1983"
+					"sourceid": "1962"
 				},
 				{
 					"pluginid": "10020",
@@ -259,20 +252,6 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/02/11/de-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/02/11/zik-projet-de-rd-en-collaboration-avec-limt-atlantique/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -300,28 +279,42 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/author/jpbaconnais/",
+							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/category/la-zlife/",
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/java/",
+							"uri": "https://blog.zenika.com/author/pyaillet/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/vie-professionnelle/",
+							"uri": "https://blog.zenika.com/category/themes/cloud/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/securite/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -339,28 +332,63 @@
 				{
 					"pluginid": "10099",
 					"alertRef": "10099",
-					"alert": "Source Code Disclosure - Java",
-					"name": "Source Code Disclosure - Java",
+					"alert": "Source Code Disclosure - Python",
+					"name": "Source Code Disclosure - Python",
 					"riskcode": "2",
 					"confidence": "2",
 					"riskdesc": "Medium (Medium)",
-					"desc": "<p>Application Source Code was disclosed by the web server - Java</p>",
+					"desc": "<p>Application Source Code was disclosed by the web server - Python</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.zenika.com/2012/02/17/comment-coincer-20-clowns-dans-une-voiture/",
+							"uri": "https://blog.zenika.com/2019/07/15/decouverte-ebpf/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "public static void main(String args[]) {"
+							"evidence": "#!/usr/bin/env python"
+						},
+						{
+							"uri": "https://blog.zenika.com/2020/11/23/challenge-brigitte-friang-write-up-solutions-2-categorie-algo/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "#!/usr/bin/env python"
+						},
+						{
+							"uri": "https://blog.zenika.com/2020/11/30/challenge-brigitte-friang-write-up-solutions-3-arene-coros/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "#!/usr/bin/env python"
+						},
+						{
+							"uri": "https://blog.zenika.com/author/pyaillet/feed/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "#!/usr/bin/env python"
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/feed/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "#!/usr/bin/env python"
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/securite/feed/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "#!/usr/bin/env python"
 						}
 					],
-					"count": "1",
+					"count": "6",
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
-					"otherinfo": "<p>public static void main(String args[]) {</p>",
+					"otherinfo": "<p>#!/usr/bin/env python</p>",
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1652"
+					"sourceid": "2441"
 				},
 				{
 					"pluginid": "10099",
@@ -385,22 +413,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "SELECT COUNT FROM CUSTOMER_ARRIVAL WHERE arrivaltime "
-						},
-						{
-							"uri": "https://blog.zenika.com/category/la-zlife/feed/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "SELECT COUNT FROM CUSTOMER_ARRIVAL WHERE arrivaltime "
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
 					"otherinfo": "<p>Delete from Cart</p>",
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1333"
+					"sourceid": "1329"
 				},
 				{
 					"pluginid": "90003",
@@ -417,7 +438,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link crossorigin=\"anonymous\" rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C500%2C600%2C700%2C800%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%7CNunito%3A200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;display=swap&#038;subset=all&#038;ver=3.0.13' media='all' />"
+							"evidence": "<link crossorigin=\"anonymous\" rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C500%2C600%2C700%2C800%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%7CNunito%3A200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;display=swap&#038;subset=all&#038;ver=3.0.14' media='all' />"
 						},
 						{
 							"uri": "https://blog.zenika.com",
@@ -466,7 +487,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202210'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202211'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
@@ -480,7 +501,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202210.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202211.js' defer></script>"
 						}
 					],
 					"count": "10",
@@ -515,7 +536,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1480"
+					"sourceid": "1505"
 				},
 				{
 					"pluginid": "10054",
@@ -591,16 +612,16 @@
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202210",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202211",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202210'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202211'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202210.js",
+							"param": "https://stats.wp.com/e-202211.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202210.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202211.js' defer></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
@@ -612,37 +633,37 @@
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202210",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202211",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202210'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202211'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202210.js",
+							"param": "https://stats.wp.com/e-202211.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202210.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202211.js' defer></script>"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
 							"method": "GET",
 							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress",
 							"attack": "",
 							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress' async defer id='hs-script-loader'></script>"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202210",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202211",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202210'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202211'></script>"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202210.js",
+							"param": "https://stats.wp.com/e-202211.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202210.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202211.js' defer></script>"
 						}
 					],
 					"count": "9",
@@ -664,6 +685,13 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
+							"uri": "https://blog.zenika.com/_static/??-eJwrL9BNzs8rSc0r0S/IKU3PzCvWL67MK0msyMhMz8gB4pLUIkwRY/3i5KLMghKg4gzn/KJUvaxinXKKTXIqKi3OiEzMzaGicU6JxRlUNC4gJzEzD2iefa6toZmxhZGRkYmlGQCkN343",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "eval"
+						},
+						{
 							"uri": "https://blog.zenika.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0",
 							"method": "GET",
 							"param": "",
@@ -671,13 +699,13 @@
 							"evidence": "Eval"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>See the references for security advice on the use of these functions.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1506"
+					"sourceid": "1645"
 				},
 				{
 					"pluginid": "10063",
@@ -698,20 +726,6 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/02/11/de-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/02/11/zik-projet-de-rd-en-collaboration-avec-limt-atlantique/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -739,21 +753,35 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/author/jpbaconnais/",
+							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/category/la-zlife/",
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/java/",
+							"uri": "https://blog.zenika.com/category/themes/cloud/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/securite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -774,6 +802,46 @@
 					"cweid": "693",
 					"wascid": "15",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "2",
+					"alertRef": "2",
+					"alert": "Private IP Disclosure",
+					"name": "Private IP Disclosure",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>",
+					"instances":[ 
+						{
+							"uri": "https://blog.zenika.com/2020/11/30/challenge-brigitte-friang-write-up-solutions-3-arene-coros/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "192.168.0.1"
+						},
+						{
+							"uri": "https://blog.zenika.com/author/pyaillet/feed/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "192.168.0.1"
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/securite/feed/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "192.168.0.1"
+						}
+					],
+					"count": "3",
+					"solution": "<p>Remove the private IP address from the HTTP response body.  For comments, use JSP/ASP/PHP comment instead of HTML/JavaScript comment which can be seen by client browsers.</p>",
+					"otherinfo": "<p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.0.70</p><p>192.168.0.70</p><p></p>",
+					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "2572"
 				},
 				{
 					"pluginid": "10096",
@@ -814,28 +882,35 @@
 							"evidence": "19927536"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"uri": "https://blog.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1638896208"
+						},
+						{
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "1646919531"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "169840740"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "19927536"
 						}
 					],
-					"count": "7",
+					"count": "8",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>1638896208, which evaluates to: 2021-12-07 16:56:48</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -868,20 +943,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/02/11/de-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5/",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/02/11/zik-projet-de-rd-en-collaboration-avec-limt-atlantique/",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/03/afficher-et-masquer-des-elements-sur-le-web/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -903,14 +964,28 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/author/jpbaconnais/",
+							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/java/",
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/cloud/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -964,20 +1039,6 @@
 							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/02/11/de-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/wp-content/uploads/2022/02/Blog_zenika_De-lalgorithme-a"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/02/11/zik-projet-de-rd-en-collaboration-avec-limt-atlantique/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2Fzik-projet-de-rd-en-collaboration-avec-limt-atlantique"
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/03/afficher-et-masquer-des-elements-sur-le-web/",
 							"method": "GET",
 							"param": "",
@@ -999,28 +1060,42 @@
 							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36"
 						},
 						{
-							"uri": "https://blog.zenika.com/author/jpbaconnais/",
+							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/wp-content/uploads/2022/03/blog-zenika-decouverte-Alibaba-Cloud"
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2Fkubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies"
+						},
+						{
+							"uri": "https://blog.zenika.com/author/pyaillet/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/la-zlife/",
+							"uri": "https://blog.zenika.com/category/themes/cloud/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/java/",
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/vie-professionnelle/",
+							"uri": "https://blog.zenika.com/category/themes/securite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1053,20 +1128,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.zenika.com%2F2022%2F02%2F11%2Fde-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.zenika.com%2F2022%2F02%2F11%2Fzik-projet-de-rd-en-collaboration-avec-limt-atlantique%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.zenika.com%2F2022%2F03%2F03%2Fafficher-et-masquer-des-elements-sur-le-web%2F",
 							"method": "GET",
 							"param": "",
@@ -1086,6 +1147,20 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.zenika.com%2F2022%2F03%2F18%2Fdecouverte-dalibaba-cloud%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.zenika.com%2F2022%2F03%2F18%2Fkubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
 						}
 					],
 					"count": "6",
@@ -1094,7 +1169,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1509"
+					"sourceid": "1480"
 				},
 				{
 					"pluginid": "10024",
@@ -1107,13 +1182,6 @@
 					"desc": "<p>The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.zenika.com/2022/02/11/de-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
-							"method": "GET",
-							"param": "email",
-							"attack": "",
-							"evidence": "foo-bar@example.com"
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/03/afficher-et-masquer-des-elements-sur-le-web/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
@@ -1121,28 +1189,35 @@
 							"evidence": "foo-bar@example.com"
 						},
 						{
-							"uri": "https://blog.zenika.com/author/jpbaconnais/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
+							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
 							"evidence": "foo-bar@example.com"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/la-zlife/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
+							"uri": "https://blog.zenika.com/author/pyaillet/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
 							"evidence": "foo-bar@example.com"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/java/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
+							"uri": "https://blog.zenika.com/category/themes/cloud/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
 							"evidence": "foo-bar@example.com"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/vie-professionnelle/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
+							"method": "GET",
+							"param": "email",
+							"attack": "",
+							"evidence": "foo-bar@example.com"
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/securite/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
@@ -1155,7 +1230,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2309"
+					"sourceid": "2156"
 				},
 				{
 					"pluginid": "10027",
@@ -1168,13 +1243,6 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.zenika.com/2022/02/11/de-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/03/afficher-et-masquer-des-elements-sur-le-web/",
 							"method": "GET",
 							"param": "",
@@ -1182,14 +1250,14 @@
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://blog.zenika.com/author/ceudeline/",
+							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://blog.zenika.com/author/jpatonnier/",
+							"uri": "https://blog.zenika.com/author/gmembre2/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1203,7 +1271,7 @@
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/la-zlife/",
+							"uri": "https://blog.zenika.com/author/pyaillet/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1224,7 +1292,21 @@
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/architecture/",
+							"uri": "https://blog.zenika.com/category/themes/cloud/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/innovation/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1238,14 +1320,7 @@
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/vie-professionnelle/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
-							"uri": "https://blog.zenika.com/category/themes/web/",
+							"uri": "https://blog.zenika.com/category/themes/securite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1258,7 +1333,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "197"
+					"sourceid": "198"
 				},
 				{
 					"pluginid": "10109",
@@ -1285,20 +1360,6 @@
 							"evidence": "<a></a>"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/02/11/de-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class='sd-link-color'></a>"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/02/11/zik-projet-de-rd-en-collaboration-avec-limt-atlantique/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class='sd-link-color'></a>"
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/03/afficher-et-masquer-des-elements-sur-le-web/",
 							"method": "GET",
 							"param": "",
@@ -1320,28 +1381,42 @@
 							"evidence": "<a class='sd-link-color'></a>"
 						},
 						{
-							"uri": "https://blog.zenika.com/author/jpbaconnais/",
+							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class='sd-link-color'></a>"
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class='sd-link-color'></a>"
+						},
+						{
+							"uri": "https://blog.zenika.com/author/pyaillet/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<a></a>"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/la-zlife/",
+							"uri": "https://blog.zenika.com/category/themes/cloud/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<a></a>"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/java/",
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<a></a>"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/vie-professionnelle/",
+							"uri": "https://blog.zenika.com/category/themes/securite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1381,20 +1456,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/02/11/de-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/02/11/zik-projet-de-rd-en-collaboration-avec-limt-atlantique/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/03/afficher-et-masquer-des-elements-sur-le-web/",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1416,14 +1477,28 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/author/jpbaconnais/",
+							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/java/",
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/cloud/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1477,20 +1552,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/02/11/de-lalgorithme-a-la-solution-un-exemple-dexploitation-dun-algorithme-dintelligence-artificielle-5-5/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/02/11/zik-projet-de-rd-en-collaboration-avec-limt-atlantique/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/03/afficher-et-masquer-des-elements-sur-le-web/",
 							"method": "GET",
 							"param": "",
@@ -1506,6 +1567,20 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1565,7 +1640,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "99"
+					"sourceid": "106"
 				},
 				{
 					"pluginid": "10031",
@@ -3911,104 +3986,6 @@
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
 							"param": "sub-type",
 							"attack": "",
 							"evidence": ""
@@ -4147,13 +4124,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "367",
+					"count": "353",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
 					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>reauth=1</p><p></p><p>The user-controlled value was:</p><p>https://i0.wp.com/blog.zenika.com/wp-content/uploads/2021/10/cropped-monogramme-logo-zenika_36x36.png?fit=270%2c270&ssl=1</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1480"
+					"sourceid": "1505"
 				}
 			]
 		}

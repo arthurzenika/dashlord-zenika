@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 13 Mar 2022 01:06:40",
+	"@generated": "Sun, 20 Mar 2022 01:09:27",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -23,14 +23,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form novalidate=\"\" class=\"jss58\">"
+							"evidence": "<form novalidate=\"\" class=\"jss60\">"
 						},
 						{
 							"uri": "https://zenika.com/contact?email=foo-bar%40example.com&firstName=ZAP&lastName=ZAP&text",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<form novalidate=\"\" class=\"jss58\">"
+							"evidence": "<form novalidate=\"\" class=\"jss60\">"
 						}
 					],
 					"count": "2",
@@ -39,7 +39,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "74"
+					"sourceid": "76"
 				},
 				{
 					"pluginid": "90022",
@@ -65,7 +65,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "61"
+					"sourceid": "63"
 				},
 				{
 					"pluginid": "10038",
@@ -321,6 +321,95 @@
 					"sourceid": "3"
 				},
 				{
+					"pluginid": "10017",
+					"alertRef": "10017",
+					"alert": "Cross-Domain JavaScript Source File Inclusion",
+					"name": "Cross-Domain JavaScript Source File Inclusion",
+					"riskcode": "1",
+					"confidence": "2",
+					"riskdesc": "Low (Medium)",
+					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
+					"instances":[ 
+						{
+							"uri": "https://zenika.com/",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						},
+						{
+							"uri": "https://zenika.com/contact",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						},
+						{
+							"uri": "https://zenika.com/fr-fr",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						},
+						{
+							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						},
+						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						},
+						{
+							"uri": "https://zenika.com/pages/green-it",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						},
+						{
+							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						},
+						{
+							"uri": "https://zenika.com/pages/values",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						},
+						{
+							"uri": "https://zenika.com/robots.txt",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						},
+						{
+							"uri": "https://zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						}
+					],
+					"count": "10",
+					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
+					"otherinfo": "",
+					"reference": "",
+					"cweid": "829",
+					"wascid": "15",
+					"sourceid": "3"
+				},
+				{
 					"pluginid": "10063",
 					"alertRef": "10063",
 					"alert": "Permissions Policy Header Not Set",
@@ -352,7 +441,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/pages/_app-1eb5f7884b286bc38421.js",
+							"uri": "https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -680,7 +769,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/pages/_error-737a04e9a0da63c9d162.js",
+							"uri": "https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -752,75 +841,75 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest"
+							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
 						},
 						{
 							"uri": "https://zenika.com/contact",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "fc32-papYTZF4uBEgFdiT1OJpS5t2wZY"
+							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
 						},
 						{
 							"uri": "https://zenika.com/fr-fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest"
+							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
 						},
 						{
 							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest"
+							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
 						},
 						{
 							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest"
+							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
 						},
 						{
 							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest"
+							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest"
+							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
 						},
 						{
 							"uri": "https://zenika.com/pages/values",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest"
+							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
 						},
 						{
 							"uri": "https://zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "10f4-EHx7KjkWZ2lmyjjhpP56vJxicqU"
+							"evidence": "1179-G3dGvzZf/YZr25E54Lb6/NbvhEk"
 						},
 						{
 							"uri": "https://zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "10f4-EHx7KjkWZ2lmyjjhpP56vJxicqU"
+							"evidence": "1179-G3dGvzZf/YZr25E54Lb6/NbvhEk"
 						}
 					],
 					"count": "10",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFDH\uFFFD\\x0000[(\uFFFD\uFFFD\\x0012\uFFFD\uFFFDe!\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0004\uFFFDf\uFFFD \u10A8\uFFFD)\uFFFD\uFFFDR\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -850,7 +939,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "110"
+					"sourceid": "112"
 				},
 				{
 					"pluginid": "10027",
@@ -884,7 +973,7 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/pages/_app-1eb5f7884b286bc38421.js",
+							"uri": "https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -956,7 +1045,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"jss30 jss26\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
+							"evidence": "<a class=\"jss29 jss26\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
 						},
 						{
 							"uri": "https://zenika.com/_next/static/chunks/framework-c93ed74a065331c4bd75.js",
@@ -977,35 +1066,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"jss31 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
+							"evidence": "<a class=\"jss30 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
 						},
 						{
 							"uri": "https://zenika.com/fr-fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"jss30 jss26\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
+							"evidence": "<a class=\"jss29 jss26\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
 						},
 						{
 							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"jss31 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
+							"evidence": "<a class=\"jss30 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"jss31 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
+							"evidence": "<a class=\"jss30 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
 						},
 						{
 							"uri": "https://zenika.com/pages/values",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"jss31 jss27 jss32\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
+							"evidence": "<a class=\"jss30 jss27 jss31\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
 						},
 						{
 							"uri": "https://zenika.com/robots.txt",
@@ -1225,7 +1314,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "52"
+					"sourceid": "53"
 				}
 			]
 		}

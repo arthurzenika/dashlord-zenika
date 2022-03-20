@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 13 Mar 2022 01:06:39
+		Generated on Sun, 20 Mar 2022 01:09:27
 	</h3>
 
 	
@@ -160,7 +160,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>5</div>
+					<div>6</div>
 				</td>
 			</tr>
 			<tr>
@@ -217,6 +217,11 @@ td {
 				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				<td align="center">8</td>
+			</tr>
+			<tr>
+				<td><a href="#10017">Cross-Domain JavaScript Source File Inclusion</a></td>
+				<td align="center" class="risk-1">Low</td>
+				<td align="center">10</td>
 			</tr>
 			<tr>
 				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
@@ -344,7 +349,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form novalidate=&quot;&quot; class=&quot;jss58&quot;&gt;</td>
+						<td width="80%">&lt;form novalidate=&quot;&quot; class=&quot;jss60&quot;&gt;</td>
 					</tr>
 				
 					<tr>
@@ -370,7 +375,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;form novalidate=&quot;&quot; class=&quot;jss58&quot;&gt;</td>
+						<td width="80%">&lt;form novalidate=&quot;&quot; class=&quot;jss60&quot;&gt;</td>
 					</tr>
 				
 				<tr>
@@ -1440,6 +1445,316 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
+						id="10017"></a>
+						<div>Low</div></th>
+					<th class="risk-1">Cross-Domain JavaScript Source File Inclusion</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The page includes one or more script files from a third-party domain.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zenika.com/">https://zenika.com/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;amp;new=true&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zenika.com/contact">https://zenika.com/contact</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;amp;new=true&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zenika.com/fr-fr">https://zenika.com/fr-fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;amp;new=true&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zenika.com/fr-FR/agency/bordeaux">https://zenika.com/fr-FR/agency/bordeaux</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;amp;new=true&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zenika.com/fr-FR/agency/brest">https://zenika.com/fr-FR/agency/brest</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;amp;new=true&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zenika.com/pages/green-it">https://zenika.com/pages/green-it</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;amp;new=true&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zenika.com/pages/offers">https://zenika.com/pages/offers</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;amp;new=true&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zenika.com/pages/values">https://zenika.com/pages/values</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;amp;new=true&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zenika.com/robots.txt">https://zenika.com/robots.txt</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;amp;new=true&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://zenika.com/sitemap.xml">https://zenika.com/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script async=&quot;&quot; defer=&quot;&quot; src=&quot;//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;amp;new=true&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">10</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure JavaScript source files are loaded from only trusted sources, and the sources can&#39;t be controlled by end users of the application.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">15</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10017/">10017</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-1"><a
 						id="10063"></a>
 						<div>Low</div></th>
 					<th class="risk-1">Permissions Policy Header Not Set</th>
@@ -1536,7 +1851,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zenika.com/_next/static/chunks/pages/_app-1eb5f7884b286bc38421.js">https://zenika.com/_next/static/chunks/pages/_app-1eb5f7884b286bc38421.js</a></td>
+						<td width="80%"><a href="https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js">https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2711,7 +3026,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zenika.com/_next/static/chunks/pages/_error-737a04e9a0da63c9d162.js">https://zenika.com/_next/static/chunks/pages/_error-737a04e9a0da63c9d162.js</a></td>
+						<td width="80%"><a href="https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js">https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2972,7 +3287,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest</td>
+						<td width="80%">/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest</td>
 					</tr>
 				
 					<tr>
@@ -2998,7 +3313,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">fc32-papYTZF4uBEgFdiT1OJpS5t2wZY</td>
+						<td width="80%">/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest</td>
 					</tr>
 				
 					<tr>
@@ -3024,7 +3339,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest</td>
+						<td width="80%">/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest</td>
 					</tr>
 				
 					<tr>
@@ -3050,7 +3365,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest</td>
+						<td width="80%">/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest</td>
 					</tr>
 				
 					<tr>
@@ -3076,7 +3391,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest</td>
+						<td width="80%">/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest</td>
 					</tr>
 				
 					<tr>
@@ -3102,7 +3417,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest</td>
+						<td width="80%">/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest</td>
 					</tr>
 				
 					<tr>
@@ -3128,7 +3443,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest</td>
+						<td width="80%">/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest</td>
 					</tr>
 				
 					<tr>
@@ -3154,7 +3469,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">/_next/static/xIsQBbKL3nEtXjZSG3-cz/_buildManifest</td>
+						<td width="80%">/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest</td>
 					</tr>
 				
 					<tr>
@@ -3180,7 +3495,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">10f4-EHx7KjkWZ2lmyjjhpP56vJxicqU</td>
+						<td width="80%">1179-G3dGvzZf/YZr25E54Lb6/NbvhEk</td>
 					</tr>
 				
 					<tr>
@@ -3206,7 +3521,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">10f4-EHx7KjkWZ2lmyjjhpP56vJxicqU</td>
+						<td width="80%">1179-G3dGvzZf/YZr25E54Lb6/NbvhEk</td>
 					</tr>
 				
 				<tr>
@@ -3419,7 +3734,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zenika.com/_next/static/chunks/pages/_app-1eb5f7884b286bc38421.js">https://zenika.com/_next/static/chunks/pages/_app-1eb5f7884b286bc38421.js</a></td>
+						<td width="80%"><a href="https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js">https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3671,7 +3986,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a class=&quot;jss30 jss26&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
+						<td width="80%">&lt;a class=&quot;jss29 jss26&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
@@ -3749,7 +4064,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a class=&quot;jss31 jss27&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
+						<td width="80%">&lt;a class=&quot;jss30 jss27&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
@@ -3775,7 +4090,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a class=&quot;jss30 jss26&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
+						<td width="80%">&lt;a class=&quot;jss29 jss26&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
@@ -3801,7 +4116,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a class=&quot;jss31 jss27&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
+						<td width="80%">&lt;a class=&quot;jss30 jss27&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
@@ -3827,7 +4142,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a class=&quot;jss31 jss27&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
+						<td width="80%">&lt;a class=&quot;jss30 jss27&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
 					</tr>
 				
 					<tr>
@@ -3853,7 +4168,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;a class=&quot;jss31 jss27 jss32&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
+						<td width="80%">&lt;a class=&quot;jss30 jss27 jss31&quot; target=&quot;_self&quot; href=&quot;/pages/values&quot;&gt;Valeurs&lt;/a&gt;</td>
 					</tr>
 				
 					<tr>

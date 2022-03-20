@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 13 Mar 2022 02:00:09",
+	"@generated": "Sun, 20 Mar 2022 02:00:49",
 	"site":[ 
 		{
 			"@name": "https://faq.zenika.com",
@@ -180,23 +180,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
-						},
-						{
-							"uri": "https://faq.zenika.com/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://faq.zenika.com/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
 						}
 					],
-					"count": "3",
+					"count": "1",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
@@ -246,30 +232,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs"
-						},
-						{
-							"uri": "https://faq.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "mHv0ZCUnud310SecjfKSPAzyvVhvMHeZlr5Yvrb5WMojbZsy4Y"
-						},
-						{
-							"uri": "https://faq.zenika.com/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2Fdgu5QaR3XzEtlTMWIj9tx26SS0mFut33c5QjteGM3woBz"
-						},
-						{
-							"uri": "https://faq.zenika.com/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2F6XpvkRD82TrIa2iRRCpZXaOfYMWOYa99GzYlsdzstUvBS5Ps2Apw"
 						}
 					],
-					"count": "4",
+					"count": "1",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD\\x0016\uFFFD\uDAFE\uDCA1J\u01CA\\x000e\uFFFD!:\uFFFDhBz\uFFFD\uFFFD\uFFFDN\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\uFFFD\uFFFD\uFFFDN\u5017 \u06BE\uFFFDD\u0458H\uFFFD\\x000b\uFFFD)\uFFFD;6-\uFFFD;</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -318,21 +283,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "no-store"
+							"evidence": "302"
 						},
 						{
 							"uri": "https://faq.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "no-store"
+							"evidence": "302"
 						},
 						{
 							"uri": "https://faq.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "no-store"
+							"evidence": "302"
 						}
 					],
 					"count": "3",
@@ -341,7 +306,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",

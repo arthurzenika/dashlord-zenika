@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 20 Mar 2022 01:09:27",
+	"@generated": "Sun, 27 Mar 2022 01:19:30",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -39,7 +39,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "76"
+					"sourceid": "81"
 				},
 				{
 					"pluginid": "90022",
@@ -65,7 +65,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "63"
+					"sourceid": "64"
 				},
 				{
 					"pluginid": "10038",
@@ -99,13 +99,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "",
@@ -121,6 +114,13 @@
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -209,13 +209,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/lille",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -224,6 +217,13 @@
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -352,13 +352,6 @@
 							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
-							"method": "GET",
-							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
-							"attack": "",
-							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
-						},
-						{
 							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
@@ -374,6 +367,13 @@
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>"
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
 							"method": "GET",
 							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
 							"attack": "",
@@ -530,13 +530,6 @@
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: Next.js"
-						},
-						{
 							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "",
@@ -552,6 +545,13 @@
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: Next.js"
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -769,7 +769,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js",
+							"uri": "https://zenika.com/_next/static/chunks/pages/_error-737a04e9a0da63c9d162.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -858,13 +858,6 @@
 							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
-						},
-						{
 							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "",
@@ -880,6 +873,13 @@
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/_next/static/KvBNhm77Ig4YKovSn_5lJ/_buildManifest"
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -939,7 +939,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "112"
+					"sourceid": "114"
 				},
 				{
 					"pluginid": "10027",
@@ -1062,13 +1062,6 @@
 							"evidence": "<script>"
 						},
 						{
-							"uri": "https://zenika.com/contact",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class=\"jss30 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
-						},
-						{
 							"uri": "https://zenika.com/fr-fr",
 							"method": "GET",
 							"param": "",
@@ -1084,6 +1077,13 @@
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"jss30 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1172,13 +1172,6 @@
 							"evidence": "s-maxage=10, stale-while-revalidate"
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/lille",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "s-maxage=10, stale-while-revalidate"
-						},
-						{
 							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1187,6 +1180,13 @@
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "s-maxage=10, stale-while-revalidate"
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1314,7 +1314,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "53"
+					"sourceid": "55"
 				}
 			]
 		}

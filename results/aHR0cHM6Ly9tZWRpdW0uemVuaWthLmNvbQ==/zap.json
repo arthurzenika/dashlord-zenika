@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 27 Mar 2022 01:57:39",
+	"@generated": "Sun, 3 Apr 2022 01:57:07",
 	"site":[ 
 		{
 			"@name": "https://medium.zenika.com",
@@ -171,7 +171,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.FSY-z59sfAjWKLq6SxeEGA.12.js\" async></script>"
+							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.MnVR_ac6Apfmy94FvcFlyA.12.js\" async></script>"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -254,9 +254,9 @@
 						{
 							"uri": "https://medium.zenika.com",
 							"method": "GET",
-							"param": "https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.FSY-z59sfAjWKLq6SxeEGA.12.js",
+							"param": "https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.MnVR_ac6Apfmy94FvcFlyA.12.js",
 							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.FSY-z59sfAjWKLq6SxeEGA.12.js\" async></script>"
+							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.MnVR_ac6Apfmy94FvcFlyA.12.js\" async></script>"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -372,13 +372,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://medium.zenika.com/_/api/posts/*/responses",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://medium.zenika.com/_/api/users/*/meta",
 							"method": "GET",
 							"param": "",
@@ -387,6 +380,13 @@
 						},
 						{
 							"uri": "https://medium.zenika.com/_/api/users/*/profile/stream",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://medium.zenika.com/m",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -444,7 +444,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220325"
+							"evidence": "20220330"
+						},
+						{
+							"uri": "https://medium.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "20220401"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -472,19 +479,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220325"
+							"evidence": "20220330"
 						},
 						{
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220325"
+							"evidence": "20220330"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>20220325, which evaluates to: 1970-08-23 00:45:25</p>",
+					"otherinfo": "<p>20220330, which evaluates to: 1970-08-23 00:45:30</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -531,19 +538,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "vvKgECdM3VSXYH9VLk1OU7T5KbhA4TSd0iF2Q3NbxkYQE8Hc/j1dnZI6NvpCCLc7"
+							"evidence": "vvKgECdM3VSXYH9VLk1OU54D00lEv62HiVrx/ilyRvH2MoFAsEUYKMoGwiYXZ+sB"
 						},
 						{
 							"uri": "https://medium.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "bfQupmHVYM48jSvFTlNvkhoHUE5SRFYU9/JdirgraM5zcCJvs5XAcb6hxkIkDxRpYk5gOUkLddo="
+							"evidence": "vi9TfqHOZ2O5kCoftRVBiF7LG378KJSDOgi/qNY7n1mn4WbTogafuzXnMOfy4KF6TC8Iu6dacdk="
 						}
 					],
 					"count": "2",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS\uFFFD\uFFFD)\uFFFD@\uFFFD4\uFFFD\uFFFD!vCs[\uFFFDF\\x0010\\x0013\uFFFD\uFFFD\uFFFD=]\uFFFD\uFFFD:6\uFFFDB\\x0008\uFFFD;</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS\uFFFD\\x0003\uFFFDID\uFFFD\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFD)rF\uFFFD\uFFFD2\uFFFD@\uFFFDE\\x0018(\uFFFD\\x0006\uFFFD&\\x0017g\uFFFD\\x0001</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",

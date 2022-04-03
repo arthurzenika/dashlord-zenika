@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 27 Mar 2022 02:50:59",
+	"@generated": "Sun, 3 Apr 2022 02:54:40",
 	"site":[ 
 		{
 			"@name": "https://blog.zenika.com",
@@ -8,32 +8,6 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
-				{
-					"pluginid": "10062",
-					"alertRef": "10062",
-					"alert": "PII Disclosure",
-					"name": "PII Disclosure",
-					"riskcode": "3",
-					"confidence": "2",
-					"riskdesc": "High (Medium)",
-					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
-					"instances":[ 
-						{
-							"uri": "https://blog.zenika.com/2020/06/19/bonnes-pratiques-en-teletravail-1-la-gestion-du-temps/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "674262483524"
-						}
-					],
-					"count": "1",
-					"solution": "",
-					"otherinfo": "<p>Credit Card Type detected: Maestro</p>",
-					"reference": "",
-					"cweid": "359",
-					"wascid": "13",
-					"sourceid": "1905"
-				},
 				{
 					"pluginid": "10202",
 					"alertRef": "10202",
@@ -257,7 +231,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1936"
+					"sourceid": "1963"
 				},
 				{
 					"pluginid": "10020",
@@ -387,6 +361,13 @@
 							"evidence": "#!/usr/bin/env python"
 						},
 						{
+							"uri": "https://blog.zenika.com/author/pyaillet/feed/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "#!/usr/bin/env python"
+						},
+						{
 							"uri": "https://blog.zenika.com/category/themes/devops-tribus/feed/",
 							"method": "GET",
 							"param": "",
@@ -401,13 +382,13 @@
 							"evidence": "#!/usr/bin/env python"
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
 					"otherinfo": "<p>#!/usr/bin/env python</p>",
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2405"
+					"sourceid": "2428"
 				},
 				{
 					"pluginid": "10099",
@@ -440,7 +421,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1338"
+					"sourceid": "1335"
 				},
 				{
 					"pluginid": "90003",
@@ -457,7 +438,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link crossorigin=\"anonymous\" rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C500%2C600%2C700%2C800%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%7CNunito%3A200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;display=swap&#038;subset=all&#038;ver=3.0.14' media='all' />"
+							"evidence": "<link crossorigin=\"anonymous\" rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C500%2C600%2C700%2C800%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%7CNunito%3A200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;display=swap&#038;subset=all&#038;ver=3.0.16' media='all' />"
 						},
 						{
 							"uri": "https://blog.zenika.com",
@@ -506,7 +487,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202212'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202213'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
@@ -520,7 +501,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202212.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
 						}
 					],
 					"count": "10",
@@ -555,7 +536,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1511"
+					"sourceid": "1530"
 				},
 				{
 					"pluginid": "10054",
@@ -631,16 +612,16 @@
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202212",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202213",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202212'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202213'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202212.js",
+							"param": "https://stats.wp.com/e-202213.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202212.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
@@ -652,16 +633,16 @@
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202212",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202213",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202212'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202213'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202212.js",
+							"param": "https://stats.wp.com/e-202213.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202212.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
@@ -673,16 +654,16 @@
 						{
 							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202212",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202213",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202212'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202213'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202212.js",
+							"param": "https://stats.wp.com/e-202213.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202212.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202213.js' defer></script>"
 						}
 					],
 					"count": "9",
@@ -724,7 +705,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1635"
+					"sourceid": "1642"
 				},
 				{
 					"pluginid": "10063",
@@ -833,21 +814,14 @@
 					"desc": "<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.zenika.com/2013/07/31/creating-a-varnish-4-module/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "192.168.1.1"
-						},
-						{
-							"uri": "https://blog.zenika.com/2016/09/09/golang-configuration-made-easy-with-flaeg-and-staert/",
+							"uri": "https://blog.zenika.com/2020/11/30/challenge-brigitte-friang-write-up-solutions-3-arene-coros/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "192.168.0.1"
 						},
 						{
-							"uri": "https://blog.zenika.com/2020/11/30/challenge-brigitte-friang-write-up-solutions-3-arene-coros/",
+							"uri": "https://blog.zenika.com/author/pyaillet/feed/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -861,13 +835,13 @@
 							"evidence": "192.168.0.1"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Remove the private IP address from the HTTP response body.  For comments, use JSP/ASP/PHP comment instead of HTML/JavaScript comment which can be seen by client browsers.</p>",
-					"otherinfo": "<p>192.168.1.1</p><p>192.168.1.2</p><p>192.168.1.1</p><p>192.168.1.2</p><p>192.168.1.1</p><p>192.168.1.2</p><p>192.168.2.1</p><p>192.168.2.2</p><p></p>",
+					"otherinfo": "<p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.0.70</p><p>192.168.0.70</p><p></p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1566"
+					"sourceid": "2559"
 				},
 				{
 					"pluginid": "10096",
@@ -1195,7 +1169,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1487"
+					"sourceid": "1493"
 				},
 				{
 					"pluginid": "10024",
@@ -1216,6 +1190,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
+							"method": "GET",
+							"param": "email",
+							"attack": "",
+							"evidence": "foo-bar@example.com"
+						},
+						{
+							"uri": "https://blog.zenika.com/author/pyaillet/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
@@ -1243,13 +1224,13 @@
 							"evidence": "foo-bar@example.com"
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "<p>Do not pass sensitive information in URIs.</p>",
 					"otherinfo": "<p>The URL contains email address(es).</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2104"
+					"sourceid": "2138"
 				},
 				{
 					"pluginid": "10027",
@@ -1659,7 +1640,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "100"
+					"sourceid": "109"
 				},
 				{
 					"pluginid": "10031",
@@ -1671,41 +1652,6 @@
 					"riskdesc": "Informational (Low)",
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
-						{
-							"uri": "https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F",
-							"method": "GET",
-							"param": "reauth",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F",
-							"method": "GET",
-							"param": "redirect_to",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F",
-							"method": "GET",
-							"param": "redirect_to",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F",
-							"method": "GET",
-							"param": "redirect_to",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F",
-							"method": "GET",
-							"param": "redirect_to",
-							"attack": "",
-							"evidence": ""
-						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "POST",
@@ -4143,13 +4089,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "353",
+					"count": "348",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>reauth=1</p><p></p><p>The user-controlled value was:</p><p>https://i0.wp.com/blog.zenika.com/wp-content/uploads/2021/10/cropped-monogramme-logo-zenika_36x36.png?fit=270%2c270&ssl=1</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://blog.zenika.com/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [div] tag [id] attribute </p><p></p><p>The user input found was:</p><p>action=subscribe</p><p></p><p>The user-controlled value was:</p><p>subscribe-text</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1511"
+					"sourceid": "1515"
 				}
 			]
 		}

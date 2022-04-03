@@ -125,6 +125,13 @@
               "finding"      : "offered"
           }
 ,         {
+              "id"           : "cipherorder_TLSv1_2",
+              "ip"           : "next.zenika.com/46.252.181.143",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
               "id"           : "cipher_order",
               "ip"           : "next.zenika.com/46.252.181.143",
               "port"         : "443",
@@ -144,13 +151,6 @@
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
-          }
-,         {
-              "id"           : "cipherorder_TLSv1_2",
-              "ip"           : "next.zenika.com/46.252.181.143",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "FS",
@@ -346,7 +346,7 @@
               "ip"           : "next.zenika.com/46.252.181.143",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (29)"
+              "finding"      : "expires < 30 days (22)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "next.zenika.com/46.252.181.143",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1648346073"
+              "finding"      : "1648951193"
           }
 ,         {
               "id"           : "HSTS",
@@ -1109,70 +1109,70 @@
           }
 ,         {
               "id"           : "service",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "HTTP"
           }
 ,         {
               "id"           : "pre_128cipher",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No 128 cipher limit bug"
           }
 ,         {
               "id"           : "SSLv2",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "SSLv3",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "TLS1",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "TLS1_1",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "TLS1_2",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered"
           }
 ,         {
               "id"           : "TLS1_3",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered with final"
           }
 ,         {
               "id"           : "ALPN",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "cipherlist_NULL",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cwe"          : "CWE-327",
@@ -1180,7 +1180,7 @@
           }
 ,         {
               "id"           : "cipherlist_aNULL",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cwe"          : "CWE-327",
@@ -1188,7 +1188,7 @@
           }
 ,         {
               "id"           : "cipherlist_EXPORT",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cwe"          : "CWE-327",
@@ -1196,7 +1196,7 @@
           }
 ,         {
               "id"           : "cipherlist_LOW",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cwe"          : "CWE-327",
@@ -1204,7 +1204,7 @@
           }
 ,         {
               "id"           : "cipherlist_3DES_IDEA",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-310",
@@ -1212,7 +1212,7 @@
           }
 ,         {
               "id"           : "cipherlist_AVERAGE",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "LOW",
               "cwe"          : "CWE-310",
@@ -1220,490 +1220,490 @@
           }
 ,         {
               "id"           : "cipherlist_GOOD",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered"
           }
 ,         {
               "id"           : "cipherlist_STRONG",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered"
           }
 ,         {
+              "id"           : "cipherorder_TLSv1_2",
+              "ip"           : "next.zenika.com/185.42.117.31",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
               "id"           : "cipher_order",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "server"
           }
 ,         {
               "id"           : "protocol_negotiated",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "Default protocol TLS1.3"
           }
 ,         {
               "id"           : "cipher_negotiated",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
           }
 ,         {
-              "id"           : "cipherorder_TLSv1_2",
-              "ip"           : "next.zenika.com/46.252.181.145",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
               "id"           : "FS",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered"
           }
 ,         {
               "id"           : "FS_ciphers",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-SHA256 DHE-RSA-AES128-SHA DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-SHA256 DHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA"
           }
 ,         {
               "id"           : "FS_ECDHE_curves",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "prime256v1 secp384r1 secp521r1"
           }
 ,         {
               "id"           : "TLS_extensions",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'encrypt-then-mac/#22' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "no -- no lifetime advertised"
           }
 ,         {
               "id"           : "SSL_sessionID_support",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "yes"
           }
 ,         {
               "id"           : "sessionresumption_ticket",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "random"
           }
 ,         {
               "id"           : "certificate_compression",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "none"
           }
 ,         {
               "id"           : "clientAuth",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "none"
           }
 ,         {
               "id"           : "cert_numbers",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "1"
           }
 ,         {
               "id"           : "cert_signatureAlgorithm",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "SHA256 with RSA"
           }
 ,         {
               "id"           : "cert_keySize",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "RSA 2048 bits (exponent is 65537)"
           }
 ,         {
               "id"           : "cert_keyUsage",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "Digital Signature, Key Encipherment"
           }
 ,         {
               "id"           : "cert_extKeyUsage",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLS Web Server Authentication, TLS Web Client Authentication"
           }
 ,         {
               "id"           : "cert_serialNumber",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "041446BEA1A5F9A6C034927140F7BD228E98"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "18"
           }
 ,         {
               "id"           : "cert_fingerprintSHA1",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "311F7E432EFDEA24703FA63D5E0C521AD5929776"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "BC2DC737ECF580E02988C73FEA50E31BFFFDBEE4BAEF1D0F38579D158F199D5D"
           }
 ,         {
               "id"           : "cert",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "-----BEGIN CERTIFICATE----- MIIFJTCCBA2gAwIBAgISBBRGvqGl+abANJJxQPe9Io6YMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjAxMjUyMzUwMzBaFw0yMjA0MjUyMzUwMjlaMBoxGDAWBgNVBAMT D25leHQuemVuaWthLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB AIo+8fsqQCzgmYJOuYzwaXlNZi42nLPPQNcfz7m+WiR17gqYW9m3m+xA/MGnXi5F 9KO9iKvqEa4T2hAAP3XV/TY+5Q0HxPfHrHD05qa3EE9H1hHr+4vwZ++o5kvzpgh5 7GwHs1pt6ohoQAtvRGoQ60SKpXTjR2ouh3D6om9EwHBtEKqgqhp4LMwp4ZHE5EqC ESO81agofMhQJ0Da2RStwvqW9bPBpHXJ0U6itTXTVB5DJzTecVn/DlJkleeE6wV/ IXMdNGTwhSTAdbbvdf8Ye+kRQf22NJO35bglHF5lo+jG42ZctGWgP7YWjozOORS/ BCwARqPjxOt6mYPIkmJMfvECAwEAAaOCAkswggJHMA4GA1UdDwEB/wQEAwIFoDAd BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNV HQ4EFgQUMFdirhq9kMtsVcFDH1JpSip4QcwwHwYDVR0jBBgwFoAUFC6zF7dYVsuu UAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8v cjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9y Zy8wGgYDVR0RBBMwEYIPbmV4dC56ZW5pa2EuY29tMEwGA1UdIARFMEMwCAYGZ4EM AQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0 c2VuY3J5cHQub3JnMIIBBQYKKwYBBAHWeQIEAgSB9gSB8wDxAHYAQcjKsd8iRkoQ xqE6CUKHXk4xixsD6+tLx2jwkGKWBvYAAAF+k9zV3AAABAMARzBFAiB26abfj0Bo FHNO4T2RcbU1NtgdmOeQer22m/Agit7rvgIhAIO0OlhNwvalBgD26plxSGJxvSkJ r1LhFLDlGM/ni4FhAHcAKXm+8J45OSHwVnOfY6V35b5XfZxgCvj5TV0mXCVdx4QA AAF+k9zXuAAABAMASDBGAiEAvzA5pROLNUnmLix6+RJ1m6JfbHgQ7xdFuz47ORDz 4ewCIQCtGUM4jz2+DqerumYdwzlYiz14b8/GEj/CzKLAoz8OHzANBgkqhkiG9w0B AQsFAAOCAQEAYFKj+OcXBydIFfIC1ZNU3578iptcMGQLzkks+1V6hwwZUefNZ2Zq ytqRcJAonuCGldIIqJOtUnqnkcoo0RoTGGEd6UbgLyFIiJw8cPZTDfemHgDf7sQa 1Y+FzXOlIDJ+gBhrDdjlyRvebMStaH0RIrNBw6ik7MDhsREt4jUe2isI7ay/E74b jkB++t1G+9JDztMzIOF1Gc+YHPGbaIHevwHf59cCKrk6EK6dIKuDeODxaY+d0HM1 UktFRHJI10Dk7ZUV0jcrcFMhLSkPxePj6EhBenWXD9CElQX43iy4iUAeb4aa2W4j d0LvWdiuCGD9zyTInAUbOE+eYy/0xdYlDw== -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "next.zenika.com"
           }
 ,         {
               "id"           : "cert_commonName_wo_SNI",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "request w/o SNI didn't succeed"
           }
 ,         {
               "id"           : "cert_subjectAltName",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "next.zenika.com"
           }
 ,         {
               "id"           : "cert_trust",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "Ok via SAN and CN (SNI mandatory)"
           }
 ,         {
               "id"           : "cert_chain_of_trust",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "passed."
           }
 ,         {
               "id"           : "cert_certificatePolicies_EV",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "no"
           }
 ,         {
               "id"           : "cert_expirationStatus",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (29)"
+              "finding"      : "expires < 30 days (22)"
           }
 ,         {
               "id"           : "cert_notBefore",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "2022-01-25 23:50"
           }
 ,         {
               "id"           : "cert_notAfter",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "MEDIUM",
               "finding"      : "2022-04-25 23:50"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "certificate has no extended life time according to browser forum"
           }
 ,         {
               "id"           : "cert_eTLS",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not present"
           }
 ,         {
               "id"           : "cert_crlDistributionPoints",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "--"
           }
 ,         {
               "id"           : "cert_ocspURL",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "http://r3.o.lencr.org"
           }
 ,         {
               "id"           : "OCSP_stapling",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "LOW",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "cert_mustStapleExtension",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "--"
           }
 ,         {
               "id"           : "DNS_CAArecord",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "LOW",
               "finding"      : "--"
           }
 ,         {
               "id"           : "certificate_transparency",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "yes (certificate extension)"
           }
 ,         {
               "id"           : "certs_countServer",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "3"
           }
 ,         {
               "id"           : "certs_list_ordering_problem",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "no"
           }
 ,         {
               "id"           : "cert_caIssuers",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "R3 (Let's Encrypt from US)"
           }
 ,         {
               "id"           : "intermediate_cert <#1>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "-----BEGIN CERTIFICATE----- MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG /kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4 avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2 yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+ HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX nLRbwHOoq7hHwg== -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "intermediate_cert_fingerprintSHA256 <#1>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "67ADD1166B020AE61B8F5FC96813C04C2AA589960796865572A3C7E737613DFD"
           }
 ,         {
               "id"           : "intermediate_cert_notBefore <#1>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "2020-09-04 00:00"
           }
 ,         {
               "id"           : "intermediate_cert_notAfter <#1>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "2025-09-15 16:00"
           }
 ,         {
               "id"           : "intermediate_cert_expiration <#1>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "ok > 40 days"
           }
 ,         {
               "id"           : "intermediate_cert_chain <#1>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "R3 <-- ISRG Root X1"
           }
 ,         {
               "id"           : "intermediate_cert <#2>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "-----BEGIN CERTIFICATE----- MIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/ MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT DkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC ov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL wYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D LtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK 4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5 bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y sR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ Xmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4 FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc SLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql PRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND TwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw SwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1 c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx +tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB ATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu b3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E U1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu MA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC 5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW 9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG WCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O he8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC Dfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5 -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "intermediate_cert_fingerprintSHA256 <#2>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "6D99FB265EB1C5B3744765FCBC648F3CD8E1BFFAFDC4C2F99B9D47CF7FF1C24F"
           }
 ,         {
               "id"           : "intermediate_cert_notBefore <#2>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "2021-01-20 19:14"
           }
 ,         {
               "id"           : "intermediate_cert_notAfter <#2>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "2024-09-30 18:14"
           }
 ,         {
               "id"           : "intermediate_cert_expiration <#2>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "ok > 40 days"
           }
 ,         {
               "id"           : "intermediate_cert_chain <#2>",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "ISRG Root X1 <-- DST Root CA X3"
           }
 ,         {
               "id"           : "intermediate_cert_badOCSP",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "intermediate certificate(s) is/are ok"
           }
 ,         {
               "id"           : "HTTP_status_code",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "200 OK ('/')"
           }
 ,         {
               "id"           : "HTTP_clock_skew",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1648346187"
+              "finding"      : "1648951313"
           }
 ,         {
               "id"           : "HSTS",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "LOW",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "HPKP",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No support for HTTP Public Key Pinning"
           }
 ,         {
               "id"           : "banner_server",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No Server banner line in header, interesting!"
           }
 ,         {
               "id"           : "banner_application",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No application banner found"
           }
 ,         {
               "id"           : "cookie_count",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "0 at '/'"
           }
 ,         {
               "id"           : "security_headers",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "MEDIUM",
               "finding"      : "--"
           }
 ,         {
               "id"           : "banner_reverseproxy",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
@@ -1711,7 +1711,7 @@
           }
 ,         {
               "id"           : "heartbleed",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2014-0160",
@@ -1720,7 +1720,7 @@
           }
 ,         {
               "id"           : "CCS",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2014-0224",
@@ -1729,7 +1729,7 @@
           }
 ,         {
               "id"           : "ticketbleed",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2016-9244",
@@ -1738,7 +1738,7 @@
           }
 ,         {
               "id"           : "ROBOT",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
@@ -1747,7 +1747,7 @@
           }
 ,         {
               "id"           : "secure_renego",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "WARN",
               "cwe"          : "CWE-310",
@@ -1755,7 +1755,7 @@
           }
 ,         {
               "id"           : "secure_client_renego",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2011-1473",
@@ -1764,7 +1764,7 @@
           }
 ,         {
               "id"           : "CRIME_TLS",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2012-4929",
@@ -1773,7 +1773,7 @@
           }
 ,         {
               "id"           : "BREACH",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2013-3587",
@@ -1782,7 +1782,7 @@
           }
 ,         {
               "id"           : "POODLE_SSL",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2014-3566",
@@ -1791,14 +1791,14 @@
           }
 ,         {
               "id"           : "fallback_SCSV",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "no protocol below TLS 1.2 offered"
           }
 ,         {
               "id"           : "SWEET32",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2016-2183 CVE-2016-6329",
@@ -1807,7 +1807,7 @@
           }
 ,         {
               "id"           : "FREAK",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2015-0204",
@@ -1816,7 +1816,7 @@
           }
 ,         {
               "id"           : "DROWN",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
@@ -1825,7 +1825,7 @@
           }
 ,         {
               "id"           : "DROWN_hint",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
@@ -1834,7 +1834,7 @@
           }
 ,         {
               "id"           : "LOGJAM-common_primes",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "cve"          : "CVE-2015-4000",
@@ -1843,7 +1843,7 @@
           }
 ,         {
               "id"           : "LOGJAM",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2015-4000",
@@ -1852,7 +1852,7 @@
           }
 ,         {
               "id"           : "BEAST",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2011-3389",
@@ -1861,7 +1861,7 @@
           }
 ,         {
               "id"           : "LUCKY13",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "LOW",
               "cve"          : "CVE-2013-0169",
@@ -1870,7 +1870,7 @@
           }
 ,         {
               "id"           : "winshock",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2014-6321",
@@ -1879,7 +1879,7 @@
           }
 ,         {
               "id"           : "RC4",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2013-2566 CVE-2015-2808",
@@ -1888,399 +1888,399 @@
           }
 ,         {
               "id"           : "clientsimulation-android_442",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_500",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_60",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_70",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
           }
 ,         {
               "id"           : "clientsimulation-android_81",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
           }
 ,         {
               "id"           : "clientsimulation-android_90",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-android_X",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-chrome_74_win10",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-chrome_79_win10",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-firefox_66_win81",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-firefox_71_win10",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-ie_6_xp",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_8_win7",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_8_xp",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win7",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win81",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_winphone81",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win10",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-edge_15_win10",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-edge_17_win10",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-opera_66_win10",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-safari_9_ios9",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_9_osx1011",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_10_osx1012",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_121_ios_122",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_130_osx_10146",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-apple_ats_9_ios9",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-java_6u45",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-java_7u25",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-java_8u161",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-java1102",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-java1201",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-openssl_102e",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-openssl_110l",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
           }
 ,         {
               "id"           : "clientsimulation-openssl_111d",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-thunderbird_68_3_1",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "rating_spec",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
           }
 ,         {
               "id"           : "rating_doc",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
           }
 ,         {
               "id"           : "protocol_support_score",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "100"
           }
 ,         {
               "id"           : "protocol_support_score_weighted",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "30"
           }
 ,         {
               "id"           : "key_exchange_score",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "90"
           }
 ,         {
               "id"           : "key_exchange_score_weighted",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "27"
           }
 ,         {
               "id"           : "cipher_strength_score",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "60"
           }
 ,         {
               "id"           : "cipher_strength_score_weighted",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "24"
           }
 ,         {
               "id"           : "final_score",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "81"
           }
 ,         {
               "id"           : "overall_grade",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "A"
           }
 ,         {
               "id"           : "grade_cap_reason_1",
-              "ip"           : "next.zenika.com/46.252.181.145",
+              "ip"           : "next.zenika.com/185.42.117.31",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "Grade capped to A. HSTS is not offered"
           }
 ,         {
               "id"           : "service",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "HTTP"
           }
 ,         {
               "id"           : "pre_128cipher",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No 128 cipher limit bug"
           }
 ,         {
               "id"           : "SSLv2",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "SSLv3",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "TLS1",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "TLS1_1",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "TLS1_2",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered"
           }
 ,         {
               "id"           : "TLS1_3",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered with final"
           }
 ,         {
               "id"           : "ALPN",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "cipherlist_NULL",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cwe"          : "CWE-327",
@@ -2288,7 +2288,7 @@
           }
 ,         {
               "id"           : "cipherlist_aNULL",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cwe"          : "CWE-327",
@@ -2296,7 +2296,7 @@
           }
 ,         {
               "id"           : "cipherlist_EXPORT",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cwe"          : "CWE-327",
@@ -2304,7 +2304,7 @@
           }
 ,         {
               "id"           : "cipherlist_LOW",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cwe"          : "CWE-327",
@@ -2312,7 +2312,7 @@
           }
 ,         {
               "id"           : "cipherlist_3DES_IDEA",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-310",
@@ -2320,7 +2320,7 @@
           }
 ,         {
               "id"           : "cipherlist_AVERAGE",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "LOW",
               "cwe"          : "CWE-310",
@@ -2328,490 +2328,490 @@
           }
 ,         {
               "id"           : "cipherlist_GOOD",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered"
           }
 ,         {
               "id"           : "cipherlist_STRONG",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered"
           }
 ,         {
+              "id"           : "cipherorder_TLSv1_2",
+              "ip"           : "next.zenika.com/46.252.181.145",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
+          }
+,         {
               "id"           : "cipher_order",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "server"
           }
 ,         {
               "id"           : "protocol_negotiated",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "Default protocol TLS1.3"
           }
 ,         {
               "id"           : "cipher_negotiated",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "TLS_AES_256_GCM_SHA384, 253 bit ECDH (X25519)"
           }
 ,         {
-              "id"           : "cipherorder_TLSv1_2",
-              "ip"           : "next.zenika.com/185.42.117.31",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
               "id"           : "FS",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "offered"
           }
 ,         {
               "id"           : "FS_ciphers",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-SHA256 DHE-RSA-AES128-SHA DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-SHA256 DHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA"
           }
 ,         {
               "id"           : "FS_ECDHE_curves",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "prime256v1 secp384r1 secp521r1"
           }
 ,         {
               "id"           : "TLS_extensions",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'encrypt-then-mac/#22' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "no -- no lifetime advertised"
           }
 ,         {
               "id"           : "SSL_sessionID_support",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "yes"
           }
 ,         {
               "id"           : "sessionresumption_ticket",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "random"
           }
 ,         {
               "id"           : "certificate_compression",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "none"
           }
 ,         {
               "id"           : "clientAuth",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "none"
           }
 ,         {
               "id"           : "cert_numbers",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "1"
           }
 ,         {
               "id"           : "cert_signatureAlgorithm",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "SHA256 with RSA"
           }
 ,         {
               "id"           : "cert_keySize",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "RSA 2048 bits (exponent is 65537)"
           }
 ,         {
               "id"           : "cert_keyUsage",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "Digital Signature, Key Encipherment"
           }
 ,         {
               "id"           : "cert_extKeyUsage",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLS Web Server Authentication, TLS Web Client Authentication"
           }
 ,         {
               "id"           : "cert_serialNumber",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "041446BEA1A5F9A6C034927140F7BD228E98"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "18"
           }
 ,         {
               "id"           : "cert_fingerprintSHA1",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "311F7E432EFDEA24703FA63D5E0C521AD5929776"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "BC2DC737ECF580E02988C73FEA50E31BFFFDBEE4BAEF1D0F38579D158F199D5D"
           }
 ,         {
               "id"           : "cert",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "-----BEGIN CERTIFICATE----- MIIFJTCCBA2gAwIBAgISBBRGvqGl+abANJJxQPe9Io6YMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjAxMjUyMzUwMzBaFw0yMjA0MjUyMzUwMjlaMBoxGDAWBgNVBAMT D25leHQuemVuaWthLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB AIo+8fsqQCzgmYJOuYzwaXlNZi42nLPPQNcfz7m+WiR17gqYW9m3m+xA/MGnXi5F 9KO9iKvqEa4T2hAAP3XV/TY+5Q0HxPfHrHD05qa3EE9H1hHr+4vwZ++o5kvzpgh5 7GwHs1pt6ohoQAtvRGoQ60SKpXTjR2ouh3D6om9EwHBtEKqgqhp4LMwp4ZHE5EqC ESO81agofMhQJ0Da2RStwvqW9bPBpHXJ0U6itTXTVB5DJzTecVn/DlJkleeE6wV/ IXMdNGTwhSTAdbbvdf8Ye+kRQf22NJO35bglHF5lo+jG42ZctGWgP7YWjozOORS/ BCwARqPjxOt6mYPIkmJMfvECAwEAAaOCAkswggJHMA4GA1UdDwEB/wQEAwIFoDAd BgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNV HQ4EFgQUMFdirhq9kMtsVcFDH1JpSip4QcwwHwYDVR0jBBgwFoAUFC6zF7dYVsuu UAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8v cjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9y Zy8wGgYDVR0RBBMwEYIPbmV4dC56ZW5pa2EuY29tMEwGA1UdIARFMEMwCAYGZ4EM AQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0 c2VuY3J5cHQub3JnMIIBBQYKKwYBBAHWeQIEAgSB9gSB8wDxAHYAQcjKsd8iRkoQ xqE6CUKHXk4xixsD6+tLx2jwkGKWBvYAAAF+k9zV3AAABAMARzBFAiB26abfj0Bo FHNO4T2RcbU1NtgdmOeQer22m/Agit7rvgIhAIO0OlhNwvalBgD26plxSGJxvSkJ r1LhFLDlGM/ni4FhAHcAKXm+8J45OSHwVnOfY6V35b5XfZxgCvj5TV0mXCVdx4QA AAF+k9zXuAAABAMASDBGAiEAvzA5pROLNUnmLix6+RJ1m6JfbHgQ7xdFuz47ORDz 4ewCIQCtGUM4jz2+DqerumYdwzlYiz14b8/GEj/CzKLAoz8OHzANBgkqhkiG9w0B AQsFAAOCAQEAYFKj+OcXBydIFfIC1ZNU3578iptcMGQLzkks+1V6hwwZUefNZ2Zq ytqRcJAonuCGldIIqJOtUnqnkcoo0RoTGGEd6UbgLyFIiJw8cPZTDfemHgDf7sQa 1Y+FzXOlIDJ+gBhrDdjlyRvebMStaH0RIrNBw6ik7MDhsREt4jUe2isI7ay/E74b jkB++t1G+9JDztMzIOF1Gc+YHPGbaIHevwHf59cCKrk6EK6dIKuDeODxaY+d0HM1 UktFRHJI10Dk7ZUV0jcrcFMhLSkPxePj6EhBenWXD9CElQX43iy4iUAeb4aa2W4j d0LvWdiuCGD9zyTInAUbOE+eYy/0xdYlDw== -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "next.zenika.com"
           }
 ,         {
               "id"           : "cert_commonName_wo_SNI",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "request w/o SNI didn't succeed"
           }
 ,         {
               "id"           : "cert_subjectAltName",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "next.zenika.com"
           }
 ,         {
               "id"           : "cert_trust",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "Ok via SAN and CN (SNI mandatory)"
           }
 ,         {
               "id"           : "cert_chain_of_trust",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "passed."
           }
 ,         {
               "id"           : "cert_certificatePolicies_EV",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "no"
           }
 ,         {
               "id"           : "cert_expirationStatus",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (29)"
+              "finding"      : "expires < 30 days (22)"
           }
 ,         {
               "id"           : "cert_notBefore",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "2022-01-25 23:50"
           }
 ,         {
               "id"           : "cert_notAfter",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "MEDIUM",
               "finding"      : "2022-04-25 23:50"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "certificate has no extended life time according to browser forum"
           }
 ,         {
               "id"           : "cert_eTLS",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not present"
           }
 ,         {
               "id"           : "cert_crlDistributionPoints",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "--"
           }
 ,         {
               "id"           : "cert_ocspURL",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "http://r3.o.lencr.org"
           }
 ,         {
               "id"           : "OCSP_stapling",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "LOW",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "cert_mustStapleExtension",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "--"
           }
 ,         {
               "id"           : "DNS_CAArecord",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "LOW",
               "finding"      : "--"
           }
 ,         {
               "id"           : "certificate_transparency",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "yes (certificate extension)"
           }
 ,         {
               "id"           : "certs_countServer",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "3"
           }
 ,         {
               "id"           : "certs_list_ordering_problem",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "no"
           }
 ,         {
               "id"           : "cert_caIssuers",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "R3 (Let's Encrypt from US)"
           }
 ,         {
               "id"           : "intermediate_cert <#1>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "-----BEGIN CERTIFICATE----- MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG /kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4 avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2 yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+ HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX nLRbwHOoq7hHwg== -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "intermediate_cert_fingerprintSHA256 <#1>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "67ADD1166B020AE61B8F5FC96813C04C2AA589960796865572A3C7E737613DFD"
           }
 ,         {
               "id"           : "intermediate_cert_notBefore <#1>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "2020-09-04 00:00"
           }
 ,         {
               "id"           : "intermediate_cert_notAfter <#1>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "2025-09-15 16:00"
           }
 ,         {
               "id"           : "intermediate_cert_expiration <#1>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "ok > 40 days"
           }
 ,         {
               "id"           : "intermediate_cert_chain <#1>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "R3 <-- ISRG Root X1"
           }
 ,         {
               "id"           : "intermediate_cert <#2>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "-----BEGIN CERTIFICATE----- MIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/ MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT DkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC ov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL wYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D LtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK 4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5 bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y sR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ Xmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4 FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc SLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql PRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND TwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw SwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1 c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx +tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB ATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu b3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E U1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu MA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC 5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW 9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG WCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O he8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC Dfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5 -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "intermediate_cert_fingerprintSHA256 <#2>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "6D99FB265EB1C5B3744765FCBC648F3CD8E1BFFAFDC4C2F99B9D47CF7FF1C24F"
           }
 ,         {
               "id"           : "intermediate_cert_notBefore <#2>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "2021-01-20 19:14"
           }
 ,         {
               "id"           : "intermediate_cert_notAfter <#2>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "2024-09-30 18:14"
           }
 ,         {
               "id"           : "intermediate_cert_expiration <#2>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "ok > 40 days"
           }
 ,         {
               "id"           : "intermediate_cert_chain <#2>",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "ISRG Root X1 <-- DST Root CA X3"
           }
 ,         {
               "id"           : "intermediate_cert_badOCSP",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "intermediate certificate(s) is/are ok"
           }
 ,         {
               "id"           : "HTTP_status_code",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "200 OK ('/')"
           }
 ,         {
               "id"           : "HTTP_clock_skew",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1648346302"
+              "finding"      : "1648951434"
           }
 ,         {
               "id"           : "HSTS",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "LOW",
               "finding"      : "not offered"
           }
 ,         {
               "id"           : "HPKP",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No support for HTTP Public Key Pinning"
           }
 ,         {
               "id"           : "banner_server",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No Server banner line in header, interesting!"
           }
 ,         {
               "id"           : "banner_application",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No application banner found"
           }
 ,         {
               "id"           : "cookie_count",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "0 at '/'"
           }
 ,         {
               "id"           : "security_headers",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "MEDIUM",
               "finding"      : "--"
           }
 ,         {
               "id"           : "banner_reverseproxy",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
@@ -2819,7 +2819,7 @@
           }
 ,         {
               "id"           : "heartbleed",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2014-0160",
@@ -2828,7 +2828,7 @@
           }
 ,         {
               "id"           : "CCS",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2014-0224",
@@ -2837,7 +2837,7 @@
           }
 ,         {
               "id"           : "ticketbleed",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2016-9244",
@@ -2846,7 +2846,7 @@
           }
 ,         {
               "id"           : "ROBOT",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
@@ -2855,7 +2855,7 @@
           }
 ,         {
               "id"           : "secure_renego",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "WARN",
               "cwe"          : "CWE-310",
@@ -2863,7 +2863,7 @@
           }
 ,         {
               "id"           : "secure_client_renego",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2011-1473",
@@ -2872,7 +2872,7 @@
           }
 ,         {
               "id"           : "CRIME_TLS",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2012-4929",
@@ -2881,7 +2881,7 @@
           }
 ,         {
               "id"           : "BREACH",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2013-3587",
@@ -2890,7 +2890,7 @@
           }
 ,         {
               "id"           : "POODLE_SSL",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2014-3566",
@@ -2899,14 +2899,14 @@
           }
 ,         {
               "id"           : "fallback_SCSV",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "no protocol below TLS 1.2 offered"
           }
 ,         {
               "id"           : "SWEET32",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2016-2183 CVE-2016-6329",
@@ -2915,7 +2915,7 @@
           }
 ,         {
               "id"           : "FREAK",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2015-0204",
@@ -2924,7 +2924,7 @@
           }
 ,         {
               "id"           : "DROWN",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
@@ -2933,7 +2933,7 @@
           }
 ,         {
               "id"           : "DROWN_hint",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
@@ -2942,7 +2942,7 @@
           }
 ,         {
               "id"           : "LOGJAM-common_primes",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "cve"          : "CVE-2015-4000",
@@ -2951,7 +2951,7 @@
           }
 ,         {
               "id"           : "LOGJAM",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2015-4000",
@@ -2960,7 +2960,7 @@
           }
 ,         {
               "id"           : "BEAST",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2011-3389",
@@ -2969,7 +2969,7 @@
           }
 ,         {
               "id"           : "LUCKY13",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "LOW",
               "cve"          : "CVE-2013-0169",
@@ -2978,7 +2978,7 @@
           }
 ,         {
               "id"           : "winshock",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2014-6321",
@@ -2987,7 +2987,7 @@
           }
 ,         {
               "id"           : "RC4",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "cve"          : "CVE-2013-2566 CVE-2015-2808",
@@ -2996,338 +2996,338 @@
           }
 ,         {
               "id"           : "clientsimulation-android_442",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_500",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_60",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-android_70",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
           }
 ,         {
               "id"           : "clientsimulation-android_81",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
           }
 ,         {
               "id"           : "clientsimulation-android_90",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-android_X",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-chrome_74_win10",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-chrome_79_win10",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-firefox_66_win81",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-firefox_71_win10",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-ie_6_xp",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_8_win7",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_8_xp",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win7",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win81",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_winphone81",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-ie_11_win10",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-edge_15_win10",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-edge_17_win10",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-opera_66_win10",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-safari_9_ios9",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_9_osx1011",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_10_osx1012",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_121_ios_122",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-safari_130_osx_10146",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_CHACHA20_POLY1305_SHA256"
           }
 ,         {
               "id"           : "clientsimulation-apple_ats_9_ios9",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-java_6u45",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-java_7u25",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-java_8u161",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-java1102",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-java1201",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-openssl_102e",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-openssl_110l",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
           }
 ,         {
               "id"           : "clientsimulation-openssl_111d",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-thunderbird_68_3_1",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "rating_spec",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
           }
 ,         {
               "id"           : "rating_doc",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
           }
 ,         {
               "id"           : "protocol_support_score",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "100"
           }
 ,         {
               "id"           : "protocol_support_score_weighted",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "30"
           }
 ,         {
               "id"           : "key_exchange_score",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "90"
           }
 ,         {
               "id"           : "key_exchange_score_weighted",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "27"
           }
 ,         {
               "id"           : "cipher_strength_score",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "60"
           }
 ,         {
               "id"           : "cipher_strength_score_weighted",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "24"
           }
 ,         {
               "id"           : "final_score",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "81"
           }
 ,         {
               "id"           : "overall_grade",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "A"
           }
 ,         {
               "id"           : "grade_cap_reason_1",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "Grade capped to A. HSTS is not offered"
           }
 ,         {
               "id"           : "scanTime",
-              "ip"           : "next.zenika.com/185.42.117.31",
+              "ip"           : "next.zenika.com/46.252.181.145",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "346"
+              "finding"      : "366"
           }
 ]

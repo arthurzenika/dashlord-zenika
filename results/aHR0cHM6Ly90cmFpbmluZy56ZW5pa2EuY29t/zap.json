@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 3 Apr 2022 01:32:24",
+	"@generated": "Sun, 10 Apr 2022 01:30:36",
 	"site":[ 
 		{
 			"@name": "https://training.zenika.com",
@@ -674,13 +674,6 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "10086961"
-						},
-						{
-							"uri": "https://training.zenika.com/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
 							"evidence": "10193324"
 						},
 						{
@@ -724,13 +717,6 @@
 							"param": "",
 							"attack": "",
 							"evidence": "10581807"
-						},
-						{
-							"uri": "https://training.zenika.com/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "10608577"
 						},
 						{
 							"uri": "https://training.zenika.com/sitemap.xml",
@@ -850,11 +836,32 @@
 							"param": "",
 							"attack": "",
 							"evidence": "10878782"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10926550"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10953979"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10953981"
 						}
 					],
-					"count": "26",
+					"count": "27",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>10086961, which evaluates to: 1970-04-27 17:56:01</p>",
+					"otherinfo": "<p>10193324, which evaluates to: 1970-04-28 23:28:44</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -999,35 +1006,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1a6df0-WzVFkwMwON9o5sqElyjNIGpeC4A"
+							"evidence": "1a824d-fozZQLiJtYGOyh5BWKYuj5zu6RY"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/exclusives",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1a6c9e-p41TMOKSVp71HsWxg2hbudpNd/4"
+							"evidence": "1a811d-fcX9e0378aGnMzfegAdchPl1XEc"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/next-sessions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1ec53e-Za0xBKXHZFx83Ujfp4VD1Tj8cKY"
+							"evidence": "1ebc77-5gQAdEjQyEGBoMmb9FzqYa6T1Qc"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1cbf07-1nY/yaVf6cZLioJZe0LiRnV2rlM"
+							"evidence": "1cd38e-zH633ttR+kyKF8GyZoDBa5ryLUw"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/practical-informations",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1018a8-dL5ZCLoEQJmA9SHUIONDXWxuEQU"
+							"evidence": "1018b6-ArSDmEkCBcZIZD+Z55kc3Gj7oGA"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/subscription",
@@ -1041,21 +1048,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1a6b31-WNCzlat5y+9E1rlrQdlryYQGeR0"
+							"evidence": "1a7fb4-EGfHi4N/yXWa973wymYYfuQUQDg"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/universe/agilite",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1d6c1e-LOnjaFaKzPDUc3ElFFzddfZQ9u8"
+							"evidence": "1d80d8-XQTfAIOCJPttn2AAloxiFILhwjY"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/workshops",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1a6b44-XwI6rQz0zSENIBOiTsPHM53L01w"
+							"evidence": "1a7fc5-nbD8cstmpWCdoYG9sTPCGLzbsec"
 						}
 					],
 					"count": "12",
@@ -1303,7 +1310,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -1401,7 +1408,7 @@
 						}
 					],
 					"count": "12",
-					"solution": "<p>Whenever possible ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
+					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
 					"cweid": "525",

@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 3 Apr 2022 01:23:22",
+	"@generated": "Sun, 10 Apr 2022 01:24:00",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -39,7 +39,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "78"
+					"sourceid": "82"
 				},
 				{
 					"pluginid": "90022",
@@ -65,7 +65,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "64"
+					"sourceid": "67"
 				},
 				{
 					"pluginid": "10038",
@@ -202,7 +202,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/grenoble",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -605,7 +605,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/framework-c93ed74a065331c4bd75.js",
+							"uri": "https://zenika.com/_next/static/chunks/main-fc209ece1bfea13a339f.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -939,7 +939,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "116"
+					"sourceid": "124"
 				},
 				{
 					"pluginid": "10027",
@@ -1165,7 +1165,7 @@
 							"evidence": "s-maxage=10, stale-while-revalidate"
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/grenoble",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1201,7 +1201,7 @@
 						}
 					],
 					"count": "10",
-					"solution": "<p>Whenever possible ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
+					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
 					"cweid": "525",
@@ -1226,7 +1226,7 @@
 							"evidence": "s-maxage=10"
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/framework-c93ed74a065331c4bd75.js",
+							"uri": "https://zenika.com/_next/static/chunks/main-fc209ece1bfea13a339f.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1314,7 +1314,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "55"
+					"sourceid": "59"
 				}
 			]
 		}

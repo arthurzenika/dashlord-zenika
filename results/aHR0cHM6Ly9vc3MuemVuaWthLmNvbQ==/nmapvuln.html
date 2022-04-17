@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.91</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln oss.zenika.com</pre>
-<p class="lead">Sun Apr 10 01:51:42 2022 – Sun Apr 10 01:53:24 2022<br>1 hosts scanned.
+<p class="lead">Sun Apr 17 01:59:06 2022 – Sun Apr 17 02:00:48 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -122,32 +122,38 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, Help, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe: 
+  FourOhFourRequest: 
+    HTTP/1.0 404 Not Found
+    Cache-Control: private, max-age=0
+    Content-Type: text/plain; charset=utf-8
+    Server: Netlify
+    X-Nf-Request-Id: 01G0TKXYXF7TRD80V8042SD5FS
+    Date: Sun, 17 Apr 2022 01:59:21 GMT
+    Content-Length: 50
+    Found - Request ID: 01G0TKXYXF7TRD80V8042SD5FS
+  GenericLines, Help, RPCCheck, RTSPRequest, SSLSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
-  FourOhFourRequest: 
-    HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 10 Apr 2022 01:51:57 GMT
-    Server: Netlify
-    X-Nf-Request-Id: 01G08JQCCD5QF6KG7BF5ADTGD8
   GetRequest: 
     HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 10 Apr 2022 01:51:52 GMT
+    Cache-Control: private, max-age=0
+    Content-Type: text/plain; charset=utf-8
     Server: Netlify
-    X-Nf-Request-Id: 01G08JQ7F5G4GHGWW6K5PMMCY3
+    X-Nf-Request-Id: 01G0TKXSZJ8C9P4H7EQ7VF8X0C
+    Date: Sun, 17 Apr 2022 01:59:16 GMT
+    Content-Length: 50
+    Found - Request ID: 01G0TKXSZJ8C9P4H7EQ7VF8X0C
   HTTPOptions: 
     HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 10 Apr 2022 01:51:52 GMT
+    Cache-Control: private, max-age=0
+    Content-Type: text/plain; charset=utf-8
     Server: Netlify
-    X-Nf-Request-Id: 01G08JQ7FFN9KAKF8F7XGYKVXG</pre>
+    X-Nf-Request-Id: 01G0TKXT01NTJCRB3T6MCWCSWE
+    Date: Sun, 17 Apr 2022 01:59:16 GMT
+    Content-Length: 50
+    Found - Request ID: 01G0TKXT01NTJCRB3T6MCWCSWE</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
@@ -165,30 +171,36 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 10 Apr 2022 01:51:57 GMT
+    Cache-Control: private, max-age=0
+    Content-Type: text/plain; charset=utf-8
     Server: Netlify
-    X-Nf-Request-Id: 01G08JQCDRA9WBH84QJ5VNZXNG
-  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+    X-Nf-Request-Id: 01G0TKXYZS9916ZH70W37W54CT
+    Date: Sun, 17 Apr 2022 01:59:21 GMT
+    Content-Length: 50
+    Found - Request ID: 01G0TKXYZS9916ZH70W37W54CT
+  GenericLines, Help, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
   GetRequest: 
     HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 10 Apr 2022 01:51:57 GMT
+    Cache-Control: private, max-age=0
+    Content-Type: text/plain; charset=utf-8
     Server: Netlify
-    X-Nf-Request-Id: 01G08JQCCWG7YVGRDSEBD7EF0C
+    X-Nf-Request-Id: 01G0TKXYY41MRRAFPA6YZYJ6WJ
+    Date: Sun, 17 Apr 2022 01:59:21 GMT
+    Content-Length: 50
+    Found - Request ID: 01G0TKXYY41MRRAFPA6YZYJ6WJ
   HTTPOptions: 
     HTTP/1.0 404 Not Found
-    Age: 0
-    Content-Length: 0
-    Date: Sun, 10 Apr 2022 01:51:57 GMT
+    Cache-Control: private, max-age=0
+    Content-Type: text/plain; charset=utf-8
     Server: Netlify
-    X-Nf-Request-Id: 01G08JQCD9ZYEDD6ST3W35X2WZ</pre>
+    X-Nf-Request-Id: 01G0TKXYYZDQCJ32C6R4AWGJ25
+    Date: Sun, 17 Apr 2022 01:59:21 GMT
+    Content-Length: 50
+    Found - Request ID: 01G0TKXYYZDQCJ32C6R4AWGJ25</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>

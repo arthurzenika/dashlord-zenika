@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 10 Apr 2022 02:04:37",
+	"@generated": "Sun, 17 Apr 2022 02:05:51",
 	"site":[ 
 		{
 			"@name": "https://medium.zenika.com",
@@ -171,7 +171,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.6gGzuV4xsV_tkpR-3GZaNg.12.js\" async></script>"
+							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.3RZotW9IUMYkKY39PkqlMg.12.js\" async></script>"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -254,9 +254,9 @@
 						{
 							"uri": "https://medium.zenika.com",
 							"method": "GET",
-							"param": "https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.6gGzuV4xsV_tkpR-3GZaNg.12.js",
+							"param": "https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.3RZotW9IUMYkKY39PkqlMg.12.js",
 							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.6gGzuV4xsV_tkpR-3GZaNg.12.js\" async></script>"
+							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.3RZotW9IUMYkKY39PkqlMg.12.js\" async></script>"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -372,6 +372,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://medium.zenika.com/_/api/posts/*/responses",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://medium.zenika.com/_/api/users/*/meta",
 							"method": "GET",
 							"param": "",
@@ -380,13 +387,6 @@
 						},
 						{
 							"uri": "https://medium.zenika.com/_/api/users/*/profile/stream",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://medium.zenika.com/m",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -444,14 +444,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220407"
-						},
-						{
-							"uri": "https://medium.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "20220408"
+							"evidence": "20220415"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -479,19 +472,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220407"
+							"evidence": "20220415"
 						},
 						{
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220407"
+							"evidence": "20220415"
 						}
 					],
-					"count": "7",
+					"count": "6",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>20220407, which evaluates to: 1970-08-23 00:46:47</p>",
+					"otherinfo": "<p>20220415, which evaluates to: 1970-08-23 00:46:55</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -521,7 +514,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10094",
@@ -538,19 +531,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "vvKgECdM3VSXYH9VLk1OU9Yrsa364mve9usFIDkzFnZOwFphSf59BFZxEhDsTK3a"
+							"evidence": "vvKgECdM3VSXYH9VLk1OU0UdnNEbmRAXeSUDDs8Ngl63zOlpuoLGTaYz32f7o+X3"
 						},
 						{
 							"uri": "https://medium.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "X7WMYAEng5UipRmW1W3zvSlnidtnwkNS2UXkUCL/mK+k7eDeHghoDNegoeBjSxzGtQxPRFHVQQ8="
+							"evidence": "6vUbc78orI10VRzHtYShXksGF1nIDX0hHkoTx5ChKYtBEP3MHE/J07WsuCsLhljoFW9klrsbikQ="
 						}
 					],
 					"count": "2",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS\uFFFD+\uFFFD\uFFFD\uFFFD\uFFFDk\uFFFD\uFFFD\uFFFD\\x0005 93\\x0016vN\uFFFDZaI\uFFFD}\\x0004Vq\\x0012\\x0010\uFFFDL\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNSE\\x001d\uFFFD\uFFFD\\x001b\uFFFD\\x0010\\x0017y%\\x0003\\x000e\uFFFD\r\uFFFD^\uFFFD\uFFFD\uFFFDi\uFFFD\uFFFD\uFFFDM\uFFFD3\uFFFDg\uFFFD\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -686,7 +679,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",

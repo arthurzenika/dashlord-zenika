@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 10 Apr 2022 02:58:54",
+	"@generated": "Sun, 17 Apr 2022 02:59:34",
 	"site":[ 
 		{
 			"@name": "https://blog.zenika.com",
@@ -47,49 +47,35 @@
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com\" method=\"get\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"#\" method=\"post\" accept-charset=\"utf-8\" id=\"subscribe-blog-blog_subscription-4\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"commentform\" class=\"comment-form\">"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"jp-carousel-comment-form\">"
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -245,7 +231,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1892"
+					"sourceid": "1862"
 				},
 				{
 					"pluginid": "10020",
@@ -402,7 +388,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2643"
+					"sourceid": "2590"
 				},
 				{
 					"pluginid": "10099",
@@ -435,7 +421,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1370"
+					"sourceid": "1365"
 				},
 				{
 					"pluginid": "90003",
@@ -501,21 +487,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202214'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202215'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress' async defer id='hs-script-loader'></script>"
+							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.9.22' async defer id='hs-script-loader'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202215.js' defer></script>"
 						}
 					],
 					"count": "10",
@@ -550,7 +536,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1548"
+					"sourceid": "1540"
 				},
 				{
 					"pluginid": "10054",
@@ -619,65 +605,65 @@
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress",
+							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=8.9.22",
 							"attack": "",
-							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress' async defer id='hs-script-loader'></script>"
+							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.9.22' async defer id='hs-script-loader'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202214",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202215",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202214'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202215'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202214.js",
+							"param": "https://stats.wp.com/e-202215.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202215.js' defer></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress",
+							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=8.9.22",
 							"attack": "",
-							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress' async defer id='hs-script-loader'></script>"
+							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.9.22' async defer id='hs-script-loader'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202214",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202215",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202214'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202215'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202214.js",
+							"param": "https://stats.wp.com/e-202215.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202215.js' defer></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
 							"method": "GET",
-							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress",
+							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=8.9.22",
 							"attack": "",
-							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress' async defer id='hs-script-loader'></script>"
+							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.9.22' async defer id='hs-script-loader'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202214",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202215",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202214'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202215'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202214.js",
+							"param": "https://stats.wp.com/e-202215.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202214.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202215.js' defer></script>"
 						}
 					],
 					"count": "9",
@@ -719,7 +705,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1791"
+					"sourceid": "1856"
 				},
 				{
 					"pluginid": "10063",
@@ -855,7 +841,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1706"
+					"sourceid": "2117"
 				},
 				{
 					"pluginid": "10096",
@@ -867,6 +853,13 @@
 					"riskdesc": "Low (Low)",
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
+						{
+							"uri": "https://blog.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1580826512"
+						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
@@ -886,6 +879,13 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
+							"evidence": "1649784054"
+						},
+						{
+							"uri": "https://blog.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
 							"evidence": "169840740"
 						},
 						{
@@ -894,39 +894,11 @@
 							"param": "",
 							"attack": "",
 							"evidence": "19927536"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1498347715"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1646919531"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "169840740"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/04/06/comment-un-hacker-peut-pirater-votre-drone/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "19927536"
 						}
 					],
-					"count": "8",
+					"count": "6",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1638896208, which evaluates to: 2021-12-07 16:56:48</p>",
+					"otherinfo": "<p>1580826512, which evaluates to: 2020-02-04 14:28:32</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -1183,7 +1155,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1527"
+					"sourceid": "1517"
 				},
 				{
 					"pluginid": "10024",
@@ -1238,6 +1210,13 @@
 							"evidence": "foo-bar@example.com"
 						},
 						{
+							"uri": "https://blog.zenika.com/category/themes/innovation/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
+							"method": "GET",
+							"param": "email",
+							"attack": "",
+							"evidence": "foo-bar@example.com"
+						},
+						{
 							"uri": "https://blog.zenika.com/category/themes/securite/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
@@ -1245,13 +1224,13 @@
 							"evidence": "foo-bar@example.com"
 						}
 					],
-					"count": "7",
+					"count": "8",
 					"solution": "<p>Do not pass sensitive information in URIs.</p>",
 					"otherinfo": "<p>The URL contains email address(es).</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1893"
+					"sourceid": "1863"
 				},
 				{
 					"pluginid": "10027",
@@ -1264,7 +1243,42 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
 					"instances":[ 
 						{
+							"uri": "https://blog.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
+							"uri": "https://blog.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/03/07/comment-donner-plus-de-visibilite-aux-femmes-en-entreprise-le-parcours-women-empowerment/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
 							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/03/18/kubernetes-quest-ce-qui-va-remplacer-les-podsecuritypolicies/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1285,41 +1299,6 @@
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://blog.zenika.com/author/gmembre2/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
-							"uri": "https://blog.zenika.com/author/pyaillet/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
-							"uri": "https://blog.zenika.com/category/themes/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
-							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
-							"uri": "https://blog.zenika.com/category/themes/architecture/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
 							"uri": "https://blog.zenika.com/category/themes/cloud/",
 							"method": "GET",
 							"param": "",
@@ -1334,13 +1313,6 @@
 							"evidence": "admin"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/innovation/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
 							"uri": "https://blog.zenika.com/category/themes/securite/",
 							"method": "GET",
 							"param": "",
@@ -1348,13 +1320,13 @@
 							"evidence": "admin"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script id='jetpack-carousel-js-extra'></p><p>var jetpackSwiperLibraryPath = {\"url\":\"https:\\/\\/blog.zenika.com\\/wp-content\\/plugins\\/j\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bADMIN\\b and was detected in the element starting with: \"<script id='media-video-jwt-bridge-js-extra'></p><p>var videopressAjax = {\"ajaxUrl\":\"https:\\/\\/blog.zenika.com\\/wp-admin\\/admin-ajax.p\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "160"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -4042,6 +4014,13 @@
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "POST",
+							"param": "source",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/",
+							"method": "POST",
 							"param": "sub-type",
 							"attack": "",
 							"evidence": ""
@@ -4180,13 +4159,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "358",
+					"count": "359",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
 					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>reauth=1</p><p></p><p>The user-controlled value was:</p><p>https://i0.wp.com/blog.zenika.com/wp-content/uploads/2021/10/cropped-monogramme-logo-zenika_36x36.png?fit=270%2c270&ssl=1</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1548"
+					"sourceid": "1540"
 				}
 			]
 		}

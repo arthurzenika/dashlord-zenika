@@ -1,8 +1,8 @@
-# Nmap 7.91 scan initiated Sun Apr 17 02:17:07 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln medium.zenika.com
-Nmap scan report for medium.zenika.com (52.0.16.118)
-Host is up (0.0064s latency).
-Other addresses for medium.zenika.com (not scanned): 52.4.240.221 52.5.181.79 52.1.119.170 52.6.3.192 52.1.147.205 52.4.38.70 52.4.175.111 52.6.46.142 52.1.173.203 52.4.145.119 52.4.225.124
-rDNS record for 52.0.16.118: ec2-52-0-16-118.compute-1.amazonaws.com
+# Nmap 7.91 scan initiated Sun Apr 24 02:20:56 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln medium.zenika.com
+Nmap scan report for medium.zenika.com (52.5.181.79)
+Host is up (0.038s latency).
+Other addresses for medium.zenika.com (not scanned): 52.0.16.118 52.1.119.170 52.4.175.111 52.4.240.221 52.1.173.203 52.6.3.192 52.6.46.142 52.1.147.205 52.4.145.119 52.4.225.124 52.4.38.70
+rDNS record for 52.5.181.79: ec2-52-5-181-79.compute-1.amazonaws.com
 Not shown: 998 filtered ports
 PORT    STATE SERVICE  VERSION
 80/tcp  open  http     OpenResty web app server
@@ -11,4 +11,4 @@ PORT    STATE SERVICE  VERSION
 |_http-server-header: openresty
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Apr 17 02:17:25 2022 -- 1 IP address (1 host up) scanned in 17.22 seconds
+# Nmap done at Sun Apr 24 02:21:14 2022 -- 1 IP address (1 host up) scanned in 17.75 seconds

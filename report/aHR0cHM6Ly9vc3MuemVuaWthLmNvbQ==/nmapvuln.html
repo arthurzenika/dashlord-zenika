@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.91</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln oss.zenika.com</pre>
-<p class="lead">Sun Apr 24 01:55:43 2022 – Sun Apr 24 01:57:28 2022<br>1 hosts scanned.
+<p class="lead">Sun May  1 02:39:17 2022 – Sun May  1 02:40:58 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>52.73.87.228</td>
+<td>52.203.36.44</td>
 <td>oss.zenika.com</td>
 <td>2</td>
 <td>0</td>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#52-73-87-228"><h3 class="panel-title">52.73.87.228 - oss.zenika.com</h3></div>
-<div class="panel-body collapse in" id="52-73-87-228">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#52-203-36-44"><h3 class="panel-title">52.203.36.44 - oss.zenika.com</h3></div>
+<div class="panel-body collapse in" id="52-203-36-44">
 <h4>Hostnames</h4>
 <ul>
 <li>oss.zenika.com (user)</li>
-<li>ec2-52-73-87-228.compute-1.amazonaws.com (PTR)</li>
+<li>ec2-52-203-36-44.compute-1.amazonaws.com (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -122,38 +122,29 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.0 404 Not Found
-    Cache-Control: private, max-age=0
-    Content-Type: text/plain; charset=utf-8
-    Server: Netlify
-    X-Nf-Request-Id: 01G1CMGT1KEGARGA1Q81WY9F3W
-    Date: Sun, 24 Apr 2022 01:55:59 GMT
-    Content-Length: 50
-    Found - Request ID: 01G1CMGT1KEGARGA1Q81WY9F3W
-  GenericLines, Help, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, Help, RPCCheck, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Server: Netlify
+    X-Nf-Request-Id: 01G1YQSK3PAFWTQDH4XCJPNKXP
+    Date: Sun, 01 May 2022 02:39:32 GMT
+    Content-Length: 0
   GetRequest: 
-    HTTP/1.0 404 Not Found
-    Cache-Control: private, max-age=0
-    Content-Type: text/plain; charset=utf-8
+    HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G1CMGMWX6GWN8TTCPT6MT6YD
-    Date: Sun, 24 Apr 2022 01:55:53 GMT
-    Content-Length: 50
-    Found - Request ID: 01G1CMGMWX6GWN8TTCPT6MT6YD
+    X-Nf-Request-Id: 01G1YQSE6V17CTCDCKNQ04AAA6
+    Date: Sun, 01 May 2022 02:39:27 GMT
+    Content-Length: 0
   HTTPOptions: 
-    HTTP/1.0 404 Not Found
-    Cache-Control: private, max-age=0
-    Content-Type: text/plain; charset=utf-8
+    HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G1CMGMZDRDQAKCF5QCA3TQNY
-    Date: Sun, 24 Apr 2022 01:55:53 GMT
-    Content-Length: 50
-    Found - Request ID: 01G1CMGMZDRDQAKCF5QCA3TQNY</pre>
+    X-Nf-Request-Id: 01G1YQSE701VFQRS6V3GQGS55C
+    Date: Sun, 01 May 2022 02:39:27 GMT
+    Content-Length: 0</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
@@ -170,37 +161,28 @@
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
-    HTTP/1.0 404 Not Found
-    Cache-Control: private, max-age=0
-    Content-Type: text/plain; charset=utf-8
+    HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G1CMGTBJXVNWS192PFTYGB5R
-    Date: Sun, 24 Apr 2022 01:55:59 GMT
-    Content-Length: 50
-    Found - Request ID: 01G1CMGTBJXVNWS192PFTYGB5R
-  GenericLines, Help, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+    X-Nf-Request-Id: 01G1YQSK452TH7J0HF4TKEJKVR
+    Date: Sun, 01 May 2022 02:39:32 GMT
+    Content-Length: 0
+  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
   GetRequest: 
-    HTTP/1.0 404 Not Found
-    Cache-Control: private, max-age=0
-    Content-Type: text/plain; charset=utf-8
+    HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G1CMGT1RXV5CWEQ6EN12CVHK
-    Date: Sun, 24 Apr 2022 01:55:59 GMT
-    Content-Length: 50
-    Found - Request ID: 01G1CMGT1RXV5CWEQ6EN12CVHK
+    X-Nf-Request-Id: 01G1YQSK3JTQAYDKZ41MBQBZ24
+    Date: Sun, 01 May 2022 02:39:32 GMT
+    Content-Length: 0
   HTTPOptions: 
-    HTTP/1.0 404 Not Found
-    Cache-Control: private, max-age=0
-    Content-Type: text/plain; charset=utf-8
+    HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G1CMGT6G1EV2K0NNW56BQ50E
-    Date: Sun, 24 Apr 2022 01:55:59 GMT
-    Content-Length: 50
-    Found - Request ID: 01G1CMGT6G1EV2K0NNW56BQ50E</pre>
+    X-Nf-Request-Id: 01G1YQSK3W71WDBZEY94FNJ4XG
+    Date: Sun, 01 May 2022 02:39:32 GMT
+    Content-Length: 0</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
@@ -231,7 +213,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>52.73.87.228 - oss.zenika.com</td>
+<td>52.203.36.44 - oss.zenika.com</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -241,7 +223,7 @@
 <td></td>
 </tr>
 <tr>
-<td>52.73.87.228 - oss.zenika.com</td>
+<td>52.203.36.44 - oss.zenika.com</td>
 <td>443</td>
 <td>tcp</td>
 <td>https</td>

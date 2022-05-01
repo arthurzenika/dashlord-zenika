@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 24 Apr 2022 02:09:43",
+	"@generated": "Sun, 1 May 2022 02:42:01",
 	"site":[ 
 		{
 			"@name": "https://medium.zenika.com",
@@ -171,7 +171,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.tvVuCc8Sk26ygzpMjycWKw.12.js\" async></script>"
+							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.y5VDhKylI4LkFX1uAQ6Wsg.12.js\" async></script>"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -254,9 +254,9 @@
 						{
 							"uri": "https://medium.zenika.com",
 							"method": "GET",
-							"param": "https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.tvVuCc8Sk26ygzpMjycWKw.12.js",
+							"param": "https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.y5VDhKylI4LkFX1uAQ6Wsg.12.js",
 							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.tvVuCc8Sk26ygzpMjycWKw.12.js\" async></script>"
+							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.y5VDhKylI4LkFX1uAQ6Wsg.12.js\" async></script>"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -444,7 +444,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220422"
+							"evidence": "20220427"
+						},
+						{
+							"uri": "https://medium.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "20220429"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -472,19 +479,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220422"
+							"evidence": "20220427"
 						},
 						{
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220422"
+							"evidence": "20220427"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>20220422, which evaluates to: 1970-08-23 00:47:02</p>",
+					"otherinfo": "<p>20220427, which evaluates to: 1970-08-23 00:47:07</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -531,19 +538,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "vvKgECdM3VSXYH9VLk1OU8MYi8yxmOMtkXZSVYuMx+9u+dYFUVpnP84fPXmzXwy7"
+							"evidence": "vvKgECdM3VSXYH9VLk1OUwdJjztE91jjow4rhzkrZN6QGwCUjP52eHtPRoqlilFC"
 						},
 						{
 							"uri": "https://medium.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "SBjyQzISfRybMqLpmG+U+ffAXuEQIROiNg6BJ0Z4I7oINOuWi0BD/LyDI9AZmUfxvT6P2a1X988="
+							"evidence": "X28PdTDqYojs53tET4FoQtDMkADgG0+v4gOZqUv51xBrZ3/xLakhH6niRZvzNsu+SSdLmlwBuH0="
 						}
 					],
 					"count": "2",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS\uFFFD\\x0018\uFFFD\u0331\uFFFD\uFFFD-\uFFFDvRU\uFFFD\uFFFD\uFFFD\uFFFDn\uFFFD\uFFFD\\x0005QZg?\uFFFD\\x001f=y\uFFFD_\\x000c\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS\\x0007I\uFFFD;D\uFFFDX\uFFFD\\x000e+\uFFFD9+d\u0790\\x001b\\x0000\uFFFD\uFFFD\uFFFDvx{OF\uFFFD\uFFFD\uFFFDQB</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -740,7 +747,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "32"
+					"sourceid": "34"
 				}
 			]
 		}

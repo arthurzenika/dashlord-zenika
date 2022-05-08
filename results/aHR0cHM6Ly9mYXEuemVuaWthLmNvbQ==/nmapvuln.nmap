@@ -1,7 +1,7 @@
-# Nmap 7.91 scan initiated Sun May  1 03:16:08 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln faq.zenika.com
-Nmap scan report for faq.zenika.com (185.42.117.109)
-Host is up (0.083s latency).
-Other addresses for faq.zenika.com (not scanned): 185.42.117.108 46.252.181.103 46.252.181.104
+# Nmap 7.91 scan initiated Sun May  8 02:41:45 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln faq.zenika.com
+Nmap scan report for faq.zenika.com (185.42.117.108)
+Host is up (0.11s latency).
+Other addresses for faq.zenika.com (not scanned): 46.252.181.104 185.42.117.109 46.252.181.103
 Not shown: 986 closed ports
 PORT     STATE    SERVICE    VERSION
 80/tcp   open     http
@@ -18,30 +18,7 @@ PORT     STATE    SERVICE    VERSION
 |_    Connection: close
 1080/tcp filtered socks
 1081/tcp filtered pvuniwien
-3000/tcp open     ppp?
-| fingerprint-strings: 
-|   Kerberos: 
-|     )KWo`K
-|     W\xb50
-|     Ck=v
-|     >Vko
-|     vL{2B
-|   SMBProgNeg: 
-|     f-tsN[c
-|     \xb1
-|     PaP(
-|     i$^t
-|     hUhO
-|     Q@ZE
-|     \x03
-|     1_+F?
-|     p.SY
-|     06ENGx
-|     yRz$
-|   TLSSessionReq: 
-|     9Y]p"
-|     "#v4
-|_    @@V6$
+3000/tcp open     landesk-rc LANDesk remote management
 5001/tcp open     tcpwrapped
 5002/tcp open     ssh        Apache Mina sshd 1.7.0 (protocol 2.0)
 5060/tcp open     tcpwrapped
@@ -59,20 +36,20 @@ PORT     STATE    SERVICE    VERSION
 |     authentication_failure_close: YES
 |     per_consumer_qos: YES
 |     direct_reply_to: YES
-|   cluster_name: rabbit@d63865c1a767
+|   cluster_name: rabbit@3b0469bee4b7
 |   copyright: Copyright (c) 2007-2020 Pivotal Software, Inc.
 |   information: Licensed under the MPL.  See https://www.rabbitmq.com/
 |   platform: Erlang/OTP 22.3.4.7
 |   product: RabbitMQ
 |   version: 3.7.28
-|   mechanisms: PLAIN AMQPLAIN
+|   mechanisms: AMQPLAIN PLAIN
 |_  locales: en_US
 5962/tcp open     unknown
 5998/tcp open     tcpwrapped
 9999/tcp open     tcpwrapped
-3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.91%I=7%D=5/1%Time=626DFB81%P=x86_64-alpine-linux-musl%r(
+SF-Port80-TCP:V=7.91%I=7%D=5/8%Time=62772DF5%P=x86_64-alpine-linux-musl%r(
 SF:GetRequest,48,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:\x20
 SF:no-cache\r\nConnection:\x20close\r\n\r\n")%r(HTTPOptions,48,"HTTP/1\.1\
 SF:x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache\r\nConnection:\x
@@ -104,7 +81,7 @@ SF:x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache\r\nConnection:\x
 SF:20close\r\n\r\n")%r(LDAPBindReq,48,"HTTP/1\.1\x20400\x20Bad\x20Request\
 SF:r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\n\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.91%T=SSL%I=7%D=5/1%Time=626DFB88%P=x86_64-alpine-linux-
+SF-Port443-TCP:V=7.91%T=SSL%I=7%D=5/8%Time=62772DFB%P=x86_64-alpine-linux-
 SF:musl%r(GetRequest,48,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Contr
 SF:ol:\x20no-cache\r\nConnection:\x20close\r\n\r\n")%r(HTTPOptions,48,"HTT
 SF:P/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache\r\nConnec
@@ -134,61 +111,6 @@ SF:n\r\n")%r(X11Probe,48,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Cont
 SF:rol:\x20no-cache\r\nConnection:\x20close\r\n\r\n")%r(LPDString,48,"HTTP
 SF:/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache\r\nConnect
 SF:ion:\x20close\r\n\r\n");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port3000-TCP:V=7.91%I=7%D=5/1%Time=626DFBC1%P=x86_64-alpine-linux-musl%
-SF:r(TLSSessionReq,D3,"\xa3\x12\x8a\x7f\xa9\^\x91\x0f\xb6H/\xdd\xd0\xd7O\)
-SF:`\xfedZ\xf7\x1e\xd0\x90r\xc2\xd3\x80\x9c\xa2\xa4a\"\xb8\xe8j\x82\x19\xc
-SF:9\xd6ii\xa6\x05\?tw\x1aB\xadan-\xc5\xc4M\xf0\xf3\xab\xa3\x0b5\[\x0bx\xc
-SF:c\x19\xf0\x889Y\]p\"\xe4\x8c\x90\x98\x817SY\x03_\x1e\x85\x99'\xf8\xdb`p
-SF:\x92\xa3\xe8\x03u\x9aN\xa5\xa4X\xb0\xfb\xb2\xe3M`\xecW\xa3\x96\xbc\xdf\
-SF:"#v4\x1e\xdep##\x1f@@V6\$\x20\xdfD\[\x07\xca\x8e,\xb6\xa5\x82\x12d\xfa\
-SF:x1ad\xc0hT\x04\xf3Wi\x20\xe3\x16\xf4\xe7\xfc\xce\x1f\xa2rZ\x8f\xd6U\x1c
-SF:03\xd6\xe9&\x93\xf5\xd0\x9e\xc5<\xb6\^\x94,\x1d\x03\rNc\x85\0\x8b\]\x04
-SF:\x9c\xcd\xab\x8ca\xab\xa5\xeb\xf6\xbavT\xa7;3\xc2\x89;X")%r(Kerberos,1B
-SF:F,"\x19\xf9\xc0\xceq\xd1\x919\x8dihB\x8a\xf0\xe4\xb3\x06\)KWo`K\xf3\xc6
-SF:\xf4k\x8c=b\xb9\x87r\xf7O\x06\xdcS\x15\x98\xfa\xd5\x9f\x83#\x04p\x1a\xe
-SF:6\xa8\xc6a\x7f\x01}N!\x8d\x86\x86ZV\xc2\xce\x02\x97\xcd\r~\xa5\x06u\xfa
-SF:\x87\xf1\xc2\xff\xd0\xa0\xaa\xb1\x01t\"\xc9\xd9W\\\xb50\x8d\xbd~\x83\x9
-SF:4b\xf6\xf3\x93'h=\xa1\x95\xd5\x0b\xac\xd5\x97c\xd0v\x20\x17\xf9\xc9n2\x
-SF:c5\x20\+\x89\xd9\x9f\x02\xd0\xcdY\xab\xe3\xdf\xc9\x19\x03\xcb3i\"\x82Y\
-SF:x95C\x13\xb2g_Y\xa3D\xdd\xf6z\xbc\xb8\xcdei\xf2\xa0\xd5\x07\nV\xbe\x82\
-SF:xc1\xe4p\x89\xeeW\xee\^\xe5\xdeCk=v\x07%\)\xdb\xca\x0c#u\xe5>Vko\x0c\xa
-SF:bE\xfcTT\xd98\xf3\xf6\x91\xcb\xd5\xed\xd6\xc0;\xa7\xb9\xc2\xcd\xca\xa2\
-SF:x80\x20\*\xe4\xe5\xed\x8ar\x1bF\x95\xa5b\xcc\x11\xeb\x1cz'8\xc9\xfd\xef
-SF:\x97\xe3\x8b\xf4\x8b\xe7\x0f\x083\|\xf2g%\xddF\xdak\x85\x82\xda\xad\xa7
-SF:\xc4vL{2B\xe4#w\xf91U\xe9\x81\xfc\x89\xae\xfa\x8a\xe9\$\x89\)\x12W\x93\
-SF:x11\xd1c`\xb9~\xc9d\xe5t\xe0\x9b\xc2\x8f\xa6\xf69\xc2\x1b\xe3\xc9q\xff\
-SF:";\x10\xe2\xa7\xf3Zr\xf5\xe1m5\xe5\xe8\x02\xbcU\x1f3H\xe5\xd8\0l>\xf0\n
-SF:\x8a_\x97\xe3\xc64\xb12\xd0'\x84tj\xfd\xc9\xefl8%\xf1\]CU\x08t\xff\x8b\
-SF:xc8\xbd\xb7/\xfa\x0f9\x88\x91\x13\x8e\xfb\x1b\xb3\xb0F\xf9\xf2\xf9\xed\
-SF:x17\xf0S%\xf79\xe7Y\xa2\x85\xad\xa3\x8bnZ\xf2\xa0\x0f=B\tH\xc3\x94\x0fe
-SF:\x91\x08\xa7\xbbb\xbag\x8d\x14\x18\^\xe2\xc7\x83w\x20L\x0c\x11\x03=@\x1
-SF:4cg\x8d\xf3\x20I\xa8\xfaSt\xcaU\xf0S\xe5")%r(SMBProgNeg,25D,"\$\x1f\xd5
-SF:\xa7f-tsN\[c\xbb\xd0\xed\xc10\x1dk\x8ax\xac\xcc\xf7\xed\x05\t\x94\xd9u\
-SF:x8e\xf60\x81\xe0D\x0e@\xce~\xed\xcc\xe1n4\xacR\xe8<8\x8d\x94\xbc\$\x0f\
-SF:x97\x84\xcf=\x1fy\xe5\xa5\x16\x1d\xf4\x85\xe8\xe2\xa7\x05\xf0\x1ew\xf93
-SF:m\xec\?\x0b=\xaa\xcd\x0e\xdb\x08o\xd6\xc42\xe6<\xa0\xb9#\x16b\x9c\xd90\
-SF:xc9\xf7,N\x13\xf8\xcb\xa2F_\xdb\x8b\xf1\xfe\xe5l\xe7\x15\x83&\xdf\\\xb1
-SF:\0\xf6\xff\x01\x93\x82s\xe4\x11\xb0L\xb2\x8ft\x04\xcd#\?\xff\x82f\xb8Pa
-SF:P\(\xe5\x01\xc1l\x82\xd5=\x14\xf1vD\xd0M\xe8\x99\x0f\xc8\xbb\xdci\$\^t\
-SF:x8a\xad\x80\xe1\xe2F\xef\x1az\xaeSA\xff\xee\x16\xf4\xf4u\xa2\$\x12\xa3\
-SF:xa6\xc7\xab\x92\xb1H\?\xdf#\x83yVT\xfb\^\x1f,\xa3\x12dd\x93\xdc\xe7X\x8
-SF:a0\x0f\"\xdf\x907\.\xae\|\x8e9\x92\xc1\[\xd7p\0\x11\0{#\xd6@0\xe8s\xd3\
-SF:x92\xbcp\xa7a\xe5=\xc9\x8aV\xe9\(3\]\x20=\xecq\xbc\x82\x88\x7f\xff\xa8\
-SF:x01@\xb6\xcb9\xaav\x88\xedGs'\xf7\xf9\t\x8dl@@\xacWu\xc3\|\xbe\xf3\xd0\
-SF:x14\xcazg\xdb<\(\x98D\xf7\xb4z\xeev=g\x13\x0e\x1d\xe3=Hf\x06\xd4\x7f\xc
-SF:a\?\x8e\xa4\x96>\xf86\xd7x\xe4\xa2\xbdxi\x81{5\x1c'\xf2\x16\xde\xbf\xe8
-SF:\"\xb3\xf2\x93\xfb\n\xd6\x0c\xd2V9\x9a\x02\x13\xc1\xab;\xbb{\x13\xfc\xb
-SF:0hUhO\x1e\x9e\xdev=v\x1a\x20g;<\xac\x0f\xa0\xf6\x0b\x8ca\xd1/\xc5\x16\x
-SF:f7\?\xca\x9b7\x1d\xb1\xbefD\x98\xbe\xcdQ@ZE\x10\xcd\\\x03\xdf\n\x8aR\0\
-SF:xf5%\xd8\xf9O\xd8\xd9\x91x\xab\xf0\xa6\xd44\x80\xa68\x04\xa0\t\xb9t\xf7
-SF:\xe5\x9aO\x9e\x88\x96\xb3%\x7f\0h\xe9\x93w:\*\x08T\xe2\+\x1e\xa1\xd4k\x
-SF:1f4\xf1\xcd{\x87\xbe\xca\xfeF}\x89\x91\xe5\x9e\x19\x95\x83\xe1\x91G\xbf
-SF:u\xeb\x1f@\xf4\xf2\xd9m\xf61_\+F\?\xf1\x0f\x8a\xef4\n\xdc\xd12\xbay\xb1
-SF:\xcb\.\xf6\xc9\xdd_T\xe6\xf6p\.SY\xcd06ENGx\x1b\x90\xb4\x05\x07\x20_c#\
-SF:xba\xd4\xdfyU\xf22\x1f\x1dx\nT\[9\x94\xe7\xdc#\xf3;\xbd\xda\x06d\x1a\x1
-SF:7\xcd\xf3\xff\xe9'\^\]\x91\xcf\x08yRz\$\x9d\xe5\xd3\xad\xb4\x14\xdd\x80
-SF:d\x0e\x9c,\x1e\x0b\xf5G\x06\xbfA");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun May  1 03:18:52 2022 -- 1 IP address (1 host up) scanned in 164.21 seconds
+# Nmap done at Sun May  8 02:43:03 2022 -- 1 IP address (1 host up) scanned in 77.82 seconds

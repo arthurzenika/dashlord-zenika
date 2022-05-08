@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 1 May 2022 02:10:20",
+	"@generated": "Sun, 8 May 2022 01:37:45",
 	"site":[ 
 		{
 			"@name": "https://training.zenika.com",
@@ -87,9 +87,23 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/angular-avance/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/angular/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"home-search-bar-input\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -150,6 +164,13 @@
 							"evidence": "Error Report"
 						},
 						{
+							"uri": "https://training.zenika.com/fr-fr/universe/blockchain",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Error Report"
+						},
+						{
 							"uri": "https://training.zenika.com/fr-fr/universe/craftsmanship",
 							"method": "GET",
 							"param": "",
@@ -164,21 +185,14 @@
 							"evidence": "Error Report"
 						},
 						{
+							"uri": "https://training.zenika.com/fr-fr/universe/devops",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Error Report"
+						},
+						{
 							"uri": "https://training.zenika.com/fr-fr/universe/green-it",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/java-et-architecture",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/web",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -437,7 +451,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "975"
+					"sourceid": "977"
 				},
 				{
 					"pluginid": "10063",
@@ -817,35 +831,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "194982-D31CE7Dl2/AXP+hbslQnchHB8UA"
+							"evidence": "193426-gGhvXZgQdJ0F0B0n7K+mer1s3zk"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/exclusives",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "194854-4649VAy7wQotnituGDM1mqb415o"
+							"evidence": "1932f7-is9sEQN3MsqDxnXkQhClPCyX+h0"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/next-sessions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1e3c49-KXGVlbvVybDSfCaIorgEa/ctxas"
+							"evidence": "1e4957-QK3j6tgqlzbUH5ftgeNbhrl+gz4"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1b9b08-BqPx4oRb0FfeWdDGkNkqjF14CIY"
+							"evidence": "1b85c7-KLOhCU1Fgky69hGaBcnoUyPZldw"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/practical-informations",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "101836-smslvBxWXF9V8nOr/vJKgXlsEDI"
+							"evidence": "101822-tWHQJg7SsS7ufWW7l0IDSWjO5Lo"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/subscription",
@@ -859,21 +873,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1946c8-R/pczZq0wuXtrifw9AGcZK8n5Wk"
+							"evidence": "1931a5-B84xL/0lVltcZo+fg+dTpsrlayI"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1c474f-T/A6IWGHG48CKf40HMSrBtGJwzA"
+							"evidence": "1c3245-b9W/aGIw1FeVFfqObF3nCX4RFP0"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/workshops",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1946ff-gHhfprvqOTlIFj6IpkEZ3gsjR0I"
+							"evidence": "1931a3-KurNtBzn9towELfX0DgRK6srUyk"
 						}
 					],
 					"count": "12",
@@ -1121,7 +1135,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",

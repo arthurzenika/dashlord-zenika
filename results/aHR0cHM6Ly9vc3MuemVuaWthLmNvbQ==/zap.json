@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 15 May 2022 02:19:10",
+	"@generated": "Sun, 22 May 2022 01:57:59",
 	"site":[ 
 		{
 			"@name": "https://oss.zenika.com",
@@ -292,7 +292,7 @@
 					"reference": "",
 					"cweid": "201",
 					"wascid": "13",
-					"sourceid": "48"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10017",
@@ -586,13 +586,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://oss.zenika.com/icons/icon-384x384.png?v=d834fecdaadf793d83245a6f56be0c0f",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://oss.zenika.com/icons/icon-48x48.png?v=d834fecdaadf793d83245a6f56be0c0f",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -601,6 +594,13 @@
 						},
 						{
 							"uri": "https://oss.zenika.com/icons/icon-72x72.png?v=d834fecdaadf793d83245a6f56be0c0f",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://oss.zenika.com/icons/icon-96x96.png?v=d834fecdaadf793d83245a6f56be0c0f",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -742,7 +742,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "71"
+					"sourceid": "72"
 				},
 				{
 					"pluginid": "10109",
@@ -775,7 +775,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "69"
+					"sourceid": "70"
 				},
 				{
 					"pluginid": "10015",
@@ -851,14 +851,14 @@
 							"evidence": "public, max-age=0, must-revalidate"
 						},
 						{
-							"uri": "https://oss.zenika.com/terms/",
+							"uri": "https://oss.zenika.com/white-paper/getting-started/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "public, max-age=0, must-revalidate"
 						},
 						{
-							"uri": "https://oss.zenika.com/white-paper/getting-started/",
+							"uri": "https://oss.zenika.com/white-paper/promotion/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -888,14 +888,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 9653"
+							"evidence": "Age: 68720"
+						},
+						{
+							"uri": "https://oss.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 68721"
 						},
 						{
 							"uri": "https://oss.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 9654"
+							"evidence": "Age: 68721"
 						},
 						{
 							"uri": "https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f",
@@ -916,7 +923,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 61938"
+							"evidence": "Age: 477967"
 						},
 						{
 							"uri": "https://oss.zenika.com/sitemap.xml",
@@ -961,7 +968,7 @@
 							"evidence": "Age: 0"
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",

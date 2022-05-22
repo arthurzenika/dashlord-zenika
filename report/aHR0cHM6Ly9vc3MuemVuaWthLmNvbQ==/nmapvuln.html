@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.91</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln oss.zenika.com</pre>
-<p class="lead">Sun May 15 02:22:07 2022 – Sun May 15 02:23:49 2022<br>1 hosts scanned.
+<p class="lead">Sun May 22 02:01:00 2022 – Sun May 22 02:02:41 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>68.183.29.183</td>
+<td>54.241.246.27</td>
 <td>oss.zenika.com</td>
 <td>2</td>
 <td>0</td>
@@ -91,10 +91,13 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#68-183-29-183"><h3 class="panel-title">68.183.29.183 - oss.zenika.com</h3></div>
-<div class="panel-body collapse in" id="68-183-29-183">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#54-241-246-27"><h3 class="panel-title">54.241.246.27 - oss.zenika.com</h3></div>
+<div class="panel-body collapse in" id="54-241-246-27">
 <h4>Hostnames</h4>
-<ul><li>oss.zenika.com (user)</li></ul>
+<ul>
+<li>oss.zenika.com (user)</li>
+<li>ec2-54-241-246-27.us-west-1.compute.amazonaws.com (PTR)</li>
+</ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
 <thead><tr>
@@ -119,28 +122,28 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Server: Netlify
-    X-Nf-Request-Id: 01G32RC71Y9D7PHKSV392ER1MZ
-    Date: Sun, 15 May 2022 02:22:22 GMT
-    Content-Length: 0
-  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, Help, RPCCheck, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Server: Netlify
+    X-Nf-Request-Id: 01G3MQYJJDFQS9P07EG4S3G20P
+    Date: Sun, 22 May 2022 02:01:15 GMT
+    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G32RC23NB1G7EB0BXPP1AF2Y
-    Date: Sun, 15 May 2022 02:22:17 GMT
+    X-Nf-Request-Id: 01G3MQYDNEJA3SZCA5D2VDBS98
+    Date: Sun, 22 May 2022 02:01:10 GMT
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G32RC249VTNP6BZ78J92496G
-    Date: Sun, 15 May 2022 02:22:17 GMT
+    X-Nf-Request-Id: 01G3MQYDNQ7Y6Z9Q6F46X1HKGQ
+    Date: Sun, 22 May 2022 02:01:10 GMT
     Content-Length: 0</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
@@ -160,8 +163,8 @@
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G32RC74FYXFJ0WCFMY1SCYF0
-    Date: Sun, 15 May 2022 02:22:22 GMT
+    X-Nf-Request-Id: 01G3MQYJK5926GKQG37Y275CZ0
+    Date: Sun, 22 May 2022 02:01:15 GMT
     Content-Length: 0
   GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
@@ -171,14 +174,14 @@
   GetRequest: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G32RC72GW1HPFAV3WTW9WJG2
-    Date: Sun, 15 May 2022 02:22:22 GMT
+    X-Nf-Request-Id: 01G3MQYJJB4SWEZBJZ62XQ5VDC
+    Date: Sun, 22 May 2022 02:01:15 GMT
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G32RC73FHFNHMVTMBF1AVYJM
-    Date: Sun, 15 May 2022 02:22:22 GMT
+    X-Nf-Request-Id: 01G3MQYJJTY04WFVZZJGZQMTVW
+    Date: Sun, 22 May 2022 02:01:15 GMT
     Content-Length: 0</pre>
 <h5>http-server-header</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
@@ -210,7 +213,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>68.183.29.183 - oss.zenika.com</td>
+<td>54.241.246.27 - oss.zenika.com</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -220,7 +223,7 @@
 <td></td>
 </tr>
 <tr>
-<td>68.183.29.183 - oss.zenika.com</td>
+<td>54.241.246.27 - oss.zenika.com</td>
 <td>443</td>
 <td>tcp</td>
 <td>https</td>

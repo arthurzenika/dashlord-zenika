@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 15 May 2022 01:58:22",
+	"@generated": "Sun, 22 May 2022 01:36:24",
 	"site":[ 
 		{
 			"@name": "https://training.zenika.com",
@@ -59,9 +59,51 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/python-data-science/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/python/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/t-gcpsec-i/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/vuejs/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/zenbox-es/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/zenbox-num-resp/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
 						}
 					],
-					"count": "6",
+					"count": "12",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"home-search-bar-input\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -115,14 +157,14 @@
 							"evidence": "Error Report"
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
+							"uri": "https://training.zenika.com/fr-fr/universe/artificial-intelligence",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Error Report"
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/universe/blockchain",
+							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -143,14 +185,14 @@
 							"evidence": "Error Report"
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/universe/green-it",
+							"uri": "https://training.zenika.com/fr-fr/universe/java-et-architecture",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Error Report"
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/universe/web",
+							"uri": "https://training.zenika.com/fr-fr/universe/security",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -170,7 +212,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1022"
+					"sourceid": "1015"
 				},
 				{
 					"pluginid": "10038",
@@ -409,7 +451,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1060"
+					"sourceid": "1054"
 				},
 				{
 					"pluginid": "10063",
@@ -615,7 +657,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "1072"
+					"sourceid": "1064"
 				},
 				{
 					"pluginid": "10096",
@@ -789,35 +831,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "19e9ba-1nJzFrb9AB/XtxjoH+DzmsC3bxA"
+							"evidence": "19e9bb-sLtsBBIiJu5mXRQKhhKWBi2nEpA"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/exclusives",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "19e90f-8jorGolt9ZE/lCv3XdeU/l8DkNY"
+							"evidence": "19e908-I725VGZT90po5i1rThmNHbZRZz8"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/next-sessions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1e3dab-56THmts4nxfWpNlk4gs0HHZHhWE"
+							"evidence": "1e0953-rKEjtwc3QDxi9eeelT5HN7NQKy8"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1c3297-ma7UqzbuLrliGkTe+ZAY9jGM77s"
+							"evidence": "1c32c7-I6St7iRJ9/4TM26FYg0hFxxHy5E"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/practical-informations",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1022b3-BLEH5LY1pGfV1FjDNG8WYWLgO3o"
+							"evidence": "10228d-kJcIoZGUY10Z0lby3UBFk8+/Y2w"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/subscription",
@@ -831,21 +873,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "19e77d-+1axUSRIB8Eovsx8XZUDZ7tQ6Yo"
+							"evidence": "19e777-VPxWk+ORgc96NonMxQcPM97ntyw"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1ce7bc-9nlXbQ0368wn8fve73+BLFEwLvY"
+							"evidence": "1ce7b9-BOo1yC8QvCqSifGCwXuRtAawZ00"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/workshops",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "19e78e-auHKpLTmddzYsXAbVKMOg4wRMCc"
+							"evidence": "19e787-fJzltlXcFHoS7SWjQT0KjfTO31k"
 						}
 					],
 					"count": "12",
@@ -1093,7 +1135,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",

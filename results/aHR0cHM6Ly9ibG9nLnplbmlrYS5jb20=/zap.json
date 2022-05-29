@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 22 May 2022 02:58:53",
+	"@generated": "Sun, 29 May 2022 03:18:35",
 	"site":[ 
 		{
 			"@name": "https://blog.zenika.com",
@@ -231,7 +231,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1904"
+					"sourceid": "1920"
 				},
 				{
 					"pluginid": "10020",
@@ -332,32 +332,6 @@
 				{
 					"pluginid": "10099",
 					"alertRef": "10099",
-					"alert": "Source Code Disclosure - Java",
-					"name": "Source Code Disclosure - Java",
-					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
-					"desc": "<p>Application Source Code was disclosed by the web server - Java</p>",
-					"instances":[ 
-						{
-							"uri": "https://blog.zenika.com/2012/05/30/java-8-et-les-lambda/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "public static void main(String[] args) {"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
-					"otherinfo": "<p>public static void main(String[] args) {</p>",
-					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
-					"cweid": "540",
-					"wascid": "13",
-					"sourceid": "2053"
-				},
-				{
-					"pluginid": "10099",
-					"alertRef": "10099",
 					"alert": "Source Code Disclosure - Python",
 					"name": "Source Code Disclosure - Python",
 					"riskcode": "2",
@@ -387,13 +361,6 @@
 							"evidence": "#!/usr/bin/env python"
 						},
 						{
-							"uri": "https://blog.zenika.com/author/pyaillet/feed/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "#!/usr/bin/env python"
-						},
-						{
 							"uri": "https://blog.zenika.com/category/themes/devops-tribus/feed/",
 							"method": "GET",
 							"param": "",
@@ -408,13 +375,13 @@
 							"evidence": "#!/usr/bin/env python"
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
 					"otherinfo": "<p>#!/usr/bin/env python</p>",
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2872"
+					"sourceid": "2846"
 				},
 				{
 					"pluginid": "10099",
@@ -447,7 +414,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1377"
+					"sourceid": "1371"
 				},
 				{
 					"pluginid": "90003",
@@ -464,7 +431,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<link crossorigin=\"anonymous\" rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C500%2C600%2C700%2C800%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%7CNunito%3A200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;display=swap&#038;subset=all&#038;ver=3.0.18' media='all' />"
+							"evidence": "<link crossorigin=\"anonymous\" rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C500%2C600%2C700%2C800%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%7CNunito%3A200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;display=swap&#038;subset=all&#038;ver=3.0.19' media='all' />"
 						},
 						{
 							"uri": "https://blog.zenika.com",
@@ -513,21 +480,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202220'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202221'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.11.161' async defer id='hs-script-loader'></script>"
+							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.12.0' async defer id='hs-script-loader'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202220.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202221.js' defer></script>"
 						}
 					],
 					"count": "10",
@@ -562,7 +529,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1585"
+					"sourceid": "1567"
 				},
 				{
 					"pluginid": "10054",
@@ -631,65 +598,65 @@
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=8.11.161",
+							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=8.12.0",
 							"attack": "",
-							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.11.161' async defer id='hs-script-loader'></script>"
+							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.12.0' async defer id='hs-script-loader'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202220",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202221",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202220'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202221'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202220.js",
+							"param": "https://stats.wp.com/e-202221.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202220.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202221.js' defer></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=8.11.161",
+							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=8.12.0",
 							"attack": "",
-							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.11.161' async defer id='hs-script-loader'></script>"
+							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.12.0' async defer id='hs-script-loader'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202220",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202221",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202220'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202221'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202220.js",
+							"param": "https://stats.wp.com/e-202221.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202220.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202221.js' defer></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
 							"method": "GET",
-							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=8.11.161",
+							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=8.12.0",
 							"attack": "",
-							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.11.161' async defer id='hs-script-loader'></script>"
+							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.12.0' async defer id='hs-script-loader'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202220",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202221",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202220'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202221'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202220.js",
+							"param": "https://stats.wp.com/e-202221.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202220.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202221.js' defer></script>"
 						}
 					],
 					"count": "9",
@@ -731,7 +698,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1899"
+					"sourceid": "1916"
 				},
 				{
 					"pluginid": "10063",
@@ -840,14 +807,14 @@
 					"desc": "<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.zenika.com/2020/11/30/challenge-brigitte-friang-write-up-solutions-3-arene-coros/",
+							"uri": "https://blog.zenika.com/2016/09/09/golang-configuration-made-easy-with-flaeg-and-staert/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "192.168.0.1"
 						},
 						{
-							"uri": "https://blog.zenika.com/author/pyaillet/feed/",
+							"uri": "https://blog.zenika.com/2020/11/30/challenge-brigitte-friang-write-up-solutions-3-arene-coros/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -863,11 +830,11 @@
 					],
 					"count": "3",
 					"solution": "<p>Remove the private IP address from the HTTP response body.  For comments, use JSP/ASP/PHP comment instead of HTML/JavaScript comment which can be seen by client browsers.</p>",
-					"otherinfo": "<p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.0.70</p><p>192.168.0.70</p><p></p>",
+					"otherinfo": "<p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.1.1</p><p>192.168.1.1</p><p></p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2409"
+					"sourceid": "1820"
 				},
 				{
 					"pluginid": "10096",
@@ -898,7 +865,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1652187350"
+							"evidence": "1653408914"
 						},
 						{
 							"uri": "https://blog.zenika.com",
@@ -1174,7 +1141,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1548"
+					"sourceid": "1541"
 				},
 				{
 					"pluginid": "10024",
@@ -1208,7 +1175,7 @@
 							"evidence": "foo-bar@example.com"
 						},
 						{
-							"uri": "https://blog.zenika.com/_static/??wp-includes/js/jquery/jquery-migrate.min.js,wp-content/themes/colormag/js/html5shiv.min.js,wp-content/plugins/jetpack/modules/videopress/js/videopress-token-bridge.js?m=1652187350",
+							"uri": "https://blog.zenika.com/_static/??wp-includes/js/jquery/jquery-migrate.min.js,wp-content/themes/colormag/js/html5shiv.min.js,wp-content/plugins/jetpack/modules/videopress/js/videopress-token-bridge.js?m=1653408914",
 							"method": "GET",
 							"param": "?wp-includes/js/jquery/jquery-migrate.min.js,wp-content/themes/colormag/js/html5shiv.min.js,wp-content/plugins/jetpack/modules/videopress/js/videopress-token-bridge.js?m",
 							"attack": "",
@@ -1263,7 +1230,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2129"
+					"sourceid": "2134"
 				},
 				{
 					"pluginid": "10027",
@@ -1666,7 +1633,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "112"
+					"sourceid": "111"
 				},
 				{
 					"pluginid": "10031",
@@ -4163,7 +4130,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1569"
+					"sourceid": "1566"
 				}
 			]
 		}

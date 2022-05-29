@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 22 May 2022 02:28:59",
+	"@generated": "Sun, 29 May 2022 02:40:52",
 	"site":[ 
 		{
 			"@name": "https://jobs.zenika.com",
@@ -221,7 +221,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://jobs.zenika.com/_nuxt/commons/app.585eaa4.js",
+							"uri": "https://jobs.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -314,7 +314,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1653058976"
+							"evidence": "1653663779"
+						},
+						{
+							"uri": "https://jobs.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1653663779"
 						},
 						{
 							"uri": "https://jobs.zenika.com/sitemap.xml",
@@ -422,9 +429,9 @@
 							"evidence": "91930485"
 						}
 					],
-					"count": "16",
+					"count": "17",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1653058976, which evaluates to: 2022-05-20 15:02:56</p>",
+					"otherinfo": "<p>1653663779, which evaluates to: 2022-05-27 15:02:59</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -448,6 +455,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://jobs.zenika.com/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://jobs.zenika.com/_nuxt/commons/app.585eaa4.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -456,13 +470,6 @@
 						},
 						{
 							"uri": "https://jobs.zenika.com/_nuxt/runtime.92df066.js",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://jobs.zenika.com/_nuxt/vendors/app.f2c4d8b.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -541,93 +548,93 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BmI1eqPW0bxHnz0hnR1M0qca4CiL4CE73"
+							"evidence": "1wAJVE9hYTzWq3yQLZnSgKtzlzCtgMJw4MGiawLldWQ6ts"
 						},
 						{
 							"uri": "https://jobs.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FRQGdip8ebm32s9ZCd1eDi9sHH2Vq1ySWrn2UFpheD1BN7MIOGzEDKbUgHnodDGJzi4P7P5HyRF6mM3cB2czxL"
+							"evidence": "2BfZZUTVmpYPpuH60DCtESqquGrQYIR4"
 						},
 						{
 							"uri": "https://jobs.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BYYFPeVuCZip5Seqgcdq6tPibkHFiIczYeDqJNfygEiut"
-						},
-						{
-							"uri": "https://jobs.zenika.com/_nuxt/commons/app.585eaa4.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "TRPbGMCuZgxcH8eNN8b63etckbHtzwZdLxL7Sqs020"
+							"evidence": "xM3U4RKqb6FXvcIu47ah3ScsdlinTjkatq0vsPUvjkYsG9EOE1FtwY2vf6HqK4Icg5bYferr7bZNlk5oG3QAYTjwJOgi1G"
 						},
 						{
 							"uri": "https://jobs.zenika.com/_nuxt/runtime.92df066.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BgQmJpkuqw1zGc2s7qqoUX9V388j4DMgTX1"
-						},
-						{
-							"uri": "https://jobs.zenika.com/_nuxt/vendors/app.f2c4d8b.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+							"evidence": "lXt9zFQYCoviY5CGs1tS0bFOjYNFmGgeknz4VJFfwQ8q2oi1t5ertZweG7yoVluXH38h9jb0VXjtumJBfKs"
 						},
 						{
 							"uri": "https://jobs.zenika.com/favicon-16.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Fsh1ozuiWmXobLE9garaWnpsrps3DbVoQqcNaIln2XkZGnWBgED6W13Wl"
+							"evidence": "QE55rsh0UecuYlLDEWBm86AQdkDJUbIqJ5XdoPU7Fb"
+						},
+						{
+							"uri": "https://jobs.zenika.com/favicon-192.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2FplelXK5AtxYo5coBoIziQlaNSyFcHND8kVCkY"
+						},
+						{
+							"uri": "https://jobs.zenika.com/favicon-32.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2wvffnH4A1H0xXzxiGppgRswQshsainTHQPVltknLBGcnn6Ha4B5njRZF4UX2fNzLw64fxL0ltBjdMuuEkd6mXMORCcqCB"
 						},
 						{
 							"uri": "https://jobs.zenika.com/favicon-64.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "4t7wskAhB9GyZbXkYHcyXrgoc5SnBy0axMGtf2Rv9zrHApBMl64hqN"
+							"evidence": "qjK0BV3UMi0PDvxiwx76K0BW1lG9WlnKQxD0PgGJcEr750ioXXiKV1PFNIdhITyluGUVG01NFnVGV92"
 						},
 						{
 							"uri": "https://jobs.zenika.com/favicon-96.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FfXFfjL2KIEdwtgMLBdnnBsTL4fnmdnftbZkzrWkYV7ey5NHLBv8yfu5Wg16N0599N8mbEjPJ1M3J"
+							"evidence": "l00trFSK4gnPMObEsNOOT0xwK8Wj1rhOwir9B5p1DDyzF5r0pGySOt1UNwaVXAt0JZJf6yxHeHlOHgHC0FYCPsW"
 						},
 						{
 							"uri": "https://jobs.zenika.com/favicon.ico",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "NhjUB2gqC87N0IIW8qo1Ki8CJoJpUclWzUpm"
+							"evidence": "2Fv0KhKsLK1xHJa6E6zH2ZyjwiTDQvn8DqkLpFLfz3df8M9mwhc9DnjEyeBVL9gUEdr8T0Q"
 						},
 						{
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BadXz12oNrSzMsFQwJsVLX61QhzfMtTYSAhDdzPZG9q2Ts"
+							"evidence": "8xZez1MAx6cIXTZFBM6VhEmh2ylywfhFlDLBdDcbQbMae7Fbf2FKzxkMBlNIh8"
 						},
 						{
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FFfnC9x3qXizHoloTQ1Qd80hiwMPf6NLIqhBoLSUYdjtHhNCHsHhXPMprsUQ4Oh3ItBYwM"
+							"evidence": "2F7WPzqniNklNUgpUvvhyQo5uauTsk7aaAZMsvsthUyvP69VhZ1qQUfoiF0ddg1M1q"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0019\uFFFD\uFFFD\uFFFD[F\uFFFD\\x001e|\uFFFDtu3J\uFFFDk\uFFFD\uFFFD/\uFFFD\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x0000\tTOaa<\u05AB|\uFFFD-\uFFFD\u0480\uFFFDs\uFFFD0\uFFFD\uFFFD\uFFFDp\uFFFD\uFFFD\uFFFDk\\x0002\uFFFDud:\uFFFD</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10027",
@@ -764,24 +771,31 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 101127"
+							"evidence": "Age: 13397"
+						},
+						{
+							"uri": "https://jobs.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 2298"
 						},
 						{
 							"uri": "https://jobs.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 101129"
+							"evidence": "Age: 9498"
 						},
 						{
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 1"
+							"evidence": "Age: 0"
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>The presence of the 'Age' header indicates that that a HTTP/1.1 compliant caching server is in use.</p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -799,13 +813,6 @@
 					"riskdesc": "Informational (Medium)",
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
-						{
-							"uri": "https://jobs.zenika.com/_nuxt/commons/app.585eaa4.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=172800"
-						},
 						{
 							"uri": "https://jobs.zenika.com/_nuxt/runtime.92df066.js",
 							"method": "GET",
@@ -863,13 +870,13 @@
 							"evidence": "max-age=172800"
 						}
 					],
-					"count": "9",
+					"count": "8",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "28"
+					"sourceid": "27"
 				},
 				{
 					"pluginid": "10049",
@@ -889,6 +896,13 @@
 							"evidence": "max-age=0"
 						},
 						{
+							"uri": "https://jobs.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
@@ -896,7 +910,7 @@
 							"evidence": "max-age=0"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",

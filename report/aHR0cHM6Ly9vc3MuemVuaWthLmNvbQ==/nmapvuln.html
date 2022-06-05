@@ -37,7 +37,7 @@
             content: "\e080"; /* glyphicon-chevron-right */
           }
         </style>
-<title>Scan Report Nmap 7.91</title>
+<title>Scan Report Nmap 7.92</title>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top"><div class="container-fluid">
@@ -51,10 +51,10 @@
 </ul></div>
 </div></nav><div class="container">
 <div class="jumbotron">
-<h1>Scan Report<br><small>Nmap 7.91</small>
+<h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln oss.zenika.com</pre>
-<p class="lead">Sun May 29 02:19:22 2022 – Sun May 29 02:21:07 2022<br>1 hosts scanned.
+<p class="lead">Sun Jun  5 02:16:26 2022 – Sun Jun  5 02:18:07 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>52.204.121.99</td>
+<td>184.72.37.151</td>
 <td>oss.zenika.com</td>
 <td>2</td>
 <td>0</td>
@@ -91,12 +91,12 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#52-204-121-99"><h3 class="panel-title">52.204.121.99 - oss.zenika.com</h3></div>
-<div class="panel-body collapse in" id="52-204-121-99">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#184-72-37-151"><h3 class="panel-title">184.72.37.151 - oss.zenika.com</h3></div>
+<div class="panel-body collapse in" id="184-72-37-151">
 <h4>Hostnames</h4>
 <ul>
 <li>oss.zenika.com (user)</li>
-<li>ec2-52-204-121-99.compute-1.amazonaws.com (PTR)</li>
+<li>ec2-184-72-37-151.us-west-1.compute.amazonaws.com (PTR)</li>
 </ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
@@ -120,33 +120,33 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Server: Netlify
-    X-Nf-Request-Id: 01G46SS8BBZCV4T83XH0Q2Y1TQ
-    Date: Sun, 29 May 2022 02:19:37 GMT
-    Content-Length: 0
-  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+  DNSVersionBindReqTCP, GenericLines, Help, Kerberos, RPCCheck, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Server: Netlify
+    X-Nf-Request-Id: 01G4RTCWP12JB84HHMH5MYDCTG
+    Date: Sun, 05 Jun 2022 02:16:40 GMT
+    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G46SS36SFEYK8DWDHSDPR5KK
-    Date: Sun, 29 May 2022 02:19:32 GMT
+    X-Nf-Request-Id: 01G4RTCQS1SYS2W3W50KQD2RME
+    Date: Sun, 05 Jun 2022 02:16:35 GMT
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G46SS395J26P7PK9ZGX7Q4SD
-    Date: Sun, 29 May 2022 02:19:32 GMT
+    X-Nf-Request-Id: 01G4RTCQS87DW0FNSQKQ8KXHC8
+    Date: Sun, 05 Jun 2022 02:16:35 GMT
     Content-Length: 0</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
@@ -158,13 +158,15 @@
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
+<h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G46SS8NAHEMSH57ZYEHP028X
-    Date: Sun, 29 May 2022 02:19:38 GMT
+    X-Nf-Request-Id: 01G4RTCWPNCPX33FMFY5N09PHP
+    Date: Sun, 05 Jun 2022 02:16:40 GMT
     Content-Length: 0
   GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
@@ -174,17 +176,15 @@
   GetRequest: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G46SS8C3YBDZAMT53A8G9DA1
-    Date: Sun, 29 May 2022 02:19:37 GMT
+    X-Nf-Request-Id: 01G4RTCWNX5VQKMC4Y0KZ2GHM4
+    Date: Sun, 05 Jun 2022 02:16:40 GMT
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G46SS8GNTDHER0WYX07XG81B
-    Date: Sun, 29 May 2022 02:19:37 GMT
+    X-Nf-Request-Id: 01G4RTCWP9KCMH518VZ8A7RTHC
+    Date: Sun, 05 Jun 2022 02:16:40 GMT
     Content-Length: 0</pre>
-<h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 </td></tr>
 <tr class="active">
 <td>8300</td>
@@ -213,7 +213,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>52.204.121.99 - oss.zenika.com</td>
+<td>184.72.37.151 - oss.zenika.com</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -223,7 +223,7 @@
 <td></td>
 </tr>
 <tr>
-<td>52.204.121.99 - oss.zenika.com</td>
+<td>184.72.37.151 - oss.zenika.com</td>
 <td>443</td>
 <td>tcp</td>
 <td>https</td>

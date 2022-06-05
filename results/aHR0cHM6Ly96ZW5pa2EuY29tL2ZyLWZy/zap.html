@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 29 May 2022 01:47:20
+		Generated on Sun, 5 Jun 2022 01:45:02
 	</h3>
 
 	
@@ -168,7 +168,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>7</div>
+					<div>6</div>
 				</td>
 			</tr>
 			<tr>
@@ -196,7 +196,7 @@ td {
 			<tr>
 				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">2</td>
+				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#90022">Application Error Disclosure</a></td>
@@ -252,11 +252,6 @@ td {
 				<td><a href="#10094">Base64 Disclosure</a></td>
 				<td align="center" class="risk-0">Informational</td>
 				<td align="center">10</td>
-			</tr>
-			<tr>
-				<td><a href="#10024">Information Disclosure - Sensitive Information in URL</a></td>
-				<td align="center" class="risk-0">Informational</td>
-				<td align="center">1</td>
 			</tr>
 			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
@@ -352,35 +347,9 @@ td {
 						<td width="80%">&lt;form novalidate=&quot;&quot; class=&quot;jss60&quot;&gt;</td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zenika.com/contact?email=foo-bar%40example.com&amp;firstName=ZAP&amp;lastName=ZAP&amp;text">https://zenika.com/contact?email=foo-bar%40example.com&amp;firstName=ZAP&amp;lastName=ZAP&amp;text</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form novalidate=&quot;&quot; class=&quot;jss60&quot;&gt;</td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					<td width="80%">1</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -633,7 +602,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zenika.com/fr-FR/agency/brest">https://zenika.com/fr-FR/agency/brest</a></td>
+						<td width="80%"><a href="https://zenika.com/fr-FR/agency/bordeaux">https://zenika.com/fr-FR/agency/bordeaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1541,7 +1510,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zenika.com/fr-FR/agency/brest">https://zenika.com/fr-FR/agency/brest</a></td>
+						<td width="80%"><a href="https://zenika.com/fr-FR/agency/bordeaux">https://zenika.com/fr-FR/agency/bordeaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2176,7 +2145,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zenika.com/fr-FR/agency/brest">https://zenika.com/fr-FR/agency/brest</a></td>
+						<td width="80%"><a href="https://zenika.com/fr-FR/agency/bordeaux">https://zenika.com/fr-FR/agency/bordeaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3345,7 +3314,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://zenika.com/fr-FR/agency/brest">https://zenika.com/fr-FR/agency/brest</a></td>
+						<td width="80%"><a href="https://zenika.com/fr-FR/agency/bordeaux">https://zenika.com/fr-FR/agency/bordeaux</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3555,82 +3524,6 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10094/">10094</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-0"><a
-						id="10024"></a>
-						<div>Informational</div></th>
-					<th class="risk-0">Information Disclosure - Sensitive Information in URL</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://zenika.com/contact?email=foo-bar%40example.com&amp;firstName=ZAP&amp;lastName=ZAP&amp;text">https://zenika.com/contact?email=foo-bar%40example.com&amp;firstName=ZAP&amp;lastName=ZAP&amp;text</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">email</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">foo-bar@example.com</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">1</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Do not pass sensitive information in URIs.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10024/">10024</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>

@@ -27,37 +27,36 @@
       "1; mode=block"
     ],
     "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 302 Found\r\nContent-Length: 45\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 05 Jun 2022 03:02:23 GMT\r\nKeep-Alive: timeout=5\r\nLocation: https://zenika.faq.team\r\nSozu-Id: 01G4RX0JSKKWSNQA7Q2H3PC8NB\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nFound. Redirecting to https://zenika.faq.team",
-    "ip": "185.42.117.109",
-    "timestamp": "2022-06-05T03:02:23.676028133Z",
+    "response": "HTTP/1.1 302 Found\r\nContent-Length: 45\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 12 Jun 2022 03:08:24 GMT\r\nKeep-Alive: timeout=5\r\nLocation: https://zenika.faq.team\r\nSozu-Id: 01G5AY4M1ASHXJHQG39NZT4CG7\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nFound. Redirecting to https://zenika.faq.team",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:24.300471708Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com'",
     "matcher-status": true,
     "matched-line": null
   },
   {
-    "template": "technologies/tech-detect.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
-    "template-id": "tech-detect",
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
     "info": {
-      "name": "Wappalyzer Technology Detection",
+      "name": "TLS Version",
       "author": [
-        "hakluke"
+        "pdteam"
       ],
       "tags": [
-        "tech"
+        "ssl"
       ],
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "google-font-api",
-    "type": "http",
+    "type": "ssl",
     "host": "https://faq.zenika.com",
     "matched-at": "https://faq.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 05 Jun 2022 03:02:26 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G4RX0NH0M0G38JC8N0QPZWXQ\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
-    "ip": "185.42.117.108",
-    "timestamp": "2022-06-05T03:02:26.471583458Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "extracted-results": [
+      "TLS13"
+    ],
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:25.616536086Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -79,11 +78,11 @@
     "matcher-name": "express",
     "type": "http",
     "host": "https://faq.zenika.com",
-    "matched-at": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
     "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 05 Jun 2022 03:02:26 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G4RX0NH0M0G38JC8N0QPZWXQ\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
-    "ip": "185.42.117.108",
-    "timestamp": "2022-06-05T03:02:26.47169446Z",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:26 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY4PFCM0CCTECE3NQRBFHX\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:26.782810854Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
     "matcher-status": true,
     "matched-line": null
@@ -106,11 +105,666 @@
     "matcher-name": "font-awesome",
     "type": "http",
     "host": "https://faq.zenika.com",
-    "matched-at": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
     "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 05 Jun 2022 03:02:26 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G4RX0NH0M0G38JC8N0QPZWXQ\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
-    "ip": "185.42.117.108",
-    "timestamp": "2022-06-05T03:02:26.47172946Z",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:26 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY4PFCM0CCTECE3NQRBFHX\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:26.782903252Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "technologies/tech-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
+    "template-id": "tech-detect",
+    "info": {
+      "name": "Wappalyzer Technology Detection",
+      "author": [
+        "hakluke"
+      ],
+      "tags": [
+        "tech"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "google-font-api",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:26 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY4PFCM0CCTECE3NQRBFHX\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:26.783723336Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "miscellaneous/options-method.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/options-method.yaml",
+    "template-id": "options-method",
+    "info": {
+      "name": "Allowed Options Method",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "misc",
+        "generic"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://faq.zenika.com",
+    "extracted-results": [
+      "GET,HEAD"
+    ],
+    "request": "OPTIONS / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 8\r\nAllow: GET,HEAD\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 12 Jun 2022 03:08:27 GMT\r\nEtag: W/\"8-ZRAf8oNBS3Bjb/SU2GYZCmbtmXg\"\r\nKeep-Alive: timeout=5\r\nSozu-Id: 01G5AY4QGK1G1W32GFQSH6VP3J\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nGET,HEAD",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:27.837395585Z",
+    "curl-command": "curl -X 'OPTIONS' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "dns/cname-fingerprint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/cname-fingerprint.yaml",
+    "template-id": "cname-fingerprint",
+    "info": {
+      "name": "CNAME Fingerprint",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "dns",
+        "cname"
+      ],
+      "description": "A CNAME DNS record was discovered.",
+      "reference": [
+        "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+        "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+      ],
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "type": "dns",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://faq.zenika.com",
+    "extracted-results": [
+      "domain.par.clever-cloud.com."
+    ],
+    "request": ";; opcode: QUERY, status: NOERROR, id: 34471\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t CNAME\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 34471\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t CNAME\n\n;; ANSWER SECTION:\nfaq.zenika.com.\t290\tIN\tCNAME\tdomain.par.clever-cloud.com.\n",
+    "timestamp": "2022-06-12T03:08:33.588591643Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.44060851Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.44070701Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-headers",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.44075441Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.44078231Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.44081611Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.44084151Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.44086821Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.44089941Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.44093061Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.44095771Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.445004805Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "strict-transport-security",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.445076304Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.445110104Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.445140104Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.445166504Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://faq.zenika.com",
+    "matched-at": "https://zenika.faq.team",
+    "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nContent-Length: 3539\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 12 Jun 2022 03:08:40 GMT\r\nEtag: W/\"dd3-18114faea0f\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Mon, 30 May 2022 12:39:57 GMT\r\nSozu-Id: 01G5AY53VKS7T3CDTQ4P1ZTST0\r\nX-Powered-By: Express\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><title>FAQ</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta name=\"description\" content=\"Internal Knowledge Database for your organization\"/><meta property=\"og:site_name\" content=\"FAQ Zenika\"/><meta property=\"og:title\" content=\"FAQ Zenika\"/><meta property=\"og:type\" content=\"website\"/><meta property=\"og:url\" content=\"https://faq.zenika.com\"/><meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\"/><meta property=\"og:image:alt\" content=\"Thinking emoji\"/><meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\"/><link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\"/><link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\"/><link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\"/><link rel=\"manifest\" href=\"/manifest.json\"/><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\" integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\" crossorigin=\"anonymous\"/><link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\" integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\" crossorigin=\"anonymous\"/><link href=\"/static/css/2.fb4fd950.chunk.css\" rel=\"stylesheet\"><link href=\"/static/css/main.a7aefccc.chunk.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(i){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(c,r)&&c[r]&&f.push(c[r][0]),c[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(i[t]=o[t]);for(s&&s(e);f.length;)f.shift()();return p.push.apply(p,u||[]),a()}function a(){for(var e,t=0;t<p.length;t++){for(var r=p[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==c[u]&&(n=!1)}n&&(p.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},c={1:0},p=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return i[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=i,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonpfaq_client=this.webpackJsonpfaq_client||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;a()}([])</script><script src=\"/static/js/2.e08599e9.chunk.js\"></script><script src=\"/static/js/main.ab09d1e2.chunk.js\"></script></body></html>",
+    "ip": "46.252.181.103",
+    "timestamp": "2022-06-12T03:08:40.445193804Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
     "matcher-status": true,
     "matched-line": null
@@ -136,73 +790,8 @@
     "extracted-results": [
       "faq.zenika.com"
     ],
-    "ip": "185.42.117.108",
-    "timestamp": "2022-06-05T03:02:30.41586227Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "network/cowrie-honeypot-detect.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/network/cowrie-honeypot-detect.yaml",
-    "template-id": "cowrie-honeypot-detect",
-    "info": {
-      "name": "Cowrie SSH Honeypot Detect",
-      "author": [
-        "thesubtlety"
-      ],
-      "tags": [
-        "network",
-        "ssh",
-        "honeypot"
-      ],
-      "reference": [
-        "https://web.archive.org/web/20170826075224/https://morris.sc/detecting-kippo-ssh-honeypots/",
-        "https://github.com/blazeinfosec/detect-kippo-cowrie/blob/master/detectkippocowrie.py",
-        "https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/ssh/detect_kippo.rb"
-      ],
-      "severity": "info"
-    },
-    "type": "network",
-    "host": "https://faq.zenika.com",
-    "matched-at": "faq.zenika.com:22",
-    "request": "\n",
-    "response": "SSH-2.0-OpenSSH_9.0\r\nInvalid SSH identification string.\r\n",
-    "ip": "185.42.117.108",
-    "timestamp": "2022-06-05T03:02:36.535194548Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "dns/dns-waf-detect.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/dns-waf-detect.yaml",
-    "template-id": "dns-waf-detect",
-    "info": {
-      "name": "DNS WAF Detection",
-      "author": [
-        "lu4nx"
-      ],
-      "tags": [
-        "tech",
-        "waf",
-        "dns"
-      ],
-      "description": "A DNS WAF was detected.",
-      "reference": null,
-      "severity": "info",
-      "classification": {
-        "cve-id": null,
-        "cwe-id": [
-          "cwe-200"
-        ]
-      }
-    },
-    "matcher-name": "cloudflare",
-    "type": "dns",
-    "host": "https://faq.zenika.com",
-    "matched-at": "https://faq.zenika.com",
-    "request": ";; opcode: QUERY, status: NOERROR, id: 42887\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t NS\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 42887\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t NS\n\n;; ANSWER SECTION:\nfaq.zenika.com.\t300\tIN\tCNAME\tdomain.par.clever-cloud.com.\n\n;; AUTHORITY SECTION:\nclever-cloud.com.\t3600\tIN\tSOA\tangela.ns.cloudflare.com. dns.cloudflare.com. 2278468771 10000 2400 604800 3600\n",
-    "timestamp": "2022-06-05T03:02:42.993315954Z",
+    "ip": "185.42.117.109",
+    "timestamp": "2022-06-12T03:09:58.180573514Z",
     "matcher-status": true,
     "matched-line": null
   }

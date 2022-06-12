@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 5 Jun 2022 03:23:50",
+	"@generated": "Sun, 12 Jun 2022 03:26:30",
 	"site":[ 
 		{
 			"@name": "https://blog.zenika.com",
@@ -47,49 +47,42 @@
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com\" method=\"get\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"#\" method=\"post\" accept-charset=\"utf-8\" id=\"subscribe-blog-blog_subscription-4\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form id=\"commentform\" class=\"comment-form\">"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"jp-carousel-comment-form\">"
 						}
 					],
-					"count": "10",
+					"count": "9",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -122,13 +115,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "",
@@ -151,6 +137,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -204,13 +197,6 @@
 					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.zenika.com/wp-content/uploads/2022/03/blog-zenika-comment-developper-en-java-sur-le-cloud.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Access-Control-Allow-Origin: *"
-						},
-						{
 							"uri": "https://blog.zenika.com/wp-content/uploads/2022/03/blog-zenika-decouverte-Alibaba-Cloud.png",
 							"method": "GET",
 							"param": "",
@@ -237,6 +223,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-content/uploads/2022/06/Blog-zenika-animer-un-atelier-role-responsabilite%CC%81s.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
 						}
 					],
 					"count": "5",
@@ -245,7 +238,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1928"
+					"sourceid": "1981"
 				},
 				{
 					"pluginid": "10020",
@@ -266,13 +259,6 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -301,6 +287,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -346,32 +339,6 @@
 				{
 					"pluginid": "10099",
 					"alertRef": "10099",
-					"alert": "Source Code Disclosure - Java",
-					"name": "Source Code Disclosure - Java",
-					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
-					"desc": "<p>Application Source Code was disclosed by the web server - Java</p>",
-					"instances":[ 
-						{
-							"uri": "https://blog.zenika.com/2012/01/21/groovy-2-0-va-vous-plaire/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "public static void main(String[] args) {"
-						}
-					],
-					"count": "1",
-					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
-					"otherinfo": "<p>public static void main(String[] args) {</p>",
-					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
-					"cweid": "540",
-					"wascid": "13",
-					"sourceid": "2012"
-				},
-				{
-					"pluginid": "10099",
-					"alertRef": "10099",
 					"alert": "Source Code Disclosure - Python",
 					"name": "Source Code Disclosure - Python",
 					"riskcode": "2",
@@ -379,13 +346,6 @@
 					"riskdesc": "Medium (Medium)",
 					"desc": "<p>Application Source Code was disclosed by the web server - Python</p>",
 					"instances":[ 
-						{
-							"uri": "https://blog.zenika.com/2019/07/15/decouverte-ebpf/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "#!/usr/bin/env python"
-						},
 						{
 							"uri": "https://blog.zenika.com/2020/11/23/challenge-brigitte-friang-write-up-solutions-2-categorie-algo/",
 							"method": "GET",
@@ -408,13 +368,13 @@
 							"evidence": "#!/usr/bin/env python"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
 					"otherinfo": "<p>#!/usr/bin/env python</p>",
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2884"
+					"sourceid": "1962"
 				},
 				{
 					"pluginid": "10099",
@@ -447,7 +407,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1368"
+					"sourceid": "1355"
 				},
 				{
 					"pluginid": "90003",
@@ -513,7 +473,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202222'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202223'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
@@ -527,7 +487,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202222.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202223.js' defer></script>"
 						}
 					],
 					"count": "10",
@@ -562,7 +522,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1588"
+					"sourceid": "1154"
 				},
 				{
 					"pluginid": "10054",
@@ -638,16 +598,16 @@
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202222",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202223",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202222'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202223'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202222.js",
+							"param": "https://stats.wp.com/e-202223.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202222.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202223.js' defer></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
@@ -659,37 +619,37 @@
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202222",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202223",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202222'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202223'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202222.js",
+							"param": "https://stats.wp.com/e-202223.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202222.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202223.js' defer></script>"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=8.12.41",
 							"attack": "",
 							"evidence": "<script src='https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=8.12.41' async defer id='hs-script-loader'></script>"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202222",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202223",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202222'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202223'></script>"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202222.js",
+							"param": "https://stats.wp.com/e-202223.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202222.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202223.js' defer></script>"
 						}
 					],
 					"count": "9",
@@ -731,7 +691,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1922"
+					"sourceid": "1978"
 				},
 				{
 					"pluginid": "10063",
@@ -752,13 +712,6 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -787,6 +740,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -860,7 +820,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2433"
+					"sourceid": "2349"
 				},
 				{
 					"pluginid": "10096",
@@ -941,13 +901,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -970,6 +923,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1037,13 +997,6 @@
 							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36"
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "",
@@ -1070,6 +1023,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "2Fmais-que-fait-mon-mes-product-owners"
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2Fanimer-un-atelier-role-et-responsabilites"
 						},
 						{
 							"uri": "https://blog.zenika.com/author/bdecampenaire/",
@@ -1126,13 +1086,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.zenika.com%2F2022%2F03%2F10%2Fcomment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod%2F",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.zenika.com%2F2022%2F03%2F18%2Fdecouverte-dalibaba-cloud%2F",
 							"method": "GET",
 							"param": "",
@@ -1159,6 +1112,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.zenika.com%2F2022%2F06%2F09%2Fanimer-un-atelier-role-et-responsabilites%2F",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
 						}
 					],
 					"count": "6",
@@ -1167,7 +1127,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1550"
+					"sourceid": "1539"
 				},
 				{
 					"pluginid": "10024",
@@ -1222,14 +1182,14 @@
 							"evidence": "foo-bar@example.com"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
+							"uri": "https://blog.zenika.com/category/themes/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
 							"evidence": "foo-bar@example.com"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/cloud/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
+							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
@@ -1249,7 +1209,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2162"
+					"sourceid": "2085"
 				},
 				{
 					"pluginid": "10027",
@@ -1270,13 +1230,6 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "admin"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1305,6 +1258,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "admin"
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1372,13 +1332,6 @@
 							"evidence": "<a></a>"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class='sd-link-color'></a>"
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "",
@@ -1401,6 +1354,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class='sd-link-color'></a>"
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1468,13 +1428,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1497,6 +1450,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1564,13 +1524,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/03/10/comment-je-suis-arrive-a-developper-en-java-sur-le-cloud-grace-a-gitpod/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/2022/03/18/decouverte-dalibaba-cloud/",
 							"method": "GET",
 							"param": "",
@@ -1593,6 +1546,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/04/29/mais-que-fait-mon-mes-product-owners/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1652,7 +1612,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "112"
+					"sourceid": "66"
 				},
 				{
 					"pluginid": "10031",
@@ -1665,6 +1625,41 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
+							"uri": "https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F",
+							"method": "GET",
+							"param": "reauth",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F",
+							"method": "GET",
+							"param": "redirect_to",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://blog.zenika.com/",
 							"method": "POST",
 							"param": "action",
@@ -1731,20 +1726,6 @@
 							"uri": "https://blog.zenika.com/",
 							"method": "POST",
 							"param": "redirect_fragment",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://blog.zenika.com/",
-							"method": "POST",
-							"param": "source",
 							"attack": "",
 							"evidence": ""
 						},
@@ -4143,13 +4124,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "354",
+					"count": "357",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://blog.zenika.com/</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [div] tag [id] attribute </p><p></p><p>The user input found was:</p><p>action=subscribe</p><p></p><p>The user-controlled value was:</p><p>subscribe-text</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://blog.zenika.com/wp-login.php?reauth=1&redirect_to=https%3A%2F%2Fblog.zenika.com%2Fwp-admin%2F</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [content] attribute </p><p></p><p>The user input found was:</p><p>reauth=1</p><p></p><p>The user-controlled value was:</p><p>https://i0.wp.com/blog.zenika.com/wp-content/uploads/2021/10/cropped-monogramme-logo-zenika_36x36.png?fit=270%2c270&ssl=1</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1572"
+					"sourceid": "1154"
 				}
 			]
 		}

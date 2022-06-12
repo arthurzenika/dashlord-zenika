@@ -1,5 +1,44 @@
 [
   {
+    "template": "technologies/waf-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/waf-detect.yaml",
+    "template-id": "waf-detect",
+    "info": {
+      "name": "WAF Detection",
+      "author": [
+        "dwisiswant0",
+        "lu4nx"
+      ],
+      "tags": [
+        "waf",
+        "tech",
+        "misc"
+      ],
+      "description": "A web application firewall was detected.",
+      "reference": [
+        "https://github.com/ekultek/whatwaf"
+      ],
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "matcher-name": "nginxgeneric",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com/",
+    "request": "POST / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:28 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 3.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:28.427817629Z",
+    "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: blog.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
     "template": "technologies/tech-detect.yaml",
     "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
     "template-id": "tech-detect",
@@ -19,10 +58,783 @@
     "host": "https://blog.zenika.com",
     "matched-at": "https://blog.zenika.com",
     "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:23 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:28 GMT\r\nEtag: \"5c6d8334-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 3.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
     "ip": "192.0.78.185",
-    "timestamp": "2022-06-05T03:29:23.607542593Z",
+    "timestamp": "2022-06-12T03:32:28.440211539Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
+    "info": {
+      "name": "TLS Version",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "extracted-results": [
+      "TLS13"
+    ],
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:33.715174542Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "dns/mx-service-detector.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/mx-service-detector.yaml",
+    "template-id": "mx-service-detector",
+    "info": {
+      "name": "Email Service Detector",
+      "author": [
+        "binaryfigments"
+      ],
+      "tags": [
+        "dns",
+        "service"
+      ],
+      "description": "An email service was detected. Check the email service or spam filter that is used for a domain.",
+      "reference": null,
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "matcher-name": "Google Apps",
+    "type": "dns",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 29447\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t MX\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 29447\n;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t MX\n\n;; ANSWER SECTION:\nblog.zenika.com.\t14400\tIN\tMX\t10 alt3.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t5 alt2.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t5 alt1.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t32767 ms17411114.msv1.invalid.\nblog.zenika.com.\t14400\tIN\tMX\t10 alt4.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t1 aspmx.l.google.com.\n",
+    "timestamp": "2022-06-12T03:32:51.882988615Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/ssl-dns-names.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+    "template-id": "ssl-dns-names",
+    "info": {
+      "name": "SSL DNS Names",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "extracted-results": [
+      "www.pkriskentwordshred.com",
+      "www.saeranabbittyui.music.blog",
+      "www.tweekagency.com",
+      "pacthatass.com",
+      "pqtnews.com",
+      "www.adamschloe4feg.politics.blog",
+      "www.freelancefootballanalyst.com",
+      "www.mortalwiki.com",
+      "www.mywayfindercoach.com",
+      "www.pacthatass.com",
+      "www.pqtnews.com",
+      "www.rowleyreviews.movie.blog",
+      "www.topfootball.media",
+      "idahcahallqcfzu.health.blog",
+      "mywayfindercoach.com",
+      "tweekagency.com",
+      "www.sonohoka.fr",
+      "blog.zenika.com",
+      "lydocooks.com",
+      "northrocklandcommunitychoice.com",
+      "tls.automattic.com",
+      "www.northrocklandcommunitychoice.com",
+      "rescueblog.org",
+      "sbrewermarchant.com",
+      "we-love-canines.com",
+      "www.r-shack-bbq.com",
+      "www.sagatest.online",
+      "www.wrighleahttpnl.sport.blog",
+      "freelancefootballanalyst.com",
+      "rivervbsh602.water.blog",
+      "saeranabbittyui.music.blog",
+      "writeintomidlife.com",
+      "www.lopezdecastro.com",
+      "www.wbfost.com",
+      "adamschloe4feg.politics.blog",
+      "wbfost.com",
+      "womantowoman.blog",
+      "www.lydocooks.com",
+      "www.oceannationalplaza.com",
+      "www.rivervbsh602.water.blog",
+      "hilltheorjqk.tech.blog",
+      "oceannationalplaza.com",
+      "pkriskentwordshred.com",
+      "r-shack-bbq.com",
+      "www.idahcahallqcfzu.health.blog",
+      "www.qualitycraftsmenrenovations.ca",
+      "www.sbrewermarchant.com",
+      "www.taisgonzalez.blog",
+      "www.typeme.music.blog"
+    ],
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:52.978812526Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "dns/nameserver-fingerprint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/nameserver-fingerprint.yaml",
+    "template-id": "nameserver-fingerprint",
+    "info": {
+      "name": "NS Record Detection",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "dns",
+        "ns"
+      ],
+      "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
+      "reference": null,
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "type": "dns",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "extracted-results": [
+      "ns3.wordpress.com.",
+      "ns2.wordpress.com.",
+      "ns1.wordpress.com."
+    ],
+    "request": ";; opcode: QUERY, status: NOERROR, id: 50083\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 50083\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t NS\n\n;; ANSWER SECTION:\nblog.zenika.com.\t86400\tIN\tNS\tns3.wordpress.com.\nblog.zenika.com.\t86400\tIN\tNS\tns2.wordpress.com.\nblog.zenika.com.\t86400\tIN\tNS\tns1.wordpress.com.\n",
+    "timestamp": "2022-06-12T03:32:53.048339172Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.589754655Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.589821613Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.589838569Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.589856971Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.589889568Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.589905795Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.58992529Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.58994356Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.589964544Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.589982567Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.59000289Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.590022734Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.59004022Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.590061173Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.590084732Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-headers",
+    "type": "http",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 12 Jun 2022 03:32:53 GMT\r\nEtag: \"5c758df7-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
+    "ip": "192.0.78.185",
+    "timestamp": "2022-06-12T03:32:53.590102003Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "dns/txt-fingerprint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/txt-fingerprint.yaml",
+    "template-id": "txt-fingerprint",
+    "info": {
+      "name": "DNS TXT Record Detected",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "dns",
+        "txt"
+      ],
+      "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
+      "reference": [
+        "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
+      ],
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "type": "dns",
+    "host": "https://blog.zenika.com",
+    "matched-at": "https://blog.zenika.com",
+    "extracted-results": [
+      "\"google-site-verification=dLFAXwanRugkOUVVPb3vj0PgeMBLbkyROdlBEl5hqtE\"",
+      "\"google-site-verification=nlWxvbsHrenE3zdJb1XTiLs0JYyAE-RVwVFeY41o5fE\"",
+      "\"MS=ms17411114\"",
+      "\"ca3-0609878768304deb921457eb9e3082ff\"",
+      "\"google-site-verification=_fl5xuiFSt-WDZ5HGztDRY_vUiAegnY1vBrHI7ZEZzM\"",
+      "\"v=spf1 include:_spf.google.com ~all\"",
+      "\"GRGjGQmL941NMBQHn2aGYbt++Lc=\""
+    ],
+    "request": ";; opcode: QUERY, status: NOERROR, id: 64829\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t TXT\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 64829\n;; flags: qr rd ra; QUERY: 1, ANSWER: 7, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t TXT\n\n;; ANSWER SECTION:\nblog.zenika.com.\t3600\tIN\tTXT\t\"google-site-verification=dLFAXwanRugkOUVVPb3vj0PgeMBLbkyROdlBEl5hqtE\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"google-site-verification=nlWxvbsHrenE3zdJb1XTiLs0JYyAE-RVwVFeY41o5fE\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"MS=ms17411114\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"ca3-0609878768304deb921457eb9e3082ff\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"google-site-verification=_fl5xuiFSt-WDZ5HGztDRY_vUiAegnY1vBrHI7ZEZzM\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"v=spf1 include:_spf.google.com ~all\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"GRGjGQmL941NMBQHn2aGYbt++Lc=\"\n",
+    "timestamp": "2022-06-12T03:32:57.192485036Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -56,867 +868,16 @@
     "host": "https://blog.zenika.com",
     "matched-at": "https://blog.zenika.com",
     "extracted-results": [
-      "32767 ms17411114.msv1.invalid.",
-      "5 alt1.aspmx.l.google.com.",
       "1 aspmx.l.google.com.",
+      "10 alt4.aspmx.l.google.com.",
+      "5 alt1.aspmx.l.google.com.",
       "10 alt3.aspmx.l.google.com.",
-      "5 alt2.aspmx.l.google.com.",
-      "10 alt4.aspmx.l.google.com."
+      "32767 ms17411114.msv1.invalid.",
+      "5 alt2.aspmx.l.google.com."
     ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 38699\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t MX\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 38699\n;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t MX\n\n;; ANSWER SECTION:\nblog.zenika.com.\t14400\tIN\tMX\t32767 ms17411114.msv1.invalid.\nblog.zenika.com.\t14400\tIN\tMX\t5 alt1.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t1 aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t10 alt3.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t5 alt2.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t10 alt4.aspmx.l.google.com.\n",
-    "timestamp": "2022-06-05T03:29:24.907165125Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705089061Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705179062Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705219562Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705244762Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-headers",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705367363Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705395763Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "referrer-policy",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705430263Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705457364Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705483964Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705510864Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "content-security-policy",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705534664Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705572764Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-frame-options",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705598965Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705624365Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-content-type-options",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705647265Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": "GET / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 1168\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:32 GMT\r\nEtag: \"5e8341a5-490\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 5.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<title>429 Too Many Requests</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"\">\n\n\t\t<style>\n\t\tbody {\n\t\t\tbackground-color: #f8f8f8;\n\t\t\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\t\t\tcolor: #333;\n\t\t\tpadding-top: 20px;\n\t\t}\n\t\tdiv {\n\t\t\tdisplay: block;\n\t\t}\n\t\t.container {\n\t\t\twidth: 1100px;\n\t\t\tpadding-top: 50px;\n\t\t\tmargin-left: auto;\n\t\t\tmargin-right: auto;\n\t\t}\n\t\t.error-msg, .support-msg {\n\t\t\ttext-align: center;\n\t\t}\n\t\t.error-msg {\n\t\t\tmargin-bottom: 40px;\n\t\t}\n\t\t.error-msg h1 {\n\t\t\tfont-size: 52px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 0px;\n\t\t}\n\t\t.error-msg p {\n\t\t\tfont-size: 20px;\n\t\t\tdisplay: block;\n\t\t\tmargin: 10px 0;\n\t\t}\n\t\t.support-msg p {\n\t\t\tfont-size: 14px;\n\t\t\tcolor: #888;\n\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"error-msg\">\n\t\t\t\t<h1>429 Too Many Requests</h1>\n\t\t\t\t<p>You have been rate-limited for making too many requests in a short time frame.</p>\n\t\t\t</div>\n\t\t\t<div class=\"support-msg\">\n\t\t\t\t<p>Website owner? If you think you have reached this message in error, please contact support.</p>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:32.705676065Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "dns/nameserver-fingerprint.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/nameserver-fingerprint.yaml",
-    "template-id": "nameserver-fingerprint",
-    "info": {
-      "name": "NS Record Detection",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "dns",
-        "ns"
-      ],
-      "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
-      "reference": null,
-      "severity": "info",
-      "classification": {
-        "cve-id": null,
-        "cwe-id": [
-          "cwe-200"
-        ]
-      }
-    },
-    "type": "dns",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "extracted-results": [
-      "ns3.wordpress.com.",
-      "ns1.wordpress.com.",
-      "ns2.wordpress.com."
-    ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 28945\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t NS\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 28945\n;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t NS\n\n;; ANSWER SECTION:\nblog.zenika.com.\t21600\tIN\tNS\tns3.wordpress.com.\nblog.zenika.com.\t21600\tIN\tNS\tns1.wordpress.com.\nblog.zenika.com.\t21600\tIN\tNS\tns2.wordpress.com.\n",
-    "timestamp": "2022-06-05T03:29:40.236378624Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "technologies/waf-detect.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/waf-detect.yaml",
-    "template-id": "waf-detect",
-    "info": {
-      "name": "WAF Detection",
-      "author": [
-        "dwisiswant0",
-        "lu4nx"
-      ],
-      "tags": [
-        "waf",
-        "tech",
-        "misc"
-      ],
-      "description": "A web application firewall was detected.",
-      "reference": [
-        "https://github.com/ekultek/whatwaf"
-      ],
-      "severity": "info",
-      "classification": {
-        "cve-id": null,
-        "cwe-id": [
-          "cwe-200"
-        ]
-      }
-    },
-    "matcher-name": "ats",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com/",
-    "request": "POST / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:43 GMT\r\nEtag: \"5c6d8334-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 3.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:43.455463532Z",
-    "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: blog.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "technologies/waf-detect.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/waf-detect.yaml",
-    "template-id": "waf-detect",
-    "info": {
-      "name": "WAF Detection",
-      "author": [
-        "dwisiswant0",
-        "lu4nx"
-      ],
-      "tags": [
-        "waf",
-        "tech",
-        "misc"
-      ],
-      "description": "A web application firewall was detected.",
-      "reference": [
-        "https://github.com/ekultek/whatwaf"
-      ],
-      "severity": "info",
-      "classification": {
-        "cve-id": null,
-        "cwe-id": [
-          "cwe-200"
-        ]
-      }
-    },
-    "matcher-name": "nginxgeneric",
-    "type": "http",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com/",
-    "request": "POST / HTTP/1.1\r\nHost: blog.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-    "response": "HTTP/1.1 429 Too Many Requests\r\nConnection: close\r\nContent-Length: 959\r\nContent-Type: text/html\r\nDate: Sun, 05 Jun 2022 03:29:43 GMT\r\nEtag: \"5c6d8334-3bf\"\r\nServer: nginx\r\nStrict-Transport-Security: max-age=31536000\r\nX-Ac: 3.dfw _atomic_dfw\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head profile=\"http://gmpg.org/xfn/11\">\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<title>WordPress.com 429 Error</title>\n<style type=\"text/css\">\nh1 {\n\tfont-weight: normal;\n\tfont-size: 40px;\n}\nbody {\nline-height: 1.6em; font-family: Georgia, serif; width: 390px; margin: auto;\ntext-align: center;\n}\n.message {\n\tfont-size: 22px;\n\twidth: 350px;\n\tmargin: 10px auto;\n}\n\n</style>\n<script type=\"text/javascript\" src=\"//stats.wp.com/wpcom.js?5\"></script>\n<script type=\"text/javascript\">\n_error = '429-lb';\nfzd();\n</script>\n</head>\n<body>\n<h1>Whoops!</h1>\n<p class=\"message\">There was a small systems error. Please try refreshing the page and if the error is still there <a href=\"http://wordpress.com/contact-support/\">drop us a note</a> and let us know.</p>\n</body>\n</html>\n",
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:29:43.455556132Z",
-    "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: blog.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://blog.zenika.com/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "dns/mx-service-detector.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/mx-service-detector.yaml",
-    "template-id": "mx-service-detector",
-    "info": {
-      "name": "Email Service Detector",
-      "author": [
-        "binaryfigments"
-      ],
-      "tags": [
-        "dns",
-        "service"
-      ],
-      "description": "An email service was detected. Check the email service or spam filter that is used for a domain.",
-      "reference": null,
-      "severity": "info",
-      "classification": {
-        "cve-id": null,
-        "cwe-id": [
-          "cwe-200"
-        ]
-      }
-    },
-    "matcher-name": "Google Apps",
-    "type": "dns",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "request": ";; opcode: QUERY, status: NOERROR, id: 55696\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t MX\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 55696\n;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t MX\n\n;; ANSWER SECTION:\nblog.zenika.com.\t14400\tIN\tMX\t32767 ms17411114.msv1.invalid.\nblog.zenika.com.\t14400\tIN\tMX\t5 alt1.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t1 aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t10 alt3.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t10 alt4.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t5 alt2.aspmx.l.google.com.\n",
-    "timestamp": "2022-06-05T03:29:52.987427571Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "dns/txt-fingerprint.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/txt-fingerprint.yaml",
-    "template-id": "txt-fingerprint",
-    "info": {
-      "name": "DNS TXT Record Detected",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "dns",
-        "txt"
-      ],
-      "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
-      "reference": [
-        "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
-      ],
-      "severity": "info",
-      "classification": {
-        "cve-id": null,
-        "cwe-id": [
-          "cwe-200"
-        ]
-      }
-    },
-    "type": "dns",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "extracted-results": [
-      "\"MS=ms17411114\"",
-      "\"GRGjGQmL941NMBQHn2aGYbt++Lc=\"",
-      "\"google-site-verification=nlWxvbsHrenE3zdJb1XTiLs0JYyAE-RVwVFeY41o5fE\"",
-      "\"ca3-0609878768304deb921457eb9e3082ff\"",
-      "\"google-site-verification=_fl5xuiFSt-WDZ5HGztDRY_vUiAegnY1vBrHI7ZEZzM\"",
-      "\"google-site-verification=dLFAXwanRugkOUVVPb3vj0PgeMBLbkyROdlBEl5hqtE\"",
-      "\"v=spf1 include:_spf.google.com ~all\""
-    ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 50444\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t TXT\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 50444\n;; flags: qr rd ra; QUERY: 1, ANSWER: 7, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t TXT\n\n;; ANSWER SECTION:\nblog.zenika.com.\t3600\tIN\tTXT\t\"MS=ms17411114\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"GRGjGQmL941NMBQHn2aGYbt++Lc=\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"google-site-verification=nlWxvbsHrenE3zdJb1XTiLs0JYyAE-RVwVFeY41o5fE\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"ca3-0609878768304deb921457eb9e3082ff\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"google-site-verification=_fl5xuiFSt-WDZ5HGztDRY_vUiAegnY1vBrHI7ZEZzM\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"google-site-verification=dLFAXwanRugkOUVVPb3vj0PgeMBLbkyROdlBEl5hqtE\"\nblog.zenika.com.\t3600\tIN\tTXT\t\"v=spf1 include:_spf.google.com ~all\"\n",
-    "timestamp": "2022-06-05T03:30:08.808495492Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/tls-version.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-    "template-id": "tls-version",
-    "info": {
-      "name": "TLS Version",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "extracted-results": [
-      "TLS13"
-    ],
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:30:09.922567284Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/ssl-dns-names.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
-    "template-id": "ssl-dns-names",
-    "info": {
-      "name": "SSL DNS Names",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://blog.zenika.com",
-    "matched-at": "https://blog.zenika.com",
-    "extracted-results": [
-      "www.freelancefootballanalyst.com",
-      "www.northrocklandcommunitychoice.com",
-      "www.oceannationalplaza.com",
-      "www.rowleyreviews.movie.blog",
-      "idahcahallqcfzu.health.blog",
-      "oceannationalplaza.com",
-      "rivervbsh602.water.blog",
-      "tls.automattic.com",
-      "www.topfootball.media",
-      "we-love-canines.com",
-      "www.mortalwiki.com",
-      "lydocooks.com",
-      "pacthatass.com",
-      "tweekagency.com",
-      "wbfost.com",
-      "www.r-shack-bbq.com",
-      "www.sonohoka.fr",
-      "pqtnews.com",
-      "womantowoman.blog",
-      "www.pqtnews.com",
-      "www.qualitycraftsmenrenovations.ca",
-      "www.sbrewermarchant.com",
-      "www.tweekagency.com",
-      "pkriskentwordshred.com",
-      "www.lopezdecastro.com",
-      "www.pkriskentwordshred.com",
-      "www.rivervbsh602.water.blog",
-      "www.adamschloe4feg.politics.blog",
-      "www.wbfost.com",
-      "hilltheorjqk.tech.blog",
-      "r-shack-bbq.com",
-      "rescueblog.org",
-      "sbrewermarchant.com",
-      "saeranabbittyui.music.blog",
-      "www.lydocooks.com",
-      "www.mywayfindercoach.com",
-      "www.idahcahallqcfzu.health.blog",
-      "www.taisgonzalez.blog",
-      "blog.zenika.com",
-      "freelancefootballanalyst.com",
-      "northrocklandcommunitychoice.com",
-      "writeintomidlife.com",
-      "www.sagatest.online",
-      "www.typeme.music.blog",
-      "www.wrighleahttpnl.sport.blog",
-      "adamschloe4feg.politics.blog",
-      "mywayfindercoach.com",
-      "www.pacthatass.com",
-      "www.saeranabbittyui.music.blog"
-    ],
-    "ip": "192.0.78.207",
-    "timestamp": "2022-06-05T03:30:10.286747072Z",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 26021\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t MX\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 26021\n;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;blog.zenika.com.\tIN\t MX\n\n;; ANSWER SECTION:\nblog.zenika.com.\t14400\tIN\tMX\t1 aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t10 alt4.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t5 alt1.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t10 alt3.aspmx.l.google.com.\nblog.zenika.com.\t14400\tIN\tMX\t32767 ms17411114.msv1.invalid.\nblog.zenika.com.\t14400\tIN\tMX\t5 alt2.aspmx.l.google.com.\n",
+    "timestamp": "2022-06-12T03:33:11.642387028Z",
     "matcher-status": true,
     "matched-line": null
   }

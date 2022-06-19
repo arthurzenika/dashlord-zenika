@@ -21,13 +21,13 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-chacha (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az241-368:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az163-581:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Jan 18 17:12:17 2019&quot;, platform: &quot;linux-x86_64&quot;)
 
 
 <span style="font-weight:bold;">Testing all IPv4 addresses (port 443): </span>104.21.27.224 172.67.169.200
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2022-06-12 02:51:28        --&gt;&gt; 104.21.27.224:443 (jobs.zenika.com) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2022-06-19 02:51:40        --&gt;&gt; 104.21.27.224:443 (jobs.zenika.com) &lt;&lt;--</span>
 
  Further IP addresses:   172.67.169.200 2606:4700:3033::6815:1be0
                          2606:4700:3034::ac43:a9c8 
@@ -98,8 +98,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               &quot;compress_certificate/#27&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>64800 seconds, session tickets keys seems to be rotated &lt; daily
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
-<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: no
-<span style="font-weight:bold;"> TLS clock skew</span>               -1 sec from localtime
+<span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: yes
+<span style="font-weight:bold;"> TLS clock skew</span>               0 sec from localtime
 <span style="font-weight:bold;"> Certificate Compression      </span>0002/Brotli
 <span style="font-weight:bold;"> Client Authentication        </span>none
 <span style="font-weight:bold;"> Signature Algorithm          </span><span style="color:#008817;">ECDSA with SHA256</span>
@@ -114,7 +114,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN wildcard</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">337 &gt;= 60 days</span> (2022-05-15 00:00 --&gt; 2023-05-15 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">330 &gt;= 60 days</span> (2022-05-15 00:00 --&gt; 2023-05-15 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl3.digicert.com/CloudflareIncECCCA-3.crl
                               http://crl4.digicert.com/CloudflareIncECCCA-3.crl
@@ -132,8 +132,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>+20748 sec from localtime
-<span style="font-weight:bold;"> HTTP Age</span> (RFC 7234)          20748
+<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP Age</span> (RFC 7234)          0
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#a86437;">not offered</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>cloudflare
@@ -225,10 +225,10 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               Grade capped to B. TLS 1.0 offered
                               Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2022-06-12 02:52:35 [  69s] --&gt;&gt; 104.21.27.224:443 (jobs.zenika.com) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2022-06-19 02:52:28 [  50s] --&gt;&gt; 104.21.27.224:443 (jobs.zenika.com) &lt;&lt;--</span>
 
 -----------------------------------------------------
-<span style="color:white;background-color:black;"> Start 2022-06-12 02:52:35        --&gt;&gt; 172.67.169.200:443 (jobs.zenika.com) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2022-06-19 02:52:28        --&gt;&gt; 172.67.169.200:443 (jobs.zenika.com) &lt;&lt;--</span>
 
  Further IP addresses:   104.21.27.224 2606:4700:3033::6815:1be0
                          2606:4700:3034::ac43:a9c8 
@@ -315,7 +315,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN wildcard</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">337 &gt;= 60 days</span> (2022-05-15 00:00 --&gt; 2023-05-15 23:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">330 &gt;= 60 days</span> (2022-05-15 00:00 --&gt; 2023-05-15 23:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl3.digicert.com/CloudflareIncECCCA-3.crl
                               http://crl4.digicert.com/CloudflareIncECCCA-3.crl
@@ -333,8 +333,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>+20813 sec from localtime
-<span style="font-weight:bold;"> HTTP Age</span> (RFC 7234)          20813
+<span style="font-weight:bold;"> HTTP clock skew              </span>+5347 sec from localtime
+<span style="font-weight:bold;"> HTTP Age</span> (RFC 7234)          5347
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#a86437;">not offered</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>cloudflare
@@ -426,7 +426,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               Grade capped to B. TLS 1.0 offered
                               Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2022-06-12 02:53:43 [ 137s] --&gt;&gt; 172.67.169.200:443 (jobs.zenika.com) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2022-06-19 02:53:17 [  99s] --&gt;&gt; 172.67.169.200:443 (jobs.zenika.com) &lt;&lt;--</span>
 
 -----------------------------------------------------
 <span style="font-weight:bold;">Done testing now all IP addresses (on port 443): </span>104.21.27.224 172.67.169.200

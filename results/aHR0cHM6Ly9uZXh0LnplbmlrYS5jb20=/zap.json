@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 12 Jun 2022 02:29:17",
+	"@generated": "Sun, 19 Jun 2022 02:29:06",
 	"site":[ 
 		{
 			"@name": "https://next.zenika.com",
@@ -158,13 +158,6 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>",
 					"instances":[ 
 						{
-							"uri": "https://next.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "16549041"
-						},
-						{
 							"uri": "https://next.zenika.com/build/bundle.css",
 							"method": "GET",
 							"param": "",
@@ -172,48 +165,48 @@
 							"evidence": "00000045"
 						},
 						{
-							"uri": "https://next.zenika.com/build/bundle.css",
+							"uri": "https://next.zenika.com/build/bundle.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "16549041"
+							"evidence": "134217728"
 						},
 						{
-							"uri": "https://next.zenika.com/favicon.png",
+							"uri": "https://next.zenika.com/build/bundle.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "16549041"
+							"evidence": "268435456"
 						},
 						{
-							"uri": "https://next.zenika.com/global.css",
+							"uri": "https://next.zenika.com/build/bundle.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "16549041"
+							"evidence": "33554431"
 						},
 						{
-							"uri": "https://next.zenika.com/robots.txt",
+							"uri": "https://next.zenika.com/build/bundle.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "16549041"
+							"evidence": "536870912"
 						},
 						{
-							"uri": "https://next.zenika.com/sitemap.xml",
+							"uri": "https://next.zenika.com/build/bundle.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "16549041"
+							"evidence": "67108864"
 						}
 					],
-					"count": "7",
+					"count": "6",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>16549041, which evaluates to: 1970-07-11 12:57:21</p>",
+					"otherinfo": "<p>00000045, which evaluates to: 1970-01-01 00:00:45</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "15"
 				},
 				{
 					"pluginid": "10021",
@@ -240,6 +233,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://next.zenika.com/build/bundle.js",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://next.zenika.com/favicon.png",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -254,13 +254,39 @@
 							"evidence": ""
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
 					"sourceid": "1"
+				},
+				{
+					"pluginid": "10027",
+					"alertRef": "10027",
+					"alert": "Information Disclosure - Suspicious Comments",
+					"name": "Information Disclosure - Suspicious Comments",
+					"riskcode": "0",
+					"confidence": "1",
+					"riskdesc": "Informational (Low)",
+					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
+					"instances":[ 
+						{
+							"uri": "https://next.zenika.com/build/bundle.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "user"
+						}
+					],
+					"count": "1",
+					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bUSER\\b and was detected in the element starting with: \"var app=function(){\"use strict\";function noop(){}function assign(t,e){for(const r in e)t[r]=e[r];return t}function run(t){return\", see evidence field for the suspicious comment/snippet.</p>",
+					"reference": "",
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "17"
 				},
 				{
 					"pluginid": "10109",
@@ -319,7 +345,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",

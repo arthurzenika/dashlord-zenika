@@ -1,7 +1,7 @@
-# Nmap 7.92 scan initiated Sun Jun 12 02:39:49 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln next.zenika.com
+# Nmap 7.92 scan initiated Sun Jun 19 02:38:56 2022 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln next.zenika.com
 Nmap scan report for next.zenika.com (46.252.181.145)
-Host is up (0.15s latency).
-Other addresses for next.zenika.com (not scanned): 185.42.117.31 46.252.181.143
+Host is up (0.11s latency).
+Other addresses for next.zenika.com (not scanned): 46.252.181.143 185.42.117.31
 Not shown: 993 closed tcp ports (reset)
 PORT     STATE SERVICE    VERSION
 22/tcp   open  ssh        OpenSSH 8.9 (protocol 2.0)
@@ -10,29 +10,29 @@ PORT     STATE SERVICE    VERSION
 |   FourOhFourRequest: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 234
-|     x-amz-request-id: tx00000000000000170402f-0062a55200-16548f8a-default
+|     x-amz-request-id: tx0000000000000032ffe29-0062ae8c4a-16548f8a-default
 |     accept-ranges: bytes
 |     content-type: application/xml
-|     date: Sun, 12 Jun 2022 02:40:00 GMT
+|     date: Sun, 19 Jun 2022 02:39:06 GMT
 |     connection: close
-|     <?xml version="1.0" encoding="UTF-8"?><Error><Code>InvalidBucketName</Code><BucketName>nice ports,</BucketName><RequestId>tx00000000000000170402f-0062a55200-16548f8a-default</RequestId><HostId>16548f8a-default-default</HostId></Error>
+|     <?xml version="1.0" encoding="UTF-8"?><Error><Code>InvalidBucketName</Code><BucketName>nice ports,</BucketName><RequestId>tx0000000000000032ffe29-0062ae8c4a-16548f8a-default</RequestId><HostId>16548f8a-default-default</HostId></Error>
 |   GetRequest: 
 |     HTTP/1.1 200 OK
 |     transfer-encoding: chunked
-|     x-amz-request-id: tx000000000000001703ffb-0062a551ff-16548f8a-default
+|     x-amz-request-id: tx0000000000000032ffe19-0062ae8c49-16548f8a-default
 |     content-type: application/xml
-|     date: Sun, 12 Jun 2022 02:39:59 GMT
+|     date: Sun, 19 Jun 2022 02:39:05 GMT
 |     connection: close
 |     <?xml version="1.0" encoding="UTF-8"?><ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>index.html</Name><Prefix></Prefix><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated><Marker></Marker></ListBucketResult>
 |   HTTPOptions: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 231
-|     x-amz-request-id: tx00000000000000170400a-0062a551ff-16548f8a-default
+|     x-amz-request-id: tx0000000000000032ffe22-0062ae8c49-16548f8a-default
 |     accept-ranges: bytes
 |     content-type: application/xml
-|     date: Sun, 12 Jun 2022 02:39:59 GMT
+|     date: Sun, 19 Jun 2022 02:39:05 GMT
 |     connection: close
-|     <?xml version="1.0" encoding="UTF-8"?><Error><Code>InvalidArgument</Code><BucketName>index.html</BucketName><RequestId>tx00000000000000170400a-0062a551ff-16548f8a-default</RequestId><HostId>16548f8a-default-default</HostId></Error>
+|     <?xml version="1.0" encoding="UTF-8"?><Error><Code>InvalidArgument</Code><BucketName>index.html</BucketName><RequestId>tx0000000000000032ffe22-0062ae8c49-16548f8a-default</RequestId><HostId>16548f8a-default-default</HostId></Error>
 |   RTSPRequest: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 0
@@ -51,29 +51,29 @@ PORT     STATE SERVICE    VERSION
 |   FourOhFourRequest: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 234
-|     x-amz-request-id: tx0000000000000017041b0-0062a55206-16548f8a-default
+|     x-amz-request-id: tx0000000000000032ffe86-0062ae8c50-16548f8a-default
 |     accept-ranges: bytes
 |     content-type: application/xml
-|     date: Sun, 12 Jun 2022 02:40:06 GMT
+|     date: Sun, 19 Jun 2022 02:39:12 GMT
 |     connection: close
-|     <?xml version="1.0" encoding="UTF-8"?><Error><Code>InvalidBucketName</Code><BucketName>nice ports,</BucketName><RequestId>tx0000000000000017041b0-0062a55206-16548f8a-default</RequestId><HostId>16548f8a-default-default</HostId></Error>
+|     <?xml version="1.0" encoding="UTF-8"?><Error><Code>InvalidBucketName</Code><BucketName>nice ports,</BucketName><RequestId>tx0000000000000032ffe86-0062ae8c50-16548f8a-default</RequestId><HostId>16548f8a-default-default</HostId></Error>
 |   GetRequest: 
 |     HTTP/1.1 200 OK
 |     transfer-encoding: chunked
-|     x-amz-request-id: tx000000000000001704173-0062a55205-16548f8a-default
+|     x-amz-request-id: tx0000000000000032ffe6e-0062ae8c4f-16548f8a-default
 |     content-type: application/xml
-|     date: Sun, 12 Jun 2022 02:40:05 GMT
+|     date: Sun, 19 Jun 2022 02:39:11 GMT
 |     connection: close
 |     <?xml version="1.0" encoding="UTF-8"?><ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>index.html</Name><Prefix></Prefix><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated><Marker></Marker></ListBucketResult>
 |   HTTPOptions: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 231
-|     x-amz-request-id: tx000000000000001704198-0062a55206-16548f8a-default
+|     x-amz-request-id: tx0000000000000032ffe76-0062ae8c50-16548f8a-default
 |     accept-ranges: bytes
 |     content-type: application/xml
-|     date: Sun, 12 Jun 2022 02:40:06 GMT
+|     date: Sun, 19 Jun 2022 02:39:12 GMT
 |     connection: close
-|     <?xml version="1.0" encoding="UTF-8"?><Error><Code>InvalidArgument</Code><BucketName>index.html</BucketName><RequestId>tx000000000000001704198-0062a55206-16548f8a-default</RequestId><HostId>16548f8a-default-default</HostId></Error>
+|     <?xml version="1.0" encoding="UTF-8"?><Error><Code>InvalidArgument</Code><BucketName>index.html</BucketName><RequestId>tx0000000000000032ffe76-0062ae8c50-16548f8a-default</RequestId><HostId>16548f8a-default-default</HostId></Error>
 |   RTSPRequest: 
 |     HTTP/1.1 400 Bad Request
 |     content-length: 0
@@ -89,26 +89,45 @@ PORT     STATE SERVICE    VERSION
 |_    </body></html>
 1080/tcp open  socks?
 1081/tcp open  pvuniwien?
-3000/tcp open  landesk-rc LANDesk remote management
+3000/tcp open  ppp?
+| fingerprint-strings: 
+|   Kerberos: 
+|     rtW"
+|     eM5i
+|   SIPOptions: 
+|     h}f\xac
+|     =)CO
+|     qO;m
+|     @/>b
+|   SMBProgNeg: 
+|     EoK[
+|     Xtj|
+|     {G"V
+|   TLSSessionReq: 
+|     b^6=
+|     :?(1W
+|     (B'c
+|     f*9<
+|_    Fhqx'
 9999/tcp open  tcpwrapped
-2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=6/12%Time=62A551FF%P=x86_64-alpine-linux-musl%r
+SF-Port80-TCP:V=7.92%I=7%D=6/19%Time=62AE8C49%P=x86_64-alpine-linux-musl%r
 SF:(GetRequest,1C3,"HTTP/1\.1\x20200\x20OK\r\ntransfer-encoding:\x20chunke
-SF:d\r\nx-amz-request-id:\x20tx000000000000001703ffb-0062a551ff-16548f8a-d
-SF:efault\r\ncontent-type:\x20application/xml\r\ndate:\x20Sun,\x2012\x20Ju
-SF:n\x202022\x2002:39:59\x20GMT\r\nconnection:\x20close\r\n\r\nEB\r\n<\?xm
+SF:d\r\nx-amz-request-id:\x20tx0000000000000032ffe19-0062ae8c49-16548f8a-d
+SF:efault\r\ncontent-type:\x20application/xml\r\ndate:\x20Sun,\x2019\x20Ju
+SF:n\x202022\x2002:39:05\x20GMT\r\nconnection:\x20close\r\n\r\nEB\r\n<\?xm
 SF:l\x20version=\"1\.0\"\x20encoding=\"UTF-8\"\?><ListBucketResult\x20xmln
 SF:s=\"http://s3\.amazonaws\.com/doc/2006-03-01/\"><Name>index\.html</Name
 SF:><Prefix></Prefix><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncate
 SF:d><Marker></Marker></ListBucketResult>\r\n0\r\n\r\n")%r(HTTPOptions,1CC
 SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x20231\r\nx-amz
-SF:-request-id:\x20tx00000000000000170400a-0062a551ff-16548f8a-default\r\n
+SF:-request-id:\x20tx0000000000000032ffe22-0062ae8c49-16548f8a-default\r\n
 SF:accept-ranges:\x20bytes\r\ncontent-type:\x20application/xml\r\ndate:\x2
-SF:0Sun,\x2012\x20Jun\x202022\x2002:39:59\x20GMT\r\nconnection:\x20close\r
+SF:0Sun,\x2019\x20Jun\x202022\x2002:39:05\x20GMT\r\nconnection:\x20close\r
 SF:\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"UTF-8\"\?><Error><Code>I
 SF:nvalidArgument</Code><BucketName>index\.html</BucketName><RequestId>tx0
-SF:0000000000000170400a-0062a551ff-16548f8a-default</RequestId><HostId>165
+SF:000000000000032ffe22-0062ae8c49-16548f8a-default</RequestId><HostId>165
 SF:48f8a-default-default</HostId></Error>")%r(RTSPRequest,42,"HTTP/1\.1\x2
 SF:0400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\x20close\
 SF:r\n\r\n")%r(X11Probe,CF,"HTTP/1\.1\x20400\x20Bad\x20request\r\nContent-
@@ -116,39 +135,39 @@ SF:length:\x2090\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\n
 SF:Content-Type:\x20text/html\r\n\r\n<html><body><h1>400\x20Bad\x20request
 SF:</h1>\nYour\x20browser\x20sent\x20an\x20invalid\x20request\.\n</body></
 SF:html>\n")%r(FourOhFourRequest,1CF,"HTTP/1\.1\x20400\x20Bad\x20Request\r
-SF:\ncontent-length:\x20234\r\nx-amz-request-id:\x20tx00000000000000170402
-SF:f-0062a55200-16548f8a-default\r\naccept-ranges:\x20bytes\r\ncontent-typ
-SF:e:\x20application/xml\r\ndate:\x20Sun,\x2012\x20Jun\x202022\x2002:40:00
+SF:\ncontent-length:\x20234\r\nx-amz-request-id:\x20tx0000000000000032ffe2
+SF:9-0062ae8c4a-16548f8a-default\r\naccept-ranges:\x20bytes\r\ncontent-typ
+SF:e:\x20application/xml\r\ndate:\x20Sun,\x2019\x20Jun\x202022\x2002:39:06
 SF:\x20GMT\r\nconnection:\x20close\r\n\r\n<\?xml\x20version=\"1\.0\"\x20en
 SF:coding=\"UTF-8\"\?><Error><Code>InvalidBucketName</Code><BucketName>nic
-SF:e\x20ports,</BucketName><RequestId>tx00000000000000170402f-0062a55200-1
+SF:e\x20ports,</BucketName><RequestId>tx0000000000000032ffe29-0062ae8c4a-1
 SF:6548f8a-default</RequestId><HostId>16548f8a-default-default</HostId></E
 SF:rror>");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=6/12%Time=62A55205%P=x86_64-alpine-linux
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=6/19%Time=62AE8C50%P=x86_64-alpine-linux
 SF:-musl%r(GetRequest,1C3,"HTTP/1\.1\x20200\x20OK\r\ntransfer-encoding:\x2
-SF:0chunked\r\nx-amz-request-id:\x20tx000000000000001704173-0062a55205-165
+SF:0chunked\r\nx-amz-request-id:\x20tx0000000000000032ffe6e-0062ae8c4f-165
 SF:48f8a-default\r\ncontent-type:\x20application/xml\r\ndate:\x20Sun,\x201
-SF:2\x20Jun\x202022\x2002:40:05\x20GMT\r\nconnection:\x20close\r\n\r\nEB\r
+SF:9\x20Jun\x202022\x2002:39:11\x20GMT\r\nconnection:\x20close\r\n\r\nEB\r
 SF:\n<\?xml\x20version=\"1\.0\"\x20encoding=\"UTF-8\"\?><ListBucketResult\
 SF:x20xmlns=\"http://s3\.amazonaws\.com/doc/2006-03-01/\"><Name>index\.htm
 SF:l</Name><Prefix></Prefix><MaxKeys>1000</MaxKeys><IsTruncated>false</IsT
 SF:runcated><Marker></Marker></ListBucketResult>\r\n0\r\n\r\n")%r(HTTPOpti
 SF:ons,1CC,"HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x20231\r
-SF:\nx-amz-request-id:\x20tx000000000000001704198-0062a55206-16548f8a-defa
+SF:\nx-amz-request-id:\x20tx0000000000000032ffe76-0062ae8c50-16548f8a-defa
 SF:ult\r\naccept-ranges:\x20bytes\r\ncontent-type:\x20application/xml\r\nd
-SF:ate:\x20Sun,\x2012\x20Jun\x202022\x2002:40:06\x20GMT\r\nconnection:\x20
+SF:ate:\x20Sun,\x2019\x20Jun\x202022\x2002:39:12\x20GMT\r\nconnection:\x20
 SF:close\r\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"UTF-8\"\?><Error>
 SF:<Code>InvalidArgument</Code><BucketName>index\.html</BucketName><Reques
-SF:tId>tx000000000000001704198-0062a55206-16548f8a-default</RequestId><Hos
+SF:tId>tx0000000000000032ffe76-0062ae8c50-16548f8a-default</RequestId><Hos
 SF:tId>16548f8a-default-default</HostId></Error>")%r(FourOhFourRequest,1CF
 SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x20234\r\nx-amz
-SF:-request-id:\x20tx0000000000000017041b0-0062a55206-16548f8a-default\r\n
+SF:-request-id:\x20tx0000000000000032ffe86-0062ae8c50-16548f8a-default\r\n
 SF:accept-ranges:\x20bytes\r\ncontent-type:\x20application/xml\r\ndate:\x2
-SF:0Sun,\x2012\x20Jun\x202022\x2002:40:06\x20GMT\r\nconnection:\x20close\r
+SF:0Sun,\x2019\x20Jun\x202022\x2002:39:12\x20GMT\r\nconnection:\x20close\r
 SF:\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"UTF-8\"\?><Error><Code>I
 SF:nvalidBucketName</Code><BucketName>nice\x20ports,</BucketName><RequestI
-SF:d>tx0000000000000017041b0-0062a55206-16548f8a-default</RequestId><HostI
+SF:d>tx0000000000000032ffe86-0062ae8c50-16548f8a-default</RequestId><HostI
 SF:d>16548f8a-default-default</HostId></Error>")%r(tor-versions,CF,"HTTP/1
 SF:\.1\x20400\x20Bad\x20request\r\nContent-length:\x2090\r\nCache-Control:
 SF:\x20no-cache\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\
@@ -156,6 +175,48 @@ SF:r\n<html><body><h1>400\x20Bad\x20request</h1>\nYour\x20browser\x20sent\
 SF:x20an\x20invalid\x20request\.\n</body></html>\n")%r(RTSPRequest,42,"HTT
 SF:P/1\.1\x20400\x20Bad\x20Request\r\ncontent-length:\x200\r\nconnection:\
 SF:x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3000-TCP:V=7.92%I=7%D=6/19%Time=62AE8C89%P=x86_64-alpine-linux-musl
+SF:%r(TLSSessionReq,B8,"\x8b\xef\xd1}\x11\xdf\xd3\xcd\xce\x0cA\xb9\n\*\x20
+SF:\x92\x92\xaf\xbd\xfcty\x97\xc9\x1d\x81\x11>\^\xfe\xd5\x0f\xdfQ~\xd0\xfc
+SF:\x93\x13n>\$\xb1\rb\^6=\xa0\xb9:\?\(1W\xa0X\xc3\x95\xdd\xcb\x1f\(B'c\xe
+SF:c\x8f\xd1\xb0c{\x8e\x1d\xc7Xp6\xc2\+\xff\x0c\xff/\x19\+9\xd7j\xa8z3\xe4
+SF:\x15n\x8e\xe5\xed\xb3A\x19\xe2!\x023\xf5Y\xdc\xeb\xebx\xfe\xa1\x95\xc3-
+SF:\xe6<\xb4\x0b\x81\x1c\xee\xce\xe3<\xd3\xd5\xe2\xb9\x1b\x1d\xc5\x8e\xa9f
+SF:\*9<\x85\*2\xe8\xe36\*\xc1\x1e\x02G\xbe\xf8\xe0Fhqx'\x8e>\]\xec\xa6z_\x
+SF:b8\x1f\xcb\xbe\xa4P\x15\xc7\|6\xef\xb0\x82/\x8a\xcf\x1b\xd8\x0c")%r(Ker
+SF:beros,BC,"U\xaf=\xa4\xd4\x8a\xad\x1f\xd3\x99\xf4\xc1\xdd\xf8\xbe\xb2\x0
+SF:cK\xe5\xce\xc2\xf2\x1a\xda\xeac\*\xab\xda\x98\xe2\xab\x9fv\x97\xa7\^\x8
+SF:6\x1fq\xca\x94\x0e\x19\xcb}\x99:\x9a\x84\xb7\xc8\xe1\xdc\xd8\xd6l\xe8\x
+SF:c0\x99\x9b~Q\x8a}3\xdc}\x8b\x16lQ\xc6\r\xd1\xdb_V\x17@\x12\xcf3\x87K\[a
+SF:\xff\x9cT\xca\xf06w\x88/\x08\xc9\x01C\x9b=~\x11cO'\xf0\xca\xa4e\x99\xcf
+SF:\xfd\xdf\x85rtW\"\xea\xe5\xe6\xc9\\\?\x97I\xf3\x8b\xcc\x95\xdfSd\x068\x
+SF:deE\xed\\e\xe5\xe9\(3\x9a:3\x05\x15\xd9%\xe3\x1c4\xe1\x96\xbeT\xc7\xaa\
+SF:x9b\xa8\xaf\x88y\x19v\xa7\xce\xc5%\xfa\x94eM5i\xd5Q<\x1c\x1a\(\x08\xb5\
+SF:x0e")%r(SMBProgNeg,C6,"\x95\xbah\xb9\x11\x07\xc0\x08\xee\xb11\x05\xb0\x
+SF:ad\xfd\xe8\xc7\xeaap\xe5\x1a\x8c\x9f\xfa\xaa_\xc2\xf4\xa5=\xed\xea\x87=
+SF:s\xbf\xe7\xc6N\x0b\x9b\xb9J\xe0\x13\xf9y\x19\x8bN\xd6&\x20\x88\x0e\xf9\
+SF:x85=\xad\x95-_\"\x12\xf4\.\xce\x1c\x02f\xf9w\xba\xa0\xe56\xfdJ\xfc\\j\x
+SF:ac\x0b\xf1\xe8\x94dA\xcff\xda'\xc3d\xbaq\xe1O\x03\xd7\xe3\t%\xb438a\x1b
+SF:'8p\xc7\x81\x17\xbc\xf6b\x0fG\xf1\x9f\tEoK\[\x82\x0b\xea\x84\]\x1d\xe2\
+SF:x95\xb5\xd5\x96F\xd9,\x1e\x1a7KB\x93b\xe7\xa7\x94\?<\xfa\xb0C\xf5Xtj\|\
+SF:xeb2\xbc{G\"V\x9d\xc82\xa0\xa2\xceS8\?\x12\xe5\xb2\xefp\xd07\x8c\x02\x8
+SF:1m\x8b\t\x8a;\xdc\x95\xfa\(q\xc8")%r(SIPOptions,155,"e\xfe\xb5\xa6\nK\x
+SF:9a\xcaoE\xe7\xe3h\x85G\xfao\x18\xea\x86\xac\xaf\x8d\xf2\?\x05\x1e\x18\x
+SF:ef\x83\x0b\xb9\xeek\xc6\xbc\xf0\x8e\xf6\xaf\x13\x8c\xba\x80\xc7\xb2m\xa
+SF:4\xf1\x94\xa3h}f\\\xac\xa3\x08\xff\xdf\?\xfc\xb9\x88\x90\x99\xc5\x98\xa
+SF:8\x11\xd8\x15\xb3/\x01\xac\x8b\x7f\t,\xe6\xec\xae\x93\x19\x16\xa5V\x8co
+SF:\[\x88\^Bf\x95&k,\xee1\x0en\xecS\xe0\x13\x94\x03\x8dn:\xf5\xe1\xb9M\x87
+SF:\xce\x8bB\xf2f3\xea\xc4\x97\x01\xaa\x0e\xec;\xf1\xe8\x93\xe9\xa7\xb6\xc
+SF:f\?W\xdd\n\x87\x07\xd7\xf4\xc4@\x0c\xb3\xd0\x11\xb2>\xbe\xd2\xa5\x1cL\x
+SF:1b\xc7\xf3\n\xd9L\x9392\xa6}vh\xcc\xc0\xe4v\xc9\x9f\x0c\x18\xa4\xff\xa9
+SF:\xdbf\x04\^=\xef\x7f\xa6&>\xe2q\x84\xfd\x8f\xa6\x14\xe3\.\xc7I\xaf\x01u
+SF:\x97\xae\xe2M\x18\xa8s\x8a\xae\x8b\xd2\xd3\xc08\xec\xe4=\)CO\x17\x18D\0
+SF:\x10\xe9\x9d\x896\xb3%\^\+\xabF\xe5\x1fF\x1ds\x15\xf0a%\xe6;3\xdd\xeeb\
+SF:x0c\[\xd5\xc8\xf1\*r\xff\x8d\xe4\xe3\x1e\xd9>\xeb\x8dqO;m\xa6\.t4\xe8\x
+SF:c6\x11\.A\xae>\xce'\x19\xbb\x0bC\x8d\^\x9c\xbb8\x8e\xd3\^\$'\xdb\x90\xb
+SF:8OD\xc6_c\xa6\t\xbd\x07M!\xee<L\xa9Q\xdf\xd5\x7f\xe2\xf1\xa1\xed\xaf\xa
+SF:9@/>b\xc0J\xe9N\xc8");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Jun 12 02:42:11 2022 -- 1 IP address (1 host up) scanned in 141.52 seconds
+# Nmap done at Sun Jun 19 02:41:42 2022 -- 1 IP address (1 host up) scanned in 166.13 seconds

@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 12 Jun 2022 01:57:22",
+	"@generated": "Sun, 19 Jun 2022 01:56:11",
 	"site":[ 
 		{
 			"@name": "https://training.zenika.com",
@@ -59,30 +59,9 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/subscription/training/python/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/subscription/training/vuejs/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/subscription/training/zenbox-es/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
 						}
 					],
-					"count": "9",
+					"count": "6",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"home-search-bar-input\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -150,20 +129,6 @@
 							"evidence": "Error Report"
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/universe/cloud",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/craftsmanship",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report"
-						},
-						{
 							"uri": "https://training.zenika.com/fr-fr/universe/design",
 							"method": "GET",
 							"param": "",
@@ -172,6 +137,20 @@
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/universe/green-it",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Error Report"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/universe/java-et-architecture",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Error Report"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/universe/security",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -191,7 +170,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "979"
+					"sourceid": "959"
 				},
 				{
 					"pluginid": "10038",
@@ -430,7 +409,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "1017"
+					"sourceid": "997"
 				},
 				{
 					"pluginid": "10063",
@@ -546,35 +525,35 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"uri": "https://training.zenika.com/_nuxt/9e3c969.js",
+							"uri": "https://training.zenika.com/_nuxt/1c30d2d.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/_nuxt/b7f5ede.js",
+							"uri": "https://training.zenika.com/_nuxt/8484b7e.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/_nuxt/c8c968c.js",
+							"uri": "https://training.zenika.com/_nuxt/d0adda3.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/_nuxt/d891123.js",
+							"uri": "https://training.zenika.com/_nuxt/d29540c.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/_nuxt/f4ecc30.js",
+							"uri": "https://training.zenika.com/_nuxt/f62c28b.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -636,7 +615,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "1029"
+					"sourceid": "1011"
 				},
 				{
 					"pluginid": "10096",
@@ -810,35 +789,35 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "19a10f-qzPvCgg4+0CdJslaYi8vcrc0s98"
+							"evidence": "19a128-Ku00/qtKLgWz8bVaNIwA4olWlU4"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/exclusives",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "19a061-BCJ1wss/AcDWT/FOk3JdR7Npfwc"
+							"evidence": "19a073-1vB+bDUIDO64tQ1xSNlrhcF8pcE"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/next-sessions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1d6180-ffD5v7TrbDtgvTD3ktPaOWJHt28"
+							"evidence": "1c91c0-jsq1t8e0Irc4wAk7jK59JkFTYyo"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1be9ed-4EuLfhD2K/nGzXI2oRjkyD8Ym/k"
+							"evidence": "1bea2b-R4cfqZflfzJdtlqs1Ej8CPXfpOw"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/practical-informations",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "10226a-lDIvwc1Rx51Mxvgu+20rSIrnMGk"
+							"evidence": "1022b9-N1+AXL+0DaKJAWBvGn3E8/6ABKg"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/subscription",
@@ -852,21 +831,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "199ecb-vgo0CxJ+bXF8AsWCfBDY4JB74n8"
+							"evidence": "199ede-ZPF0o8O1FvCMy9tCWdXrku6QzZ4"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1c9f33-RtfMIqkkBIRoxlQC1/LPcqVvviw"
+							"evidence": "1c9f48-uvo5z+M1JKBEbNh+hUC1eOMkgyM"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/workshops",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "199eb3-pwC2MaxEIePJicHR4cL7yzy0QcM"
+							"evidence": "199ec8-b4zRUVhk2Fp1rc9J+KUpQVnCkGI"
 						}
 					],
 					"count": "12",
@@ -1114,7 +1093,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",

@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln oss.zenika.com</pre>
-<p class="lead">Sun Jun 19 02:21:54 2022 – Sun Jun 19 02:23:36 2022<br>1 hosts scanned.
+<p class="lead">Sun Jun 26 02:22:08 2022 – Sun Jun 26 02:23:50 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>165.227.11.29</td>
+<td>52.73.153.209</td>
 <td>oss.zenika.com</td>
 <td>2</td>
 <td>0</td>
@@ -91,10 +91,13 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#165-227-11-29"><h3 class="panel-title">165.227.11.29 - oss.zenika.com</h3></div>
-<div class="panel-body collapse in" id="165-227-11-29">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#52-73-153-209"><h3 class="panel-title">52.73.153.209 - oss.zenika.com</h3></div>
+<div class="panel-body collapse in" id="52-73-153-209">
 <h4>Hostnames</h4>
-<ul><li>oss.zenika.com (user)</li></ul>
+<ul>
+<li>oss.zenika.com (user)</li>
+<li>ec2-52-73-153-209.compute-1.amazonaws.com (PTR)</li>
+</ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
 <thead><tr>
@@ -121,28 +124,28 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Netlify</pre>
 <h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+  FourOhFourRequest: 
+    HTTP/1.0 400 Bad Request
+    Server: Netlify
+    X-Nf-Request-Id: 01G6EX2EE22X3HWDE68W4NDZKG
+    Date: Sun, 26 Jun 2022 02:22:23 GMT
+    Content-Length: 0
+  GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
     Content-Type: text/plain; charset=utf-8
     Connection: close
     Request
-  FourOhFourRequest: 
-    HTTP/1.0 400 Bad Request
-    Server: Netlify
-    X-Nf-Request-Id: 01G5WW8ZF3AZ8BDJBBZC6JGK77
-    Date: Sun, 19 Jun 2022 02:22:09 GMT
-    Content-Length: 0
   GetRequest: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G5WW8THZAJCQJAD4BK647W07
-    Date: Sun, 19 Jun 2022 02:22:04 GMT
+    X-Nf-Request-Id: 01G6EX29G46A8G802WM37Q0H0J
+    Date: Sun, 26 Jun 2022 02:22:18 GMT
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G5WW8TJ84ACP79QYT04DBX65
-    Date: Sun, 19 Jun 2022 02:22:04 GMT
+    X-Nf-Request-Id: 01G6EX29GJB44RY7DV7SW93H0R
+    Date: Sun, 26 Jun 2022 02:22:18 GMT
     Content-Length: 0</pre>
 </td></tr>
 <tr class="success">
@@ -162,8 +165,8 @@
   FourOhFourRequest: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G5WW8ZFV25WGZRCV6308TBJH
-    Date: Sun, 19 Jun 2022 02:22:09 GMT
+    X-Nf-Request-Id: 01G6EX2EGHR6JKWAWD724BMGYH
+    Date: Sun, 26 Jun 2022 02:22:23 GMT
     Content-Length: 0
   GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
     HTTP/1.1 400 Bad Request
@@ -173,14 +176,14 @@
   GetRequest: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G5WW8ZF2KA6B03A1B0B278JD
-    Date: Sun, 19 Jun 2022 02:22:09 GMT
+    X-Nf-Request-Id: 01G6EX2EETH76T1XN96NXJ4HWY
+    Date: Sun, 26 Jun 2022 02:22:23 GMT
     Content-Length: 0
   HTTPOptions: 
     HTTP/1.0 400 Bad Request
     Server: Netlify
-    X-Nf-Request-Id: 01G5WW8ZFG3YMX5RX6N1K374CP
-    Date: Sun, 19 Jun 2022 02:22:09 GMT
+    X-Nf-Request-Id: 01G6EX2EFPERRY7068Y0BBAD0D
+    Date: Sun, 26 Jun 2022 02:22:23 GMT
     Content-Length: 0</pre>
 </td></tr>
 <tr class="active">
@@ -210,7 +213,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>165.227.11.29 - oss.zenika.com</td>
+<td>52.73.153.209 - oss.zenika.com</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -220,7 +223,7 @@
 <td></td>
 </tr>
 <tr>
-<td>165.227.11.29 - oss.zenika.com</td>
+<td>52.73.153.209 - oss.zenika.com</td>
 <td>443</td>
 <td>tcp</td>
 <td>https</td>

@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 19 Jun 2022 03:24:08",
+	"@generated": "Sun, 26 Jun 2022 03:28:50",
 	"site":[ 
 		{
 			"@name": "https://blog.zenika.com",
@@ -47,42 +47,35 @@
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com\" method=\"get\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"#\" method=\"post\" accept-charset=\"utf-8\" id=\"subscribe-blog-blog_subscription-4\">"
 						},
 						{
-							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
+							"uri": "https://blog.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<form action=\"https://blog.zenika.com/\" class=\"search-form searchform clearfix\" method=\"get\" role=\"search\">"
-						},
-						{
-							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"commentform\" class=\"comment-form\">"
 						}
 					],
-					"count": "9",
+					"count": "8",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"s\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -150,13 +143,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/author/bdecampenaire/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/author/slassiaille/",
 							"method": "GET",
 							"param": "",
@@ -165,6 +151,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/securite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -196,6 +189,41 @@
 					"riskdesc": "Medium (Medium)",
 					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server</p>",
 					"instances":[ 
+						{
+							"uri": "https://blog.zenika.com/wp-content/plugins/gutenberg/build/dom-ready/index.min.js?ver=222ad38e3e5e302c8bbf",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-content/plugins/gutenberg/build/i18n/index.min.js?ver=6fdf6f309c3796e73a49",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-content/plugins/jetpack/_inc/blocks/tiled-gallery/view.js?m=1655227432",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=11.1-a.5",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-content/themes/colormag/img/highlights-featured-image.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
 						{
 							"uri": "https://blog.zenika.com/wp-content/uploads/2022/03/blog-zenika-decouverte-Alibaba-Cloud.png",
 							"method": "GET",
@@ -230,15 +258,29 @@
 							"param": "",
 							"attack": "",
 							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-includes/css/dashicons.min.css?ver=6.0",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
+						},
+						{
+							"uri": "https://blog.zenika.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Access-Control-Allow-Origin: *"
 						}
 					],
-					"count": "5",
+					"count": "12",
 					"solution": "<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</p><p>Configure the \"Access-Control-Allow-Origin\" HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</p>",
 					"otherinfo": "<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</p>",
 					"reference": "<p>https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1977"
+					"sourceid": "1834"
 				},
 				{
 					"pluginid": "10020",
@@ -347,13 +389,6 @@
 					"desc": "<p>Application Source Code was disclosed by the web server - Python</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.zenika.com/2019/07/15/decouverte-ebpf/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "#!/usr/bin/env python"
-						},
-						{
 							"uri": "https://blog.zenika.com/2020/11/23/challenge-brigitte-friang-write-up-solutions-2-categorie-algo/",
 							"method": "GET",
 							"param": "",
@@ -375,13 +410,13 @@
 							"evidence": "#!/usr/bin/env python"
 						}
 					],
-					"count": "4",
+					"count": "3",
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server. </p>",
 					"otherinfo": "<p>#!/usr/bin/env python</p>",
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "2014"
+					"sourceid": "2308"
 				},
 				{
 					"pluginid": "10099",
@@ -414,7 +449,7 @@
 					"reference": "<p>http://blogs.wsj.com/cio/2013/10/08/adobe-source-code-leak-is-bad-news-for-u-s-government/</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1341"
+					"sourceid": "1340"
 				},
 				{
 					"pluginid": "90003",
@@ -480,7 +515,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202224'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202225'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
@@ -494,7 +529,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202224.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202225.js' defer></script>"
 						}
 					],
 					"count": "10",
@@ -529,7 +564,7 @@
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "1141"
+					"sourceid": "1534"
 				},
 				{
 					"pluginid": "10054",
@@ -575,9 +610,16 @@
 							"param": "wordpress_google_apps_login",
 							"attack": "",
 							"evidence": "Set-Cookie: wordpress_google_apps_login"
+						},
+						{
+							"uri": "https://blog.zenika.com/tag/graphql/",
+							"method": "POST",
+							"param": "wordpress_google_apps_login",
+							"attack": "",
+							"evidence": "Set-Cookie: wordpress_google_apps_login"
 						}
 					],
-					"count": "5",
+					"count": "6",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
@@ -605,16 +647,16 @@
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202224",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202225",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202224'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202225'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202224.js",
+							"param": "https://stats.wp.com/e-202225.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202224.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202225.js' defer></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
@@ -626,16 +668,16 @@
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202224",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202225",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202224'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202225'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202224.js",
+							"param": "https://stats.wp.com/e-202225.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202224.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202225.js' defer></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
@@ -647,16 +689,16 @@
 						{
 							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202224",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202225",
 							"attack": "",
-							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202224'></script>"
+							"evidence": "<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic'  src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202225'></script>"
 						},
 						{
 							"uri": "https://blog.zenika.com/2022/06/09/animer-un-atelier-role-et-responsabilites/",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202224.js",
+							"param": "https://stats.wp.com/e-202225.js",
 							"attack": "",
-							"evidence": "<script src='https://stats.wp.com/e-202224.js' defer></script>"
+							"evidence": "<script src='https://stats.wp.com/e-202225.js' defer></script>"
 						}
 					],
 					"count": "9",
@@ -698,7 +740,7 @@
 					"reference": "<p>https://angular.io/guide/security</p>",
 					"cweid": "749",
 					"wascid": "-1",
-					"sourceid": "1975"
+					"sourceid": "1956"
 				},
 				{
 					"pluginid": "10063",
@@ -760,13 +802,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://blog.zenika.com/author/bdecampenaire/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://blog.zenika.com/author/slassiaille/",
 							"method": "GET",
 							"param": "",
@@ -775,6 +810,13 @@
 						},
 						{
 							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://blog.zenika.com/category/themes/securite/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -807,13 +849,6 @@
 					"desc": "<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>",
 					"instances":[ 
 						{
-							"uri": "https://blog.zenika.com/2014/12/08/dockercon-europe/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "192.168.0.2"
-						},
-						{
 							"uri": "https://blog.zenika.com/2020/11/30/challenge-brigitte-friang-write-up-solutions-3-arene-coros/",
 							"method": "GET",
 							"param": "",
@@ -828,13 +863,13 @@
 							"evidence": "192.168.0.1"
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Remove the private IP address from the HTTP response body.  For comments, use JSP/ASP/PHP comment instead of HTML/JavaScript comment which can be seen by client browsers.</p>",
-					"otherinfo": "<p>192.168.0.2</p><p>192.168.0.3</p><p>192.168.0.2:2375</p><p>192.168.0.3:2375</p><p>192.168.0.1</p><p>192.168.0.1:2375</p><p></p>",
+					"otherinfo": "<p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.0.70</p><p>192.168.0.70</p><p></p>",
 					"reference": "<p>https://tools.ietf.org/html/rfc1918</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1894"
+					"sourceid": "1749"
 				},
 				{
 					"pluginid": "10096",
@@ -1141,7 +1176,7 @@
 					"reference": "<p>http://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1532"
+					"sourceid": "1510"
 				},
 				{
 					"pluginid": "10024",
@@ -1196,13 +1231,6 @@
 							"evidence": "foo-bar@example.com"
 						},
 						{
-							"uri": "https://blog.zenika.com/category/themes/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
-							"method": "GET",
-							"param": "email",
-							"attack": "",
-							"evidence": "foo-bar@example.com"
-						},
-						{
 							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/?author=ZAP&comment&email=foo-bar%40example.com&submit=Laisser+un+commentaire&url=https%3A%2F%2Fwww.example.com",
 							"method": "GET",
 							"param": "email",
@@ -1217,13 +1245,13 @@
 							"evidence": "foo-bar@example.com"
 						}
 					],
-					"count": "9",
+					"count": "8",
 					"solution": "<p>Do not pass sensitive information in URIs.</p>",
 					"otherinfo": "<p>The URL contains email address(es).</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "2088"
+					"sourceid": "2020"
 				},
 				{
 					"pluginid": "10027",
@@ -1626,7 +1654,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "64"
+					"sourceid": "101"
 				},
 				{
 					"pluginid": "10031",
@@ -4144,7 +4172,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "1141"
+					"sourceid": "1534"
 				}
 			]
 		}

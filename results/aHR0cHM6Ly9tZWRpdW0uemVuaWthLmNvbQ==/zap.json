@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 19 Jun 2022 02:34:30",
+	"@generated": "Sun, 26 Jun 2022 02:41:05",
 	"site":[ 
 		{
 			"@name": "https://medium.zenika.com",
@@ -171,7 +171,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.0Nw2uNTWGXfc1y40Cw5H2w.12.js\" async></script>"
+							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.BFkp88gq2REzQ7huaoGPGQ.12.js\" async></script>"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -228,12 +228,19 @@
 						{
 							"uri": "https://medium.zenika.com",
 							"method": "GET",
-							"param": "",
+							"param": "sid",
 							"attack": "",
-							"evidence": ""
+							"evidence": "set-cookie: sid"
+						},
+						{
+							"uri": "https://medium.zenika.com",
+							"method": "GET",
+							"param": "uid",
+							"attack": "",
+							"evidence": "set-cookie: uid"
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</p>",
@@ -254,9 +261,9 @@
 						{
 							"uri": "https://medium.zenika.com",
 							"method": "GET",
-							"param": "https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.0Nw2uNTWGXfc1y40Cw5H2w.12.js",
+							"param": "https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.BFkp88gq2REzQ7huaoGPGQ.12.js",
 							"attack": "",
-							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.0Nw2uNTWGXfc1y40Cw5H2w.12.js\" async></script>"
+							"evidence": "<script charset=\"UTF-8\" src=\"https://cdn-static-1.medium.com/_/fp/gen-js/main-base.bundle.BFkp88gq2REzQ7huaoGPGQ.12.js\" async></script>"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -444,14 +451,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220616"
+							"evidence": "20220622"
 						},
 						{
 							"uri": "https://medium.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220617"
+							"evidence": "20220624"
 						},
 						{
 							"uri": "https://medium.zenika.com",
@@ -479,19 +486,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220616"
+							"evidence": "20220622"
 						},
 						{
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "20220616"
+							"evidence": "20220622"
 						}
 					],
 					"count": "7",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>20220616, which evaluates to: 1970-08-23 00:50:16</p>",
+					"otherinfo": "<p>20220622, which evaluates to: 1970-08-23 00:50:22</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -538,19 +545,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "vvKgECdM3VSXYH9VLk1OU70/bCA2n6AlDLvoW/csXWB6FiFxTi6/o8AmQ9U6ZCyu"
+							"evidence": "vvKgECdM3VSXYH9VLk1OU/FxY7QtOsvfQQYm6fK7f66siA/LwjcS1KfLlRATka4V"
 						},
 						{
 							"uri": "https://medium.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "ww12n7zOUlHfbLo/dlfWqbNSYDDpQ6Sl9XyVRGIG5kJpgAZjd8TfxtfGyfTzJnY+L/7KGpG4vBk="
+							"evidence": "8/nRdI+OXJIiMMPy3VqXRMjwhnyY9t0S1wcSGMc6zbnfGiQFFbizbQmYD4FLzWL8RnxbrXdtJ38="
 						}
 					],
 					"count": "2",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS\uFFFD?l 6\uFFFD\uFFFD%\\x000c\uFFFD\uFFFD[\uFFFD,]`z\\x0016!qN.\uFFFD\uFFFD\uFFFD&C\uFFFD:d,\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS\uFFFDqc\uFFFD-:\uFFFD\uFFFDA\\x0006&\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x000f\uFFFD\uFFFD7\\x0012\u0527\u02D5\\x0010\\x0013\uFFFD\uFFFD\\x0015</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",

@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 19 Jun 2022 02:50:31",
+	"@generated": "Sun, 26 Jun 2022 02:49:51",
 	"site":[ 
 		{
 			"@name": "https://jobs.zenika.com",
@@ -160,6 +160,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://jobs.zenika.com/_nuxt/app.02c51ad.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://jobs.zenika.com/_nuxt/commons/app.585eaa4.js",
 							"method": "GET",
 							"param": "",
@@ -188,7 +195,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
@@ -221,7 +228,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://jobs.zenika.com/_nuxt/runtime.92df066.js",
+							"uri": "https://jobs.zenika.com/_nuxt/commons/app.585eaa4.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -307,7 +314,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1655478185"
+							"evidence": "1656082974"
+						},
+						{
+							"uri": "https://jobs.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1656082974"
 						},
 						{
 							"uri": "https://jobs.zenika.com/sitemap.xml",
@@ -415,9 +429,9 @@
 							"evidence": "91930485"
 						}
 					],
-					"count": "16",
+					"count": "17",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
-					"otherinfo": "<p>1655478185, which evaluates to: 2022-06-17 15:03:05</p>",
+					"otherinfo": "<p>1656082974, which evaluates to: 2022-06-24 15:02:54</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -534,93 +548,93 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BUtFhRPp4fRkauGe2qi89FD1X5rgi9IFBLdX88"
+							"evidence": "2mRzFCZ0zUdOoA0isUVg94hiCemLeRoOUJLY4HK71oWA66ZDC9dsZLurXFYCSNDQ882glpDMZn5XJlXX1cnKzYn"
 						},
 						{
 							"uri": "https://jobs.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FJusF8JOouNJZCPAbMuaiw4xqMopEZPUkYsUN7aHe4BBDbS0PPYS6"
+							"evidence": "2Fa2r8JTQUPZ82KvREWtH9EU53OHpVxFDp"
+						},
+						{
+							"uri": "https://jobs.zenika.com/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "2FWJ5n1II3Z2p9ntAnrU2kpFnPp83LAjws00yAEepBTYam6IK5"
+						},
+						{
+							"uri": "https://jobs.zenika.com/_nuxt/commons/app.585eaa4.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "hYUrAmodIaLF1bNVXRIwD611WKF3HnuQV1jddPrILrvGOpL0jA4oSuTIjI"
 						},
 						{
 							"uri": "https://jobs.zenika.com/_nuxt/runtime.92df066.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BeOWMzgJ0iAqqIUHCwiL5DWg3GcRjpiKXzlUzA6JBnpSXzPjPdMFR3edQ7"
-						},
-						{
-							"uri": "https://jobs.zenika.com/_nuxt/vendors/app.f2c4d8b.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+							"evidence": "2BvPK9WAV6zzYdVxDpOiOuJlGunxoPiMSwvsSRF0QPDtrPpCR3fglvhB5hCUjVc"
 						},
 						{
 							"uri": "https://jobs.zenika.com/favicon-16.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2B0p3vofY4g3u30ihILLD3X8xRIvNweQkWK2USc4tZu33tCnC9X0kUhzO8GlUzowCwjdFdzoalobbLRFkoJrBaZvptep"
+							"evidence": "DrAevDjbJH3jkvhynftLG8NT50Am1nzuwSCJSBBh8cp"
 						},
 						{
 							"uri": "https://jobs.zenika.com/favicon-192.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "gShR62hmjOxQDSZO59OZ17WX7Pri5sQ040VbQSpCAswMoqXMokTUkeY15HMSq1JA3L2G"
+							"evidence": "sGrRYKI1blCmdjCPEfBKAxW9a2eRuTahKHnoy4UTHKDcRV6PaZ73jYEBeei0Bc79GfuA80wgCMdxJzW6W44JoezHxkchma"
 						},
 						{
 							"uri": "https://jobs.zenika.com/favicon-32.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2B8SdYD7CU38OWWBLMAqDTBuSeM8ShiH3EJbdI"
-						},
-						{
-							"uri": "https://jobs.zenika.com/favicon-64.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "tOTOXQQmTDWyz8GoMO7lDZoQcExVIc"
+							"evidence": "2BoKQGe0ktJ7ja4ngHFV7xmdPOyXjzQXkEEimnQmFe7WsU"
 						},
 						{
 							"uri": "https://jobs.zenika.com/favicon-96.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "r2y3WaoMxXIMQhGK2OLqQwZ8WEChG6XwBaD0s0gln61"
+							"evidence": "aDETrAGnHSokbLR6Pc1d8CvpvfFntl3TYlE80rt5OXgjh3AcwZOQoTuRCUuMTmjlHGk4X7FxykpJoqf31uIzm3tIVk2kfdvVGiB"
 						},
 						{
 							"uri": "https://jobs.zenika.com/favicon.ico",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2B0tirOILOed1t0uBAUGW1tEMZPLg0g69W10N0M4"
+							"evidence": "2FRyDfJCBbDuRWEVekqJROxI4AVxAAFnVMwuP3Rt81CibxhS0Xv1QklX9LX"
 						},
 						{
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BCKImD0r0z450cohGAvszcLH6lSFKoyW8vHZ7o2fQ3MKXapvLC1YOwMqDbOs96k1dOx9vWzpJWkhe8zIsEwvbdMXZ80pInbzOyIYct3fCp"
+							"evidence": "N7Tg0U0OryaD8h2alB2lLYZQJKSn4rDprN9EgdwE6KNPWXvK7dUv"
 						},
 						{
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "EtpSCjvgVMG2aaiHa5HQJXWViYaH6lA8uSFoqPQGUu0sv4FWbwONUHTIbWRjUv78b976NU0mjOv9CzR2zet8XzcxDtypgptnV6LgWz"
+							"evidence": "4Ix8Gg5e5rsJ4ZpjwUTiHiXXiX31ILrya7ehq18b3YmnoqtPdfOF0CWrBpKjVDDGvJlBpVoWfY0nU5RSoCJkimaKliilyVD2n9MYzU7SIWNFgLh3eGMZvJGtZS"
 						}
 					],
 					"count": "12",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0015-\\x0016\\x0014O\uFFFD\uFFFD\u0451\uFFFD\uFFFD{j\uFFFD\uFFFD\uFFFDC\uFFFD~k\uFFFD/H\\x0014\\x0012\uFFFD_\uFFFD</p>",
+					"otherinfo": "<p>\uFFFDds\\x0014&t\uFFFDGN\uFFFD\r\"\uFFFDE`\uFFFD\uFFFDb\t\uFFFDy\\x001a\\x000eP\uFFFD\uFFFD\uFFFDr\uFFFD\u0585\uFFFD\uFFFDC\\x000b\uFFFDld\uFFFD\uFFFD\\V\\x0002H\uFFFD\uFFFD\uFFFD\u0360\uFFFD\uFFFD\uFFFDf~W&U\uFFFD\uFFFD\uFFFD\uFFFD\u0349</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10027",
@@ -757,21 +771,21 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 17208"
+							"evidence": "Age: 113218"
 						},
 						{
 							"uri": "https://jobs.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 99320"
+							"evidence": "Age: 2349"
 						},
 						{
 							"uri": "https://jobs.zenika.com/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 99321"
+							"evidence": "Age: 113218"
 						},
 						{
 							"uri": "https://jobs.zenika.com/sitemap.xml",
@@ -787,7 +801,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -800,7 +814,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"uri": "https://jobs.zenika.com/_nuxt/runtime.92df066.js",
+							"uri": "https://jobs.zenika.com/_nuxt/commons/app.585eaa4.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -862,7 +876,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "26"
+					"sourceid": "27"
 				},
 				{
 					"pluginid": "10049",

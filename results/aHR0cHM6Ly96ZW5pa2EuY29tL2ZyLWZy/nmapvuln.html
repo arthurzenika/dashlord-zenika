@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln zenika.com</pre>
-<p class="lead">Fri Jul  1 09:32:22 2022 – Fri Jul  1 09:35:08 2022<br>1 hosts scanned.
+<p class="lead">Sun Jul  3 02:06:59 2022 – Sun Jul  3 02:09:51 2022<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,9 +76,9 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>185.42.117.108</td>
+<td>46.252.181.103</td>
 <td>zenika.com</td>
-<td>14</td>
+<td>15</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -91,8 +91,8 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#185-42-117-108"><h3 class="panel-title">185.42.117.108 - zenika.com</h3></div>
-<div class="panel-body collapse in" id="185-42-117-108">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#46-252-181-103"><h3 class="panel-title">46.252.181.103 - zenika.com</h3></div>
+<div class="panel-body collapse in" id="46-252-181-103">
 <h4>Hostnames</h4>
 <ul><li>zenika.com (user)</li></ul>
 <h4>Ports</h4>
@@ -107,16 +107,6 @@
 <th>Extra Info</th>
 </tr></thead>
 <tbody>
-<tr class="success">
-<td title="Port">22</td>
-<td title="Protocol">tcp</td>
-<td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">ssh</td>
-<td title="Product">OpenSSH</td>
-<td title="Version">9.0</td>
-<td title="Extra Info">protocol 2.0</td>
-</tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:openbsd:openssh:9.0">cpe:/a:openbsd:openssh:9.0</a></td></tr>
 <tr class="success">
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
@@ -182,25 +172,19 @@
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   Kerberos: 
-    Tjv+
-    vc+x
-    YNS1
-    z)iZ
-    b9Ds.
-    x^E%
-    !3N$
-    IO5Q
-    MZ?$
-    jf"M
-    D6ofz
-    \xf4
+    &lt;0^(P
+    DR?_C
+    \xae
+    gRsU1
+    Lp{J4
+    xn067
+    pv&amp;v
   TLSSessionReq: 
-    Um{t
-    C\xcbF
-    \xd9qIxWO
-    FHSa
-    D%r[0P!z
-    \xda</pre>
+    \x18s
+    y3VW
+    z@_;
+    _&lt;Z1HEyOO2R@
+    :\x83</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">5001</td>
@@ -234,6 +218,16 @@
 <tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 <tr class="success">
 <td title="Port">5225</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">tcpwrapped</td>
+<td title="Product"></td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
+<tr class="success">
+<td title="Port">5280</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">tcpwrapped</td>
@@ -298,17 +292,27 @@
 <td title="Port">5811</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http</td>
-<td title="Product">JBoss Enterprise Application Platform</td>
+<td title="Service">tcpwrapped</td>
+<td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:redhat:jboss_enterprise_application_platform">cpe:/a:redhat:jboss_enterprise_application_platform</a></td></tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 <tr class="success">
 <td title="Port">5962</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">unknown</td>
+<td title="Product"></td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
+<tr class="success">
+<td title="Port">5998</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">tcpwrapped</td>
 <td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
@@ -342,17 +346,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
-<td>22</td>
-<td>tcp</td>
-<td>ssh</td>
-<td>OpenSSH</td>
-<td>9.0</td>
-<td>cpe:/a:openbsd:openssh:9.0</td>
-<td>protocol 2.0</td>
-</tr>
-<tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -362,7 +356,7 @@
 <td></td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>443</td>
 <td>tcp</td>
 <td>https</td>
@@ -372,7 +366,7 @@
 <td></td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>3000</td>
 <td>tcp</td>
 <td>ppp</td>
@@ -382,7 +376,7 @@
 <td></td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>5001</td>
 <td>tcp</td>
 <td>tcpwrapped</td>
@@ -392,7 +386,7 @@
 <td></td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>5002</td>
 <td>tcp</td>
 <td>ssh</td>
@@ -402,7 +396,7 @@
 <td>protocol 2.0</td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>5060</td>
 <td>tcp</td>
 <td>tcpwrapped</td>
@@ -412,7 +406,7 @@
 <td></td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>5225</td>
 <td>tcp</td>
 <td>tcpwrapped</td>
@@ -422,7 +416,17 @@
 <td></td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
+<td>5280</td>
+<td>tcp</td>
+<td>tcpwrapped</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>46.252.181.103 - zenika.com</td>
 <td>5298</td>
 <td>tcp</td>
 <td>tcpwrapped</td>
@@ -432,7 +436,7 @@
 <td></td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>5566</td>
 <td>tcp</td>
 <td>tcpwrapped</td>
@@ -442,7 +446,7 @@
 <td></td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>5800</td>
 <td>tcp</td>
 <td>amqp</td>
@@ -452,17 +456,17 @@
 <td>0-9</td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>5811</td>
 <td>tcp</td>
-<td>http</td>
-<td>JBoss Enterprise Application Platform</td>
+<td>tcpwrapped</td>
 <td></td>
-<td>cpe:/a:redhat:jboss_enterprise_application_platform</td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
 <td>5962</td>
 <td>tcp</td>
 <td>unknown</td>
@@ -472,7 +476,17 @@
 <td></td>
 </tr>
 <tr>
-<td>185.42.117.108 - zenika.com</td>
+<td>46.252.181.103 - zenika.com</td>
+<td>5998</td>
+<td>tcp</td>
+<td>tcpwrapped</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>46.252.181.103 - zenika.com</td>
 <td>9999</td>
 <td>tcp</td>
 <td>tcpwrapped</td>

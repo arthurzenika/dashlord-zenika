@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 26 Jun 2022 01:58:37",
+	"@generated": "Sun, 7 Aug 2022 01:59:01",
 	"site":[ 
 		{
 			"@name": "https://training.zenika.com",
@@ -59,9 +59,16 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/subscription/training/vuejs/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-306a8032>"
 						}
 					],
-					"count": "6",
+					"count": "7",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"home-search-bar-input\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
@@ -88,13 +95,6 @@
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/exclusives",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -150,6 +150,13 @@
 							"evidence": "Error Report"
 						},
 						{
+							"uri": "https://training.zenika.com/fr-fr/universe/security",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Error Report"
+						},
+						{
 							"uri": "https://training.zenika.com/fr-fr/universe/web",
 							"method": "GET",
 							"param": "",
@@ -170,7 +177,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "947"
+					"sourceid": "939"
 				},
 				{
 					"pluginid": "10038",
@@ -218,13 +225,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "",
@@ -247,6 +247,13 @@
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/talks",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -328,20 +335,6 @@
 							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap\">"
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap\">"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap\">"
-						},
-						{
 							"uri": "https://training.zenika.com/fr-fr/practical-informations",
 							"method": "GET",
 							"param": "",
@@ -364,6 +357,20 @@
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/subscription",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap\">"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/universes",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap\">"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/universes",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -409,7 +416,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "985"
+					"sourceid": "981"
 				},
 				{
 					"pluginid": "10063",
@@ -457,13 +464,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "",
@@ -486,6 +486,13 @@
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/talks",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -525,35 +532,35 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"uri": "https://training.zenika.com/_nuxt/1c30d2d.js",
+							"uri": "https://training.zenika.com/_nuxt/0a684b9.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/_nuxt/8484b7e.js",
+							"uri": "https://training.zenika.com/_nuxt/988db75.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/_nuxt/d0adda3.js",
+							"uri": "https://training.zenika.com/_nuxt/b881d30.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/_nuxt/d29540c.js",
+							"uri": "https://training.zenika.com/_nuxt/bf8e5e2.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/_nuxt/f62c28b.js",
+							"uri": "https://training.zenika.com/_nuxt/ed03b6b.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -615,7 +622,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "997"
+					"sourceid": "994"
 				},
 				{
 					"pluginid": "10096",
@@ -635,14 +642,217 @@
 							"evidence": "11035224"
 						},
 						{
-							"uri": "https://training.zenika.com",
+							"uri": "https://training.zenika.com/fr-fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "54604892"
+							"evidence": "11035224"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10608579"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10608580"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10608582"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10608583"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10736378"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10736379"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10838242"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "10926550"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11075774"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11075775"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11075776"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11075777"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11075778"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11075779"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11144286"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11151146"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11183935"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11224705"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11398791"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11398792"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11453714"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11453715"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11467773"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11562204"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11667256"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11693344"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11745622"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11752137"
+						},
+						{
+							"uri": "https://training.zenika.com/sitemap.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "11752139"
 						}
 					],
-					"count": "2",
+					"count": "31",
 					"solution": "<p>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</p>",
 					"otherinfo": "<p>11035224, which evaluates to: 1970-05-08 17:20:24</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
@@ -696,13 +906,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -725,6 +928,13 @@
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/universes",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/workshops",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -789,35 +999,28 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "19bd56-bxxtCNCz9TnHTe8+tdcvtLIylMw"
+							"evidence": "1b6692-ep/4YcvombXYiiYymQ++yjePk94"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/exclusives",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "19bc55-S71ef+TIkGeaue+7V8RKQoX+BOg"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "1be70b-50uNwgn6vjDeqripb4SobiNY/a0"
+							"evidence": "1b65f0-zvrmRYibwg5mar4HdkIfUKrQLzA"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1c060e-vJhm0tVSDv//mFiT5xWH1Noxzns"
+							"evidence": "1dafaa-cgV5Geo5zCTBgvPE0COtP0Nm0mg"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/practical-informations",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "102277-iM554qmajbE0fMvvMY2cl1EALUw"
+							"evidence": "11a3c5-eUOFj7M4ghqJQLyBA2t7L0FWzd4"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/subscription",
@@ -831,21 +1034,28 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "19bab7-4W7zdxW+U5XiEkathoNsd9rvIUg"
+							"evidence": "1b6438-lhSsdHAaHul2wzrvLcoraCJK3lI"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1cbb55-V4BWKwmR7zxANCAoALET55rizpc"
+							"evidence": "1e6494-J7BAxI59K6f5kxMtZGHInuJeKEo"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/universe/design",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "1e634f-5IVh2NHGw7CF9zwCVgUsWiBfdjc"
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/workshops",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "19bad5-rpCIm8f/+rzJXKIF3bxWGO4FFcg"
+							"evidence": "1b6443-P3/3XqoexHJ760WfpFsS4U0onY8"
 						}
 					],
 					"count": "12",
@@ -916,7 +1126,7 @@
 							"evidence": "bugs"
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
+							"uri": "https://training.zenika.com/fr-fr/exclusives",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1005,13 +1215,6 @@
 							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>"
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>"
-						},
-						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "",
@@ -1034,6 +1237,13 @@
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/talks",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>"
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1093,7 +1303,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10015",
@@ -1141,13 +1351,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://training.zenika.com/fr-fr/officials",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -1170,6 +1373,13 @@
 						},
 						{
 							"uri": "https://training.zenika.com/fr-fr/universes",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/workshops",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1230,7 +1440,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://training.zenika.com/fr-fr/next-sessions",
+							"uri": "https://training.zenika.com/fr-fr/certifyings",
 							"method": "GET",
 							"param": "",
 							"attack": "",

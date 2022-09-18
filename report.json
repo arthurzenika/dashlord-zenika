@@ -291,7 +291,7 @@
     "http": {
       "url": "https://zenika.com/fr-fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 11 Sep 2022 02:07:56 GMT",
+      "end_time": "Sun, 18 Sep 2022 02:24:52 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -299,17 +299,17 @@
         "Cache-Control": "s-maxage=10, stale-while-revalidate",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Sun, 11 Sep 2022 02:07:52 GMT",
+        "Date": "Sun, 18 Sep 2022 02:24:49 GMT",
         "ETag": "\"1e5ed-O38nfpQC9iUXZApzAqnMk3r5AFk\"",
         "Keep-Alive": "timeout=5",
-        "Sozu-Id": "01GCN4V6XGTJDKDVWXQ4WC39JB",
+        "Sozu-Id": "01GD76K872W31DA2T80APHDBXA",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding",
         "X-Powered-By": "Next.js"
       },
-      "scan_id": 29314086,
+      "scan_id": 29477582,
       "score": 0,
-      "start_time": "Sun, 11 Sep 2022 02:07:50 GMT",
+      "start_time": "Sun, 18 Sep 2022 02:24:46 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 6,
@@ -483,17 +483,8 @@
     "nmap": {
       "host": "zenika.com",
       "protocol": "tcp",
-      "closed_ports": "985",
+      "closed_ports": "986",
       "open_ports": [
-        {
-          "service": {
-            "name": "ssh",
-            "product": "OpenSSH",
-            "id": "22",
-            "version": "9.0",
-            "vulnerabilities": []
-          }
-        },
         {
           "service": {
             "name": "http",
@@ -605,70 +596,70 @@
     "testssl": [
       {
         "id": "service",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "HTTP"
       },
       {
         "id": "pre_128cipher",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "No 128 cipher limit bug"
       },
       {
         "id": "SSLv2",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "not offered"
       },
       {
         "id": "SSLv3",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "not offered"
       },
       {
         "id": "TLS1",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "TLS1_1",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "TLS1_2",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "TLS1_3",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "offered with final"
       },
       {
         "id": "ALPN",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "not offered"
       },
       {
         "id": "cipherlist_NULL",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -676,7 +667,7 @@
       },
       {
         "id": "cipherlist_aNULL",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -684,7 +675,7 @@
       },
       {
         "id": "cipherlist_EXPORT",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -692,7 +683,7 @@
       },
       {
         "id": "cipherlist_LOW",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-327",
@@ -700,7 +691,7 @@
       },
       {
         "id": "cipherlist_3DES_IDEA",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-310",
@@ -708,7 +699,7 @@
       },
       {
         "id": "cipherlist_AVERAGE",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "LOW",
         "cwe": "CWE-310",
@@ -716,490 +707,490 @@
       },
       {
         "id": "cipherlist_GOOD",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "cipherlist_STRONG",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "cipherorder_TLSv1_2",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "cipher_order",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "server"
       },
       {
         "id": "protocol_negotiated",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "Default protocol TLS1.3"
       },
       {
         "id": "cipher_negotiated",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "TLS_AES_256_GCM_SHA384, 256 bit ECDH (P-256)"
       },
       {
         "id": "FS",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "offered"
       },
       {
         "id": "FS_ciphers",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-SHA256 DHE-RSA-AES128-SHA DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-SHA256 DHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA"
       },
       {
         "id": "FS_ECDHE_curves",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "prime256v1"
       },
       {
         "id": "TLS_extensions",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "'renegotiation info/#65281' 'EC point formats/#11' 'supported versions/#43' 'key share/#51' 'max fragment length/#1' 'encrypt-then-mac/#22' 'extended master secret/#23'"
       },
       {
         "id": "TLS_session_ticket",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "no -- no lifetime advertised"
       },
       {
         "id": "SSL_sessionID_support",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "no"
       },
       {
         "id": "sessionresumption_ticket",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "not supported"
       },
       {
         "id": "sessionresumption_ID",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "No Session ID, no resumption"
       },
       {
         "id": "TLS_timestamp",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "random"
       },
       {
         "id": "certificate_compression",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "none"
       },
       {
         "id": "clientAuth",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "none"
       },
       {
         "id": "cert_numbers",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "1"
       },
       {
         "id": "cert_signatureAlgorithm",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "SHA256 with RSA"
       },
       {
         "id": "cert_keySize",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "RSA 2048 bits (exponent is 65537)"
       },
       {
         "id": "cert_keyUsage",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "Digital Signature, Key Encipherment"
       },
       {
         "id": "cert_extKeyUsage",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLS Web Server Authentication, TLS Web Client Authentication"
       },
       {
         "id": "cert_serialNumber",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "03404D2997BF9969D2D61553CC1316D2C4D0"
       },
       {
         "id": "cert_serialNumberLen",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "18"
       },
       {
         "id": "cert_fingerprintSHA1",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "6923D37C9CADFC58BAD2275E39A495B49A5A3D45"
       },
       {
         "id": "cert_fingerprintSHA256",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "7671CD663A88BD31C2957B651D052DFFC8C48BF259922C92F5863D67EABE29F5"
       },
       {
         "id": "cert",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "-----BEGIN CERTIFICATE----- MIIFGTCCBAGgAwIBAgISA0BNKZe/mWnS1hVTzBMW0sTQMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA3MjIxMTU2MTlaFw0yMjEwMjAxMTU2MThaMBUxEzARBgNVBAMT CnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDfto60 VLnb7s5ZfHsTrrYpF1wwygrYyZsCogR1qAu/PH4F4GZScNen0r4EfNSVh/gQ4ULL MJ63VuMH4oQ+AqCyQ/ofcC7USOUhsuSR+8yz33gaDZPCCdFGOgLbza4qsZeamGmQ n4P8XdTFJzSulm/j6wab/upseMkLPKp5hlw3GLzx+E+1LG7HresTGv1KhMXFiVa9 18d7T0CIjwR+UtRRNJf1o6V/nqXS2y/thVLjWIC6o7wYr752U4ZZ63czT0A5ck3S 0zThBeI9HOZ89djP3eW4ZjPJw8ZRkiYPsU1IYEzCd42TGVqjG4ER4rNLZJuQ7aXS 6l4ENYGWQJ01AmKFAgMBAAGjggJEMIICQDAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0l BBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYE FA8y4e4ue1oXgEVlLe9HbRpE84UYMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYf r52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8u bGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMBUG A1UdEQQOMAyCCnplbmlrYS5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYB BAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5v cmcwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdgApeb7wnjk5IfBWc59jpXflvld9 nGAK+PlNXSZcJV3HhAAAAYIl+vTSAAAEAwBHMEUCIQDr2u8m8fd0oH9icj8lWRvm tON1mR6FYd9SeSa6+LTJ4QIgcg7e657aGs/3NQXqSFcXAnViuaBJlFhr+nqoQcKS bHAAdQBvU3asMfAxGdiZAKRRFf93FRwR2QLBACkGjbIImjfZEwAAAYIl+vWbAAAE AwBGMEQCIFc9HnqEf11dWO1FLKOtWxC/BZlFgDV+szBxc2bvT5WaAiBKHfM+aJ0x ylh2s7Wwp0ZNRZTngQfftAKtL9h2U3w94jANBgkqhkiG9w0BAQsFAAOCAQEApThc b2z5OGn2/3lrrYpM63RAWaQiuBMcJFsWK1J5RedMM+k7zOMsgCYBROQ03M9GtFJz VFRKigj4NKHzFW5nvqisQT7FBuGQ+EPrEAtutsnR94kimw22a6Mmk5etZmQ3Gl1H dQbaOz6e6RQSgt5hsj16VErOUJneXYbkFet47gG23M3lfTk9ilGtgggIScuBCZZm RavzJXjfV2wY9uvwkw9Nz3mlRuhZel3XE8al6+rxiLKw/yQxbJEQMk0o7OKc2jWc /jqyn84dnPR0GlAXNfzXIESn2YQ23Vwd/IVwjKbjXT5sjYcwPYOEK/8yso4ZDKBf /s5cV9+yR52jEzN0Uw== -----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "zenika.com"
       },
       {
         "id": "cert_commonName_wo_SNI",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "lolcatho.st"
       },
       {
         "id": "cert_subjectAltName",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "zenika.com"
       },
       {
         "id": "cert_trust",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "Ok via SAN and CN (SNI mandatory)"
       },
       {
         "id": "cert_chain_of_trust",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "passed."
       },
       {
         "id": "cert_certificatePolicies_EV",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "no"
       },
       {
         "id": "cert_expirationStatus",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
-        "finding": "39 >= 30 days"
+        "finding": "32 >= 30 days"
       },
       {
         "id": "cert_notBefore",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "2022-07-22 11:56"
       },
       {
         "id": "cert_notAfter",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "2022-10-20 11:56"
       },
       {
         "id": "cert_extlifeSpan",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "certificate has no extended life time according to browser forum"
       },
       {
         "id": "cert_eTLS",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "not present"
       },
       {
         "id": "cert_crlDistributionPoints",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "--"
       },
       {
         "id": "cert_ocspURL",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "http://r3.o.lencr.org"
       },
       {
         "id": "OCSP_stapling",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "LOW",
         "finding": "not offered"
       },
       {
         "id": "cert_mustStapleExtension",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "--"
       },
       {
         "id": "DNS_CAArecord",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "LOW",
         "finding": "--"
       },
       {
         "id": "certificate_transparency",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "yes (certificate extension)"
       },
       {
         "id": "certs_countServer",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "3"
       },
       {
         "id": "certs_list_ordering_problem",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "no"
       },
       {
         "id": "cert_caIssuers",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "R3 (Let's Encrypt from US)"
       },
       {
         "id": "intermediate_cert <#1>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "-----BEGIN CERTIFICATE----- MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG /kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4 avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2 yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+ HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX nLRbwHOoq7hHwg== -----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#1>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "67ADD1166B020AE61B8F5FC96813C04C2AA589960796865572A3C7E737613DFD"
       },
       {
         "id": "intermediate_cert_notBefore <#1>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "2020-09-04 00:00"
       },
       {
         "id": "intermediate_cert_notAfter <#1>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "2025-09-15 16:00"
       },
       {
         "id": "intermediate_cert_expiration <#1>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "ok > 40 days"
       },
       {
         "id": "intermediate_cert_chain <#1>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "R3 <-- ISRG Root X1"
       },
       {
         "id": "intermediate_cert <#2>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "-----BEGIN CERTIFICATE----- MIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/ MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT DkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC ov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL wYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D LtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK 4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5 bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y sR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ Xmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4 FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc SLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql PRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND TwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw SwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1 c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx +tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB ATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu b3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E U1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu MA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC 5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW 9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG WCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O he8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC Dfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5 -----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#2>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "6D99FB265EB1C5B3744765FCBC648F3CD8E1BFFAFDC4C2F99B9D47CF7FF1C24F"
       },
       {
         "id": "intermediate_cert_notBefore <#2>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "2021-01-20 19:14"
       },
       {
         "id": "intermediate_cert_notAfter <#2>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "2024-09-30 18:14"
       },
       {
         "id": "intermediate_cert_expiration <#2>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "ok > 40 days"
       },
       {
         "id": "intermediate_cert_chain <#2>",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "ISRG Root X1 <-- DST Root CA X3"
       },
       {
         "id": "intermediate_cert_badOCSP",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "intermediate certificate(s) is/are ok"
       },
       {
         "id": "HTTP_status_code",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "200 OK ('/')"
       },
       {
         "id": "HTTP_clock_skew",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "1662862186"
+        "finding": "1663467990"
       },
       {
         "id": "HSTS",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "LOW",
         "finding": "not offered"
       },
       {
         "id": "HPKP",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "No support for HTTP Public Key Pinning"
       },
       {
         "id": "banner_server",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "No Server banner line in header, interesting!"
       },
       {
         "id": "banner_application",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "X-Powered-By: Next.js"
       },
       {
         "id": "cookie_count",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "0 at '/'"
       },
       {
         "id": "Cache-Control",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "s-maxage=10, stale-while-revalidate"
       },
       {
         "id": "banner_reverseproxy",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "cwe": "CWE-200",
@@ -1207,7 +1198,7 @@
       },
       {
         "id": "heartbleed",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-0160",
@@ -1216,7 +1207,7 @@
       },
       {
         "id": "CCS",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-0224",
@@ -1225,7 +1216,7 @@
       },
       {
         "id": "ticketbleed",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2016-9244",
@@ -1234,7 +1225,7 @@
       },
       {
         "id": "ROBOT",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
@@ -1243,7 +1234,7 @@
       },
       {
         "id": "secure_renego",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cwe": "CWE-310",
@@ -1251,7 +1242,7 @@
       },
       {
         "id": "secure_client_renego",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "HIGH",
         "cve": "CVE-2011-1473",
@@ -1260,7 +1251,7 @@
       },
       {
         "id": "CRIME_TLS",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2012-4929",
@@ -1269,7 +1260,7 @@
       },
       {
         "id": "BREACH",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "MEDIUM",
         "cve": "CVE-2013-3587",
@@ -1278,7 +1269,7 @@
       },
       {
         "id": "POODLE_SSL",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-3566",
@@ -1287,14 +1278,14 @@
       },
       {
         "id": "fallback_SCSV",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "no protocol below TLS 1.2 offered"
       },
       {
         "id": "SWEET32",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2016-2183 CVE-2016-6329",
@@ -1303,7 +1294,7 @@
       },
       {
         "id": "FREAK",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2015-0204",
@@ -1312,7 +1303,7 @@
       },
       {
         "id": "DROWN",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2016-0800 CVE-2016-0703",
@@ -1321,7 +1312,7 @@
       },
       {
         "id": "DROWN_hint",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
@@ -1330,7 +1321,7 @@
       },
       {
         "id": "LOGJAM",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2015-4000",
@@ -1339,7 +1330,7 @@
       },
       {
         "id": "LOGJAM-common_primes",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2015-4000",
@@ -1348,7 +1339,7 @@
       },
       {
         "id": "BEAST",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2011-3389",
@@ -1357,7 +1348,7 @@
       },
       {
         "id": "LUCKY13",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "LOW",
         "cve": "CVE-2013-0169",
@@ -1366,7 +1357,7 @@
       },
       {
         "id": "winshock",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2014-6321",
@@ -1375,7 +1366,7 @@
       },
       {
         "id": "RC4",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "cve": "CVE-2013-2566 CVE-2015-2808",
@@ -1384,322 +1375,322 @@
       },
       {
         "id": "clientsimulation-android_60",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-android_70",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
       },
       {
         "id": "clientsimulation-android_81",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
       },
       {
         "id": "clientsimulation-android_90",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-android_X",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-android_11",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-android_12",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-chrome_79_win10",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-chrome_101_win10",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-firefox_66_win81",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-firefox_100_win10",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-ie_6_xp",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_8_win7",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_8_xp",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_11_win7",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-ie_11_win81",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-ie_11_winphone81",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA256"
       },
       {
         "id": "clientsimulation-ie_11_win10",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-edge_15_win10",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-edge_101_win10_21h2",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-safari_121_ios_122",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-safari_130_osx_10146",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-safari_154_osx_1231",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-java_7u25",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "No connection"
       },
       {
         "id": "clientsimulation-java_8u161",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-java1102",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-java1703",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-go_1178",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-libressl_283",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
       },
       {
         "id": "clientsimulation-openssl_102e",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-openssl_110l",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
       },
       {
         "id": "clientsimulation-openssl_111d",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-openssl_303",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "clientsimulation-apple_mail_16_0",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-thunderbird_91_9",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
       },
       {
         "id": "rating_spec",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
       },
       {
         "id": "rating_doc",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
       },
       {
         "id": "protocol_support_score",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "100"
       },
       {
         "id": "protocol_support_score_weighted",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "30"
       },
       {
         "id": "key_exchange_score",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "90"
       },
       {
         "id": "key_exchange_score_weighted",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "27"
       },
       {
         "id": "cipher_strength_score",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "60"
       },
       {
         "id": "cipher_strength_score_weighted",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "24"
       },
       {
         "id": "final_score",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "81"
       },
       {
         "id": "overall_grade",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
         "finding": "A"
       },
       {
         "id": "grade_cap_reason_1",
-        "ip": "zenika.com/185.42.117.108",
+        "ip": "zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
         "finding": "Grade capped to A. HSTS is not offered"
@@ -2051,7 +2042,7 @@
         "ip": "zenika.com/185.42.117.109",
         "port": "443",
         "severity": "OK",
-        "finding": "39 >= 30 days"
+        "finding": "32 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -2254,7 +2245,7 @@
         "ip": "zenika.com/185.42.117.109",
         "port": "443",
         "severity": "INFO",
-        "finding": "1662862370"
+        "finding": "1663468125"
       },
       {
         "id": "HSTS",
@@ -2807,1107 +2798,6 @@
       },
       {
         "id": "service",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "HTTP"
-      },
-      {
-        "id": "pre_128cipher",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No 128 cipher limit bug"
-      },
-      {
-        "id": "SSLv2",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "not offered"
-      },
-      {
-        "id": "SSLv3",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "not offered"
-      },
-      {
-        "id": "TLS1",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not offered"
-      },
-      {
-        "id": "TLS1_1",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not offered"
-      },
-      {
-        "id": "TLS1_2",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "TLS1_3",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered with final"
-      },
-      {
-        "id": "ALPN",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_NULL",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_aNULL",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_EXPORT",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_LOW",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-327",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_3DES_IDEA",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "cwe": "CWE-310",
-        "finding": "not offered"
-      },
-      {
-        "id": "cipherlist_AVERAGE",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "LOW",
-        "cwe": "CWE-310",
-        "finding": "offered"
-      },
-      {
-        "id": "cipherlist_GOOD",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "cipherlist_STRONG",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "cipherorder_TLSv1_2",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "cipher_order",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "server"
-      },
-      {
-        "id": "protocol_negotiated",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "Default protocol TLS1.3"
-      },
-      {
-        "id": "cipher_negotiated",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "TLS_AES_256_GCM_SHA384, 256 bit ECDH (P-256)"
-      },
-      {
-        "id": "FS",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "offered"
-      },
-      {
-        "id": "FS_ciphers",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-SHA256 DHE-RSA-AES128-SHA DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-SHA256 DHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA"
-      },
-      {
-        "id": "FS_ECDHE_curves",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "prime256v1"
-      },
-      {
-        "id": "TLS_extensions",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "'renegotiation info/#65281' 'EC point formats/#11' 'supported versions/#43' 'key share/#51' 'max fragment length/#1' 'encrypt-then-mac/#22' 'extended master secret/#23'"
-      },
-      {
-        "id": "TLS_session_ticket",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "no -- no lifetime advertised"
-      },
-      {
-        "id": "SSL_sessionID_support",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "no"
-      },
-      {
-        "id": "sessionresumption_ticket",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not supported"
-      },
-      {
-        "id": "sessionresumption_ID",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No Session ID, no resumption"
-      },
-      {
-        "id": "TLS_timestamp",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "random"
-      },
-      {
-        "id": "certificate_compression",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "none"
-      },
-      {
-        "id": "clientAuth",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "none"
-      },
-      {
-        "id": "cert_numbers",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "1"
-      },
-      {
-        "id": "cert_signatureAlgorithm",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "SHA256 with RSA"
-      },
-      {
-        "id": "cert_keySize",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "RSA 2048 bits (exponent is 65537)"
-      },
-      {
-        "id": "cert_keyUsage",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Digital Signature, Key Encipherment"
-      },
-      {
-        "id": "cert_extKeyUsage",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLS Web Server Authentication, TLS Web Client Authentication"
-      },
-      {
-        "id": "cert_serialNumber",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "03404D2997BF9969D2D61553CC1316D2C4D0"
-      },
-      {
-        "id": "cert_serialNumberLen",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "18"
-      },
-      {
-        "id": "cert_fingerprintSHA1",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "6923D37C9CADFC58BAD2275E39A495B49A5A3D45"
-      },
-      {
-        "id": "cert_fingerprintSHA256",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "7671CD663A88BD31C2957B651D052DFFC8C48BF259922C92F5863D67EABE29F5"
-      },
-      {
-        "id": "cert",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFGTCCBAGgAwIBAgISA0BNKZe/mWnS1hVTzBMW0sTQMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA3MjIxMTU2MTlaFw0yMjEwMjAxMTU2MThaMBUxEzARBgNVBAMT CnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDfto60 VLnb7s5ZfHsTrrYpF1wwygrYyZsCogR1qAu/PH4F4GZScNen0r4EfNSVh/gQ4ULL MJ63VuMH4oQ+AqCyQ/ofcC7USOUhsuSR+8yz33gaDZPCCdFGOgLbza4qsZeamGmQ n4P8XdTFJzSulm/j6wab/upseMkLPKp5hlw3GLzx+E+1LG7HresTGv1KhMXFiVa9 18d7T0CIjwR+UtRRNJf1o6V/nqXS2y/thVLjWIC6o7wYr752U4ZZ63czT0A5ck3S 0zThBeI9HOZ89djP3eW4ZjPJw8ZRkiYPsU1IYEzCd42TGVqjG4ER4rNLZJuQ7aXS 6l4ENYGWQJ01AmKFAgMBAAGjggJEMIICQDAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0l BBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYE FA8y4e4ue1oXgEVlLe9HbRpE84UYMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYf r52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8u bGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMBUG A1UdEQQOMAyCCnplbmlrYS5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYB BAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5v cmcwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdgApeb7wnjk5IfBWc59jpXflvld9 nGAK+PlNXSZcJV3HhAAAAYIl+vTSAAAEAwBHMEUCIQDr2u8m8fd0oH9icj8lWRvm tON1mR6FYd9SeSa6+LTJ4QIgcg7e657aGs/3NQXqSFcXAnViuaBJlFhr+nqoQcKS bHAAdQBvU3asMfAxGdiZAKRRFf93FRwR2QLBACkGjbIImjfZEwAAAYIl+vWbAAAE AwBGMEQCIFc9HnqEf11dWO1FLKOtWxC/BZlFgDV+szBxc2bvT5WaAiBKHfM+aJ0x ylh2s7Wwp0ZNRZTngQfftAKtL9h2U3w94jANBgkqhkiG9w0BAQsFAAOCAQEApThc b2z5OGn2/3lrrYpM63RAWaQiuBMcJFsWK1J5RedMM+k7zOMsgCYBROQ03M9GtFJz VFRKigj4NKHzFW5nvqisQT7FBuGQ+EPrEAtutsnR94kimw22a6Mmk5etZmQ3Gl1H dQbaOz6e6RQSgt5hsj16VErOUJneXYbkFet47gG23M3lfTk9ilGtgggIScuBCZZm RavzJXjfV2wY9uvwkw9Nz3mlRuhZel3XE8al6+rxiLKw/yQxbJEQMk0o7OKc2jWc /jqyn84dnPR0GlAXNfzXIESn2YQ23Vwd/IVwjKbjXT5sjYcwPYOEK/8yso4ZDKBf /s5cV9+yR52jEzN0Uw== -----END CERTIFICATE-----"
-      },
-      {
-        "id": "cert_commonName",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "zenika.com"
-      },
-      {
-        "id": "cert_commonName_wo_SNI",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "lolcatho.st"
-      },
-      {
-        "id": "cert_subjectAltName",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "zenika.com"
-      },
-      {
-        "id": "cert_trust",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "Ok via SAN and CN (SNI mandatory)"
-      },
-      {
-        "id": "cert_chain_of_trust",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "passed."
-      },
-      {
-        "id": "cert_certificatePolicies_EV",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "no"
-      },
-      {
-        "id": "cert_expirationStatus",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "39 >= 30 days"
-      },
-      {
-        "id": "cert_notBefore",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2022-07-22 11:56"
-      },
-      {
-        "id": "cert_notAfter",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2022-10-20 11:56"
-      },
-      {
-        "id": "cert_extlifeSpan",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "certificate has no extended life time according to browser forum"
-      },
-      {
-        "id": "cert_eTLS",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "not present"
-      },
-      {
-        "id": "cert_crlDistributionPoints",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "--"
-      },
-      {
-        "id": "cert_ocspURL",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "http://r3.o.lencr.org"
-      },
-      {
-        "id": "OCSP_stapling",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "LOW",
-        "finding": "not offered"
-      },
-      {
-        "id": "cert_mustStapleExtension",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "--"
-      },
-      {
-        "id": "DNS_CAArecord",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "LOW",
-        "finding": "--"
-      },
-      {
-        "id": "certificate_transparency",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "yes (certificate extension)"
-      },
-      {
-        "id": "certs_countServer",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "3"
-      },
-      {
-        "id": "certs_list_ordering_problem",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "no"
-      },
-      {
-        "id": "cert_caIssuers",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "R3 (Let's Encrypt from US)"
-      },
-      {
-        "id": "intermediate_cert <#1>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG /kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4 avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2 yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+ HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX nLRbwHOoq7hHwg== -----END CERTIFICATE-----"
-      },
-      {
-        "id": "intermediate_cert_fingerprintSHA256 <#1>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "67ADD1166B020AE61B8F5FC96813C04C2AA589960796865572A3C7E737613DFD"
-      },
-      {
-        "id": "intermediate_cert_notBefore <#1>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2020-09-04 00:00"
-      },
-      {
-        "id": "intermediate_cert_notAfter <#1>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2025-09-15 16:00"
-      },
-      {
-        "id": "intermediate_cert_expiration <#1>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "ok > 40 days"
-      },
-      {
-        "id": "intermediate_cert_chain <#1>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "R3 <-- ISRG Root X1"
-      },
-      {
-        "id": "intermediate_cert <#2>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/ MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT DkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC ov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL wYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D LtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK 4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5 bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y sR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ Xmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4 FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc SLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql PRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND TwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw SwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1 c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx +tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB ATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu b3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E U1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu MA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC 5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW 9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG WCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O he8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC Dfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5 -----END CERTIFICATE-----"
-      },
-      {
-        "id": "intermediate_cert_fingerprintSHA256 <#2>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "6D99FB265EB1C5B3744765FCBC648F3CD8E1BFFAFDC4C2F99B9D47CF7FF1C24F"
-      },
-      {
-        "id": "intermediate_cert_notBefore <#2>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "2021-01-20 19:14"
-      },
-      {
-        "id": "intermediate_cert_notAfter <#2>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "2024-09-30 18:14"
-      },
-      {
-        "id": "intermediate_cert_expiration <#2>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "ok > 40 days"
-      },
-      {
-        "id": "intermediate_cert_chain <#2>",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "ISRG Root X1 <-- DST Root CA X3"
-      },
-      {
-        "id": "intermediate_cert_badOCSP",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "intermediate certificate(s) is/are ok"
-      },
-      {
-        "id": "HTTP_status_code",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "200 OK ('/')"
-      },
-      {
-        "id": "HTTP_clock_skew",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "-1 seconds from localtime"
-      },
-      {
-        "id": "HTTP_headerTime",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "1662862555"
-      },
-      {
-        "id": "HSTS",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "LOW",
-        "finding": "not offered"
-      },
-      {
-        "id": "HPKP",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No support for HTTP Public Key Pinning"
-      },
-      {
-        "id": "banner_server",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No Server banner line in header, interesting!"
-      },
-      {
-        "id": "banner_application",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "X-Powered-By: Next.js"
-      },
-      {
-        "id": "cookie_count",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "0 at '/'"
-      },
-      {
-        "id": "Cache-Control",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "s-maxage=10, stale-while-revalidate"
-      },
-      {
-        "id": "banner_reverseproxy",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "cwe": "CWE-200",
-        "finding": "--"
-      },
-      {
-        "id": "heartbleed",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-0160",
-        "cwe": "CWE-119",
-        "finding": "not vulnerable, no heartbeat extension"
-      },
-      {
-        "id": "CCS",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-0224",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "ticketbleed",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2016-9244",
-        "cwe": "CWE-200",
-        "finding": "no session ticket extension"
-      },
-      {
-        "id": "ROBOT",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
-        "cwe": "CWE-203",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "secure_renego",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cwe": "CWE-310",
-        "finding": "supported"
-      },
-      {
-        "id": "secure_client_renego",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "HIGH",
-        "cve": "CVE-2011-1473",
-        "cwe": "CWE-310",
-        "finding": "VULNERABLE, DoS threat"
-      },
-      {
-        "id": "CRIME_TLS",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2012-4929",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "BREACH",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "MEDIUM",
-        "cve": "CVE-2013-3587",
-        "cwe": "CWE-310",
-        "finding": "potentially VULNERABLE, gzip deflate HTTP compression detected  - only supplied '/' tested"
-      },
-      {
-        "id": "POODLE_SSL",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-3566",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable, no SSLv3"
-      },
-      {
-        "id": "fallback_SCSV",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "no protocol below TLS 1.2 offered"
-      },
-      {
-        "id": "SWEET32",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2016-2183 CVE-2016-6329",
-        "cwe": "CWE-327",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "FREAK",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2015-0204",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "DROWN",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2016-0800 CVE-2016-0703",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable on this host and port"
-      },
-      {
-        "id": "DROWN_hint",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "cve": "CVE-2016-0800 CVE-2016-0703",
-        "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7671CD663A88BD31C2957B651D052DFFC8C48BF259922C92F5863D67EABE29F5"
-      },
-      {
-        "id": "LOGJAM",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2015-4000",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable, no DH EXPORT ciphers,"
-      },
-      {
-        "id": "LOGJAM-common_primes",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2015-4000",
-        "cwe": "CWE-310",
-        "finding": "--"
-      },
-      {
-        "id": "BEAST",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2011-3389",
-        "cwe": "CWE-20",
-        "finding": "not vulnerable, no SSL3 or TLS1"
-      },
-      {
-        "id": "LUCKY13",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "LOW",
-        "cve": "CVE-2013-0169",
-        "cwe": "CWE-310",
-        "finding": "potentially vulnerable, uses TLS CBC ciphers"
-      },
-      {
-        "id": "winshock",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2014-6321",
-        "cwe": "CWE-94",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "RC4",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "cve": "CVE-2013-2566 CVE-2015-2808",
-        "cwe": "CWE-310",
-        "finding": "not vulnerable"
-      },
-      {
-        "id": "clientsimulation-android_60",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-android_70",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
-      },
-      {
-        "id": "clientsimulation-android_81",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
-      },
-      {
-        "id": "clientsimulation-android_90",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-android_X",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-android_11",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-android_12",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-chrome_79_win10",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-chrome_101_win10",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-firefox_66_win81",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-firefox_100_win10",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-ie_6_xp",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_8_win7",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_8_xp",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-ie_11_win7",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_11_win81",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_11_winphone81",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA256"
-      },
-      {
-        "id": "clientsimulation-ie_11_win10",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-edge_15_win10",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-edge_101_win10_21h2",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-safari_121_ios_122",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-safari_130_osx_10146",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-safari_154_osx_1231",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-java_7u25",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "No connection"
-      },
-      {
-        "id": "clientsimulation-java_8u161",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-java1102",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-java1703",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-go_1178",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-libressl_283",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
-      },
-      {
-        "id": "clientsimulation-openssl_102e",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-openssl_110l",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
-      },
-      {
-        "id": "clientsimulation-openssl_111d",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-openssl_303",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "clientsimulation-apple_mail_16_0",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-      },
-      {
-        "id": "clientsimulation-thunderbird_91_9",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "rating_spec",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
-      },
-      {
-        "id": "rating_doc",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
-      },
-      {
-        "id": "protocol_support_score",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "100"
-      },
-      {
-        "id": "protocol_support_score_weighted",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "30"
-      },
-      {
-        "id": "key_exchange_score",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "90"
-      },
-      {
-        "id": "key_exchange_score_weighted",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "27"
-      },
-      {
-        "id": "cipher_strength_score",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "60"
-      },
-      {
-        "id": "cipher_strength_score_weighted",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "24"
-      },
-      {
-        "id": "final_score",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "81"
-      },
-      {
-        "id": "overall_grade",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "A"
-      },
-      {
-        "id": "grade_cap_reason_1",
-        "ip": "zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "INFO",
-        "finding": "Grade capped to A. HSTS is not offered"
-      },
-      {
-        "id": "service",
         "ip": "zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
@@ -4253,7 +3143,7 @@
         "ip": "zenika.com/46.252.181.103",
         "port": "443",
         "severity": "OK",
-        "finding": "39 >= 30 days"
+        "finding": "32 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -4456,7 +3346,7 @@
         "ip": "zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "1662862743"
+        "finding": "1663468262"
       },
       {
         "id": "HSTS",
@@ -5003,16 +3893,1117 @@
       {
         "id": "grade_cap_reason_1",
         "ip": "zenika.com/46.252.181.103",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "Grade capped to A. HSTS is not offered"
+      },
+      {
+        "id": "service",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "HTTP"
+      },
+      {
+        "id": "pre_128cipher",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No 128 cipher limit bug"
+      },
+      {
+        "id": "SSLv2",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "not offered"
+      },
+      {
+        "id": "SSLv3",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "not offered"
+      },
+      {
+        "id": "TLS1",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not offered"
+      },
+      {
+        "id": "TLS1_1",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not offered"
+      },
+      {
+        "id": "TLS1_2",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "TLS1_3",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered with final"
+      },
+      {
+        "id": "ALPN",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_NULL",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_aNULL",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_EXPORT",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_LOW",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-327",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_3DES_IDEA",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "cwe": "CWE-310",
+        "finding": "not offered"
+      },
+      {
+        "id": "cipherlist_AVERAGE",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "LOW",
+        "cwe": "CWE-310",
+        "finding": "offered"
+      },
+      {
+        "id": "cipherlist_GOOD",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "cipherlist_STRONG",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "cipherorder_TLSv1_2",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "cipher_order",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "server"
+      },
+      {
+        "id": "protocol_negotiated",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "Default protocol TLS1.3"
+      },
+      {
+        "id": "cipher_negotiated",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "TLS_AES_256_GCM_SHA384, 256 bit ECDH (P-256)"
+      },
+      {
+        "id": "FS",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "offered"
+      },
+      {
+        "id": "FS_ciphers",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-SHA256 DHE-RSA-AES128-SHA DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-SHA256 DHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA"
+      },
+      {
+        "id": "FS_ECDHE_curves",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "prime256v1"
+      },
+      {
+        "id": "TLS_extensions",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "'renegotiation info/#65281' 'EC point formats/#11' 'supported versions/#43' 'key share/#51' 'max fragment length/#1' 'encrypt-then-mac/#22' 'extended master secret/#23'"
+      },
+      {
+        "id": "TLS_session_ticket",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "no -- no lifetime advertised"
+      },
+      {
+        "id": "SSL_sessionID_support",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "no"
+      },
+      {
+        "id": "sessionresumption_ticket",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not supported"
+      },
+      {
+        "id": "sessionresumption_ID",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No Session ID, no resumption"
+      },
+      {
+        "id": "TLS_timestamp",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "random"
+      },
+      {
+        "id": "certificate_compression",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "none"
+      },
+      {
+        "id": "clientAuth",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "none"
+      },
+      {
+        "id": "cert_numbers",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "1"
+      },
+      {
+        "id": "cert_signatureAlgorithm",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "SHA256 with RSA"
+      },
+      {
+        "id": "cert_keySize",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "RSA 2048 bits (exponent is 65537)"
+      },
+      {
+        "id": "cert_keyUsage",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "Digital Signature, Key Encipherment"
+      },
+      {
+        "id": "cert_extKeyUsage",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLS Web Server Authentication, TLS Web Client Authentication"
+      },
+      {
+        "id": "cert_serialNumber",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "03404D2997BF9969D2D61553CC1316D2C4D0"
+      },
+      {
+        "id": "cert_serialNumberLen",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "18"
+      },
+      {
+        "id": "cert_fingerprintSHA1",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "6923D37C9CADFC58BAD2275E39A495B49A5A3D45"
+      },
+      {
+        "id": "cert_fingerprintSHA256",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "7671CD663A88BD31C2957B651D052DFFC8C48BF259922C92F5863D67EABE29F5"
+      },
+      {
+        "id": "cert",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "-----BEGIN CERTIFICATE----- MIIFGTCCBAGgAwIBAgISA0BNKZe/mWnS1hVTzBMW0sTQMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA3MjIxMTU2MTlaFw0yMjEwMjAxMTU2MThaMBUxEzARBgNVBAMT CnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDfto60 VLnb7s5ZfHsTrrYpF1wwygrYyZsCogR1qAu/PH4F4GZScNen0r4EfNSVh/gQ4ULL MJ63VuMH4oQ+AqCyQ/ofcC7USOUhsuSR+8yz33gaDZPCCdFGOgLbza4qsZeamGmQ n4P8XdTFJzSulm/j6wab/upseMkLPKp5hlw3GLzx+E+1LG7HresTGv1KhMXFiVa9 18d7T0CIjwR+UtRRNJf1o6V/nqXS2y/thVLjWIC6o7wYr752U4ZZ63czT0A5ck3S 0zThBeI9HOZ89djP3eW4ZjPJw8ZRkiYPsU1IYEzCd42TGVqjG4ER4rNLZJuQ7aXS 6l4ENYGWQJ01AmKFAgMBAAGjggJEMIICQDAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0l BBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYE FA8y4e4ue1oXgEVlLe9HbRpE84UYMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYf r52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8u bGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMBUG A1UdEQQOMAyCCnplbmlrYS5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYB BAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5v cmcwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdgApeb7wnjk5IfBWc59jpXflvld9 nGAK+PlNXSZcJV3HhAAAAYIl+vTSAAAEAwBHMEUCIQDr2u8m8fd0oH9icj8lWRvm tON1mR6FYd9SeSa6+LTJ4QIgcg7e657aGs/3NQXqSFcXAnViuaBJlFhr+nqoQcKS bHAAdQBvU3asMfAxGdiZAKRRFf93FRwR2QLBACkGjbIImjfZEwAAAYIl+vWbAAAE AwBGMEQCIFc9HnqEf11dWO1FLKOtWxC/BZlFgDV+szBxc2bvT5WaAiBKHfM+aJ0x ylh2s7Wwp0ZNRZTngQfftAKtL9h2U3w94jANBgkqhkiG9w0BAQsFAAOCAQEApThc b2z5OGn2/3lrrYpM63RAWaQiuBMcJFsWK1J5RedMM+k7zOMsgCYBROQ03M9GtFJz VFRKigj4NKHzFW5nvqisQT7FBuGQ+EPrEAtutsnR94kimw22a6Mmk5etZmQ3Gl1H dQbaOz6e6RQSgt5hsj16VErOUJneXYbkFet47gG23M3lfTk9ilGtgggIScuBCZZm RavzJXjfV2wY9uvwkw9Nz3mlRuhZel3XE8al6+rxiLKw/yQxbJEQMk0o7OKc2jWc /jqyn84dnPR0GlAXNfzXIESn2YQ23Vwd/IVwjKbjXT5sjYcwPYOEK/8yso4ZDKBf /s5cV9+yR52jEzN0Uw== -----END CERTIFICATE-----"
+      },
+      {
+        "id": "cert_commonName",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "zenika.com"
+      },
+      {
+        "id": "cert_commonName_wo_SNI",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "lolcatho.st"
+      },
+      {
+        "id": "cert_subjectAltName",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "zenika.com"
+      },
+      {
+        "id": "cert_trust",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "Ok via SAN and CN (SNI mandatory)"
+      },
+      {
+        "id": "cert_chain_of_trust",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "passed."
+      },
+      {
+        "id": "cert_certificatePolicies_EV",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "no"
+      },
+      {
+        "id": "cert_expirationStatus",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "32 >= 30 days"
+      },
+      {
+        "id": "cert_notBefore",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "2022-07-22 11:56"
+      },
+      {
+        "id": "cert_notAfter",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "2022-10-20 11:56"
+      },
+      {
+        "id": "cert_extlifeSpan",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "certificate has no extended life time according to browser forum"
+      },
+      {
+        "id": "cert_eTLS",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "not present"
+      },
+      {
+        "id": "cert_crlDistributionPoints",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "--"
+      },
+      {
+        "id": "cert_ocspURL",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "http://r3.o.lencr.org"
+      },
+      {
+        "id": "OCSP_stapling",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "LOW",
+        "finding": "not offered"
+      },
+      {
+        "id": "cert_mustStapleExtension",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "--"
+      },
+      {
+        "id": "DNS_CAArecord",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "LOW",
+        "finding": "--"
+      },
+      {
+        "id": "certificate_transparency",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "yes (certificate extension)"
+      },
+      {
+        "id": "certs_countServer",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "3"
+      },
+      {
+        "id": "certs_list_ordering_problem",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "no"
+      },
+      {
+        "id": "cert_caIssuers",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "R3 (Let's Encrypt from US)"
+      },
+      {
+        "id": "intermediate_cert <#1>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "-----BEGIN CERTIFICATE----- MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG /kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4 avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2 yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+ HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX nLRbwHOoq7hHwg== -----END CERTIFICATE-----"
+      },
+      {
+        "id": "intermediate_cert_fingerprintSHA256 <#1>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "67ADD1166B020AE61B8F5FC96813C04C2AA589960796865572A3C7E737613DFD"
+      },
+      {
+        "id": "intermediate_cert_notBefore <#1>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "2020-09-04 00:00"
+      },
+      {
+        "id": "intermediate_cert_notAfter <#1>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "2025-09-15 16:00"
+      },
+      {
+        "id": "intermediate_cert_expiration <#1>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "ok > 40 days"
+      },
+      {
+        "id": "intermediate_cert_chain <#1>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "R3 <-- ISRG Root X1"
+      },
+      {
+        "id": "intermediate_cert <#2>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "-----BEGIN CERTIFICATE----- MIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/ MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT DkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC ov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL wYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D LtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK 4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5 bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y sR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ Xmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4 FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc SLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql PRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND TwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw SwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1 c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx +tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB ATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu b3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E U1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu MA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC 5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW 9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG WCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O he8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC Dfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5 -----END CERTIFICATE-----"
+      },
+      {
+        "id": "intermediate_cert_fingerprintSHA256 <#2>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "6D99FB265EB1C5B3744765FCBC648F3CD8E1BFFAFDC4C2F99B9D47CF7FF1C24F"
+      },
+      {
+        "id": "intermediate_cert_notBefore <#2>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "2021-01-20 19:14"
+      },
+      {
+        "id": "intermediate_cert_notAfter <#2>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "2024-09-30 18:14"
+      },
+      {
+        "id": "intermediate_cert_expiration <#2>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "ok > 40 days"
+      },
+      {
+        "id": "intermediate_cert_chain <#2>",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "ISRG Root X1 <-- DST Root CA X3"
+      },
+      {
+        "id": "intermediate_cert_badOCSP",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "intermediate certificate(s) is/are ok"
+      },
+      {
+        "id": "HTTP_status_code",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "200 OK ('/')"
+      },
+      {
+        "id": "HTTP_clock_skew",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "-1 seconds from localtime"
+      },
+      {
+        "id": "HTTP_headerTime",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "1663468399"
+      },
+      {
+        "id": "HSTS",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "LOW",
+        "finding": "not offered"
+      },
+      {
+        "id": "HPKP",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No support for HTTP Public Key Pinning"
+      },
+      {
+        "id": "banner_server",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No Server banner line in header, interesting!"
+      },
+      {
+        "id": "banner_application",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "X-Powered-By: Next.js"
+      },
+      {
+        "id": "cookie_count",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "0 at '/'"
+      },
+      {
+        "id": "Cache-Control",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "s-maxage=10, stale-while-revalidate"
+      },
+      {
+        "id": "banner_reverseproxy",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "cwe": "CWE-200",
+        "finding": "--"
+      },
+      {
+        "id": "heartbleed",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-0160",
+        "cwe": "CWE-119",
+        "finding": "not vulnerable, no heartbeat extension"
+      },
+      {
+        "id": "CCS",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-0224",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "ticketbleed",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2016-9244",
+        "cwe": "CWE-200",
+        "finding": "no session ticket extension"
+      },
+      {
+        "id": "ROBOT",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081 CVE-2017-6168",
+        "cwe": "CWE-203",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "secure_renego",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cwe": "CWE-310",
+        "finding": "supported"
+      },
+      {
+        "id": "secure_client_renego",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "HIGH",
+        "cve": "CVE-2011-1473",
+        "cwe": "CWE-310",
+        "finding": "VULNERABLE, DoS threat"
+      },
+      {
+        "id": "CRIME_TLS",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2012-4929",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "BREACH",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "MEDIUM",
+        "cve": "CVE-2013-3587",
+        "cwe": "CWE-310",
+        "finding": "potentially VULNERABLE, gzip deflate HTTP compression detected  - only supplied '/' tested"
+      },
+      {
+        "id": "POODLE_SSL",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-3566",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable, no SSLv3"
+      },
+      {
+        "id": "fallback_SCSV",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "no protocol below TLS 1.2 offered"
+      },
+      {
+        "id": "SWEET32",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2016-2183 CVE-2016-6329",
+        "cwe": "CWE-327",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "FREAK",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2015-0204",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "DROWN",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2016-0800 CVE-2016-0703",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable on this host and port"
+      },
+      {
+        "id": "DROWN_hint",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "cve": "CVE-2016-0800 CVE-2016-0703",
+        "cwe": "CWE-310",
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7671CD663A88BD31C2957B651D052DFFC8C48BF259922C92F5863D67EABE29F5"
+      },
+      {
+        "id": "LOGJAM",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2015-4000",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable, no DH EXPORT ciphers,"
+      },
+      {
+        "id": "LOGJAM-common_primes",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2015-4000",
+        "cwe": "CWE-310",
+        "finding": "--"
+      },
+      {
+        "id": "BEAST",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2011-3389",
+        "cwe": "CWE-20",
+        "finding": "not vulnerable, no SSL3 or TLS1"
+      },
+      {
+        "id": "LUCKY13",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "LOW",
+        "cve": "CVE-2013-0169",
+        "cwe": "CWE-310",
+        "finding": "potentially vulnerable, uses TLS CBC ciphers"
+      },
+      {
+        "id": "winshock",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2014-6321",
+        "cwe": "CWE-94",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "RC4",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "cve": "CVE-2013-2566 CVE-2015-2808",
+        "cwe": "CWE-310",
+        "finding": "not vulnerable"
+      },
+      {
+        "id": "clientsimulation-android_60",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-android_70",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+      },
+      {
+        "id": "clientsimulation-android_81",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+      },
+      {
+        "id": "clientsimulation-android_90",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-android_X",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-android_11",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-android_12",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-chrome_79_win10",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-chrome_101_win10",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-firefox_66_win81",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-firefox_100_win10",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-ie_6_xp",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-ie_8_win7",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-ie_8_xp",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-ie_11_win7",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_11_win81",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_11_winphone81",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-SHA256"
+      },
+      {
+        "id": "clientsimulation-ie_11_win10",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-edge_15_win10",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-edge_101_win10_21h2",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-safari_121_ios_122",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-safari_130_osx_10146",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-safari_154_osx_1231",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-java_7u25",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "No connection"
+      },
+      {
+        "id": "clientsimulation-java_8u161",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-java1102",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-java1703",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-go_1178",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-libressl_283",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+      },
+      {
+        "id": "clientsimulation-openssl_102e",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-openssl_110l",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-CHACHA20-POLY1305"
+      },
+      {
+        "id": "clientsimulation-openssl_111d",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-openssl_303",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "clientsimulation-apple_mail_16_0",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+      },
+      {
+        "id": "clientsimulation-thunderbird_91_9",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "TLSv1.3 TLS_AES_256_GCM_SHA384"
+      },
+      {
+        "id": "rating_spec",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
+      },
+      {
+        "id": "rating_doc",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
+      },
+      {
+        "id": "protocol_support_score",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "100"
+      },
+      {
+        "id": "protocol_support_score_weighted",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "30"
+      },
+      {
+        "id": "key_exchange_score",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "90"
+      },
+      {
+        "id": "key_exchange_score_weighted",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "27"
+      },
+      {
+        "id": "cipher_strength_score",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "60"
+      },
+      {
+        "id": "cipher_strength_score_weighted",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "24"
+      },
+      {
+        "id": "final_score",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "81"
+      },
+      {
+        "id": "overall_grade",
+        "ip": "zenika.com/185.42.117.108",
+        "port": "443",
+        "severity": "OK",
+        "finding": "A"
+      },
+      {
+        "id": "grade_cap_reason_1",
+        "ip": "zenika.com/185.42.117.108",
         "port": "443",
         "severity": "INFO",
         "finding": "Grade capped to A. HSTS is not offered"
       },
       {
         "id": "scanTime",
-        "ip": "zenika.com/46.252.181.103",
+        "ip": "zenika.com/185.42.117.108",
         "port": "443",
         "severity": "INFO",
-        "finding": "747"
+        "finding": "551"
       }
     ],
     "thirdparties": {
@@ -5078,6 +5069,14 @@
           "url": "https://zenika-website.prismic.io/prismic-toolbar/4.0.8/iframe.html"
         },
         {
+          "type": "google fonts",
+          "url": "https://fonts.googleapis.com/css?family=Source+Code+Pro",
+          "details": {
+            "id": "google fonts",
+            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+          }
+        },
+        {
           "type": "unknown",
           "url": "https://images.prismic.io/zenika-website/b728d33f-40f5-4a67-87e8-61d09bc6f2a6_brest.png?auto=compress,format&rect=0,0,210,160&w=210&h=160"
         },
@@ -5140,14 +5139,6 @@
         {
           "type": "google fonts",
           "url": "https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.googleapis.com/css?family=Source+Code+Pro",
           "details": {
             "id": "google fonts",
             "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -5343,10 +5334,10 @@
         "cache-control": "s-maxage=10, stale-while-revalidate",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 11 Sep 2022 02:08:32 GMT",
+        "date": "Sun, 18 Sep 2022 02:25:23 GMT",
         "etag": "\"1e5ed-O38nfpQC9iUXZApzAqnMk3r5AFk\"",
         "keep-alive": "timeout=5",
-        "sozu-id": "01GCN4WDGX6AXCD8ZSA2HJXD8B",
+        "sozu-id": "01GD76MA6C7RA9S9ZV9C6HQ5K7",
         "transfer-encoding": "chunked",
         "vary": "Accept-Encoding",
         "x-powered-by": "Next.js"
@@ -5354,7 +5345,7 @@
       "endpoints": [
         {
           "hostname": "zenika.com",
-          "ip": "185.42.117.108",
+          "ip": "46.252.181.104",
           "geoip": {
             "continent": {
               "code": "EU",
@@ -5410,7 +5401,7 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "209.85.146.95",
+          "ip": "172.253.63.95",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -5464,7 +5455,7 @@
         },
         {
           "hostname": "static.cdn.prismic.io",
-          "ip": "54.230.18.85",
+          "ip": "13.33.60.63",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -5518,7 +5509,7 @@
         },
         {
           "hostname": "zenika-website.cdn.prismic.io",
-          "ip": "108.156.120.29",
+          "ip": "13.249.39.15",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -5572,8 +5563,15 @@
         },
         {
           "hostname": "images.prismic.io",
-          "ip": "146.75.106.208",
+          "ip": "146.75.30.208",
           "geoip": {
+            "city": {
+              "geoname_id": 4744870,
+              "names": {
+                "en": "Ashburn",
+                "ru": "Ашберн"
+              }
+            },
             "continent": {
               "code": "NA",
               "geoname_id": 6255149,
@@ -5603,10 +5601,14 @@
               }
             },
             "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
+              "accuracy_radius": 20,
+              "latitude": 39.018,
+              "longitude": -77.539,
+              "metro_code": 511,
+              "time_zone": "America/New_York"
+            },
+            "postal": {
+              "code": "20147"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -5621,12 +5623,26 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 6254928,
+                "iso_code": "VA",
+                "names": {
+                  "en": "Virginia",
+                  "fr": "Virginie",
+                  "ja": "バージニア州",
+                  "pt-BR": "Virgínia",
+                  "ru": "Вирджиния",
+                  "zh-CN": "弗吉尼亚州"
+                }
+              }
+            ]
           }
         },
         {
           "hostname": "zenika-website.prismic.io",
-          "ip": "54.197.85.212",
+          "ip": "52.71.1.124",
           "geoip": {
             "city": {
               "geoname_id": 4744870,
@@ -5705,7 +5721,7 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "142.250.128.94",
+          "ip": "172.217.13.67",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -5977,7 +5993,7 @@
     },
     "zap": {
       "@version": "2.11.1",
-      "@generated": "Sun, 11 Sep 2022 02:07:30",
+      "@generated": "Sun, 18 Sep 2022 02:24:27",
       "site": [
         {
           "@name": "https://zenika.com",
@@ -6035,13 +6051,6 @@
               "desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>"
             },
             {
-              "name": "Timestamp Disclosure - Unix",
-              "riskcode": "1",
-              "confidence": "1",
-              "riskdesc": "Low (Low)",
-              "desc": "<p>A timestamp was disclosed by the application/web server - Unix</p>"
-            },
-            {
               "name": "X-Content-Type-Options Header Missing",
               "riskcode": "1",
               "confidence": "2",
@@ -6065,8 +6074,8 @@
             {
               "name": "Re-examine Cache-control Directives",
               "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
+              "confidence": "1",
+              "riskdesc": "Informational (Low)",
               "desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>"
             }
           ]
@@ -6074,155 +6083,6 @@
       ]
     },
     "nuclei": [
-      {
-        "template": "technologies/tech-detect.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
-        "template-id": "tech-detect",
-        "info": {
-          "name": "Wappalyzer Technology Detection",
-          "author": [
-            "hakluke"
-          ],
-          "tags": [
-            "tech"
-          ],
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "next.js",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:35.122406975Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "technologies/tech-detect.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
-        "template-id": "tech-detect",
-        "info": {
-          "name": "Wappalyzer Technology Detection",
-          "author": [
-            "hakluke"
-          ],
-          "tags": [
-            "tech"
-          ],
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "google-font-api",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:35.123588393Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "x-frame-options",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.199867096Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "x-content-type-options",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.20145572Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "clear-site-data",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.202963944Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
       {
         "template": "misconfiguration/http-missing-security-headers.yaml",
         "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
@@ -6250,74 +6110,8 @@
         "type": "http",
         "host": "https://zenika.com/fr-fr",
         "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.204328465Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "content-security-policy",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.20592079Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "x-permitted-cross-domain-policies",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.207247411Z",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.829594819Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
         "matcher-status": true,
         "matched-line": null
@@ -6349,206 +6143,8 @@
         "type": "http",
         "host": "https://zenika.com/fr-fr",
         "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.221811937Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-origin",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.223344361Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "permission-policy",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.224823484Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-resource-policy",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.226320407Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-credentials",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.22779773Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "access-control-allow-headers",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.229300354Z",
-        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "misconfiguration/http-missing-security-headers.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-        "template-id": "http-missing-security-headers",
-        "info": {
-          "name": "HTTP Missing Security Headers",
-          "author": [
-            "socketz",
-            "geeknik",
-            "g4l1t0",
-            "convisoappsec",
-            "kurohost",
-            "dawid-czarnecki",
-            "forgedhallpass"
-          ],
-          "tags": [
-            "misconfig",
-            "generic"
-          ],
-          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-          "reference": null,
-          "severity": "info"
-        },
-        "matcher-name": "cross-origin-embedder-policy",
-        "type": "http",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.230761176Z",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.838110068Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
         "matcher-status": true,
         "matched-line": null
@@ -6580,8 +6176,8 @@
         "type": "http",
         "host": "https://zenika.com/fr-fr",
         "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.232403502Z",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.83936259Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
         "matcher-status": true,
         "matched-line": null
@@ -6609,12 +6205,144 @@
           "reference": null,
           "severity": "info"
         },
-        "matcher-name": "access-control-expose-headers",
+        "matcher-name": "access-control-allow-origin",
         "type": "http",
         "host": "https://zenika.com/fr-fr",
         "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.235212246Z",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.845438496Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-credentials",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.84619791Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "x-frame-options",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.846992823Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "x-content-type-options",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.847839038Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-resource-policy",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.848638252Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
         "matcher-status": true,
         "matched-line": null
@@ -6646,8 +6374,8 @@
         "type": "http",
         "host": "https://zenika.com/fr-fr",
         "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.237229577Z",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.849547968Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
         "matcher-status": true,
         "matched-line": null
@@ -6679,9 +6407,363 @@
         "type": "http",
         "host": "https://zenika.com/fr-fr",
         "matched-at": "https://zenika.com/fr-fr",
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:23:40.238823202Z",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.851481602Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "content-security-policy",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.852879226Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "permission-policy",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.854314551Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "x-permitted-cross-domain-policies",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.855700276Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "clear-site-data",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.857176001Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "cross-origin-embedder-policy",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.858938532Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-expose-headers",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.861077169Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "misconfiguration/http-missing-security-headers.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+        "template-id": "http-missing-security-headers",
+        "info": {
+          "name": "HTTP Missing Security Headers",
+          "author": [
+            "socketz",
+            "geeknik",
+            "g4l1t0",
+            "convisoappsec",
+            "kurohost",
+            "dawid-czarnecki",
+            "forgedhallpass"
+          ],
+          "tags": [
+            "misconfig",
+            "generic"
+          ],
+          "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "access-control-allow-headers",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:30.862914902Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "technologies/tech-detect.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
+        "template-id": "tech-detect",
+        "info": {
+          "name": "Wappalyzer Technology Detection",
+          "author": [
+            "hakluke"
+          ],
+          "tags": [
+            "tech"
+          ],
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "next.js",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:37.028746152Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "technologies/tech-detect.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/tech-detect.yaml",
+        "template-id": "tech-detect",
+        "info": {
+          "name": "Wappalyzer Technology Detection",
+          "author": [
+            "hakluke"
+          ],
+          "tags": [
+            "tech"
+          ],
+          "reference": null,
+          "severity": "info"
+        },
+        "matcher-name": "google-font-api",
+        "type": "http",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:38:37.030011174Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.com/fr-fr'",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "dns/txt-fingerprint.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/txt-fingerprint.yaml",
+        "template-id": "txt-fingerprint",
+        "info": {
+          "name": "DNS TXT Record Detected",
+          "author": [
+            "pdteam"
+          ],
+          "tags": [
+            "dns",
+            "txt"
+          ],
+          "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
+          "reference": [
+            "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
+          ],
+          "severity": "info",
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "type": "dns",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "extracted-results": [
+          "\"v=spf1 include:_spf.google.com ~all\"",
+          "\"MS=ms17411114\"",
+          "\"GRGjGQmL941NMBQHn2aGYbt++Lc=\"",
+          "\"facebook-domain-verification=4j6dvrzwun3kdibvk8exv9cnkc2m8e\"",
+          "\"google-site-verification=170fVNgtfOTpelMRj2FnU1jj5cvmIhC-TAJiNhIk7so\"",
+          "\"google-site-verification=dLFAXwanRugkOUVVPb3vj0PgeMBLbkyROdlBEl5hqtE\"",
+          "\"google-site-verification=nlWxvbsHrenE3zdJb1XTiLs0JYyAE-RVwVFeY41o5fE\""
+        ],
+        "timestamp": "2022-09-18T02:38:40.313932932Z",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "dns/dns-waf-detect.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/dns-waf-detect.yaml",
+        "template-id": "dns-waf-detect",
+        "info": {
+          "name": "DNS WAF Detection",
+          "author": [
+            "lu4nx"
+          ],
+          "tags": [
+            "tech",
+            "waf",
+            "dns"
+          ],
+          "description": "A DNS WAF was detected.",
+          "reference": null,
+          "severity": "info",
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "matcher-name": "cloudflare",
+        "type": "dns",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "timestamp": "2022-09-18T02:39:04.343349454Z",
         "matcher-status": true,
         "matched-line": null
       },
@@ -6721,111 +6803,33 @@
           "10 alt4.aspmx.l.google.com.",
           "10 alt3.aspmx.l.google.com."
         ],
-        "timestamp": "2022-09-11T02:23:48.826710704Z",
+        "timestamp": "2022-09-18T02:39:52.796732654Z",
         "matcher-status": true,
         "matched-line": null
       },
       {
-        "template": "dns/txt-fingerprint.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/txt-fingerprint.yaml",
-        "template-id": "txt-fingerprint",
+        "template": "ssl/tls-version.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+        "template-id": "tls-version",
         "info": {
-          "name": "DNS TXT Record Detected",
+          "name": "TLS Version",
           "author": [
             "pdteam"
           ],
           "tags": [
-            "dns",
-            "txt"
+            "ssl"
           ],
-          "description": "A DNS TXT record was detected. The TXT record lets a domain admin leave notes on a DNS server.",
-          "reference": [
-            "https://www.netspi.com/blog/technical/network-penetration-testing/analyzing-dns-txt-records-to-fingerprint-service-providers/"
-          ],
-          "severity": "info",
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
+          "reference": null,
+          "severity": "info"
         },
-        "type": "dns",
+        "type": "ssl",
         "host": "https://zenika.com/fr-fr",
         "matched-at": "https://zenika.com/fr-fr",
         "extracted-results": [
-          "\"GRGjGQmL941NMBQHn2aGYbt++Lc=\"",
-          "\"facebook-domain-verification=4j6dvrzwun3kdibvk8exv9cnkc2m8e\"",
-          "\"google-site-verification=170fVNgtfOTpelMRj2FnU1jj5cvmIhC-TAJiNhIk7so\"",
-          "\"google-site-verification=dLFAXwanRugkOUVVPb3vj0PgeMBLbkyROdlBEl5hqtE\"",
-          "\"google-site-verification=nlWxvbsHrenE3zdJb1XTiLs0JYyAE-RVwVFeY41o5fE\"",
-          "\"v=spf1 include:_spf.google.com ~all\"",
-          "\"MS=ms17411114\""
+          "TLS13"
         ],
-        "timestamp": "2022-09-11T02:23:51.672005346Z",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "dns/mx-service-detector.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/mx-service-detector.yaml",
-        "template-id": "mx-service-detector",
-        "info": {
-          "name": "Email Service Detector",
-          "author": [
-            "binaryfigments"
-          ],
-          "tags": [
-            "dns",
-            "service"
-          ],
-          "description": "An email service was detected. Check the email service or spam filter that is used for a domain.",
-          "reference": null,
-          "severity": "info",
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "matcher-name": "Google Apps",
-        "type": "dns",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "timestamp": "2022-09-11T02:23:52.625311502Z",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "dns/dns-waf-detect.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/dns-waf-detect.yaml",
-        "template-id": "dns-waf-detect",
-        "info": {
-          "name": "DNS WAF Detection",
-          "author": [
-            "lu4nx"
-          ],
-          "tags": [
-            "tech",
-            "waf",
-            "dns"
-          ],
-          "description": "A DNS WAF was detected.",
-          "reference": null,
-          "severity": "info",
-          "classification": {
-            "cve-id": null,
-            "cwe-id": [
-              "cwe-200"
-            ]
-          }
-        },
-        "matcher-name": "cloudflare",
-        "type": "dns",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "timestamp": "2022-09-11T02:23:55.049539526Z",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:39:59.04218071Z",
         "matcher-status": true,
         "matched-line": null
       },
@@ -6859,33 +6863,7 @@
           "pat.ns.cloudflare.com.",
           "tom.ns.cloudflare.com."
         ],
-        "timestamp": "2022-09-11T02:23:59.475678052Z",
-        "matcher-status": true,
-        "matched-line": null
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-        "template-id": "tls-version",
-        "info": {
-          "name": "TLS Version",
-          "author": [
-            "pdteam"
-          ],
-          "tags": [
-            "ssl"
-          ],
-          "reference": null,
-          "severity": "info"
-        },
-        "type": "ssl",
-        "host": "https://zenika.com/fr-fr",
-        "matched-at": "https://zenika.com/fr-fr",
-        "extracted-results": [
-          "TLS13"
-        ],
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:25:32.575665979Z",
+        "timestamp": "2022-09-18T02:40:25.286014465Z",
         "matcher-status": true,
         "matched-line": null
       },
@@ -6922,8 +6900,8 @@
         "extracted-results": [
           "SSH-2.0-OpenSSH_9.0"
         ],
-        "ip": "185.42.117.108",
-        "timestamp": "2022-09-11T02:28:19.256813312Z",
+        "ip": "185.42.117.109",
+        "timestamp": "2022-09-18T02:40:59.722693393Z",
         "matcher-status": true,
         "matched-line": null
       },
@@ -6948,8 +6926,39 @@
         "extracted-results": [
           "zenika.com"
         ],
-        "ip": "46.252.181.103",
-        "timestamp": "2022-09-11T02:29:35.474168366Z",
+        "ip": "46.252.181.104",
+        "timestamp": "2022-09-18T02:42:47.305809699Z",
+        "matcher-status": true,
+        "matched-line": null
+      },
+      {
+        "template": "dns/mx-service-detector.yaml",
+        "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/mx-service-detector.yaml",
+        "template-id": "mx-service-detector",
+        "info": {
+          "name": "Email Service Detector",
+          "author": [
+            "binaryfigments"
+          ],
+          "tags": [
+            "dns",
+            "service"
+          ],
+          "description": "An email service was detected. Check the email service or spam filter that is used for a domain.",
+          "reference": null,
+          "severity": "info",
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ]
+          }
+        },
+        "matcher-name": "Google Apps",
+        "type": "dns",
+        "host": "https://zenika.com/fr-fr",
+        "matched-at": "https://zenika.com/fr-fr",
+        "timestamp": "2022-09-18T02:42:51.389891528Z",
         "matcher-status": true,
         "matched-line": null
       }
@@ -6958,7 +6967,7 @@
       {
         "requestedUrl": "https://zenika.com/fr-fr",
         "finalUrl": "https://zenika.com/fr-fr",
-        "fetchTime": "2022-09-11T02:07:38.906Z",
+        "fetchTime": "2022-09-18T02:24:35.811Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -7021,53 +7030,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 8579,
+            "numericValue": 8188,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2246,
-                  "firstMeaningfulPaint": 2246,
-                  "largestContentfulPaint": 2246,
-                  "interactive": 8579,
-                  "speedIndex": 4763,
-                  "totalBlockingTime": 383,
-                  "maxPotentialFID": 312,
-                  "cumulativeLayoutShift": 0.16991829427083333,
-                  "cumulativeLayoutShiftMainFrame": 0.16991829427083333,
-                  "totalCumulativeLayoutShift": 0.16991829427083333,
+                  "firstContentfulPaint": 3188,
+                  "firstMeaningfulPaint": 3263,
+                  "largestContentfulPaint": 3343,
+                  "interactive": 8188,
+                  "speedIndex": 4779,
+                  "totalBlockingTime": 364,
+                  "maxPotentialFID": 296,
+                  "cumulativeLayoutShift": 0.11067708333333334,
+                  "cumulativeLayoutShiftMainFrame": 0.11067708333333334,
+                  "totalCumulativeLayoutShift": 0.11067708333333334,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 340264071,
+                  "observedTimeOriginTs": 269676886,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 340264071,
-                  "observedFirstPaint": 1001,
-                  "observedFirstPaintTs": 341264662,
-                  "observedFirstContentfulPaint": 1001,
-                  "observedFirstContentfulPaintTs": 341264662,
-                  "observedFirstContentfulPaintAllFrames": 1001,
-                  "observedFirstContentfulPaintAllFramesTs": 341264662,
-                  "observedFirstMeaningfulPaint": 1001,
-                  "observedFirstMeaningfulPaintTs": 341264662,
-                  "observedLargestContentfulPaint": 1001,
-                  "observedLargestContentfulPaintTs": 341264662,
-                  "observedLargestContentfulPaintAllFrames": 1001,
-                  "observedLargestContentfulPaintAllFramesTs": 341264662,
-                  "observedTraceEnd": 4333,
-                  "observedTraceEndTs": 344596621,
-                  "observedLoad": 2021,
-                  "observedLoadTs": 342284814,
-                  "observedDomContentLoaded": 1708,
-                  "observedDomContentLoadedTs": 341972425,
-                  "observedCumulativeLayoutShift": 0.16991829427083333,
-                  "observedCumulativeLayoutShiftMainFrame": 0.16991829427083333,
-                  "observedTotalCumulativeLayoutShift": 0.16991829427083333,
-                  "observedFirstVisualChange": 1005,
-                  "observedFirstVisualChangeTs": 341269071,
-                  "observedLastVisualChange": 1805,
-                  "observedLastVisualChangeTs": 342069071,
-                  "observedSpeedIndex": 1110,
-                  "observedSpeedIndexTs": 341373678
+                  "observedNavigationStartTs": 269676886,
+                  "observedFirstPaint": 686,
+                  "observedFirstPaintTs": 270362405,
+                  "observedFirstContentfulPaint": 686,
+                  "observedFirstContentfulPaintTs": 270362405,
+                  "observedFirstContentfulPaintAllFrames": 686,
+                  "observedFirstContentfulPaintAllFramesTs": 270362405,
+                  "observedFirstMeaningfulPaint": 686,
+                  "observedFirstMeaningfulPaintTs": 270362405,
+                  "observedLargestContentfulPaint": 686,
+                  "observedLargestContentfulPaintTs": 270362405,
+                  "observedLargestContentfulPaintAllFrames": 686,
+                  "observedLargestContentfulPaintAllFramesTs": 270362405,
+                  "observedTraceEnd": 3766,
+                  "observedTraceEndTs": 273443028,
+                  "observedLoad": 1453,
+                  "observedLoadTs": 271130240,
+                  "observedDomContentLoaded": 1212,
+                  "observedDomContentLoadedTs": 270889239,
+                  "observedCumulativeLayoutShift": 0.11067708333333334,
+                  "observedCumulativeLayoutShiftMainFrame": 0.11067708333333334,
+                  "observedTotalCumulativeLayoutShift": 0.11067708333333334,
+                  "observedFirstVisualChange": 695,
+                  "observedFirstVisualChangeTs": 270371886,
+                  "observedLastVisualChange": 1362,
+                  "observedLastVisualChangeTs": 271038886,
+                  "observedSpeedIndex": 785,
+                  "observedSpeedIndexTs": 270462181
                 },
                 {
                   "lcpInvalidated": false
@@ -7089,18 +7098,18 @@
                   "numScripts": 19,
                   "numStylesheets": 5,
                   "numFonts": 2,
-                  "numTasks": 1457,
-                  "numTasksOver10ms": 13,
-                  "numTasksOver25ms": 4,
+                  "numTasks": 1419,
+                  "numTasksOver10ms": 9,
+                  "numTasksOver25ms": 5,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 12.256,
-                  "throughput": 9329941.331690159,
-                  "maxRtt": 133.01600000000002,
-                  "maxServerLatency": 25.726,
-                  "totalByteWeight": 910439,
-                  "totalTaskTime": 697.3749999999975,
+                  "rtt": 1.213000000000001,
+                  "throughput": 16074098.475677954,
+                  "maxRtt": 76.791,
+                  "maxServerLatency": 17.27,
+                  "totalByteWeight": 939302,
+                  "totalTaskTime": 629.2709999999969,
                   "mainDocumentTransferSize": 20738
                 }
               ]
@@ -7123,7 +7132,7 @@
       "404": 15,
       "httpGrade": "F",
       "nmapGrade": "B",
-      "nmapOpenPortsCount": 15,
+      "nmapOpenPortsCount": 14,
       "nmapOpenPortsGrade": "F",
       "testsslExpireSoon": false,
       "testsslExpireDate": "2022-10-20T11:56:00.000Z",

@@ -1,6 +1,6 @@
 {
 	"@version": "2.12.0",
-	"@generated": "Sun, 13 Nov 2022 01:43:05",
+	"@generated": "Sun, 20 Nov 2022 01:45:36",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -154,7 +154,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10020",
@@ -188,14 +188,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -243,7 +243,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90003",
@@ -284,20 +284,6 @@
 							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>"
 						},
 						{
-							"uri": "https://zenika.com/pages/offers",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&amp;display=swap\"/>"
-						},
-						{
-							"uri": "https://zenika.com/pages/offers",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>"
-						},
-						{
 							"uri": "https://zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -326,13 +312,13 @@
 							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>"
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10003",
@@ -405,7 +391,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "139"
+					"sourceid": "135"
 				},
 				{
 					"pluginid": "10017",
@@ -583,7 +569,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10037",
@@ -795,14 +781,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1054,7 +1040,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10109",
@@ -1143,7 +1129,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10015",
@@ -1177,14 +1163,14 @@
 							"evidence": "s-maxage=10, stale-while-revalidate"
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "s-maxage=10, stale-while-revalidate"
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1321,7 +1307,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				}
 			]
 		}

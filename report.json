@@ -6393,7 +6393,7 @@
     "http": {
       "url": "https://training.zenika.com",
       "algorithm_version": 2,
-      "end_time": "Sun, 30 Oct 2022 02:08:19 GMT",
+      "end_time": "Sun, 25 Dec 2022 01:22:31 GMT",
       "grade": "C+",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -6401,19 +6401,19 @@
         "Accept-Ranges": "none",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Sun, 30 Oct 2022 02:08:15 GMT",
-        "ETag": "\"e84ea-v0GCYfJ+djGM2QJDTvMhzb1lA5w\"",
+        "Date": "Sun, 25 Dec 2022 01:22:27 GMT",
+        "ETag": "\"e84e6-gBA3Av4OOAx/86JeJQgLOPsAgsU\"",
         "Keep-Alive": "timeout=5",
-        "Link": "</_nuxt/5386aa6.js>; rel=preload; as=script, </_nuxt/988db75.js>; rel=preload; as=script, </_nuxt/b881d30.js>; rel=preload; as=script, </_nuxt/0f39f94.js>; rel=preload; as=script, </_nuxt/0a684b9.js>; rel=preload; as=script, </_nuxt/5e29e78.js>; rel=preload; as=script",
-        "Sozu-Id": "01GGKAB31RQVERETXDF2PWBEMY",
+        "Link": "</_nuxt/5386aa6.js>; rel=preload; as=script, </_nuxt/988db75.js>; rel=preload; as=script, </_nuxt/b881d30.js>; rel=preload; as=script, </_nuxt/2aea321.js>; rel=preload; as=script, </_nuxt/0a684b9.js>; rel=preload; as=script, </_nuxt/5e29e78.js>; rel=preload; as=script",
+        "Sozu-Id": "01GN3DZG0YCS38B4G5Q2FJB792",
         "Strict-Transport-Security": "max-age=15552000; includeSubDomains",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding",
         "X-Frame-Options": "SAMEORIGIN"
       },
-      "scan_id": 30494127,
+      "scan_id": 32331978,
       "score": 60,
-      "start_time": "Sun, 30 Oct 2022 02:08:11 GMT",
+      "start_time": "Sun, 25 Dec 2022 01:22:23 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 3,
@@ -6598,28 +6598,28 @@
       "recipients": [
         "email:1118328150"
       ],
-      "last_check_at": "2022-10-30T01:54:17Z",
-      "next_check_at": "2022-10-30T02:54:15Z",
+      "last_check_at": "2022-12-25T00:44:59Z",
+      "next_check_at": "2022-12-25T01:44:38Z",
       "mute_until": null,
       "favicon_url": "https://training.zenika.com/favicon.ico",
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2022-10-29T18:57:41Z",
-        "expires_at": "2022-12-29T00:05:22Z",
+        "tested_at": "2022-12-24T17:46:47Z",
+        "expires_at": "2023-03-07T06:16:10Z",
         "valid": true,
         "error": null
       },
       "metrics": {
         "apdex": 1,
         "timings": {
-          "redirect": 1763,
-          "namelookup": 1,
-          "connection": 257,
-          "handshake": 524,
-          "response": 523,
-          "total": 3068
+          "redirect": 1628,
+          "namelookup": 0,
+          "connection": 253,
+          "handshake": 514,
+          "response": 539,
+          "total": 2936
         }
       },
       "uptimeGrade": "A",
@@ -6628,14 +6628,12 @@
     "nmap": {
       "host": "training.zenika.com",
       "protocol": "tcp",
-      "closed_ports": "985",
+      "closed_ports": "984",
       "open_ports": [
         {
           "service": {
             "name": "ssh",
-            "product": "OpenSSH",
             "id": "22",
-            "version": "9.1",
             "vulnerabilities": []
           }
         },
@@ -6677,9 +6675,8 @@
         {
           "service": {
             "name": "ssh",
-            "product": "Apache Mina sshd",
+            "product": "FortiSSH",
             "id": "5002",
-            "version": "1.7.0",
             "vulnerabilities": []
           }
         },
@@ -6702,6 +6699,13 @@
             "name": "ssh",
             "product": "FortiSSH",
             "id": "5357",
+            "vulnerabilities": []
+          }
+        },
+        {
+          "service": {
+            "name": "tcpwrapped",
+            "id": "5633",
             "vulnerabilities": []
           }
         },
@@ -6896,20 +6900,6 @@
         "finding": "server"
       },
       {
-        "id": "protocol_negotiated",
-        "ip": "training.zenika.com/185.42.117.109",
-        "port": "443",
-        "severity": "OK",
-        "finding": "Default protocol TLS1.3"
-      },
-      {
-        "id": "cipher_negotiated",
-        "ip": "training.zenika.com/185.42.117.109",
-        "port": "443",
-        "severity": "OK",
-        "finding": "TLS_AES_256_GCM_SHA384, 256 bit ECDH (P-256)"
-      },
-      {
         "id": "FS",
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
@@ -7026,7 +7016,7 @@
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
         "severity": "INFO",
-        "finding": "036FAE368F087FD907A3FECE67BC80177855"
+        "finding": "044A73C7664514E272E10C9CA2093CA77F07"
       },
       {
         "id": "cert_serialNumberLen",
@@ -7040,21 +7030,21 @@
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
         "severity": "INFO",
-        "finding": "9FA3ACEEBA74851A4DF156C94288F3D88C8BA6E6"
+        "finding": "AA97EDDF7153672EDAD189829AB0BB46F5A7754E"
       },
       {
         "id": "cert_fingerprintSHA256",
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
         "severity": "INFO",
-        "finding": "437E95D02E9ADEC442BA2FC52B37CE91CD0784601C3B8BF0721FBD43EA06D3DC"
+        "finding": "E5E367EA86AB1864B7339648B8E58BAF1BF21B1FB5FF2A7EBB9F9ABD045A3328"
       },
       {
         "id": "cert",
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFKzCCBBOgAwIBAgISA2+uNo8If9kHo/7OZ7yAF3hVMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA5MzAwMDA1MjNaFw0yMjEyMjkwMDA1MjJaMB4xHDAaBgNVBAMT E3RyYWluaW5nLnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC0sRgHZErvUQ4XoCUSPUZAoy/ExfdoV9C8RA2Xpco18BYCINDZH+y8M0JG zHXsvAC/1hh4ogMNwweo9RFax2X7d37oYCuunSZDDQnZSIsoFn4Gfx7vmvkHgnfF ZDGRBOEN8HKCOQbH8XNyz6JEPZhUdfJeN5aBsevK763szt49UCfLhhNt7uv4w9VN 8PZwuvMZwXeLiKBJ7OB5CwqPbnoBfBmnDmE7cCq44SJvXGAPOBU6n854BAeZXpxn lwZdPok3hMigj3z/2atKiXQv1w9GLmLl2Tb17mZbZ4aco9rFzQowt1nSh7kdWVLh WP4qI61QMv4mHd/1Y1UNRceE+3PrAgMBAAGjggJNMIICSTAOBgNVHQ8BAf8EBAMC BaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAw HQYDVR0OBBYEFAvfuVQNacVnw+EZSMKC+ik9dd7SMB8GA1UdIwQYMBaAFBQusxe3 WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0 cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5j ci5vcmcvMB4GA1UdEQQXMBWCE3RyYWluaW5nLnplbmlrYS5jb20wTAYDVR0gBEUw QzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDov L2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQBB yMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAYOL7TqqAAAEAwBGMEQC IBgWf92uW/0tmZEK9z9iXJmes5AWODpE+j7X6iJE67FFAiAfscx1yqEPN1+lgeZ0 567xFBxIyZvGeDrutrLTrgdIlQB2ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1d JlwlXceEAAABg4vtOooAAAQDAEcwRQIhANlB8VL7Ve23UAVuUTWy2QoGUVXrLXt5 HLjuFewgXjM3AiA9PG+Vyjtubwz+PIasfC+wMNZbjWagDXg/oSrSCPG57zANBgkq hkiG9w0BAQsFAAOCAQEAZbSQw8sShNxPSMQda6ugn8Ru6ILqH7uhAioEXtadD6NI 3U4klbZy436S3CcJExLvJ90zKzWKY1JGqWlfr+KUtTyvC4fZSd8/oOj9laAV0SM3 V0tHkemjXu3x7S8e/SLcAwjRa5fRHdxxbrxSCL0Etg/FX8CwKgUrcjgfDLrsICKJ UllUDa3VG7zg2t11KgcIucb0DkMSTpXfOGVuiZA17WhhjIuyd/Txt3oT0Ah7NyaE nRYhh9bHk+8ZqmkCxli3RHZ0juinb3hjBkFOHGFrrtYptGYuApB9Pb2SbYnppRoK +B7vZEfNFfOpzKQ7xfTFWJhHUlSqbMNudiv7cZ+Ybw== -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFLDCCBBSgAwIBAgISBEpzx2ZFFOJy4Qycogk8p38HMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMjEyMDcwNjE2MTFaFw0yMzAzMDcwNjE2MTBaMB4xHDAaBgNVBAMTE3RyYWluaW5nLnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC0sRgHZErvUQ4XoCUSPUZAoy/ExfdoV9C8RA2Xpco18BYCINDZH+y8M0JGzHXsvAC/1hh4ogMNwweo9RFax2X7d37oYCuunSZDDQnZSIsoFn4Gfx7vmvkHgnfFZDGRBOEN8HKCOQbH8XNyz6JEPZhUdfJeN5aBsevK763szt49UCfLhhNt7uv4w9VN8PZwuvMZwXeLiKBJ7OB5CwqPbnoBfBmnDmE7cCq44SJvXGAPOBU6n854BAeZXpxnlwZdPok3hMigj3z/2atKiXQv1w9GLmLl2Tb17mZbZ4aco9rFzQowt1nSh7kdWVLhWP4qI61QMv4mHd/1Y1UNRceE+3PrAgMBAAGjggJOMIICSjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFAvfuVQNacVnw+EZSMKC+ik9dd7SMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMB4GA1UdEQQXMBWCE3RyYWluaW5nLnplbmlrYS5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdwC3Pvsk35xNunXyOcW6WPRsXfxCz3qfNcSeHQmBJe20mQAAAYTrcSPAAAAEAwBIMEYCIQDVJl7I8ptio9LUU+XD3h20UF5oAK/jLs8nXe35iidVzgIhAMNCB1aEZG7wEc7rSROKoyVWU+7rEQMLFYhT7yqEdMjBAHUAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQApBo2yCJo32RMAAAGE63EkCwAABAMARjBEAiBWTazxDrkMjkKaLJWL9DNcbYZSSurNUTel/ChpQxOVMQIgRSjoAbIdLYrDh5RXMqTLoZcjmfK8yzrlNi1+olK8MMIwDQYJKoZIhvcNAQELBQADggEBAJ67CklfgqOwHJcneIBQigugAXygzz+Da0aWKWC3Q2WoKxVPG2sN2H/36RwqZ7zMGpPsJQd44KauGLYglR+FkOL0O9O34nUDjoUsY+tQG4vm1k1F9/a9FC7v1n0iFEriieR/NoLuzsEEHGE5bQ7XU4XXr23rxY/+wjm1DJcgfOHPA/Fw8kABTpaIcgpuHEBlfNMLj+pRaJlSKQqDYeGYNt5BOORO1ASgW4Upfr0nnuk7qcGTwEszEvqzR7NiH8aw0olLISRGHiLbQXFOC0FiH7ZyfBEbhEU0Fc82LfnP0hoA5vgm59qjbvNkfeji41vhIcZse/j1iqTse+p87DKgxcI=\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
@@ -7103,21 +7093,21 @@
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
         "severity": "OK",
-        "finding": "59 >= 30 days"
+        "finding": "72 >= 30 days"
       },
       {
         "id": "cert_notBefore",
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
         "severity": "INFO",
-        "finding": "2022-09-30 00:05"
+        "finding": "2022-12-07 06:16"
       },
       {
         "id": "cert_notAfter",
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
         "severity": "OK",
-        "finding": "2022-12-29 00:05"
+        "finding": "2023-03-07 06:16"
       },
       {
         "id": "cert_extlifeSpan",
@@ -7201,7 +7191,7 @@
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG /kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4 avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2 yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+ HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX nLRbwHOoq7hHwg== -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAwWhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cPR5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdxsxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8ZutmNHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxgZ3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG/kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaAFHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcwAoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRwOi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQBgt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6WPTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wlikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQzCkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BImlJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1OyK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90IdshCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6ZvMldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqXnLRbwHOoq7hHwg==\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#1>",
@@ -7243,7 +7233,7 @@
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/ MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT DkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC ov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL wYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D LtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK 4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5 bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y sR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ Xmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4 FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc SLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql PRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND TwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw SwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1 c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx +tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB ATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu b3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E U1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu MA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC 5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW 9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG WCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O he8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC Dfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5 -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMTDkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1owTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XCov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpLwYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+DLtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5ysR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZXmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBcSLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2qlPRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TNDTwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEBATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQub3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9EU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26ZtuMA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuGWCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9Ohe8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFCDfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#2>",
@@ -7306,7 +7296,7 @@
         "ip": "training.zenika.com/185.42.117.109",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667095796"
+        "finding": "1671931447"
       },
       {
         "id": "HSTS_time",
@@ -7493,7 +7483,7 @@
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
         "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=437E95D02E9ADEC442BA2FC52B37CE91CD0784601C3B8BF0721FBD43EA06D3DC"
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=E5E367EA86AB1864B7339648B8E58BAF1BF21B1FB5FF2A7EBB9F9ABD045A3328"
       },
       {
         "id": "LOGJAM",
@@ -8011,20 +8001,6 @@
         "finding": "server"
       },
       {
-        "id": "protocol_negotiated",
-        "ip": "training.zenika.com/185.42.117.108",
-        "port": "443",
-        "severity": "OK",
-        "finding": "Default protocol TLS1.3"
-      },
-      {
-        "id": "cipher_negotiated",
-        "ip": "training.zenika.com/185.42.117.108",
-        "port": "443",
-        "severity": "OK",
-        "finding": "TLS_AES_256_GCM_SHA384, 256 bit ECDH (P-256)"
-      },
-      {
         "id": "FS",
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
@@ -8141,7 +8117,7 @@
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
         "severity": "INFO",
-        "finding": "036FAE368F087FD907A3FECE67BC80177855"
+        "finding": "044A73C7664514E272E10C9CA2093CA77F07"
       },
       {
         "id": "cert_serialNumberLen",
@@ -8155,21 +8131,21 @@
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
         "severity": "INFO",
-        "finding": "9FA3ACEEBA74851A4DF156C94288F3D88C8BA6E6"
+        "finding": "AA97EDDF7153672EDAD189829AB0BB46F5A7754E"
       },
       {
         "id": "cert_fingerprintSHA256",
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
         "severity": "INFO",
-        "finding": "437E95D02E9ADEC442BA2FC52B37CE91CD0784601C3B8BF0721FBD43EA06D3DC"
+        "finding": "E5E367EA86AB1864B7339648B8E58BAF1BF21B1FB5FF2A7EBB9F9ABD045A3328"
       },
       {
         "id": "cert",
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFKzCCBBOgAwIBAgISA2+uNo8If9kHo/7OZ7yAF3hVMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA5MzAwMDA1MjNaFw0yMjEyMjkwMDA1MjJaMB4xHDAaBgNVBAMT E3RyYWluaW5nLnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC0sRgHZErvUQ4XoCUSPUZAoy/ExfdoV9C8RA2Xpco18BYCINDZH+y8M0JG zHXsvAC/1hh4ogMNwweo9RFax2X7d37oYCuunSZDDQnZSIsoFn4Gfx7vmvkHgnfF ZDGRBOEN8HKCOQbH8XNyz6JEPZhUdfJeN5aBsevK763szt49UCfLhhNt7uv4w9VN 8PZwuvMZwXeLiKBJ7OB5CwqPbnoBfBmnDmE7cCq44SJvXGAPOBU6n854BAeZXpxn lwZdPok3hMigj3z/2atKiXQv1w9GLmLl2Tb17mZbZ4aco9rFzQowt1nSh7kdWVLh WP4qI61QMv4mHd/1Y1UNRceE+3PrAgMBAAGjggJNMIICSTAOBgNVHQ8BAf8EBAMC BaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAw HQYDVR0OBBYEFAvfuVQNacVnw+EZSMKC+ik9dd7SMB8GA1UdIwQYMBaAFBQusxe3 WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0 cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5j ci5vcmcvMB4GA1UdEQQXMBWCE3RyYWluaW5nLnplbmlrYS5jb20wTAYDVR0gBEUw QzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDov L2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQBB yMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAYOL7TqqAAAEAwBGMEQC IBgWf92uW/0tmZEK9z9iXJmes5AWODpE+j7X6iJE67FFAiAfscx1yqEPN1+lgeZ0 567xFBxIyZvGeDrutrLTrgdIlQB2ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1d JlwlXceEAAABg4vtOooAAAQDAEcwRQIhANlB8VL7Ve23UAVuUTWy2QoGUVXrLXt5 HLjuFewgXjM3AiA9PG+Vyjtubwz+PIasfC+wMNZbjWagDXg/oSrSCPG57zANBgkq hkiG9w0BAQsFAAOCAQEAZbSQw8sShNxPSMQda6ugn8Ru6ILqH7uhAioEXtadD6NI 3U4klbZy436S3CcJExLvJ90zKzWKY1JGqWlfr+KUtTyvC4fZSd8/oOj9laAV0SM3 V0tHkemjXu3x7S8e/SLcAwjRa5fRHdxxbrxSCL0Etg/FX8CwKgUrcjgfDLrsICKJ UllUDa3VG7zg2t11KgcIucb0DkMSTpXfOGVuiZA17WhhjIuyd/Txt3oT0Ah7NyaE nRYhh9bHk+8ZqmkCxli3RHZ0juinb3hjBkFOHGFrrtYptGYuApB9Pb2SbYnppRoK +B7vZEfNFfOpzKQ7xfTFWJhHUlSqbMNudiv7cZ+Ybw== -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFLDCCBBSgAwIBAgISBEpzx2ZFFOJy4Qycogk8p38HMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMjEyMDcwNjE2MTFaFw0yMzAzMDcwNjE2MTBaMB4xHDAaBgNVBAMTE3RyYWluaW5nLnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC0sRgHZErvUQ4XoCUSPUZAoy/ExfdoV9C8RA2Xpco18BYCINDZH+y8M0JGzHXsvAC/1hh4ogMNwweo9RFax2X7d37oYCuunSZDDQnZSIsoFn4Gfx7vmvkHgnfFZDGRBOEN8HKCOQbH8XNyz6JEPZhUdfJeN5aBsevK763szt49UCfLhhNt7uv4w9VN8PZwuvMZwXeLiKBJ7OB5CwqPbnoBfBmnDmE7cCq44SJvXGAPOBU6n854BAeZXpxnlwZdPok3hMigj3z/2atKiXQv1w9GLmLl2Tb17mZbZ4aco9rFzQowt1nSh7kdWVLhWP4qI61QMv4mHd/1Y1UNRceE+3PrAgMBAAGjggJOMIICSjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFAvfuVQNacVnw+EZSMKC+ik9dd7SMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMB4GA1UdEQQXMBWCE3RyYWluaW5nLnplbmlrYS5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdwC3Pvsk35xNunXyOcW6WPRsXfxCz3qfNcSeHQmBJe20mQAAAYTrcSPAAAAEAwBIMEYCIQDVJl7I8ptio9LUU+XD3h20UF5oAK/jLs8nXe35iidVzgIhAMNCB1aEZG7wEc7rSROKoyVWU+7rEQMLFYhT7yqEdMjBAHUAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQApBo2yCJo32RMAAAGE63EkCwAABAMARjBEAiBWTazxDrkMjkKaLJWL9DNcbYZSSurNUTel/ChpQxOVMQIgRSjoAbIdLYrDh5RXMqTLoZcjmfK8yzrlNi1+olK8MMIwDQYJKoZIhvcNAQELBQADggEBAJ67CklfgqOwHJcneIBQigugAXygzz+Da0aWKWC3Q2WoKxVPG2sN2H/36RwqZ7zMGpPsJQd44KauGLYglR+FkOL0O9O34nUDjoUsY+tQG4vm1k1F9/a9FC7v1n0iFEriieR/NoLuzsEEHGE5bQ7XU4XXr23rxY/+wjm1DJcgfOHPA/Fw8kABTpaIcgpuHEBlfNMLj+pRaJlSKQqDYeGYNt5BOORO1ASgW4Upfr0nnuk7qcGTwEszEvqzR7NiH8aw0olLISRGHiLbQXFOC0FiH7ZyfBEbhEU0Fc82LfnP0hoA5vgm59qjbvNkfeji41vhIcZse/j1iqTse+p87DKgxcI=\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
@@ -8218,21 +8194,21 @@
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
         "severity": "OK",
-        "finding": "59 >= 30 days"
+        "finding": "72 >= 30 days"
       },
       {
         "id": "cert_notBefore",
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
         "severity": "INFO",
-        "finding": "2022-09-30 00:05"
+        "finding": "2022-12-07 06:16"
       },
       {
         "id": "cert_notAfter",
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
         "severity": "OK",
-        "finding": "2022-12-29 00:05"
+        "finding": "2023-03-07 06:16"
       },
       {
         "id": "cert_extlifeSpan",
@@ -8316,7 +8292,7 @@
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG /kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4 avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2 yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+ HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX nLRbwHOoq7hHwg== -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAwWhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cPR5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdxsxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8ZutmNHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxgZ3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG/kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaAFHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcwAoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRwOi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQBgt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6WPTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wlikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQzCkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BImlJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1OyK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90IdshCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6ZvMldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqXnLRbwHOoq7hHwg==\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#1>",
@@ -8358,7 +8334,7 @@
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/ MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT DkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC ov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL wYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D LtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK 4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5 bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y sR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ Xmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4 FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc SLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql PRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND TwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw SwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1 c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx +tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB ATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu b3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E U1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu MA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC 5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW 9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG WCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O he8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC Dfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5 -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMTDkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1owTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XCov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpLwYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+DLtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5ysR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZXmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBcSLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2qlPRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TNDTwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEBATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQub3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9EU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26ZtuMA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuGWCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9Ohe8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFCDfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#2>",
@@ -8421,7 +8397,7 @@
         "ip": "training.zenika.com/185.42.117.108",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667095898"
+        "finding": "1671931549"
       },
       {
         "id": "HSTS_time",
@@ -8608,7 +8584,7 @@
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
         "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=437E95D02E9ADEC442BA2FC52B37CE91CD0784601C3B8BF0721FBD43EA06D3DC"
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=E5E367EA86AB1864B7339648B8E58BAF1BF21B1FB5FF2A7EBB9F9ABD045A3328"
       },
       {
         "id": "LOGJAM",
@@ -9108,64 +9084,22 @@
         "id": "cipher_order-tls1_2",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
-        "severity": "INFO",
-        "finding": "NOT a cipher order configured"
-      },
-      {
-        "id": "cipher-tls1_2_xc030",
-        "ip": "training.zenika.com/46.252.181.103",
-        "port": "443",
         "severity": "OK",
-        "finding": "TLSv1.2   xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDH 256   AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+        "finding": "server"
       },
       {
-        "id": "cipher-tls1_2_x9f",
-        "ip": "training.zenika.com/46.252.181.103",
-        "port": "443",
-        "severity": "OK",
-        "finding": "TLSv1.2   x9f     DHE-RSA-AES256-GCM-SHA384         DH 2048    AESGCM      256      TLS_DHE_RSA_WITH_AES_256_GCM_SHA384"
-      },
-      {
-        "id": "cipher-tls1_2_xc02f",
-        "ip": "training.zenika.com/46.252.181.103",
-        "port": "443",
-        "severity": "OK",
-        "finding": "TLSv1.2   xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDH 256   AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "cipher-tls1_2_x9e",
-        "ip": "training.zenika.com/46.252.181.103",
-        "port": "443",
-        "severity": "OK",
-        "finding": "TLSv1.2   x9e     DHE-RSA-AES128-GCM-SHA256         DH 2048    AESGCM      128      TLS_DHE_RSA_WITH_AES_128_GCM_SHA256"
-      },
-      {
-        "id": "supportedciphers_TLSv1_2",
+        "id": "cipherorder_TLSv1_2",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "ECDHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-GCM-SHA256"
+        "finding": "ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "cipher_order",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
-        "severity": "INFO",
-        "finding": "server -- < TLS 1.3 client determined"
-      },
-      {
-        "id": "protocol_negotiated",
-        "ip": "training.zenika.com/46.252.181.103",
-        "port": "443",
         "severity": "OK",
-        "finding": "Default protocol TLS1.3"
-      },
-      {
-        "id": "cipher_negotiated",
-        "ip": "training.zenika.com/46.252.181.103",
-        "port": "443",
-        "severity": "OK",
-        "finding": "TLS_AES_256_GCM_SHA384, 256 bit ECDH (P-256)"
+        "finding": "server"
       },
       {
         "id": "FS",
@@ -9179,7 +9113,7 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "FS_ECDHE_curves",
@@ -9284,7 +9218,7 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "036FAE368F087FD907A3FECE67BC80177855"
+        "finding": "044A73C7664514E272E10C9CA2093CA77F07"
       },
       {
         "id": "cert_serialNumberLen",
@@ -9298,21 +9232,21 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "9FA3ACEEBA74851A4DF156C94288F3D88C8BA6E6"
+        "finding": "AA97EDDF7153672EDAD189829AB0BB46F5A7754E"
       },
       {
         "id": "cert_fingerprintSHA256",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "437E95D02E9ADEC442BA2FC52B37CE91CD0784601C3B8BF0721FBD43EA06D3DC"
+        "finding": "E5E367EA86AB1864B7339648B8E58BAF1BF21B1FB5FF2A7EBB9F9ABD045A3328"
       },
       {
         "id": "cert",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFKzCCBBOgAwIBAgISA2+uNo8If9kHo/7OZ7yAF3hVMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA5MzAwMDA1MjNaFw0yMjEyMjkwMDA1MjJaMB4xHDAaBgNVBAMT E3RyYWluaW5nLnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC0sRgHZErvUQ4XoCUSPUZAoy/ExfdoV9C8RA2Xpco18BYCINDZH+y8M0JG zHXsvAC/1hh4ogMNwweo9RFax2X7d37oYCuunSZDDQnZSIsoFn4Gfx7vmvkHgnfF ZDGRBOEN8HKCOQbH8XNyz6JEPZhUdfJeN5aBsevK763szt49UCfLhhNt7uv4w9VN 8PZwuvMZwXeLiKBJ7OB5CwqPbnoBfBmnDmE7cCq44SJvXGAPOBU6n854BAeZXpxn lwZdPok3hMigj3z/2atKiXQv1w9GLmLl2Tb17mZbZ4aco9rFzQowt1nSh7kdWVLh WP4qI61QMv4mHd/1Y1UNRceE+3PrAgMBAAGjggJNMIICSTAOBgNVHQ8BAf8EBAMC BaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAw HQYDVR0OBBYEFAvfuVQNacVnw+EZSMKC+ik9dd7SMB8GA1UdIwQYMBaAFBQusxe3 WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0 cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5j ci5vcmcvMB4GA1UdEQQXMBWCE3RyYWluaW5nLnplbmlrYS5jb20wTAYDVR0gBEUw QzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDov L2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQBB yMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAYOL7TqqAAAEAwBGMEQC IBgWf92uW/0tmZEK9z9iXJmes5AWODpE+j7X6iJE67FFAiAfscx1yqEPN1+lgeZ0 567xFBxIyZvGeDrutrLTrgdIlQB2ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1d JlwlXceEAAABg4vtOooAAAQDAEcwRQIhANlB8VL7Ve23UAVuUTWy2QoGUVXrLXt5 HLjuFewgXjM3AiA9PG+Vyjtubwz+PIasfC+wMNZbjWagDXg/oSrSCPG57zANBgkq hkiG9w0BAQsFAAOCAQEAZbSQw8sShNxPSMQda6ugn8Ru6ILqH7uhAioEXtadD6NI 3U4klbZy436S3CcJExLvJ90zKzWKY1JGqWlfr+KUtTyvC4fZSd8/oOj9laAV0SM3 V0tHkemjXu3x7S8e/SLcAwjRa5fRHdxxbrxSCL0Etg/FX8CwKgUrcjgfDLrsICKJ UllUDa3VG7zg2t11KgcIucb0DkMSTpXfOGVuiZA17WhhjIuyd/Txt3oT0Ah7NyaE nRYhh9bHk+8ZqmkCxli3RHZ0juinb3hjBkFOHGFrrtYptGYuApB9Pb2SbYnppRoK +B7vZEfNFfOpzKQ7xfTFWJhHUlSqbMNudiv7cZ+Ybw== -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFLDCCBBSgAwIBAgISBEpzx2ZFFOJy4Qycogk8p38HMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMjEyMDcwNjE2MTFaFw0yMzAzMDcwNjE2MTBaMB4xHDAaBgNVBAMTE3RyYWluaW5nLnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC0sRgHZErvUQ4XoCUSPUZAoy/ExfdoV9C8RA2Xpco18BYCINDZH+y8M0JGzHXsvAC/1hh4ogMNwweo9RFax2X7d37oYCuunSZDDQnZSIsoFn4Gfx7vmvkHgnfFZDGRBOEN8HKCOQbH8XNyz6JEPZhUdfJeN5aBsevK763szt49UCfLhhNt7uv4w9VN8PZwuvMZwXeLiKBJ7OB5CwqPbnoBfBmnDmE7cCq44SJvXGAPOBU6n854BAeZXpxnlwZdPok3hMigj3z/2atKiXQv1w9GLmLl2Tb17mZbZ4aco9rFzQowt1nSh7kdWVLhWP4qI61QMv4mHd/1Y1UNRceE+3PrAgMBAAGjggJOMIICSjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFAvfuVQNacVnw+EZSMKC+ik9dd7SMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMB4GA1UdEQQXMBWCE3RyYWluaW5nLnplbmlrYS5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdwC3Pvsk35xNunXyOcW6WPRsXfxCz3qfNcSeHQmBJe20mQAAAYTrcSPAAAAEAwBIMEYCIQDVJl7I8ptio9LUU+XD3h20UF5oAK/jLs8nXe35iidVzgIhAMNCB1aEZG7wEc7rSROKoyVWU+7rEQMLFYhT7yqEdMjBAHUAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQApBo2yCJo32RMAAAGE63EkCwAABAMARjBEAiBWTazxDrkMjkKaLJWL9DNcbYZSSurNUTel/ChpQxOVMQIgRSjoAbIdLYrDh5RXMqTLoZcjmfK8yzrlNi1+olK8MMIwDQYJKoZIhvcNAQELBQADggEBAJ67CklfgqOwHJcneIBQigugAXygzz+Da0aWKWC3Q2WoKxVPG2sN2H/36RwqZ7zMGpPsJQd44KauGLYglR+FkOL0O9O34nUDjoUsY+tQG4vm1k1F9/a9FC7v1n0iFEriieR/NoLuzsEEHGE5bQ7XU4XXr23rxY/+wjm1DJcgfOHPA/Fw8kABTpaIcgpuHEBlfNMLj+pRaJlSKQqDYeGYNt5BOORO1ASgW4Upfr0nnuk7qcGTwEszEvqzR7NiH8aw0olLISRGHiLbQXFOC0FiH7ZyfBEbhEU0Fc82LfnP0hoA5vgm59qjbvNkfeji41vhIcZse/j1iqTse+p87DKgxcI=\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
@@ -9361,21 +9295,21 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "OK",
-        "finding": "59 >= 30 days"
+        "finding": "72 >= 30 days"
       },
       {
         "id": "cert_notBefore",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "2022-09-30 00:05"
+        "finding": "2022-12-07 06:16"
       },
       {
         "id": "cert_notAfter",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "OK",
-        "finding": "2022-12-29 00:05"
+        "finding": "2023-03-07 06:16"
       },
       {
         "id": "cert_extlifeSpan",
@@ -9459,7 +9393,7 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG /kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4 avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2 yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+ HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX nLRbwHOoq7hHwg== -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAwWhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cPR5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdxsxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8ZutmNHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxgZ3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG/kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaAFHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcwAoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRwOi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQBgt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6WPTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wlikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQzCkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BImlJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1OyK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90IdshCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6ZvMldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqXnLRbwHOoq7hHwg==\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#1>",
@@ -9501,7 +9435,7 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/ MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT DkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC ov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL wYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D LtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK 4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5 bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y sR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ Xmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4 FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc SLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql PRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND TwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw SwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1 c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx +tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB ATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu b3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E U1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu MA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC 5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW 9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG WCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O he8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC Dfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5 -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMTDkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1owTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XCov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpLwYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+DLtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5ysR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZXmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBcSLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2qlPRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TNDTwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEBATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQub3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9EU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26ZtuMA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuGWCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9Ohe8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFCDfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#2>",
@@ -9557,14 +9491,14 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667096002"
+        "finding": "1671931649"
       },
       {
         "id": "HSTS_time",
@@ -9751,7 +9685,7 @@
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
         "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=437E95D02E9ADEC442BA2FC52B37CE91CD0784601C3B8BF0721FBD43EA06D3DC"
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=E5E367EA86AB1864B7339648B8E58BAF1BF21B1FB5FF2A7EBB9F9ABD045A3328"
       },
       {
         "id": "LOGJAM",
@@ -9826,7 +9760,7 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-android_90",
@@ -9910,14 +9844,14 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+        "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_11_win81",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+        "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_11_winphone81",
@@ -9938,7 +9872,7 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
       },
       {
         "id": "clientsimulation-edge_101_win10_21h2",
@@ -10015,7 +9949,7 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-openssl_110l",
@@ -10099,21 +10033,21 @@
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "90"
+        "finding": "60"
       },
       {
         "id": "cipher_strength_score_weighted",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "36"
+        "finding": "24"
       },
       {
         "id": "final_score",
         "ip": "training.zenika.com/46.252.181.103",
         "port": "443",
         "severity": "INFO",
-        "finding": "93"
+        "finding": "81"
       },
       {
         "id": "overall_grade",
@@ -10259,7 +10193,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "DHE-RSA-AES128-GCM-SHA256"
+        "finding": "ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "cipher_order",
@@ -10267,20 +10201,6 @@
         "port": "443",
         "severity": "OK",
         "finding": "server"
-      },
-      {
-        "id": "protocol_negotiated",
-        "ip": "training.zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "Default protocol TLS1.3"
-      },
-      {
-        "id": "cipher_negotiated",
-        "ip": "training.zenika.com/46.252.181.104",
-        "port": "443",
-        "severity": "OK",
-        "finding": "TLS_AES_256_GCM_SHA384, 256 bit ECDH (P-256)"
       },
       {
         "id": "FS",
@@ -10399,7 +10319,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "036FAE368F087FD907A3FECE67BC80177855"
+        "finding": "044A73C7664514E272E10C9CA2093CA77F07"
       },
       {
         "id": "cert_serialNumberLen",
@@ -10413,21 +10333,21 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "9FA3ACEEBA74851A4DF156C94288F3D88C8BA6E6"
+        "finding": "AA97EDDF7153672EDAD189829AB0BB46F5A7754E"
       },
       {
         "id": "cert_fingerprintSHA256",
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "437E95D02E9ADEC442BA2FC52B37CE91CD0784601C3B8BF0721FBD43EA06D3DC"
+        "finding": "E5E367EA86AB1864B7339648B8E58BAF1BF21B1FB5FF2A7EBB9F9ABD045A3328"
       },
       {
         "id": "cert",
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFKzCCBBOgAwIBAgISA2+uNo8If9kHo/7OZ7yAF3hVMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA5MzAwMDA1MjNaFw0yMjEyMjkwMDA1MjJaMB4xHDAaBgNVBAMT E3RyYWluaW5nLnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC0sRgHZErvUQ4XoCUSPUZAoy/ExfdoV9C8RA2Xpco18BYCINDZH+y8M0JG zHXsvAC/1hh4ogMNwweo9RFax2X7d37oYCuunSZDDQnZSIsoFn4Gfx7vmvkHgnfF ZDGRBOEN8HKCOQbH8XNyz6JEPZhUdfJeN5aBsevK763szt49UCfLhhNt7uv4w9VN 8PZwuvMZwXeLiKBJ7OB5CwqPbnoBfBmnDmE7cCq44SJvXGAPOBU6n854BAeZXpxn lwZdPok3hMigj3z/2atKiXQv1w9GLmLl2Tb17mZbZ4aco9rFzQowt1nSh7kdWVLh WP4qI61QMv4mHd/1Y1UNRceE+3PrAgMBAAGjggJNMIICSTAOBgNVHQ8BAf8EBAMC BaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAw HQYDVR0OBBYEFAvfuVQNacVnw+EZSMKC+ik9dd7SMB8GA1UdIwQYMBaAFBQusxe3 WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0 cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5j ci5vcmcvMB4GA1UdEQQXMBWCE3RyYWluaW5nLnplbmlrYS5jb20wTAYDVR0gBEUw QzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDov L2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQBB yMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAYOL7TqqAAAEAwBGMEQC IBgWf92uW/0tmZEK9z9iXJmes5AWODpE+j7X6iJE67FFAiAfscx1yqEPN1+lgeZ0 567xFBxIyZvGeDrutrLTrgdIlQB2ACl5vvCeOTkh8FZzn2Old+W+V32cYAr4+U1d JlwlXceEAAABg4vtOooAAAQDAEcwRQIhANlB8VL7Ve23UAVuUTWy2QoGUVXrLXt5 HLjuFewgXjM3AiA9PG+Vyjtubwz+PIasfC+wMNZbjWagDXg/oSrSCPG57zANBgkq hkiG9w0BAQsFAAOCAQEAZbSQw8sShNxPSMQda6ugn8Ru6ILqH7uhAioEXtadD6NI 3U4klbZy436S3CcJExLvJ90zKzWKY1JGqWlfr+KUtTyvC4fZSd8/oOj9laAV0SM3 V0tHkemjXu3x7S8e/SLcAwjRa5fRHdxxbrxSCL0Etg/FX8CwKgUrcjgfDLrsICKJ UllUDa3VG7zg2t11KgcIucb0DkMSTpXfOGVuiZA17WhhjIuyd/Txt3oT0Ah7NyaE nRYhh9bHk+8ZqmkCxli3RHZ0juinb3hjBkFOHGFrrtYptGYuApB9Pb2SbYnppRoK +B7vZEfNFfOpzKQ7xfTFWJhHUlSqbMNudiv7cZ+Ybw== -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFLDCCBBSgAwIBAgISBEpzx2ZFFOJy4Qycogk8p38HMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMjEyMDcwNjE2MTFaFw0yMzAzMDcwNjE2MTBaMB4xHDAaBgNVBAMTE3RyYWluaW5nLnplbmlrYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC0sRgHZErvUQ4XoCUSPUZAoy/ExfdoV9C8RA2Xpco18BYCINDZH+y8M0JGzHXsvAC/1hh4ogMNwweo9RFax2X7d37oYCuunSZDDQnZSIsoFn4Gfx7vmvkHgnfFZDGRBOEN8HKCOQbH8XNyz6JEPZhUdfJeN5aBsevK763szt49UCfLhhNt7uv4w9VN8PZwuvMZwXeLiKBJ7OB5CwqPbnoBfBmnDmE7cCq44SJvXGAPOBU6n854BAeZXpxnlwZdPok3hMigj3z/2atKiXQv1w9GLmLl2Tb17mZbZ4aco9rFzQowt1nSh7kdWVLhWP4qI61QMv4mHd/1Y1UNRceE+3PrAgMBAAGjggJOMIICSjAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFAvfuVQNacVnw+EZSMKC+ik9dd7SMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMB4GA1UdEQQXMBWCE3RyYWluaW5nLnplbmlrYS5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdwC3Pvsk35xNunXyOcW6WPRsXfxCz3qfNcSeHQmBJe20mQAAAYTrcSPAAAAEAwBIMEYCIQDVJl7I8ptio9LUU+XD3h20UF5oAK/jLs8nXe35iidVzgIhAMNCB1aEZG7wEc7rSROKoyVWU+7rEQMLFYhT7yqEdMjBAHUAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQApBo2yCJo32RMAAAGE63EkCwAABAMARjBEAiBWTazxDrkMjkKaLJWL9DNcbYZSSurNUTel/ChpQxOVMQIgRSjoAbIdLYrDh5RXMqTLoZcjmfK8yzrlNi1+olK8MMIwDQYJKoZIhvcNAQELBQADggEBAJ67CklfgqOwHJcneIBQigugAXygzz+Da0aWKWC3Q2WoKxVPG2sN2H/36RwqZ7zMGpPsJQd44KauGLYglR+FkOL0O9O34nUDjoUsY+tQG4vm1k1F9/a9FC7v1n0iFEriieR/NoLuzsEEHGE5bQ7XU4XXr23rxY/+wjm1DJcgfOHPA/Fw8kABTpaIcgpuHEBlfNMLj+pRaJlSKQqDYeGYNt5BOORO1ASgW4Upfr0nnuk7qcGTwEszEvqzR7NiH8aw0olLISRGHiLbQXFOC0FiH7ZyfBEbhEU0Fc82LfnP0hoA5vgm59qjbvNkfeji41vhIcZse/j1iqTse+p87DKgxcI=\n-----END CERTIFICATE-----"
       },
       {
         "id": "cert_commonName",
@@ -10476,21 +10396,21 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
-        "finding": "59 >= 30 days"
+        "finding": "72 >= 30 days"
       },
       {
         "id": "cert_notBefore",
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "2022-09-30 00:05"
+        "finding": "2022-12-07 06:16"
       },
       {
         "id": "cert_notAfter",
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "OK",
-        "finding": "2022-12-29 00:05"
+        "finding": "2023-03-07 06:16"
       },
       {
         "id": "cert_extlifeSpan",
@@ -10574,7 +10494,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAw TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAw WhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3Mg RW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK AoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cP R5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdx sxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8Zutm NHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxg Z3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG /kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMC AYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYB Af8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaA FHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcw AoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRw Oi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQB gt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6W PTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wl ikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQz CkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BIm lJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4 avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2 yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1O yK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90Ids hCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+ HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6Zv MldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqX nLRbwHOoq7hHwg== -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFFjCCAv6gAwIBAgIRAJErCErPDBinU/bWLiWnX1owDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMjAwOTA0MDAwMDAwWhcNMjUwOTE1MTYwMDAwWjAyMQswCQYDVQQGEwJVUzEWMBQGA1UEChMNTGV0J3MgRW5jcnlwdDELMAkGA1UEAxMCUjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC7AhUozPaglNMPEuyNVZLD+ILxmaZ6QoinXSaqtSu5xUyxr45r+XXIo9cPR5QUVTVXjJ6oojkZ9YI8QqlObvU7wy7bjcCwXPNZOOftz2nwWgsbvsCUJCWH+jdxsxPnHKzhm+/b5DtFUkWWqcFTzjTIUu61ru2P3mBw4qVUq7ZtDpelQDRrK9O8ZutmNHz6a4uPVymZ+DAXXbpyb/uBxa3Shlg9F8fnCbvxK/eG3MHacV3URuPMrSXBiLxgZ3Vms/EY96Jc5lP/Ooi2R6X/ExjqmAl3P51T+c8B5fWmcBcUr2Ok/5mzk53cU6cG/kiFHaFpriV1uxPMUgP17VGhi9sVAgMBAAGjggEIMIIBBDAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFBQusxe3WFbLrlAJQOYfr52LFMLGMB8GA1UdIwQYMBaAFHm0WeZ7tuXkAXOACIjIGlj26ZtuMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcwAoYWaHR0cDovL3gxLmkubGVuY3Iub3JnLzAnBgNVHR8EIDAeMBygGqAYhhZodHRwOi8veDEuYy5sZW5jci5vcmcvMCIGA1UdIAQbMBkwCAYGZ4EMAQIBMA0GCysGAQQBgt8TAQEBMA0GCSqGSIb3DQEBCwUAA4ICAQCFyk5HPqP3hUSFvNVneLKYY611TR6WPTNlclQtgaDqw+34IL9fzLdwALduO/ZelN7kIJ+m74uyA+eitRY8kc607TkC53wlikfmZW4/RvTZ8M6UK+5UzhK8jCdLuMGYL6KvzXGRSgi3yLgjewQtCPkIVz6D2QQzCkcheAmCJ8MqyJu5zlzyZMjAvnnAT45tRAxekrsu94sQ4egdRCnbWSDtY7kh+BImlJNXoB1lBMEKIq4QDUOXoRgffuDghje1WrG9ML+Hbisq/yFOGwXD9RiX8F6sw6W4avAuvDszue5L3sz85K+EC4Y/wFVDNvZo4TYXao6Z0f+lQKc0t8DQYzk1OXVu8rp2yJMC6alLbBfODALZvYH7n7do1AZls4I9d1P4jnkDrQoxB3UqQ9hVl3LEKQ73xF1OyK5GhDDX8oVfGKF5u+decIsH4YaTw7mP3GFxJSqv3+0lUFJoi5Lc5da149p90IdshCExroL1+7mryIkXPeFM5TgO9r0rvZaBFOvV2z0gp35Z0+L4WPlbuEjN/lxPFin+HlUjr8gRsI3qfJOQFy/9rKIJR0Y/8Omwt/8oTWgy1mdeHmmjk7j1nYsvC9JSQ6ZvMldlTTKB3zhThV1+XWYp6rjd5JW1zbVWEkLNxE7GJThEUG3szgBVGP7pSWTUTsqXnLRbwHOoq7hHwg==\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#1>",
@@ -10616,7 +10536,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "-----BEGIN CERTIFICATE----- MIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/ MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT DkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1ow TzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh cmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEB AQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XC ov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpL wYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+D LtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK 4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5 bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5y sR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZ Xmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4 FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBc SLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2ql PRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TND TwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYw SwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1 c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx +tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEB ATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQu b3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9E U1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26Ztu MA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC 5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW 9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuG WCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9O he8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFC Dfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5 -----END CERTIFICATE-----"
+        "finding": "-----BEGIN CERTIFICATE-----\nMIIFYDCCBEigAwIBAgIQQAF3ITfU6UK47naqPGQKtzANBgkqhkiG9w0BAQsFADA/MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMTDkRTVCBSb290IENBIFgzMB4XDTIxMDEyMDE5MTQwM1oXDTI0MDkzMDE4MTQwM1owTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCt6CRz9BQ385ueK1coHIe+3LffOJCMbjzmV6B493XCov71am72AE8o295ohmxEk7axY/0UEmu/H9LqMZshftEzPLpI9d1537O4/xLxIZpLwYqGcWlKZmZsj348cL+tKSIG8+TA5oCu4kuPt5l+lAOf00eXfJlII1PoOK5PCm+DLtFJV4yAdLbaL9A4jXsDcCEbdfIwPPqPrt3aY6vrFk/CjhFLfs8L6P+1dy70sntK4EwSJQxwjQMpoOFTJOwT2e4ZvxCzSow/iaNhUd6shweU9GNx7C7ib1uYgeGJXDR5bHbvO5BieebbpJovJsXQEOEO3tkQjhb7t/eo98flAgeYjzYIlefiN5YNNnWe+w5ysR2bvAP5SQXYgd0FtCrWQemsAXaVCg/Y39W9Eh81LygXbNKYwagJZHduRze6zqxZXmidf3LWicUGQSk+WT7dJvUkyRGnWqNMQB9GoZm1pzpRboY7nn1ypxIFeFntPlF4FQsDj43QLwWyPntKHEtzBRL8xurgUBN8Q5N0s8p0544fAQjQMNRbcTa0B7rBMDBcSLeCO5imfWCKoqMpgsy6vYMEG6KDA0Gh1gXxG8K28Kh8hjtGqEgqiNx2mna/H2qlPRmP6zjzZN7IKw0KKP/32+IVQtQi0Cdd4Xn+GOdwiK1O5tmLOsbdJ1Fu/7xk9TNDTwIDAQABo4IBRjCCAUIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwSwYIKwYBBQUHAQEEPzA9MDsGCCsGAQUFBzAChi9odHRwOi8vYXBwcy5pZGVudHJ1c3QuY29tL3Jvb3RzL2RzdHJvb3RjYXgzLnA3YzAfBgNVHSMEGDAWgBTEp7Gkeyxx+tvhS5B1/8QVYIWJEDBUBgNVHSAETTBLMAgGBmeBDAECATA/BgsrBgEEAYLfEwEBATAwMC4GCCsGAQUFBwIBFiJodHRwOi8vY3BzLnJvb3QteDEubGV0c2VuY3J5cHQub3JnMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly9jcmwuaWRlbnRydXN0LmNvbS9EU1RST09UQ0FYM0NSTC5jcmwwHQYDVR0OBBYEFHm0WeZ7tuXkAXOACIjIGlj26ZtuMA0GCSqGSIb3DQEBCwUAA4IBAQAKcwBslm7/DlLQrt2M51oGrS+o44+/yQoDFVDC5WxCu2+b9LRPwkSICHXM6webFGJueN7sJ7o5XPWioW5WlHAQU7G75K/QosMrAdSW9MUgNTP52GE24HGNtLi1qoJFlcDyqSMo59ahy2cI2qBDLKobkx/J3vWraV0T9VuGWCLKTVXkcGdtwlfFRjlBz4pYg1htmf5X6DYO8A4jqv2Il9DjXA6USbW1FzXSLr9Ohe8Y4IWS6wY7bCkjCWDcRQJMEhg76fsO3txE+FiYruq9RUWhiF1myv4Q6W+CyBFCDfvp7OOGAN6dEOM4+qR9sdjoSYKEBpsr6GtPAQw4dy753ec5\n-----END CERTIFICATE-----"
       },
       {
         "id": "intermediate_cert_fingerprintSHA256 <#2>",
@@ -10679,7 +10599,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667096106"
+        "finding": "1671931751"
       },
       {
         "id": "HSTS_time",
@@ -10866,7 +10786,7 @@
         "severity": "INFO",
         "cve": "CVE-2016-0800 CVE-2016-0703",
         "cwe": "CWE-310",
-        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=437E95D02E9ADEC442BA2FC52B37CE91CD0784601C3B8BF0721FBD43EA06D3DC"
+        "finding": "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=E5E367EA86AB1864B7339648B8E58BAF1BF21B1FB5FF2A7EBB9F9ABD045A3328"
       },
       {
         "id": "LOGJAM",
@@ -10941,7 +10861,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-android_90",
@@ -11032,7 +10952,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+        "finding": "No connection"
       },
       {
         "id": "clientsimulation-ie_11_winphone81",
@@ -11046,7 +10966,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-edge_15_win10",
@@ -11095,7 +11015,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 DHE-RSA-AES128-GCM-SHA256"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-java1102",
@@ -11158,7 +11078,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "TLSv1.2 ECDHE-RSA-AES256-GCM-SHA384"
+        "finding": "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
       },
       {
         "id": "clientsimulation-thunderbird_91_9",
@@ -11242,7 +11162,7 @@
         "ip": "training.zenika.com/46.252.181.104",
         "port": "443",
         "severity": "INFO",
-        "finding": "417"
+        "finding": "408"
       }
     ],
     "thirdparties": {
@@ -11288,14 +11208,6 @@
           }
         },
         {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTQ3jw.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
           "type": "unknown",
           "url": "https://platon.nyc3.digitaloceanspaces.com/partner-picture/Confluent.png"
         },
@@ -11332,6 +11244,14 @@
           }
         },
         {
+          "type": "google fonts",
+          "url": "https://fonts.gstatic.com/s/nunito/v25/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTQ3jw.woff2",
+          "details": {
+            "id": "google fonts",
+            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+          }
+        },
+        {
           "type": "unknown",
           "url": "https://consent.cookiebot.com/uc.js?cbid=0ecab3a1-893f-401d-a270-f34c4108d68f&culture=fr"
         },
@@ -11349,11 +11269,11 @@
         "accept-ranges": "none",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 30 Oct 2022 02:08:49 GMT",
-        "etag": "\"e85a0-ry07IGb4lxNAFF/RIGpW44QuNjs\"",
+        "date": "Sun, 25 Dec 2022 01:23:01 GMT",
+        "etag": "\"e85a0-o9Nk76NZhf79rrOSmCZKTszRpn8\"",
         "keep-alive": "timeout=5",
-        "link": "</_nuxt/5386aa6.js>; rel=preload; as=script, </_nuxt/988db75.js>; rel=preload; as=script, </_nuxt/b881d30.js>; rel=preload; as=script, </_nuxt/0f39f94.js>; rel=preload; as=script, </_nuxt/0a684b9.js>; rel=preload; as=script, </_nuxt/5e29e78.js>; rel=preload; as=script",
-        "sozu-id": "01GGKAC57QNKJ0A8XHEWENM42G",
+        "link": "</_nuxt/5386aa6.js>; rel=preload; as=script, </_nuxt/988db75.js>; rel=preload; as=script, </_nuxt/b881d30.js>; rel=preload; as=script, </_nuxt/2aea321.js>; rel=preload; as=script, </_nuxt/0a684b9.js>; rel=preload; as=script, </_nuxt/5e29e78.js>; rel=preload; as=script",
+        "sozu-id": "01GN3E0HKTRTQMYYFHRMRYT48T",
         "strict-transport-security": "max-age=15552000; includeSubDomains",
         "transfer-encoding": "chunked",
         "vary": "Accept-Encoding",
@@ -11362,7 +11282,7 @@
       "endpoints": [
         {
           "hostname": "training.zenika.com",
-          "ip": "185.42.117.109",
+          "ip": "46.252.181.103",
           "geoip": {
             "continent": {
               "code": "EU",
@@ -11418,7 +11338,7 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "172.253.63.95",
+          "ip": "142.251.163.95",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -11472,7 +11392,7 @@
         },
         {
           "hostname": "www.googletagmanager.com",
-          "ip": "142.251.16.97",
+          "ip": "172.253.122.97",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -11526,16 +11446,8 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "142.250.81.195",
+          "ip": "172.253.62.94",
           "geoip": {
-            "city": {
-              "geoname_id": 5118626,
-              "names": {
-                "en": "Glen Cove",
-                "ja": "グレンコーブ",
-                "ru": "Глен-Коув"
-              }
-            },
             "continent": {
               "code": "NA",
               "geoname_id": 6255149,
@@ -11566,13 +11478,9 @@
             },
             "location": {
               "accuracy_radius": 1000,
-              "latitude": 40.8627,
-              "longitude": -73.6351,
-              "metro_code": 501,
-              "time_zone": "America/New_York"
-            },
-            "postal": {
-              "code": "11542"
+              "latitude": 37.751,
+              "longitude": -97.822,
+              "time_zone": "America/Chicago"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -11587,23 +11495,7 @@
                 "ru": "США",
                 "zh-CN": "美国"
               }
-            },
-            "subdivisions": [
-              {
-                "geoname_id": 5128638,
-                "iso_code": "NY",
-                "names": {
-                  "de": "New York",
-                  "en": "New York",
-                  "es": "Nueva York",
-                  "fr": "New York",
-                  "ja": "ニューヨーク州",
-                  "pt-BR": "Nova Iorque",
-                  "ru": "Нью-Йорк",
-                  "zh-CN": "纽约州"
-                }
-              }
-            ]
+            }
           }
         },
         {
@@ -11662,7 +11554,7 @@
         },
         {
           "hostname": "consent.cookiebot.com",
-          "ip": "23.212.250.17",
+          "ip": "23.212.251.141",
           "geoip": {
             "city": {
               "geoname_id": 4744870,
@@ -11741,13 +11633,18 @@
         },
         {
           "hostname": "consentcdn.cookiebot.com",
-          "ip": "104.108.101.241",
+          "ip": "184.87.82.16",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5128581,
               "names": {
-                "en": "Ashburn",
-                "ru": "Ашберн"
+                "de": "New York City",
+                "en": "New York",
+                "es": "Nueva York",
+                "fr": "New York",
+                "ja": "ニューヨーク",
+                "pt-BR": "Nova Iorque",
+                "ru": "Нью-Йорк"
               }
             },
             "continent": {
@@ -11780,13 +11677,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
+              "latitude": 40.7425,
+              "longitude": -73.9877,
+              "metro_code": 501,
               "time_zone": "America/New_York"
             },
             "postal": {
-              "code": "20149"
+              "code": "10118"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -11804,15 +11701,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5128638,
+                "iso_code": "NY",
                 "names": {
-                  "en": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "New York",
+                  "en": "New York",
+                  "es": "Nueva York",
+                  "fr": "New York",
+                  "ja": "ニューヨーク州",
+                  "pt-BR": "Nova Iorque",
+                  "ru": "Нью-Йорк",
+                  "zh-CN": "纽约州"
                 }
               }
             ]
@@ -11853,7 +11752,7 @@
           "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
           "confidence": 100,
           "version": null,
-          "icon": "node.js.png",
+          "icon": "Node.js.svg",
           "website": "http://nodejs.org",
           "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
           "categories": [
@@ -11931,23 +11830,6 @@
           ]
         },
         {
-          "slug": "google-font-api",
-          "name": "Google Font API",
-          "description": "Google Font API is a web service that supports open-source font files that can be used on your web designs.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Google Font API.png",
-          "website": "http://google.com/fonts",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 17,
-              "slug": "font-scripts",
-              "name": "Font scripts"
-            }
-          ]
-        },
-        {
           "slug": "cookiebot",
           "name": "Cookiebot",
           "description": "Cookiebot is a cloud-driven solution that automatically controls cookies and trackers, enabling full GDPR/ePrivacy and CCPA compliance for websites.",
@@ -11970,7 +11852,7 @@
           "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
           "confidence": 100,
           "version": "4.17.21",
-          "icon": "Lo-dash.png",
+          "icon": "Lodash.svg",
           "website": "http://www.lodash.com",
           "cpe": "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*",
           "categories": [
@@ -11999,6 +11881,23 @@
           ]
         },
         {
+          "slug": "google-font-api",
+          "name": "Google Font API",
+          "description": "Google Font API is a web service that supports open-source font files that can be used on your web designs.",
+          "confidence": 100,
+          "version": null,
+          "icon": "Google Font API.svg",
+          "website": "http://google.com/fonts",
+          "cpe": null,
+          "categories": [
+            {
+              "id": 17,
+              "slug": "font-scripts",
+              "name": "Font scripts"
+            }
+          ]
+        },
+        {
           "slug": "hsts",
           "name": "HSTS",
           "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
@@ -12017,11 +11916,11 @@
         },
         {
           "slug": "webpack",
-          "name": "webpack",
+          "name": "Webpack",
           "description": "Webpack is an open-source JavaScript module bundler.",
           "confidence": 100,
           "version": null,
-          "icon": "webpack.svg",
+          "icon": "Webpack.svg",
           "website": "https://webpack.js.org/",
           "cpe": null,
           "categories": [
@@ -12052,8 +11951,9 @@
       ]
     },
     "zap": {
+      "@programName": "OWASP ZAP",
       "@version": "2.12.0",
-      "@generated": "Sun, 30 Oct 2022 02:07:49",
+      "@generated": "Sun, 25 Dec 2022 01:22:00",
       "site": [
         {
           "@name": "https://training.zenika.com",
@@ -12095,6 +11995,13 @@
               "confidence": "2",
               "riskdesc": "Low (Medium)",
               "desc": "<p>The page includes one or more script files from a third-party domain.</p>"
+            },
+            {
+              "name": "Dangerous JS Functions",
+              "riskcode": "1",
+              "confidence": "1",
+              "riskdesc": "Low (Low)",
+              "desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>"
             },
             {
               "name": "Permissions Policy Header Not Set",
@@ -12168,7 +12075,7 @@
       {
         "requestedUrl": "https://training.zenika.com/",
         "finalUrl": "https://training.zenika.com/en-fr",
-        "fetchTime": "2022-10-30T02:07:57.107Z",
+        "fetchTime": "2022-12-25T01:22:09.052Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://training.zenika.com/) was redirected to https://training.zenika.com/en-fr. Try testing the second URL directly."
         ],
@@ -12181,7 +12088,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.2569280624389648
+            "score": 0.2399240493774414
           },
           "accessibility": {
             "title": "Accessibility",
@@ -12233,53 +12140,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 12211,
+            "numericValue": 15295,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3063,
-                  "firstMeaningfulPaint": 3063,
-                  "largestContentfulPaint": 8321,
-                  "interactive": 12211,
-                  "speedIndex": 6612,
-                  "totalBlockingTime": 348,
-                  "maxPotentialFID": 230,
+                  "firstContentfulPaint": 3073,
+                  "firstMeaningfulPaint": 3982,
+                  "largestContentfulPaint": 9799,
+                  "interactive": 15295,
+                  "speedIndex": 7258,
+                  "totalBlockingTime": 469,
+                  "maxPotentialFID": 340,
                   "cumulativeLayoutShift": 0.04113294580247667,
                   "cumulativeLayoutShiftMainFrame": 0.04113294580247667,
-                  "totalCumulativeLayoutShift": 0.04113294580247667,
+                  "totalCumulativeLayoutShift": 0.046601695802476674,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 483913972,
+                  "observedTimeOriginTs": 399105467,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 483913972,
-                  "observedFirstPaint": 1285,
-                  "observedFirstPaintTs": 485198886,
-                  "observedFirstContentfulPaint": 1285,
-                  "observedFirstContentfulPaintTs": 485198886,
-                  "observedFirstContentfulPaintAllFrames": 1285,
-                  "observedFirstContentfulPaintAllFramesTs": 485198886,
-                  "observedFirstMeaningfulPaint": 1327,
-                  "observedFirstMeaningfulPaintTs": 485240734,
-                  "observedLargestContentfulPaint": 1684,
-                  "observedLargestContentfulPaintTs": 485598315,
-                  "observedLargestContentfulPaintAllFrames": 1684,
-                  "observedLargestContentfulPaintAllFramesTs": 485598315,
-                  "observedTraceEnd": 4331,
-                  "observedTraceEndTs": 488244695,
-                  "observedLoad": 2020,
-                  "observedLoadTs": 485933840,
-                  "observedDomContentLoaded": 1797,
-                  "observedDomContentLoadedTs": 485710570,
+                  "observedNavigationStartTs": 399105467,
+                  "observedFirstPaint": 1157,
+                  "observedFirstPaintTs": 400262158,
+                  "observedFirstContentfulPaint": 1157,
+                  "observedFirstContentfulPaintTs": 400262158,
+                  "observedFirstContentfulPaintAllFrames": 1157,
+                  "observedFirstContentfulPaintAllFramesTs": 400262158,
+                  "observedFirstMeaningfulPaint": 1190,
+                  "observedFirstMeaningfulPaintTs": 400295008,
+                  "observedLargestContentfulPaint": 1643,
+                  "observedLargestContentfulPaintTs": 400748829,
+                  "observedLargestContentfulPaintAllFrames": 1643,
+                  "observedLargestContentfulPaintAllFramesTs": 400748829,
+                  "observedTraceEnd": 5182,
+                  "observedTraceEndTs": 404287350,
+                  "observedLoad": 1704,
+                  "observedLoadTs": 400809772,
+                  "observedDomContentLoaded": 1599,
+                  "observedDomContentLoadedTs": 400704307,
                   "observedCumulativeLayoutShift": 0.04113294580247667,
                   "observedCumulativeLayoutShiftMainFrame": 0.04113294580247667,
-                  "observedTotalCumulativeLayoutShift": 0.04113294580247667,
-                  "observedFirstVisualChange": 1333,
-                  "observedFirstVisualChangeTs": 485246972,
-                  "observedLastVisualChange": 1899,
-                  "observedLastVisualChangeTs": 485812972,
-                  "observedSpeedIndex": 1566,
-                  "observedSpeedIndexTs": 485479747
+                  "observedTotalCumulativeLayoutShift": 0.046601695802476674,
+                  "observedFirstVisualChange": 1195,
+                  "observedFirstVisualChangeTs": 400300467,
+                  "observedLastVisualChange": 4178,
+                  "observedLastVisualChangeTs": 403283467,
+                  "observedSpeedIndex": 1593,
+                  "observedSpeedIndexTs": 400698138
                 },
                 {
                   "lcpInvalidated": false
@@ -12297,23 +12204,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 72,
-                  "numScripts": 27,
+                  "numRequests": 77,
+                  "numScripts": 30,
                   "numStylesheets": 3,
                   "numFonts": 5,
-                  "numTasks": 1323,
-                  "numTasksOver10ms": 21,
-                  "numTasksOver25ms": 7,
-                  "numTasksOver50ms": 1,
+                  "numTasks": 2326,
+                  "numTasksOver10ms": 26,
+                  "numTasksOver25ms": 6,
+                  "numTasksOver50ms": 2,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 5.329000000000001,
-                  "throughput": 20233730.188986413,
-                  "maxRtt": 85.02099999999999,
-                  "maxServerLatency": 76.887,
-                  "totalByteWeight": 2322973,
-                  "totalTaskTime": 834.1639999999899,
-                  "mainDocumentTransferSize": 160997
+                  "rtt": 0,
+                  "throughput": 23093195.156472627,
+                  "maxRtt": 80.229,
+                  "maxServerLatency": 71.975,
+                  "totalByteWeight": 2412123,
+                  "totalTaskTime": 1040.908999999979,
+                  "mainDocumentTransferSize": 161002
                 }
               ]
             }
@@ -12340,16 +12247,16 @@
       "uptime": 100,
       "uptimeGrade": "A",
       "nmapGrade": "B",
-      "nmapOpenPortsCount": 15,
+      "nmapOpenPortsCount": 16,
       "nmapOpenPortsGrade": "F",
-      "testsslExpireSoon": true,
-      "testsslExpireDate": "2022-12-29T00:05:00.000Z",
+      "testsslExpireSoon": false,
+      "testsslExpireDate": "2023-03-07T06:16:00.000Z",
       "testsslGrade": "A+",
       "cookiesGrade": "A",
       "cookiesCount": 0,
       "trackersGrade": "F",
       "trackersCount": 17,
-      "lighthouse_performance": 0.2569280624389648,
+      "lighthouse_performance": 0.2399240493774414,
       "lighthouse_performanceGrade": "E",
       "lighthouse_accessibility": 0.85,
       "lighthouse_accessibilityGrade": "A",

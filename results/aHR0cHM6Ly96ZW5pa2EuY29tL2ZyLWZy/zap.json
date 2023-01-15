@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 1 Jan 2023 01:27:57",
+	"@generated": "Sun, 15 Jan 2023 01:22:44",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -40,7 +40,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "85"
+					"sourceid": "65"
 				},
 				{
 					"pluginid": "90022",
@@ -66,7 +66,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "67"
+					"sourceid": "102"
 				},
 				{
 					"pluginid": "10038",
@@ -244,7 +244,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90003",
@@ -285,6 +285,20 @@
 							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>"
 						},
 						{
+							"uri": "https://zenika.com/pages/values",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&amp;display=swap\"/>"
+						},
+						{
+							"uri": "https://zenika.com/pages/values",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>"
+						},
+						{
 							"uri": "https://zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -313,7 +327,7 @@
 							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>"
 						}
 					],
-					"count": "8",
+					"count": "10",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -345,7 +359,7 @@
 					"reference": "<p>https://github.com/vercel/next.js/security/advisories/GHSA-fmvm-x8mv-47mj</p><p>https://github.com/vercel/next.js/security/advisories/GHSA-25mp-g6fv-mqxx</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "67"
+					"sourceid": "102"
 				},
 				{
 					"pluginid": "90022",
@@ -501,42 +515,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/main-fc209ece1bfea13a339f.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/pages/_error-737a04e9a0da63c9d162.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/webpack-5e30ecbff680983116c4.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/R7P1NtngVIl6SA2E9eb5L/_buildManifest.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/R7P1NtngVIl6SA2E9eb5L/_ssgManifest.js",
+							"uri": "https://zenika.com/contact",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -544,6 +523,41 @@
 						},
 						{
 							"uri": "https://zenika.com/fr-fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/contenus",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/green-it",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/values",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -679,28 +693,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/main-fc209ece1bfea13a339f.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/webpack-5e30ecbff680983116c4.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/css/9183dd38427a40c8cec7.css",
+							"uri": "https://zenika.com/contact",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -708,6 +701,41 @@
 						},
 						{
 							"uri": "https://zenika.com/fr-fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/contenus",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/green-it",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/values",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -722,20 +750,6 @@
 						},
 						{
 							"uri": "https://zenika.com/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/static/images/favicon-16x16.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/static/images/favicon-32x32.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -768,42 +782,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/framework-c93ed74a065331c4bd75.js",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/main-fc209ece1bfea13a339f.js",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/pages/_error-737a04e9a0da63c9d162.js",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/webpack-5e30ecbff680983116c4.js",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://zenika.com/_next/static/css/9183dd38427a40c8cec7.css",
+							"uri": "https://zenika.com/contact",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -817,14 +796,49 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/static/images/favicon-16x16.png",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://zenika.com/static/images/favicon-32x32.png",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/contenus",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/green-it",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/values",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -926,7 +940,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10024",
@@ -952,7 +966,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "134"
+					"sourceid": "131"
 				},
 				{
 					"pluginid": "10027",
@@ -972,28 +986,7 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/framework-c93ed74a065331c4bd75.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select"
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/main-fc209ece1bfea13a339f.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/pages/_app-3edfc9e273bf96eaabd3.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js",
+							"uri": "https://zenika.com/contact",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1007,7 +1000,28 @@
 							"evidence": "query"
 						},
 						{
+							"uri": "https://zenika.com/pages/contenus",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://zenika.com/pages/green-it",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
 							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1061,18 +1075,11 @@
 							"evidence": "<a class=\"jss29 jss26\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/framework-c93ed74a065331c4bd75.js",
+							"uri": "https://zenika.com/contact",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script>"
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script>"
+							"evidence": "<a class=\"jss30 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
 						},
 						{
 							"uri": "https://zenika.com/fr-fr",
@@ -1080,6 +1087,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<a class=\"jss29 jss26\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
+						},
+						{
+							"uri": "https://zenika.com/pages/contenus",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"jss30 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>"
 						},
 						{
 							"uri": "https://zenika.com/pages/green-it",
@@ -1239,42 +1253,49 @@
 							"evidence": "s-maxage=10"
 						},
 						{
-							"uri": "https://zenika.com/_next/static/chunks/main-fc209ece1bfea13a339f.js",
+							"uri": "https://zenika.com/contact",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=31536000"
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/pages/_error-737a04e9a0da63c9d162.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000"
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000"
-						},
-						{
-							"uri": "https://zenika.com/_next/static/chunks/webpack-5e30ecbff680983116c4.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000"
-						},
-						{
-							"uri": "https://zenika.com/_next/static/css/9183dd38427a40c8cec7.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000"
+							"evidence": "s-maxage=10"
 						},
 						{
 							"uri": "https://zenika.com/fr-fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=10"
+						},
+						{
+							"uri": "https://zenika.com/pages/contenus",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=10"
+						},
+						{
+							"uri": "https://zenika.com/pages/green-it",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=10"
+						},
+						{
+							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=10"
+						},
+						{
+							"uri": "https://zenika.com/pages/security",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=10"
+						},
+						{
+							"uri": "https://zenika.com/pages/values",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1295,46 +1316,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "9",
+					"count": "10",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
 					"sourceid": "3"
-				},
-				{
-					"pluginid": "10049",
-					"alertRef": "10049",
-					"alert": "Storable but Non-Cacheable Content",
-					"name": "Storable but Non-Cacheable Content",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>",
-					"instances":[ 
-						{
-							"uri": "https://zenika.com/static/images/favicon-16x16.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0"
-						},
-						{
-							"uri": "https://zenika.com/static/images/favicon-32x32.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0"
-						}
-					],
-					"count": "2",
-					"solution": "",
-					"otherinfo": "",
-					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
-					"cweid": "524",
-					"wascid": "13",
-					"sourceid": "59"
 				}
 			]
 		}

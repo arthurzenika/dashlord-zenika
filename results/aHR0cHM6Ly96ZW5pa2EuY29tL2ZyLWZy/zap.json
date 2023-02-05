@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 29 Jan 2023 01:24:08",
+	"@generated": "Sun, 5 Feb 2023 01:25:03",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -203,6 +203,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"method": "GET",
+							"param": "X-Frame-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -238,13 +245,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "10",
+					"count": "11",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90003",
@@ -285,20 +292,6 @@
 							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>"
 						},
 						{
-							"uri": "https://zenika.com/pages/values",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&amp;display=swap\"/>"
-						},
-						{
-							"uri": "https://zenika.com/pages/values",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>"
-						},
-						{
 							"uri": "https://zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -327,7 +320,7 @@
 							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>"
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -406,7 +399,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "139"
+					"sourceid": "135"
 				},
 				{
 					"pluginid": "10017",
@@ -762,7 +755,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10021",
@@ -851,7 +844,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10094",
@@ -940,7 +933,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10024",
@@ -1144,7 +1137,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10015",
@@ -1178,14 +1171,14 @@
 							"evidence": "s-maxage=10, stale-while-revalidate"
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "s-maxage=10, stale-while-revalidate"
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",

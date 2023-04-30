@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 23 Apr 2023 01:22:48",
+	"@generated": "Sun, 30 Apr 2023 01:18:29",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -42,7 +42,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "65"
+					"sourceid": "66"
 				},
 				{
 					"pluginid": "90022",
@@ -69,7 +69,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "101"
+					"sourceid": "103"
 				},
 				{
 					"pluginid": "10038",
@@ -205,7 +205,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -213,7 +213,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -393,7 +393,7 @@
 					"reference": "<p>https://github.com/vercel/next.js/security/advisories/GHSA-fmvm-x8mv-47mj</p><p>https://github.com/vercel/next.js/security/advisories/GHSA-25mp-g6fv-mqxx</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "101"
+					"sourceid": "103"
 				},
 				{
 					"pluginid": "90022",
@@ -407,6 +407,14 @@
 					"instances":[ 
 						{
 							"uri": "https://zenika.com/fr-FR/agency/%2Fstatic%2Fimages%2Fflags%2FFRANCE.svg&w=32&q=75",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 500 Internal Server Error",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://zenika.com/fr-FR/agency/%2Fstatic%2Fimages%2Fflags%2FFRANCE.svg&w=48&q=75",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -430,13 +438,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "135"
+					"sourceid": "139"
 				},
 				{
 					"pluginid": "10017",
@@ -634,7 +642,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10037",
@@ -832,7 +840,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10021",
@@ -1030,7 +1038,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10024",
@@ -1057,7 +1065,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "125"
+					"sourceid": "133"
 				},
 				{
 					"pluginid": "10027",
@@ -1156,7 +1164,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10109",
@@ -1255,7 +1263,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10015",
@@ -1292,7 +1300,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1300,7 +1308,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1453,7 +1461,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				}
 			]
 		}

@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 18 Jun 2023 01:40:12",
+	"@generated": "Sun, 25 Jun 2023 01:49:28",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -178,7 +178,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
 							"method": "GET",
 							"param": "X-Frame-Options",
 							"attack": "",
@@ -240,7 +240,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90003",
@@ -285,7 +285,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/green-it",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -293,7 +293,23 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/green-it",
+							"uri": "https://zenika.com/pages/offers",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/values",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&amp;display=swap\"/>",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://zenika.com/pages/values",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -333,7 +349,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "12",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</p>",
@@ -417,7 +433,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "139"
+					"sourceid": "135"
 				},
 				{
 					"pluginid": "10017",
@@ -615,7 +631,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10037",
@@ -850,7 +866,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -1011,7 +1027,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10024",
@@ -1038,7 +1054,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "127"
+					"sourceid": "134"
 				},
 				{
 					"pluginid": "10027",
@@ -1137,7 +1153,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10109",
@@ -1236,7 +1252,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10015",
@@ -1273,7 +1289,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -1434,7 +1450,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				}
 			]
 		}

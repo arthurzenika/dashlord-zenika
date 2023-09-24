@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.13.0",
-	"@generated": "Sun, 17 Sep 2023 01:06:18",
+	"@generated": "Sun, 24 Sep 2023 01:06:48",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -42,7 +42,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "67"
+					"sourceid": "66"
 				},
 				{
 					"pluginid": "10038",
@@ -178,7 +178,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -186,7 +186,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -240,7 +240,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90003",
@@ -285,22 +285,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/green-it",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&amp;display=swap\"/>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/green-it",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap\"/>",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://zenika.com/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -333,7 +317,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "8",
 					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
@@ -866,7 +850,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -874,7 +858,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1054,7 +1038,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "131"
+					"sourceid": "130"
 				},
 				{
 					"pluginid": "10027",
@@ -1289,7 +1273,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1297,7 +1281,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1380,7 +1364,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/robots.txt",
+							"uri": "https://zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1423,7 +1407,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/robots.txt",
+							"uri": "https://zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1466,7 +1450,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/robots.txt",
+							"uri": "https://zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1509,7 +1493,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/robots.txt",
+							"uri": "https://zenika.com/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",

@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
-	"@version": "2.13.0",
-	"@generated": "Sun, 8 Oct 2023 01:08:37",
+	"@version": "2.14.0",
+	"@generated": "Sun, 15 Oct 2023 01:07:56",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -39,7 +39,7 @@
 					"count": "2",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"email\" \"firstName\" \"lastName\" ].</p>",
-					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
+					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
 					"sourceid": "67"
@@ -186,7 +186,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -366,7 +366,7 @@
 					"reference": "<p>https://github.com/vercel/next.js/security/advisories/GHSA-fmvm-x8mv-47mj</p><p>https://github.com/vercel/next.js/security/advisories/GHSA-25mp-g6fv-mqxx</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "111"
+					"sourceid": "106"
 				},
 				{
 					"pluginid": "90022",
@@ -433,7 +433,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "144"
+					"sourceid": "140"
 				},
 				{
 					"pluginid": "10017",
@@ -767,6 +767,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "",
@@ -823,7 +831,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "10",
+					"count": "11",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
@@ -866,7 +874,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -874,7 +882,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1054,7 +1062,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "130"
+					"sourceid": "132"
 				},
 				{
 					"pluginid": "10027",
@@ -1075,7 +1083,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"_nextI18Next\":{\"initialI18nStore\":{\"fr-FR\":{\"common\":\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://zenika.com/contact",
+							"uri": "https://zenika.com/fr-fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1083,7 +1091,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"_nextI18Next\":{\"initialI18nStore\":{\"fr-FR\":{\"common\":\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://zenika.com/fr-fr",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1174,15 +1182,15 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"uri": "https://zenika.com/contact",
+							"uri": "https://zenika.com/fr-fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"jss30 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>",
+							"evidence": "<a class=\"jss29 jss26\" target=\"_self\" href=\"/pages/values\">Valeurs</a>",
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"uri": "https://zenika.com/fr-fr",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1289,7 +1297,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1297,7 +1305,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",

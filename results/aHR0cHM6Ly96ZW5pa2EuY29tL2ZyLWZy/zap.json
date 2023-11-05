@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 22 Oct 2023 01:08:34",
+	"@generated": "Sun, 5 Nov 2023 01:08:36",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -178,7 +178,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -186,7 +186,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -285,7 +285,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -293,7 +293,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -357,13 +357,13 @@
 							"param": "",
 							"attack": "",
 							"evidence": "document.getElementById(\"__NEXT_DATA__\").textContent);window.__NEXT_DATA__=A;t.version=\"11.1.2\"",
-							"otherinfo": "CVE-2022-23646\nCVE-2021-43803\n"
+							"otherinfo": "CVE-2022-23646\nCVE-2023-46298\nCVE-2021-43803\n"
 						}
 					],
 					"count": "1",
 					"solution": "<p>Please upgrade to the latest version of nextjs.</p>",
-					"otherinfo": "<p>CVE-2022-23646</p><p>CVE-2021-43803</p><p></p>",
-					"reference": "<p>https://github.com/vercel/next.js/security/advisories/GHSA-fmvm-x8mv-47mj</p><p>https://github.com/vercel/next.js/security/advisories/GHSA-25mp-g6fv-mqxx</p><p></p>",
+					"otherinfo": "<p>CVE-2022-23646</p><p>CVE-2023-46298</p><p>CVE-2021-43803</p><p></p>",
+					"reference": "<p>https://github.com/vercel/next.js/security/advisories/GHSA-fmvm-x8mv-47mj</p><p>https://github.com/vercel/next.js/security/advisories/GHSA-25mp-g6fv-mqxx</p><p>https://github.com/advisories/GHSA-c59h-r6p8-q9wc</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
 					"sourceid": "107"
@@ -866,7 +866,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -874,7 +874,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1054,7 +1054,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "132"
+					"sourceid": "130"
 				},
 				{
 					"pluginid": "10027",
@@ -1289,7 +1289,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1297,7 +1297,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1380,7 +1380,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1423,7 +1423,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1466,7 +1466,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1509,7 +1509,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",

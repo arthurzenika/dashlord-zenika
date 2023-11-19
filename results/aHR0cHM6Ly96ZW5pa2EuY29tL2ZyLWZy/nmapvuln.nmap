@@ -1,7 +1,7 @@
-# Nmap 7.92 scan initiated Thu Nov 16 13:52:57 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln zenika.com
-Nmap scan report for zenika.com (185.42.117.109)
-Host is up (0.090s latency).
-Other addresses for zenika.com (not scanned): 46.252.181.103 46.252.181.104 185.42.117.108
+# Nmap 7.92 scan initiated Sun Nov 19 01:17:02 2023 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln zenika.com
+Nmap scan report for zenika.com (185.42.117.108)
+Host is up (0.085s latency).
+Other addresses for zenika.com (not scanned): 46.252.181.103 46.252.181.104 185.42.117.109
 Not shown: 987 closed tcp ports (reset)
 PORT     STATE    SERVICE    VERSION
 80/tcp   open     http
@@ -20,6 +20,20 @@ PORT     STATE    SERVICE    VERSION
 1080/tcp filtered socks
 1081/tcp filtered pvuniwien
 3000/tcp open     ppp?
+| fingerprint-strings: 
+|   Kerberos: 
+|     >=`y%
+|     \xf0
+|     lE?p
+|     =7q#
+|     t*E0G
+|     Ig&0
+|   SMBProgNeg: 
+|     @^_-%
+|     eT[5
+|     reU!
+|   TLSSessionReq: 
+|_    \xeb
 5002/tcp open     ssh        (protocol 2.0)
 | fingerprint-strings: 
 |   NULL: 
@@ -46,12 +60,12 @@ PORT     STATE    SERVICE    VERSION
 |   version: 3.12.6
 |   mechanisms: AMQPLAIN PLAIN
 |_  locales: en_US
-5811/tcp open     http       JBoss Enterprise Application Platform
+5811/tcp open     tcpwrapped
 5911/tcp open     http       JBoss Enterprise Application Platform
 5962/tcp open     unknown
-3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=11/16%Time=65561EE0%P=x86_64-alpine-linux-musl%
+SF-Port80-TCP:V=7.92%I=7%D=11/19%Time=65596217%P=x86_64-alpine-linux-musl%
 SF:r(GetRequest,48,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:\x
 SF:20no-cache\r\nConnection:\x20close\r\n\r\n")%r(HTTPOptions,48,"HTTP/1\.
 SF:1\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache\r\nConnection:
@@ -83,7 +97,7 @@ SF:1\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache\r\nConnection:
 SF:\x20close\r\n\r\n")%r(LDAPBindReq,48,"HTTP/1\.1\x20400\x20Bad\x20Reques
 SF:t\r\nCache-Control:\x20no-cache\r\nConnection:\x20close\r\n\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=11/16%Time=65561EE7%P=x86_64-alpine-linu
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=11/19%Time=6559621D%P=x86_64-alpine-linu
 SF:x-musl%r(GetRequest,48,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Con
 SF:trol:\x20no-cache\r\nConnection:\x20close\r\n\r\n")%r(HTTPOptions,48,"H
 SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache\r\nConn
@@ -114,8 +128,42 @@ SF:ntrol:\x20no-cache\r\nConnection:\x20close\r\n\r\n")%r(LPDString,48,"HT
 SF:TP/1\.1\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache\r\nConne
 SF:ction:\x20close\r\n\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5002-TCP:V=7.92%I=7%D=11/16%Time=65561EE0%P=x86_64-alpine-linux-mus
+SF-Port3000-TCP:V=7.92%I=7%D=11/19%Time=65596256%P=x86_64-alpine-linux-mus
+SF:l%r(TLSSessionReq,E0,"\x04\xbc{\xff\+\xc2\x87za\x03\x8aE\xf4\x8e\x0e\x9
+SF:awl\)\x02\xa0\xb2&\xe2\xec\xc0\0\x8a\x05\xacX\xecnM\xf6\xa8\x9e\\\xeb\x
+SF:b4\?\xd2\\z\xb9\nP\xdc\x1a\xeet\xf2-\xd6\xc3\xc5&\]F\xfd@f\xdd\xac/9W\x
+SF:1c\xe9\xe4\x84\x06%\x81\xb5\xd2\xce\xf8\xce{\$\xb2\xf4\x1fuI\x16f\x9f\x
+SF:e1m\xbc\x99\xe7\xfd\x95\xf0\x8c9\x18`\xb7\x20\xce\xd2\xf4\+\x0eqG\xd2J\
+SF:[\x8d\x1e\xd2\xdf\x80\xa9L\^\xe8\x06h\x04\x9eE\xc9\?F\xb3\x1d\xdf\0\x1f
+SF:\x1e\t\x15IIz\xc2\x8a7\xc3\xb6#\xdd6\xb0\xc7n\x06\]'`\xbf\xa4\x95}\0\x1
+SF:2\xb2\xf2\xcf\x8f\xc6\xcf\x8f\x87\x83\x0f`\xdb\x11\x82\xf04\x81\xaa\xed
+SF:\xcc\xd9Hb\xd7\xf1\xab\"!\xa3\x02\xc6\xff\x95\xb42\xb5\x88-\x1eK\x1c\x9
+SF:c\xa3e\xe0\x18\xe7\xbd\xa6\"!\xc6\x83\x10\+\xf1:\(\x8f\xfa\x0fs")%r(Ker
+SF:beros,14C,"\xa2MY\x10q\xa1M\x8b\x13\xb7\.\xa18\xa6\xe0>=`y%\xe7\xf5\xc8
+SF:\)\x10v\x04\xeeJ\xb5>\x20\x97\x96\x19\xd5g\xa5\xb2d\xf3yO\xdb5\xc4\xa3\
+SF:xb6\x94\xc14\xfeDG\xc9\xb9\xe7\xb2\xc7\x81\xa6i\xc3\xb4\x0f\x1a\xe5\xe6
+SF:U\xbee\x15c-\x02f\x1d\x82R\xc2de8\xf6\t\xdcQ{\0\xf2\xeef2\x85\(!\)\xaa\
+SF:xb4\x009az\x8d\xd2\xc64v{\x16w\xa2\xe5\x87\xf4\x18\xb6e9S\x84\xf6\x8b\x
+SF:19\x08\x96ziu\xbb\^4\xb4m\x17'\0p\x9aCO\xf5\x86\x9b\x97U\x1a\x88\xe1U\x
+SF:ae\x95\x0e\xe6\xc0B\x83\x14c\xf3\\\xf0\xc2U\"\x1d\x08n\x8b\x13\xbdu\xea
+SF:\xaae=\x17\x13lE\?p\xdf\xab\xc3\xbb\xbc\x80\xa0\xf6\xf1\[\xa4b\x08\xc23
+SF:\xd3rd\x8coN\x8f\xde`\xa4\xb2\xe2=7q#\xac\xe1\x8c8\xc2\xcc\x90\x88\xd8{
+SF:\x13\xf9\xdauoX\x15T\x89\"b\x8a2\xf8\xaf\xe7IZ\x9fb\xb3\xa1\xbe\xe1\xc9
+SF:\xf7w\x08\xe5S\x014\xc4\xd8t\*E0G\x99\xaf\x89\xf3I\xf3\x1c\x81\xc6\x84\
+SF:xa0\xdb\xea\|M\xc1Ig&0\x9e&\x7f\x8b\xed\xe3\xe5\?X\xfe\x8d\xb7\xeb\x8a\
+SF:xaf\x13\x8c\xc7r\xbd\xa44\xf9;\xbb{18\x14\xb0\\8\xc8\xee\xbfi\x88NH\x8a
+SF:\xf8C\xd59HC\x9d\xb6\xbd\x94")%r(SMBProgNeg,B4,"\x85Z\x1bvHv\xcf\xb7\xd
+SF:2@\^_-%\xed\xbfI\+\xa3\xa9\xfe\xe6\xa5\r\x0b\x0f\xb6\x93\?\xb6\xd8>\x9d
+SF:C\xb4\|\xea\x8a\x9a<\xd1\x996\x7f\x01\x95\x908\x82m\xd5\xc1eT\[5\xf9L\x
+SF:e8\xa7\x99\xce\x98\x91\xba`\x9a\xca\xce\x1b=\xb4\xae\x11;Lm\xfaU\xaa\xa
+SF:c\x8e\xf1\xfc\xb0\xb8j\xef\xe8\x01\xd7\xfd\x9a\xfb\xec\xe1\xe7dXl\xbb\x
+SF:8f\xc2\x0c2\x83v\x8bg2K\xeb\x92X\xdc%W\xc8\*\x9b\|\x04C9\x94\xe2\xac<\x
+SF:95\xd5\x8f\tr9\x04\x14Y\x1d\x9d\[\xae\xb6\xb8\x99\xb9\x88\"\0\x8b\xd9\x
+SF:97\xd1\x15\x87\xbe\xd4\xfd\x06\xd1@\x1ereU!\xcb\xfb\xf1\xc9\xfe\xc3\x20
+SF:\xd1\xdf\x8c\xb7\xa1L9\xed");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5002-TCP:V=7.92%I=7%D=11/19%Time=65596217%P=x86_64-alpine-linux-mus
 SF:l%r(NULL,1A,"SSH-2\.0-SFTPGo_2\.4\.4-dev\r\n");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Nov 16 13:54:50 2023 -- 1 IP address (1 host up) scanned in 113.49 seconds
+# Nmap done at Sun Nov 19 01:20:09 2023 -- 1 IP address (1 host up) scanned in 187.27 seconds

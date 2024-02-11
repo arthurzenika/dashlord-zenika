@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 3 Dec 2023 01:12:27",
+	"@generated": "Sun, 11 Feb 2024 01:08:35",
 	"site":[ 
 		{
 			"@name": "https://training.zenika.com",
@@ -9,172 +9,6 @@
 			"@port": "443",
 			"@ssl": "true",
 			"alerts": [ 
-				{
-					"pluginid": "10202",
-					"alertRef": "10202",
-					"alert": "Absence of Anti-CSRF Tokens",
-					"name": "Absence of Anti-CSRF Tokens",
-					"riskcode": "2",
-					"confidence": "1",
-					"riskdesc": "Medium (Low)",
-					"desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>",
-					"instances":[ 
-						{
-							"uri": "https://training.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form data-v-58faabe5 data-v-6dc625d3>",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"home-search-bar-input\" ]."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form data-v-58faabe5 data-v-6dc625d3>",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"home-search-bar-input\" ]."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form data-v-58faabe5 data-v-6dc625d3>",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"home-search-bar-input\" ]."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/subscription",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form id=\"subscription-form\" data-v-aefcc3d8 data-v-d166984c>",
-							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"company\" \"dates\" \"email\" \"firstName\" \"job\" \"lastName\" \"nbinterns\" \"phone\" \"rqth\" \"voucher\" ]."
-						}
-					],
-					"count": "4",
-					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
-					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"home-search-bar-input\" ].</p>",
-					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
-					"cweid": "352",
-					"wascid": "9",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "90022",
-					"alertRef": "90022",
-					"alert": "Application Error Disclosure",
-					"name": "Application Error Disclosure",
-					"riskcode": "2",
-					"confidence": "2",
-					"riskdesc": "Medium (Medium)",
-					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
-					"instances":[ 
-						{
-							"uri": "https://training.zenika.com/fr-fr/certifyings",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/exclusives",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/officials",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/talks",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/cloud",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/craftsmanship",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/design",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/java-et-architecture",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/security",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/web",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/workshops",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						}
-					],
-					"count": "12",
-					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
-					"otherinfo": "",
-					"reference": "",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "101"
-				},
 				{
 					"pluginid": "10038",
 					"alertRef": "10038-1",
@@ -208,344 +42,58 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/certifyings",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/exclusives",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/officials",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/practical-informations",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/subscription",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/talks",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/design",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universes",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/workshops",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "3",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
+					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
 					"sourceid": "1"
 				},
 				{
-					"pluginid": "90003",
-					"alertRef": "90003",
-					"alert": "Sub Resource Integrity Attribute Missing",
-					"name": "Sub Resource Integrity Attribute Missing",
-					"riskcode": "2",
-					"confidence": "3",
-					"riskdesc": "Medium (High)",
-					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </p>",
-					"instances":[ 
-						{
-							"uri": "https://training.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/certifyings",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/certifyings",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/practical-informations",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/practical-informations",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universes",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap\">",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universes",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link data-n-head=\"ssr\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap\">",
-							"otherinfo": ""
-						}
-					],
-					"count": "12",
-					"solution": "<p>Provide a valid integrity attribute to the tag.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity</p>",
-					"cweid": "345",
-					"wascid": "15",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "10017",
-					"alertRef": "10017",
-					"alert": "Cross-Domain JavaScript Source File Inclusion",
-					"name": "Cross-Domain JavaScript Source File Inclusion",
+					"pluginid": "90022",
+					"alertRef": "90022",
+					"alert": "Application Error Disclosure",
+					"name": "Application Error Disclosure",
 					"riskcode": "1",
 					"confidence": "2",
 					"riskdesc": "Low (Medium)",
-					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
+					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
 					"instances":[ 
 						{
-							"uri": "https://training.zenika.com/fr-fr/legal",
+							"uri": "https://training.zenika.com",
 							"method": "GET",
-							"param": "https://consent.cookiebot.com/0ecab3a1-893f-401d-a270-f34c4108d68f/cd.js",
+							"param": "",
 							"attack": "",
-							"evidence": "<script id=\"CookieDeclaration\" src=\"https://consent.cookiebot.com/0ecab3a1-893f-401d-a270-f34c4108d68f/cd.js\" data-culture=\"FR\" type=\"text/javascript\" async=\"async\" data-v-aefcc3d8 data-v-0be5bc55></script>",
+							"evidence": "HTTP/1.1 500 RuntimeError",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 500 RuntimeError",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "HTTP/1.1 500 RuntimeError",
 							"otherinfo": ""
 						}
 					],
-					"count": "1",
-					"solution": "<p>Ensure JavaScript source files are loaded from only trusted sources, and the sources can't be controlled by end users of the application.</p>",
+					"count": "3",
+					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
 					"otherinfo": "",
 					"reference": "",
-					"cweid": "829",
-					"wascid": "15",
-					"sourceid": "172"
-				},
-				{
-					"pluginid": "10110",
-					"alertRef": "10110",
-					"alert": "Dangerous JS Functions",
-					"name": "Dangerous JS Functions",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
-					"instances":[ 
-						{
-							"uri": "https://training.zenika.com/fr-fr/certifyings",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/exclusives",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/officials",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/talks",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/bigdata-nosql",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/cloud",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/craftsmanship",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/design",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/java-et-architecture",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/security",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/web",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/workshops",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval",
-							"otherinfo": ""
-						}
-					],
-					"count": "12",
-					"solution": "<p>See the references for security advice on the use of these functions.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://angular.io/guide/security</p>",
-					"cweid": "749",
-					"wascid": "-1",
-					"sourceid": "101"
+					"cweid": "200",
+					"wascid": "13",
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10063",
@@ -566,54 +114,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://training.zenika.com/_nuxt/2ec31ae.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/4dd8519.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/5733716.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/6142e31.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/c58a0a9.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/e3fe7c9.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://training.zenika.com/fr-fr",
 							"method": "GET",
 							"param": "",
@@ -628,154 +128,15 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/certifyings",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/practical-informations",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universes",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "3",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
 					"sourceid": "1"
-				},
-				{
-					"pluginid": "10035",
-					"alertRef": "10035",
-					"alert": "Strict-Transport-Security Header Not Set",
-					"name": "Strict-Transport-Security Header Not Set",
-					"riskcode": "1",
-					"confidence": "3",
-					"riskdesc": "Low (High)",
-					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
-					"instances":[ 
-						{
-							"uri": "https://training.zenika.com/_nuxt/2ec31ae.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/4dd8519.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/5733716.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/6142e31.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/c58a0a9.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/e3fe7c9.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/cgv.pdf",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/favicon-16.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/favicon-192.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/favicon-64.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/favicon-96.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/favicon.ico",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						}
-					],
-					"count": "12",
-					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>http://caniuse.com/stricttransportsecurity</p><p>http://tools.ietf.org/html/rfc6797</p>",
-					"cweid": "319",
-					"wascid": "15",
-					"sourceid": "69"
 				},
 				{
 					"pluginid": "10021",
@@ -788,94 +149,6 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"uri": "https://training.zenika.com",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/2ec31ae.js",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/4dd8519.js",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/5733716.js",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/6142e31.js",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/c58a0a9.js",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/e3fe7c9.js",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/practical-informations",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universes",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
 							"uri": "https://training.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -884,334 +157,13 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						}
 					],
-					"count": "12",
+					"count": "1",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
-					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
+					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "10094",
-					"alertRef": "10094-3",
-					"alert": "Base64 Disclosure",
-					"name": "Base64 Disclosure",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
-					"instances":[ 
-						{
-							"uri": "https://training.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTNweCIgaGVpZ2h0PSI4cHgiIHZpZXdCb3g9IjAgMCAxMyA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+U2hhcGU8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iSE9NRSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkhPTUUtVjQtLS0yLSh2NSktQ29weS01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTA2LjAwMDAwMCwgLTE0MzMuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyLjUwMDAwMCwgMTQzNy4wMDAwMDApIHJvdGF0ZSg5MC4wMDAwMDApIHRyYW5zbGF0ZSgtNTEyLjUwMDAwMCwgLTE0MzcuMDAwMDAwKSAiIHBvaW50cz0iNTA5IDE0MzIuNCA1MTAuMzI0MzI0IDE0MzEgNTE2IDE0MzcgNTEwLjMyNDMyNCAxNDQzIDUwOSAxNDQxLjYgNTEzLjM1MTM1MSAxNDM3Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
-							"otherinfo": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg width=\"13px\" height=\"8px\" viewBox=\"0 0 13 8\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->\n    <title>Shape</title>\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"HOME\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"HOME-V4---2-(v5)-Copy-5\" transform=\"translate(-506.000000, -1433.000000)\" fill=\"#FFFFFF\">\n            <polygon id=\"Shape\" transform=\"translate(512.500000, 1437.000000) rotate(90.000000) translate(-512.500000, -1437.000000) \" points=\"509 1432.4 510.324324 1431 516 1437 510.324324 1443 509 1441.6 513.351351 1437\"></polygon>\n        </g>\n    </g>\n</svg>"
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/5733716.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "iVBORw0KGgoAAAANSUhEUgAAAHQAAABkCAYAAABXTBS8AAACUklEQVR42u2c0WnDMBBAb4SM4BE8gkboKB7Bn/nMCB5FI2QEj9AN0kBtaCFtZfdOOknvwUEKIah51p10kS0CAAAAAAAAAAAAAAAAAAAAAAAA8ILLM4JRDHy9+Zmf8TCKyNdbTui6CdCIO0LLC50VPzM0KHTPOmf/RihC9YSerZmhYaFVp1yEUkObT7k3xUXjHiNCyxENtnXBUmjcXmvE0qDQ0aDxcqGxAH8yJM66eGImB2Zo/hlastZSQxHKKhehgFCEknJJuSyKWBTVsG3ZmyoL2xZKUzMDHaSdM03dCx3ErvX4KCC1e6Fh+9x35RXke6GFB0LFppEfE4RGg1gRWk6oZap/q0Vorp/azhzKOio0GMUoFRC+1KVWhILRhWKZchfRO4nxWwyozCM0V0RUfhd6V65j90wzdEHoa6FWESrNMFWzHNzjrYnvXyouGV3gsQuDUIQCQhGKUIQiFKEIRWg3zYWUuMpnB+gq9r96pI5pkuOdrqYZxd8RFOsxja3PTm9HUDyO6Ue8Pc3DqgZFBaGexoTQXoR6TblR4cKzFBpP1ssZoQg9tHqLynEj5ZZLuUH8Hb1A6D+weDbuqCR0Fd2jIauCUE9jqq6GetrEexxTNTNUtvZZyhUe5dijdaYMYzoak/fZEDPO5lm4R9X9KhehHYNQhJJySbmdbxFYFBUkdduy3xcyia97IRHqpUVV4T4UoQ11ihCqIHQV+qZNCY0V/w8IRWgZoSVvaeehGQbbA4QCKRehCG1SaCsPb+wej/e2gMIstQoAAAAAAAAAgL74AAwCAGgoYqhqAAAAAElFTkSuQmCC",
-							"otherinfo": "\uFFFDPNG\r\n\\x001a\n\\x0000\\x0000\\x0000\rIHDR\\x0000\\x0000\\x0000t\\x0000\\x0000\\x0000d\\x0008\\x0006\\x0000\\x0000\\x0000WL\\x0014\uFFFD\\x0000\\x0000\\x0002RIDATx\uFFFD\uFFFD\uFFFDi\uFFFD0\\x0010@o\uFFFD\uFFFD\uFFFD\\x0011<\uFFFDF\uFFFD(\\x001e\uFFFD\uFFFD\uFFFD\uFFFD\\x0008\\x001eE#d\\x0004\uFFFD\uFFFD\r\uFFFD@mh!me\uFFFDN:I\uFFFD\uFFFDA\n!\uFFFDy\u059Dt\uFFFD-\\x0002\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\uFFFD\uFFFD\uFFFD3\uFFFDQ\\x000c|\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD0\uFFFD\uFFFD\uFFFD[N\uFFFD\t\u0408;B\uFFFD\\x000b\uFFFD\\x0015?34(t\uFFFD:g\uFFFDF(B\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDa\uFFFDU\uFFFD\\\uFFFDRC\uFFFDO\uFFFD7\uFFFDE\uFFFD\\x001e#B\uFFFD\\x0011\r\uFFFDu\uFFFDRh\uFFFD^k\uFFFD\u04A0\uFFFD\u0460\uFFFDr\uFFFD\uFFFD\\x00002$\u03BAxb&\\x0007fh\uFFFD\\x0019Z\uFFFD\uFFFDRC\\x0011\uFFFD*\\x0017\uFFFD\uFFFDP\uFFFD\uFFFDrI\uFFFD,\uFFFDX\\x0014\u0570m\u065B*\\x000b\uFFFD\\x0016JS3\\x0003\\x001d\uFFFD\uFFFD3M\uFFFD\\x000b\\x001d\u012E\uFFFD\uFFFD( \uFFFD{\uFFFDa\uFFFD\uFFFDw\uFFFD\\x0015\uFFFD{\uFFFD\uFFFD\\x0007B\u0166\uFFFD\\x001f\\x0013\uFFFDF\uFFFDX\\x0011ZN\uFFFDe\uFFFD\uFFFDEh\uFFFD\uFFFD\uFFFD\uFFFD\\x001c\uFFFD:*4\\x0018\uFFFD(\\x0015\\x0010\uFFFD\u0525V\uFFFD\uFFFD\u0445b\uFFFDr\\x0017\uFFFD;\uFFFD\uFFFD[\\x000c\uFFFD\uFFFD#4WDT~\\x0017zW\uFFFDc\uFFFDL3tA\uFFFDk\uFFFDV\\x0011*\uFFFD0U\uFFFD\\x001c\uFFFD\u3B49\uFFFD_*.\\x0019]\uFFFD\\x000b\uFFFDP\uFFFD\\x0002B\\x0011\uFFFDP\uFFFD\"\\x0014\uFFFD\\x0008Eh7\u0345\uFFFD\uFFFD\uFFFDg\\x0007\uFFFD*\uFFFD\uFFFDz\uFFFD\uFFFDi\uFFFD\u376E\uFFFD\\x0019\uFFFD\uFFFD\\x0011\\x0014\uFFFD1\uFFFD\uFFFD\uFFFDNoGP<\uFFFD\uFFFDG\uFFFD=\uFFFD\u00EA\\x0006E\\x0005\uFFFD\uFFFD\u0184\uFFFD^\uFFFDzM\uFFFDQ\uFFFD\u00B3\\x0014\\x001aO\uFFFD\uFFFD\\x0019\uFFFD\\x0008=\uFFFDz\uFFFD\uFFFDq#\uFFFDK\uFFFDA\uFFFD\\x001d\uFFFD@\uFFFD?\uFFFDx6\uFFFD$t\\x0015\u0763!\uFFFD\uFFFDPOc\uFFFD\uFFFD\uFFFDz\uFFFD\uFFFD{\\x001cS53T\uFFFD\uFFFDY\uFFFD\\x0015\\x001e\uFFFD\u0623u\uFFFD\\x000cc:\\x001a\uFFFD\uFFFD\uFFFD\\x00103\uFFFD\uFFFDY\uFFFDG\uFFFD\uFFFD*\\x0017\uFFFD\\x001d\uFFFDP\uFFFD\uFFFDrI\uFFFD\uFFFDo\\x0011X\\x0014\\x0015$u\u06F2\uFFFD\\x00172\uFFFD\uFFFD{!\\x0011\uFFFDEU\uFFFD>\\x0014\uFFFD\ru\uFFFD\\x0010\uFFFD t\\x0015\uFFFD\uFFFDM\t\uFFFD\\x0015\uFFFD\\x000f\\x0008Eh\\x0019\uFFFD%oi\uFFFD\\x0019\\x0006\uFFFD\\x0003\uFFFD\\x0002)\\x0017\uFFFD\\x0008mRh+\\x000fo\uFFFD\\x001e\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD,\uFFFD\n\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\\x0000\uFFFD\uFFFD\uFFFD\\x0000\\x000c\\x0002\\x0000h(b\uFFFDj\\x0000\\x0000\\x0000\\x0000IEND\uFFFDB`\uFFFD"
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/c80c04d.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSJmaWxsOiAjZmZmZmZmIj48cGF0aCBkPSJNMTkyIDE2NjRoMTQwOHYtMTAyNGgtMTQwOHYxMDI0em0zODQtMTIxNnYtMjg4cTAtMTQtOS0yM3QtMjMtOWgtNjRxLTE0IDAtMjMgOXQtOSAyM3YyODhxMCAxNCA5IDIzdDIzIDloNjRxMTQgMCAyMy05dDktMjN6bTc2OCAwdi0yODhxMC0xNC05LTIzdC0yMy05aC02NHEtMTQgMC0yMyA5dC05IDIzdjI4OHEwIDE0IDkgMjN0MjMgOWg2NHExNCAwIDIzLTl0OS0yM3ptMzg0LTY0djEyODBxMCA1Mi0zOCA5MHQtOTAgMzhoLTE0MDhxLTUyIDAtOTAtMzh0LTM4LTkwdi0xMjgwcTAtNTIgMzgtOTB0OTAtMzhoMTI4di05NnEwLTY2IDQ3LTExM3QxMTMtNDdoNjRxNjYgMCAxMTMgNDd0NDcgMTEzdjk2aDM4NHYtOTZxMC02NiA0Ny0xMTN0MTEzLTQ3aDY0cTY2IDAgMTEzIDQ3dDQ3IDExM3Y5NmgxMjhxNTIgMCA5MCAzOHQzOCA5MHoiLz48L3N2Zz4=",
-							"otherinfo": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\" style=\"fill: #ffffff\"><path d=\"M192 1664h1408v-1024h-1408v1024zm384-1216v-288q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v288q0 14 9 23t23 9h64q14 0 23-9t9-23zm768 0v-288q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v288q0 14 9 23t23 9h64q14 0 23-9t9-23zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z\"/></svg>"
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/cbb16c4.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDQ4LjggNDQ4LjgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ0OC44IDQ0OC44OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGcgaWQ9ImNoZWNrIj4KCQk8cG9seWdvbiBwb2ludHM9IjE0Mi44LDMyMy44NSAzNS43LDIxNi43NSAwLDI1Mi40NSAxNDIuOCwzOTUuMjUgNDQ4LjgsODkuMjUgNDEzLjEsNTMuNTUgICAiIGZpbGw9IiMwMDgwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K",
-							"otherinfo": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" id=\"Capa_1\" x=\"0px\" y=\"0px\" width=\"512px\" height=\"512px\" viewBox=\"0 0 448.8 448.8\" style=\"enable-background:new 0 0 448.8 448.8;\" xml:space=\"preserve\">\n<g>\n\t<g id=\"check\">\n\t\t<polygon points=\"142.8,323.85 35.7,216.75 0,252.45 142.8,395.25 448.8,89.25 413.1,53.55   \" fill=\"#008000\"/>\n\t</g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n</svg>\n"
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/e3fe7c9.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTNweCIgaGVpZ2h0PSI4cHgiIHZpZXdCb3g9IjAgMCAxMyA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+U2hhcGU8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iSE9NRSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkhPTUUtVjQtLS0yLSh2NSktQ29weS01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTA2LjAwMDAwMCwgLTE0MzMuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyLjUwMDAwMCwgMTQzNy4wMDAwMDApIHJvdGF0ZSg5MC4wMDAwMDApIHRyYW5zbGF0ZSgtNTEyLjUwMDAwMCwgLTE0MzcuMDAwMDAwKSAiIHBvaW50cz0iNTA5IDE0MzIuNCA1MTAuMzI0MzI0IDE0MzEgNTE2IDE0MzcgNTEwLjMyNDMyNCAxNDQzIDUwOSAxNDQxLjYgNTEzLjM1MTM1MSAxNDM3Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
-							"otherinfo": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg width=\"13px\" height=\"8px\" viewBox=\"0 0 13 8\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->\n    <title>Shape</title>\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"HOME\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"HOME-V4---2-(v5)-Copy-5\" transform=\"translate(-506.000000, -1433.000000)\" fill=\"#FFFFFF\">\n            <polygon id=\"Shape\" transform=\"translate(512.500000, 1437.000000) rotate(90.000000) translate(-512.500000, -1437.000000) \" points=\"509 1432.4 510.324324 1431 516 1437 510.324324 1443 509 1441.6 513.351351 1437\"></polygon>\n        </g>\n    </g>\n</svg>"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTNweCIgaGVpZ2h0PSI4cHgiIHZpZXdCb3g9IjAgMCAxMyA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+U2hhcGU8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iSE9NRSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkhPTUUtVjQtLS0yLSh2NSktQ29weS01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTA2LjAwMDAwMCwgLTE0MzMuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyLjUwMDAwMCwgMTQzNy4wMDAwMDApIHJvdGF0ZSg5MC4wMDAwMDApIHRyYW5zbGF0ZSgtNTEyLjUwMDAwMCwgLTE0MzcuMDAwMDAwKSAiIHBvaW50cz0iNTA5IDE0MzIuNCA1MTAuMzI0MzI0IDE0MzEgNTE2IDE0MzcgNTEwLjMyNDMyNCAxNDQzIDUwOSAxNDQxLjYgNTEzLjM1MTM1MSAxNDM3Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
-							"otherinfo": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg width=\"13px\" height=\"8px\" viewBox=\"0 0 13 8\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->\n    <title>Shape</title>\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"HOME\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"HOME-V4---2-(v5)-Copy-5\" transform=\"translate(-506.000000, -1433.000000)\" fill=\"#FFFFFF\">\n            <polygon id=\"Shape\" transform=\"translate(512.500000, 1437.000000) rotate(90.000000) translate(-512.500000, -1437.000000) \" points=\"509 1432.4 510.324324 1431 516 1437 510.324324 1443 509 1441.6 513.351351 1437\"></polygon>\n        </g>\n    </g>\n</svg>"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTNweCIgaGVpZ2h0PSI4cHgiIHZpZXdCb3g9IjAgMCAxMyA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+U2hhcGU8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iSE9NRSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkhPTUUtVjQtLS0yLSh2NSktQ29weS01IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTA2LjAwMDAwMCwgLTE0MzMuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEyLjUwMDAwMCwgMTQzNy4wMDAwMDApIHJvdGF0ZSg5MC4wMDAwMDApIHRyYW5zbGF0ZSgtNTEyLjUwMDAwMCwgLTE0MzcuMDAwMDAwKSAiIHBvaW50cz0iNTA5IDE0MzIuNCA1MTAuMzI0MzI0IDE0MzEgNTE2IDE0MzcgNTEwLjMyNDMyNCAxNDQzIDUwOSAxNDQxLjYgNTEzLjM1MTM1MSAxNDM3Ij48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
-							"otherinfo": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg width=\"13px\" height=\"8px\" viewBox=\"0 0 13 8\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->\n    <title>Shape</title>\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"HOME\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"HOME-V4---2-(v5)-Copy-5\" transform=\"translate(-506.000000, -1433.000000)\" fill=\"#FFFFFF\">\n            <polygon id=\"Shape\" transform=\"translate(512.500000, 1437.000000) rotate(90.000000) translate(-512.500000, -1437.000000) \" points=\"509 1432.4 510.324324 1431 516 1437 510.324324 1443 509 1441.6 513.351351 1437\"></polygon>\n        </g>\n    </g>\n</svg>"
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/subscription",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDQ4LjggNDQ4LjgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ0OC44IDQ0OC44OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGcgaWQ9ImNoZWNrIj4KCQk8cG9seWdvbiBwb2ludHM9IjE0Mi44LDMyMy44NSAzNS43LDIxNi43NSAwLDI1Mi40NSAxNDIuOCwzOTUuMjUgNDQ4LjgsODkuMjUgNDEzLjEsNTMuNTUgICAiIGZpbGw9IiMwMDgwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K",
-							"otherinfo": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" id=\"Capa_1\" x=\"0px\" y=\"0px\" width=\"512px\" height=\"512px\" viewBox=\"0 0 448.8 448.8\" style=\"enable-background:new 0 0 448.8 448.8;\" xml:space=\"preserve\">\n<g>\n\t<g id=\"check\">\n\t\t<polygon points=\"142.8,323.85 35.7,216.75 0,252.45 142.8,395.25 448.8,89.25 413.1,53.55   \" fill=\"#008000\"/>\n\t</g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n<g>\n</g>\n</svg>\n"
-						},
-						{
-							"uri": "https://training.zenika.com/subscription/Bulletin_Inscription_Inter_Intra.pdf",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "15584/Subtype/Image/Type/XObject/Width",
-							"otherinfo": "\u05DE|\uFFFD\uFFFD\uFFFDn\u0729{\uFFFD&j\\x0007\uFFFDO*^\uFFFDs\uFFFD\uFFFD\uFFFD-\uFFFDh\uFFFD\uFFFD"
-						}
-					],
-					"count": "9",
-					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p><?xml version=\"1.0\" encoding=\"UTF-8\"?></p><p><svg width=\"13px\" height=\"8px\" viewBox=\"0 0 13 8\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"></p><p>    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch --></p><p>    <title>Shape</title></p><p>    <desc>Created with Sketch.</desc></p><p>    <defs></defs></p><p>    <g id=\"HOME\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"></p><p>        <g id=\"HOME-V4---2-(v5)-Copy-5\" transform=\"translate(-506.000000, -1433.000000)\" fill=\"#FFFFFF\"></p><p>            <polygon id=\"Shape\" transform=\"translate(512.500000, 1437.000000) rotate(90.000000) translate(-512.500000, -1437.000000) \" points=\"509 1432.4 510.324324 1431 516 1437 510.324324 1443 509 1441.6 513.351351 1437\"></polygon></p><p>        </g></p><p>    </g></p><p></svg></p>",
-					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "10027",
-					"alertRef": "10027",
-					"alert": "Information Disclosure - Suspicious Comments",
-					"name": "Information Disclosure - Suspicious Comments",
-					"riskcode": "0",
-					"confidence": "1",
-					"riskdesc": "Informational (Low)",
-					"desc": "<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>",
-					"instances":[ 
-						{
-							"uri": "https://training.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" data-v-58faabe5>{\"@context\":\"http://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://training.zen\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R){t.reg\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/2ec31ae.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "bugs",
-							"otherinfo": "The following pattern was used: \\bBUGS\\b and was detected in the element starting with: \"(window.webpackJsonp=window.webpackJsonp||[]).push([[10],[,,function(t,e,n){\"use strict\";(function(t,n){var r=Object.freeze({});\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/4dd8519.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"(window.webpackJsonp=window.webpackJsonp||[]).push([[37],{1:function(t,e,n){(function(t,r){var o;(function(){var c,l=\"Expected a\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/c58a0a9.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "bug",
-							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{507:function(e,t,f){\"use strict\";f(51);var o=f(1),n=f.n(o),r=f(225),c=f\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/e3fe7c9.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "bug",
-							"otherinfo": "The following pattern was used: \\bBUG\\b and was detected in the element starting with: \"(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{569:function(e,t,f){var content=f(627);content.__esModule&&(content=co\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" data-v-58faabe5>{\"@context\":\"http://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://training.zen\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q){u.regio\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" data-v-58faabe5>{\"@context\":\"http://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://training.zen\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P){t.region=\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/practical-informations",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q){u.regio\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universes",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "select",
-							"otherinfo": "The following pattern was used: \\bSELECT\\b and was detected in the element starting with: \"<script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q){s.regio\", see evidence field for the suspicious comment/snippet."
-						}
-					],
-					"count": "12",
-					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script type=\"application/ld+json\" data-v-58faabe5>{\"@context\":\"http://schema.org\",\"@type\":\"WebSite\",\"url\":\"https://training.zen\", see evidence field for the suspicious comment/snippet.</p>",
-					"reference": "",
-					"cweid": "200",
-					"wascid": "13",
-					"sourceid": "1"
-				},
-				{
-					"pluginid": "10109",
-					"alertRef": "10109",
-					"alert": "Modern Web Application",
-					"name": "Modern Web Application",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
-					"instances":[ 
-						{
-							"uri": "https://training.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/certifyings",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/exclusives",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/officials",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/practical-informations",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/subscription",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/talks",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universe/design",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universes",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/workshops",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a data-v-451b11ee><img src=\"/_nuxt/img/fr.4a37350.png\" data-v-451b11ee> <div class=\"details\" data-v-451b11ee>\n                France | Fran\u00E7ais\n              </div></a>",
-							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
-						}
-					],
-					"count": "12",
-					"solution": "<p>This is an informational alert and so no changes are required.</p>",
-					"otherinfo": "<p>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</p>",
-					"reference": "",
-					"cweid": "-1",
-					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "10049",
@@ -1228,25 +180,33 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "302",
+							"evidence": "no-store",
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://training.zenika.com/",
+							"uri": "https://training.zenika.com/fr-fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "302",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://training.zenika.com/fr-fr/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).   </p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10015",
@@ -1259,94 +219,6 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"uri": "https://training.zenika.com",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/certifyings",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/exclusives",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/officials",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/practical-informations",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/subscription",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/talks",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/universes",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/workshops",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://training.zenika.com/robots.txt",
 							"method": "GET",
 							"param": "cache-control",
@@ -1355,13 +227,13 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "12",
+					"count": "1",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "10"
 				},
 				{
 					"pluginid": "90005",
@@ -1534,105 +406,6 @@
 					"cweid": "352",
 					"wascid": "9",
 					"sourceid": "6"
-				},
-				{
-					"pluginid": "10049",
-					"alertRef": "10049",
-					"alert": "Storable and Cacheable Content",
-					"name": "Storable and Cacheable Content",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users.  If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
-					"instances":[ 
-						{
-							"uri": "https://training.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/2ec31ae.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/4dd8519.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/6142e31.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/c58a0a9.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/_nuxt/e3fe7c9.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://training.zenika.com/fr-fr/practical-informations",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"uri": "https://training.zenika.com/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						}
-					],
-					"count": "10",
-					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
-					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
-					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
-					"cweid": "524",
-					"wascid": "13",
-					"sourceid": "1"
 				}
 			]
 		}

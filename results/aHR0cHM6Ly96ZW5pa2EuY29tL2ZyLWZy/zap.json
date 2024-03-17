@@ -1,7 +1,7 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.14.0",
-	"@generated": "Sun, 10 Mar 2024 01:06:56",
+	"@generated": "Sun, 17 Mar 2024 01:07:18",
 	"site":[ 
 		{
 			"@name": "https://zenika.com",
@@ -42,7 +42,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "63"
+					"sourceid": "64"
 				},
 				{
 					"pluginid": "10038",
@@ -79,6 +79,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "",
@@ -87,7 +95,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -95,15 +103,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/security",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -178,7 +178,15 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-FR/agency/bordeaux",
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -210,22 +218,6 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"uri": "https://zenika.com/pages/security",
 							"method": "GET",
 							"param": "x-frame-options",
@@ -242,7 +234,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "11",
+					"count": "10",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
@@ -293,7 +285,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -301,7 +293,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -374,7 +366,7 @@
 					"reference": "<p>https://github.com/advisories/GHSA-c59h-r6p8-q9wc</p><p></p>",
 					"cweid": "829",
 					"wascid": "-1",
-					"sourceid": "106"
+					"sourceid": "98"
 				},
 				{
 					"pluginid": "10017",
@@ -411,6 +403,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
+							"attack": "",
+							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
@@ -419,7 +419,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
 							"attack": "",
@@ -427,15 +427,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
-							"method": "GET",
-							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
-							"attack": "",
-							"evidence": "<script async=\"\" defer=\"\" src=\"//static.cdn.prismic.io/prismic.js?repo=zenika-website&amp;new=true\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/security",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
 							"attack": "",
@@ -473,7 +465,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10063",
@@ -510,6 +502,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "",
@@ -518,7 +518,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -526,15 +526,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/security",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -609,6 +601,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: Next.js",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "",
@@ -617,7 +617,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -625,15 +625,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: Next.js",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/security",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -708,6 +700,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "",
@@ -716,7 +716,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -724,15 +724,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/security",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -807,6 +799,22 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "x-content-type-options",
@@ -824,22 +832,6 @@
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -906,6 +898,14 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\uFFFD\uFFFD\\x000b\uFFFD\u02CE\uFFFD\uFFFD\u036A\uFFFD\uFFFD\u0092?\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/_next/static/Tp9Qvur8uOzebNqvPJwpI/_buildManifest",
+							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\uFFFD\uFFFD\\x000b\uFFFD\u02CE\uFFFD\uFFFD\u036A\uFFFD\uFFFD\u0092?\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "",
@@ -914,7 +914,7 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\uFFFD\uFFFD\\x000b\uFFFD\u02CE\uFFFD\uFFFD\u036A\uFFFD\uFFFD\u0092?\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -922,15 +922,7 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\uFFFD\uFFFD\\x000b\uFFFD\u02CE\uFFFD\uFFFD\u036A\uFFFD\uFFFD\u0092?\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/_next/static/Tp9Qvur8uOzebNqvPJwpI/_buildManifest",
-							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\uFFFD\uFFFD\\x000b\uFFFD\u02CE\uFFFD\uFFFD\u036A\uFFFD\uFFFD\u0092?\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
-						},
-						{
-							"uri": "https://zenika.com/pages/security",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -995,7 +987,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "126"
+					"sourceid": "120"
 				},
 				{
 					"pluginid": "10027",
@@ -1032,6 +1024,14 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"_nextI18Next\":{\"initialI18nStore\":{\"fr-FR\":{\"common\":\", see evidence field for the suspicious comment/snippet."
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query",
+							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"_nextI18Next\":{\"initialI18nStore\":{\"fr-FR\":{\"common\":\", see evidence field for the suspicious comment/snippet."
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "",
@@ -1040,7 +1040,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"_nextI18Next\":{\"initialI18nStore\":{\"fr-FR\":{\"common\":\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1048,15 +1048,7 @@
 							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"_nextI18Next\":{\"initialI18nStore\":{\"fr-FR\":{\"common\":\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query",
-							"otherinfo": "The following pattern was used: \\bQUERY\\b and was detected in the element starting with: \"<script id=\"__NEXT_DATA__\" type=\"application/json\">{\"props\":{\"pageProps\":{\"_nextI18Next\":{\"initialI18nStore\":{\"fr-FR\":{\"common\":\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"uri": "https://zenika.com/pages/security",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1131,6 +1123,14 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<a class=\"jss29 jss26\" target=\"_self\" href=\"/pages/values\">Valeurs</a>",
+							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "",
@@ -1139,7 +1139,7 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1147,15 +1147,7 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a class=\"jss30 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>",
-							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
-						},
-						{
-							"uri": "https://zenika.com/pages/security",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1230,6 +1222,22 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "s-maxage=10, stale-while-revalidate",
+							"otherinfo": ""
+						},
+						{
+							"uri": "https://zenika.com/fr-FR/agency/casablanca",
+							"method": "GET",
+							"param": "cache-control",
+							"attack": "",
+							"evidence": "s-maxage=10, stale-while-revalidate",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "cache-control",
@@ -1247,22 +1255,6 @@
 						},
 						{
 							"uri": "https://zenika.com/pages/offers",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "s-maxage=10, stale-while-revalidate",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "s-maxage=10, stale-while-revalidate",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1313,15 +1305,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-fr",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1329,7 +1313,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest</p>",
@@ -1356,15 +1340,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-fr",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1372,7 +1348,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode</p>",
@@ -1399,15 +1375,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-fr",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1415,7 +1383,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site</p>",
@@ -1442,15 +1410,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/fr-fr",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/values",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1458,7 +1418,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User</p>",
@@ -1501,6 +1461,14 @@
 							"otherinfo": ""
 						},
 						{
+							"uri": "https://zenika.com/fr-FR/agency/brest",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=10",
+							"otherinfo": ""
+						},
+						{
 							"uri": "https://zenika.com/pages/contenus",
 							"method": "GET",
 							"param": "",
@@ -1509,7 +1477,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=innovate",
+							"uri": "https://zenika.com/pages/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1517,15 +1485,7 @@
 							"otherinfo": ""
 						},
 						{
-							"uri": "https://zenika.com/pages/offers?q=transform",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "s-maxage=10",
-							"otherinfo": ""
-						},
-						{
-							"uri": "https://zenika.com/pages/security",
+							"uri": "https://zenika.com/pages/offers",
 							"method": "GET",
 							"param": "",
 							"attack": "",

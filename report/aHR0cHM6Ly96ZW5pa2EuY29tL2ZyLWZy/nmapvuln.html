@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln zenika.com</pre>
-<p class="lead">Fri Apr 26 14:06:27 2024 – Fri Apr 26 14:09:11 2024<br>1 hosts scanned.
+<p class="lead">Sun Apr 28 01:18:57 2024 – Sun Apr 28 01:21:40 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -78,7 +78,7 @@
 <td><span class="label label-success">up</span></td>
 <td>91.208.207.214</td>
 <td>zenika.com</td>
-<td>9</td>
+<td>10</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -175,16 +175,14 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  SMBProgNeg: 
-    &gt;)"o?1
-    fPFi"
-    ~HFI$
-    K%'S
-    `tiq
+  Kerberos: 
+    oY|x
+    \x1cW
   TLSSessionReq: 
-    84cy
-    wCCdu
-    \x9c</pre>
+    [ByU
+    \xa4b
+    lSPH&amp;0
+    \xc12</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">5002</td>
@@ -233,6 +231,16 @@
   locales: en_US
 </pre>
 </td></tr>
+<tr class="success">
+<td title="Port">5801</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">tcpwrapped</td>
+<td title="Product"></td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a></td></tr>
 <tr class="success">
 <td title="Port">5962</td>
 <td title="Protocol">tcp</td>
@@ -339,6 +347,16 @@
 <td>3.12.13</td>
 <td></td>
 <td>0-9</td>
+</tr>
+<tr>
+<td>91.208.207.214 - zenika.com</td>
+<td>5801</td>
+<td>tcp</td>
+<td>tcpwrapped</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>91.208.207.214 - zenika.com</td>

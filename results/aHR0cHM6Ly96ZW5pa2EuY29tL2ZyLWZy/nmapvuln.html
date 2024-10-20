@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln zenika.com</pre>
-<p class="lead">Sun Oct 13 01:37:41 2024 – Sun Oct 13 01:40:24 2024<br>1 hosts scanned.
+<p class="lead">Sun Oct 20 01:40:21 2024 – Sun Oct 20 01:43:05 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>91.208.207.222</td>
+<td>91.208.207.216</td>
 <td>zenika.com</td>
 <td>13</td>
 <td>0</td>
@@ -91,8 +91,8 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#91-208-207-222"><h3 class="panel-title">91.208.207.222 - zenika.com</h3></div>
-<div class="panel-body collapse in" id="91-208-207-222">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#91-208-207-216"><h3 class="panel-title">91.208.207.216 - zenika.com</h3></div>
+<div class="panel-body collapse in" id="91-208-207-216">
 <h4>Hostnames</h4>
 <ul><li>zenika.com (user)</li></ul>
 <h4>Ports</h4>
@@ -124,12 +124,12 @@
     Cache-Control: no-cache
     Connection: close
     Content-Length: 479
-    Sozu-Id: 01JA1RCE26K2R5YVM5S55P4RJK
+    Sozu-Id: 01JAKSAB7FB32V03D690W3SW90
     &lt;style&gt;pre{background:#EEE;padding:10px;border:1px solid #AAA;border-radius: 5px;}&lt;/style&gt;
     &lt;h1&gt;400 Bad Request&lt;/h1&gt;
     &lt;pre&gt;
     "route": "GET",
-    "request_id": "01JA1RCE26K2R5YVM5S55P4RJK",
+    "request_id": "01JAKSAB7FB32V03D690W3SW90",
     &lt;/pre&gt;
     &lt;p&gt;Request could not be parsed. Parser stopped at phase: Body.&lt;/p&gt;
     &lt;p&gt;Diagnostic: Could not extract the route after connection started, this should not happen.&lt;/p&gt;
@@ -141,12 +141,12 @@
     Cache-Control: no-cache
     Connection: close
     Content-Length: 483
-    Sozu-Id: 01JA1RCM2WAMBGHRK7VYHVXWBM
+    Sozu-Id: 01JAKSAH9F81E3DW7S0CSKABJ4
     &lt;style&gt;pre{background:#EEE;padding:10px;border:1px solid #AAA;border-radius: 5px;}&lt;/style&gt;
     &lt;h1&gt;400 Bad Request&lt;/h1&gt;
     &lt;pre&gt;
     "route": "OPTIONS",
-    "request_id": "01JA1RCM2WAMBGHRK7VYHVXWBM",
+    "request_id": "01JAKSAH9F81E3DW7S0CSKABJ4",
     &lt;/pre&gt;
     &lt;p&gt;Request could not be parsed. Parser stopped at phase: Body.&lt;/p&gt;
     &lt;p&gt;Diagnostic: Could not extract the route after connection started, this should not happen.&lt;/p&gt;
@@ -158,12 +158,12 @@
     Cache-Control: no-cache
     Connection: close
     Content-Length: 885
-    Sozu-Id: 01JA1RCM81WKYQ3ET2T4DV36EV
+    Sozu-Id: 01JAKSAHG2V1DVBEGZA704JZ8J
     &lt;style&gt;pre{background:#EEE;padding:10px;border:1px solid #AAA;border-radius: 5px;}&lt;/style&gt;
     &lt;h1&gt;400 Bad Request&lt;/h1&gt;
     &lt;pre&gt;
     "route": "",
-    "request_id": "01JA1RCM81WKYQ3ET2T4DV36EV",
+    "request_id": "01JAKSAHG2V1DVBEGZA704JZ8J",
     &lt;/pre&gt;
     &lt;p&gt;Request could not be parsed. Parser stopped at phase: StatusLine.&lt;/p&gt;
     &lt;p&gt;Diagnostic: The request line is invalid. Make sure it is well formated and all characters are LATIN-1 (no UTF-8 allowed).&lt;/p&gt;
@@ -225,22 +225,23 @@
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   Kerberos: 
-    ga@0
-    :-\x83
-    `b\x0b
-    k=]}
-    }zY.'
-    :6zCZ
-    DCd"
-    -&amp;!s+
-    rlh%
-    h?`&amp;#{
-    O~_i
+    Q_^f
+    $893
+    hCI:)
+    \xe3
+    +u}&gt;2(
+  SMBProgNeg: 
+    %qR2
+    YY"%
+    \xac
+    P*&gt;"
+    T;XfE
+    mdFXYJ
+    PI6b
   TLSSessionReq: 
-    QwuT
-    &gt;u%_
-    \x87
-    cPq'</pre>
+    .ahP
+    4\.f
+    oF?%</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">5002</td>
@@ -262,11 +263,28 @@
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">smtp</td>
-<td title="Product">Postfix smtpd</td>
+<td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
-<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:postfix:postfix">cpe:/a:postfix:postfix</a></td></tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  GenericLines, GetRequest: 
+    220 mailhog.example ESMTP MailHog
+    Unrecognised command
+    Unrecognised command
+  Hello: 
+    220 mailhog.example ESMTP MailHog
+    250-Hello 
+    250-PIPELINING
+    AUTH PLAIN
+  Help: 
+    220 mailhog.example ESMTP MailHog
+    Unrecognised command
+  NULL: 
+    220 mailhog.example ESMTP MailHog</pre>
+</td></tr>
 <tr class="success">
 <td title="Port">5357</td>
 <td title="Protocol">tcp</td>
@@ -372,7 +390,7 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>80</td>
 <td>tcp</td>
 <td>http</td>
@@ -382,7 +400,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>443</td>
 <td>tcp</td>
 <td>https</td>
@@ -392,7 +410,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>1080</td>
 <td>tcp</td>
 <td>socks</td>
@@ -402,7 +420,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>1081</td>
 <td>tcp</td>
 <td>pvuniwien</td>
@@ -412,7 +430,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>3000</td>
 <td>tcp</td>
 <td>ppp</td>
@@ -422,7 +440,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>5002</td>
 <td>tcp</td>
 <td>ssh</td>
@@ -432,17 +450,17 @@
 <td>protocol 2.0</td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>5221</td>
 <td>tcp</td>
 <td>smtp</td>
-<td>Postfix smtpd</td>
 <td></td>
-<td>cpe:/a:postfix:postfix</td>
+<td></td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>5357</td>
 <td>tcp</td>
 <td>ssh</td>
@@ -452,7 +470,7 @@
 <td>protocol 2.0</td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>5666</td>
 <td>tcp</td>
 <td>tcpwrapped</td>
@@ -462,7 +480,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>5800</td>
 <td>tcp</td>
 <td>amqp</td>
@@ -472,7 +490,7 @@
 <td>0-9</td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>5902</td>
 <td>tcp</td>
 <td>tcpwrapped</td>
@@ -482,7 +500,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>5962</td>
 <td>tcp</td>
 <td>unknown</td>
@@ -492,7 +510,7 @@
 <td></td>
 </tr>
 <tr>
-<td>91.208.207.222 - zenika.com</td>
+<td>91.208.207.216 - zenika.com</td>
 <td>9999</td>
 <td>tcp</td>
 <td>tcpwrapped</td>

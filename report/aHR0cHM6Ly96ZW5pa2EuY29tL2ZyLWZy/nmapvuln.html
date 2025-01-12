@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln zenika.com</pre>
-<p class="lead">Sun Jan  5 01:39:42 2025 – Sun Jan  5 01:42:26 2025<br>1 hosts scanned.
+<p class="lead">Sun Jan 12 01:47:26 2025 – Sun Jan 12 01:50:09 2025<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -124,7 +124,7 @@
     Cache-Control: no-cache
     Connection: close
     Content-Length: 6160
-    Sozu-Id: 01JGT1WGHV601YJXAJNN1NKE9G
+    Sozu-Id: 01JHC33P95DSNWNMPKEVKYN30B
     &lt;!doctype html&gt;
     &lt;html lang=en-US&gt;
     &lt;head&gt;
@@ -137,7 +137,7 @@
     Cache-Control: no-cache
     Connection: close
     Content-Length: 6164
-    Sozu-Id: 01JGT1WPJS8H9F9GHYQ84VXDP9
+    Sozu-Id: 01JHC33WA9N400862AJQZ4X5ZX
     &lt;!doctype html&gt;
     &lt;html lang=en-US&gt;
     &lt;head&gt;
@@ -198,23 +198,24 @@
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
   Kerberos: 
-    1`nV
-    rA\xd5
-    kjFV
-    GLF]
-    $KH3s}
-    =rTJ$
-    \x8bJ@
+    \x81
+    `12m
+    o\x94L
+    !$QQ
+    tysH
+    \xf7
+    bG3x
+    b7Kb
+    M&gt;1X
+    _y8e
+  SMBProgNeg: 
+    \xac
+    O,#F
+    /\xb6
+    \xcd
+    A\x8f;
   TLSSessionReq: 
-    \xfb
-    &lt;zXa
-    #{&gt;2
-    tS5)
-    V\xc1
-    7yQ_Pz
-    \xfe|
-    tY&amp;s
-    l&amp;[6{</pre>
+    0&amp;wji`</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">5002</td>
@@ -236,28 +237,11 @@
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
 <td title="Service">smtp</td>
-<td title="Product"></td>
+<td title="Product">Postfix smtpd</td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
-<tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  GenericLines, GetRequest: 
-    220 mailhog.example ESMTP MailHog
-    Unrecognised command
-    Unrecognised command
-  Hello: 
-    220 mailhog.example ESMTP MailHog
-    250-Hello 
-    250-PIPELINING
-    AUTH PLAIN
-  Help: 
-    220 mailhog.example ESMTP MailHog
-    Unrecognised command
-  NULL: 
-    220 mailhog.example ESMTP MailHog</pre>
-</td></tr>
+<tr><td colspan="7"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version=cpe:/a:postfix:postfix">cpe:/a:postfix:postfix</a></td></tr>
 <tr class="success">
 <td title="Port">5357</td>
 <td title="Protocol">tcp</td>
@@ -427,9 +411,9 @@
 <td>5221</td>
 <td>tcp</td>
 <td>smtp</td>
+<td>Postfix smtpd</td>
 <td></td>
-<td></td>
-<td></td>
+<td>cpe:/a:postfix:postfix</td>
 <td></td>
 </tr>
 <tr>

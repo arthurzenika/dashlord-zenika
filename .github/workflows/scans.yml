@@ -88,7 +88,7 @@
 
 
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.14.0
+        uses: zaproxy/action-baseline@v0.15.0
         timeout-minutes: 10
         if: ${{ matrix.sites.tools.zap }}
         continue-on-error: true

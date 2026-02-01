@@ -25,7 +25,7 @@
           mkdir scans
 
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}

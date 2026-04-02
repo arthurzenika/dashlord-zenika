@@ -1,0 +1,193 @@
+{
+  "scan": {
+    "algorithmVersion": 4,
+    "grade": "B+",
+    "error": null,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
+    "testsQuantity": 10,
+    "responseHeaders": {
+      "date": "Thu, 02 Apr 2026 14:17:46 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding, Accept-Encoding",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-security-policy": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com",
+      "cache-control": "max-age=0, public, s-maxage=5184000",
+      "link": "<https://assets-aws.teamtailor-cdn.com/assets/packs/css/careersite-0bcd8f46.css>; rel=preload; as=style; crossorigin=anonymous; integrity=sha384-Hjj6NsCqVLoisKyRA8FqAIBJNc78xbd7zvstB8SkKjr1sQtIn5xVAmbb4FyF+no6; nopush",
+      "etag": "W/\"3e9d3f80051c0c17a1bb7cc38c7b9d7d\"",
+      "x-request-id": "ba41609a58f66c6ffabd1459bf23017f",
+      "x-runtime": "0.172611",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
+      "x-varnish": "2335413156 2321811396",
+      "age": "185",
+      "section-io-cache": "Hit",
+      "section-io-id": "422ce14853b848a521d7d567afbb3dbe"
+    }
+  },
+  "tests": {
+    "content-security-policy": {
+      "expectation": "csp-implemented-with-no-unsafe",
+      "pass": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'",
+          "app.teamtailor.com",
+          "jobs.zenika.com"
+        ]
+      },
+      "http": true,
+      "meta": false,
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
+    },
+    "cookies": {
+      "expectation": "cookies-secure-with-httponly-sessions",
+      "pass": true,
+      "result": "cookies-not-found",
+      "scoreModifier": 0,
+      "data": null,
+      "sameSite": false
+    },
+    "cross-origin-resource-sharing": {
+      "expectation": "cross-origin-resource-sharing-not-implemented",
+      "pass": true,
+      "result": "cross-origin-resource-sharing-not-implemented",
+      "scoreModifier": 0,
+      "data": null
+    },
+    "redirection": {
+      "expectation": "redirection-to-https",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://jobs.zenika.com/",
+      "redirects": true,
+      "route": [
+        "http://jobs.zenika.com/",
+        "https://jobs.zenika.com/"
+      ],
+      "statusCode": 200
+    },
+    "referrer-policy": {
+      "expectation": "referrer-policy-private",
+      "pass": true,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
+      "meta": false
+    },
+    "strict-transport-security": {
+      "expectation": "hsts-implemented-max-age-at-least-six-months",
+      "pass": true,
+      "result": "hsts-implemented-max-age-at-least-six-months",
+      "scoreModifier": 0,
+      "data": "max-age=63072000; includeSubDomains",
+      "includeSubDomains": true,
+      "maxAge": 63072000,
+      "preload": false,
+      "preloaded": false
+    },
+    "subresource-integrity": {
+      "expectation": "sri-implemented-and-external-scripts-loaded-securely",
+      "pass": true,
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/runtime-39ce7c68082d225f8b79.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-/kh4l/tutrgwgL4gqNg6VZtU7tfe0XJwtQnJhx9/JH8rXatX1TnS8yTqJ0uHYrUR"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/5217-d722161248a86ef021eb.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-3uhEwc9uRPhLRiFZuyE1+fXG2cPfzR9U79Emaqi+mAfXU4IoMzhLyJlcm/7r1wQE"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/cookies-a135f52d0a68c93f4012.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-0sL6GTF8sTKsSFPNxAGm6429n1teKKhy573MDp74v/UIVHe/z//4JrnBZWLBIJZQ"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/601-7d3383e7a375dc1aaa1b.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-l5I801Pjg1EBg2KQZqeHOLGUzdhI7+PBvRsMqdEOUrzi+WANH250/E7d/ntAKPkC"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/8559-d931dd583b4bb79d0e2a.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-9pmZ0INZG4vdr7arMaCamElHv26NrYEKOvqhf9yjMS5zyzkA40w7ExDWqxGcv2vE"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/7107-2c8b0452b1096d40d889.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-F6jpFzRjsKwuSo3AQM4sFVxNTUvURcCz99PinP+Ioe6ku9FF/btyL6hHI9n3qsl9"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/7328-d401e606fb75606f5ed6.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-p0L2eTbL6W9KU9kp+a5ZiPFo/LooZDf3V5bViSUzLy1aNO65oNK3BhaQyGgC1Da/"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/1339-f353de31ad875771e81e.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-8XzW9lTz9RncVo0Mv3K0PRLWsygAefD462s0Wx11IbJtbPoKzvwPc24YYP/V/sEf"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/careersite-4ba68538245331f50716.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-Jw3u3iUxD016F+BEz0e9axI10PCI9LHZREtSWs/nr480PoKLxJZCn5JkN2vc17+F"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/4254-c45eea0ea8a6e7fbe408.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-apFmoAEVdGUqGEoR1Nm41DSwOTXZzwghwLCdRgTnXOu0tfFK3Fa/hBBCV7G0v2h8"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/8454-e660b5c793efc07457dc.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-dGFXkTHDjzQntcGqSSnoJx1fghvXUfT/FblSy/fbsoR5GK/y4zwSXGBuC8kTUS0h"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/packs/js/font-awesome-d93dcae92dfe0efb796e.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-sgVCsKWBVlfrJgIFsdlR2hm5bWFvxj4FMh2tADpdMYjjg08BCPEMHpJBGn7LdVlS"
+        }
+      }
+    },
+    "x-content-type-options": {
+      "expectation": "x-content-type-options-nosniff",
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
+    },
+    "x-frame-options": {
+      "expectation": "x-frame-options-sameorigin-or-deny",
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
+    },
+    "cross-origin-resource-policy": {
+      "expectation": "corp-implemented-with-same-site",
+      "pass": true,
+      "result": "corp-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
+      "meta": false
+    }
+  }
+}

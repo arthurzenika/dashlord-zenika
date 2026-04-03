@@ -88,6 +88,19 @@ td {
 	color: #FFF;
 }
 
+.summary100 {
+	width: 100%;
+}
+
+.summary80 {
+	width: 80%;
+}
+
+.tdconstrainer {
+	width: 9.1%;
+	padding: 0
+}
+
 .alerts {
 	width: 75%;
 }
@@ -107,13 +120,85 @@ td {
 .left-header {
 	display: inline-block;
 }
+
+.pass {
+	background: green;
+	color: white
+}
+
+.pass::before {
+	content: '\2714';
+	color: white
+}
+
+.fail {
+	background: red;
+	color: white
+}
+
+.fail::before {
+	content: '\2716';
+	color: white
+}
+
+.alert-3b::before {
+	content: '\2691';
+	color: red
+}
+
+.alert-2b::before {
+	content: '\2691 ';
+	color: orange
+}
+
+.alert-1b::before {
+	content: '\2691';
+	color: yellow
+}
+
+.alert-0b::before {
+	content: '\2691';
+	color: blue
+}
+
+.alert-3a::after {
+	content: '\2691';
+	color: red
+}
+
+.alert-2a::after {
+	content: '\2691 ';
+	color: orange
+}
+
+.alert-1a::after {
+	content: '\2691';
+	color: yellow
+}
+
+.alert-0a::after {
+	content: '\2691';
+	color: blue
+}
+
+.lm2 {
+	margin-left: 2em;
+}
+
+.smallnote {
+	font-size: 0.75em
+}
+
+.alwayswhite {
+	color: white
+}
 </style>
 </head>
 <body>
 	<h1>
-		<!-- The ZAP Logo -->
+		<!-- The ZAP by Checkmark Logo -->
 		<img
-			src="data:image/png;base64,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"
+			src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANcAAABHCAYAAACUG9L2AAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9bRS0VEQuKOGSoThbEijhqFYpQIdQKrTqYXPoFTRqSFBdHwbXg4Mdi1cHFWVcHV0EQ/ABxdnBSdJES/5cUWsR4cNyPd/ced+8Af73MVLNjAlA1y0gl4kImuyp0vaIH/QhiEDGJmfqcKCbhOb7u4ePrXZRneZ/7c/QqOZMBPoF4lumGRbxBPL1p6Zz3icOsKCnE58TjBl2Q+JHrsstvnAsO+3lm2Ein5onDxEKhjeU2ZkVDJZ4ijiiqRvn+jMsK5y3OarnKmvfkLwzltJVlrtMcQQKLWIIIATKqKKEMC1FaNVJMpGg/7uEfdvwiuWRylcDIsYAKVEiOH/wPfndr5mOTblIoDnS+2PbHKNC1CzRqtv19bNuNEyDwDFxpLX+lDsx8kl5raZEjoG8buLhuafIecLkDDD3pkiE5UoCmP58H3s/om7LAwC0QXHN7a+7j9AFIU1fJG+DgEBgrUPa6x7u723v790yzvx+G9XKvRbkt4gAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB+gJEQobFG0N+/UAACAASURBVHja7Z13fBTl1se/ZzadANlNAClSBBEEG8UKiIrYwAIEFK+AtKj3tVy7V4KRgOLlxXqVK11AwYSiIpZXxY5X7FdU7KAUgWQ3jRSy+zzvH7NltoUkJJTrnnwmMzszO3tm5vk9pzznOQcODTmA4wGDGMUoRgdMNuByYD2gvctm4LjYo4lRjOpHzYCbgV8soLIuPwKpsccUoxjVnroDc4AyK5gMw9g1YsSIt4cOHfquZf9TsccVoxjVTAYwCFgLKCuoUlNTv7vnnnveKy8vL9daa6WUateu3Sfe4woYEnt8MfpvImmg6zQFrgJu8UosH3mOPvroz2fPnm3LzMzsFfqlX7b8VnLssV3jlbsqmfiUarlg2jaS05KAJkACsBcoRlOskZ/R6nvTTrNtYNX4X2KvL0b/zeDqDEwCsoA0/0VFCgYPHvzVnDlzunfq1KlNTRf4+//O48E7Jpvfa30iRv9bCDgRtf887fuvQZvCcKvWej3o1RTseI13ctyx1xmj/wZw9QNuAoZhegEBaNKkyfc33XTT7ilTpvROSUlJqe3FjjtrCD9sWAeAre+1GJ3PtRz1wkpbt01tU6NBazTs1kovJ87zBM9n/Rx7rTE60sCVCoz2gqqHZb86+uijP/OqfqfUB7C7ncUc3eV49rl2gC2RhAsfQJq1jiC9giRXAGTaBJrW2qOVeh70A6ya/E3s9cbocAfXMcBkr/rnsKh+JQMGDPhywYIFx3Tu3LndgTKy9MW3GDPsAlAeDMcxJF4wHQxbAFx+UAVLriCAaY1GobVWWnmeJUHfyvKsgthrjtHhBi6f6ncFEOfbmZiYuGXSpEm/zZw5s3eTJk2aNCQz5426gfV5cwCIP2EECSddGWJxhUsuv2oYABZaK9+x3Vp7bmbl5BWxVx2jQw2uRGAUcDtwglX1a9my5ZczZ870jBs3ro+ISGMwU1lVzVHHnkzx79+CCCmDc7G16hHiyCBMHSQIWMEgU1qhlWcpKUnXs3TM3tgrj9GhANd4YFaI6lc8YMCAjXPnzu3UtWvXLgeDoXc+/g/n9jsN7a7EaHoUqUMfReKTwyVXwM7yflZBwFJaBSSYVmjt+VrHuS9lxfVbYq89RgeDfJ6+/sAaIMWr+v3y17/+9ZM33nijXVZW1vHp6emOg8VQx3at+K0sni82vIneV4auLCKxw5kIBiKCiIEg5rZ/7e0nRPz9hfj+/LulFcq4kh5D3uLbtX/EXn2MDpbkmg3cClQsW7bs69GjR/dtLNWvttT+pHP4/T/vAND03HtJ6NgviuRSAQlmlVQor1ro2+9VEbWnSHv0Raye9O8GZ/rqZc1ITO5t6bTqTwabmT98W52+M2llDzzSOuQN/8iC4Vvr/PtjV3TGFt9pv+dpj0KzhwRbARQUMDerOgarYHDdD0wF9M033/z+I4880v9Qg+uHLTvo0fME3HudGInNsA/7F5KS7rW1CKiCocAioA4GVEPl3/YCrFgrPYBVk/7ToExPyJ+HZmJDmaDEJaUzd2h5rc6+Nn8IwtoIR6pQcjKLR2yu9S9fm9cCkR1WR1YtqQrNeyAvY6hlLBjp/DODyxcKsRAoBuSxxx4b0LZt20927ty561Ay1rVjG2bMngMIqqqE0vdmYxgGhti8awPDsJmfxWZue4+L2BDxniOGfzuwtjUXQ9Zx5cKjG5RpTcsGvFoSldXJdegm/xblSCKGvqFuxoLKqAewzN8Szkf0Y2j5lfErJ8XABVuBszHnV7Fz585T27VrZyxZsuTjQ8ncnVkj6T34agD2bf+Mik0vBABlmCAKgC0UVL7PtigAM9qJR68iMy/hiH+LE1Z1AAbWpLBy4yuJB5mrZqDnMj4/588OLoCvgF7A44BWSrUYO3bsqaeddtr75eXl5YeKwbdWPk1qK9NRWbZxLh7nliCJJYZhAZVlf5DkCgeY1zHSF100swEl184GvHUPFe7aPXetxlDzrG4HFXsvaQCeigFXhKWmuM6pjM8f/GcHF0AF5sTGi4A/ANm4cWP/9PT0PzZ89NGPh4LB5k1TWLT4GcQWj/ZUU7Q+F1GegCroBY5fghkG4l0bRpAqaAGWWLZtt5A5/8KGAVfZLYj0wtB9arUgfRG+jHK1Z8kfWVGLHxVgTBgww6Cqxx3w/cXpE1mY6QhbSnWSeT+siWLXz/gzOzQiUUuvLWb2eGJ4LrrmJttLC/+XOJvtoDN6+YS/8+LCB03v4cmjaX7GX8OcGMGeQY9lENnvyAislXmO9/PPuomtJ4uvrTyoNzU+726QByMc+Ymqqt48+5eSWlyjH8j7IXuXe7UQawoFN0ofzeKR+x+GmLiiO8r2bQRwdWDuyN9qBPr4/HyQ4eEtTR/LgpE//Zkll5V2A0OBW0H2oZXt1SWP0rr7GXz1/ZaDzmj+07m06NwHgNKvVrBvxxdh9lawA8MWYmdJQB20LIYIgtGZMvfdB/WGJuYPBMmN6CUUGVkrYAGIjI2wdynCslBoIMZVjdxXa2zGfVGO9fmzq4XhVgQ8wtm3f0CztgAU/PgJvU45mZzHlhxURuPjbKxbvRxbYipoRdEHj/qdGtE9g7YwO8sLJsuAtH/7TjIXHXVQbmZc3lEonovokdPcyIIRX9TqOpl5yWhGhOzdRfuMN8BYijnD29K+1fhGv7d5I77BTO0QTCpk/C0GLmDUvO7SsttA2/n3YRx7PiCoimLuv2Ucp5x/Jc7isoPGbN8Tu3Du5RNM72HhT+DZF7C3wiSVBUBhi1jW/qiPZHT13xr9JnLejsMmeUCkxraCRZnza32tpjIMyyRVL4KeJeccNwuGbzXHnIKO9WRc3skH4VW5Iwg1IwaucJ/V30XEkLhE4nqPJWHgHUhSc0Dz5ZvP065LT1a/vqFRmfz9j0L+lvs0x/S6kDdX/cvUcVJbYotv4gdVVEllkVIBqeXdZ90WQcR2PZnzGzfU67eCWWj6R1CbfoCEyXX0ToarhEottXwKVy+MiGpkA9qRy9uEAx4QKYiBy0pXPJMuYoz0x/CJYGvTi8QBt3rnWkFFwVZGXDKQ2x94ulEYvGD0bXRo15pHp17Hr1+8jnZXIYaNFgPuiOgZDLanQqQVFiB5t/HHKBoI0hTUNY32tCesvBzTGxtuZ2GMZOFlpbW+1pi8tgjnhoDtGxaPDHgfk3V+BBXtmsYd24u/LXInrb6KgctKtqrRgiRYg2V1yXaq3p4JyuN3OLbs0pveJx7fKAxeNGggqIDpkNZzOB2vXknT4y7yDyJHBlRU2yoEZAJigK8D0UbjgGvSiq5o/QwRPbT6ehYOq1vji5OxhMYwin4m6PNTI8uAF0O+mU6qXNQoEmtC/sOgI6nWv7I4808HrhpDXATjL+KLNPc2QPfmdejqChCDngOGMTPnLi4Z2HiOoFvGD+X9j+5l9fxpptZTVUJSy+5+F7wCDLS5FlBoxLdPQNDmIuZe0ToQUa+9YPPu01pApDfD5/Zo0DQB1yxpgtu2GqFZOK7kORZlLq7PVUMVQgzb8gjnLQGuDnmxYyOArhaWlLzM+Px9oaIKaA+kWTIyhKqE00F0THL56Kp5rRDpS8j0Dl1peogTmrZg3fKnGhVYPsp/Ooeufc20hiU/vkHhx3OjhTTVoAIa+KalBE9XCV9jyNCG1ZRS5iBBeUcCalx8Yt3j78bnnQF0C9n7ZsQo+vbfvAmE7h/CtXkt6nEnJwC9Q5YTI9pYASAvY8HwRRGPTV6bwtXLmv35wLWPcwWRQMMz50jFtT3FPFyyiy7dTuDp5a82PpOG8P6rz9KsVVcAdn/4KHu3fBASyhRN7TOCweOXxOFr/zlazmkw5q9deRPoSKrmXtAjax31HiztxkbYtzSydzJHITwXLm0ae8wLD8I/KNHjokotd+UeEhOLmbDylD8XuETO8VsHgr8Bxh87mPhjBwFQXbKL664ewnmjbqZyX+OmDWyZ3owXX3yBuKSmoBXb1t1KdfG2cLe7FyBEAVakiZZmxxF0n/246PEDD3SduOp0RM+KcvQGFo38ts7XHLcoCWFUGFCT1QtRv6NCbDEAUY3kNZTvQB5GSU8WZN5F/khPDScnmR2DSvpT2VwCfYUIf2Ij5cwbcbftQ/mGJ9D79rI+73Faf7SetWvy6Ne7e6MxO/C07jzw6GLuvD4TT2Uxv794Ax1H5yG2REQCtpVpTxlo0WbonYg3BM+yHXUNaFJITuwBfF5/O2t1S5QnHzNzcCjNY2Fm/UbhbamXo8PUsGIqjdmMX1mTuKsALFNYpBcTV57I/BF1mNOm70Hk5wjqbRmG3o2b7SzOrP8s75y348g5x/1fDi4tyMKu0dQnEBI69Seh5fGUvfsQ1bu+oej3TZx9Zl9uyZ7N7ClZjcbwHVnDeG/DXby85EEq93zPjlfupO2lj1kcFPtZ1/JPG9K13uDKyTH4zbMUiJRy7mvikm6p9wOINLYFbUBPrvO1lB6DmYyolufb3mLx8E8a/KVqTmZ8/hP8VtCb8fkVaJaTrG/mqZFljM9fBpwB+nYWjgwEBk9YeQpa5yHsZEHmgCNHLRy2oD3efBoBtdCLLYsaZWvaEvsls0ntPRbEQO3by8PZ19Gj3zB2F5Y0GtMvLprBsX4Hx+s4P1scoQMI5rvua+lWbwa39pgORJpmUYaS+tlZ4BugPb8BH+U1TH46/pC3QpGnQNKBjZgTLsdTaTzhPfopZu7M20I6hpuBLmj5hMOUotlcHawgMhevJy10MeJI7T2O9CGPYEs1J+J+++EaOnU7mZWvftR4Do5XnqVpq2NNB8e7syjf+mGNHsD9/QXfFwAd6+fAyB+CcHcUheD6Ok23D2uEcdfQEPk5LKYs1Y4LDj249Cu039SZhZmngb7e+7CuYeJzrSBhAVACcpY/dGvycxleu1PhcT91ZIFLaE7kBkckaQaQ2PYUWo1cSorX2VFe8Csjhwzg4mvuxO1RDc54q4xmrFm9BltiKlp72L7uNqqLtxOV7/1Iq+BvCUDdXcQTVnVAWBz5gfEUi0YsOzD1KWLo0heg36zdwk8RGva4Q94KlcwhJ8dsJKUsxYxNtKHje7LwslJEnjVbq5j5STzxE4AkhLU8c+VhWxsgms0VvdJjDTPAbIlNaTF4BuUd+lP47kxUdQWvLptFh88+4rU1z3LCce0blPnzzuzBfbPmM/Wmq/BUFrNj7U0cPWopGPEhDNfQSVhP01ZNhaa6ji0flb8CkfQIB/cBu5mQf1cdLliKJ+45Fl9RZErElaeBDvUWVZK47zzmXO2qJfjPQqsPQm58KJOfy2Du6EMX+2czAr+dP7KC8fmlgB3tfZbifgJtuw4Yw+S8e3GT5VUNHz+cHRpGlL0pdQEVftXKpNRul9B21LMkZphz9XZ89wG9e53CQ0+vbvAbyL5xFOdl3mS2tD2b2fVmDrIfXvcLMnOjbqVkx73QHJHToxxNAHLQzKzD8iRG9STLO4k0trW61sACWDD8Q9NVHsKbO2HUIW2FWgUSBd2Qlwo094q0HQDMv/I74G2gKR55BugEehOLMt8+8sClqIrg0anR3RN6OMHRiaOvXEbaSVcBQnW5k7uvG8GAy2+gdG/DTvh99bnZtDvedBiVbF5H8aY1+3VP1eJQRZ2YULrhp2eLmGNtmXkJaD0ywo8uqIcOFiFaQo09pK1QcQOT15odepX4CrRVoeI3WV7MP73v5zJv0338cA+pimZzlda9XeqgP9/lE9M7Y0u2+895/8U5dOvTsPlK4uNsvPd6Pklp5oTOos+ficC0ddn/fWlN6WHzlprJZUCouvkrHb59p+5v3L0ECEncKX2ZtLLHoXNocCruyj8Yn78DjXd2tjzpV4lNJfkl4FfvJxfV5c9xmFMN4KplY4yyVsrNttUT2bV+Op4KMzekEZdEz/4jeWjmAw16E26PYtMPv9G8hTmspCqLqTP/Yd/QdQNXhbs0osOg/lQF+gsv0psRPKtYgZ7pdwLUheaP3gXMC/stLU0DV0/eBmwPOacY8WxpYH1wPfARIv2Ad7099DfA/cQVBntc80d6EP2dt33OOxKKakQ2PjIXHCew2Zoj0GbNtlSLdcUv77HrFXN8sulRXbl81Hhy75xIhzbpDaMKvvslz656lY8+fI/fvvs37opAJ9e0+1AyzrvPTECjPP61J+izO+x48Fo9xMqJdxOjw4Mm57XHLWYdbOXuwuKrthzuLEf2Ftrdv+CKq0YT7/OiaTFLp9Z27S7d6cfv2hdf4OxTGzYs6sorr6Tkj+/D+oomnfqT3v/2oAoo1lJD+Nf7k776+1iLPozIbVwP2gbkHwnAiq4Wzs2qBv1ruK1Sw6KD14mtT8Ln3z73rF4MHn0He1wNl2/jmSVLMOIC8Z4tB9xJp4lvcNTQx5HE1ACw6nIPwUsMXIcV6XOBPRjGw0cKx9E9XN2H9hNDetYY9VBDxHlcagsMWyIV2z9Fq2p+2bSBx+csokg5GNTvZA60zkO3zm0pMVrx0dtrvZpCFc1OzDTjc4MKMgQqngSvdUTp5l27SUy+na9XV8Ua9WFCX+TP54v8WXyet+3IB9fxQzNEjCGB+VHWdTCY/MFRIXO/ktv0IrXzQKpdW3CX7sRTVcZH61/in4tfoE3H7pzUveMBMX/BgN68/snvbPvxC9ylO1D79pLc/gwLiHQUgJngIxrwUBtZMe6ghNWkpeWkJSZekJyUNCi5qurNKrPgzOFFzZvnHJOUNNCelDTQXlU1sBje0TG019fmMo+s18rbk0vNa0GDeBuyd7q8RqNFEZ/RlTbD51Px6wfseW8m1cXbcf72FWOGncM/+o/g+YWPcHyXtvW+gbdXz6FDz03s/mkjxV8+S3xGF5ocd3GE2l1WtVWFVaa0qpFa6/X15adp0wfS4+Pdw9HSB3Pqe4nAV3Fuz/O7ynJ2h+nlYvsdcaea330wo7SUwsOuBzZsP/mcXxkZCc0KCg6jYYojzuYCeH7yD6B/ttpREVUoSxE6rLWyQop/pxzTnw7XvECLfrdiJDQBNJvez+eE47syZMzdFJdV1OsGkhITeOe11SQ0NYOGC9+ZSdXu7wK8eXlB6/2pgv5tlLxeH14y0nIvjY/z/IiWp4FJQCbCBC08Xh1v+9Vun3ZljY3Yts8Ta5JHKuXZHI7cvzkcudPatMlJqRlcgNZ6mbUB4i04RwRgBTVma7FvX+52pcAWT1qfcXQcu5bmx18KCKq6nHVLH+Kodl24c8a8et1W985tmbt4uVmswV1FwWv34KlwRSlCbq1IqYIlmrm9lRO3fVBXHuz2GT21kAfYo5ySIsiSjOYzekW7Rnw87lgjPSKdLeKwfz8HzcNosivLbZP2Cy5saqlGax2hRCohVRw1PjDpEKllqeqozMWWkkGrwQ/QYfQKklubswgqi3cwa8pk2nQ7i7XrP63z7Y0ddi5/+R/TXnGX7sT5Zg5aecJ4DGwHVMRgSczS+gzOiqj7NfhSA7hE67FK616iZZzAHh9+lHj+Hu0aiYnNYpLrCKR0e+4DXk0FQGOozbCfcFwARix4yzDk3OCSPTZvEs7Q4nNGyLFomXAt6aQRyn58g93v/QN3qXeGuBic2H8Y+c88QdeOdUvffsLZI9j03ioAmvS6hpRe16BUoMKJf5BYK7R/21/1xKMN93E8n1WnaQytWs1qUr2vsgBfTgjRWU7n1Lm+4w7H9OFo7ZuDX+Z0eeyQ4wZw2HNLgVQAp6tlQkZGUZLHU3UZSGuQbSLu953OnKgeModj+pkofT7gC37dqtAvFxVNjZpvvkWLnFRVHXeFNlQfMJqJplyL+srtVitLSnLCSq067LnK11YMW0KzgoK7Sq2/L1pfimnJupOTPQ/s2JFTnpExo7XHo8YAuFzNH4WbqtLTp/VVir5gpBpa/5SY4nltx46ccq9jp6NhGIO1FruIbImLk3d27753V2QHS25nm02fDXRAkSoYW5Woz1yu7A2h8YYOR+4E0RwbbAzpVYWFUz+x23PaixiDQNqLJsm3H6BNm5yUigpjHPCVyzX1wxqe/+1of54UD0KW05m9oHbgGj53kBi2NwLgCpRLDYDJWnzOmwU3Yu726OnPVHUlRZ8txvnpArTb9IDbkppx2V9uZsnj99IkuXb5YopLy2nfvQ8l278DhGbnZRPX4XQLwALlg4JLCXlQSi1j5cQ6JwV1OKafjta+maEqvtrTOth58XS8w7673OdAsnk8x+4pyfkpFFxKy9mG6OcAv4dHzNCkUYVFU14M9TIaYlsOXBhFU1noLHJn+UDs72XTcwdpxXIgI8K3SkUzrrAoe3VtwJWRMaO1cqsvEFqZvMq9ha4pD5i/M62vVrLR7MrVxWD0F7gn5Pd+FcN2sVLuXoLMg6DZGHsRhjmd2f8X2JVjONJs//CWqI2gdcnrKU1Srti27dYKC++vEzIrXMMTYLwuqOeBJoGv60lO59T55jud9ghabgHciBridN4XZoc70nKvRViAOa+4Cs1o67Pbf674VZPfRLMh1LZSYaqWV/UL/WxZq0DBb2/NrEDIEbYE7Kdl0WHMSzTtZk7h91SWsHp+Lq3ad+ehf62sndu4aQr/t+4FbMlmPvvS92bhdm218KSj2WIaDw/VS+PWqovl485wr2BWtcBskLkgc/eJLaL6Z4h+1wosb0NI1OinIScuWA01FluApYBvQG/GF4Moeny63XZXaI+vFWtCgGX1JDXVwvKMjAe67v+uc+K0Ry33AQstbxS63BGrdArGKxGABdBJK893gjwbAiyAJmjmeTMLeTsxYyLCbd5260H4DLBModEX7N1bNmW/KjzcKKiXg4AVTmV+v7k28uz2GScGdVJpuZcjzPN2OqUodUlop1SryhNaVLaOBCZvw7Q6LkKLzwWA5fGCKhC/p62xfN5to0kLWgyeRuthT5OQYUrzvQW/cvf1mbTpdhavvbf/6jqnndSVWU8uBjHQ1RXsXT8Dta8sIp+We1rCmomb6qd1W4JeoSjSGYWu7LudrilZTteUrOLi7F+jPOnNiB5laM4xgehvDa1aNAukHUhLm3aKIN6pF5SLIWc4Xdk9na6p3UWpwXgrS2rNjZDnH8uMM7jNJyUFftYYJzld2SliSDvAV/86Qbnd+80wZLfbpmmzjjbAH3EJcg3UZKvqdQgXmVKMYIeRZqNGLhWD89F6leVI+/T0GW0sDfEv/i1Dn+V0ZvdxurKPR+Q2C3CGBbkNPPyPoXQfQ+k+BKLqAbYjegKiz/Qdr64OpKdzOtX9gK8AQjNBvepw5LQzvcL3n6OF5ZjjxE5EX1BYfN9btXfFWyl/0nqt1fJQ93qYRzCoimNAMvkllaWaY1iwbAjIEtv0os2oZWQMyvFPWdn5/QYuPudUTr/kWrbvctbI8t+uvZxLrjHTlnuKt1Hx4WNhgApUotQlKHVPfQ1aEZIsDaXe0dpKc53TOTWvoCj7HafLfT2ww39MbO0tUusCS2N6prBwykY/iM2X/JYPlBkZP3UOsCYXWMTtNJfr3v8AFBZO2Y4wNdCGJapH0+Op6uhwTB8lcJefNcXV0ewjn4qXlKxGOp3Zr7lc970qBpODO29jgss1ZW1hYfabzqK0qzHrLHvZpEOAf/UgIiMNzeWFhVM/DlzBnWd5G0dbr72nJPvHguKpnxUUT/0MqLQ8izuczqkLnc6pH/mOl5bmWGZj57idrinXo5lqKhC00dr2ot2ee7ES40Wvff27GPRzOqdGTBYTV/s3r27TIhdrpLmZn1288a+Cd1gWAzHXCjNPu3jztwuBvILWfO3eXIH+KA8dkrVJQ0rXC0nqcCYlny+l9KsVaFXNx68spkOnNWSOv5VnHvk7CfGRb+OlRbM45usv2frFW7h/+xj59iVs3S6OIL0897A6q97FwrWmMjCBWafW9zpxcbYfLC9XQe5WoA2Atqn4wE9wrO8ZafQ5jrTcN0Iu5a+K4Xaro4AfTLVSdwp06cFZk5zOlm83b76zsznexr7oKpX8xx/4bO6YUVicvb9B920+x4UJ5ua/OOzFFnW1+ieXH043VQm5W7R3SEOpwH27XPe9ClqaN5/eMS1t+gCbTSd43QipAeWRWmWzMgxq4bQS7Swi1+GYvhmtl4hZCned99gvHuU+v9iV80vU91nrN786a6ceMX+SQuUZCFoUSlsA5QdYYG0aAxZQoUMKIRhmJjRvwk7xZbwNm9acQtPTskg+7kKKNzxB5W//xlNRzIon72PdmuX8438f5rqrLorwAIWN/7eSjt1PpqJgK9VfPAvN20KrHlbp9So9d/yLlRwASVGAaWkexemxCKXbeY2rbKdzyr8jvPBQtUpFeecWAEs3hG41NCLTK+kgxVujwrvf4wq1C4uL+aXO/YrW+bXpmkMGHYI+b9ni0MGSDBVpGp7pOJq+GDgOtDnkWju3XGQ9oZbkdE7Jt9undxL0QwF1U1/oLMmp8XnVrdrfyon5WnueDlUHgx0XnoBXzl/QO+DECPXYqRDHRtRFezCatSXtwgexXzKLOLupLZTu2Mz1oy+mXc8BbPgiPGtZy4w0XnhhNZKQAlpRveGfqLJdPr62Ee8ZU69Jh0HDgfxo+dgmI2NG69DRe7S+EmEQwiDDc4CDxVrKLJJjotOVLVEX55QNZgOhHEu3pZQtZLD78cSM5tN6ZzSf1ttun3ZCDd6ARV5HglcjlrlWu66xyG6f2Ryt15nAolrQNxpK+hpK91FaD2zM33Y4cgcL+t4g9djGKrs9p33DgQsgNf4WrdVHoaCK5Bn0gSocRAGbS0eyuSItluPxrU/GfsUcmpx+HZJgOny2f/M+/U49iX6XT2R3QbBPYfBZvbj3wSe8ju0y1IdPoN2VFRoZyfKsA856lGp3b7J4l0R7PMODPUs/XOobAxOoSmqackDliUT0TxaV9KRI40A+oIAv532OGyRg0Ht03yAem7v6KUM+VYZ8KsiS6JIw4WYRuQzw6XWnOxzf39LY4BJxDwIcVelP1wAABhxJREFUXl343ULX1H8WFE/5tKB46meGQUHjgTr3ejTrMFPtfY9mPGaahBME24dpadNOajhwLb62UovnIq3Vf5S2DM6GAcsCpJDBWh1p5m9UyeWO7PhASDz+UpqPWEBi96GmZ9C9jw9fXEDbTl24IfthlEXy5946njMvG2e+G9dW9Bv3byR/QoNkLd2yJadSwxqLsTzTbp9+p8ORO9iRlnuzFr3Aoh+9ah2HqVdDU8brFofGWKvrvGXLGa1sBh94gfJBx45OsZz7WsBBYmQ7HNN6eAeVj9KGMc3yCxtr+v3CwinbNfpuixMnt3bu+wO5Z2UZj6JbixY5R/nG+0TLzIb/RS0OR26OwFNe86nQ5mGosyh7ERqfN7WdIfKB3T59aMOACyA/q1jbjCFaqy3+cSurZ9APqlDvoIo+tb4GyeWJBEKf5EtIIenUiTS5ZBa2lqYd7y4rZM7020g7ujsLV/rbE++umkeLrt56YqV/nA1MbqhXoZQnB/zR4k0E/RCa1xEexWucC1RprXMO9LcKiu/9HPQ6n5tYeTyfO+y5r9vtuS+6q9X3wFFe58PCLVty/B4yt9IP+ySsoLugZZPDnlvqcdt2Amd6T6vWqH/ujweXS821uNSTlcczH3Iarai4mLk1fNTO47ZtddhzfzfEtkfDkEjfSU+f3tZhz9W+BfBPh9dKNlqOecIl1oy70Nzn/ViJ6KF7SrJ/BHAWZS/SaF8imFRBr3Y4Hji+YcAFsGL879rjOVNr9ZWyuuGDQBXF7R5F3dufzRW2bRk3E3tHkgbnkNjvZiQl3WuPfc+EkRdz3FlD+fqHrcTZbHz57rryuLg4XzjR40CDVO8rLs75RSMXA1uj2Cq7tXB5UdHUBilf6vaoMYi85R9whcECl+LL+SesTkx23xHMY/bPYnCFJdYR37iXz2Wu0WNcrqlf12IQWYnBZMGfhq9/eprtr40FroLiqZ9ptDVKJQGz0EUcoqdreKGBJVc7v7IhMibU3e5yZU8BVvgcg+Kpbl1/b2E0D+Lop87R1QkvGJoB1jKpBgb+aHMRtASXTEVbJlt6XfpiVWAsOkfA8xsIuNUQMs3F9P5J+9NJaHMy7m/X4vnuZfDs44cNL3NSzzd15lV/+XzpvCd7vvPOO+X9+vXzldT5B4QU7q4nuVxTPujYMadbaVHcBdrQvUVLukIViRhfxscnvrJr1x1hY2AaFglmfkK3u7oi+Ji8JPh67Pjfrce8MYCDMtLuP8cjxvlAO4FyDb8ahn4neBzIqtJlv9miRc4xqtoYpkT6GGbKtmIFX1dX21aWlf19T4SvzfVVt0hNraguKPBf67v0tOlZiCn1NLqT6fLPcXs8ao8hcXO9YidkmMOuYM9ciz/OEyKl1mjkM+/wxM7A8+02PD3th9EIZypUawNjp0I953JOfT+j+bTeHkP+LSKewJice6+fh/0NpoR2Xm7bffHxngKt5TOXc8raiG561+Pj7Pbiz0V0caRBZGkQkA/MiSOj7RQRI9sQw4hc8Du4ZCqWAgm+onMSxpYO/q/x58TQvu2o4UwKvbcA9VUe+vdAO0tISNjy5JNP7p49e7bavHnz6UAhkePsYhSjA1NlG/RqmfMvEZgnGK2DI9+NoJKpoQDzsyKEAExb+hXtl10EAUvXEC+oPFqrJ3j5by9RWTYLs4ZvKK0Hzos1hRgd3uACs3J9xb5sEblNROKC6xMH1x721xQJ1EwNY0hbt3QgcbYOmx2tAoAz4x4/10rdwKqsjy325bXADPAGm8IuYBCwKdYUYnT4g8tHw+ediMh9InK5iBgmoAw/mMRSrE4iSi4LuGolubQ34Yz+Xmv9AD23L4syONwEuAgzTGYdUBJrBjE6ssDlB9ncHojcIWJkCpKCJUNUJMkV7s7Yj+QKpCD4t9bqMXruyDvQiIsYxejIAJePLl3QlHg9DGG0iPQXSA6TXAEBFiK1okgu9LdasxqbWmom1IlRjP6M4LLSuEVJlKgzEM9ADKOHQDeQLgRyUEQg/TuaHzR6MyIb8HjePpBI9hjF6L8TXJEoM89GfEEzquPTQKWCkYChijCMMspUKWuzymOvK0ZHEv0/MoxQeluHjNMAAAAASUVORK5CYII="
 			alt="" />
 		ZAP Scanning Report
 	</h1>
@@ -127,8 +212,16 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 26 Jun 2022 02:19:29
+		Generated on Thu, 2 Apr 2026 15:13:49
 	</h3>
+
+	<h3>
+		ZAP Version: 2.17.0
+	</h3>
+
+	<h4>
+		ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+	</h4>
 
 	
 		<h3 class="left-header">Summary of Alerts</h3>
@@ -152,7 +245,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>3</div>
+					<div>2</div>
 				</td>
 			</tr>
 			<tr>
@@ -160,7 +253,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>5</div>
+					<div>6</div>
 				</td>
 			</tr>
 			<tr>
@@ -168,7 +261,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>6</div>
+					<div>9</div>
 				</td>
 			</tr>
 			<tr>
@@ -182,6 +275,266 @@ td {
 		</table>
 		<div class="spacer-lg"></div>
 	
+	
+	
+		<h3 class="left-header">Insights</h3>
+		<table class="summary100">
+			<tr>
+				<th height="24">Level</th>
+				<th>Reason</th>
+				<th>Site</th>
+				<th>Description</th>
+				<th>Statistic</th>
+			</tr>
+			
+				<tr>
+				<td class="risk-1">
+					<div>Low</div>
+				</td>
+				<td>
+					<div>Warning</div>
+				</td>
+				<td>
+					<div></div>
+				</td>
+				<td>
+					<div>ZAP warnings logged - see the zap.log file for details</div>
+				</td>
+				<td align="center">
+					<div>1   </div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of responses with status code 2xx</div>
+				</td>
+				<td align="center">
+					<div>40 %</div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of responses with status code 4xx</div>
+				</td>
+				<td align="center">
+					<div>59 %</div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of endpoints with content type application/javascript</div>
+				</td>
+				<td align="center">
+					<div>20 %</div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of endpoints with content type font/woff2</div>
+				</td>
+				<td align="center">
+					<div>3 %</div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of endpoints with content type image/png</div>
+				</td>
+				<td align="center">
+					<div>1 %</div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of endpoints with content type image/x-icon</div>
+				</td>
+				<td align="center">
+					<div>1 %</div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of endpoints with content type text/css</div>
+				</td>
+				<td align="center">
+					<div>1 %</div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of endpoints with content type text/html</div>
+				</td>
+				<td align="center">
+					<div>69 %</div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of endpoints with content type video/mp4</div>
+				</td>
+				<td align="center">
+					<div>1 %</div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of endpoints with method GET</div>
+				</td>
+				<td align="center">
+					<div>100 %</div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Count of total endpoints</div>
+				</td>
+				<td align="center">
+					<div>55   </div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-0">
+					<div>Info</div>
+				</td>
+				<td>
+					<div>Informational</div>
+				</td>
+				<td>
+					<div>https://oss.zenika.com</div>
+				</td>
+				<td>
+					<div>Percentage of slow responses</div>
+				</td>
+				<td align="center">
+					<div>72 %</div>
+				</td>
+				</tr>
+			
+		</table>
+		<div class="spacer-lg"></div>
+	
+
+	
+		
+			<h3>Summary of Sequences</h3>
+			<p class="smallnote">For each step: result (Pass/Fail) - risk (of highest alert(s) for the step, if any).</p>
+
+			
+				</table>
+			
+		
+	</th:block>
 
 	
 		<h3>Alerts</h3>
@@ -196,72 +549,138 @@ td {
 			<tr>
 				<td><a href="#10038">Content Security Policy (CSP) Header Not Set</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">11</td>
+				
+				<td align="center">Systemic</td>
+				
+				
 			</tr>
 			<tr>
 				<td><a href="#10020">Missing Anti-clickjacking Header</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">8</td>
+				
+				
+				<td align="center">3</td>
+				
 			</tr>
 			<tr>
-				<td><a href="#90003">Sub Resource Integrity Attribute Missing</a></td>
-				<td align="center" class="risk-2">Medium</td>
-				<td align="center">6</td>
-			</tr>
-			<tr>
-				<td><a href="#10044">Big Redirect Detected (Potential Sensitive Information Leak)</a></td>
+				<td><a href="#90004">Cross-Origin-Embedder-Policy Header Missing or Invalid</a></td>
 				<td align="center" class="risk-1">Low</td>
+				
+				
+				<td align="center">2</td>
+				
+			</tr>
+			<tr>
+				<td><a href="#90004">Cross-Origin-Opener-Policy Header Missing or Invalid</a></td>
+				<td align="center" class="risk-1">Low</td>
+				
+				
+				<td align="center">2</td>
+				
+			</tr>
+			<tr>
+				<td><a href="#90004">Cross-Origin-Resource-Policy Header Missing or Invalid</a></td>
+				<td align="center" class="risk-1">Low</td>
+				
+				
 				<td align="center">5</td>
-			</tr>
-			<tr>
-				<td><a href="#10017">Cross-Domain JavaScript Source File Inclusion</a></td>
-				<td align="center" class="risk-1">Low</td>
-				<td align="center">10</td>
+				
 			</tr>
 			<tr>
 				<td><a href="#10063">Permissions Policy Header Not Set</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">11</td>
+				
+				<td align="center">Systemic</td>
+				
+				
 			</tr>
 			<tr>
-				<td><a href="#10096">Timestamp Disclosure - Unix</a></td>
+				<td><a href="#10037">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">5</td>
+				
+				<td align="center">Systemic</td>
+				
+				
 			</tr>
 			<tr>
 				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
 				<td align="center" class="risk-1">Low</td>
-				<td align="center">11</td>
+				
+				
+				<td align="center">1</td>
+				
 			</tr>
 			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">5</td>
-			</tr>
-			<tr>
-				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
-				<td align="center" class="risk-0">Informational</td>
-				<td align="center">6</td>
+				
+				
+				<td align="center">1</td>
+				
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">2</td>
+				
+				<td align="center">Systemic</td>
+				
+				
 			</tr>
 			<tr>
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">11</td>
+				
+				
+				<td align="center">2</td>
+				
 			</tr>
 			<tr>
 				<td><a href="#10050">Retrieved from Cache</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">11</td>
+				
+				<td align="center">Systemic</td>
+				
+				
 			</tr>
 			<tr>
-				<td><a href="#10049">Storable but Non-Cacheable Content</a></td>
+				<td><a href="#90005">Sec-Fetch-Dest Header is Missing</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">11</td>
+				
+				
+				<td align="center">3</td>
+				
+			</tr>
+			<tr>
+				<td><a href="#90005">Sec-Fetch-Mode Header is Missing</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				
+				
+				<td align="center">3</td>
+				
+			</tr>
+			<tr>
+				<td><a href="#90005">Sec-Fetch-Site Header is Missing</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				
+				
+				<td align="center">3</td>
+				
+			</tr>
+			<tr>
+				<td><a href="#90005">Sec-Fetch-User Header is Missing</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				
+				
+				<td align="center">3</td>
+				
+			</tr>
+			<tr>
+				<td><a href="#10049">Storable and Cacheable Content</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				
+				<td align="center">Systemic</td>
+				
+				
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -295,6 +714,11 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
@@ -311,6 +735,11 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -321,6 +750,11 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
@@ -337,13 +771,23 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/hacktoberfest/">https://oss.zenika.com/hacktoberfest/</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/%2Fzenika-opensource-logo.png&amp;w=32&amp;q=75">https://oss.zenika.com/%2Fzenika-opensource-logo.png&amp;w=32&amp;q=75</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com//zenika-opensource-logo.png&amp;w=32&amp;q=75</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -363,6 +807,47 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/robots.txt">https://oss.zenika.com/robots.txt</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/robots.txt</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -373,29 +858,8 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/terms/">https://oss.zenika.com/terms/</a></td>
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/sitemap.xml</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -417,196 +881,48 @@ td {
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
-				
 					<tr>
 						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/getting-started%5C">https://oss.zenika.com/white-paper/getting-started%5C</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/getting-started/">https://oss.zenika.com/white-paper/getting-started/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/licenses/">https://oss.zenika.com/white-paper/licenses/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/licenses/www.fsf.org">https://oss.zenika.com/white-paper/licenses/www.fsf.org</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced/">https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/promotion/">https://oss.zenika.com/white-paper/promotion/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					
+					<td width="80%">Systemic</td>
+					
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header, to achieve optimal browser support: &quot;Content-Security-Policy&quot; for Chrome 25+, Firefox 23+ and Safari 7+, &quot;X-Content-Security-Policy&quot; for Firefox 4.0+ and Internet Explorer 10+, and &quot;X-WebKit-CSP&quot; for Chrome 14+ and Safari 6+.</div>
+							<div>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</div>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a>
 							<br />
 						
 							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a>
 							<br />
 						
-							<a href="http://www.w3.org/TR/CSP/">http://www.w3.org/TR/CSP/</a>
+							<a href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a>
 							<br />
 						
-							<a href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</a>
+							<a href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a>
 							<br />
 						
-							<a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</a>
+							<a href="https://web.dev/articles/csp">https://web.dev/articles/csp</a>
 							<br />
 						
-							<a href="http://caniuse.com/#feat=contentsecuritypolicy">http://caniuse.com/#feat=contentsecuritypolicy</a>
+							<a href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a>
 							<br />
 						
-							<a href="http://content-security-policy.com/">http://content-security-policy.com/</a>
+							<a href="https://content-security-policy.com/">https://content-security-policy.com/</a>
 							
 						</td>
 				</tr>
@@ -637,7 +953,7 @@ td {
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>The response does not include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options to protect against &#39;ClickJacking&#39; attacks.</div>
+							<div>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</div>
 							
 						</td>
 				</tr>
@@ -652,13 +968,18 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -668,6 +989,11 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -678,13 +1004,18 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -694,13 +1025,23 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/hacktoberfest/">https://oss.zenika.com/hacktoberfest/</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/contributors">https://oss.zenika.com/contributors</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/contributors</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -710,7 +1051,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
+						<td width="80%">x-frame-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -722,140 +1063,18 @@ td {
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
-				
 					<tr>
 						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/terms/">https://oss.zenika.com/terms/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/getting-started/">https://oss.zenika.com/white-paper/getting-started/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/licenses/">https://oss.zenika.com/white-paper/licenses/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced/">https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/promotion/">https://oss.zenika.com/white-paper/promotion/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Frame-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">8</td>
+					
+					
+					<td width="80%">3</td>
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -870,7 +1089,7 @@ td {
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</a>
 							
 						</td>
 				</tr>
@@ -893,15 +1112,15 @@ td {
 		
 			<table class="results">
 				<tr height="24">
-					<th width="20%" class="risk-2"><a
-						id="90003"></a>
-						<div>Medium</div></th>
-					<th class="risk-2">Sub Resource Integrity Attribute Missing</th>
+					<th width="20%" class="risk-1"><a
+						id="90004"></a>
+						<div>Low</div></th>
+					<th class="risk-1">Cross-Origin-Embedder-Policy Header Missing or Invalid</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content. </div>
+							<div>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don&#39;t explicitly grant the document permission (using CORP or CORS).</div>
 							
 						</td>
 				</tr>
@@ -916,13 +1135,18 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%"></td>
+						<td width="80%">Cross-Origin-Embedder-Policy</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -932,13 +1156,23 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link data-react-helmet=&quot;true&quot; href=&quot;https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/">https://oss.zenika.com/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -948,7 +1182,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%"></td>
+						<td width="80%">Cross-Origin-Embedder-Policy</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -958,144 +1192,51 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;link data-react-helmet=&quot;true&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css&quot;/&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
 						<td width="80%"></td>
 					</tr>
 					<tr>
 						<td width="20%"
-							class="indent2">Attack</td>
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;dns-prefetch&quot; href=&quot;https://www.google-analytics.com&quot;/&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;link rel=&quot;preconnect&quot; href=&quot;https://www.google-analytics.com&quot;/&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; async=&quot;&quot; defer=&quot;&quot; src=&quot;https://buttons.github.io/buttons.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js&quot;&gt;&lt;/script&gt;</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">6</td>
+					
+					
+					<td width="80%">2</td>
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>Provide a valid integrity attribute to the tag.</div>
+							<div>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to &#39;require-corp&#39; for documents.</div>
+							<br />
+						
+							<div>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</div>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity">https://developer.mozilla.org/en/docs/Web/Security/Subresource_Integrity</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</a>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">CWE Id</td>
 					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/345.html">345</a></td>
+						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
 				</tr>
 				<tr>
 					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
+					<td width="80%">14</td>
 				</tr>
 				<tr>
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/90003/">90003</a></td>
+						href="https://www.zaproxy.org/docs/alerts/90004/">90004</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1103,14 +1244,14 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
-						id="10044"></a>
+						id="90004"></a>
 						<div>Low</div></th>
-					<th class="risk-1">Big Redirect Detected (Potential Sensitive Information Leak)</th>
+					<th class="risk-1">Cross-Origin-Opener-Policy Header Missing or Invalid</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>The server has responded with a redirect that seems to provide a large response. This may indicate that although the server sent a redirect it also responded with body content (which may include sensitive details, PII, etc.).</div>
+							<div>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</div>
 							
 						</td>
 				</tr>
@@ -1121,7 +1262,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/terms">https://oss.zenika.com/terms</a></td>
+						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1131,7 +1277,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%"></td>
+						<td width="80%">Cross-Origin-Opener-Policy</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1141,13 +1287,23 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/getting-started">https://oss.zenika.com/white-paper/getting-started</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/">https://oss.zenika.com/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1157,7 +1313,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%"></td>
+						<td width="80%">Cross-Origin-Opener-Policy</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1169,423 +1325,297 @@ td {
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
-				
 					<tr>
 						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/licenses">https://oss.zenika.com/white-paper/licenses</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced">https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/promotion">https://oss.zenika.com/white-paper/promotion</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
+					
+					
+					<td width="80%">2</td>
+					
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that the application/web server sets the Cross-Origin-Opener-Policy header appropriately, and that it sets the Cross-Origin-Opener-Policy header to &#39;same-origin&#39; for documents.</div>
+							<br />
+						
+							<div>&#39;same-origin-allow-popups&#39; is considered as less secured and should be avoided.</div>
+							<br />
+						
+							<div>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Opener-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-opener-policy).</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">14</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/90004/">90004</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-1"><a
+						id="90004"></a>
+						<div>Low</div></th>
+					<th class="risk-1">Cross-Origin-Resource-Policy Header Missing or Invalid</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cross-Origin-Resource-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/">https://oss.zenika.com/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cross-Origin-Resource-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cross-Origin-Resource-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cross-Origin-Resource-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cross-Origin-Resource-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					
+					
 					<td width="80%">5</td>
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>Ensure that no sensitive information is leaked via redirect responses. Redirect responses should have almost no content.</div>
+							<div>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to &#39;same-origin&#39; for all web pages.</div>
+							<br />
+						
+							<div>&#39;same-site&#39; is considered as less secured and should be avoided.</div>
+							<br />
+						
+							<div>If resources must be shared, set the header to &#39;cross-origin&#39;.</div>
+							<br />
+						
+							<div>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</div>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/201.html">201</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10044/">10044</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-1"><a
-						id="10017"></a>
-						<div>Low</div></th>
-					<th class="risk-1">Cross-Domain JavaScript Source File Inclusion</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
 					<td width="80%">
-							<div>The page includes one or more script files from a third-party domain.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://buttons.github.io/buttons.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; async=&quot;&quot; defer=&quot;&quot; src=&quot;https://buttons.github.io/buttons.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/">https://oss.zenika.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://buttons.github.io/buttons.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; async=&quot;&quot; defer=&quot;&quot; src=&quot;https://buttons.github.io/buttons.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/">https://oss.zenika.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/sitemap.xml">https://oss.zenika.com/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/terms">https://oss.zenika.com/terms</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/getting-started">https://oss.zenika.com/white-paper/getting-started</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/licenses">https://oss.zenika.com/white-paper/licenses</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced">https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/promotion">https://oss.zenika.com/white-paper/promotion</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;script data-react-helmet=&quot;true&quot; src=&quot;https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js&quot;&gt;&lt;/script&gt;</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">10</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Ensure JavaScript source files are loaded from only trusted sources, and the sources can&#39;t be controlled by end users of the application.</div>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</a>
 							
 						</td>
 				</tr>
 				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
 					<td width="20%">CWE Id</td>
 					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
+						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
 				</tr>
 				<tr>
 					<td width="20%">WASC Id</td>
-					<td width="80%">15</td>
+					<td width="80%">14</td>
 				</tr>
 				<tr>
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10017/">10017</a></td>
+						href="https://www.zaproxy.org/docs/alerts/90004/">90004</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -1615,6 +1645,11 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
@@ -1631,6 +1666,11 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
@@ -1641,6 +1681,11 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
@@ -1657,13 +1702,23 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/0c4c63ba36255ef63c5755f46b16690584b05066-116023251d8223cf5460.js">https://oss.zenika.com/0c4c63ba36255ef63c5755f46b16690584b05066-116023251d8223cf5460.js</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/chunks/553-459edc7aeaf25f6a.js">https://oss.zenika.com/_next/static/chunks/553-459edc7aeaf25f6a.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/chunks/553-459edc7aeaf25f6a.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1683,13 +1738,23 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/app-42838097a60b694938f8.js">https://oss.zenika.com/app-42838097a60b694938f8.js</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/chunks/main-app-682b115844d0a6a0.js">https://oss.zenika.com/_next/static/chunks/main-app-682b115844d0a6a0.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/chunks/main-app-682b115844d0a6a0.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1709,13 +1774,23 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/component---src-pages-404-jsx-afe6354fa22b8fb25346.js">https://oss.zenika.com/component---src-pages-404-jsx-afe6354fa22b8fb25346.js</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js">https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1737,166 +1812,18 @@ td {
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
-				
 					<tr>
 						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/component---src-pages-index-jsx-a161a06d9b4771c7c7b6.js">https://oss.zenika.com/component---src-pages-index-jsx-a161a06d9b4771c7c7b6.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/cookie.js">https://oss.zenika.com/cookie.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/framework-1ec709e235f166b31ef1.js">https://oss.zenika.com/framework-1ec709e235f166b31ef1.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/polyfill-e2881509948c23874ca7.js">https://oss.zenika.com/polyfill-e2881509948c23874ca7.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/sitemap.xml">https://oss.zenika.com/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/webpack-runtime-9c66aa878bebcee3c801.js">https://oss.zenika.com/webpack-runtime-9c66aa878bebcee3c801.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					
+					<td width="80%">Systemic</td>
+					
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1908,10 +1835,10 @@ td {
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</a>
 							<br />
 						
-							<a href="https://developers.google.com/web/updates/2018/06/feature-policy">https://developers.google.com/web/updates/2018/06/feature-policy</a>
+							<a href="https://developer.chrome.com/blog/feature-policy/">https://developer.chrome.com/blog/feature-policy/</a>
 							<br />
 						
 							<a href="https://scotthelme.co.uk/a-new-security-header-feature-policy/">https://scotthelme.co.uk/a-new-security-header-feature-policy/</a>
@@ -1944,14 +1871,14 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-1"><a
-						id="10096"></a>
+						id="10037"></a>
 						<div>Low</div></th>
-					<th class="risk-1">Timestamp Disclosure - Unix</th>
+					<th class="risk-1">Server Leaks Information via &quot;X-Powered-By&quot; HTTP Response Header Field(s)</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>A timestamp was disclosed by the application/web server - Unix</div>
+							<div>The web/application server is leaking information via one or more &quot;X-Powered-By&quot; HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</div>
 							
 						</td>
 				</tr>
@@ -1966,6 +1893,11 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
@@ -1982,7 +1914,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">138180707</td>
+						<td width="80%">X-Powered-By: Next.js</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
@@ -1992,6 +1929,11 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
@@ -2008,7 +1950,84 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">138180707</td>
+						<td width="80%">X-Powered-By: Next.js</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/%2Fzenika-opensource-logo.png&amp;w=32&amp;q=75">https://oss.zenika.com/%2Fzenika-opensource-logo.png&amp;w=32&amp;q=75</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com//zenika-opensource-logo.png&amp;w=32&amp;q=75</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Next.js</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/robots.txt">https://oss.zenika.com/robots.txt</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/robots.txt</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">X-Powered-By: Next.js</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
@@ -2018,29 +2037,8 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">138180707</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/getting-started">https://oss.zenika.com/white-paper/getting-started</a></td>
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/sitemap.xml</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2060,57 +2058,42 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">138180707</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced">https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced</a></td>
+						<td width="80%">X-Powered-By: Next.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">138180707</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">5</td>
+					
+					<td width="80%">Systemic</td>
+					
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.</div>
+							<div>Ensure that your web server, application server, load balancer, etc. is configured to suppress &quot;X-Powered-By&quot; headers.</div>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							<a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</a>
+							<br />
+						
+							<a href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">CWE Id</td>
 					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+						href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
 				</tr>
 				<tr>
 					<td width="20%">WASC Id</td>
@@ -2119,7 +2102,7 @@ td {
 				<tr>
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10096/">10096</a></td>
+						href="https://www.zaproxy.org/docs/alerts/10037/">10037</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -2145,7 +2128,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/image?q=75&amp;url=%2Fzenika-opensource-logo.png&amp;w=64">https://oss.zenika.com/_next/image?q=75&amp;url=%2Fzenika-opensource-logo.png&amp;w=64</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/image (q,url,w)</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2155,7 +2143,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
+						<td width="80%">x-content-type-options</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2167,270 +2155,24 @@ td {
 							class="indent2">Evidence</td>
 						<td width="80%"></td>
 					</tr>
-				
 					<tr>
 						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/">https://oss.zenika.com/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f">https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/icons/icon-144x144.png?v=d834fecdaadf793d83245a6f56be0c0f">https://oss.zenika.com/icons/icon-144x144.png?v=d834fecdaadf793d83245a6f56be0c0f</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/icons/icon-192x192.png?v=d834fecdaadf793d83245a6f56be0c0f">https://oss.zenika.com/icons/icon-192x192.png?v=d834fecdaadf793d83245a6f56be0c0f</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/icons/icon-256x256.png?v=d834fecdaadf793d83245a6f56be0c0f">https://oss.zenika.com/icons/icon-256x256.png?v=d834fecdaadf793d83245a6f56be0c0f</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/icons/icon-48x48.png?v=d834fecdaadf793d83245a6f56be0c0f">https://oss.zenika.com/icons/icon-48x48.png?v=d834fecdaadf793d83245a6f56be0c0f</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/icons/icon-72x72.png?v=d834fecdaadf793d83245a6f56be0c0f">https://oss.zenika.com/icons/icon-72x72.png?v=d834fecdaadf793d83245a6f56be0c0f</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/icons/icon-96x96.png?v=d834fecdaadf793d83245a6f56be0c0f">https://oss.zenika.com/icons/icon-96x96.png?v=d834fecdaadf793d83245a6f56be0c0f</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/manifest.webmanifest">https://oss.zenika.com/manifest.webmanifest</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/robots.txt">https://oss.zenika.com/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">X-Content-Type-Options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</div>
+							<br />
+						
+							<div>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</div>
+							
+						</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					
+					
+					<td width="80%">1</td>
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2445,7 +2187,7 @@ td {
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a>
+							<a href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a>
 							<br />
 						
 							<a href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a>
@@ -2490,7 +2232,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/image?q=75&amp;url=%2Fpromote-opensource.jpeg&amp;w=3840">https://oss.zenika.com/_next/image?q=75&amp;url=%2Fpromote-opensource.jpeg&amp;w=3840</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/image (q,url,w)</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2510,116 +2257,23 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MiIgaGVpZ2h0PSI4OS43MjMiIHZpZXdCb3g9IjAgMCA5MiA4OS43MjMiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiMwMDA7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDgsMkE0Niw0NiwwLDAsMCwzMy40NTksOTEuNjQ5YzIuMy40MTQsMy4xMzctMSwzLjEzNy0yLjIyNiwwLTEuMDg2LS4wNDEtMy45ODQtLjA2NC03LjgxNS0xMi44LDIuNzY5LTE1LjUtNi4xNjQtMTUuNS02LjE2NC0yLjA5My01LjMyMi01LjEwNi02LjczOS01LjEwNi02LjczOS00LjE4MS0yLjg1Mi4zMTctMi44LjMxNy0yLjgsNC42MTguMzI3LDcuMDQ3LDQuNzM4LDcuMDQ3LDQuNzM4LDQuMSw3LjAzMywxMC43NjksNS4wMDksMTMuMzg2LDMuODMyYTkuODMsOS44MywwLDAsMSwyLjkyMS02LjE1QzI5LjM4OCw2Ny4xNzMsMTguNjQ3LDYzLjIxNywxOC42NDcsNDUuNTlhMTcuNzU3LDE3Ljc1NywwLDAsMSw0LjczOC0xMi4zMzdjLS40NzQtMS4xNjgtMi4wNTYtNS44NDIuNDQ2LTEyLjE3MiwwLDAsMy44NjQtMS4yMzcsMTIuNjUsNC43MTVhNDMuNjMsNDMuNjMsMCwwLDEsMjMuMDM3LDBjOC43ODEtNS45NTIsMTIuNjQxLTQuNzE1LDEyLjY0MS00LjcxNSwyLjUxMiw2LjMzLjkyOSwxMS4wMTIuNDYsMTIuMTcyYTE3Ljc1MiwxNy43NTIsMCwwLDEsNC43MiwxMi4zMzdjMCwxNy42NjktMTAuNzUsMjEuNTYtMjEsMjIuNywxLjY1MSwxLjQxMiwzLjEyMyw0LjIxOCwzLjEyMyw4LjUxOSwwLDYuMTQxLS4wNTUsMTEuMTA5LS4wNTUsMTIuNjA5LDAsMS4yMzcuODI4LDIuNjYzLDMuMTY1LDIuMjEzQTQ2LDQ2LDAsMCwwLDQ4LDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMiAtMikiLz48L3N2Zz4K</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/">https://oss.zenika.com/</a></td>
+						<td width="80%">org/std/Iptc4xmpExt/2008-02-29/</td>
 					</tr>
 					<tr>
 						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MiIgaGVpZ2h0PSI4OS43MjMiIHZpZXdCb3g9IjAgMCA5MiA4OS43MjMiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiMwMDA7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDgsMkE0Niw0NiwwLDAsMCwzMy40NTksOTEuNjQ5YzIuMy40MTQsMy4xMzctMSwzLjEzNy0yLjIyNiwwLTEuMDg2LS4wNDEtMy45ODQtLjA2NC03LjgxNS0xMi44LDIuNzY5LTE1LjUtNi4xNjQtMTUuNS02LjE2NC0yLjA5My01LjMyMi01LjEwNi02LjczOS01LjEwNi02LjczOS00LjE4MS0yLjg1Mi4zMTctMi44LjMxNy0yLjgsNC42MTguMzI3LDcuMDQ3LDQuNzM4LDcuMDQ3LDQuNzM4LDQuMSw3LjAzMywxMC43NjksNS4wMDksMTMuMzg2LDMuODMyYTkuODMsOS44MywwLDAsMSwyLjkyMS02LjE1QzI5LjM4OCw2Ny4xNzMsMTguNjQ3LDYzLjIxNywxOC42NDcsNDUuNTlhMTcuNzU3LDE3Ljc1NywwLDAsMSw0LjczOC0xMi4zMzdjLS40NzQtMS4xNjgtMi4wNTYtNS44NDIuNDQ2LTEyLjE3MiwwLDAsMy44NjQtMS4yMzcsMTIuNjUsNC43MTVhNDMuNjMsNDMuNjMsMCwwLDEsMjMuMDM3LDBjOC43ODEtNS45NTIsMTIuNjQxLTQuNzE1LDEyLjY0MS00LjcxNSwyLjUxMiw2LjMzLjkyOSwxMS4wMTIuNDYsMTIuMTcyYTE3Ljc1MiwxNy43NTIsMCwwLDEsNC43MiwxMi4zMzdjMCwxNy42NjktMTAuNzUsMjEuNTYtMjEsMjIuNywxLjY1MSwxLjQxMiwzLjEyMyw0LjIxOCwzLjEyMyw4LjUxOSwwLDYuMTQxLS4wNTUsMTEuMTA5LS4wNTUsMTIuNjA5LDAsMS4yMzcuODI4LDIuNjYzLDMuMTY1LDIuMjEzQTQ2LDQ2LDAsMCwwLDQ4LDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMiAtMikiLz48L3N2Zz4K</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/component---src-pages-index-jsx-a161a06d9b4771c7c7b6.js">https://oss.zenika.com/component---src-pages-index-jsx-a161a06d9b4771c7c7b6.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTYiIGhlaWdodD0iMTU2IiB2aWV3Qm94PSIwIDAgMTU2IDE1NiI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6IzNkMzMzMzt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik00MDMuNSwzOUExOS41LDE5LjUsMCwxLDEsNDIzLDE5LjUsMTkuNTIyLDE5LjUyMiwwLDAsMSw0MDMuNSwzOVptMC0zNC4xMjVBMTQuNjI1LDE0LjYyNSwwLDEsMCw0MTguMTI1LDE5LjUsMTQuNjM5LDE0LjYzOSwwLDAsMCw0MDMuNSw0Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjY3KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDMxLjMxMyw1NC42MjVhNy4zMTMsNy4zMTMsMCwxLDEsNy4zMTMtNy4zMTJBNy4zMjIsNy4zMjIsMCwwLDEsNDMxLjMxMyw1NC42MjVabTAtOS43NWEyLjQzOCwyLjQzOCwwLDEsMCwyLjQzOCwyLjQzOEEyLjQzOSwyLjQzOSwwLDAsMCw0MzEuMzEzLDQ0Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjk0LjgxMyAtMjcuODEzKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDI5Ljk0Nyw4Ni4wMTZhMi40MzUsMi40MzUsMCwwLDEtMi40My0yLjI4Niw3LjMxMyw3LjMxMywwLDAsMC0xNC42LDAsMi40MzksMi40MzksMCwwLDEtNC44NjgtLjMsMTIuMTg4LDEyLjE4OCwwLDAsMSwyNC4zMjksMCwyLjQzOSwyLjQzOSwwLDAsMS0yLjI4NCwyLjU4NGMtLjA0OCwwLS4xLDAtLjE1LDBabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4My43MjEgLTUwLjA2MykiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQwMy41LDQyM0ExOS41LDE5LjUsMCwxLDEsNDIzLDQwMy41LDE5LjUyMiwxOS41MjIsMCwwLDEsNDAzLjUsNDIzWm0wLTM0LjEyNUExNC42MjUsMTQuNjI1LDAsMSwwLDQxOC4xMjUsNDAzLjUsMTQuNjM5LDE0LjYzOSwwLDAsMCw0MDMuNSwzODguODc1Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNjcgLTI2NykiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQzMS4zMTMsNDM4LjYyNWE3LjMxMyw3LjMxMywwLDEsMSw3LjMxMy03LjMxMkE3LjMyMiw3LjMyMiwwLDAsMSw0MzEuMzEzLDQzOC42MjVabTAtOS43NWEyLjQzOCwyLjQzOCwwLDEsMCwyLjQzOCwyLjQzOEEyLjQzOSwyLjQzOSwwLDAsMCw0MzEuMzEzLDQyOC44NzVabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI5NC44MTMgLTI5NC44MTMpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik00MjkuOTQ3LDQ3MC4wMTZhMi40MzUsMi40MzUsMCwwLDEtMi40My0yLjI4Niw3LjMxMyw3LjMxMywwLDAsMC0xNC42LDAsMi40NjQsMi40NjQsMCwwLDEtMi41ODQsMi4yODQsMi40MzksMi40MzksMCwwLDEtMi4yODQtMi41ODQsMTIuMTg4LDEyLjE4OCwwLDAsMSwyNC4zMjksMCwyLjQzOSwyLjQzOSwwLDAsMS0yLjI4NCwyLjU4NGMtLjA0OCwwLS4xLDAtLjE1LDBabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4My43MjEgLTMxNy4wNjMpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xOS41LDQyM0ExOS41LDE5LjUsMCwxLDEsMzksNDAzLjUsMTkuNTIyLDE5LjUyMiwwLDAsMSwxOS41LDQyM1ptMC0zNC4xMjVBMTQuNjI1LDE0LjYyNSwwLDEsMCwzNC4xMjUsNDAzLjUsMTQuNjM5LDE0LjYzOSwwLDAsMCwxOS41LDM4OC44NzVabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMjY3KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDcuMzEzLDQzOC42MjVhNy4zMTMsNy4zMTMsMCwxLDEsNy4zMTMtNy4zMTJBNy4zMjIsNy4zMjIsMCwwLDEsNDcuMzEzLDQzOC42MjVabTAtOS43NWEyLjQzOCwyLjQzOCwwLDEsMCwyLjQzOCwyLjQzOEEyLjQzOSwyLjQzOSwwLDAsMCw0Ny4zMTMsNDI4Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjcuODEzIC0yOTQuODEzKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDUuOTQ3LDQ3MC4wMTZhMi40MzUsMi40MzUsMCwwLDEtMi40My0yLjI4Niw3LjMxMyw3LjMxMywwLDAsMC0xNC42LDAsMi40NzIsMi40NzIsMCwwLDEtMi41ODQsMi4yODQsMi40MzksMi40MzksMCwwLDEtMi4yODQtMi41ODQsMTIuMTg4LDEyLjE4OCwwLDAsMSwyNC4zMjksMCwyLjQzOSwyLjQzOSwwLDAsMS0yLjI4NCwyLjU4NGMtLjA0OCwwLS4xLDAtLjE1LDBabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2LjcyIC0zMTcuMDYzKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTkuNSwzOUExOS41LDE5LjUsMCwxLDEsMzksMTkuNSwxOS41MjIsMTkuNTIyLDAsMCwxLDE5LjUsMzlabTAtMzQuMTI1QTE0LjYyNSwxNC42MjUsMCwxLDAsMzQuMTI1LDE5LjUsMTQuNjM5LDE0LjYzOSwwLDAsMCwxOS41LDQuODc1Wm0wLDAiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQ3LjMxMyw1NC42MjVhNy4zMTMsNy4zMTMsMCwxLDEsNy4zMTMtNy4zMTJBNy4zMjIsNy4zMjIsMCwwLDEsNDcuMzEzLDU0LjYyNVptMC05Ljc1YTIuNDM4LDIuNDM4LDAsMSwwLDIuNDM4LDIuNDM4QTIuNDM5LDIuNDM5LDAsMCwwLDQ3LjMxMyw0NC44NzVabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI3LjgxMyAtMjcuODEzKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDUuOTQ3LDg2LjAxNmEyLjQzNSwyLjQzNSwwLDAsMS0yLjQzLTIuMjg2LDcuMzEzLDcuMzEzLDAsMCwwLTE0LjYsMCwyLjQzOSwyLjQzOSwwLDAsMS00Ljg2OC0uMywxMi4xODgsMTIuMTg4LDAsMCwxLDI0LjMyOSwwQTIuNDM5LDIuNDM5LDAsMCwxLDQ2LjEsODYuMDExYy0uMDQ4LDAtLjEsMC0uMTUsMFptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTYuNzIgLTUwLjA2MykiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTI1MC40MzgsMzg3LjVBMi40MzUsMi40MzUsMCwwLDEsMjQ4LDM4NS4wNjNWMzcwLjQzOGEyLjQzOCwyLjQzOCwwLDAsMSw0Ljg3NSwwdjE0LjYyNUEyLjQzNSwyLjQzNSwwLDAsMSwyNTAuNDM4LDM4Ny41Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzIuNDM4IC0yNTUuODc1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTUwLjMxMywxNzIuNjI1YTQ2LjMxMyw0Ni4zMTMsMCwxLDEsNDYuMzEzLTQ2LjMxMkE0Ni4zNjQsNDYuMzY0LDAsMCwxLDE1MC4zMTMsMTcyLjYyNVptMC04Ny43NWE0MS40MzgsNDEuNDM4LDAsMSwwLDQxLjQzOCw0MS40MzhBNDEuNDg0LDQxLjQ4NCwwLDAsMCwxNTAuMzEzLDg0Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzIuMzEzIC01NS42MjUpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xNTAuMzEzLDMyMC43NUE0Ni4zNjQsNDYuMzY0LDAsMCwxLDEwNCwyNzQuNDM4YTIuNDM4LDIuNDM4LDAsMCwxLDQuODc1LDAsNDEuNDM4LDQxLjQzOCwwLDAsMCw4Mi44NzUsMCwyLjQzOCwyLjQzOCwwLDAsMSw0Ljg3NSwwQTQ2LjM2NCw0Ni4zNjQsMCwwLDEsMTUwLjMxMywzMjAuNzVabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcyLjMxMyAtMTg5LjEyNSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTM5NC40MzgsMjQ1LjkzOEEyLjQzNSwyLjQzNSwwLDAsMSwzOTIsMjQzLjVWMjI2LjQzOGEyLjQzOCwyLjQzOCwwLDAsMSw0Ljg3NSwwVjI0My41QTIuNDM1LDIuNDM1LDAsMCwxLDM5NC40MzgsMjQ1LjkzOFptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjcyLjU2MyAtMTU1Ljc1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTA2LjQzOCwyNDUuOTM4QTIuNDM1LDIuNDM1LDAsMCwxLDEwNCwyNDMuNVYyMjYuNDM4YTIuNDM4LDIuNDM4LDAsMCwxLDQuODc1LDBWMjQzLjVBMi40MzUsMi40MzUsMCwwLDEsMTA2LjQzOCwyNDUuOTM4Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03Mi4zMTMgLTE1NS43NSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTMzMC40MzgsMzYzLjQyNUEyLjQzNSwyLjQzNSwwLDAsMSwzMjgsMzYwLjk4OHYtMTQuNTVhMi40MzgsMi40MzgsMCwwLDEsNC44NzUsMHYxNC41NUEyLjQzNywyLjQzNywwLDAsMSwzMzAuNDM4LDM2My40MjVabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyOC4wNjMgLTIzOS4xODgpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xNzAuNDM4LDM2My4yNDJBMi40MzUsMi40MzUsMCwwLDEsMTY4LDM2MC44VjM0Ni4xOGEyLjQzNywyLjQzNywwLDEsMSw0Ljg3NSwwVjM2MC44QTIuNDM1LDIuNDM1LDAsMCwxLDE3MC40MzgsMzYzLjI0MlptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTE2LjgxMyAtMjM5LjAwOCkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTEwOS45OTMsMTEyLjQzYTIuNDMzLDIuNDMzLDAsMCwxLTEuNzIzLS43MTRMOTYuMzE0LDk5Ljc2MWEyLjQzNywyLjQzNywwLDAsMSwzLjQ0Ny0zLjQ0N2wxMS45NTUsMTEuOTU1YTIuNDM4LDIuNDM4LDAsMCwxLTEuNzIzLDQuMTYxWm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02Ni40NzEgLTY2LjQ3MSkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTM2My42LDExMi40M2EyLjQzOCwyLjQzOCwwLDAsMS0xLjcyMy00LjE2MWwxMS45NTUtMTEuOTU1YTIuNDM3LDIuNDM3LDAsMCwxLDMuNDQ3LDMuNDQ3bC0xMS45NTUsMTEuOTU1QTIuNDMzLDIuNDMzLDAsMCwxLDM2My42LDExMi40M1ptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjUxLjExNyAtNjYuNDcxKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNOTguMDM3LDM3Ny45ODhhMi40MzgsMi40MzgsMCwwLDEtMS43MjMtNC4xNjFsMTEuOTU1LTExLjk1NWEyLjQzNywyLjQzNywwLDAsMSwzLjQ0NywzLjQ0N0w5OS43NjEsMzc3LjI3NGEyLjQzLDIuNDMsMCwwLDEtMS43MjMuNzE0Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02Ni40NzEgLTI1MS4xMTcpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0zNzUuNTUxLDM3Ny45ODhhMi40MywyLjQzLDAsMCwxLTEuNzIzLS43MTRsLTExLjk1NS0xMS45NTVhMi40MzcsMi40MzcsMCwwLDEsMy40NDctMy40NDdsMTEuOTU1LDExLjk1NWEyLjQzOCwyLjQzOCwwLDAsMS0xLjcyMyw0LjE2MVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjUxLjExNyAtMjUxLjExNykiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIzNy45MzgsMjg0Ljg3NWgtMTkuNWEyLjQzOCwyLjQzOCwwLDAsMSwwLTQuODc1aDE5LjVhMi40MzgsMi40MzgsMCwwLDEsMCw0Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTUwLjE4OCAtMTk0LjY4OCkiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTI1MC40MzgsMjQwLjM3NUEyLjQzNSwyLjQzNSwwLDAsMSwyNDgsMjM3LjkzOHYtMTkuNWEyLjQzOCwyLjQzOCwwLDAsMSw0Ljg3NSwwdjE5LjVBMi40MzUsMi40MzUsMCwwLDEsMjUwLjQzOCwyNDAuMzc1Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzIuNDM4IC0xNTAuMTg4KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjQ0LjE4OCwyMjAuODc1aC05Ljc1YTIuNDM4LDIuNDM4LDAsMCwxLDAtNC44NzVoOS43NWEyLjQzOCwyLjQzOCwwLDAsMSwwLDQuODc1Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjEuMzEzIC0xNTAuMTg4KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjE4LjQzOCwyODAuNjg1QTIuNDM1LDIuNDM1LDAsMCwxLDIxNiwyNzguMjQ3VjI2NS44OTVhMi40MzgsMi40MzgsMCwwLDEsNC44NzUsMHYxMi4zNTNBMi40MzUsMi40MzUsMCwwLDEsMjE4LjQzOCwyODAuNjg1Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNTAuMTg4IC0xODMuMTg1KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjIwLjg3MywzMTEuMzFhMi40MzMsMi40MzMsMCwwLDEtMS43MjMtLjcxNGwtMi40MzctMi40MzdhMi40MzcsMi40MzcsMCwwLDEsMy40NDctMy40NDdsMi40MzgsMi40MzhhMi40MzgsMi40MzgsMCwwLDEtMS43MjMsNC4xNjFabTAsMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE1MC4xODUgLTIxMS4zNzMpIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yODIuNDM4LDI4MC42NjlBMi40MzUsMi40MzUsMCwwLDEsMjgwLDI3OC4yMzF2LTEyLjM2YTIuNDM4LDIuNDM4LDAsMCwxLDQuODc1LDB2MTIuMzZBMi40MzUsMi40MzUsMCwwLDEsMjgyLjQzOCwyODAuNjY5Wm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOTQuNjg4IC0xODMuMTY5KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjc0LjQzNSwzMTEuMzFhMi40MzgsMi40MzgsMCwwLDEtMS43MjMtNC4xNjFsMi40MzgtMi40MzdhMi40MzcsMi40MzcsMCwwLDEsMy40NDcsMy40NDdsLTIuNDM3LDIuNDM4QTIuNDMzLDIuNDMzLDAsMCwxLDI3NC40MzUsMzExLjMxWm0wLDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODkuMTIzIC0yMTEuMzczKSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjQxLjA2MywzMTYuODc1SDIyNi40MzhhMi40MzgsMi40MzgsMCwwLDEsMC00Ljg3NWgxNC42MjVhMi40MzgsMi40MzgsMCwwLDEsMCw0Ljg3NVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTU1Ljc1IC0yMTYuOTM4KSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTk2LjE5LDE4NS4yNzJhMi40MDcsMi40MDcsMCwwLDEtMS4yMTktLjMzLDIxLjk0LDIxLjk0LDAsMSwxLDIxLjk0LS4wMDcsMi40MzcsMi40MzcsMCwwLDEtMi40NDItNC4yMTcsMTcuMDYyLDE3LjA2MiwwLDEsMC0xNy4wNTUsMCwyLjQzOSwyLjQzOSwwLDAsMS0xLjIyNCw0LjU0OVptMCwwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTI3LjkzOCAtMTAwLjEyNSkiLz48L3N2Zz4=</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/promotion">https://oss.zenika.com/white-paper/promotion</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">com/FranckAbgrall/status/1139470547492978688</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/promotion/">https://oss.zenika.com/white-paper/promotion/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">com/FranckAbgrall/status/1139470547492978688</td>
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>��?��&quot;�\���M&lt;�M���</div>
+							
+						</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">5</td>
+					
+					
+					<td width="80%">1</td>
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2631,14 +2285,14 @@ td {
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">http://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
+							<a href="https://projects.webappsec.org/w/page/13246936/Information%20Leakage">https://projects.webappsec.org/w/page/13246936/Information%20Leakage</a>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">CWE Id</td>
 					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+						href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
 				</tr>
 				<tr>
 					<td width="20%">WASC Id</td>
@@ -2648,212 +2302,6 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10094/">10094</a></td>
-				</tr>
-			</table>
-			<div class="spacer"></div>
-		
-			<table class="results">
-				<tr height="24">
-					<th width="20%" class="risk-0"><a
-						id="10027"></a>
-						<div>Informational</div></th>
-					<th class="risk-0">Information Disclosure - Suspicious Comments</th>
-				</tr>
-				<tr>
-					<td width="20%">Description</td>
-					<td width="80%">
-							<div>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</div>
-							
-						</td>
-				</tr>
-				<TR vAlign="top">
-					<TD colspan="2"></TD>
-				</TR>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/0c4c63ba36255ef63c5755f46b16690584b05066-116023251d8223cf5460.js">https://oss.zenika.com/0c4c63ba36255ef63c5755f46b16690584b05066-116023251d8223cf5460.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">query</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/app-42838097a60b694938f8.js">https://oss.zenika.com/app-42838097a60b694938f8.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">bug</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/component---src-pages-hacktoberfest-jsx-d6f7295c8b70c68e10b0.js">https://oss.zenika.com/component---src-pages-hacktoberfest-jsx-d6f7295c8b70c68e10b0.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">user</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/component---src-pages-index-jsx-a161a06d9b4771c7c7b6.js">https://oss.zenika.com/component---src-pages-index-jsx-a161a06d9b4771c7c7b6.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">from</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/framework-1ec709e235f166b31ef1.js">https://oss.zenika.com/framework-1ec709e235f166b31ef1.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">select</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/polyfill-e2881509948c23874ca7.js">https://oss.zenika.com/polyfill-e2881509948c23874ca7.js</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">username</td>
-					</tr>
-				
-				<tr>
-					<td width="20%">Instances</td>
-					<td width="80%">6</td>
-				</tr>
-				<tr>
-					<td width="20%">Solution</td>
-					<td width="80%">
-							<div>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</div>
-							
-						</td>
-				</tr>
-				<tr>
-					<td width="20%">Reference</td>
-					<td width="80%"></td>
-				</tr>
-				<tr>
-					<td width="20%">CWE Id</td>
-					<td width="80%"><a
-						href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
-				</tr>
-				<tr>
-					<td width="20%">WASC Id</td>
-					<td width="80%">13</td>
-				</tr>
-				<tr>
-					<td width="20%">Plugin Id</td>
-					<td width="80%"><a
-						href="https://www.zaproxy.org/docs/alerts/10027/">10027</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>
@@ -2879,7 +2327,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/framework-1ec709e235f166b31ef1.js">https://oss.zenika.com/framework-1ec709e235f166b31ef1.js</a></td>
+						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2899,13 +2352,26 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script&gt;</td>
+						<td width="80%">&lt;a target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:size-4 [&amp;amp;_svg]:shrink-0 underline-offset-4 hover:underline h-10 text-accent hover:text-accent/80 p-0&quot; href=&quot;&quot;&gt;Access Resource&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; class=&quot;lucide lucide-external-link ml-2 h-4 w-4&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M15 3h6v6&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M10 14 21 3&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/polyfill-e2881509948c23874ca7.js">https://oss.zenika.com/polyfill-e2881509948c23874ca7.js</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/">https://oss.zenika.com/</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2925,12 +2391,140 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">&lt;script&gt;</td>
+						<td width="80%">&lt;a target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;amp;_svg]:pointer-events-none [&amp;amp;_svg]:size-4 [&amp;amp;_svg]:shrink-0 underline-offset-4 hover:underline h-10 text-accent hover:text-accent/80 p-0&quot; href=&quot;&quot;&gt;Access Resource&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; class=&quot;lucide lucide-external-link ml-2 h-4 w-4&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M15 3h6v6&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M10 14 21 3&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/%2Fzenika-opensource-logo.png&amp;w=32&amp;q=75">https://oss.zenika.com/%2Fzenika-opensource-logo.png&amp;w=32&amp;q=75</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com//zenika-opensource-logo.png&amp;w=32&amp;q=75</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script src=&quot;/_next/static/chunks/4bd1b696-c023c6e3521b1417.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>No links have been found while there are scripts, which is an indication that this is a modern web application.</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/robots.txt">https://oss.zenika.com/robots.txt</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/robots.txt</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script src=&quot;/_next/static/chunks/4bd1b696-c023c6e3521b1417.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>No links have been found while there are scripts, which is an indication that this is a modern web application.</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/sitemap.xml">https://oss.zenika.com/sitemap.xml</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/sitemap.xml</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">&lt;script src=&quot;/_next/static/chunks/4bd1b696-c023c6e3521b1417.js&quot; async=&quot;&quot;&gt;&lt;/script&gt;</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>No links have been found while there are scripts, which is an indication that this is a modern web application.</div>
+							
+						</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">2</td>
+					
+					<td width="80%">Systemic</td>
+					
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2984,13 +2578,18 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
+						<td width="80%">cache-control</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3000,7 +2599,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
+						<td width="80%">public,max-age=0,must-revalidate</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
@@ -3010,29 +2614,8 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/page-data/404.html/page-data.json">https://oss.zenika.com/page-data/404.html/page-data.json</a></td>
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3042,7 +2625,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
+						<td width="80%">cache-control</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3052,220 +2635,20 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/page-data/app-data.json">https://oss.zenika.com/page-data/app-data.json</a></td>
+						<td width="80%">public,max-age=0,must-revalidate</td>
 					</tr>
 					<tr>
 						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/page-data/index/page-data.json">https://oss.zenika.com/page-data/index/page-data.json</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/page-data/sq/d/3537562275.json">https://oss.zenika.com/page-data/sq/d/3537562275.json</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/page-data/sq/d/3649515864.json">https://oss.zenika.com/page-data/sq/d/3649515864.json</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/robots.txt">https://oss.zenika.com/robots.txt</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/sitemap/sitemap-index.xml">https://oss.zenika.com/sitemap/sitemap-index.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/getting-started/">https://oss.zenika.com/white-paper/getting-started/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced/">https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">public, max-age=0, must-revalidate</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					
+					
+					<td width="80%">2</td>
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -3280,7 +2663,10 @@ td {
 							<a href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a>
 							<br />
 						
-							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</a>
+							<br />
+						
+							<a href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a>
 							
 						</td>
 				</tr>
@@ -3311,7 +2697,7 @@ td {
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as &quot;proxy&quot; caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </div>
+							<div>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as &quot;proxy&quot; caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</div>
 							
 						</td>
 				</tr>
@@ -3322,7 +2708,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com">https://oss.zenika.com</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js">https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3342,13 +2733,26 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 41901</td>
+						<td width="80%">Age: 87</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>The presence of the &#39;Age&#39; header indicates that a HTTP/1.1 compliant caching server is in use.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/">https://oss.zenika.com/</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3368,13 +2772,26 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 41902</td>
+						<td width="80%">Age: 87</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>The presence of the &#39;Age&#39; header indicates that a HTTP/1.1 compliant caching server is in use.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f">https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3394,13 +2811,26 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 0</td>
+						<td width="80%">Age: 117</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>The presence of the &#39;Age&#39; header indicates that a HTTP/1.1 compliant caching server is in use.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/manifest.webmanifest">https://oss.zenika.com/manifest.webmanifest</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3420,13 +2850,26 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 0</td>
+						<td width="80%">Age: 117</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>The presence of the &#39;Age&#39; header indicates that a HTTP/1.1 compliant caching server is in use.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/robots.txt">https://oss.zenika.com/robots.txt</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/favicon.ico">https://oss.zenika.com/favicon.ico</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/favicon.ico</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3446,173 +2889,28 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Age: 38536</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/sitemap.xml">https://oss.zenika.com/sitemap.xml</a></td>
+						<td width="80%">Age: 620991</td>
 					</tr>
 					<tr>
 						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/terms">https://oss.zenika.com/terms</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/getting-started">https://oss.zenika.com/white-paper/getting-started</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/licenses">https://oss.zenika.com/white-paper/licenses</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced">https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/promotion">https://oss.zenika.com/white-paper/promotion</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Age: 0</td>
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>The presence of the &#39;Age&#39; header indicates that a HTTP/1.1 compliant caching server is in use.</div>
+							
+						</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					
+					<td width="80%">Systemic</td>
+					
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
 					<td width="80%">
-							<div>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</div>
+							<div>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</div>
 							<br />
 						
 							<div>Cache-Control: no-cache, no-store, must-revalidate, private</div>
@@ -3631,19 +2929,20 @@ td {
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://tools.ietf.org/html/rfc7234">https://tools.ietf.org/html/rfc7234</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a>
 							<br />
 						
-							<a href="https://tools.ietf.org/html/rfc7231">https://tools.ietf.org/html/rfc7231</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a>
 							<br />
 						
-							<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)">http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</a>
+							<a href="https://www.rfc-editor.org/rfc/rfc9110.html">https://www.rfc-editor.org/rfc/rfc9110.html</a>
 							
 						</td>
 				</tr>
 				<tr>
 					<td width="20%">CWE Id</td>
-					<td width="80%"></td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
 				</tr>
 				<tr>
 					<td width="20%">WASC Id</td>
@@ -3660,14 +2959,670 @@ td {
 			<table class="results">
 				<tr height="24">
 					<th width="20%" class="risk-0"><a
-						id="10049"></a>
+						id="90005"></a>
 						<div>Informational</div></th>
-					<th class="risk-0">Storable but Non-Cacheable Content</th>
+					<th class="risk-0">Sec-Fetch-Dest Header is Missing</th>
 				</tr>
 				<tr>
 					<td width="20%">Description</td>
 					<td width="80%">
-							<div>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </div>
+							<div>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Dest</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Dest</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Dest</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					
+					
+					<td width="80%">3</td>
+					
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that Sec-Fetch-Dest header is included in request headers.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">9</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/90005/">90005</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
+						id="90005"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Sec-Fetch-Mode Header is Missing</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Mode</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Mode</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Mode</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					
+					
+					<td width="80%">3</td>
+					
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that Sec-Fetch-Mode header is included in request headers.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">9</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/90005/">90005</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
+						id="90005"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Sec-Fetch-Site Header is Missing</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>Specifies the relationship between request initiator&#39;s origin and target&#39;s origin.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Site</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Site</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-Site</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					
+					
+					<td width="80%">3</td>
+					
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that Sec-Fetch-Site header is included in request headers.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">9</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/90005/">90005</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
+						id="90005"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Sec-Fetch-User Header is Missing</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>Specifies if a navigation request was initiated by a user.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-User</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-User</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Sec-Fetch-User</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					
+					
+					<td width="80%">3</td>
+					
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that Sec-Fetch-User header is included in user initiated requests.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">9</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/90005/">90005</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
+						id="10049"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Storable and Cacheable Content</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where &quot;shared&quot; caching servers such as &quot;proxy&quot; caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</div>
 							
 						</td>
 				</tr>
@@ -3682,6 +3637,11 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
@@ -3698,7 +3658,15 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>The response is stale, and stale responses are not configured to be re-validated or blocked, using the &#39;must-revalidate&#39;, &#39;proxy-revalidate&#39;, &#39;s-maxage&#39;, or &#39;max-age&#39; response &#39;Cache-Control&#39; directives.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
@@ -3708,6 +3676,11 @@ td {
 					</tr>
 					<tr>
 						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/</td>
+					</tr>
+					<tr>
+						<td width="20%"
 							class="indent2">Method</td>
 						<td width="80%">GET</td>
 					</tr>
@@ -3724,13 +3697,26 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>The response is stale, and stale responses are not configured to be re-validated or blocked, using the &#39;must-revalidate&#39;, &#39;proxy-revalidate&#39;, &#39;s-maxage&#39;, or &#39;max-age&#39; response &#39;Cache-Control&#39; directives.</div>
+							
+						</td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f">https://oss.zenika.com/favicon-32x32.png?v=d834fecdaadf793d83245a6f56be0c0f</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/css/6fef25e0e356b6f5.css</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3750,13 +3736,23 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
+						<td width="80%">max-age=31536000</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/manifest.webmanifest">https://oss.zenika.com/manifest.webmanifest</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/4cf2300e9c8272f7-s.p.woff2</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3776,13 +3772,23 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
+						<td width="80%">max-age=31536000</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
 					</tr>
 				
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/robots.txt">https://oss.zenika.com/robots.txt</a></td>
+						<td width="80%"><a href="https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://oss.zenika.com/_next/static/media/93f479601ee12b01-s.p.woff2</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3802,183 +3808,50 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/sitemap.xml">https://oss.zenika.com/sitemap.xml</a></td>
+						<td width="80%">max-age=31536000</td>
 					</tr>
 					<tr>
 						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
+							class="indent2">Other Info</td>
 						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/terms">https://oss.zenika.com/terms</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/getting-started">https://oss.zenika.com/white-paper/getting-started</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/licenses">https://oss.zenika.com/white-paper/licenses</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced">https://oss.zenika.com/white-paper/preparing-your-project-being-open-sourced</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://oss.zenika.com/white-paper/promotion">https://oss.zenika.com/white-paper/promotion</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">max-age=0</td>
 					</tr>
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					
+					<td width="80%">Systemic</td>
+					
+					
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
-					<td width="80%"></td>
+					<td width="80%">
+							<div>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</div>
+							<br />
+						
+							<div>Cache-Control: no-cache, no-store, must-revalidate, private</div>
+							<br />
+						
+							<div>Pragma: no-cache</div>
+							<br />
+						
+							<div>Expires: 0</div>
+							<br />
+						
+							<div>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</div>
+							
+						</td>
 				</tr>
 				<tr>
 					<td width="20%">Reference</td>
 					<td width="80%">
-							<a href="https://tools.ietf.org/html/rfc7234">https://tools.ietf.org/html/rfc7234</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7234">https://datatracker.ietf.org/doc/html/rfc7234</a>
 							<br />
 						
-							<a href="https://tools.ietf.org/html/rfc7231">https://tools.ietf.org/html/rfc7231</a>
+							<a href="https://datatracker.ietf.org/doc/html/rfc7231">https://datatracker.ietf.org/doc/html/rfc7231</a>
 							<br />
 						
-							<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)">http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</a>
+							<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</a>
 							
 						</td>
 				</tr>
@@ -4000,6 +3873,19 @@ td {
 			<div class="spacer"></div>
 		
 	
+
+	
+		
+			<h3>Sequence Details</h3>
+			<sup>With the associated active scan results.</sup>
+
+			
+
+			<div class="spacer-lg"></div>
+
+		
+	
+
 </body>
 </html>
 

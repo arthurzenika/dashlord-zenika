@@ -1,0 +1,328 @@
+[
+  [
+    {
+      "template": "dns/dns-saas-service-detection.yaml",
+      "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
+      "template-id": "dns-saas-service-detection",
+      "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
+      "info": {
+        "name": "DNS SaaS Service Detection",
+        "author": [
+          "noah @thesubtlety",
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "service",
+          "discovery"
+        ],
+        "description": "A CNAME DNS record was discovered",
+        "reference": [
+          "https://ns1.com/resources/cname",
+          "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+          "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "dns",
+      "host": "faq.zenika.com.",
+      "matched-at": "faq.zenika.com",
+      "extracted-results": [
+        "domain.par.clever-cloud.com."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 59060\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 59060\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t CNAME\n\n;; ANSWER SECTION:\nfaq.zenika.com.\t300\tIN\tCNAME\tdomain.par.clever-cloud.com.\n",
+      "timestamp": "2026-04-03T10:16:33.347628218Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa",
+          "discovery"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "faq.zenika.com.",
+      "matched-at": "faq.zenika.com",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 37615\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 37615\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t CAA\n\n;; ANSWER SECTION:\nfaq.zenika.com.\t300\tIN\tCNAME\tdomain.par.clever-cloud.com.\n\n;; AUTHORITY SECTION:\nclever-cloud.com.\t1800\tIN\tSOA\tangela.ns.cloudflare.com. dns.cloudflare.com. 2398980675 10000 2400 604800 1800\n",
+      "timestamp": "2026-04-03T10:16:33.360219252Z",
+      "matcher-status": true
+    },
+    {
+      "template": "http/miscellaneous/options-method.yaml",
+      "template-url": "https://templates.nuclei.sh/public/options-method",
+      "template-id": "options-method",
+      "template-path": "/home/runner/nuclei-templates/http/miscellaneous/options-method.yaml",
+      "info": {
+        "name": "Allowed Options Method",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "miscellaneous",
+          "misc",
+          "generic",
+          "vuln"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "http",
+      "host": "https://faq.zenika.com",
+      "matched-at": "https://faq.zenika.com",
+      "extracted-results": [
+        "GET,HEAD"
+      ],
+      "request": "OPTIONS / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 8\r\nAllow: GET,HEAD\r\nContent-Type: text/html; charset=utf-8\r\nDate: Fri, 03 Apr 2026 10:16:38 GMT\r\nEtag: W/\"8-ZRAf8oNBS3Bjb/SU2GYZCmbtmXg\"\r\nSozu-Id: 01KN9DGHHEC1VYFHGX29TMCBEP\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nGET,HEAD",
+      "ip": "91.208.207.220",
+      "timestamp": "2026-04-03T10:16:38.83095878Z",
+      "curl-command": "curl -X 'OPTIONS' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/xss-deprecated-header.yaml",
+      "template-url": "https://templates.nuclei.sh/public/xss-deprecated-header",
+      "template-id": "xss-deprecated-header",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/xss-deprecated-header.yaml",
+      "info": {
+        "name": "XSS-Protection Header - Cross-Site Scripting",
+        "author": [
+          "joshlarsen"
+        ],
+        "tags": [
+          "xss",
+          "misconfig",
+          "generic",
+          "vuln"
+        ],
+        "description": "Setting the XSS-Protection header is deprecated. Setting the header to anything other than `0` can actually introduce an XSS vulnerability.",
+        "reference": [
+          "https://developer.mozilla.org/en-us/docs/web/http/headers/x-xss-protection",
+          "https://owasp.org/www-project-secure-headers/#x-xss-protection"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": null,
+          "cvss-metrics": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        }
+      },
+      "type": "http",
+      "host": "https://faq.zenika.com",
+      "matched-at": "https://faq.zenika.com",
+      "extracted-results": [
+        "1; mode=block"
+      ],
+      "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 302 Found\r\nConnection: close\r\nContent-Length: 45\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Fri, 03 Apr 2026 10:16:39 GMT\r\nLocation: https://zenika.faq.team\r\nSozu-Id: 01KN9DGHSXSA4Y44SKAJ3Y37H5\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nFound. Redirecting to https://zenika.faq.team",
+      "ip": "91.208.207.220",
+      "timestamp": "2026-04-03T10:16:39.112386952Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/missing-sri.yaml",
+      "template-url": "https://templates.nuclei.sh/public/missing-sri",
+      "template-id": "missing-sri",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/missing-sri.yaml",
+      "info": {
+        "name": "Missing Subresource Integrity",
+        "author": [
+          "lucky0x0d",
+          "pulsesecurity.co.nz",
+          "sullo amarsct"
+        ],
+        "tags": [
+          "compliance",
+          "js",
+          "css",
+          "sri",
+          "misconfig",
+          "vuln"
+        ],
+        "description": "Checks if external script and stylesheet tags in the HTML response are missing the Subresource Integrity (SRI) attribute.\n",
+        "reference": [
+          "https://cheatsheetseries.owasp.org/cheatsheets/third_party_javascript_management_cheat_sheet.html#subresource-integrity",
+          "https://developer.mozilla.org/en-us/docs/web/security/subresource_integrity"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "http",
+      "host": "https://faq.zenika.com",
+      "matched-at": "https://zenika.faq.team",
+      "extracted-results": [
+        "https://fonts.googleapis.com/icon?family=Material+Icons",
+        "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      ],
+      "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 2265\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Fri, 03 Apr 2026 10:17:23 GMT\r\nEtag: W/\"8d9-19c9f5ecca2\"\r\nLast-Modified: Fri, 27 Feb 2026 13:51:56 GMT\r\nSozu-Id: 01KN9DHXB9F3R3X04D0S72C3X9\r\nX-Powered-By: Express\r\n\r\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>FAQ</title>\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta name=\"description\" content=\"Internal Knowledge Database for your organization\" />\n\n    <meta property=\"og:site_name\" content=\"FAQ Zenika\" />\n    <meta property=\"og:title\" content=\"FAQ Zenika\" />\n    <meta property=\"og:type\" content=\"website\" />\n    <meta property=\"og:url\" content=\"https://faq.zenika.com\" />\n    <meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\" />\n    <meta property=\"og:image:alt\" content=\"Thinking emoji\" />\n    <meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\" />\n\n    <link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\" />\n    <link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\" />\n    <link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\" />\n    <link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\" />\n    <link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" />\n    <link\n      href=\"https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <link\n      rel=\"stylesheet\"\n      href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\"\n      integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\"\n      crossorigin=\"anonymous\"\n    />\n    <link\n      rel=\"stylesheet\"\n      href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\"\n      integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\"\n      crossorigin=\"anonymous\"\n    />\n    <script type=\"module\" crossorigin src=\"/assets/index-bc1ae9eb.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/index-c68034df.css\">\n  </head>\n\n  <body>\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\"></div>\n    \n  </body>\n</html>\n",
+      "ip": "91.208.207.220",
+      "timestamp": "2026-04-03T10:17:23.696165305Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com/'",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/detect-ssl-issuer.yaml",
+      "template-url": "https://templates.nuclei.sh/public/ssl-issuer",
+      "template-id": "ssl-issuer",
+      "template-path": "/home/runner/nuclei-templates/ssl/detect-ssl-issuer.yaml",
+      "info": {
+        "name": "Detect SSL Certificate Issuer",
+        "author": [
+          "lingtren"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "Extract the issuer's organization from the target's certificate. Issuers are entities which sign and distribute certificates.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "faq.zenika.com",
+      "matched-at": "faq.zenika.com:443",
+      "extracted-results": [
+        "Let's Encrypt"
+      ],
+      "ip": "91.208.207.220",
+      "timestamp": "2026-04-03T10:18:49.197871223Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/ssl-dns-names.yaml",
+      "template-url": "https://templates.nuclei.sh/public/ssl-dns-names",
+      "template-id": "ssl-dns-names",
+      "template-path": "/home/runner/nuclei-templates/ssl/ssl-dns-names.yaml",
+      "info": {
+        "name": "SSL DNS Names",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "vuln"
+        ],
+        "description": "Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "ssl",
+      "host": "faq.zenika.com",
+      "matched-at": "faq.zenika.com:443",
+      "extracted-results": [
+        "faq.zenika.com"
+      ],
+      "ip": "91.208.207.220",
+      "timestamp": "2026-04-03T10:18:49.198031382Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "faq.zenika.com",
+      "matched-at": "faq.zenika.com:443",
+      "extracted-results": [
+        "tls12"
+      ],
+      "ip": "91.208.207.220",
+      "timestamp": "2026-04-03T10:18:50.633103443Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://templates.nuclei.sh/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "faq.zenika.com",
+      "matched-at": "faq.zenika.com:443",
+      "extracted-results": [
+        "tls13"
+      ],
+      "ip": "91.208.207.220",
+      "timestamp": "2026-04-03T10:18:50.810452763Z",
+      "matcher-status": true
+    }
+  ]
+]

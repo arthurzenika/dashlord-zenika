@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Thu, 2 Apr 2026 13:59:12",
-	"created": "2026-04-02T13:59:12.565074129Z",
+	"@generated": "Fri, 3 Apr 2026 09:44:58",
+	"created": "2026-04-03T09:44:58.505298727Z",
 	"insights":[
 		{
 			"level": "Info",
@@ -74,7 +74,7 @@
 			"site": "https://next.zenika.com",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "75"
+			"statistic": "100"
 		}
 	],
 	"site":[ 
@@ -95,7 +95,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "18",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -125,7 +125,7 @@
 					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
 					"instances":[ 
 						{
-							"id": "5",
+							"id": "14",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -155,7 +155,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "3",
+							"id": "8",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -185,7 +185,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "10",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -215,7 +215,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "7",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -225,7 +225,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "49",
+							"id": "55",
 							"uri": "https://next.zenika.com/build/bundle.css",
 							"nodeName": "https:\/\/next.zenika.com\/build\/bundle.css",
 							"method": "GET",
@@ -235,7 +235,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "57",
+							"id": "61",
 							"uri": "https://next.zenika.com/build/bundle.js",
 							"nodeName": "https:\/\/next.zenika.com\/build\/bundle.js",
 							"method": "GET",
@@ -245,7 +245,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "21",
+							"id": "6",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -255,7 +255,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "40",
+							"id": "51",
 							"uri": "https://next.zenika.com/global.css",
 							"nodeName": "https:\/\/next.zenika.com\/global.css",
 							"method": "GET",
@@ -285,7 +285,7 @@
 					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
 					"instances":[ 
 						{
-							"id": "55",
+							"id": "59",
 							"uri": "https://next.zenika.com/build/bundle.js",
 							"nodeName": "https:\/\/next.zenika.com\/build\/bundle.js",
 							"method": "GET",
@@ -315,7 +315,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "1",
+							"id": "4",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -325,7 +325,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "56",
+							"id": "60",
 							"uri": "https://next.zenika.com/build/bundle.js",
 							"nodeName": "https:\/\/next.zenika.com\/build\/bundle.js",
 							"method": "GET",
@@ -355,7 +355,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "24",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -365,7 +365,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "13",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -375,7 +375,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "50",
+							"id": "52",
 							"uri": "https://next.zenika.com/global.css",
 							"nodeName": "https:\/\/next.zenika.com\/global.css",
 							"method": "GET",
@@ -385,7 +385,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
+							"id": "33",
 							"uri": "https://next.zenika.com/robots.txt",
 							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
@@ -395,7 +395,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "29",
+							"id": "21",
 							"uri": "https://next.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -425,7 +425,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "10",
+							"id": "26",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -435,7 +435,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "53",
+							"id": "57",
 							"uri": "https://next.zenika.com/build/bundle.css",
 							"nodeName": "https:\/\/next.zenika.com\/build\/bundle.css",
 							"method": "GET",
@@ -445,7 +445,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "59",
+							"id": "63",
 							"uri": "https://next.zenika.com/build/bundle.js",
 							"nodeName": "https:\/\/next.zenika.com\/build\/bundle.js",
 							"method": "GET",
@@ -455,7 +455,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "26",
+							"id": "16",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -465,7 +465,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "51",
+							"id": "54",
 							"uri": "https://next.zenika.com/global.css",
 							"nodeName": "https:\/\/next.zenika.com\/global.css",
 							"method": "GET",
@@ -495,7 +495,7 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "22",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -525,7 +525,7 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "32",
 							"uri": "https://next.zenika.com/robots.txt",
 							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
@@ -533,19 +533,9 @@
 							"attack": "",
 							"evidence": "403",
 							"otherinfo": ""
-						},
-						{
-							"id": "16",
-							"uri": "https://next.zenika.com/sitemap.xml",
-							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "403",
-							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "1",
 					"systemic": true,
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
 					"otherinfo": "",
@@ -565,7 +555,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "6",
+							"id": "17",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -595,7 +585,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "13",
+							"id": "39",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -605,7 +595,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "31",
+							"id": "30",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -615,7 +605,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "45",
+							"id": "44",
 							"uri": "https://next.zenika.com/robots.txt",
 							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
@@ -625,7 +615,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "39",
+							"id": "43",
 							"uri": "https://next.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -655,7 +645,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "12",
+							"id": "38",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -665,7 +655,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "28",
+							"id": "29",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -675,7 +665,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "43",
+							"id": "40",
 							"uri": "https://next.zenika.com/robots.txt",
 							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
@@ -685,7 +675,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "38",
+							"id": "37",
 							"uri": "https://next.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -715,7 +705,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "11",
+							"id": "36",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -725,7 +715,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "27",
+							"id": "28",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -735,7 +725,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "36",
+							"id": "34",
 							"uri": "https://next.zenika.com/robots.txt",
 							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
@@ -745,7 +735,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "37",
+							"id": "35",
 							"uri": "https://next.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -775,7 +765,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "42",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -785,7 +775,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "32",
+							"id": "31",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -805,7 +795,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "41",
+							"id": "45",
 							"uri": "https://next.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -835,7 +825,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "0",
+							"id": "2",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -845,7 +835,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "48",
+							"id": "53",
 							"uri": "https://next.zenika.com/build/bundle.css",
 							"nodeName": "https:\/\/next.zenika.com\/build\/bundle.css",
 							"method": "GET",
@@ -855,7 +845,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "54",
+							"id": "58",
 							"uri": "https://next.zenika.com/build/bundle.js",
 							"nodeName": "https:\/\/next.zenika.com\/build\/bundle.js",
 							"method": "GET",
@@ -865,17 +855,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "18",
-							"uri": "https://next.zenika.com/favicon.png",
-							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
-						},
-						{
-							"id": "35",
+							"id": "48",
 							"uri": "https://next.zenika.com/global.css",
 							"nodeName": "https:\/\/next.zenika.com\/global.css",
 							"method": "GET",
@@ -885,14 +865,14 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"systemic": true,
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information. If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</p>",
 					"otherinfo": "<p>In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.</p>",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				}
 			]
 		}

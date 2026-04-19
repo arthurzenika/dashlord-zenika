@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 12 Apr 2026 01:26:57",
-	"created": "2026-04-12T01:26:57.929596606Z",
+	"@generated": "Sun, 19 Apr 2026 01:29:51",
+	"created": "2026-04-19T01:29:51.340750709Z",
 	"insights":[
 		{
 			"level": "Low",
@@ -90,7 +90,7 @@
 			"site": "https://zenika.com",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "100"
+			"statistic": "31"
 		}
 	],
 	"site":[ 
@@ -111,7 +111,7 @@
 					"desc": "<p>The identified library appears to be vulnerable.</p>",
 					"instances":[ 
 						{
-							"id": "168",
+							"id": "174",
 							"uri": "https://zenika.com/_next/static/chunks/main-43763f558ab2c597.js",
 							"nodeName": "https:\/\/zenika.com\/_next\/static\/chunks\/main-43763f558ab2c597.js",
 							"method": "GET",
@@ -128,7 +128,7 @@
 					"reference": "<p>https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/</p>",
 					"cweid": "1395",
 					"wascid": "-1",
-					"sourceid": "106"
+					"sourceid": "100"
 				},
 				{
 					"pluginid": "10038",
@@ -141,7 +141,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "13",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -151,7 +151,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "13",
+							"id": "14",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -161,9 +161,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "5",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "88",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -171,7 +171,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "54",
+							"id": "0",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -181,7 +181,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "66",
+							"id": "38",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -198,7 +198,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10020",
@@ -211,7 +211,7 @@
 					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "3",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -221,7 +221,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "80",
+							"id": "92",
 							"uri": "https://zenika.com/contact",
 							"nodeName": "https:\/\/zenika.com\/contact",
 							"method": "GET",
@@ -231,7 +231,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "1",
+							"id": "2",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -241,9 +241,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "107",
-							"uri": "https://zenika.com/pages/offers?q=optimize",
-							"nodeName": "https:\/\/zenika.com\/pages\/offers (q)",
+							"id": "82",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "x-frame-options",
 							"attack": "",
@@ -251,7 +251,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "0",
+							"id": "101",
 							"uri": "https://zenika.com/pages/values",
 							"nodeName": "https:\/\/zenika.com\/pages\/values",
 							"method": "GET",
@@ -268,7 +268,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90003",
@@ -281,7 +281,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "27",
+							"id": "30",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -291,7 +291,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "28",
+							"id": "31",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -301,9 +301,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "18",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "6",
+							"uri": "https://zenika.com/robots.txt",
+							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -311,9 +311,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "19",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "7",
+							"uri": "https://zenika.com/robots.txt",
+							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -321,9 +321,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "20",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "8",
+							"uri": "https://zenika.com/robots.txt",
+							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -351,7 +351,7 @@
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "15",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -361,7 +361,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "15",
+							"id": "16",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -371,9 +371,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "6",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "89",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true",
 							"attack": "",
@@ -381,7 +381,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "55",
+							"id": "1",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -391,7 +391,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "67",
+							"id": "39",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -408,7 +408,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90004",
@@ -421,7 +421,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "84",
+							"id": "80",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -431,7 +431,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "91",
+							"id": "76",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -441,9 +441,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "99",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
@@ -471,7 +471,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "85",
+							"id": "81",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -481,7 +481,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "92",
+							"id": "77",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -491,9 +491,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "48",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "100",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
 							"attack": "",
@@ -521,7 +521,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "83",
+							"id": "79",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -531,7 +531,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "87",
+							"id": "75",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -541,9 +541,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "46",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "98",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -571,7 +571,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "82",
+							"id": "78",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -581,7 +581,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "86",
+							"id": "74",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -591,9 +591,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "45",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "97",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -601,7 +601,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
+							"id": "33",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -611,7 +611,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "72",
+							"id": "69",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -641,7 +641,7 @@
 					"desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>",
 					"instances":[ 
 						{
-							"id": "39",
+							"id": "47",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -651,7 +651,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "41",
+							"id": "46",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -661,9 +661,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "22",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "94",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -671,7 +671,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "58",
+							"id": "9",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -681,7 +681,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "70",
+							"id": "59",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -711,7 +711,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "29",
+							"id": "34",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -721,7 +721,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "26",
+							"id": "28",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -731,9 +731,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "17",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "91",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -741,7 +741,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "57",
+							"id": "5",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -751,7 +751,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "69",
+							"id": "54",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -781,7 +781,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "38",
+							"id": "45",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -791,7 +791,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "99",
+							"id": "118",
 							"uri": "https://zenika.com/contact",
 							"nodeName": "https:\/\/zenika.com\/contact",
 							"method": "GET",
@@ -801,7 +801,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "40",
+							"id": "44",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -811,9 +811,9 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "127",
-							"uri": "https://zenika.com/pages/offers?q=optimize",
-							"nodeName": "https:\/\/zenika.com\/pages\/offers (q)",
+							"id": "93",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -821,7 +821,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "21",
+							"id": "126",
 							"uri": "https://zenika.com/pages/values",
 							"nodeName": "https:\/\/zenika.com\/pages\/values",
 							"method": "GET",
@@ -851,7 +851,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "105",
+							"id": "50",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -861,7 +861,7 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
-							"id": "103",
+							"id": "120",
 							"uri": "https://zenika.com/contact",
 							"nodeName": "https:\/\/zenika.com\/contact",
 							"method": "GET",
@@ -871,7 +871,7 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
-							"id": "165",
+							"id": "171",
 							"uri": "https://zenika.com/fr-FR/agency/brest",
 							"nodeName": "https:\/\/zenika.com\/fr-FR\/agency\/brest",
 							"method": "GET",
@@ -881,7 +881,7 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
-							"id": "104",
+							"id": "49",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -891,7 +891,7 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
-							"id": "142",
+							"id": "170",
 							"uri": "https://zenika.com/pages/contenus",
 							"nodeName": "https:\/\/zenika.com\/pages\/contenus",
 							"method": "GET",
@@ -901,8 +901,28 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
-							"id": "141",
-							"uri": "https://zenika.com/pages/offers?q=optimize",
+							"id": "95",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/_next/static/EXgxlic_iMxODnJfVo3Eu/_buildManifest",
+							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
+						},
+						{
+							"id": "138",
+							"uri": "https://zenika.com/pages/offers",
+							"nodeName": "https:\/\/zenika.com\/pages\/offers",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/_next/static/EXgxlic_iMxODnJfVo3Eu/_buildManifest",
+							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
+						},
+						{
+							"id": "152",
+							"uri": "https://zenika.com/pages/offers?q=innovate",
 							"nodeName": "https:\/\/zenika.com\/pages\/offers (q)",
 							"method": "GET",
 							"param": "",
@@ -911,7 +931,7 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
-							"id": "49",
+							"id": "128",
 							"uri": "https://zenika.com/pages/values",
 							"nodeName": "https:\/\/zenika.com\/pages\/values",
 							"method": "GET",
@@ -921,7 +941,7 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
-							"id": "61",
+							"id": "22",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -931,7 +951,7 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						},
 						{
-							"id": "73",
+							"id": "60",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -941,14 +961,14 @@
 							"otherinfo": "\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2"
 						}
 					],
-					"count": "9",
+					"count": "11",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
 					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0017\uFFFD\\x0019bs\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFDh\uFFFDK\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10109",
@@ -961,7 +981,7 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "23",
+							"id": "21",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -971,7 +991,7 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"id": "25",
+							"id": "20",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -981,17 +1001,17 @@
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"id": "16",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "90",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<a class=\"jss31 jss27 jss32\" target=\"_self\" href=\"/pages/values\">Valeurs</a>",
+							"evidence": "<a class=\"jss31 jss27\" target=\"_self\" href=\"/pages/values\">Valeurs</a>",
 							"otherinfo": "Links have been found with a target of '_self' - this is often used by modern frameworks to force a full page reload."
 						},
 						{
-							"id": "56",
+							"id": "4",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -1001,7 +1021,7 @@
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "68",
+							"id": "48",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1031,7 +1051,7 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "59",
+							"id": "29",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -1041,7 +1061,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "71",
+							"id": "68",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1058,7 +1078,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "59"
+					"sourceid": "9"
 				},
 				{
 					"pluginid": "10015",
@@ -1071,7 +1091,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "11",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -1081,7 +1101,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "88",
+							"id": "102",
 							"uri": "https://zenika.com/contact",
 							"nodeName": "https:\/\/zenika.com\/contact",
 							"method": "GET",
@@ -1091,7 +1111,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "10",
+							"id": "12",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -1101,9 +1121,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "110",
-							"uri": "https://zenika.com/pages/contenus",
-							"nodeName": "https:\/\/zenika.com\/pages\/contenus",
+							"id": "87",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1111,7 +1131,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "4",
+							"id": "106",
 							"uri": "https://zenika.com/pages/values",
 							"nodeName": "https:\/\/zenika.com\/pages\/values",
 							"method": "GET",
@@ -1128,7 +1148,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1141,9 +1161,9 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "52",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "56",
+							"uri": "https://zenika.com/",
+							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1151,7 +1171,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "64",
+							"id": "58",
+							"uri": "https://zenika.com/fr-fr",
+							"nodeName": "https:\/\/zenika.com\/fr-fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "25",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -1161,7 +1191,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "76",
+							"id": "66",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1171,14 +1201,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": true,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "56"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1191,9 +1221,9 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "51",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "53",
+							"uri": "https://zenika.com/",
+							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1201,7 +1231,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "63",
+							"id": "55",
+							"uri": "https://zenika.com/fr-fr",
+							"nodeName": "https:\/\/zenika.com\/fr-fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "24",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -1211,7 +1251,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
+							"id": "63",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1221,14 +1261,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": true,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "56"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1241,9 +1281,9 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "50",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "51",
+							"uri": "https://zenika.com/",
+							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1251,7 +1291,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "62",
+							"id": "52",
+							"uri": "https://zenika.com/fr-fr",
+							"nodeName": "https:\/\/zenika.com\/fr-fr",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "23",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -1261,7 +1311,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "74",
+							"id": "61",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1271,14 +1321,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": true,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "56"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "90005",
@@ -1291,9 +1341,9 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "53",
-							"uri": "https://zenika.com/pages/values",
-							"nodeName": "https:\/\/zenika.com\/pages\/values",
+							"id": "57",
+							"uri": "https://zenika.com/",
+							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1301,7 +1351,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
+							"id": "64",
+							"uri": "https://zenika.com/fr-fr",
+							"nodeName": "https:\/\/zenika.com\/fr-fr",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "26",
 							"uri": "https://zenika.com/robots.txt",
 							"nodeName": "https:\/\/zenika.com\/robots.txt",
 							"method": "GET",
@@ -1311,7 +1371,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "77",
+							"id": "67",
 							"uri": "https://zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1321,14 +1381,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": true,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "56"
+					"sourceid": "3"
 				},
 				{
 					"pluginid": "10049",
@@ -1341,7 +1401,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "78",
+							"id": "62",
 							"uri": "https://zenika.com/",
 							"nodeName": "https:\/\/zenika.com\/",
 							"method": "GET",
@@ -1351,7 +1411,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "101",
+							"id": "121",
 							"uri": "https://zenika.com/contact",
 							"nodeName": "https:\/\/zenika.com\/contact",
 							"method": "GET",
@@ -1361,7 +1421,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "79",
+							"id": "65",
 							"uri": "https://zenika.com/fr-fr",
 							"nodeName": "https:\/\/zenika.com\/fr-fr",
 							"method": "GET",
@@ -1371,9 +1431,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "130",
-							"uri": "https://zenika.com/pages/offers?q=optimize",
-							"nodeName": "https:\/\/zenika.com\/pages\/offers (q)",
+							"id": "96",
+							"uri": "https://zenika.com/pages/green-it",
+							"nodeName": "https:\/\/zenika.com\/pages\/green-it",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1381,7 +1441,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "44",
+							"id": "129",
 							"uri": "https://zenika.com/pages/values",
 							"nodeName": "https:\/\/zenika.com\/pages\/values",
 							"method": "GET",
@@ -1399,6 +1459,46 @@
 					"cweid": "524",
 					"wascid": "13",
 					"sourceid": "3"
+				},
+				{
+					"pluginid": "10049",
+					"alertRef": "10049-2",
+					"alert": "Storable but Non-Cacheable Content",
+					"name": "Storable but Non-Cacheable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
+					"instances":[ 
+						{
+							"id": "147",
+							"uri": "https://zenika.com/static/images/favicon-16x16.png",
+							"nodeName": "https:\/\/zenika.com\/static\/images\/favicon-16x16.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0",
+							"otherinfo": ""
+						},
+						{
+							"id": "143",
+							"uri": "https://zenika.com/static/images/favicon-32x32.png",
+							"nodeName": "https:\/\/zenika.com\/static\/images\/favicon-32x32.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0",
+							"otherinfo": ""
+						}
+					],
+					"count": "2",
+					"systemic": true,
+					"solution": "",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "71"
 				}
 			]
 		}

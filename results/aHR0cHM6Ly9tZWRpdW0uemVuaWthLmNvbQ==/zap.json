@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 3 May 2026 02:14:36",
-	"created": "2026-05-03T02:14:36.030442326Z",
+	"@generated": "Sun, 10 May 2026 02:17:54",
+	"created": "2026-05-10T02:17:54.819841230Z",
 	"insights":[
 		{
 			"level": "Info",
@@ -43,14 +43,6 @@
 			"key": "insight.endpoint.total",
 			"description": "Count of total endpoints",
 			"statistic": "2"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://medium.zenika.com",
-			"key": "insight.response.slow",
-			"description": "Percentage of slow responses",
-			"statistic": "100"
 		}
 	],
 	"site":[ 
@@ -71,7 +63,7 @@
 					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "1",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -82,7 +74,7 @@
 						}
 					],
 					"count": "1",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The directive(s): form-action is/are among the directives that do not fallback to default-src.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
@@ -101,7 +93,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "2",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -112,7 +104,7 @@
 						}
 					],
 					"count": "1",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined:</p><p>script-src, style-src, img-src, connect-src, frame-src, font-src, media-src, object-src, manifest-src, worker-src</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
@@ -131,7 +123,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "16",
+							"id": "3",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -142,7 +134,7 @@
 						}
 					],
 					"count": "1",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>script-src includes unsafe-inline.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
@@ -161,7 +153,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "17",
+							"id": "4",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -172,7 +164,7 @@
 						}
 					],
 					"count": "1",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
 					"reference": "<p>https://www.w3.org/TR/CSP/</p><p>https://caniuse.com/#search=content+security+policy</p><p>https://content-security-policy.com/</p><p>https://github.com/HtmlUnit/htmlunit-csp</p><p>https://web.dev/articles/csp#resource-options</p>",
@@ -191,7 +183,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "39",
+							"id": "26",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -201,7 +193,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "38",
+							"id": "25",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -211,7 +203,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "40",
+							"id": "27",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -221,7 +213,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "42",
+							"id": "29",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -231,13 +223,13 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "41",
+							"id": "28",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/manifest.3dfd863f.js\"></script>",
+							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/manifest.beeeed50.js\"></script>",
 							"otherinfo": ""
 						}
 					],
@@ -261,7 +253,7 @@
 					"desc": "<p>A cookie has been set with its SameSite attribute set to \"none\", which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
-							"id": "19",
+							"id": "6",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -271,7 +263,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "18",
+							"id": "5",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -282,7 +274,7 @@
 						}
 					],
 					"count": "2",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that the SameSite attribute is set to either 'lax' or ideally 'strict' for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
@@ -301,7 +293,7 @@
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"id": "22",
+							"id": "9",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -311,7 +303,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "11",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -321,27 +313,27 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
+							"id": "10",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
-							"param": "https://cdn-client.medium.com/lite/static/js/main.58bca11c.js",
+							"param": "https://cdn-client.medium.com/lite/static/js/main.63c5706a.js",
 							"attack": "",
-							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/main.58bca11c.js\"></script>",
+							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/main.63c5706a.js\"></script>",
 							"otherinfo": ""
 						},
 						{
-							"id": "21",
+							"id": "8",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
-							"param": "https://cdn-client.medium.com/lite/static/js/manifest.3dfd863f.js",
+							"param": "https://cdn-client.medium.com/lite/static/js/manifest.beeeed50.js",
 							"attack": "",
-							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/manifest.3dfd863f.js\"></script>",
+							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/manifest.beeeed50.js\"></script>",
 							"otherinfo": ""
 						},
 						{
-							"id": "20",
+							"id": "7",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -371,7 +363,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "66",
+							"id": "53",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -382,7 +374,7 @@
 						}
 					],
 					"count": "1",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
@@ -401,7 +393,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "67",
+							"id": "54",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -412,7 +404,7 @@
 						}
 					],
 					"count": "1",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Opener-Policy header appropriately, and that it sets the Cross-Origin-Opener-Policy header to 'same-origin' for documents.</p><p>'same-origin-allow-popups' is considered as less secured and should be avoided.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Opener-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-opener-policy).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy</p>",
@@ -431,7 +423,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "65",
+							"id": "52",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -442,7 +434,7 @@
 						}
 					],
 					"count": "1",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to 'same-origin' for all web pages.</p><p>'same-site' is considered as less secured and should be avoided.</p><p>If resources must be shared, set the header to 'cross-origin'.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
@@ -461,7 +453,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "64",
+							"id": "51",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -472,7 +464,7 @@
 						}
 					],
 					"count": "1",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
@@ -491,7 +483,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "37",
+							"id": "24",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -501,7 +493,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "0",
+							"id": "55",
+							"uri": "https://medium.zenika.com/robots.txt",
+							"nodeName": "https:\/\/medium.zenika.com\/robots.txt",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "56",
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -511,8 +513,8 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
-					"systemic": true,
+					"count": "3",
+					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
@@ -531,7 +533,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "57",
+							"id": "44",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -542,7 +544,7 @@
 						}
 					],
 					"count": "1",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
@@ -561,20 +563,20 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "58",
+							"id": "45",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "vvKgECdM3VSXYH9VLk1OUz/ThUy6w3pB6X91C1BQOxk1+6Ba3H1L1EyPSsPOT5Pk",
-							"otherinfo": "\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS?\u04C5L\uFFFD\uFFFDzA\uFFFDu\\x000bPP;\\x00195\uFFFD\uFFFDZ\uFFFD}K\uFFFDL\uFFFDJ\uFFFD\uFFFDO\uFFFD\uFFFD"
+							"evidence": "vvKgECdM3VSXYH9VLk1OUzB0fm3oXdW4fJQygtoLbLo1w1h0kUbE5uzLPvQPv6/g",
+							"otherinfo": "\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS0t~m\uFFFD]\u0578|\uFFFD2\uFFFD\uFFFD\\x000bl\uFFFD5\uFFFDXt\uFFFDF\uFFFD\uFFFD\uFFFD\uFFFD>\uFFFD\\x000f\uFFFD\uFFFD\uFFFD"
 						}
 					],
 					"count": "1",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS?\u04C5L\uFFFD\uFFFDzA\uFFFDu\\x000bPP;\\x00195\uFFFD\uFFFDZ\uFFFD}K\uFFFDL\uFFFDJ\uFFFD\uFFFDO\uFFFD\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS0t~m\uFFFD]\u0578|\uFFFD2\uFFFD\uFFFD\\x000bl\uFFFD5\uFFFDXt\uFFFDF\uFFFD\uFFFD\uFFFD\uFFFD>\uFFFD\\x000f\uFFFD\uFFFD\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
@@ -591,7 +593,7 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "11",
+							"id": "50",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -601,7 +603,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "68",
+							"id": "65",
 							"uri": "https://medium.zenika.com/robots.txt",
 							"nodeName": "https:\/\/medium.zenika.com\/robots.txt",
 							"method": "GET",
@@ -611,7 +613,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "12",
+							"id": "69",
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -622,13 +624,13 @@
 						}
 					],
 					"count": "3",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -641,7 +643,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "48",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -651,7 +653,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "9",
+							"id": "60",
+							"uri": "https://medium.zenika.com/robots.txt",
+							"nodeName": "https:\/\/medium.zenika.com\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "66",
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -661,14 +673,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
-					"systemic": true,
+					"count": "3",
+					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -681,7 +693,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "6",
+							"id": "47",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -691,7 +703,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "5",
+							"id": "58",
+							"uri": "https://medium.zenika.com/robots.txt",
+							"nodeName": "https:\/\/medium.zenika.com\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "64",
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -701,14 +723,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
-					"systemic": true,
+					"count": "3",
+					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -721,7 +743,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "46",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -731,7 +753,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "3",
+							"id": "57",
+							"uri": "https://medium.zenika.com/robots.txt",
+							"nodeName": "https:\/\/medium.zenika.com\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "59",
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -741,14 +773,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
-					"systemic": true,
+					"count": "3",
+					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -761,7 +793,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "49",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -771,7 +803,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "10",
+							"id": "62",
+							"uri": "https://medium.zenika.com/robots.txt",
+							"nodeName": "https:\/\/medium.zenika.com\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "68",
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -781,14 +823,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "2",
-					"systemic": true,
+					"count": "3",
+					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10112",
@@ -801,7 +843,7 @@
 					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
 					"instances":[ 
 						{
-							"id": "13",
+							"id": "0",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",

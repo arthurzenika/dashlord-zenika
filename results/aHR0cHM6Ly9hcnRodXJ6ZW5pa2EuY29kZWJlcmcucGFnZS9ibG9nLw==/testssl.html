@@ -21,7 +21,7 @@
   Using <i>OpenSSL 1.0.2-bad (Mar 28 2025)</i>  [~183 ciphers]
   on runnervmeorf1:/home/testssl/bin/openssl.Linux.x86_64
 
-<span style="color:white;background-color:black;"> Start 2026-05-03 02:52:25        --&gt;&gt; 217.197.84.141:443 (arthurzenika.codeberg.page) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2026-05-10 02:55:42        --&gt;&gt; 217.197.84.141:443 (arthurzenika.codeberg.page) &lt;&lt;--</span>
 
  Further IP addresses:   2a0a:4580:103f:c0de::2 
  rDNS (217.197.84.141):  codeberg-141.in-berlin.de.
@@ -51,6 +51,7 @@
 
 <span style="text-decoration:underline;font-weight:bold;"> Testing server&apos;s cipher preferences </span>
 
+<span style="color:#cd00cd;">Fixme: something weird happened around line 7091</span>
 Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Cipher Suite Name (IANA/RFC)
 -----------------------------------------------------------------------------------------------------------------------------
 <u>SSLv2</u>
@@ -63,9 +64,9 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
  - 
 <u>TLSv1.2</u> (server order)
 <u>TLSv1.3</u>
-<span style="color:#cd00cd;">Local problem: Your /home/testssl/bin/openssl.Linux.x86_64 does not support -tls1_3</span>
+<span style="color:#cd00cd;">Local problem: /home/testssl/bin/openssl.Linux.x86_64 doesn&apos;t support &quot;s_client -tls1_3&quot;</span>
 
-<span style="font-weight:bold;"> Has server cipher order?     </span><span style="color:#008817;">yes (OK)</span> -- only for &lt; TLS 1.3
+<span style="font-weight:bold;"> Has server cipher order?     </span><span style="color:#008817;font-weight:bold;">yes (OK)</span> -- TLS 1.3 and below
 
 
 <span style="text-decoration:underline;font-weight:bold;"> Testing robust forward secrecy (FS)</span><u> -- omitting Null Authentication/Encryption, 3DES, RC4 </u>
@@ -93,19 +94,19 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>EC <span style="color:#008817;">256</span> bits (curve P-256)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication
-<span style="font-weight:bold;"> Serial                       </span>05E288A15D3877028B36410B22BCC6BCCDE2 (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 1E6DFF17FE975C4A0EC6F8541AE024EDF0876A8B
-                              SHA256 231DCF89CF8DC18D19368232EC2673B643B5B412EEBDA4CA84E57F092D7F81B8
+<span style="font-weight:bold;"> Serial                       </span>055EB9AEEA08873498CB102EFE71B632E56C (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 08E3A839C2138F6602FE58D327EBDB2678F56BE5
+                              SHA256 691A52D906FF5F45BB6FC7824A02C8FAEA4551C5BC552ECC0110F01BD0EF58C6
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>*.codeberg.page </i> (request w/o SNI didn&apos;t succeed, usual for EC certificates)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>*.codeberg.page </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN wildcard and CN wildcard</span> (SNI mandatory)
                               <span style="color:#a86437;">wildcard certificate</span> could be problematic, see other hosts at
-                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=231DCF89CF8DC18D19368232EC2673B643B5B412EEBDA4CA84E57F092D7F81B8
+                              https://search.censys.io/search?resource=hosts&amp;virtual_hosts=INCLUDE&amp;q=691A52D906FF5F45BB6FC7824A02C8FAEA4551C5BC552ECC0110F01BD0EF58C6
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">30 &gt;= 30 days</span> (2026-03-04 16:54 --&gt; 2026-06-02 16:54)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">83 &gt;= 30 days</span> (2026-05-03 16:04 --&gt; 2026-08-01 16:04)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
-<span style="font-weight:bold;"> Certificate Revocation List  </span>http://e7.c.lencr.org/99.crl
+<span style="font-weight:bold;"> Certificate Revocation List  </span>http://e7.c.lencr.org/109.crl
 <span style="font-weight:bold;"> OCSP URI                     </span>--
 <span style="font-weight:bold;"> OCSP stapling                </span>not offered
 <span style="font-weight:bold;"> OCSP must staple extension   </span>--
@@ -203,10 +204,9 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Key Exchange </span>    (weighted)  100 (30)
 <span style="font-weight:bold;"> Cipher Strength </span> (weighted)  60 (24)
 <span style="font-weight:bold;"> Final Score                  </span>84
-<span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A-</span>
-<span style="font-weight:bold;"> Grade warning                </span><span style="color:#c05600;">TLS 1.3 is not supported</span>
+<span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2026-05-03 02:54:08 [ 105s] --&gt;&gt; 217.197.84.141:443 (arthurzenika.codeberg.page) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2026-05-10 02:57:16 [  96s] --&gt;&gt; 217.197.84.141:443 (arthurzenika.codeberg.page) &lt;&lt;--</span>
 
 
 </pre>

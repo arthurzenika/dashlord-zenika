@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 10 May 2026 02:21:43",
-	"created": "2026-05-10T02:21:43.067295844Z",
+	"@generated": "Sun, 17 May 2026 02:27:54",
+	"created": "2026-05-17T02:27:54.690783083Z",
 	"insights":[
 		{
 			"level": "Info",
@@ -74,7 +74,7 @@
 			"site": "https://next.zenika.com",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "87"
+			"statistic": "75"
 		}
 	],
 	"site":[ 
@@ -95,7 +95,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "5",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -112,7 +112,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10020",
@@ -155,7 +155,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "41",
+							"id": "33",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -172,7 +172,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "90004",
@@ -185,7 +185,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "45",
+							"id": "37",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -215,7 +215,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "37",
+							"id": "32",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -245,7 +245,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "33",
+							"id": "49",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -255,7 +255,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "49",
+							"id": "48",
 							"uri": "https://next.zenika.com/global.css",
 							"nodeName": "https:\/\/next.zenika.com\/global.css",
 							"method": "GET",
@@ -272,7 +272,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10110",
@@ -315,7 +315,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "36",
+							"id": "29",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -342,7 +342,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10035",
@@ -365,7 +365,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "1",
+							"id": "25",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -375,7 +375,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "40",
+							"id": "24",
 							"uri": "https://next.zenika.com/global.css",
 							"nodeName": "https:\/\/next.zenika.com\/global.css",
 							"method": "GET",
@@ -385,7 +385,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "9",
+							"id": "11",
 							"uri": "https://next.zenika.com/robots.txt",
 							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
@@ -395,7 +395,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "38",
+							"id": "10",
 							"uri": "https://next.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -412,7 +412,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10021",
@@ -455,7 +455,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "5",
+							"id": "27",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -465,7 +465,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "43",
+							"id": "26",
 							"uri": "https://next.zenika.com/global.css",
 							"nodeName": "https:\/\/next.zenika.com\/global.css",
 							"method": "GET",
@@ -482,7 +482,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10109",
@@ -512,7 +512,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
@@ -525,7 +525,7 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "28",
+							"id": "14",
 							"uri": "https://next.zenika.com/robots.txt",
 							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
@@ -535,7 +535,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
+							"id": "15",
 							"uri": "https://next.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -552,7 +552,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "12"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -582,7 +582,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -595,7 +595,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "27",
+							"id": "41",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -605,9 +605,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "22",
-							"uri": "https://next.zenika.com/favicon.png",
-							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
+							"id": "21",
+							"uri": "https://next.zenika.com/robots.txt",
+							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -615,9 +615,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "19",
-							"uri": "https://next.zenika.com/robots.txt",
-							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
+							"id": "20",
+							"uri": "https://next.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -645,7 +645,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "26",
+							"id": "40",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -655,9 +655,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "17",
-							"uri": "https://next.zenika.com/favicon.png",
-							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
+							"id": "19",
+							"uri": "https://next.zenika.com/robots.txt",
+							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -666,8 +666,8 @@
 						},
 						{
 							"id": "18",
-							"uri": "https://next.zenika.com/robots.txt",
-							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
+							"uri": "https://next.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -695,7 +695,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "20",
+							"id": "38",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -705,9 +705,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "15",
-							"uri": "https://next.zenika.com/favicon.png",
-							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
+							"id": "17",
+							"uri": "https://next.zenika.com/robots.txt",
+							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -716,8 +716,8 @@
 						},
 						{
 							"id": "16",
-							"uri": "https://next.zenika.com/robots.txt",
-							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
+							"uri": "https://next.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -732,7 +732,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -745,7 +745,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "32",
+							"id": "42",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -755,9 +755,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "25",
-							"uri": "https://next.zenika.com/favicon.png",
-							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
+							"id": "23",
+							"uri": "https://next.zenika.com/robots.txt",
+							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -765,9 +765,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "21",
-							"uri": "https://next.zenika.com/robots.txt",
-							"nodeName": "https:\/\/next.zenika.com\/robots.txt",
+							"id": "22",
+							"uri": "https://next.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/next.zenika.com\/sitemap.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -782,7 +782,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -795,7 +795,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "34",
+							"id": "28",
 							"uri": "https://next.zenika.com",
 							"nodeName": "https:\/\/next.zenika.com",
 							"method": "GET",
@@ -825,7 +825,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "31",
+							"id": "47",
 							"uri": "https://next.zenika.com/favicon.png",
 							"nodeName": "https:\/\/next.zenika.com\/favicon.png",
 							"method": "GET",
@@ -835,7 +835,7 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "48",
+							"id": "46",
 							"uri": "https://next.zenika.com/global.css",
 							"nodeName": "https:\/\/next.zenika.com\/global.css",
 							"method": "GET",
@@ -852,7 +852,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "8"
 				}
 			]
 		}

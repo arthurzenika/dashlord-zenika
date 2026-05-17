@@ -1,33 +1,33 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "D",
+    "grade": "C",
     "error": null,
-    "score": 30,
+    "score": 50,
     "statusCode": 200,
-    "testsFailed": 5,
-    "testsPassed": 5,
+    "testsFailed": 4,
+    "testsPassed": 6,
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "openresty",
-      "date": "Sun, 10 May 2026 02:18:41 GMT",
+      "date": "Sun, 17 May 2026 02:24:13 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "sepia-upstream": "medium",
       "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
       "content-security-policy": "frame-ancestors 'self' https://medium.com",
-      "etag": "W/\"13f8a-bEhRLEEngs4GBBzgtfDYjS4gk0g\"",
+      "etag": "W/\"13d67-dOgnUK+X90RYd5Fe80YYXdBK7WI\"",
       "link": "<https://www.google.com>; rel=\"preconnect\", <https://www.gstatic.com>; rel=\"preconnect\", <https://glyph.medium.com/css/unbound.css>; as=\"style\"; rel=\"preload\"",
-      "medium-fulfilled-by": "valencia/main-20260504-223759-76e7fd0d24, lite/main-20260508-193330-d6a2856265, rito/main-20260508-201745-84e0504115, tutu/main-20260508-232906-226dd3b5a9",
-      "medium-missing-time": "154",
+      "medium-fulfilled-by": "valencia/main-20260511-135638-023e828cf1, lite/main-20260515-204929-fa4d8f9047, rito/main-20260513-135557-710c41baa7, tutu/main-20260514-200709-4b2fb24105",
+      "medium-missing-time": "335",
       "set-cookie": [
-        "uid=lo_ca33f211e3f9; Path=/; Expires=Mon, 14 Jun 2027 02:18:41 GMT; HttpOnly; Secure; SameSite=None",
-        "sid=1:vvKgECdM3VSXYH9VLk1OU9+siLqSddkHUTxid/5KHK+5qEUHspqoGzW99DWb8lDQ; Path=/; Expires=Mon, 14 Jun 2027 02:18:41 GMT; HttpOnly; Secure; SameSite=None"
+        "uid=lo_2959b537af63; Path=/; Expires=Mon, 21 Jun 2027 02:24:13 GMT; HttpOnly; Secure; SameSite=None",
+        "sid=1:vvKgECdM3VSXYH9VLk1OU9WZjrviVcX6c1hZBGScO0u7VMos03+yf4KRFW72oR9U; Path=/; Expires=Mon, 21 Jun 2027 02:24:13 GMT; HttpOnly; Secure; SameSite=None"
       ],
       "vary": "Accept-Encoding",
-      "x-envoy-upstream-service-time": "422",
-      "x-request-received-at": "1778379521102"
+      "x-envoy-upstream-service-time": "500",
+      "x-request-received-at": "1778984653440"
     }
   },
   "tests": {
@@ -67,7 +67,7 @@
       "data": {
         "uid": {
           "domain": "medium.zenika.com",
-          "expires": "2027-06-14T02:18:41.000Z",
+          "expires": "2027-06-21T02:24:13.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -76,7 +76,7 @@
         },
         "sid": {
           "domain": "medium.zenika.com",
-          "expires": "2027-06-14T02:18:41.000Z",
+          "expires": "2027-06-21T02:24:13.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -103,12 +103,17 @@
     },
     "redirection": {
       "expectation": "redirection-to-https",
-      "pass": false,
-      "result": "redirection-invalid-cert",
-      "scoreModifier": -20,
-      "destination": "https://medium.zenika.com/?gi=15a0c0b39e9a",
+      "pass": true,
+      "result": "redirection-to-https",
+      "scoreModifier": 0,
+      "destination": "https://medium.zenika.com/?gi=a373d0c1175b",
       "redirects": true,
-      "route": [],
+      "route": [
+        "http://medium.zenika.com/",
+        "https://medium.zenika.com/",
+        "https://medium.com/m/global-identity-2?redirectUrl=https%3A%2F%2Fmedium.zenika.com%2F",
+        "https://medium.zenika.com/?gi=a373d0c1175b"
+      ],
       "statusCode": 200
     },
     "referrer-policy": {
@@ -123,7 +128,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-invalid-cert",
+      "result": "hsts-not-implemented-no-https",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
@@ -141,15 +146,15 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/manifest.beeeed50.js": {
+        "https://cdn-client.medium.com/lite/static/js/manifest.6963f60b.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/2746.261ecfe2.js": {
+        "https://cdn-client.medium.com/lite/static/js/9906.484ea143.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/main.63c5706a.js": {
+        "https://cdn-client.medium.com/lite/static/js/main.ad6f4b0a.js": {
           "crossorigin": null,
           "integrity": null
         },
@@ -157,51 +162,35 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/5049.9ac3f35f.chunk.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
         "https://cdn-client.medium.com/lite/static/js/1950.30b4d557.chunk.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/7566.4c650114.chunk.js": {
+        "https://cdn-client.medium.com/lite/static/js/3927.ee35b633.chunk.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/3777.ffc82891.chunk.js": {
+        "https://cdn-client.medium.com/lite/static/js/3903.24f9835a.chunk.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/7908.fd958323.chunk.js": {
+        "https://cdn-client.medium.com/lite/static/js/8329.92941e70.chunk.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/3927.4e25e3d1.chunk.js": {
+        "https://cdn-client.medium.com/lite/static/js/4076.e7151070.chunk.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/3903.9c7d1a84.chunk.js": {
+        "https://cdn-client.medium.com/lite/static/js/3408.faf28fe7.chunk.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/8329.59a5fe0f.chunk.js": {
+        "https://cdn-client.medium.com/lite/static/js/4518.e3e85ab9.chunk.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/4076.8881b186.chunk.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn-client.medium.com/lite/static/js/3408.14fdc740.chunk.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn-client.medium.com/lite/static/js/4518.870687d0.chunk.js": {
-          "crossorigin": null,
-          "integrity": null
-        },
-        "https://cdn-client.medium.com/lite/static/js/PublicationProfilePage.MainContent.615ea10a.chunk.js": {
+        "https://cdn-client.medium.com/lite/static/js/PublicationProfilePage.MainContent.271b9c88.chunk.js": {
           "crossorigin": null,
           "integrity": null
         }

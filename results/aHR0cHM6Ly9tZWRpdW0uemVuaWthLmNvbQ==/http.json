@@ -10,24 +10,24 @@
     "testsQuantity": 10,
     "responseHeaders": {
       "server": "openresty",
-      "date": "Sun, 17 May 2026 02:24:13 GMT",
+      "date": "Sun, 24 May 2026 02:31:55 GMT",
       "content-type": "text/html; charset=utf-8",
       "transfer-encoding": "chunked",
       "connection": "close",
       "sepia-upstream": "medium",
       "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
       "content-security-policy": "frame-ancestors 'self' https://medium.com",
-      "etag": "W/\"13d67-dOgnUK+X90RYd5Fe80YYXdBK7WI\"",
+      "etag": "W/\"13f17-bmPnHH7wKeh7RMxh/a4FbEk8okY\"",
       "link": "<https://www.google.com>; rel=\"preconnect\", <https://www.gstatic.com>; rel=\"preconnect\", <https://glyph.medium.com/css/unbound.css>; as=\"style\"; rel=\"preload\"",
-      "medium-fulfilled-by": "valencia/main-20260511-135638-023e828cf1, lite/main-20260515-204929-fa4d8f9047, rito/main-20260513-135557-710c41baa7, tutu/main-20260514-200709-4b2fb24105",
-      "medium-missing-time": "335",
+      "medium-fulfilled-by": "valencia/main-20260522-234055-819452a82c, lite/main-20260522-234055-819452a82c, rito/main-20260522-234055-819452a82c, tutu/main-20260522-234055-819452a82c",
+      "medium-missing-time": "312",
       "set-cookie": [
-        "uid=lo_2959b537af63; Path=/; Expires=Mon, 21 Jun 2027 02:24:13 GMT; HttpOnly; Secure; SameSite=None",
-        "sid=1:vvKgECdM3VSXYH9VLk1OU9WZjrviVcX6c1hZBGScO0u7VMos03+yf4KRFW72oR9U; Path=/; Expires=Mon, 21 Jun 2027 02:24:13 GMT; HttpOnly; Secure; SameSite=None"
+        "uid=lo_5e8b77de178d; Path=/; Expires=Mon, 28 Jun 2027 02:31:55 GMT; HttpOnly; Secure; SameSite=None",
+        "sid=1:vvKgECdM3VSXYH9VLk1OUzMT0x1yZSmYhoOSyjzbezi5RGEbsPvWM1wfCZqCOBPk; Path=/; Expires=Mon, 28 Jun 2027 02:31:55 GMT; HttpOnly; Secure; SameSite=None"
       ],
       "vary": "Accept-Encoding",
-      "x-envoy-upstream-service-time": "500",
-      "x-request-received-at": "1778984653440"
+      "x-envoy-upstream-service-time": "315",
+      "x-request-received-at": "1779589915573"
     }
   },
   "tests": {
@@ -67,7 +67,7 @@
       "data": {
         "uid": {
           "domain": "medium.zenika.com",
-          "expires": "2027-06-21T02:24:13.000Z",
+          "expires": "2027-06-28T02:31:55.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -76,7 +76,7 @@
         },
         "sid": {
           "domain": "medium.zenika.com",
-          "expires": "2027-06-21T02:24:13.000Z",
+          "expires": "2027-06-28T02:31:55.000Z",
           "httponly": true,
           "path": "/",
           "port": null,
@@ -106,13 +106,13 @@
       "pass": true,
       "result": "redirection-to-https",
       "scoreModifier": 0,
-      "destination": "https://medium.zenika.com/?gi=a373d0c1175b",
+      "destination": "https://medium.zenika.com/?gi=78e9f9e3f7ee",
       "redirects": true,
       "route": [
         "http://medium.zenika.com/",
         "https://medium.zenika.com/",
         "https://medium.com/m/global-identity-2?redirectUrl=https%3A%2F%2Fmedium.zenika.com%2F",
-        "https://medium.zenika.com/?gi=a373d0c1175b"
+        "https://medium.zenika.com/?gi=78e9f9e3f7ee"
       ],
       "statusCode": 200
     },
@@ -128,7 +128,7 @@
     "strict-transport-security": {
       "expectation": "hsts-implemented-max-age-at-least-six-months",
       "pass": false,
-      "result": "hsts-not-implemented-no-https",
+      "result": "hsts-not-implemented",
       "scoreModifier": -20,
       "data": null,
       "includeSubDomains": false,
@@ -146,15 +146,15 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/manifest.6963f60b.js": {
+        "https://cdn-client.medium.com/lite/static/js/manifest.3042c2f8.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/9906.484ea143.js": {
+        "https://cdn-client.medium.com/lite/static/js/233.842e7579.js": {
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/main.ad6f4b0a.js": {
+        "https://cdn-client.medium.com/lite/static/js/main.14c96844.js": {
           "crossorigin": null,
           "integrity": null
         },
@@ -162,7 +162,7 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/1950.30b4d557.chunk.js": {
+        "https://cdn-client.medium.com/lite/static/js/7078.6a844fe5.chunk.js": {
           "crossorigin": null,
           "integrity": null
         },
@@ -174,7 +174,7 @@
           "crossorigin": null,
           "integrity": null
         },
-        "https://cdn-client.medium.com/lite/static/js/8329.92941e70.chunk.js": {
+        "https://cdn-client.medium.com/lite/static/js/8329.1a6e894e.chunk.js": {
           "crossorigin": null,
           "integrity": null
         },

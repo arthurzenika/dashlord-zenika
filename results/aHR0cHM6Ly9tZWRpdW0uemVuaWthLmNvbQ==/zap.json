@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 17 May 2026 02:23:29",
-	"created": "2026-05-17T02:23:29.839023696Z",
+	"@generated": "Sun, 24 May 2026 02:31:06",
+	"created": "2026-05-24T02:31:06.775487522Z",
 	"insights":[
 		{
 			"level": "Info",
@@ -43,6 +43,14 @@
 			"key": "insight.endpoint.total",
 			"description": "Count of total endpoints",
 			"statistic": "2"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://medium.zenika.com",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "100"
 		}
 	],
 	"site":[ 
@@ -219,7 +227,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/9906.484ea143.js\"></script>",
+							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/233.842e7579.js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -229,7 +237,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/manifest.6963f60b.js\"></script>",
+							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/manifest.3042c2f8.js\"></script>",
 							"otherinfo": ""
 						}
 					],
@@ -297,9 +305,9 @@
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
-							"param": "https://cdn-client.medium.com/lite/static/js/9906.484ea143.js",
+							"param": "https://cdn-client.medium.com/lite/static/js/233.842e7579.js",
 							"attack": "",
-							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/9906.484ea143.js\"></script>",
+							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/233.842e7579.js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -317,9 +325,9 @@
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
-							"param": "https://cdn-client.medium.com/lite/static/js/main.ad6f4b0a.js",
+							"param": "https://cdn-client.medium.com/lite/static/js/main.14c96844.js",
 							"attack": "",
-							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/main.ad6f4b0a.js\"></script>",
+							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/main.14c96844.js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -327,9 +335,9 @@
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
-							"param": "https://cdn-client.medium.com/lite/static/js/manifest.6963f60b.js",
+							"param": "https://cdn-client.medium.com/lite/static/js/manifest.3042c2f8.js",
 							"attack": "",
-							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/manifest.6963f60b.js\"></script>",
+							"evidence": "<script src=\"https://cdn-client.medium.com/lite/static/js/manifest.3042c2f8.js\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -493,9 +501,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "2",
-							"uri": "https://medium.zenika.com/sitemap.xml",
-							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
+							"id": "1",
+							"uri": "https://medium.zenika.com/robots.txt",
+							"nodeName": "https:\/\/medium.zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -559,14 +567,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "vvKgECdM3VSXYH9VLk1OUzCVPTPTBqXej0UmL+RAnJhx65H2IDriPbW+R2prQWwc",
-							"otherinfo": "\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS0\uFFFD=3\uFFFD\\x0006\uFFFD\u078FE&/\uFFFD@\uFFFD\uFFFDq\uFFFD\uFFFD :\uFFFD=\uFFFD\uFFFDGjkAl\\x001c"
+							"evidence": "vvKgECdM3VSXYH9VLk1OU2P64lZxp5GEJsOFQ34lO7ade3RYH9ztqGVDIZtFed8P",
+							"otherinfo": "\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNSc\uFFFD\uFFFDVq\uFFFD\uFFFD\uFFFD&\u00C5C~%;\uFFFD\uFFFD{tX\\x001f\uFFFD\uFFFDeC!\uFFFDEy\uFFFD\\x000f"
 						}
 					],
 					"count": "1",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNS0\uFFFD=3\uFFFD\\x0006\uFFFD\u078FE&/\uFFFD@\uFFFD\uFFFDq\uFFFD\uFFFD :\uFFFD=\uFFFD\uFFFDGjkAl\\x001c</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\\x0010'L\uFFFDT\uFFFD`U.MNSc\uFFFD\uFFFDVq\uFFFD\uFFFD\uFFFD&\u00C5C~%;\uFFFD\uFFFD{tX\\x001f\uFFFD\uFFFDeC!\uFFFDEy\uFFFD\\x000f</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
@@ -583,7 +591,7 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "3",
+							"id": "50",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -603,7 +611,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
+							"id": "3",
 							"uri": "https://medium.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -620,7 +628,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -633,7 +641,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "58",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -643,7 +651,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "11",
+							"id": "10",
 							"uri": "https://medium.zenika.com/robots.txt",
 							"nodeName": "https:\/\/medium.zenika.com\/robots.txt",
 							"method": "GET",
@@ -651,16 +659,26 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "9",
+							"uri": "https://medium.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -673,7 +691,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "57",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -683,7 +701,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "10",
+							"id": "8",
 							"uri": "https://medium.zenika.com/robots.txt",
 							"nodeName": "https:\/\/medium.zenika.com\/robots.txt",
 							"method": "GET",
@@ -691,16 +709,26 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "7",
+							"uri": "https://medium.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -713,7 +741,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "5",
+							"id": "56",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -731,16 +759,26 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "5",
+							"uri": "https://medium.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90005",
@@ -753,7 +791,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "59",
 							"uri": "https://medium.zenika.com",
 							"nodeName": "https:\/\/medium.zenika.com",
 							"method": "GET",
@@ -763,7 +801,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "12",
+							"id": "11",
 							"uri": "https://medium.zenika.com/robots.txt",
 							"nodeName": "https:\/\/medium.zenika.com\/robots.txt",
 							"method": "GET",
@@ -771,16 +809,26 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "12",
+							"uri": "https://medium.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/medium.zenika.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "7"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10112",

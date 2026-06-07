@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 31 May 2026 03:03:08",
-	"created": "2026-05-31T03:03:08.579830416Z",
+	"@generated": "Sun, 7 Jun 2026 03:34:00",
+	"created": "2026-06-07T03:34:00.762033156Z",
 	"insights":[
 		{
 			"level": "Info",
@@ -98,7 +98,7 @@
 			"site": "https://arthurzenika.codeberg.page",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "54"
+			"statistic": "50"
 		}
 	],
 	"site":[ 
@@ -119,7 +119,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "15",
 							"uri": "https://arthurzenika.codeberg.page/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/",
 							"method": "GET",
@@ -139,7 +139,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
+							"id": "59",
 							"uri": "https://arthurzenika.codeberg.page/blog/authors/arthur-lutz-zenika/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/authors\/arthur-lutz-zenika\/",
 							"method": "GET",
@@ -149,7 +149,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "40",
+							"id": "14",
 							"uri": "https://arthurzenika.codeberg.page/robots.txt",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/robots.txt",
 							"method": "GET",
@@ -159,7 +159,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "41",
+							"id": "45",
 							"uri": "https://arthurzenika.codeberg.page/sitemap.xml",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/sitemap.xml",
 							"method": "GET",
@@ -199,7 +199,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "58",
+							"id": "54",
 							"uri": "https://arthurzenika.codeberg.page/blog/authors/arthur-lutz-zenika/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/authors\/arthur-lutz-zenika\/",
 							"method": "GET",
@@ -209,7 +209,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "89",
+							"id": "78",
 							"uri": "https://arthurzenika.codeberg.page/blog/decouverte-des-claviers-mecaniques.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/decouverte-des-claviers-mecaniques.html",
 							"method": "GET",
@@ -219,7 +219,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "79",
+							"id": "60",
 							"uri": "https://arthurzenika.codeberg.page/blog/fosdem-2026-retour.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/fosdem-2026-retour.html",
 							"method": "GET",
@@ -229,7 +229,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "49",
+							"id": "82",
 							"uri": "https://arthurzenika.codeberg.page/blog/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
 							"method": "GET",
@@ -259,9 +259,29 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "18",
 							"uri": "https://arthurzenika.codeberg.page/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"https://design.codeberg.org/design-kit/codeberg.css\" />",
+							"otherinfo": ""
+						},
+						{
+							"id": "19",
+							"uri": "https://arthurzenika.codeberg.page/",
+							"nodeName": "https:\/\/arthurzenika.codeberg.page\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.codeberg.org/dist/inter/Inter%20Web/inter.css\" />",
+							"otherinfo": ""
+						},
+						{
+							"id": "16",
+							"uri": "https://arthurzenika.codeberg.page/robots.txt",
+							"nodeName": "https:\/\/arthurzenika.codeberg.page\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -270,26 +290,6 @@
 						},
 						{
 							"id": "17",
-							"uri": "https://arthurzenika.codeberg.page/",
-							"nodeName": "https:\/\/arthurzenika.codeberg.page\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" href=\"https://fonts.codeberg.org/dist/inter/Inter%20Web/inter.css\" />",
-							"otherinfo": ""
-						},
-						{
-							"id": "42",
-							"uri": "https://arthurzenika.codeberg.page/robots.txt",
-							"nodeName": "https:\/\/arthurzenika.codeberg.page\/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<link rel=\"stylesheet\" href=\"https://design.codeberg.org/design-kit/codeberg.css\" />",
-							"otherinfo": ""
-						},
-						{
-							"id": "43",
 							"uri": "https://arthurzenika.codeberg.page/robots.txt",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/robots.txt",
 							"method": "GET",
@@ -299,7 +299,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "44",
+							"id": "53",
 							"uri": "https://arthurzenika.codeberg.page/sitemap.xml",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/sitemap.xml",
 							"method": "GET",
@@ -339,7 +339,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "73",
+							"id": "66",
 							"uri": "https://arthurzenika.codeberg.page/blog/authors/arthur-lutz-zenika/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/authors\/arthur-lutz-zenika\/",
 							"method": "GET",
@@ -347,19 +347,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"id": "87",
-							"uri": "https://arthurzenika.codeberg.page/blog/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
-							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
 					"otherinfo": "",
@@ -389,7 +379,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "74",
+							"id": "67",
 							"uri": "https://arthurzenika.codeberg.page/blog/authors/arthur-lutz-zenika/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/authors\/arthur-lutz-zenika\/",
 							"method": "GET",
@@ -397,19 +387,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"id": "88",
-							"uri": "https://arthurzenika.codeberg.page/blog/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
-							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Opener-Policy header appropriately, and that it sets the Cross-Origin-Opener-Policy header to 'same-origin' for documents.</p><p>'same-origin-allow-popups' is considered as less secured and should be avoided.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Opener-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-opener-policy).</p>",
 					"otherinfo": "",
@@ -439,7 +419,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "67",
+							"id": "77",
 							"uri": "https://arthurzenika.codeberg.page/blog/assets/css/style.css?v=5c6c0d549b92222b03a0614dedf21df3",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/assets\/css\/style.css (v)",
 							"method": "GET",
@@ -449,7 +429,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "84",
+							"id": "74",
 							"uri": "https://arthurzenika.codeberg.page/blog/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/assets\/js\/scripts.min.js (v)",
 							"method": "GET",
@@ -459,7 +439,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "71",
+							"id": "65",
 							"uri": "https://arthurzenika.codeberg.page/blog/authors/arthur-lutz-zenika/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/authors\/arthur-lutz-zenika\/",
 							"method": "GET",
@@ -469,7 +449,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "76",
+							"id": "81",
 							"uri": "https://arthurzenika.codeberg.page/blog/media/website/favicon-16x16.png",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/media\/website\/favicon-16x16.png",
 							"method": "GET",
@@ -480,7 +460,7 @@
 						}
 					],
 					"count": "5",
-					"systemic": true,
+					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to 'same-origin' for all web pages.</p><p>'same-site' is considered as less secured and should be avoided.</p><p>If resources must be shared, set the header to 'cross-origin'.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
@@ -499,7 +479,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "19",
+							"id": "23",
 							"uri": "https://arthurzenika.codeberg.page/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/",
 							"method": "GET",
@@ -519,7 +499,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "70",
+							"id": "64",
 							"uri": "https://arthurzenika.codeberg.page/blog/authors/arthur-lutz-zenika/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/authors\/arthur-lutz-zenika\/",
 							"method": "GET",
@@ -529,7 +509,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "48",
+							"id": "25",
 							"uri": "https://arthurzenika.codeberg.page/robots.txt",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/robots.txt",
 							"method": "GET",
@@ -539,7 +519,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "51",
+							"id": "57",
 							"uri": "https://arthurzenika.codeberg.page/sitemap.xml",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/sitemap.xml",
 							"method": "GET",
@@ -569,7 +549,7 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "63",
+							"id": "68",
 							"uri": "https://arthurzenika.codeberg.page/blog/assets/css/style.css?v=5c6c0d549b92222b03a0614dedf21df3",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/assets\/css\/style.css (v)",
 							"method": "GET",
@@ -579,7 +559,7 @@
 							"otherinfo": "1567604947, which evaluates to: 2019-09-04 13:49:07."
 						},
 						{
-							"id": "115",
+							"id": "118",
 							"uri": "https://arthurzenika.codeberg.page/blog/bilan-dun-an-sur-tryhackme.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/bilan-dun-an-sur-tryhackme.html",
 							"method": "GET",
@@ -596,7 +576,7 @@
 					"reference": "<p>https://cwe.mitre.org/data/definitions/200.html</p>",
 					"cweid": "497",
 					"wascid": "13",
-					"sourceid": "74"
+					"sourceid": "77"
 				},
 				{
 					"pluginid": "10021",
@@ -619,7 +599,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "65",
+							"id": "75",
 							"uri": "https://arthurzenika.codeberg.page/blog/assets/css/style.css?v=5c6c0d549b92222b03a0614dedf21df3",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/assets\/css\/style.css (v)",
 							"method": "GET",
@@ -629,7 +609,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "78",
+							"id": "69",
 							"uri": "https://arthurzenika.codeberg.page/blog/assets/js/scripts.min.js?v=f47c11534595205f20935f0db2a62a85",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/assets\/js\/scripts.min.js (v)",
 							"method": "GET",
@@ -639,7 +619,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "68",
+							"id": "62",
 							"uri": "https://arthurzenika.codeberg.page/blog/authors/arthur-lutz-zenika/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/authors\/arthur-lutz-zenika\/",
 							"method": "GET",
@@ -649,7 +629,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "72",
+							"id": "79",
 							"uri": "https://arthurzenika.codeberg.page/blog/media/website/favicon-16x16.png",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/media\/website\/favicon-16x16.png",
 							"method": "GET",
@@ -679,7 +659,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "118",
+							"id": "125",
 							"uri": "https://arthurzenika.codeberg.page/blog/bilan-dun-an-sur-tryhackme.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/bilan-dun-an-sur-tryhackme.html",
 							"method": "GET",
@@ -689,7 +669,7 @@
 							"otherinfo": "\uFFFDg\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDl\uFFFD\uFFFD\uFFFDr\uFFFD\uFFFD\uFFFD\uFFFDh\uFFFD\uFFFD\uFFFDo\uFFFD\uFFFDn>\uFFFD\uFFFD\uFFFD\uFFFDt\uFFFD}\uFFFD\u06DF\uFFFD"
 						},
 						{
-							"id": "119",
+							"id": "114",
 							"uri": "https://arthurzenika.codeberg.page/blog/decouverte-des-claviers-mecaniques.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/decouverte-des-claviers-mecaniques.html",
 							"method": "GET",
@@ -699,7 +679,7 @@
 							"otherinfo": "\uFFFD\uFFFDe\uFFFD\uFFFD\\x001b\uFFFDL\uFFFD\uFFFD\uFFFD\uFFFDz\uFFFD,\\x0006\\x000eQ?\uFFFDX\uFFFD\uFFFD|z\uFFFD"
 						},
 						{
-							"id": "122",
+							"id": "101",
 							"uri": "https://arthurzenika.codeberg.page/blog/fosdem-2026-retour.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/fosdem-2026-retour.html",
 							"method": "GET",
@@ -709,7 +689,7 @@
 							"otherinfo": "\uFFFDg\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDl\uFFFD^\uFFFDI\uFFFD\uFFFDz{!\uFFFD\u07DF\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFD\uFFFDM\uFFFD\uFFFDO\uFFFD\uFFFD\uFFFD<\uFFFDN"
 						},
 						{
-							"id": "141",
+							"id": "137",
 							"uri": "https://arthurzenika.codeberg.page/blog/media/posts/3/responsive/8759939806_73dd0571ad_k-sm.jpg",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/media\/posts\/3\/responsive\/8759939806_73dd0571ad_k-sm.jpg",
 							"method": "GET",
@@ -719,7 +699,7 @@
 							"otherinfo": "\uFFFD\\x001d\uFFFDES\uFFFD\uFFFD\u03AC\uFFFD\uFFFD\\x0017\\x0018\uFFFD\\x0002'\uFFFDe\\x0007\\x0003\"\\x0019^U\\x001e\uFFFD\uFFFD\u0148\\x0018"
 						},
 						{
-							"id": "140",
+							"id": "136",
 							"uri": "https://arthurzenika.codeberg.page/blog/media/posts/3/responsive/8759939806_73dd0571ad_k-xs.jpg",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/media\/posts\/3\/responsive\/8759939806_73dd0571ad_k-xs.jpg",
 							"method": "GET",
@@ -749,7 +729,7 @@
 							"otherinfo": "\uFFFD\uFFFD|\\x0005\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD\\x001cq\uFFFD"
 						},
 						{
-							"id": "110",
+							"id": "106",
 							"uri": "https://arthurzenika.codeberg.page/blog/media/posts/5/by-2.svg",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/media\/posts\/5\/by-2.svg",
 							"method": "GET",
@@ -759,7 +739,7 @@
 							"otherinfo": "\uFFFD\uFFFD?M\\x001f\uFFFD\uFFFDMD@\uFFFDIQ\uFFFD\uFFFDM5\uFFFD\uFFFD8\uFFFD4\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"id": "105",
+							"id": "99",
 							"uri": "https://arthurzenika.codeberg.page/blog/media/posts/5/cc.svg",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/media\/posts\/5\/cc.svg",
 							"method": "GET",
@@ -769,7 +749,7 @@
 							"otherinfo": "\uFFFD\uFFFD?M\\x001f\uFFFD\uFFFDMD@\uFFFDIQ\uFFFD\uFFFDM5\uFFFD\uFFFD8\uFFFD4\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD"
 						},
 						{
-							"id": "132",
+							"id": "124",
 							"uri": "https://arthurzenika.codeberg.page/blog/mettez-des-couleurs-dans-votre-terminal.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/mettez-des-couleurs-dans-votre-terminal.html",
 							"method": "GET",
@@ -779,7 +759,7 @@
 							"otherinfo": "\uFFFDg\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDl\uFFFD\uFFFD\uFFFDr\uFFFD\uFFFD\uFFFD\uFFFDh\uFFFD\uFFFD\uFFFDo\uFFFD\uFFFDn>\uFFFDo\uFFFD\uFFFD\uFFFDv\uFFFD]>\uFFFD"
 						},
 						{
-							"id": "98",
+							"id": "113",
 							"uri": "https://arthurzenika.codeberg.page/blog/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
 							"method": "GET",
@@ -806,7 +786,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "117"
+					"sourceid": "151"
 				},
 				{
 					"pluginid": "10109",
@@ -829,7 +809,7 @@
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						},
 						{
-							"id": "64",
+							"id": "61",
 							"uri": "https://arthurzenika.codeberg.page/blog/authors/arthur-lutz-zenika/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/authors\/arthur-lutz-zenika\/",
 							"method": "GET",
@@ -839,7 +819,17 @@
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						},
 						{
-							"id": "102",
+							"id": "100",
+							"uri": "https://arthurzenika.codeberg.page/blog/decouverte-des-claviers-mecaniques.html",
+							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/decouverte-des-claviers-mecaniques.html",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript>\n            <style>\n                img[loading] {\n                    opacity: 1;\n                }\n            </style>\n        </noscript>",
+							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
+						},
+						{
+							"id": "83",
 							"uri": "https://arthurzenika.codeberg.page/blog/fosdem-2026-retour.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/fosdem-2026-retour.html",
 							"method": "GET",
@@ -849,19 +839,9 @@
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						},
 						{
-							"id": "96",
+							"id": "93",
 							"uri": "https://arthurzenika.codeberg.page/blog/page/2/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/page\/2\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript>\n            <style>\n                img[loading] {\n                    opacity: 1;\n                }\n            </style>\n        </noscript>",
-							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
-						},
-						{
-							"id": "77",
-							"uri": "https://arthurzenika.codeberg.page/blog/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
-							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -899,7 +879,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "59",
+							"id": "58",
 							"uri": "https://arthurzenika.codeberg.page/blog/authors/arthur-lutz-zenika/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/authors\/arthur-lutz-zenika\/",
 							"method": "GET",
@@ -909,7 +889,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "91",
+							"id": "71",
 							"uri": "https://arthurzenika.codeberg.page/blog/fosdem-2026-retour.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/fosdem-2026-retour.html",
 							"method": "GET",
@@ -919,7 +899,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "93",
+							"id": "88",
 							"uri": "https://arthurzenika.codeberg.page/blog/page/2/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/page\/2\/",
 							"method": "GET",
@@ -929,7 +909,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "61",
+							"id": "90",
 							"uri": "https://arthurzenika.codeberg.page/blog/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog\/retour-sur-la-kubeconcloudnativecon-europe-2023.html",
 							"method": "GET",
@@ -959,7 +939,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "29",
+							"id": "38",
 							"uri": "https://arthurzenika.codeberg.page/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/",
 							"method": "GET",
@@ -969,7 +949,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "32",
+							"id": "31",
 							"uri": "https://arthurzenika.codeberg.page/blog",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog",
 							"method": "GET",
@@ -987,9 +967,19 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "33",
+							"uri": "https://arthurzenika.codeberg.page/robots.txt",
+							"nodeName": "https:\/\/arthurzenika.codeberg.page\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
@@ -1009,7 +999,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "28",
+							"id": "37",
 							"uri": "https://arthurzenika.codeberg.page/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/",
 							"method": "GET",
@@ -1019,7 +1009,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
+							"id": "27",
 							"uri": "https://arthurzenika.codeberg.page/blog",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog",
 							"method": "GET",
@@ -1037,9 +1027,19 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "32",
+							"uri": "https://arthurzenika.codeberg.page/robots.txt",
+							"nodeName": "https:\/\/arthurzenika.codeberg.page\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
@@ -1059,7 +1059,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "25",
+							"id": "29",
 							"uri": "https://arthurzenika.codeberg.page/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/",
 							"method": "GET",
@@ -1069,7 +1069,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "27",
+							"id": "26",
 							"uri": "https://arthurzenika.codeberg.page/blog",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog",
 							"method": "GET",
@@ -1087,9 +1087,19 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "30",
+							"uri": "https://arthurzenika.codeberg.page/robots.txt",
+							"nodeName": "https:\/\/arthurzenika.codeberg.page\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
@@ -1109,7 +1119,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "31",
+							"id": "40",
 							"uri": "https://arthurzenika.codeberg.page/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/",
 							"method": "GET",
@@ -1119,7 +1129,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "33",
+							"id": "35",
 							"uri": "https://arthurzenika.codeberg.page/blog",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog",
 							"method": "GET",
@@ -1137,9 +1147,19 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "34",
+							"uri": "https://arthurzenika.codeberg.page/robots.txt",
+							"nodeName": "https:\/\/arthurzenika.codeberg.page\/robots.txt",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
@@ -1159,7 +1179,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "18",
+							"id": "21",
 							"uri": "https://arthurzenika.codeberg.page/",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/",
 							"method": "GET",
@@ -1169,7 +1189,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
+							"id": "22",
 							"uri": "https://arthurzenika.codeberg.page/blog",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/blog",
 							"method": "GET",
@@ -1189,7 +1209,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "46",
+							"id": "24",
 							"uri": "https://arthurzenika.codeberg.page/robots.txt",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/robots.txt",
 							"method": "GET",
@@ -1199,7 +1219,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "50",
+							"id": "56",
 							"uri": "https://arthurzenika.codeberg.page/sitemap.xml",
 							"nodeName": "https:\/\/arthurzenika.codeberg.page\/sitemap.xml",
 							"method": "GET",

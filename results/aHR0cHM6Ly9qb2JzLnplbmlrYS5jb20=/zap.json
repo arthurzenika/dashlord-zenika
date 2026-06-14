@@ -1,122 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 7 Jun 2026 03:13:42",
-	"created": "2026-06-07T03:13:42.457008419Z",
-	"insights":[
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.code.2xx",
-			"description": "Percentage of responses with status code 2xx",
-			"statistic": "75"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.code.3xx",
-			"description": "Percentage of responses with status code 3xx",
-			"statistic": "16"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.code.4xx",
-			"description": "Percentage of responses with status code 4xx",
-			"statistic": "6"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.code.5xx",
-			"description": "Percentage of responses with status code 5xx",
-			"statistic": "1"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.endpoint.ctype.application/linkset+json",
-			"description": "Percentage of endpoints with content type application/linkset+json",
-			"statistic": "1"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.endpoint.ctype.application/rss+xml",
-			"description": "Percentage of endpoints with content type application/rss+xml",
-			"statistic": "1"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.endpoint.ctype.application/xml",
-			"description": "Percentage of endpoints with content type application/xml",
-			"statistic": "1"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.endpoint.ctype.text/html",
-			"description": "Percentage of endpoints with content type text/html",
-			"statistic": "85"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.endpoint.ctype.text/markdown",
-			"description": "Percentage of endpoints with content type text/markdown",
-			"statistic": "8"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.endpoint.ctype.text/plain",
-			"description": "Percentage of endpoints with content type text/plain",
-			"statistic": "1"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.endpoint.method.GET",
-			"description": "Percentage of endpoints with method GET",
-			"statistic": "91"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.endpoint.method.POST",
-			"description": "Percentage of endpoints with method POST",
-			"statistic": "8"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.endpoint.total",
-			"description": "Count of total endpoints",
-			"statistic": "114"
-		},
-		{
-			"level": "Info",
-			"reason": "Informational",
-			"site": "https://jobs.zenika.com",
-			"key": "insight.response.slow",
-			"description": "Percentage of slow responses",
-			"statistic": "51"
-		}
-	],
+	"@generated": "Sun, 14 Jun 2026 03:17:18",
+	"created": "2026-06-14T03:17:18.836007817Z",
 	"site":[ 
 		{
 			"@name": "https://jobs.zenika.com",
@@ -135,7 +21,7 @@
 					"desc": "<p>The Content Security Policy fails to define one of the directives that has no fallback. Missing/excluding them is the same as allowing anything.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "2",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -145,7 +31,7 @@
 							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
 						},
 						{
-							"id": "66",
+							"id": "54",
 							"uri": "https://jobs.zenika.com/messages/",
 							"nodeName": "https:\/\/jobs.zenika.com\/messages\/",
 							"method": "GET",
@@ -153,9 +39,19 @@
 							"attack": "",
 							"evidence": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
 							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
+						},
+						{
+							"id": "46",
+							"uri": "https://jobs.zenika.com/messenger/",
+							"nodeName": "https:\/\/jobs.zenika.com\/messenger\/",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
+							"otherinfo": "The directive(s): form-action is/are among the directives that do not fallback to default-src."
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The directive(s): form-action is/are among the directives that do not fallback to default-src.</p>",
@@ -175,7 +71,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "3",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -185,7 +81,7 @@
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined:\nscript-src, style-src, img-src, connect-src, frame-src, font-src, media-src, object-src, manifest-src, worker-src"
 						},
 						{
-							"id": "68",
+							"id": "55",
 							"uri": "https://jobs.zenika.com/messages/",
 							"nodeName": "https:\/\/jobs.zenika.com\/messages\/",
 							"method": "GET",
@@ -193,9 +89,19 @@
 							"attack": "",
 							"evidence": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
 							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined:\nscript-src, style-src, img-src, connect-src, frame-src, font-src, media-src, object-src, manifest-src, worker-src"
+						},
+						{
+							"id": "47",
+							"uri": "https://jobs.zenika.com/messenger/",
+							"nodeName": "https:\/\/jobs.zenika.com\/messenger\/",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
+							"otherinfo": "The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined:\nscript-src, style-src, img-src, connect-src, frame-src, font-src, media-src, object-src, manifest-src, worker-src"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined:</p><p>script-src, style-src, img-src, connect-src, frame-src, font-src, media-src, object-src, manifest-src, worker-src</p>",
@@ -215,7 +121,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "10",
+							"id": "4",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -225,7 +131,7 @@
 							"otherinfo": "script-src includes unsafe-inline."
 						},
 						{
-							"id": "69",
+							"id": "56",
 							"uri": "https://jobs.zenika.com/messages/",
 							"nodeName": "https:\/\/jobs.zenika.com\/messages\/",
 							"method": "GET",
@@ -233,9 +139,19 @@
 							"attack": "",
 							"evidence": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
 							"otherinfo": "script-src includes unsafe-inline."
+						},
+						{
+							"id": "48",
+							"uri": "https://jobs.zenika.com/messenger/",
+							"nodeName": "https:\/\/jobs.zenika.com\/messenger\/",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
+							"otherinfo": "script-src includes unsafe-inline."
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>script-src includes unsafe-inline.</p>",
@@ -255,7 +171,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "11",
+							"id": "5",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -265,7 +181,7 @@
 							"otherinfo": "style-src includes unsafe-inline."
 						},
 						{
-							"id": "70",
+							"id": "57",
 							"uri": "https://jobs.zenika.com/messages/",
 							"nodeName": "https:\/\/jobs.zenika.com\/messages\/",
 							"method": "GET",
@@ -273,9 +189,19 @@
 							"attack": "",
 							"evidence": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
 							"otherinfo": "style-src includes unsafe-inline."
+						},
+						{
+							"id": "49",
+							"uri": "https://jobs.zenika.com/messenger/",
+							"nodeName": "https:\/\/jobs.zenika.com\/messenger\/",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
+							"otherinfo": "style-src includes unsafe-inline."
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
@@ -295,7 +221,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "115",
+							"id": "108",
 							"uri": "https://jobs.zenika.com/departments",
 							"nodeName": "https:\/\/jobs.zenika.com\/departments",
 							"method": "GET",
@@ -305,7 +231,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "114",
+							"id": "89",
 							"uri": "https://jobs.zenika.com/facebook/tab/",
 							"nodeName": "https:\/\/jobs.zenika.com\/facebook\/tab\/",
 							"method": "GET",
@@ -315,7 +241,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "105",
+							"id": "62",
 							"uri": "https://jobs.zenika.com/jobs/internal/",
 							"nodeName": "https:\/\/jobs.zenika.com\/jobs\/internal\/",
 							"method": "GET",
@@ -325,7 +251,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "135",
+							"id": "114",
 							"uri": "https://jobs.zenika.com/locations",
 							"nodeName": "https:\/\/jobs.zenika.com\/locations",
 							"method": "GET",
@@ -342,7 +268,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>https://www.w3.org/TR/CSP/</p><p>https://w3c.github.io/webappsec-csp/</p><p>https://web.dev/articles/csp</p><p>https://caniuse.com/#feat=contentsecuritypolicy</p><p>https://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "108"
+					"sourceid": "96"
 				},
 				{
 					"pluginid": "10098",
@@ -355,7 +281,7 @@
 					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server.</p>",
 					"instances":[ 
 						{
-							"id": "1",
+							"id": "25",
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"nodeName": "https:\/\/jobs.zenika.com\/robots.txt",
 							"method": "GET",
@@ -372,7 +298,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?category=HTML5&subcategory=Overly%20Permissive%20CORS%20Policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90003",
@@ -385,7 +311,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "21",
+							"id": "8",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -395,7 +321,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "19",
+							"id": "7",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -405,7 +331,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "11",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -415,7 +341,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
+							"id": "10",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -425,7 +351,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "22",
+							"id": "9",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -455,7 +381,7 @@
 					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
 					"instances":[ 
 						{
-							"id": "143",
+							"id": "148",
 							"uri": "https://jobs.zenika.com/jobs?geobound_coordinates%5Bbottom_right_lat%5D&geobound_coordinates%5Bbottom_right_lon%5D&geobound_coordinates%5Btop_left_lat%5D&geobound_coordinates%5Btop_left_lon%5D&query=ZAP&query%5B%5D=ZAP&split_view=true",
 							"nodeName": "https:\/\/jobs.zenika.com\/jobs (geobound_coordinates[bottom_right_lat],geobound_coordinates[bottom_right_lon],geobound_coordinates[top_left_lat],geobound_coordinates[top_left_lon],query,query[],split_view)",
 							"method": "GET",
@@ -472,7 +398,7 @@
 					"reference": "",
 					"cweid": "550",
 					"wascid": "13",
-					"sourceid": "189"
+					"sourceid": "186"
 				},
 				{
 					"pluginid": "10055",
@@ -485,7 +411,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "1",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -495,7 +421,7 @@
 							"otherinfo": "Warnings:\nDuplicate host app.teamtailor.com\n"
 						},
 						{
-							"id": "65",
+							"id": "52",
 							"uri": "https://jobs.zenika.com/messages/",
 							"nodeName": "https:\/\/jobs.zenika.com\/messages\/",
 							"method": "GET",
@@ -503,9 +429,19 @@
 							"attack": "",
 							"evidence": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
 							"otherinfo": "Warnings:\nDuplicate host app.teamtailor.com\n"
+						},
+						{
+							"id": "45",
+							"uri": "https://jobs.zenika.com/messenger/",
+							"nodeName": "https:\/\/jobs.zenika.com\/messenger\/",
+							"method": "GET",
+							"param": "content-security-policy",
+							"attack": "",
+							"evidence": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
+							"otherinfo": "Warnings:\nDuplicate host app.teamtailor.com\n"
 						}
 					],
-					"count": "2",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>Warnings:</p><p>Duplicate host app.teamtailor.com</p><p></p>",
@@ -525,7 +461,7 @@
 					"desc": "<p>A cookie has been set without the SameSite attribute, which means that the cookie can be sent as a result of a 'cross-site' request. The SameSite attribute is an effective counter measure to cross-site request forgery, cross-site script inclusion, and timing attacks.</p>",
 					"instances":[ 
 						{
-							"id": "137",
+							"id": "138",
 							"uri": "https://jobs.zenika.com/connect",
 							"nodeName": "https:\/\/jobs.zenika.com\/connect",
 							"method": "GET",
@@ -535,7 +471,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "126",
+							"id": "136",
 							"uri": "https://jobs.zenika.com/connect/login",
 							"nodeName": "https:\/\/jobs.zenika.com\/connect\/login",
 							"method": "GET",
@@ -545,7 +481,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "85",
+							"id": "134",
 							"uri": "https://jobs.zenika.com/cookie-policy",
 							"nodeName": "https:\/\/jobs.zenika.com\/cookie-policy",
 							"method": "GET",
@@ -555,9 +491,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "139",
-							"uri": "https://jobs.zenika.com/jobs/7401577-business-manager-faconne-le-futur-de-zenika-bordeaux",
-							"nodeName": "https:\/\/jobs.zenika.com\/jobs\/7401577-business-manager-faconne-le-futur-de-zenika-bordeaux",
+							"id": "142",
+							"uri": "https://jobs.zenika.com/cookie_policy",
+							"nodeName": "https:\/\/jobs.zenika.com\/cookie_policy",
 							"method": "GET",
 							"param": "_tt_session",
 							"attack": "",
@@ -565,7 +501,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "142",
+							"id": "141",
 							"uri": "https://jobs.zenika.com/auto_join",
 							"nodeName": "https:\/\/jobs.zenika.com\/auto_join ()(authenticity_token)",
 							"method": "POST",
@@ -582,7 +518,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</p>",
 					"cweid": "1275",
 					"wascid": "13",
-					"sourceid": "142"
+					"sourceid": "155"
 				},
 				{
 					"pluginid": "90004",
@@ -595,7 +531,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "53",
+							"id": "22",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -605,9 +541,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "96",
-							"uri": "https://jobs.zenika.com/cookie-policy",
-							"nodeName": "https:\/\/jobs.zenika.com\/cookie-policy",
+							"id": "100",
+							"uri": "https://jobs.zenika.com/",
+							"nodeName": "https:\/\/jobs.zenika.com\/",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
@@ -615,7 +551,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "41",
+							"id": "99",
+							"uri": "https://jobs.zenika.com/privacy-policy",
+							"nodeName": "https:\/\/jobs.zenika.com\/privacy-policy",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "43",
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/jobs.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -625,14 +571,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90004",
@@ -645,7 +591,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "54",
+							"id": "23",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -655,9 +601,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "97",
-							"uri": "https://jobs.zenika.com/cookie-policy",
-							"nodeName": "https:\/\/jobs.zenika.com\/cookie-policy",
+							"id": "102",
+							"uri": "https://jobs.zenika.com/",
+							"nodeName": "https:\/\/jobs.zenika.com\/",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
 							"attack": "",
@@ -665,7 +611,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "42",
+							"id": "101",
+							"uri": "https://jobs.zenika.com/privacy-policy",
+							"nodeName": "https:\/\/jobs.zenika.com\/privacy-policy",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "44",
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/jobs.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -675,14 +631,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Opener-Policy header appropriately, and that it sets the Cross-Origin-Opener-Policy header to 'same-origin' for documents.</p><p>'same-origin-allow-popups' is considered as less secured and should be avoided.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Opener-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-opener-policy).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90004",
@@ -695,7 +651,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "52",
+							"id": "21",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -705,9 +661,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
-							"uri": "https://jobs.zenika.com/.well-known/api-catalog",
-							"nodeName": "https:\/\/jobs.zenika.com\/.well-known\/api-catalog",
+							"id": "96",
+							"uri": "https://jobs.zenika.com/",
+							"nodeName": "https:\/\/jobs.zenika.com\/",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -715,9 +671,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "95",
-							"uri": "https://jobs.zenika.com/cookie-policy",
-							"nodeName": "https:\/\/jobs.zenika.com\/cookie-policy",
+							"id": "98",
+							"uri": "https://jobs.zenika.com/privacy-policy",
+							"nodeName": "https:\/\/jobs.zenika.com\/privacy-policy",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -725,7 +681,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "40",
+							"id": "41",
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/jobs.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -742,37 +698,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "6"
-				},
-				{
-					"pluginid": "110009",
-					"alertRef": "110009",
-					"alert": "Full Path Disclosure",
-					"name": "Full Path Disclosure",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>The full path of files which might be sensitive has been exposed to the client.</p>",
-					"instances":[ 
-						{
-							"id": "140",
-							"uri": "https://jobs.zenika.com/jobs/7401577-business-manager-faconne-le-futur-de-zenika-bordeaux",
-							"nodeName": "https:\/\/jobs.zenika.com\/jobs\/7401577-business-manager-faconne-le-futur-de-zenika-bordeaux",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/applications/",
-							"otherinfo": ""
-						}
-					],
-					"count": "1",
-					"systemic": false,
-					"solution": "<p>Disable directory browsing in your web server. Refer to the web server documentation.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://owasp.org/www-community/attacks/Full_Path_Disclosure</p>",
-					"cweid": "209",
-					"wascid": "13",
-					"sourceid": "146"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10023",
@@ -785,7 +711,7 @@
 					"desc": "<p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.</p>",
 					"instances":[ 
 						{
-							"id": "144",
+							"id": "149",
 							"uri": "https://jobs.zenika.com/jobs?geobound_coordinates%5Bbottom_right_lat%5D&geobound_coordinates%5Bbottom_right_lon%5D&geobound_coordinates%5Btop_left_lat%5D&geobound_coordinates%5Btop_left_lon%5D&query=ZAP&query%5B%5D=ZAP&split_view=true",
 							"nodeName": "https:\/\/jobs.zenika.com\/jobs (geobound_coordinates[bottom_right_lat],geobound_coordinates[bottom_right_lon],geobound_coordinates[top_left_lat],geobound_coordinates[top_left_lon],query,query[],split_view)",
 							"method": "GET",
@@ -802,7 +728,7 @@
 					"reference": "",
 					"cweid": "1295",
 					"wascid": "13",
-					"sourceid": "189"
+					"sourceid": "186"
 				},
 				{
 					"pluginid": "10063",
@@ -815,7 +741,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "49",
+							"id": "20",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -825,7 +751,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "106",
+							"id": "95",
 							"uri": "https://jobs.zenika.com/",
 							"nodeName": "https:\/\/jobs.zenika.com\/",
 							"method": "GET",
@@ -835,9 +761,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "94",
-							"uri": "https://jobs.zenika.com/cookie-policy",
-							"nodeName": "https:\/\/jobs.zenika.com\/cookie-policy",
+							"id": "71",
+							"uri": "https://jobs.zenika.com/jobs/internal/",
+							"nodeName": "https:\/\/jobs.zenika.com\/jobs\/internal\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -845,19 +771,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "109",
-							"uri": "https://jobs.zenika.com/jobs",
-							"nodeName": "https:\/\/jobs.zenika.com\/jobs",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "77",
+							"id": "61",
 							"uri": "https://jobs.zenika.com/messages/",
 							"nodeName": "https:\/\/jobs.zenika.com\/messages\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "97",
+							"uri": "https://jobs.zenika.com/privacy-policy",
+							"nodeName": "https:\/\/jobs.zenika.com\/privacy-policy",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -885,7 +811,7 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "27",
+							"id": "12",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -895,7 +821,7 @@
 							"otherinfo": "1738162729, which evaluates to: 2025-01-29 14:58:49."
 						},
 						{
-							"id": "100",
+							"id": "83",
 							"uri": "https://jobs.zenika.com/",
 							"nodeName": "https:\/\/jobs.zenika.com\/",
 							"method": "GET",
@@ -905,34 +831,34 @@
 							"otherinfo": "1738162729, which evaluates to: 2025-01-29 14:58:49."
 						},
 						{
-							"id": "73",
+							"id": "104",
+							"uri": "https://jobs.zenika.com/facebook/tab/",
+							"nodeName": "https:\/\/jobs.zenika.com\/facebook\/tab\/",
+							"method": "GET",
+							"param": "X-Varnish",
+							"attack": "",
+							"evidence": "2049508151",
+							"otherinfo": "2049508151, which evaluates to: 2034-12-12 03:49:11."
+						},
+						{
+							"id": "59",
 							"uri": "https://jobs.zenika.com/messages/",
 							"nodeName": "https:\/\/jobs.zenika.com\/messages\/",
 							"method": "GET",
 							"param": "X-Varnish",
 							"attack": "",
-							"evidence": "1819480763",
-							"otherinfo": "1819480763, which evaluates to: 2027-08-28 19:19:23."
+							"evidence": "2047707098",
+							"otherinfo": "2047707098, which evaluates to: 2034-11-21 07:31:38."
 						},
 						{
-							"id": "79",
+							"id": "51",
 							"uri": "https://jobs.zenika.com/messenger/",
 							"nodeName": "https:\/\/jobs.zenika.com\/messenger\/",
 							"method": "GET",
 							"param": "X-Varnish",
 							"attack": "",
-							"evidence": "1593902744",
-							"otherinfo": "1593902744, which evaluates to: 2020-07-04 22:45:44."
-						},
-						{
-							"id": "86",
-							"uri": "https://jobs.zenika.com/sso_login",
-							"nodeName": "https:\/\/jobs.zenika.com\/sso_login",
-							"method": "GET",
-							"param": "X-Varnish",
-							"attack": "",
-							"evidence": "1575289792",
-							"otherinfo": "1575289792, which evaluates to: 2019-12-02 12:29:52."
+							"evidence": "1658311914",
+							"otherinfo": "1658311914, which evaluates to: 2022-07-20 10:11:54."
 						}
 					],
 					"count": "5",
@@ -955,7 +881,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "28",
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"nodeName": "https:\/\/jobs.zenika.com\/robots.txt",
 							"method": "GET",
@@ -972,7 +898,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10094",
@@ -985,120 +911,120 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "57",
+							"id": "14",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "sha384-+oWGjv8pUbiI/3VgNpbVBI8Tg1VZTnQf8jeTKQP6RyH4M9E5YY3W52HrTcLxZB9o",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFF\uDFA1a\uFFFD\uFFFD\uFFFDTn\"?\uFFFDX\r\uFFFD\uFFFDA#\uFFFD\uFFFD\uFFFDVS\uFFFD\\x0007\uFFFD\uFFFD\uFFFD\uFFFD@\uFFFD\uFFFD\uFFFD~\\x000c\uFFFDNXcu\uFFFD\uFFFDz\uFFFDp\uFFFDY\\x0007\uFFFD"
+							"evidence": "sha384-EhdyaLVa2Q78rG3aJv3gmvJ8fjUFyAZtLPml/jcvRkUOaY6jEZenppU4htfETaZi",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFC\uDD05\u071A-V\uFFFDC\uFFFD+\\x001bv\uFFFD\uFFFDx&\uFFFD\uFFFD\\x001f\uFFFDAr\\x0001\uFFFDK>i\uFFFD\uFFFD\u0451C\uFFFDc\uFFFD\uFFFDe\uFFFD\uFFFDN!\uFFFD\uFFFD\\x0013i\uFFFD"
 						},
 						{
-							"id": "113",
+							"id": "91",
 							"uri": "https://jobs.zenika.com/",
 							"nodeName": "https:\/\/jobs.zenika.com\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "sha384-+oWGjv8pUbiI/3VgNpbVBI8Tg1VZTnQf8jeTKQP6RyH4M9E5YY3W52HrTcLxZB9o",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFF\uDFA1a\uFFFD\uFFFD\uFFFDTn\"?\uFFFDX\r\uFFFD\uFFFDA#\uFFFD\uFFFD\uFFFDVS\uFFFD\\x0007\uFFFD\uFFFD\uFFFD\uFFFD@\uFFFD\uFFFD\uFFFD~\\x000c\uFFFDNXcu\uFFFD\uFFFDz\uFFFDp\uFFFDY\\x0007\uFFFD"
+							"evidence": "sha384-EhdyaLVa2Q78rG3aJv3gmvJ8fjUFyAZtLPml/jcvRkUOaY6jEZenppU4htfETaZi",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFC\uDD05\u071A-V\uFFFDC\uFFFD+\\x001bv\uFFFD\uFFFDx&\uFFFD\uFFFD\\x001f\uFFFDAr\\x0001\uFFFDK>i\uFFFD\uFFFD\u0451C\uFFFDc\uFFFD\uFFFDe\uFFFD\uFFFDN!\uFFFD\uFFFD\\x0013i\uFFFD"
 						},
 						{
-							"id": "134",
-							"uri": "https://jobs.zenika.com/connect/login",
-							"nodeName": "https:\/\/jobs.zenika.com\/connect\/login",
+							"id": "119",
+							"uri": "https://jobs.zenika.com/data-privacy",
+							"nodeName": "https:\/\/jobs.zenika.com\/data-privacy",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "sha384-vQCKJvCsHl2qN8K6GJSvskMqZ6gTROTYjsjqAHAU2MH8sb9jd4dpEdAQdetyWOdM",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD@\"\uFFFD\uFFFD+\\x0007\uFFFDj\uFFFD\uFFFD%+\uFFFD\u0299\uFFFD\\x0004\uFFFD96#\uFFFD:\uFFFD\\x001c\\x000560,o\uFFFD\uFFFD\uFFFD\uFFFDDt\\x0004\\x001dz\u07169\uFFFD"
+							"evidence": "sha384-EhdyaLVa2Q78rG3aJv3gmvJ8fjUFyAZtLPml/jcvRkUOaY6jEZenppU4htfETaZi",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFC\uDD05\u071A-V\uFFFDC\uFFFD+\\x001bv\uFFFD\uFFFDx&\uFFFD\uFFFD\\x001f\uFFFDAr\\x0001\uFFFDK>i\uFFFD\uFFFD\u0451C\uFFFDc\uFFFD\uFFFDe\uFFFD\uFFFDN!\uFFFD\uFFFD\\x0013i\uFFFD"
 						},
 						{
-							"id": "103",
-							"uri": "https://jobs.zenika.com/cookie-policy",
-							"nodeName": "https:\/\/jobs.zenika.com\/cookie-policy",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "sha384-H6PwD87WbbUPGGcJ1XrB07CXyXVm1ZxUzkPc8tHsjXwsHRUdASH9Y9DUZ0OUIQaO",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\uFFFD\uFFFD\\x0003\uFFFDmC\uFFFD\\x0019\uFFFDu^\uFFFDt\uFFFD%\uFFFD]Y\uFFFDg\\x00153\uFFFD\uFFFD<\uFFFD{#_\\x000b\\x0007EG@HX\uFFFD5\\x0019\uFFFD\uFFFD\\x0008A\uFFFD"
-						},
-						{
-							"id": "122",
+							"id": "110",
 							"uri": "https://jobs.zenika.com/departments",
 							"nodeName": "https:\/\/jobs.zenika.com\/departments",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "sha384-iNHM22VGY2ped51vi4lhwC3DnuvjR1vUjRu689oZ2g5iHcx77GMm3/rLX/t5qFgq",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD4s6\uFFFDQ\uFFFD\u0697\uFFFD\uFFFD[\uFFFD\uFFFDXp\\x000bp\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD#F\uFFFD\uFFFD\uFFFDv\uFFFD\uFFFD\uFFFDs\\x001e\uFFFD\\x0018\u0277\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDj\\x0016\n"
+							"evidence": "sha384-+esk1ohE/AUVDpSl+9GsNtx/l7XGTrA5sjMT1zHk5CmixumZeG2mXa122sOIaLvB",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFDz\uFFFD5\uFFFD\\x0011?\\x0001EC\uFFFD)~\uFFFDk\r\uFFFD\\x001f\uFFFD\uFFFDq\uFFFD\uFFFD\\x000el\uFFFD\uFFFD\uFFFD\uFFFDy9\nh\uFFFD\uFFFDf^\\x001bi\uFFFDk]\uFFFD\uFFFD\uFFFD\\x001a.\uFFFD"
 						},
 						{
-							"id": "120",
+							"id": "105",
 							"uri": "https://jobs.zenika.com/facebook/tab/",
 							"nodeName": "https:\/\/jobs.zenika.com\/facebook\/tab\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "sha384-H6PwD87WbbUPGGcJ1XrB07CXyXVm1ZxUzkPc8tHsjXwsHRUdASH9Y9DUZ0OUIQaO",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\uFFFD\uFFFD\\x0003\uFFFDmC\uFFFD\\x0019\uFFFDu^\uFFFDt\uFFFD%\uFFFD]Y\uFFFDg\\x00153\uFFFD\uFFFD<\uFFFD{#_\\x000b\\x0007EG@HX\uFFFD5\\x0019\uFFFD\uFFFD\\x0008A\uFFFD"
+							"evidence": "sha384-EhdyaLVa2Q78rG3aJv3gmvJ8fjUFyAZtLPml/jcvRkUOaY6jEZenppU4htfETaZi",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFC\uDD05\u071A-V\uFFFDC\uFFFD+\\x001bv\uFFFD\uFFFDx&\uFFFD\uFFFD\\x001f\uFFFDAr\\x0001\uFFFDK>i\uFFFD\uFFFD\u0451C\uFFFDc\uFFFD\uFFFDe\uFFFD\uFFFDN!\uFFFD\uFFFD\\x0013i\uFFFD"
 						},
 						{
-							"id": "119",
+							"id": "125",
 							"uri": "https://jobs.zenika.com/jobs",
 							"nodeName": "https:\/\/jobs.zenika.com\/jobs",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "sha384-+oWGjv8pUbiI/3VgNpbVBI8Tg1VZTnQf8jeTKQP6RyH4M9E5YY3W52HrTcLxZB9o",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFF\uDFA1a\uFFFD\uFFFD\uFFFDTn\"?\uFFFDX\r\uFFFD\uFFFDA#\uFFFD\uFFFD\uFFFDVS\uFFFD\\x0007\uFFFD\uFFFD\uFFFD\uFFFD@\uFFFD\uFFFD\uFFFD~\\x000c\uFFFDNXcu\uFFFD\uFFFDz\uFFFDp\uFFFDY\\x0007\uFFFD"
+							"evidence": "sha384-EhdyaLVa2Q78rG3aJv3gmvJ8fjUFyAZtLPml/jcvRkUOaY6jEZenppU4htfETaZi",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFC\uDD05\u071A-V\uFFFDC\uFFFD+\\x001bv\uFFFD\uFFFDx&\uFFFD\uFFFD\\x001f\uFFFDAr\\x0001\uFFFDK>i\uFFFD\uFFFD\u0451C\uFFFDc\uFFFD\uFFFDe\uFFFD\uFFFDN!\uFFFD\uFFFD\\x0013i\uFFFD"
 						},
 						{
-							"id": "112",
+							"id": "131",
+							"uri": "https://jobs.zenika.com/jobs/7843365-consultant-senior-google-cloud-data-ia-f-h",
+							"nodeName": "https:\/\/jobs.zenika.com\/jobs\/7843365-consultant-senior-google-cloud-data-ia-f-h",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "sha384-EIUL1AEI0JNa+YnSwZh56jNTvPq8rrRHUUg9eGfMiu3dmFqj3gLMjZWsuomP3qv9",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD!B\uFFFD\\x0000B4$\u05BEbt\uFFFDf\\x001ez\uFFFD\uFFFD\uFFFD>\uFFFD+\uFFFD\\x0011\uFFFDR\\x000f^\\x0019\uFFFD\"\uFFFDwf\\x0016\uFFFD\uFFFD\uFFFD\uFFFD#ek.\uFFFDc\uFFFD\uFFFD\uFFFD"
+						},
+						{
+							"id": "129",
+							"uri": "https://jobs.zenika.com/jobs/7873687-consultant-ai-software-engineer-f-h-x",
+							"nodeName": "https:\/\/jobs.zenika.com\/jobs\/7873687-consultant-ai-software-engineer-f-h-x",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "sha384-H6PwD87WbbUPGGcJ1XrB07CXyXVm1ZxUzkPc8tHsjXwsHRUdASH9Y9DUZ0OUIQaO",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\uFFFD\uFFFD\\x0003\uFFFDmC\uFFFD\\x0019\uFFFDu^\uFFFDt\uFFFD%\uFFFD]Y\uFFFDg\\x00153\uFFFD\uFFFD<\uFFFD{#_\\x000b\\x0007EG@HX\uFFFD5\\x0019\uFFFD\uFFFD\\x0008A\uFFFD"
+						},
+						{
+							"id": "68",
 							"uri": "https://jobs.zenika.com/jobs/internal/",
 							"nodeName": "https:\/\/jobs.zenika.com\/jobs\/internal\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "sha384-H6PwD87WbbUPGGcJ1XrB07CXyXVm1ZxUzkPc8tHsjXwsHRUdASH9Y9DUZ0OUIQaO",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\uFFFD\uFFFD\\x0003\uFFFDmC\uFFFD\\x0019\uFFFDu^\uFFFDt\uFFFD%\uFFFD]Y\uFFFDg\\x00153\uFFFD\uFFFD<\uFFFD{#_\\x000b\\x0007EG@HX\uFFFD5\\x0019\uFFFD\uFFFD\\x0008A\uFFFD"
+							"evidence": "sha384-EhdyaLVa2Q78rG3aJv3gmvJ8fjUFyAZtLPml/jcvRkUOaY6jEZenppU4htfETaZi",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFC\uDD05\u071A-V\uFFFDC\uFFFD+\\x001bv\uFFFD\uFFFDx&\uFFFD\uFFFD\\x001f\uFFFDAr\\x0001\uFFFDK>i\uFFFD\uFFFD\u0451C\uFFFDc\uFFFD\uFFFDe\uFFFD\uFFFDN!\uFFFD\uFFFD\\x0013i\uFFFD"
 						},
 						{
-							"id": "133",
-							"uri": "https://jobs.zenika.com/people",
-							"nodeName": "https:\/\/jobs.zenika.com\/people",
+							"id": "115",
+							"uri": "https://jobs.zenika.com/locations",
+							"nodeName": "https:\/\/jobs.zenika.com\/locations",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "sha384-H6PwD87WbbUPGGcJ1XrB07CXyXVm1ZxUzkPc8tHsjXwsHRUdASH9Y9DUZ0OUIQaO",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\uFFFD\uFFFD\\x0003\uFFFDmC\uFFFD\\x0019\uFFFDu^\uFFFDt\uFFFD%\uFFFD]Y\uFFFDg\\x00153\uFFFD\uFFFD<\uFFFD{#_\\x000b\\x0007EG@HX\uFFFD5\\x0019\uFFFD\uFFFD\\x0008A\uFFFD"
+							"evidence": "sha384-+esk1ohE/AUVDpSl+9GsNtx/l7XGTrA5sjMT1zHk5CmixumZeG2mXa122sOIaLvB",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFDz\uFFFD5\uFFFD\\x0011?\\x0001EC\uFFFD)~\uFFFDk\r\uFFFD\\x001f\uFFFD\uFFFDq\uFFFD\uFFFD\\x000el\uFFFD\uFFFD\uFFFD\uFFFDy9\nh\uFFFD\uFFFDf^\\x001bi\uFFFDk]\uFFFD\uFFFD\uFFFD\\x001a.\uFFFD"
 						},
 						{
-							"id": "121",
+							"id": "93",
 							"uri": "https://jobs.zenika.com/privacy-policy",
 							"nodeName": "https:\/\/jobs.zenika.com\/privacy-policy",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "sha384-H6PwD87WbbUPGGcJ1XrB07CXyXVm1ZxUzkPc8tHsjXwsHRUdASH9Y9DUZ0OUIQaO",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uFFFD\uFFFD\uFFFD\\x0003\uFFFDmC\uFFFD\\x0019\uFFFDu^\uFFFDt\uFFFD%\uFFFD]Y\uFFFDg\\x00153\uFFFD\uFFFD<\uFFFD{#_\\x000b\\x0007EG@HX\uFFFD5\\x0019\uFFFD\uFFFD\\x0008A\uFFFD"
-						},
-						{
-							"id": "88",
-							"uri": "https://jobs.zenika.com/sso_login",
-							"nodeName": "https:\/\/jobs.zenika.com\/sso_login",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2BpU7ShDRWUxS1oqoEFZTHgQtaOQtYJHbwbnj8e5IgBFyQkOyLNfvNaNZLgrbpVNXzoz3gc4",
-							"otherinfo": "\uFFFD\\x001aT\uFFFD(CEe1KZ*\uFFFDAYLx\\x0010\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDGo\\x0006\uFFFD\u01F9\"\\x0000E\uFFFD\t\\x000e\u0233_\uFFFD\u058Dd\uFFFD+n\uFFFDM_:3\uFFFD\\x00078"
+							"evidence": "sha384-EhdyaLVa2Q78rG3aJv3gmvJ8fjUFyAZtLPml/jcvRkUOaY6jEZenppU4htfETaZi",
+							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFC\uDD05\u071A-V\uFFFDC\uFFFD+\\x001bv\uFFFD\uFFFDx&\uFFFD\uFFFD\\x001f\uFFFDAr\\x0001\uFFFDK>i\uFFFD\uFFFD\u0451C\uFFFDc\uFFFD\uFFFDe\uFFFD\uFFFDN!\uFFFD\uFFFD\\x0013i\uFFFD"
 						}
 					],
 					"count": "11",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0016\uFFFD\uDAFF\uDFA1a\uFFFD\uFFFD\uFFFDTn\"?\uFFFDX\r\uFFFD\uFFFDA#\uFFFD\uFFFD\uFFFDVS\uFFFD\\x0007\uFFFD\uFFFD\uFFFD\uFFFD@\uFFFD\uFFFD\uFFFD~\\x000c\uFFFDNXcu\uFFFD\uFFFDz\uFFFDp\uFFFDY\\x0007\uFFFD</p>",
+					"otherinfo": "<p>\uFFFD\\x0016\uFFFD\uDAFC\uDD05\u071A-V\uFFFDC\uFFFD+\\x001bv\uFFFD\uFFFDx&\uFFFD\uFFFD\\x001f\uFFFDAr\\x0001\uFFFDK>i\uFFFD\uFFFD\u0451C\uFFFDc\uFFFD\uFFFDe\uFFFD\uFFFDN!\uFFFD\uFFFD\\x0013i\uFFFD</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
@@ -1115,9 +1041,49 @@
 					"desc": "<p>The Content-Type header was either missing or empty.</p>",
 					"instances":[ 
 						{
-							"id": "175",
+							"id": "171",
 							"uri": "https://jobs.zenika.com/applications",
-							"nodeName": "https:\/\/jobs.zenika.com\/applications ()(authenticity_token,candidate[_destroy],candidate[answers_attributes][0][date],candidate[answers_attributes][0][picked_...,candidate[answers_attributes][0][questio...,candidate[answers_attributes][1][picked_...,candidate[answers_attributes][1][questio...,candidate[answers_attributes][1][range],candidate[answers_attributes][2][choice],candidate[answers_attributes][2][picked_...,candidate[answers_attributes][2][questio...,candidate[answers_attributes][3][choice],candidate[answers_attributes][3][picked_...,candidate[answers_attributes][3][questio...,candidate[answers_attributes][4][boolean...,candidate[answers_attributes][4][picked_...,candidate[answers_attributes][4][questio...,candidate[answers_attributes][5][choice],candidate[answers_attributes][5][picked_...,candidate[answers_attributes][5][questio...,candidate[consent_given],candidate[delete_resume_remote_url],candidate[email],candidate[facebook_id],candidate[file_remote_url],candidate[first_name],candidate[id],candidate[job_applications_attributes][0...,candidate[job_applications_attributes][0...,candidate[last_name],candidate[linkedin_profile],candidate[linkedin_uid],candidate[linkedin_url],candidate[phone],candidate[referrer],candidate[resume_remote_url],candidate[social_image_url],city,commit,ctoken,range-custom_number,verify_token)",
+							"nodeName": "https:\/\/jobs.zenika.com\/applications ()(authenticity_token,candidate[_destroy],candidate[answers_attributes][0][choice],candidate[answers_attributes][0][picked_...,candidate[answers_attributes][0][questio...,candidate[answers_attributes][10][picked...,candidate[answers_attributes][10][questi...,candidate[answers_attributes][10][text],candidate[answers_attributes][1][choice],candidate[answers_attributes][1][picked_...,candidate[answers_attributes][1][questio...,candidate[answers_attributes][2][choice],candidate[answers_attributes][2][picked_...,candidate[answers_attributes][2][questio...,candidate[answers_attributes][3][picked_...,candidate[answers_attributes][3][questio...,candidate[answers_attributes][3][range],candidate[answers_attributes][4][choice],candidate[answers_attributes][4][picked_...,candidate[answers_attributes][4][questio...,candidate[answers_attributes][5][date],candidate[answers_attributes][5][picked_...,candidate[answers_attributes][5][questio...,candidate[answers_attributes][6][picked_...,candidate[answers_attributes][6][questio...,candidate[answers_attributes][6][text],candidate[answers_attributes][7][data][_...,candidate[answers_attributes][7][data][c...,candidate[answers_attributes][7][data][e...,candidate[answers_attributes][7][picked_...,candidate[answers_attributes][7][questio...,candidate[answers_attributes][8][picked_...,candidate[answers_attributes][8][questio...,candidate[answers_attributes][8][text],candidate[answers_attributes][9][data][t...,candidate[answers_attributes][9][data][t...,candidate[answers_attributes][9][picked_...,candidate[answers_attributes][9][questio...,candidate[consent_given],candidate[delete_resume_remote_url],candidate[email],candidate[facebook_id],candidate[file_remote_url],candidate[first_name],candidate[id],candidate[job_applications_attributes][0...,candidate[job_applications_attributes][0...,candidate[last_name],candidate[linkedin_profile],candidate[linkedin_uid],candidate[linkedin_url],candidate[phone],candidate[referrer],candidate[resume_remote_url],candidate[social_image_url],city,commit,ctoken,range-custom_number,verify_token)",
+							"method": "POST",
+							"param": "content-type",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "172",
+							"uri": "https://jobs.zenika.com/applications",
+							"nodeName": "https:\/\/jobs.zenika.com\/applications ()(authenticity_token,candidate[_destroy],candidate[answers_attributes][0][date],candidate[answers_attributes][0][picked_...,candidate[answers_attributes][0][questio...,candidate[answers_attributes][10][picked...,candidate[answers_attributes][10][questi...,candidate[answers_attributes][10][text],candidate[answers_attributes][1][picked_...,candidate[answers_attributes][1][questio...,candidate[answers_attributes][1][range],candidate[answers_attributes][2][choice],candidate[answers_attributes][2][picked_...,candidate[answers_attributes][2][questio...,candidate[answers_attributes][3][choice],candidate[answers_attributes][3][picked_...,candidate[answers_attributes][3][questio...,candidate[answers_attributes][4][choice],candidate[answers_attributes][4][picked_...,candidate[answers_attributes][4][questio...,candidate[answers_attributes][5][choice],candidate[answers_attributes][5][picked_...,candidate[answers_attributes][5][questio...,candidate[answers_attributes][6][picked_...,candidate[answers_attributes][6][questio...,candidate[answers_attributes][6][text],candidate[answers_attributes][7][data][_...,candidate[answers_attributes][7][data][c...,candidate[answers_attributes][7][data][e...,candidate[answers_attributes][7][picked_...,candidate[answers_attributes][7][questio...,candidate[answers_attributes][8][picked_...,candidate[answers_attributes][8][questio...,candidate[answers_attributes][8][text],candidate[answers_attributes][9][data][t...,candidate[answers_attributes][9][data][t...,candidate[answers_attributes][9][picked_...,candidate[answers_attributes][9][questio...,candidate[consent_given],candidate[delete_resume_remote_url],candidate[email],candidate[facebook_id],candidate[file_remote_url],candidate[first_name],candidate[id],candidate[job_applications_attributes][0...,candidate[job_applications_attributes][0...,candidate[last_name],candidate[linkedin_profile],candidate[linkedin_uid],candidate[linkedin_url],candidate[phone],candidate[referrer],candidate[resume_remote_url],candidate[social_image_url],city,commit,ctoken,range-custom_number,verify_token)",
+							"method": "POST",
+							"param": "content-type",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "170",
+							"uri": "https://jobs.zenika.com/applications",
+							"nodeName": "https:\/\/jobs.zenika.com\/applications ()(authenticity_token,candidate[_destroy],candidate[answers_attributes][0][date],candidate[answers_attributes][0][picked_...,candidate[answers_attributes][0][questio...,candidate[answers_attributes][1][number],candidate[answers_attributes][1][picked_...,candidate[answers_attributes][1][questio...,candidate[answers_attributes][2][choice],candidate[answers_attributes][2][picked_...,candidate[answers_attributes][2][questio...,candidate[answers_attributes][3][choice],candidate[answers_attributes][3][picked_...,candidate[answers_attributes][3][questio...,candidate[answers_attributes][4][choice],candidate[answers_attributes][4][picked_...,candidate[answers_attributes][4][questio...,candidate[answers_attributes][5][choice],candidate[answers_attributes][5][picked_...,candidate[answers_attributes][5][questio...,candidate[consent_given],candidate[delete_resume_remote_url],candidate[email],candidate[facebook_id],candidate[file_remote_url],candidate[first_name],candidate[id],candidate[job_applications_attributes][0...,candidate[job_applications_attributes][0...,candidate[last_name],candidate[linkedin_profile],candidate[linkedin_uid],candidate[linkedin_url],candidate[phone],candidate[referrer],candidate[resume_remote_url],candidate[social_image_url],city,commit,ctoken,verify_token)",
+							"method": "POST",
+							"param": "content-type",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "169",
+							"uri": "https://jobs.zenika.com/applications",
+							"nodeName": "https:\/\/jobs.zenika.com\/applications ()(authenticity_token,candidate[_destroy],candidate[answers_attributes][0][date],candidate[answers_attributes][0][picked_...,candidate[answers_attributes][0][questio...,candidate[answers_attributes][1][number],candidate[answers_attributes][1][picked_...,candidate[answers_attributes][1][questio...,candidate[answers_attributes][2][date],candidate[answers_attributes][2][picked_...,candidate[answers_attributes][2][questio...,candidate[answers_attributes][3][choice],candidate[answers_attributes][3][picked_...,candidate[answers_attributes][3][questio...,candidate[answers_attributes][4][choice],candidate[answers_attributes][4][picked_...,candidate[answers_attributes][4][questio...,candidate[answers_attributes][5][choice],candidate[answers_attributes][5][picked_...,candidate[answers_attributes][5][questio...,candidate[consent_given],candidate[delete_resume_remote_url],candidate[email],candidate[facebook_id],candidate[file_remote_url],candidate[first_name],candidate[id],candidate[job_applications_attributes][0...,candidate[job_applications_attributes][0...,candidate[last_name],candidate[linkedin_profile],candidate[linkedin_uid],candidate[linkedin_url],candidate[phone],candidate[referrer],candidate[resume_remote_url],candidate[social_image_url],city,commit,ctoken,verify_token)",
+							"method": "POST",
+							"param": "content-type",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "168",
+							"uri": "https://jobs.zenika.com/applications",
+							"nodeName": "https:\/\/jobs.zenika.com\/applications ()(authenticity_token,candidate[_destroy],candidate[answers_attributes][0][date],candidate[answers_attributes][0][picked_...,candidate[answers_attributes][0][questio...,candidate[answers_attributes][1][picked_...,candidate[answers_attributes][1][questio...,candidate[answers_attributes][1][range],candidate[answers_attributes][2][choice],candidate[answers_attributes][2][picked_...,candidate[answers_attributes][2][questio...,candidate[answers_attributes][3][choice],candidate[answers_attributes][3][picked_...,candidate[answers_attributes][3][questio...,candidate[answers_attributes][4][choice],candidate[answers_attributes][4][picked_...,candidate[answers_attributes][4][questio...,candidate[answers_attributes][5][choice],candidate[answers_attributes][5][picked_...,candidate[answers_attributes][5][questio...,candidate[consent_given],candidate[delete_resume_remote_url],candidate[email],candidate[facebook_id],candidate[file_remote_url],candidate[first_name],candidate[id],candidate[job_applications_attributes][0...,candidate[job_applications_attributes][0...,candidate[last_name],candidate[linkedin_profile],candidate[linkedin_uid],candidate[linkedin_url],candidate[phone],candidate[referrer],candidate[resume_remote_url],candidate[social_image_url],city,commit,ctoken,range-custom_number,verify_token)",
 							"method": "POST",
 							"param": "content-type",
 							"attack": "",
@@ -1125,14 +1091,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "1",
-					"systemic": false,
+					"count": "5",
+					"systemic": true,
 					"solution": "<p>Ensure each page is setting the specific and appropriate content-type value for the content being delivered.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "256"
+					"sourceid": "346"
 				},
 				{
 					"pluginid": "10049",
@@ -1145,17 +1111,7 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "93",
-							"uri": "https://jobs.zenika.com/cookie-policy",
-							"nodeName": "https:\/\/jobs.zenika.com\/cookie-policy",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "private",
-							"otherinfo": ""
-						},
-						{
-							"id": "76",
+							"id": "60",
 							"uri": "https://jobs.zenika.com/messages/",
 							"nodeName": "https:\/\/jobs.zenika.com\/messages\/",
 							"method": "GET",
@@ -1165,7 +1121,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "80",
+							"id": "53",
 							"uri": "https://jobs.zenika.com/messenger/",
 							"nodeName": "https:\/\/jobs.zenika.com\/messenger\/",
 							"method": "GET",
@@ -1175,14 +1131,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "93"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "10015",
@@ -1195,7 +1151,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "6",
+							"id": "0",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -1205,9 +1161,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "67",
-							"uri": "https://jobs.zenika.com/.well-known/api-catalog",
-							"nodeName": "https:\/\/jobs.zenika.com\/.well-known\/api-catalog",
+							"id": "64",
+							"uri": "https://jobs.zenika.com/",
+							"nodeName": "https:\/\/jobs.zenika.com\/",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
@@ -1215,17 +1171,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "83",
-							"uri": "https://jobs.zenika.com/cookie-policy",
-							"nodeName": "https:\/\/jobs.zenika.com\/cookie-policy",
+							"id": "69",
+							"uri": "https://jobs.zenika.com/privacy-policy",
+							"nodeName": "https:\/\/jobs.zenika.com\/privacy-policy",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
-							"evidence": "max-age=0, private, must-revalidate",
+							"evidence": "max-age=0, public, s-maxage=5184000",
 							"otherinfo": ""
 						},
 						{
-							"id": "0",
+							"id": "24",
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"nodeName": "https:\/\/jobs.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1235,7 +1191,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "3",
+							"id": "26",
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/jobs.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1265,27 +1221,17 @@
 					"desc": "<p>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "18",
+							"id": "6",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 315451",
+							"evidence": "Age: 124311",
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"id": "20",
-							"uri": "https://jobs.zenika.com",
-							"nodeName": "https:\/\/jobs.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 315452",
-							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"id": "63",
+							"id": "39",
 							"uri": "https://jobs.zenika.com/app/",
 							"nodeName": "https:\/\/jobs.zenika.com\/app\/",
 							"method": "GET",
@@ -1295,23 +1241,33 @@
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"id": "2",
+							"id": "50",
+							"uri": "https://jobs.zenika.com/messenger/",
+							"nodeName": "https:\/\/jobs.zenika.com\/messenger\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0",
+							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
+						},
+						{
+							"id": "27",
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"nodeName": "https:\/\/jobs.zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 4638734",
+							"evidence": "Age: 5243748",
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"id": "5",
+							"id": "34",
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/jobs.zenika.com\/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 4638734",
+							"evidence": "Age: 59617",
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						}
 					],
@@ -1335,7 +1291,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "61",
+							"id": "17",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -1345,7 +1301,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "37",
+							"id": "31",
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"nodeName": "https:\/\/jobs.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1355,7 +1311,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "45",
+							"id": "37",
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/jobs.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1385,7 +1341,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "59",
+							"id": "16",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -1395,7 +1351,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "36",
+							"id": "30",
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"nodeName": "https:\/\/jobs.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1405,7 +1361,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "44",
+							"id": "36",
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/jobs.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1435,7 +1391,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "58",
+							"id": "15",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -1445,7 +1401,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "35",
+							"id": "29",
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"nodeName": "https:\/\/jobs.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1455,7 +1411,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "43",
+							"id": "35",
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/jobs.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1485,7 +1441,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "62",
+							"id": "18",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -1495,7 +1451,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "38",
+							"id": "32",
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"nodeName": "https:\/\/jobs.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1505,7 +1461,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "46",
+							"id": "38",
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/jobs.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1535,7 +1491,7 @@
 					"desc": "<p>The given response has been identified as containing a session management token. The 'Other Info' field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to \"Auto-Detect\" then this rule will change the session management to use the tokens identified.</p>",
 					"instances":[ 
 						{
-							"id": "136",
+							"id": "137",
 							"uri": "https://jobs.zenika.com/connect",
 							"nodeName": "https:\/\/jobs.zenika.com\/connect",
 							"method": "GET",
@@ -1545,7 +1501,7 @@
 							"otherinfo": "cookie:_tt_session"
 						},
 						{
-							"id": "123",
+							"id": "135",
 							"uri": "https://jobs.zenika.com/connect/login",
 							"nodeName": "https:\/\/jobs.zenika.com\/connect\/login",
 							"method": "GET",
@@ -1555,7 +1511,17 @@
 							"otherinfo": "cookie:_tt_session"
 						},
 						{
-							"id": "81",
+							"id": "143",
+							"uri": "https://jobs.zenika.com/connect/login?return_to_url=%2Fconnect%2Fprofile%2Fsettings",
+							"nodeName": "https:\/\/jobs.zenika.com\/connect\/login (return_to_url)",
+							"method": "GET",
+							"param": "_tt_session",
+							"attack": "",
+							"evidence": "_tt_session",
+							"otherinfo": "cookie:_tt_session"
+						},
+						{
+							"id": "133",
 							"uri": "https://jobs.zenika.com/cookie-policy",
 							"nodeName": "https:\/\/jobs.zenika.com\/cookie-policy",
 							"method": "GET",
@@ -1565,7 +1531,7 @@
 							"otherinfo": "cookie:_tt_session"
 						},
 						{
-							"id": "149",
+							"id": "140",
 							"uri": "https://jobs.zenika.com/cookie_policy",
 							"nodeName": "https:\/\/jobs.zenika.com\/cookie_policy",
 							"method": "GET",
@@ -1575,7 +1541,7 @@
 							"otherinfo": "cookie:_tt_session"
 						},
 						{
-							"id": "152",
+							"id": "151",
 							"uri": "https://jobs.zenika.com/data_request",
 							"nodeName": "https:\/\/jobs.zenika.com\/data_request",
 							"method": "GET",
@@ -1585,17 +1551,7 @@
 							"otherinfo": "cookie:_tt_session"
 						},
 						{
-							"id": "138",
-							"uri": "https://jobs.zenika.com/jobs/7401577-business-manager-faconne-le-futur-de-zenika-bordeaux",
-							"nodeName": "https:\/\/jobs.zenika.com\/jobs\/7401577-business-manager-faconne-le-futur-de-zenika-bordeaux",
-							"method": "GET",
-							"param": "_tt_session",
-							"attack": "",
-							"evidence": "_tt_session",
-							"otherinfo": "cookie:_tt_session"
-						},
-						{
-							"id": "145",
+							"id": "146",
 							"uri": "https://jobs.zenika.com/jobs/show_more?page=2",
 							"nodeName": "https:\/\/jobs.zenika.com\/jobs\/show_more (page)",
 							"method": "GET",
@@ -1605,7 +1561,7 @@
 							"otherinfo": "cookie:_tt_session"
 						},
 						{
-							"id": "151",
+							"id": "150",
 							"uri": "https://jobs.zenika.com/request_removal",
 							"nodeName": "https:\/\/jobs.zenika.com\/request_removal",
 							"method": "GET",
@@ -1615,7 +1571,7 @@
 							"otherinfo": "cookie:_tt_session"
 						},
 						{
-							"id": "141",
+							"id": "139",
 							"uri": "https://jobs.zenika.com/auto_join",
 							"nodeName": "https:\/\/jobs.zenika.com\/auto_join ()(authenticity_token)",
 							"method": "POST",
@@ -1625,7 +1581,7 @@
 							"otherinfo": "cookie:_tt_session"
 						},
 						{
-							"id": "153",
+							"id": "154",
 							"uri": "https://jobs.zenika.com/connect/candidates",
 							"nodeName": "https:\/\/jobs.zenika.com\/connect\/candidates ()(authenticity_token,candidate[consent_given],candidate[department_id],candidate[email],candidate[role_id],city,ctoken)",
 							"method": "POST",
@@ -1635,7 +1591,7 @@
 							"otherinfo": "cookie:_tt_session"
 						},
 						{
-							"id": "147",
+							"id": "156",
 							"uri": "https://jobs.zenika.com/connect/login",
 							"nodeName": "https:\/\/jobs.zenika.com\/connect\/login ()(authenticity_token,candidate[email])",
 							"method": "POST",
@@ -1645,9 +1601,9 @@
 							"otherinfo": "cookie:_tt_session"
 						},
 						{
-							"id": "82",
-							"uri": "https://jobs.zenika.com/auto_join",
-							"nodeName": "https:\/\/jobs.zenika.com\/auto_join ()(authenticity_token)",
+							"id": "158",
+							"uri": "https://jobs.zenika.com/connect/login",
+							"nodeName": "https:\/\/jobs.zenika.com\/connect\/login ()(authenticity_token,candidate[email],return_to_url)",
 							"method": "POST",
 							"param": "_tt_session",
 							"attack": "",
@@ -1662,7 +1618,7 @@
 					"reference": "<p>https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</p>",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "142"
+					"sourceid": "155"
 				},
 				{
 					"pluginid": "10049",
@@ -1675,7 +1631,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "47",
+							"id": "19",
 							"uri": "https://jobs.zenika.com",
 							"nodeName": "https:\/\/jobs.zenika.com",
 							"method": "GET",
@@ -1685,9 +1641,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "74",
-							"uri": "https://jobs.zenika.com/.well-known/api-catalog",
-							"nodeName": "https:\/\/jobs.zenika.com\/.well-known\/api-catalog",
+							"id": "92",
+							"uri": "https://jobs.zenika.com/",
+							"nodeName": "https:\/\/jobs.zenika.com\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1695,7 +1651,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "34",
+							"id": "70",
+							"uri": "https://jobs.zenika.com/jobs/internal/",
+							"nodeName": "https:\/\/jobs.zenika.com\/jobs\/internal\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+						},
+						{
+							"id": "33",
 							"uri": "https://jobs.zenika.com/robots.txt",
 							"nodeName": "https:\/\/jobs.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1705,19 +1671,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "39",
+							"id": "40",
 							"uri": "https://jobs.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/jobs.zenika.com\/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "s-maxage=5184000",
-							"otherinfo": ""
-						},
-						{
-							"id": "87",
-							"uri": "https://jobs.zenika.com/sso_login",
-							"nodeName": "https:\/\/jobs.zenika.com\/sso_login",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1745,7 +1701,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
 					"instances":[ 
 						{
-							"id": "64",
+							"id": "42",
 							"uri": "https://jobs.zenika.com/app/",
 							"nodeName": "https:\/\/jobs.zenika.com\/app\/",
 							"method": "GET",
@@ -1762,7 +1718,7 @@
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "87"
+					"sourceid": "74"
 				},
 				{
 					"pluginid": "10031",
@@ -1775,7 +1731,7 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"id": "158",
+							"id": "145",
 							"uri": "https://jobs.zenika.com/connect/login?return_to_url=%2Fconnect%2Fprofile%2Fsettings",
 							"nodeName": "https:\/\/jobs.zenika.com\/connect\/login (return_to_url)",
 							"method": "GET",
@@ -1785,7 +1741,7 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://jobs.zenika.com/connect/login?return_to_url=%2Fconnect%2Fprofile%2Fsettings\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nreturn_to_url=/connect/profile/settings\n\nThe user-controlled value was:\n/connect/profile/settings"
 						},
 						{
-							"id": "168",
+							"id": "174",
 							"uri": "https://jobs.zenika.com/data_request?verified=true",
 							"nodeName": "https:\/\/jobs.zenika.com\/data_request (verified)",
 							"method": "GET",
@@ -1795,7 +1751,7 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://jobs.zenika.com/data_request?verified=true\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\nverified=true\n\nThe user-controlled value was:\nhttps://jobs.zenika.com/data_request?verified=true"
 						},
 						{
-							"id": "159",
+							"id": "160",
 							"uri": "https://jobs.zenika.com/jobs?page=2",
 							"nodeName": "https:\/\/jobs.zenika.com\/jobs (page)",
 							"method": "GET",
@@ -1805,7 +1761,7 @@
 							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://jobs.zenika.com/jobs?page=2\n\nappears to include user input in:\na(n) [meta] tag [content] attribute\n\nThe user input found was:\npage=2\n\nThe user-controlled value was:\nhttps://jobs.zenika.com/jobs?page=2"
 						},
 						{
-							"id": "160",
+							"id": "161",
 							"uri": "https://jobs.zenika.com/request_removal?verified=true",
 							"nodeName": "https:\/\/jobs.zenika.com\/request_removal (verified)",
 							"method": "GET",
@@ -1822,7 +1778,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "208"
+					"sourceid": "182"
 				}
 			]
 		}

@@ -1,8 +1,58 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 5 Jul 2026 02:49:37",
-	"created": "2026-07-05T02:49:37.339581794Z",
+	"@generated": "Sun, 12 Jul 2026 02:22:30",
+	"created": "2026-07-12T02:22:30.113549443Z",
+	"insights":[
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://faq.zenika.com",
+			"key": "insight.code.2xx",
+			"description": "Percentage of responses with status code 2xx",
+			"statistic": "25"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://faq.zenika.com",
+			"key": "insight.code.3xx",
+			"description": "Percentage of responses with status code 3xx",
+			"statistic": "75"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://faq.zenika.com",
+			"key": "insight.endpoint.ctype.text/plain",
+			"description": "Percentage of endpoints with content type text/plain",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://faq.zenika.com",
+			"key": "insight.endpoint.method.GET",
+			"description": "Percentage of endpoints with method GET",
+			"statistic": "100"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://faq.zenika.com",
+			"key": "insight.endpoint.total",
+			"description": "Count of total endpoints",
+			"statistic": "2"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://faq.zenika.com",
+			"key": "insight.response.slow",
+			"description": "Percentage of slow responses",
+			"statistic": "100"
+		}
+	],
 	"site":[ 
 		{
 			"@name": "https://faq.zenika.com",
@@ -21,7 +71,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "10",
+							"id": "26",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -51,7 +101,7 @@
 					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server.</p>",
 					"instances":[ 
 						{
-							"id": "13",
+							"id": "27",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -81,7 +131,7 @@
 					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
 					"instances":[ 
 						{
-							"id": "0",
+							"id": "24",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -111,7 +161,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "17",
+							"id": "31",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -121,7 +171,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "16",
+							"id": "30",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -151,7 +201,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "28",
+							"id": "22",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -181,7 +231,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "29",
+							"id": "23",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -211,7 +261,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "27",
+							"id": "21",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -241,7 +291,7 @@
 					"desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>",
 					"instances":[ 
 						{
-							"id": "19",
+							"id": "33",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -271,7 +321,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "29",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -301,7 +351,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "18",
+							"id": "32",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -321,36 +371,6 @@
 					"sourceid": "1"
 				},
 				{
-					"pluginid": "10094",
-					"alertRef": "10094-3",
-					"alert": "Base64 Disclosure",
-					"name": "Base64 Disclosure",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
-					"instances":[ 
-						{
-							"id": "25",
-							"uri": "https://faq.zenika.com",
-							"nodeName": "https:\/\/faq.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs",
-							"otherinfo": "\uFFFD\\x0016\uFFFD\uDAFE\uDCA1J\u01CA\\x000e\uFFFD!:\uFFFDhBz\uFFFD\uFFFD\uFFFDN\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\uFFFD\uFFFD\uFFFDN\u5017 \u06BE\uFFFDD\u0458H\uFFFD\\x000b\uFFFD)\uFFFD;6-\uFFFD;"
-						}
-					],
-					"count": "1",
-					"systemic": false,
-					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0016\uFFFD\uDAFE\uDCA1J\u01CA\\x000e\uFFFD!:\uFFFDhBz\uFFFD\uFFFD\uFFFDN\uFFFD\uFFFD\uFFFD\\x0003\uFFFD\uFFFD\uFFFD\uFFFDN\u5017 \u06BE\uFFFDD\u0458H\uFFFD\\x000b\uFFFD)\uFFFD;6-\uFFFD;</p>",
-					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
-					"cweid": "319",
-					"wascid": "13",
-					"sourceid": "1"
-				},
-				{
 					"pluginid": "10109",
 					"alertRef": "10109",
 					"alert": "Modern Web Application",
@@ -358,10 +378,10 @@
 					"riskcode": "0",
 					"confidence": "2",
 					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>",
+					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "28",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -391,7 +411,7 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "12",
+							"id": "18",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -401,7 +421,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "17",
 							"uri": "https://faq.zenika.com/robots.txt",
 							"nodeName": "https:\/\/faq.zenika.com\/robots.txt",
 							"method": "GET",
@@ -411,7 +431,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "11",
+							"id": "19",
 							"uri": "https://faq.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/faq.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -441,7 +461,7 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "25",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -471,7 +491,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "6",
+							"id": "9",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -481,7 +501,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "22",
+							"id": "10",
 							"uri": "https://faq.zenika.com/robots.txt",
 							"nodeName": "https:\/\/faq.zenika.com\/robots.txt",
 							"method": "GET",
@@ -491,7 +511,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "7",
+							"id": "11",
 							"uri": "https://faq.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/faq.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -521,7 +541,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "3",
+							"id": "8",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -531,7 +551,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "21",
+							"id": "5",
 							"uri": "https://faq.zenika.com/robots.txt",
 							"nodeName": "https:\/\/faq.zenika.com\/robots.txt",
 							"method": "GET",
@@ -541,7 +561,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "5",
+							"id": "4",
 							"uri": "https://faq.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/faq.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -571,7 +591,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "1",
+							"id": "0",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -579,29 +599,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"id": "20",
-							"uri": "https://faq.zenika.com/robots.txt",
-							"nodeName": "https:\/\/faq.zenika.com\/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "2",
-							"uri": "https://faq.zenika.com/sitemap.xml",
-							"nodeName": "https:\/\/faq.zenika.com\/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "1",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
@@ -621,7 +621,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "13",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -631,7 +631,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
+							"id": "15",
 							"uri": "https://faq.zenika.com/robots.txt",
 							"nodeName": "https:\/\/faq.zenika.com\/robots.txt",
 							"method": "GET",
@@ -641,7 +641,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "9",
+							"id": "12",
 							"uri": "https://faq.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/faq.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -671,7 +671,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
 					"instances":[ 
 						{
-							"id": "26",
+							"id": "20",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",

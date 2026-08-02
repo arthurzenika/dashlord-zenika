@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 26 Jul 2026 02:37:33",
-	"created": "2026-07-26T02:37:33.190643369Z",
+	"@generated": "Sun, 2 Aug 2026 02:33:15",
+	"created": "2026-08-02T02:33:15.377421735Z",
 	"insights":[
 		{
 			"level": "Info",
@@ -201,7 +201,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "7",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -231,7 +231,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "11",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -442,16 +442,6 @@
 					"instances":[ 
 						{
 							"id": "0",
-							"uri": "https://faq.zenika.com",
-							"nodeName": "https:\/\/faq.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "302",
-							"otherinfo": ""
-						},
-						{
-							"id": "1",
 							"uri": "https://faq.zenika.com/robots.txt",
 							"nodeName": "https:\/\/faq.zenika.com\/robots.txt",
 							"method": "GET",
@@ -461,7 +451,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "2",
+							"id": "1",
 							"uri": "https://faq.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/faq.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -471,7 +461,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
 					"otherinfo": "",
@@ -521,7 +511,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "12",
+							"id": "14",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -531,7 +521,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "16",
+							"id": "17",
 							"uri": "https://faq.zenika.com/robots.txt",
 							"nodeName": "https:\/\/faq.zenika.com\/robots.txt",
 							"method": "GET",
@@ -541,7 +531,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "13",
+							"id": "12",
 							"uri": "https://faq.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/faq.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -558,7 +548,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -571,7 +561,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "10",
+							"id": "9",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -581,7 +571,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "11",
+							"id": "16",
 							"uri": "https://faq.zenika.com/robots.txt",
 							"nodeName": "https:\/\/faq.zenika.com\/robots.txt",
 							"method": "GET",
@@ -591,7 +581,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "7",
+							"id": "10",
 							"uri": "https://faq.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/faq.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -608,7 +598,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -658,7 +648,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90005",
@@ -671,7 +661,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "15",
 							"uri": "https://faq.zenika.com",
 							"nodeName": "https:\/\/faq.zenika.com",
 							"method": "GET",
@@ -691,7 +681,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "17",
+							"id": "13",
 							"uri": "https://faq.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/faq.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -708,37 +698,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "8"
-				},
-				{
-					"pluginid": "10049",
-					"alertRef": "10049-2",
-					"alert": "Storable but Non-Cacheable Content",
-					"name": "Storable but Non-Cacheable Content",
-					"riskcode": "0",
-					"confidence": "2",
-					"riskdesc": "Informational (Medium)",
-					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
-					"instances":[ 
-						{
-							"id": "3",
-							"uri": "https://faq.zenika.com",
-							"nodeName": "https:\/\/faq.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=0",
-							"otherinfo": ""
-						}
-					],
-					"count": "1",
-					"systemic": false,
-					"solution": "",
-					"otherinfo": "",
-					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
-					"cweid": "524",
-					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				}
 			]
 		}

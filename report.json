@@ -79,888 +79,16 @@
       }
     ],
     "url": "https://zenika.com/fr-fr",
-    "http": {
-      "scan": {
-        "algorithmVersion": 4,
-        "grade": "F",
-        "error": null,
-        "score": 0,
-        "statusCode": 200,
-        "testsFailed": 5,
-        "testsPassed": 5,
-        "testsQuantity": 10,
-        "responseHeaders": {
-          "x-nextjs-cache": "STALE",
-          "x-powered-by": "Next.js",
-          "etag": "\"i3biydw62e3jk8\"",
-          "content-type": "text/html; charset=utf-8",
-          "cache-control": "s-maxage=10, stale-while-revalidate",
-          "vary": "Accept-Encoding",
-          "date": "Sun, 26 Jul 2026 01:47:04 GMT",
-          "connection": "close",
-          "transfer-encoding": "chunked",
-          "sozu-id": "01KYE1NDPAGNEAT8RAPGMXHGQD"
-        }
-      },
-      "tests": {
-        "content-security-policy": {
-          "expectation": "csp-implemented-with-no-unsafe",
-          "pass": false,
-          "result": "csp-not-implemented",
-          "scoreModifier": -25,
-          "data": null,
-          "http": false,
-          "meta": false,
-          "policy": null,
-          "numPolicies": 0
-        },
-        "cookies": {
-          "expectation": "cookies-secure-with-httponly-sessions",
-          "pass": true,
-          "result": "cookies-not-found",
-          "scoreModifier": 0,
-          "data": null,
-          "sameSite": false
-        },
-        "cross-origin-resource-sharing": {
-          "expectation": "cross-origin-resource-sharing-not-implemented",
-          "pass": true,
-          "result": "cross-origin-resource-sharing-not-implemented",
-          "scoreModifier": 0,
-          "data": null
-        },
-        "redirection": {
-          "expectation": "redirection-to-https",
-          "pass": true,
-          "result": "redirection-to-https",
-          "scoreModifier": 0,
-          "destination": "https://zenika.com/fr-fr",
-          "redirects": true,
-          "route": [
-            "http://zenika.com/fr-fr",
-            "https://zenika.com/fr-fr"
-          ],
-          "statusCode": 200
-        },
-        "referrer-policy": {
-          "expectation": "referrer-policy-private",
-          "pass": true,
-          "result": "referrer-policy-not-implemented",
-          "scoreModifier": 0,
-          "data": null,
-          "http": false,
-          "meta": false
-        },
-        "strict-transport-security": {
-          "expectation": "hsts-implemented-max-age-at-least-six-months",
-          "pass": false,
-          "result": "hsts-not-implemented",
-          "scoreModifier": -20,
-          "data": null,
-          "includeSubDomains": false,
-          "maxAge": null,
-          "preload": false,
-          "preloaded": false
-        },
-        "subresource-integrity": {
-          "expectation": "sri-implemented-and-external-scripts-loaded-securely",
-          "pass": false,
-          "result": "sri-not-implemented-and-external-scripts-not-loaded-securely",
-          "scoreModifier": -50,
-          "data": {
-            "//static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true": {
-              "crossorigin": null,
-              "integrity": null
-            }
-          }
-        },
-        "x-content-type-options": {
-          "expectation": "x-content-type-options-nosniff",
-          "pass": false,
-          "result": "x-content-type-options-not-implemented",
-          "scoreModifier": -5,
-          "data": null
-        },
-        "x-frame-options": {
-          "expectation": "x-frame-options-sameorigin-or-deny",
-          "pass": false,
-          "result": "x-frame-options-not-implemented",
-          "scoreModifier": -20,
-          "data": null
-        },
-        "cross-origin-resource-policy": {
-          "expectation": "corp-implemented-with-same-site",
-          "pass": true,
-          "result": "corp-not-implemented",
-          "scoreModifier": 0,
-          "data": null,
-          "http": false,
-          "meta": false
-        }
-      }
-    },
+    "http": null,
     "updownio": null,
     "nmap": null,
     "dependabot": null,
     "codescan": null,
     "testssl": null,
     "thirdparties": {
-      "trackers": [
-        {
-          "type": "google fonts",
-          "url": "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/813ee750-ebdd-4944-bed1-a91d36bbb52e_12.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/f3297fe6-a061-429f-9370-ebe68078f60b_11.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://static.cdn.prismic.io/prismic.js?repo=zenika-website&new=true"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/031605ee-bdcf-4945-8e13-377abef45b9d_logo_dark.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/1e2a5d61-1007-4ddb-851a-3cbb14574a3e_Monogramme.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/1495bf9f-cc2d-44ea-b7ea-054e11007c38_6.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/3f991a94-d2cf-4010-b89a-de5d065aba56_4.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/e339a5f2-3ee6-4ce6-b649-e0fd534362a2_5.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/eb3fe9ce-66de-4e62-8295-370afd5d7d6a_10.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/cbf39bde-c962-47a0-851c-624fa629eac7_8.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/262f9a41-9d8b-4f38-9ffc-d1be86124949_3.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/78c9219f-96ee-461b-b8a9-c721bc63537a_2.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/f44b64e4-6bab-4c09-b6c5-dfeb86b2bae6_7.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/c75f5575-8153-45cc-beed-6dbcab74e46c_9.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/d78ef996-b383-41c5-b9ba-ec769423b75e_1.png?auto=compress,format&rect=0,0,550,400&w=550&h=400"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/Z36c5JbqstJ99LgA_Frame4593.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/Z36c45bqstJ99Lf__Frame4588.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/Z36c5ZbqstJ99LgB_Frame4594.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/da74bd36-c421-492a-ab9d-dc2030a2dfbf_linkedin+white.png?auto=compress,format&rect=0,0,20,20&w=20&h=20"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/82172688-3542-4634-ba65-d2485a8b1e11_twitter.blancpng.png?auto=compress,format&rect=0,0,20,20&w=20&h=20"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/fa535600-75ad-4772-8e43-3e34f808b1c8_youtubeBLANC.png?auto=compress,format&rect=0,0,20,20&w=20&h=20"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/0fdf6e15-8b06-4f41-89e5-c284c67a8b3d_mediumBLANC.png?auto=compress,format&rect=0,0,20,20&w=20&h=20"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/e9386ff9-e113-49dc-ad84-27d05ab46149_twitch+BLANC.png?auto=compress,format&rect=0,0,20,20&w=20&h=20"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/6a9eeaf5-d243-4671-b065-07d756a5c0bb_githubblanc.png?auto=compress,format&rect=0,0,20,20&w=20&h=20"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.prismic.io/prismic-toolbar/4.1.4/iframe.html"
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/nunito/v32/XRXV3I6Li01BKofINeaB.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/82ab357d-b9fa-4760-b2b4-a651c2a89ff7_ryan-plomp-0iPebSCgKoA-unsplash.jpg?auto=compress,format&rect=483,0,954,1281&w=338&h=454"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/7f07836f-5562-4fbf-83cc-ab5ec2179034_tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg?auto=compress,format&rect=484,0,953,1280&w=338&h=454"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/03098c5d-0e17-4dc3-b72a-fec11e2284a7_dom-fou-YRMWVcdyhmI-unsplash.jpg?auto=compress,format&rect=343,0,1072,1440&w=338&h=454"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/ab661507-2b95-4872-9bc3-d0cc1dac97ae_nail-gilfanov-TuyneoFacJg-unsplash.jpg?auto=compress,format&rect=604,0,953,1280&w=338&h=454"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/22fdf801-9c1d-4544-bead-0a32e8a8f088_Votre+entreprise+est-elle+vulne%CC%81rable+aux+attaques+physiques+_+-+REX+Red+Team+GPTW+%281%29.png?auto=compress,format"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/09ec9aee-8858-430a-aace-7cc4a6d8edbd_luka-vovk-EngLPePzg7U-unsplash.jpg?auto=compress,format&rect=0,17,1920,2579&w=338&h=454"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/902c80e1-cea4-4628-8113-eac5fb86aedf_cover_ref.png?auto=compress,format&rect=0,0,580,779&w=338&h=454"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/57fcb879-61de-4763-adfa-e250e9233d2f_Cr%C3%A9er+une+application+au+service+de+la+marque+-+Cas+d%E2%80%99usage+D%C3%A9cathlon+Canada.jpg?auto=compress,format"
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B5OaVIGxA.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/api/v2"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/8bb41ee0-30c8-4cae-b673-b9671ff086f5_icon_agile.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/3acdb9c4-fbda-434b-a6bc-2cd0ef090c74_icon_architecture.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/7e7d16c9-2456-4ff2-a652-de91803c0299_Cloud.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/8c919e5b-e4bf-43e8-9dc9-c64138a60666_icon_data.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/79a135d9-fb2f-46f2-877f-5213cc5aa78c_icon_design.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/73284309-fb26-4e3a-9ee8-6d5797a594b8_icon_devops.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/644cf05f-b5af-490e-8d2e-46ebc582bdc3_icon_dev.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/be1465f9-bba3-4fab-8347-e173cb9a4b9d_GreenIT.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/f62ea2d6-0980-4e76-a392-a5f856270dcf_Innovation.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/749919b9-1af0-4637-8473-1b0f1928c023_Mobile.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/zenika-website/2757e04b-5604-4400-8c33-aaaadede7bb8_icon_security.svg"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/efb6f4ba-c957-4955-98f0-0d8ae9ca3e09_gcloud.jpg?auto=compress,format&rect=287,0,630,630&w=112&h=112"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/17e44d84-cb2c-42c0-a4ad-18eb91c94eb1_confluent.jpg?auto=compress,format&rect=442,55,316,316&w=112&h=112"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/2c4b513b-4c49-484b-bdb9-c5e54b1e92c7_elastic.jpg?auto=compress,format&rect=0,0,400,400&w=112&h=112"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/92d61deb-16fe-43e1-93e4-f99bda8b1534_logo+green+it+.png?auto=compress,format&rect=0,0,300,300&w=112&h=112"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/cd5ba688-edda-4d9f-8f47-5d12185059a3_Spring_Framework-Logo.wine.jpg?auto=compress,format&rect=0,0,3000,3000&w=112&h=112"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/41a774fc-ec1f-412d-95e5-29358f0b8f7c_scaledagile.jfif?auto=compress,format&rect=0,13,357,357&w=112&h=112"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/7b5f7534-da32-4b2f-8500-12721c751127_Logo+Scrum+Org.png?auto=compress,format&rect=0,0,112,112&w=112&h=112"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/Z9FaGRsAHJWoma04_1.png?auto=format,compress&rect=0,0,112,112&w=112&h=112"
-        },
-        {
-          "type": "unknown",
-          "url": "https://images.prismic.io/zenika-website/Z9FaGhsAHJWoma06_2.png?auto=format,compress&rect=0,0,112,112&w=112&h=112"
-        },
-        {
-          "type": "google fonts",
-          "url": "https://fonts.gstatic.com/s/opensans/v44/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B5OaVIGxA.woff2",
-          "details": {
-            "id": "google fonts",
-            "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-          }
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika-website.cdn.prismic.io/api/v2/documents/search?page=1&pageSize=100&lang=fr-FR&ref=al9VrRIAACoANyg_&orderings=%5Bdocument.first_publication_date%20desc%5D&q=%5B%5Bat(document.type%2C%20%22reference%22)%5D%5D"
-        }
-      ],
-      "cookies": [],
-      "headers": {
-        "cache-control": "s-maxage=10, stale-while-revalidate",
-        "connection": "keep-alive",
-        "content-encoding": "gzip",
-        "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 26 Jul 2026 01:44:00 GMT",
-        "etag": "\"i3biydw62e3jk8\"",
-        "keep-alive": "timeout=5",
-        "sozu-id": "01KYE1FT4W5Z9BHSA8SAPA11QX",
-        "transfer-encoding": "chunked",
-        "vary": "Accept-Encoding",
-        "x-powered-by": "Next.js",
-        "x-nextjs-cache": "STALE"
-      },
-      "endpoints": [
-        {
-          "hostname": "zenika.com",
-          "ip": "91.208.207.221",
-          "geoip": {
-            "continent": {
-              "code": "EU",
-              "geoname_id": 6255148,
-              "names": {
-                "de": "Europa",
-                "en": "Europe",
-                "es": "Europa",
-                "fr": "Europe",
-                "ja": "ヨーロッパ",
-                "pt-BR": "Europa",
-                "ru": "Европа",
-                "zh-CN": "欧洲"
-              }
-            },
-            "country": {
-              "geoname_id": 3017382,
-              "is_in_european_union": true,
-              "iso_code": "FR",
-              "names": {
-                "de": "Frankreich",
-                "en": "France",
-                "es": "Francia",
-                "fr": "France",
-                "ja": "フランス共和国",
-                "pt-BR": "França",
-                "ru": "Франция",
-                "zh-CN": "法国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 500,
-              "latitude": 48.8582,
-              "longitude": 2.3387,
-              "time_zone": "Europe/Paris"
-            },
-            "registered_country": {
-              "geoname_id": 3017382,
-              "is_in_european_union": true,
-              "iso_code": "FR",
-              "names": {
-                "de": "Frankreich",
-                "en": "France",
-                "es": "Francia",
-                "fr": "France",
-                "ja": "フランス共和国",
-                "pt-BR": "França",
-                "ru": "Франция",
-                "zh-CN": "法国"
-              }
-            }
-          }
-        },
-        {
-          "hostname": "fonts.googleapis.com",
-          "ip": "142.251.179.95",
-          "geoip": {
-            "continent": {
-              "code": "NA",
-              "geoname_id": 6255149,
-              "names": {
-                "de": "Nordamerika",
-                "en": "North America",
-                "es": "Norteamérica",
-                "fr": "Amérique du Nord",
-                "ja": "北アメリカ",
-                "pt-BR": "América do Norte",
-                "ru": "Северная Америка",
-                "zh-CN": "北美洲"
-              }
-            },
-            "country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
-            },
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            }
-          }
-        },
-        {
-          "hostname": "images.prismic.io",
-          "ip": "199.232.90.208",
-          "geoip": {
-            "city": {
-              "geoname_id": 5101798,
-              "names": {
-                "de": "Newark",
-                "en": "Newark",
-                "es": "Newark",
-                "fr": "Newark",
-                "ja": "ニューアーク",
-                "pt-BR": "Newark",
-                "ru": "Ньюарк"
-              }
-            },
-            "continent": {
-              "code": "NA",
-              "geoname_id": 6255149,
-              "names": {
-                "de": "Nordamerika",
-                "en": "North America",
-                "es": "Norteamérica",
-                "fr": "Amérique du Nord",
-                "ja": "北アメリカ",
-                "pt-BR": "América do Norte",
-                "ru": "Северная Америка",
-                "zh-CN": "北美洲"
-              }
-            },
-            "country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 20,
-              "latitude": 40.7399,
-              "longitude": -74.1691,
-              "metro_code": 501,
-              "time_zone": "America/New_York"
-            },
-            "postal": {
-              "code": "07192"
-            },
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "subdivisions": [
-              {
-                "geoname_id": 5101760,
-                "iso_code": "NJ",
-                "names": {
-                  "de": "New Jersey",
-                  "en": "New Jersey",
-                  "es": "Nueva Jersey",
-                  "fr": "New Jersey",
-                  "ja": "ニュージャージー州",
-                  "pt-BR": "Nova Jérsei",
-                  "ru": "Нью-Джерси",
-                  "zh-CN": "新泽西州"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "hostname": "static.cdn.prismic.io",
-          "ip": "18.165.83.26",
-          "geoip": {
-            "continent": {
-              "code": "NA",
-              "geoname_id": 6255149,
-              "names": {
-                "de": "Nordamerika",
-                "en": "North America",
-                "es": "Norteamérica",
-                "fr": "Amérique du Nord",
-                "ja": "北アメリカ",
-                "pt-BR": "América do Norte",
-                "ru": "Северная Америка",
-                "zh-CN": "北美洲"
-              }
-            },
-            "country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
-            },
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            }
-          }
-        },
-        {
-          "hostname": "zenika-website.cdn.prismic.io",
-          "ip": "13.226.209.95",
-          "geoip": {
-            "continent": {
-              "code": "NA",
-              "geoname_id": 6255149,
-              "names": {
-                "de": "Nordamerika",
-                "en": "North America",
-                "es": "Norteamérica",
-                "fr": "Amérique du Nord",
-                "ja": "北アメリカ",
-                "pt-BR": "América do Norte",
-                "ru": "Северная Америка",
-                "zh-CN": "北美洲"
-              }
-            },
-            "country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
-            },
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            }
-          }
-        },
-        {
-          "hostname": "zenika-website.prismic.io",
-          "ip": "34.197.98.158",
-          "geoip": {
-            "city": {
-              "geoname_id": 4744870,
-              "names": {
-                "de": "Ashburn",
-                "en": "Ashburn",
-                "es": "Ashburn",
-                "fr": "Ashburn",
-                "ja": "アッシュバーン",
-                "pt-BR": "Ashburn",
-                "ru": "Ашберн",
-                "zh-CN": "阿什本"
-              }
-            },
-            "continent": {
-              "code": "NA",
-              "geoname_id": 6255149,
-              "names": {
-                "de": "Nordamerika",
-                "en": "North America",
-                "es": "Norteamérica",
-                "fr": "Amérique du Nord",
-                "ja": "北アメリカ",
-                "pt-BR": "América do Norte",
-                "ru": "Северная Америка",
-                "zh-CN": "北美洲"
-              }
-            },
-            "country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
-            },
-            "postal": {
-              "code": "20149"
-            },
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "subdivisions": [
-              {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
-                "names": {
-                  "de": "Virginia",
-                  "en": "Virginia",
-                  "es": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "hostname": "fonts.gstatic.com",
-          "ip": "192.178.218.94",
-          "geoip": {
-            "continent": {
-              "code": "NA",
-              "geoname_id": 6255149,
-              "names": {
-                "de": "Nordamerika",
-                "en": "North America",
-                "es": "Norteamérica",
-                "fr": "Amérique du Nord",
-                "ja": "北アメリカ",
-                "pt-BR": "América do Norte",
-                "ru": "Северная Америка",
-                "zh-CN": "北美洲"
-              }
-            },
-            "country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 1000,
-              "latitude": 37.751,
-              "longitude": -97.822,
-              "time_zone": "America/Chicago"
-            },
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            }
-          }
-        }
-      ]
+      "trackers": null,
+      "cookies": null,
+      "headers": null
     },
     "wappalyzer": {
       "urls": {
@@ -1305,8 +433,8 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.17.0",
-      "@generated": "Sun, 26 Jul 2026 01:46:18",
-      "created": "2026-07-26T01:46:18.316803389Z",
+      "@generated": "Sun, 2 Aug 2026 01:47:41",
+      "created": "2026-08-02T01:47:41.390129119Z",
       "insights": [
         {
           "level": "Low",
@@ -1394,7 +522,7 @@
           "site": "https://zenika.com",
           "key": "insight.response.slow",
           "description": "Percentage of slow responses",
-          "statistic": "40"
+          "statistic": "29"
         }
       ],
       "site": [
@@ -1561,8 +689,10 @@
       {
         "requestedUrl": "https://zenika.com/fr-fr",
         "finalUrl": "https://zenika.com/fr-fr",
-        "fetchTime": "2026-07-26T01:46:33.982Z",
-        "runWarnings": [],
+        "fetchTime": "2026-08-02T01:47:57.749Z",
+        "runWarnings": [
+          "The page loaded too slowly to finish within the time limit. Results may be incomplete."
+        ],
         "categories": {
           "performance": {
             "title": "Performance",
@@ -1572,7 +702,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.67
+            "score": 0.59
           },
           "accessibility": {
             "title": "Accessibility",
@@ -1593,7 +723,7 @@
               "snapshot"
             ],
             "id": "best-practices",
-            "score": 1
+            "score": 0.92
           },
           "seo": {
             "title": "SEO",
@@ -1624,53 +754,51 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 8804,
+            "numericValue": 8786,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3180,
-                  "firstMeaningfulPaint": 3180,
-                  "largestContentfulPaint": 3255,
-                  "interactive": 8804,
-                  "speedIndex": 5849,
-                  "totalBlockingTime": 377,
-                  "maxPotentialFID": 318,
+                  "firstContentfulPaint": 3188,
+                  "firstMeaningfulPaint": 3188,
+                  "largestContentfulPaint": 4149,
+                  "interactive": 8786,
+                  "speedIndex": 5328,
+                  "totalBlockingTime": 455,
+                  "maxPotentialFID": 443,
                   "cumulativeLayoutShift": 0.0341288333468967,
                   "cumulativeLayoutShiftMainFrame": 0.0341288333468967,
                   "totalCumulativeLayoutShift": 0.0341288333468967,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 212212430,
+                  "observedTimeOriginTs": 344505640,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 212212430,
-                  "observedFirstPaint": 480,
-                  "observedFirstPaintTs": 212692132,
-                  "observedFirstContentfulPaint": 480,
-                  "observedFirstContentfulPaintTs": 212692132,
-                  "observedFirstContentfulPaintAllFrames": 480,
-                  "observedFirstContentfulPaintAllFramesTs": 212692132,
-                  "observedFirstMeaningfulPaint": 480,
-                  "observedFirstMeaningfulPaintTs": 212692132,
-                  "observedLargestContentfulPaint": 480,
-                  "observedLargestContentfulPaintTs": 212692132,
-                  "observedLargestContentfulPaintAllFrames": 480,
-                  "observedLargestContentfulPaintAllFramesTs": 212692132,
-                  "observedTraceEnd": 5706,
-                  "observedTraceEndTs": 217918768,
-                  "observedLoad": 1748,
-                  "observedLoadTs": 213960342,
-                  "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 212213385,
+                  "observedNavigationStartTs": 344505640,
+                  "observedFirstPaint": 500,
+                  "observedFirstPaintTs": 345005837,
+                  "observedFirstContentfulPaint": 500,
+                  "observedFirstContentfulPaintTs": 345005837,
+                  "observedFirstContentfulPaintAllFrames": 500,
+                  "observedFirstContentfulPaintAllFramesTs": 345005837,
+                  "observedFirstMeaningfulPaint": 500,
+                  "observedFirstMeaningfulPaintTs": 345005837,
+                  "observedLargestContentfulPaint": 500,
+                  "observedLargestContentfulPaintTs": 345005837,
+                  "observedLargestContentfulPaintAllFrames": 500,
+                  "observedLargestContentfulPaintAllFramesTs": 345005837,
+                  "observedTraceEnd": 45011,
+                  "observedTraceEndTs": 389516222,
+                  "observedDomContentLoaded": 0,
+                  "observedDomContentLoadedTs": 344505934,
                   "observedCumulativeLayoutShift": 0.0341288333468967,
                   "observedCumulativeLayoutShiftMainFrame": 0.0341288333468967,
                   "observedTotalCumulativeLayoutShift": 0.0341288333468967,
-                  "observedFirstVisualChange": 480,
-                  "observedFirstVisualChangeTs": 212692430,
-                  "observedLastVisualChange": 1242,
-                  "observedLastVisualChangeTs": 213454430,
-                  "observedSpeedIndex": 568,
-                  "observedSpeedIndexTs": 212780255
+                  "observedFirstVisualChange": 500,
+                  "observedFirstVisualChangeTs": 345005640,
+                  "observedLastVisualChange": 1506,
+                  "observedLastVisualChangeTs": 346011640,
+                  "observedSpeedIndex": 617,
+                  "observedSpeedIndexTs": 345122976
                 },
                 {
                   "lcpInvalidated": false
@@ -1692,18 +820,18 @@
                   "numScripts": 19,
                   "numStylesheets": 5,
                   "numFonts": 3,
-                  "numTasks": 2603,
+                  "numTasks": 5344,
                   "numTasksOver10ms": 17,
-                  "numTasksOver25ms": 6,
-                  "numTasksOver50ms": 4,
-                  "numTasksOver100ms": 1,
+                  "numTasksOver25ms": 5,
+                  "numTasksOver50ms": 3,
+                  "numTasksOver100ms": 2,
                   "numTasksOver500ms": 0,
-                  "rtt": 2.112000000000009,
-                  "throughput": 13399584.12730444,
-                  "maxRtt": 78.516,
-                  "maxServerLatency": 28.617000000000004,
-                  "totalByteWeight": 1252568,
-                  "totalTaskTime": 856.1820000000005,
+                  "rtt": 5.780000000000001,
+                  "throughput": 13406066.425358256,
+                  "maxRtt": 83.577,
+                  "maxServerLatency": 17.259999999999998,
+                  "totalByteWeight": 1243461,
+                  "totalTaskTime": 1068.076000000003,
                   "mainDocumentTransferSize": 29109
                 }
               ]
@@ -1726,18 +854,17 @@
     "dsfr": null,
     "summary": {
       "404": 4,
-      "httpGrade": "F",
-      "cookiesGrade": "A",
-      "cookiesCount": 0,
-      "trackersGrade": "F",
-      "trackersCount": 64,
+      "cookiesGrade": null,
+      "cookiesCount": null,
+      "trackersGrade": null,
+      "trackersCount": null,
       "zapCount": 12,
       "zapGrade": "F",
-      "lighthouse_performance": 0.67,
-      "lighthouse_performanceGrade": "B",
+      "lighthouse_performance": 0.59,
+      "lighthouse_performanceGrade": "C",
       "lighthouse_accessibility": 0.86,
       "lighthouse_accessibilityGrade": "A",
-      "lighthouse_best-practices": 1,
+      "lighthouse_best-practices": 0.92,
       "lighthouse_best-practicesGrade": "A",
       "lighthouse_seo": 1,
       "lighthouse_seoGrade": "A",
@@ -1766,7 +893,7 @@
           "x-powered-by": "Next.js",
           "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
           "content-type": "text/html; charset=utf-8",
-          "date": "Sun, 26 Jul 2026 01:58:43 GMT",
+          "date": "Sun, 02 Aug 2026 01:58:04 GMT",
           "server": "Google Frontend",
           "connection": "close",
           "transfer-encoding": "chunked"
@@ -1792,7 +919,7 @@
           "data": {
             "NEXT_LOCALE": {
               "domain": "training.zenika.com",
-              "expires": "2027-07-26T01:58:42.000Z",
+              "expires": "2027-08-02T01:58:03.000Z",
               "max-age": 31536000,
               "path": "/",
               "port": null,
@@ -3107,51 +2234,51 @@
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/fn5g3vzlnvn2cs6fnrzhc9jqn8qtkskxnbsfctry4fghs4lkknmwwq6rgm7xs76mk8jggpj5hj6hq4lk3vlhktlbkfjhcq5v4zw29rjvkb7fcpj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/m86dsqtqfmywswc4gnht1y5gmnvA2zjs437vsAtA4fzw2vzwjblw9z65n8fh4nshgzww9pj5hjqAckzy4n3swzsl4m6w986hpjtAgnkvn3zvcpj8"
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/nr6gAqttnrxvAtckpbAxkvrq4bcg7t5jjnzw58zxk1y2mArxjzswg4c4gjcwc6tdfnzAcpj5h35f2rlpnzsAyndn3ngf16clgAvwsq5v4z8h4pj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/hfttm6d3jbkf2vtp4nzhcrdlmAzh4wbsfnl29zklkndAcr5248ctsAzsnv3g96sxgz2dqpj5hj3fctd2j3zx4Atcn2yw3wtngzAswqk2kngfcpj8"
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/mrqv28dx4f3A4nshkA6hsr5338txslzrm36vsvdl3jfxmqjt3vydqwczjvkw3k6s3nkwgpj5hjcx37dcf86AAslvmv5x2Ajrmm6g78zxfnch4pj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/nrxgAslkm7zh38t5g1z2yAk5mAzdq9tjnv1xsns2knl2g65lmnqsw5rA4z7g9Adqnfl2spj5hjwg9ql5lflg2zt2km6xAA6kkmvxkmdhf8y2cpj8"
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/nvl27vztgr1vknsymjwdcy6tgvl2srcw4vrtgy53j8wwqtjAjfzg575ynz52wnsbkjwg4pj5hjcxA9cjgjhf15kbjfrA3Ak3nvcv14dbjf5Acpj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/f8qtmAcmjblfkrrtmvmtm8kqpb6Assk2mjcgqmzw3q5dswcjfn6t1sstmns255kg42yggpj5h3zv4Acg4zvgk9kh3jnc99jxkbdc96dsmrdx4pj8"
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/kn3w4rdfk35A785fg37wwmszgbgfs55pgrvd4scxjbvg56ckjbmhktstgfw2grsqg882kpj5hjbwmAsxgbAdqmkvgzmh2zcx3vjxg9ddgvffcpj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/pb2gsndgmznd2slck8rhcm6ygnhvkszx4v1x25jrjj5xArlxhbAfA5tln7vvqwk2kzwt3pj5hjjx39dhnzyv4n5mgblA78bqgzfwcrlAgzsx4pj8"
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/kAvvm7tcnv5dcqk2knyw7ysmjbkf1z6tljsv4vsxgfAgAzby4z6hcskff76g75bzknAAkpj5hjcw79l34b6dq8zwgftd4z6g4zgv176wjzAx4pj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/gn1tkA54mj3vq6cykmywq9dr4v6hA6zpm8qvs7bwnjdxmrsffn3fkAczmjhwqvlhkftxgpj5hj3v1k5ghfvtqvzypfndmwlbjyzAcqtkpf8h4pj8"
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/3jkgg8dtj8gv1mlwjrlg28lkjbb2y65mn82wsztwknxhmvttmzm238tmkz5d3tzsnbfwwpj5hjtf2z6g3q72cAk33jwvgz5Aj8323nbw3zxfcpj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/3yvwAv5bg8AwAmkdkbzwmAzwjAyvm86ckrhtc8c2n8qvc4lvnf6w44dq4zhxqsbxl36Aspj5hjhdm8lhnv6wsA6tgAyf45cpmv7fqsbx3vgAcpj8"
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/nz7wcrlm48ztgAkfjbxf3vlhjnsx1mtd4jvxktlmgjgf4m5lm8sg3v54nq5dkt6whbv2kpj5hjfxm56c4ry2y7dkj8jf3ztjkr1A7tt44nl2cpj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/3vlv1Akzpbdswzrpj8fvAmt5g87g7Azzpb5Ammthjrlx14lpnfl2qwtqjqy2wsssk75w4pj5h36dgrdzjb6248bwmnztm9k2mjhxs86qmq6fcpj8"
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/486hgyttgj7wyk5d3yyxc9t5gf5dq7dxmvxfg8drmrj248kfj77dmvbxjbgxgnldf8jwwpj5hjbw96kf4z1xk7bl4bm2st5rjmy2w65t4ndh4pj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/kvjg54jsn76v2rsc327A7Alq4vkg955b4jch2AtmkfAg3tlbgf8hmzsdk26ggvbl4q7xgpj5hjfg7wjw4A6x3qjtnzdh48tjgzmvAtzsf8gw4pj8"
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/krlhmm54m8sf4Atl4r5x24ds3ndswtrAkbmwA5dbj87h3ssm416Akvjtnv3v18rw3qztqpj5hj5g25jxf7vvmmcpfn1wsvbvf8mwsmlx4jqAcpj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/m8qwmAjxhbbwc4ltknfv4qkv4bhA5r5wpb624m6d4yz22tjzpbrcw4cwnjzd3qlw3fsh4pj5hjxdcA62nrcw46tpmAzvA7srlf2A9yrzkzmw4pj8"
         },
         {
           "type": "unknown",
-          "url": "https://public.dendreo.com/pjsw75llm2/media/jbgvcy64gz2w9zdw48txAskvlfhA3tjykvcxq76cfn5h4tdz3nqAswdh3y6hcsbp3vgfspj5hjhdgt5cm3zhA5l4j8dwgrcshftwA5kng8ww4pj8"
+          "url": "https://public.dendreo.com/pjsw75llm2/media/4flAAylygb1v2A5A3j7wm7ldkr5x3tk5376tg6cvjbdAg8tvmvqxsrcg4qzhs9trkbbfspj5hjgtcvk3kbAg2zzlm8bxcrlnmjqv3sstkj2Acpj8"
         },
         {
           "type": "google",
-          "url": "https://storage.googleapis.com/prod-training-uploads/Img_f17c00954b/Img_f17c00954b.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260726T014409Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=6a845403085b1cf07d5901d1640b7c6b3b90efa0fc87e81587f9654d209cc0eaaced36a18e065c41c48e49ecf1bb0b809089cd30534770939df9ba4c9e68861c3e308de727ae6429b850a51353fbb2644540cac61dab56f02c0a5800efb833104c5b42cc98bcab93d34fd477c80af239dd3fb1a25880e425677e0114f9931a905bb4bf81e5eba152fec04ab062c4c6edac40fd3f19b0b05f128a226729b5c1f692fd019ca4621e1fbbb30f2de2014fc6bfffabb94db8b5b593aa12587aa1e9fb517d2f53e401ec2f159c5484325224d1254cf8187fec8e0a91a7277cb465fb8be88bcefbee08a76e22742807e61e8f734e67070a08e0f4d14b7c16d7e7972234",
+          "url": "https://storage.googleapis.com/prod-training-uploads/Img_f17c00954b/Img_f17c00954b.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T014322Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=2ce962c2a8b65cc58c767217c0baf1f60a251d6a7e756e77216fa9829830223d149d6067a8947b495b4e96e2180e2f4e9ff00eeb3648bd63e66bd1114acdbe01ea6cdc19aeeaa0ba8a18ea70f221347defd15cd976f0c929348ffdeec1071be7202b3e625034ff5aa8cc9610149901a907cb0279432ea261bf7fdbeb78a55e7d9eead2dd606d3c6b77319f9e84745ac75c71e7391d4a72b3788fa8867840ad33a4f6ba8fa8d41303861e5255b1988e0bba062a30c4188237bdf76fe76b84f452a7bddcedb25befd795571f9a0203e8f03a96f23f9f160a35b64911f0cbc228b65a9c9142d1f644c7328e4701f8ccaaf30e0590ed2fa266e2fc08a574f41539cc",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3159,7 +2286,7 @@
         },
         {
           "type": "google",
-          "url": "https://storage.googleapis.com/prod-training-uploads/partner1_00c7279a32/partner1_00c7279a32.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260726T014409Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=36a205311bfc73fb8abc0a2ae1bd7085f4d6315e363e0b17f7d85546c54fe040b175d9e8ca196eb22fbf332fa1f52cf25313837bd8ddb9ad3c8be67198f0b61aebebdb8ec223a133f5b7701f42a650789c0e03205e86e83c88ef4ffea2a7f350b4967a2152cee5e04b72dc6d5b6708a8e25ebf01808e967aaf42735ebe63f8e3a6ea56e8c1fbd1637cd7349704275a10f12c087ff576282764dc13c0a171157e083ff1d9bded6ac5838453f911d6fe17835956adf7233e0ff429133c3cd3dc3b1e0f1e1752ff1462e37169ef4252456dac246f9efd40032dd4b3347b4ef43195a5049d8307cd0b953272249a91ff4a26a7718bb06b407ddc8515dfcca34e6aca",
+          "url": "https://storage.googleapis.com/prod-training-uploads/partner1_00c7279a32/partner1_00c7279a32.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T014322Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=37930fd067a577a23a435139d9788341c18f5fa4df25cd274725f418c4f213693f5da0f4a70dbb25facaf6410e413f6ed458ddb5bd2847e6da5ca44703a0f98a296412382422a70f4fad7dde251c5476b17590803da97bbe942479885b36e396c0aaa2aa353501b8f3e83db7b07de421827d692503e377cfd1cbff5dca6885d5617e783410df47ed2a9050366602b0db34224ab6e901d99a9dbebde8b49fc8e2008105ff437f7a2f73f8ad2079d5bf858859c938ca04c564ea017b45679fcf3d2c1ee5d61093cdb616fc78825f78c49828de31bc3d65c081f5cd102126aa3691ab904012ea0b5ed54da312d855bba27398a4f88c407e7bb13571fe63d3184d07",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3167,7 +2294,7 @@
         },
         {
           "type": "google",
-          "url": "https://storage.googleapis.com/prod-training-uploads/partner2_b0a083306a/partner2_b0a083306a.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260726T014409Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=0c32c588c51adb88123edc14da47408a0f1992ce81d4b4ac1b9269959f91e9864592f86d3656aeae49aea32550c6e0e3bf2e0c5e9dacfd23ca521ab02500cf16e76a865729cc129d9767b35da02a80c39357bb198faf53e70726a284fae47f5f8ffc4ae257b64d7e0e10d194566d5c3d5b41ba9fb713ef9f04d5b992bcda27ff149ef038b7cd0d24dfb625e4fab7cb9f5b0648cbae5740918653e4ecbd6805055d435f4cd9de3bf52f17f365f7d6629ff97f64253d621197b90f3d3d451bc96331ac4ba0b7dd26ef5510d458f262e30665cbfd518d34eac8ff5e764be4ddbffc29bb9b1506b2009171a840aa5858efdb4fb285694e33449ab60491536de6d8a7",
+          "url": "https://storage.googleapis.com/prod-training-uploads/partner2_b0a083306a/partner2_b0a083306a.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T014322Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=9b05567b59fa1c206757ae0026f4a5dd7b51597783f81ed3312d2bd270c937255b3034c490bc7da6670beb4f156badc3819d3059a7714d5d0408f96666dfc97fb363b1113046c7303da3e1513c41b5038862cc9c2836d0fe8f50e7101521782d5a4ad6427541ae1b1dd6e826257256bdb5864b62dc9f4e5aaa8de3cc0edd067df46c6e91c8e1b2370ac0dfb70c38766e52e2eed9d6abfbbbc2e4eb7b7a61e5e051ab548189aecf55b8b9f2111fce3c1bef9f5ff4d559c4e7962cdba12d18adc7e804c17c26e62cfe1f9f89f88a05a81dcbad6cfcfd7d3afe8edf3c0bfb5d9ecd092e15d42c676d16dff9f82e0bffaef951ed822a0c8e8ea052d0db1e4eba889c",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3175,7 +2302,7 @@
         },
         {
           "type": "google",
-          "url": "https://storage.googleapis.com/prod-training-uploads/OK_greenit_logo_noir_3adab8ad37/OK_greenit_logo_noir_3adab8ad37.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260726T014409Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=960dce8b6fce5da570e855b03c9f0cb2fcc7949d773f4fc7c0003da7c18a9820d72c9685618fbcfe229a396fc922938bac9959052b696e18da19a9dc44410650527388e2ae048f8f3d71f9d4a4b621941b2f3af55fc84a7ac549944f085fad9a92719f1240e90c348177b11a00a7de83eac1a742a54561862ad40fe79590ad16bde618b2cff980ef694fcceda5f7d8cf1f66d0d60bf901a87eecd8eda0918f200b794e3771c2f5f66dcb03ffddacf4621cb318edccd1b9e496a6728f1926f9b4f4e98d3fec137b7f5ce0c0d2440f5a0d47033aacadd8b8494637fc6833f70713c5f2bf607f3c950808109d2cf4b7d336b2da176c51a0eb8305e0b6c16185654a",
+          "url": "https://storage.googleapis.com/prod-training-uploads/OK_greenit_logo_noir_3adab8ad37/OK_greenit_logo_noir_3adab8ad37.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T014322Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=89e8bf809c0a7bd69fa52c5a9fc73ee43e3bca63b5c88408e254cd5beb5f07bdc8e313ef28a72ea1a11cab5661366b55b2dfc47b6ca0b64bcce4da5342f43127fb391ac81880ca0d16fe3f2f8e0853762cf4a673a69d5218f7ce1ccc0caed33269413ab2703b8f06a604f2742b53adceb322eea8cc942e9e01f77f9e2db4b2706057c60d1e83ebe147d2e0060e6832aa4b04e4aff9ef5b16c1281ce6f8db3dc912e42d62eb70b08c54199bd41c77e3a1e8bd4e7a3765baaa9b0aeff15b17ac730bca6b82bde2c347217422ce55bb87c9c222f81def78b9df495bce6e31680a583ed37c95918ba0c6b8213e3a69b8a4af1788a63da88c9b1b9b8924622d96f68b",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3183,7 +2310,7 @@
         },
         {
           "type": "google",
-          "url": "https://storage.googleapis.com/prod-training-uploads/scaled_agile_menu_logo_f87bd2c8ea/scaled_agile_menu_logo_f87bd2c8ea.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260726T014409Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=5e236dd453602939140e0a781a63310a0010247b49a0582eeaf5b8cff0a292ff45f3f7e05ded1d0229c153e7c4cb6fbcaf09d578ef7d830e0313293cdf6c9557e25b0c802f65e2f4786e9baea930ffbd8b140de7d08c72176bdcc6d4efc26767bd397f2ef5c31642e7d54b8acfb76d01d8d446c39e2c379136ff82c8befc22aee1b588083afaed4097fea49252442f2805126c29d633f9efb5040c78b6faa5c21afbf3c975606589b590e7c6d62c4a2723761534605131aaaa5abe2a7e1822bfa897f7b0d3dd2e0a31e10e160f7943d864035e17ced88e16bdbbfa1cc9ba9ee28522157edcdebe9c30cc814b589b028d0017b7be9dd8fd88598bd1f3cd1b217b",
+          "url": "https://storage.googleapis.com/prod-training-uploads/scaled_agile_menu_logo_f87bd2c8ea/scaled_agile_menu_logo_f87bd2c8ea.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T014322Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=7da9bd3b6aaa5fbf91b26de9dd60af14dda8a063ab821fbe532dd27c5190d5c80e6cf4852057a48028ed0d4637df730bc3d4123483054cd9a0654530e76b2d48018242211417d924645abb81b84cc369a7ff68477d844735325e92cdc1d0bae460477b11d929e596c15943d24065a6ce956a1d8fb472dd80fa8f0c6184bc888df3232b5787ad01a266b2683523c93522712b454ac667b9357a5ef644bb7f91aa64d2439999b9b8484d369d4f8f6ffb1c9a301efd99cf01b0846e79ac74ac71d5fb4e3f2bbef32aab55daa8418607e5d755553f7246bcbe256b8cf37160135a83f5c9bd430e2d5d2b61ee5be2d0ed8e58b9ba9a9a76d1b07c358eba9a1e8ed6a9",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3191,7 +2318,7 @@
         },
         {
           "type": "google",
-          "url": "https://storage.googleapis.com/prod-training-uploads/kong_logo_freelogovectors_net_2f045308ef/kong_logo_freelogovectors_net_2f045308ef.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260726T014409Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=834df43e6d3dad99c8a23597773450b4118aab32fe4e5b13372f3f613a7099bc9bd57f2c9f0e969de854d3fa79ff2378504c6333dbed4ba7aa12bba07113afcc1389c3b18878c1ea2910ce431be1e9180713c37230b80530aee7c18bc6f12b387df8ba4743cb799f2e872c49bb68945a68ad4713d6fdab4c879e78f25dd0b18691bdf0d35bcacef18ce0be3232b4752dfcb8fdd186dcbeb39c14a9a701068aea8d00c1655da9693f761b18a77c040699406ef31a20dc1fa14a007bcfd12c2f8e6a257e4ea815e895fc257f1c4b061958d46bdd9fbf38fb54cd5f04e9a69baaf7750508858758513109bea59fe1cb24a771a8897f47faa997e616b529c45c4a58",
+          "url": "https://storage.googleapis.com/prod-training-uploads/kong_logo_freelogovectors_net_2f045308ef/kong_logo_freelogovectors_net_2f045308ef.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T014322Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=4c6f2255b4606377f99e186f45ee5b50f1ec25520c02162be03ca9bf410325b38d0b5cdd5b0c5f43400bdd1066fb6507a5adac95e77472ede0a79f3140dfc69f9397558d06442995f71d8e97b431c2639cb10389ddb28c6608f1af21be3caa74d902b3dc8266e70d81794108b74d9da1a01d9b51d8860561dda3033d6b15cdf678b14a03f41b44fd5b34d424dcd433a97be3055312e6dd83352a0a9cead9300d80b5a62db691a3b3d6343e7bde2d5ef626402e51c24dfcb57a98edfcf045e351edba659340a5cc4136eeb5475b64703e07dd9583d0af3a3ac2967ed8c9d094edd957813543ef6c139c4d2674c0538a8d1dd158cc4627d793518fc562c77c6287",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3199,7 +2326,7 @@
         },
         {
           "type": "google",
-          "url": "https://storage.googleapis.com/prod-training-uploads/Scrum_Alliance_CSPO_300_49cc298cd0/Scrum_Alliance_CSPO_300_49cc298cd0.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260726T014409Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=1c3c308fc333faeb5d69c7a1f94e03f8eb757bdcdeef61011b9fbf6571bd8ac57385354a4b617d66aeac685109daffdfeff251120b43abd27702840cbef9b6457f3962900b022b49a0691509a14300992f03b059f30e79f7a310a7350924e3b5428cd7f5f132cda002109d70b9515cf3bbcf4136115fe76fd51cb02edd6ba503c1f20aa17152607644845a10c4ad6f5ac26037f597cbd4cc8678568fca92626c39acd482692ebbdca2a2d0346372061e9ffb188f692074921a88ed799bb79c11434b826d94924ce762cfa2b4c972cf33c76f1e0e02e1fc809a80c999567c93dcd48d6140804110eecb407970ba8be72d6d6d1ddd98c8433a8d0e0d86aecbdaf9",
+          "url": "https://storage.googleapis.com/prod-training-uploads/Scrum_Alliance_CSPO_300_49cc298cd0/Scrum_Alliance_CSPO_300_49cc298cd0.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T014322Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=6a3ee5845c38484cb9a1700c327486edc5ccf670c97142280b0f40a99dfbbfc800fb77951aa039c778cdba9cce265f603106a8d411843e04df4c5a9800e06788089e63648f1f7bec149681d5345e65cf5aa77572d16525219ba110f752b21930a0328cad0138522cfb9f0158df56d4eba01cbbf69a9d8ce04917d44f89b73c6caee6887956913d1d087cb078396cc6d1c91c608425df630294553e4ce26368a672eab3a54c308537ca211a570edad07854f9ba5f6514e395f50ec09dd39742573c56f77c0ed789af60daaf5fdcd173361b4a47f5df21c85b4a121998ed93dff39064ad816385f2e13ebbe34a70d772baac1e726c4487074daadb474a6c0f2a79",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3207,7 +2334,7 @@
         },
         {
           "type": "google",
-          "url": "https://storage.googleapis.com/prod-training-uploads/Red_Hat_Logo_wine_d5ac36b454/Red_Hat_Logo_wine_d5ac36b454.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260726T014409Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=59900e4b5996229dcfcd22cd403b9e64d5ef178113bda768bd9cd33d292f6558085ab35ccbaf912d3d48dd06bed314ec2d40ed314eec22d1e8d0f4e0e99a6b49f9efde2db5b5617d41a47f818be5f56ff227f596d2a9a8a344fd31f9ff3c3d844ada26db5096bed3dd9dc034a4b3ce039c799fae07aa6758b57882982c74f82154390aa185a2b2f0a59fed3f133c86d125b513268362652968609d152da5a693b014614d1a3bdd2023ed8838e4a6bc0dacb091ee136751ae2a4362d86da65a46a91c284888caf7fc567663ab51b392646298afa2e2536d78bda1b53556f53764f973c546bec16d891cfdd72042a1477ff4ee15c5c317a45f50b19ba7b7c688f1",
+          "url": "https://storage.googleapis.com/prod-training-uploads/Red_Hat_Logo_wine_d5ac36b454/Red_Hat_Logo_wine_d5ac36b454.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T014322Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=7099faa28afa54fcb3071d7dfdf835384d54b2c36a4801904ef7edea875b20713aa8b89bad442ac8f2daaa5101b2d55c4f2554bd2b31f7c288fda4753e36959b78c6435fdf5e7a217dbc43366fb39808299e2c9c357edcaffa0e70143f4402433bcf617973b2e67bf31a70c264dd50638421e2b176f4baa189a2418f308dfda614c0382f40c6e9d55cc79ad33a66d35ed6ecada4d0c0857c60648d15f8d7206f9954c28a4a6f6c03ec17bad7ef469db33a35798c4f54dfedb917895a3531fad09f91e76513bd7392f4b7547d4aa345d8f612b402429df7bf224c5ce65f7b84d5274818e843a59468ec94c98a540b3b02a4876899a7fc0d6f60dbed2580384eea",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3215,7 +2342,7 @@
         },
         {
           "type": "google",
-          "url": "https://storage.googleapis.com/prod-training-uploads/mirantis_logo_2color_horizontal_rgb_1_768c1ac717/mirantis_logo_2color_horizontal_rgb_1_768c1ac717.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260726%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260726T014409Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=205a5e3c0770e2267e04654392564aa0b59c8ee22e4109845e10f610910d61e5cc37fc92759be59e2a1f19ffae34825630294a185ad54c6cd4604aeea11b9ace0184da749527082bac3fc65197ca4bcb4fcde603f73287f842ad86cb1240f677a8440b43d9189fc4221d7906bf267b6bbdd282aabefc9aae7964f6841f3e155d09d77addeb2df056754de330ddaa29047a3e5ee91722b75c48d5f78a397aa3b96ccc9e62e192b3faa71d4a02581fcd286d2c1b9e8e5325d53557c316b46605f0d080730cb49b100bb5cfbb3851a6590b93c960fe8014ecc18ed7a46c5eb9dc89b31092e2e25620d9ba17ed49bcfba733a5414021ef471725e778ef4539e9583e",
+          "url": "https://storage.googleapis.com/prod-training-uploads/mirantis_logo_2color_horizontal_rgb_1_768c1ac717/mirantis_logo_2color_horizontal_rgb_1_768c1ac717.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=160476388429-compute%40developer.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T014322Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=8def76b7d3c92bac1f6d7f1a730b7e9b87db1fcc5b9cd1b755c1f700eecec22a9336757c191357af0d476177032f89c74001bdb908ee58eec0c9d2e7944555ade8e7226f4d537172b8cb9adf9546fd153353977c29869b74fdf2cd87f9d3e3e3f51c9bdf6f3304f9a4611d32623ad4c4485cfa2543b70ce20d7c721f66f1348ec707f3d34e0fac620adb7e7b60e5ef92b40ef620f89d6bf0c9ff456940befc22648a0fb0d431f4e91b6b00008069224814a7f418c9f35763821b4c3a2b711cd9b6fcd06105af184add1235015d3216be3d1b2e5815140695e783e060a853534339353ad6c422701ab73e2fe5e94c7e305691c347f33a6cb719b333b0b9f8708f",
           "details": {
             "id": "google",
             "message": "Use hosted Matomo instance"
@@ -3227,7 +2354,7 @@
         },
         {
           "type": "google tag manager",
-          "url": "https://www.googletagmanager.com/gtag/js?id=AW-1057267330&cx=c&gtm=4e67m0h1",
+          "url": "https://www.googletagmanager.com/gtag/js?id=AW-1057267330&cx=c&gtm=4e67u0h2",
           "details": {
             "id": "google tag manager",
             "message": "Use hosted Matomo instance"
@@ -3235,7 +2362,7 @@
         },
         {
           "type": "google tag manager",
-          "url": "https://www.googletagmanager.com/gtag/js?id=G-R1YQFXXYC6&cx=c&gtm=4e67m0h1",
+          "url": "https://www.googletagmanager.com/gtag/js?id=G-R1YQFXXYC6&cx=c&gtm=4e67u0h2",
           "details": {
             "id": "google tag manager",
             "message": "Use hosted Matomo instance"
@@ -3263,7 +2390,7 @@
         },
         {
           "type": "google tag manager",
-          "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=9&frm=0&ae=g&en=page_view&dl=https%3A%2F%2Ftraining.zenika.com%2Fen&scrsrc=www.googletagmanager.com&rnd=1634893613.1785030251&navt=n&npa=1&ep.ads_data_redaction=1&gdid=dMWZhNz&_tu=CA&gtm=45He67m0h1v9200845612za200zd9200845612xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938468~118897920~118897930~119896802&apve=1&apvf=f&apvc=1&tft=1785030251000&tfd=2260&fmt=8",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=9&frm=0&ae=g&en=page_view&dl=https%3A%2F%2Ftraining.zenika.com%2Fen&scrsrc=www.googletagmanager.com&rnd=1137483557.1785635008&navt=n&npa=1&ep.ads_data_redaction=1&gdid=dMWZhNz&_tu=CA&gtm=45He67u0h2v9200845612za200zd9200845612xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938469~118897920~118897930~119896803&apvc=1&tft=1785635007684&tfd=6408&fmt=8",
           "details": {
             "id": "google tag manager",
             "message": "Use hosted Matomo instance"
@@ -3283,39 +2410,39 @@
         },
         {
           "type": "unknown",
-          "url": "https://pagead2.googlesyndication.com/pagead/conversion/1057267330/?random=1785030251240&cv=11&fst=1785030251240&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be67m0h1v9129790604z89200845612za20gzb9200845612zd9200845612xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938469~118897920~118897930~119896803&u_w=800&u_h=600&url=https%3A%2F%2Ftraining.zenika.com%2Fen&rcb=4&label=g7cXCPPqpsMaEIK9kvgD&frm=0&tiba=Zenika%20Training%20-%20Open%20Source%20and%20Agile%20Methods%20-%20Angular%2C%20Scrum%2C%20Spring%2C%20Docker%2C%20Java%2C%20Node%E2%80%A6&did=dMWZhNz&gdid=dMWZhNz&bttype=purchase&value=0&hn=www.googleadservices.com&npa=1&us_privacy=1YNY&pscdl=denied&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&ept=6"
-        },
-        {
-          "type": "google tag manager",
-          "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=4&frm=0&en=page_view&dl=https%3A%2F%2Ftraining.zenika.com%2Fen&scrsrc=www.googletagmanager.com&rnd=1634893613.1785030251&navt=n&npa=1&us_privacy=1YNY&did=dMWZhNz&gdid=dMWZhNz&_tu=CA&gtm=45be67m0h1v9129790604z89200845612za20gzb9200845612zd9200845612xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938469~118897920~118897930~119896803&apve=1&apvf=f&apvc=0&tids=AW-1057267330&tid=AW-1057267330&tft=1785030251247&tfd=2506&fmt=8",
-          "details": {
-            "id": "google tag manager",
-            "message": "Use hosted Matomo instance"
-          }
-        },
-        {
-          "type": "google tag manager",
-          "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=4&frm=0&ae=g&dl=https%3A%2F%2Ftraining.zenika.com%2Fen&scrsrc=www.googletagmanager.com&rnd=1634893613.1785030251&navt=n&npa=1&us_privacy=1YNY&ep.ads_data_redaction=1&did=dMWZhNz&gdid=dMWZhNz&_tu=CA&gtm=45be67m0h1v9129790604z89200845612za20gzb9200845612zd9200845612xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938469~118897920~118897930~119896803&apve=1&apvf=f&apvc=0&tids=AW-1057267330&tid=AW-1057267330&tft=1785030251248&tfd=2507&fmt=8",
-          "details": {
-            "id": "google tag manager",
-            "message": "Use hosted Matomo instance"
-          }
-        },
-        {
-          "type": "unknown",
           "url": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js"
         },
         {
           "type": "unknown",
-          "url": "https://px.ads.linkedin.com/attribution_trigger?pid=7056234&time=1785030251383&url=https%3A%2F%2Ftraining.zenika.com%2Fen"
+          "url": "https://pagead2.googlesyndication.com/pagead/conversion/1057267330/?random=1785635007938&cv=11&fst=1785635007938&fmt=8&bg=ffffff&guid=ON&async=1&en=conversion&gtm=45be67u0h2v9129790604z89200845612za20gzb9200845612zd9200845612xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938468~118897920~118897930~119337770~119896802&u_w=800&u_h=600&url=https%3A%2F%2Ftraining.zenika.com%2Fen&rcb=0&label=g7cXCPPqpsMaEIK9kvgD&frm=0&tiba=Zenika%20Training%20-%20Open%20Source%20and%20Agile%20Methods%20-%20Angular%2C%20Scrum%2C%20Spring%2C%20Docker%2C%20Java%2C%20Node%E2%80%A6&did=dMWZhNz&gdid=dMWZhNz&bttype=purchase&value=0&hn=www.googleadservices.com&npa=1&us_privacy=1YNY&pscdl=denied&uaa=x86&uab=64&uafvl=Not%252FA)Brand%3B99.0.0.0%7CChromium%3B148.0.7778.97&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&data=ads_data_redaction%3Dtrue&category=acrcp_v1_512&ept=6"
+        },
+        {
+          "type": "google tag manager",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=0&frm=0&en=page_view&dl=https%3A%2F%2Ftraining.zenika.com%2Fen&scrsrc=www.googletagmanager.com&rnd=1137483557.1785635008&navt=n&npa=1&us_privacy=1YNY&did=dMWZhNz&gdid=dMWZhNz&_tu=CA&gtm=45be67u0h2v9129790604z89200845612za20gzb9200845612zd9200845612xec&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938468~118897920~118897930~119337770~119896802&apvc=0&tids=AW-1057267330&tid=AW-1057267330&tft=1785635007944&tfd=6668&fmt=8",
+          "details": {
+            "id": "google tag manager",
+            "message": "Use hosted Matomo instance"
+          }
+        },
+        {
+          "type": "google tag manager",
+          "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=0&frm=0&ae=g&dl=https%3A%2F%2Ftraining.zenika.com%2Fen&scrsrc=www.googletagmanager.com&rnd=1137483557.1785635008&navt=n&npa=1&us_privacy=1YNY&ep.ads_data_redaction=1&did=dMWZhNz&gdid=dMWZhNz&_tu=CA&gtm=45be67u0h2v9129790604z89200845612za20gzb9200845612zd9200845612xea&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938468~118897920~118897930~119337770~119896802&apvc=0&tids=AW-1057267330&tid=AW-1057267330&tft=1785635007945&tfd=6669&fmt=8",
+          "details": {
+            "id": "google tag manager",
+            "message": "Use hosted Matomo instance"
+          }
         },
         {
           "type": "unknown",
-          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=7056234&time=1785030251383&li_adsId=c94b3f28-b62f-4696-b30f-8fb87c2c8200&url=https%3A%2F%2Ftraining.zenika.com%2Fen"
+          "url": "https://px.ads.linkedin.com/attribution_trigger?pid=7056234&time=1785635008062&url=https%3A%2F%2Ftraining.zenika.com%2Fen"
+        },
+        {
+          "type": "unknown",
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=7056234&time=1785635008062&li_adsId=2705128e-a404-48b7-a703-ae3ccd166dee&url=https%3A%2F%2Ftraining.zenika.com%2Fen"
         },
         {
           "type": "facebook",
-          "url": "https://connect.facebook.net/signals/config/123253423?v=2.9.361&r=stable&domain=training.zenika.com&optin_meta_enabled_capi=true&hme=eec000113e1e9f56e9fc6cdeb39d59ad805f76a48c77cf3d5c028dcf3b38ee7c&ex_m=108%2C209%2C159%2C22%2C73%2C74%2C150%2C69%2C68%2C11%2C168%2C93%2C16%2C142%2C131%2C39%2C76%2C81%2C138%2C164%2C170%2C26%2C27%2C28%2C30%2C48%2C151%2C78%2C116%2C18%2C20%2C44%2C40%2C42%2C41%2C86%2C95%2C99%2C114%2C149%2C152%2C46%2C115%2C24%2C21%2C123%2C70%2C36%2C154%2C153%2C155%2C146%2C144%2C25%2C35%2C59%2C113%2C166%2C71%2C17%2C157%2C118%2C84%2C67%2C19%2C88%2C89%2C120%2C87%2C140%2C139%2C143%2C100%2C165%2C34%2C49%2C117%2C47%2C8%2C4%2C5%2C7%2C6%2C3%2C94%2C105%2C171%2C176%2C223%2C75%2C236%2C235%2C234%2C23%2C33%2C55%2C107%2C61%2C10%2C64%2C101%2C102%2C103%2C109%2C134%2C31%2C29%2C136%2C137%2C133%2C132%2C160%2C77%2C163%2C161%2C162%2C50%2C60%2C127%2C15%2C167%2C45%2C281%2C282%2C280%2C295%2C311%2C216%2C205%2C62%2C206%2C204%2C314%2C305%2C52%2C217%2C111%2C135%2C83%2C125%2C54%2C124%2C130%2C129%2C58%2C65%2C63%2C156%2C79%2C80%2C119%2C37%2C32%2C53%2C56%2C104%2C169%2C1%2C128%2C14%2C126%2C12%2C2%2C57%2C96%2C66%2C122%2C92%2C91%2C172%2C173%2C97%2C98%2C9%2C106%2C51%2C147%2C90%2C82%2C72%2C121%2C110%2C43%2C148%2C0%2C85%2C141%2C145%2C158%2C38%2C112%2C13%2C174",
+          "url": "https://connect.facebook.net/signals/config/123253423?v=2.9.368&r=stable&domain=training.zenika.com&optin_meta_enabled_capi=true&hme=78c3d709c6e52779dc9d6e8b8770857bb5dfd27159797805bacb5f93b9e7568a&ex_m=108%2C210%2C160%2C22%2C73%2C74%2C151%2C69%2C68%2C11%2C169%2C93%2C16%2C143%2C131%2C39%2C76%2C81%2C139%2C165%2C171%2C26%2C27%2C28%2C30%2C48%2C152%2C78%2C116%2C18%2C20%2C44%2C40%2C42%2C41%2C86%2C95%2C99%2C114%2C150%2C153%2C46%2C115%2C24%2C21%2C123%2C70%2C36%2C155%2C154%2C156%2C147%2C145%2C25%2C35%2C59%2C113%2C167%2C71%2C17%2C158%2C118%2C84%2C67%2C19%2C88%2C89%2C120%2C87%2C141%2C140%2C144%2C100%2C166%2C34%2C49%2C117%2C47%2C8%2C4%2C5%2C7%2C6%2C3%2C94%2C105%2C172%2C177%2C224%2C75%2C237%2C236%2C235%2C23%2C33%2C55%2C107%2C61%2C10%2C64%2C101%2C102%2C103%2C109%2C134%2C31%2C29%2C136%2C137%2C138%2C133%2C132%2C161%2C77%2C164%2C162%2C163%2C50%2C60%2C127%2C15%2C168%2C45%2C281%2C282%2C280%2C295%2C313%2C217%2C206%2C62%2C207%2C205%2C316%2C307%2C52%2C218%2C111%2C135%2C83%2C125%2C54%2C124%2C130%2C129%2C58%2C65%2C63%2C157%2C79%2C80%2C119%2C37%2C32%2C53%2C56%2C104%2C170%2C1%2C128%2C14%2C126%2C12%2C2%2C57%2C96%2C66%2C122%2C92%2C91%2C173%2C174%2C97%2C98%2C9%2C106%2C51%2C148%2C90%2C82%2C72%2C121%2C110%2C43%2C149%2C0%2C85%2C142%2C146%2C159%2C38%2C112%2C13%2C175",
           "details": {
             "id": "facebook",
             "message": "Dont embed facebook scripts, use your own tweet embed"
@@ -3323,15 +2450,11 @@
         },
         {
           "type": "unknown",
-          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=7056234&time=1785030251383&li_adsId=c94b3f28-b62f-4696-b30f-8fb87c2c8200&url=https%3A%2F%2Ftraining.zenika.com%2Fen&cookiesTest=true"
-        },
-        {
-          "type": "unknown",
-          "url": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D7056234%26time%3D1785030251383%26li_adsId%3Dc94b3f28-b62f-4696-b30f-8fb87c2c8200%26url%3Dhttps%253A%252F%252Ftraining.zenika.com%252Fen%26cookiesTest%3Dtrue%26liSync%3Dtrue"
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=7056234&time=1785635008062&li_adsId=2705128e-a404-48b7-a703-ae3ccd166dee&url=https%3A%2F%2Ftraining.zenika.com%2Fen&cookiesTest=true"
         },
         {
           "type": "facebook",
-          "url": "https://www.facebook.com/tr/?id=123253423&ev=PageView&dl=https%3A%2F%2Ftraining.zenika.com%2Fen&rl=&if=false&ts=1785030251646&iw=false&sw=800&sh=600&v=2.9.361&r=stable&a=tmSimo-GTM-WebTemplate-2.0.8-fcg&ec=0&o=156&it=1785030251518&coo=false&eid=1785030599514_17850310041522&tm=1&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=im0&expv2[6]=hf1&rqm=GET",
+          "url": "https://www.facebook.com/tr/?id=123253423&ev=PageView&dl=https%3A%2F%2Ftraining.zenika.com%2Fen&rl=&if=false&ts=1785635008280&iw=false&sw=800&sh=600&v=2.9.368&r=stable&a=tmSimo-GTM-WebTemplate-2.0.8-fcg&ec=0&o=156&it=1785635008133&coo=false&eid=1785635730834_17856353628582&tm=1&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=im1&expv2[6]=hf1&expv2[7]=sd1&expv2[8]=sp1&expv2[9]=ek1&expv2[10]=pc1&expv2[11]=gs1&expv2[12]=zs1&expv2[13]=cp1&expv2[14]=es1&expv2[15]=ac1&expv2[16]=so1&expv2[17]=wc1&expv2[18]=la1&expv2[19]=sf1&expv2[20]=da1&expv2[21]=io1&expv2[22]=ae1&expv2[23]=sx1&expv2[24]=if1&expv2[25]=fd1&expv2[26]=bg1&expv2[27]=mg1&expv2[28]=kl1&expv2[29]=sg1&expv2[30]=mk1&expv2[31]=sn1&expv2[32]=ec1&expv2[33]=mp1&expv2[34]=ps1&expv2[35]=fx1&expv2[36]=vt1&rqm=GET",
           "details": {
             "id": "facebook",
             "message": "Dont embed facebook scripts, use your own tweet embed"
@@ -3339,7 +2462,11 @@
         },
         {
           "type": "unknown",
-          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=7056234&time=1785030251383&li_adsId=c94b3f28-b62f-4696-b30f-8fb87c2c8200&url=https%3A%2F%2Ftraining.zenika.com%2Fen&cookiesTest=true&liSync=true"
+          "url": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D7056234%26time%3D1785635008062%26li_adsId%3D2705128e-a404-48b7-a703-ae3ccd166dee%26url%3Dhttps%253A%252F%252Ftraining.zenika.com%252Fen%26cookiesTest%3Dtrue%26liSync%3Dtrue"
+        },
+        {
+          "type": "unknown",
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=7056234&time=1785635008062&li_adsId=2705128e-a404-48b7-a703-ae3ccd166dee&url=https%3A%2F%2Ftraining.zenika.com%2Fen&cookiesTest=true&liSync=true"
         },
         {
           "type": "unknown",
@@ -3354,19 +2481,19 @@
           "url": "https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js"
         },
         {
-          "type": "brevo",
-          "url": "https://in-automate.brevo.com/p?key=olcy0odsy5ix9dshbmdxd75j&cuid=f572b4f0-ced5-4fec-90ef-28acf26470df&ma_url=https%3A%2F%2Ftraining.zenika.com%2Fen&sib_type=page&ma_title=Zenika%20Training%20-%20Open%20Source%20and%20Agile%20Methods%20-%20Angular%2C%20Scrum%2C%20Spring%2C%20Docker%2C%20Java%2C%20Node%E2%80%A6&sib_name=Zenika%20Training%20-%20Open%20Source%20and%20Agile%20Methods%20-%20Angular%2C%20Scrum%2C%20Spring%2C%20Docker%2C%20Java%2C%20Node%E2%80%A6&ma_referrer=&ma_path=%2Fen",
-          "details": {
-            "id": "brevo",
-            "message": "Ensure your TOS notify the Brevo usage"
-          }
-        },
-        {
           "type": "crisp",
           "url": "https://client.crisp.chat/l.js",
           "details": {
             "id": "crisp",
             "message": "Ensure your TOS notify the CRISP usage"
+          }
+        },
+        {
+          "type": "brevo",
+          "url": "https://in-automate.brevo.com/p?key=olcy0odsy5ix9dshbmdxd75j&cuid=58b09161-1179-4990-a507-820b6f1a6a0d&ma_url=https%3A%2F%2Ftraining.zenika.com%2Fen&sib_type=page&ma_title=Zenika%20Training%20-%20Open%20Source%20and%20Agile%20Methods%20-%20Angular%2C%20Scrum%2C%20Spring%2C%20Docker%2C%20Java%2C%20Node%E2%80%A6&sib_name=Zenika%20Training%20-%20Open%20Source%20and%20Agile%20Methods%20-%20Angular%2C%20Scrum%2C%20Spring%2C%20Docker%2C%20Java%2C%20Node%E2%80%A6&ma_referrer=&ma_path=%2Fen",
+          "details": {
+            "id": "brevo",
+            "message": "Ensure your TOS notify the Brevo usage"
           }
         },
         {
@@ -3379,7 +2506,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://cdn.by.wonderpush.com/config/webkeys/7fcb1606dff1c0f12f36050b1c7f27c3ec3930851cd7a6663322a1e067419488?_=1785030255371"
+          "url": "https://cdn.by.wonderpush.com/config/webkeys/7fcb1606dff1c0f12f36050b1c7f27c3ec3930851cd7a6663322a1e067419488?_=1785635011891"
         },
         {
           "type": "unknown",
@@ -3393,10 +2520,10 @@
       "cookies": [
         {
           "name": "sib_cuid",
-          "value": "f572b4f0-ced5-4fec-90ef-28acf26470df",
+          "value": "58b09161-1179-4990-a507-820b6f1a6a0d",
           "domain": ".training.zenika.com",
           "path": "/",
-          "expires": 1800751452,
+          "expires": 1801356209,
           "size": 44,
           "httpOnly": false,
           "secure": false,
@@ -3410,7 +2537,7 @@
           "value": "en",
           "domain": "training.zenika.com",
           "path": "/",
-          "expires": 1816566248.993202,
+          "expires": 1817171001.556085,
           "size": 13,
           "httpOnly": false,
           "secure": false,
@@ -3425,7 +2552,7 @@
         "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 26 Jul 2026 01:44:09 GMT",
+        "date": "Sun, 02 Aug 2026 01:43:26 GMT",
         "link": "<https://training.zenika.com/en>; rel=\"alternate\"; hreflang=\"en\", <https://training.zenika.com/fr>; rel=\"alternate\"; hreflang=\"fr\", <https://training.zenika.com/>; rel=\"alternate\"; hreflang=\"x-default\"\n</_next/static/media/904be59b21bd51cb-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/ee40bb094c99a29a-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/05885f17e349e47a.css>; rel=preload; as=\"style\", </_next/static/css/2d4b29847f942bbb.css>; rel=preload; as=\"style\", </_next/static/css/f01742672d6fca9a.css>; rel=preload; as=\"style\"",
         "server": "Google Frontend",
         "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
@@ -3435,7 +2562,7 @@
       "endpoints": [
         {
           "hostname": "training.zenika.com",
-          "ip": "142.251.219.179",
+          "ip": "142.251.218.243",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3489,7 +2616,7 @@
         },
         {
           "hostname": "www.googletagmanager.com",
-          "ip": "142.251.218.136",
+          "ip": "142.251.219.136",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3543,7 +2670,7 @@
         },
         {
           "hostname": "public.dendreo.com",
-          "ip": "172.67.75.243",
+          "ip": "104.26.1.80",
           "geoip": {
             "registered_country": {
               "geoname_id": 6252001,
@@ -3617,7 +2744,7 @@
         },
         {
           "hostname": "consent.cookiebot.com",
-          "ip": "23.211.139.210",
+          "ip": "23.211.139.206",
           "geoip": {
             "city": {
               "geoname_id": 5392171,
@@ -3703,19 +2830,18 @@
         },
         {
           "hostname": "snap.licdn.com",
-          "ip": "23.67.33.77",
+          "ip": "23.197.86.146",
           "geoip": {
             "city": {
-              "geoname_id": 5393015,
+              "geoname_id": 5392171,
               "names": {
-                "de": "Santa Clara",
-                "en": "Santa Clara",
-                "es": "Santa Clara",
-                "fr": "Santa Clara",
-                "ja": "サンタクララ",
-                "pt-BR": "Santa Clara",
-                "ru": "Санта-Клара",
-                "zh-CN": "圣克拉拉"
+                "de": "San José",
+                "en": "San Jose",
+                "es": "San José",
+                "fr": "San José",
+                "ja": "サンノゼ",
+                "pt-BR": "San José",
+                "ru": "Сан-Хосе"
               }
             },
             "continent": {
@@ -3748,13 +2874,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 37.353,
-              "longitude": -121.9544,
+              "latitude": 37.3388,
+              "longitude": -121.8916,
               "metro_code": 807,
               "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "95052"
+              "code": "95141"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -3790,7 +2916,7 @@
         },
         {
           "hostname": "connect.facebook.net",
-          "ip": "57.144.78.128",
+          "ip": "57.144.132.128",
           "geoip": {
             "city": {
               "geoname_id": 4180439,
@@ -3878,7 +3004,7 @@
         },
         {
           "hostname": "cdn.brevo.com",
-          "ip": "141.101.90.107",
+          "ip": "141.101.90.104",
           "geoip": {
             "registered_country": {
               "geoname_id": 6252001,
@@ -3898,7 +3024,7 @@
         },
         {
           "hostname": "pagead2.googlesyndication.com",
-          "ip": "142.251.218.194",
+          "ip": "142.251.219.2",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -3952,19 +3078,18 @@
         },
         {
           "hostname": "consentcdn.cookiebot.com",
-          "ip": "23.5.240.16",
+          "ip": "23.203.208.13",
           "geoip": {
             "city": {
-              "geoname_id": 5393015,
+              "geoname_id": 5392171,
               "names": {
-                "de": "Santa Clara",
-                "en": "Santa Clara",
-                "es": "Santa Clara",
-                "fr": "Santa Clara",
-                "ja": "サンタクララ",
-                "pt-BR": "Santa Clara",
-                "ru": "Санта-Клара",
-                "zh-CN": "圣克拉拉"
+                "de": "San José",
+                "en": "San Jose",
+                "es": "San José",
+                "fr": "San José",
+                "ja": "サンノゼ",
+                "pt-BR": "San José",
+                "ru": "Сан-Хосе"
               }
             },
             "continent": {
@@ -3997,13 +3122,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 37.353,
-              "longitude": -121.9544,
+              "latitude": 37.3388,
+              "longitude": -121.8916,
               "metro_code": 807,
               "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "95052"
+              "code": "95141"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -4039,26 +3164,6 @@
         },
         {
           "hostname": "px.ads.linkedin.com",
-          "ip": "104.18.41.41",
-          "geoip": {
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            }
-          }
-        },
-        {
-          "hostname": "www.linkedin.com",
           "ip": "172.64.146.215",
           "geoip": {
             "registered_country": {
@@ -4079,7 +3184,7 @@
         },
         {
           "hostname": "www.facebook.com",
-          "ip": "57.144.78.1",
+          "ip": "57.144.132.1",
           "geoip": {
             "city": {
               "geoname_id": 4180439,
@@ -4166,6 +3271,26 @@
           }
         },
         {
+          "hostname": "www.linkedin.com",
+          "ip": "172.64.146.215",
+          "geoip": {
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            }
+          }
+        },
+        {
           "hostname": "sibautomation.com",
           "ip": "141.101.90.107",
           "geoip": {
@@ -4187,27 +3312,7 @@
         },
         {
           "hostname": "cdn.by.wonderpush.com",
-          "ip": "104.18.19.183",
-          "geoip": {
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            }
-          }
-        },
-        {
-          "hostname": "in-automate.brevo.com",
-          "ip": "104.18.37.40",
+          "ip": "104.18.18.183",
           "geoip": {
             "registered_country": {
               "geoname_id": 6252001,
@@ -4228,6 +3333,26 @@
         {
           "hostname": "client.crisp.chat",
           "ip": "104.18.28.104",
+          "geoip": {
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            }
+          }
+        },
+        {
+          "hostname": "in-automate.brevo.com",
+          "ip": "172.64.150.216",
           "geoip": {
             "registered_country": {
               "geoname_id": 6252001,
@@ -4297,7 +3422,7 @@
               "time_zone": "America/Chicago"
             },
             "postal": {
-              "code": "64184"
+              "code": "64121"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -4383,7 +3508,7 @@
               "time_zone": "America/Chicago"
             },
             "postal": {
-              "code": "64184"
+              "code": "64121"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -4782,8 +3907,8 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.17.0",
-      "@generated": "Sun, 26 Jul 2026 01:57:39",
-      "created": "2026-07-26T01:57:39.974451031Z",
+      "@generated": "Sun, 2 Aug 2026 01:57:05",
+      "created": "2026-08-02T01:57:05.232116550Z",
       "insights": [
         {
           "level": "Low",
@@ -4791,7 +3916,7 @@
           "site": "",
           "key": "insight.log.warn",
           "description": "ZAP warnings logged - see the zap.log file for details",
-          "statistic": "8"
+          "statistic": "6"
         },
         {
           "level": "Info",
@@ -4847,7 +3972,7 @@
           "site": "https://training.zenika.com",
           "key": "insight.endpoint.total",
           "description": "Count of total endpoints",
-          "statistic": "88"
+          "statistic": "93"
         },
         {
           "level": "Info",
@@ -4865,13 +3990,6 @@
           "@port": "443",
           "@ssl": "true",
           "alerts": [
-            {
-              "name": "PII Disclosure",
-              "riskcode": "3",
-              "confidence": "3",
-              "riskdesc": "High (High)",
-              "desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>"
-            },
             {
               "name": "Application Error Disclosure",
               "riskcode": "2",
@@ -5036,7 +4154,7 @@
       {
         "requestedUrl": "https://training.zenika.com/",
         "finalUrl": "https://training.zenika.com/fr",
-        "fetchTime": "2026-07-26T01:58:00.706Z",
+        "fetchTime": "2026-08-02T01:57:22.374Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://training.zenika.com/) was redirected to https://training.zenika.com/fr. Try testing the second URL directly."
         ],
@@ -5049,7 +4167,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.32
+            "score": 0.13
           },
           "accessibility": {
             "title": "Accessibility",
@@ -5101,53 +4219,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 17178,
+            "numericValue": 17644,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2454,
-                  "firstMeaningfulPaint": 2454,
-                  "largestContentfulPaint": 3004,
-                  "interactive": 17178,
-                  "speedIndex": 11410,
-                  "totalBlockingTime": 1476,
-                  "maxPotentialFID": 565,
-                  "cumulativeLayoutShift": 0.8125,
-                  "cumulativeLayoutShiftMainFrame": 0.8125,
-                  "totalCumulativeLayoutShift": 0.8125,
+                  "firstContentfulPaint": 2277,
+                  "firstMeaningfulPaint": 2277,
+                  "largestContentfulPaint": 8232,
+                  "interactive": 17644,
+                  "speedIndex": 12576,
+                  "totalBlockingTime": 1661,
+                  "maxPotentialFID": 819,
+                  "cumulativeLayoutShift": 0.8611341349283854,
+                  "cumulativeLayoutShiftMainFrame": 0.8611341349283854,
+                  "totalCumulativeLayoutShift": 0.8611341349283854,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 900121482,
+                  "observedTimeOriginTs": 972420873,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 900121482,
-                  "observedFirstPaint": 1251,
-                  "observedFirstPaintTs": 901372651,
-                  "observedFirstContentfulPaint": 1251,
-                  "observedFirstContentfulPaintTs": 901372651,
-                  "observedFirstContentfulPaintAllFrames": 1251,
-                  "observedFirstContentfulPaintAllFramesTs": 901372651,
-                  "observedFirstMeaningfulPaint": 1251,
-                  "observedFirstMeaningfulPaintTs": 901372651,
-                  "observedLargestContentfulPaint": 1251,
-                  "observedLargestContentfulPaintTs": 901372651,
-                  "observedLargestContentfulPaintAllFrames": 1251,
-                  "observedLargestContentfulPaintAllFramesTs": 901372651,
-                  "observedTraceEnd": 7665,
-                  "observedTraceEndTs": 907786213,
-                  "observedLoad": 3927,
-                  "observedLoadTs": 904048545,
-                  "observedDomContentLoaded": 1699,
-                  "observedDomContentLoadedTs": 901820276,
-                  "observedCumulativeLayoutShift": 0.8125,
-                  "observedCumulativeLayoutShiftMainFrame": 0.8125,
-                  "observedTotalCumulativeLayoutShift": 0.8125,
-                  "observedFirstVisualChange": 1251,
-                  "observedFirstVisualChangeTs": 901372482,
-                  "observedLastVisualChange": 2208,
-                  "observedLastVisualChangeTs": 902329482,
-                  "observedSpeedIndex": 1857,
-                  "observedSpeedIndexTs": 901978342
+                  "observedNavigationStartTs": 972420873,
+                  "observedFirstPaint": 2674,
+                  "observedFirstPaintTs": 975094517,
+                  "observedFirstContentfulPaint": 2674,
+                  "observedFirstContentfulPaintTs": 975094517,
+                  "observedFirstContentfulPaintAllFrames": 2674,
+                  "observedFirstContentfulPaintAllFramesTs": 975094517,
+                  "observedFirstMeaningfulPaint": 2674,
+                  "observedFirstMeaningfulPaintTs": 975094517,
+                  "observedLargestContentfulPaint": 3245,
+                  "observedLargestContentfulPaintTs": 975666090,
+                  "observedLargestContentfulPaintAllFrames": 3245,
+                  "observedLargestContentfulPaintAllFramesTs": 975666090,
+                  "observedTraceEnd": 8317,
+                  "observedTraceEndTs": 980738143,
+                  "observedLoad": 4823,
+                  "observedLoadTs": 977244044,
+                  "observedDomContentLoaded": 1,
+                  "observedDomContentLoadedTs": 972421791,
+                  "observedCumulativeLayoutShift": 0.8611341349283854,
+                  "observedCumulativeLayoutShiftMainFrame": 0.8611341349283854,
+                  "observedTotalCumulativeLayoutShift": 0.8611341349283854,
+                  "observedFirstVisualChange": 2674,
+                  "observedFirstVisualChangeTs": 975094873,
+                  "observedLastVisualChange": 3436,
+                  "observedLastVisualChangeTs": 975856873,
+                  "observedSpeedIndex": 3119,
+                  "observedSpeedIndexTs": 975539837
                 },
                 {
                   "lcpInvalidated": false
@@ -5169,19 +4287,19 @@
                   "numScripts": 43,
                   "numStylesheets": 3,
                   "numFonts": 2,
-                  "numTasks": 5104,
-                  "numTasksOver10ms": 23,
-                  "numTasksOver25ms": 11,
-                  "numTasksOver50ms": 5,
+                  "numTasks": 4680,
+                  "numTasksOver10ms": 25,
+                  "numTasksOver25ms": 15,
+                  "numTasksOver50ms": 8,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 22469783.635111474,
-                  "maxRtt": 13.452,
-                  "maxServerLatency": 899.1859999999999,
-                  "totalByteWeight": 6141347,
-                  "totalTaskTime": 1789.3140000000003,
-                  "mainDocumentTransferSize": 251077
+                  "throughput": 24467129.185353365,
+                  "maxRtt": 16.052,
+                  "maxServerLatency": 906.951,
+                  "totalByteWeight": 6109198,
+                  "totalTaskTime": 1883.0060000000017,
+                  "mainDocumentTransferSize": 249749
                 }
               ]
             }
@@ -5212,10 +4330,10 @@
       "cookiesCount": 2,
       "trackersGrade": "F",
       "trackersCount": 52,
-      "zapCount": 14,
-      "zapGrade": "F",
-      "lighthouse_performance": 0.32,
-      "lighthouse_performanceGrade": "E",
+      "zapCount": 13,
+      "zapGrade": "D",
+      "lighthouse_performance": 0.13,
+      "lighthouse_performanceGrade": "F",
       "lighthouse_accessibility": 0.86,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 0.67,
@@ -5242,14 +4360,14 @@
         "testsQuantity": 10,
         "responseHeaders": {
           "server": "nginx",
-          "date": "Sun, 26 Jul 2026 01:59:41 GMT",
+          "date": "Sun, 02 Aug 2026 01:57:49 GMT",
           "content-type": "text/html; charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "close",
           "strict-transport-security": "max-age=31536000",
           "vary": "Accept-Encoding, accept, content-type, cookie",
-          "last-modified": "Fri, 24 Jul 2026 07:50:12 GMT",
-          "cache-control": "max-age=101, must-revalidate",
+          "last-modified": "Sat, 01 Aug 2026 21:40:53 GMT",
+          "cache-control": "max-age=269, must-revalidate",
           "x-nananana": "Batcache-Hit",
           "x-hacker": "Want root?  Visit join.a8c.com and mention this header.",
           "host-header": "WordPress.com",
@@ -5257,7 +4375,7 @@
           "link": "<https://blog.zenika.com/wp-json/>; rel=\"https://api.w.org/\", <https://blog.zenika.com/wp-json/wp/v2/pages/13972>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://wp.me/PbuDkM-3Dm>; rel=shortlink",
           "x-ac": "20.bur _atomic_bur STALE",
           "alt-svc": "clear",
-          "server-timing": "a8c-cdn, dc;desc=bur, cache;desc=STALE;dur=1.0"
+          "server-timing": "a8c-cdn, dc;desc=bur, cache;desc=STALE;dur=2.0"
         }
       },
       "tests": {
@@ -5330,19 +4448,19 @@
               "crossorigin": null,
               "integrity": null
             },
-            "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202630": {
+            "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202631": {
               "crossorigin": null,
               "integrity": null
             },
-            "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=11.3.65": {
+            "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=11.3.69": {
               "crossorigin": null,
               "integrity": null
             },
-            "https://secure.gravatar.com/js/gprofiles.js?ver=202630": {
+            "https://secure.gravatar.com/js/gprofiles.js?ver=202631": {
               "crossorigin": null,
               "integrity": null
             },
-            "https://stats.wp.com/e-202630.js": {
+            "https://stats.wp.com/e-202631.js": {
               "crossorigin": null,
               "integrity": null
             }
@@ -7733,6 +6851,10 @@
           }
         },
         {
+          "type": "unknown",
+          "url": "https://consentcdn.cookiebot.com/consentconfig/0ecab3a1-893f-401d-a270-f34c4108d68f/settings.json"
+        },
+        {
           "type": "Wordpress",
           "url": "https://i0.wp.com/blog.zenika.com/wp-content/uploads/2026/06/Tech-Ready-2026-_-lIA-en-production-vue-de-linterieur.png?resize=1024%2C576&ssl=1",
           "details": {
@@ -7750,15 +6872,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://consentcdn.cookiebot.com/consentconfig/0ecab3a1-893f-401d-a270-f34c4108d68f/settings.json"
-        },
-        {
-          "type": "unknown",
-          "url": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=11.3.65"
-        },
-        {
-          "type": "unknown",
-          "url": "https://secure.gravatar.com/js/gprofiles.js?ver=202630"
+          "url": "https://secure.gravatar.com/js/gprofiles.js?ver=202631"
         },
         {
           "type": "Wordpress",
@@ -7914,15 +7028,19 @@
         },
         {
           "type": "Wordpress",
-          "url": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202630",
+          "url": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202631",
           "details": {
             "id": "Wordpress",
             "message": "Use hosted Matomo instance"
           }
         },
         {
+          "type": "unknown",
+          "url": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=11.3.69"
+        },
+        {
           "type": "Wordpress",
-          "url": "https://stats.wp.com/e-202630.js",
+          "url": "https://stats.wp.com/e-202631.js",
           "details": {
             "id": "Wordpress",
             "message": "Use hosted Matomo instance"
@@ -8022,22 +7140,6 @@
         },
         {
           "type": "Wordpress",
-          "url": "https://i0.wp.com/blog.zenika.com/wp-content/uploads/2026/06/Retour-sur-le-Google-Cloud-Summit-2026-%E2%9B%85.png?fit=800%2C450&ssl=1",
-          "details": {
-            "id": "Wordpress",
-            "message": "Use hosted Matomo instance"
-          }
-        },
-        {
-          "type": "Wordpress",
-          "url": "https://i0.wp.com/blog.zenika.com/wp-content/uploads/2026/05/Lauto-configuration-Spring-Boot-expliquee-_-La-Magie-Derriere-%40SpringBootApplication.png?fit=800%2C450&ssl=1",
-          "details": {
-            "id": "Wordpress",
-            "message": "Use hosted Matomo instance"
-          }
-        },
-        {
-          "type": "Wordpress",
           "url": "https://i0.wp.com/blog.zenika.com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36.png?fit=32%2C32&ssl=1",
           "details": {
             "id": "Wordpress",
@@ -8054,7 +7156,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://secure.gravatar.com/js/gprofiles.js?ver=202630"
+          "url": "https://secure.gravatar.com/js/gprofiles.js?ver=202631"
         },
         {
           "type": "unknown",
@@ -8118,14 +7220,6 @@
         },
         {
           "type": "Wordpress",
-          "url": "https://fonts.wp.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
-          "details": {
-            "id": "Wordpress",
-            "message": "Use hosted Matomo instance"
-          }
-        },
-        {
-          "type": "Wordpress",
           "url": "https://fonts.wp.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rj.woff2",
           "details": {
             "id": "Wordpress",
@@ -8190,7 +7284,15 @@
         },
         {
           "type": "Wordpress",
-          "url": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202630",
+          "url": "https://fonts.wp.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2",
+          "details": {
+            "id": "Wordpress",
+            "message": "Use hosted Matomo instance"
+          }
+        },
+        {
+          "type": "Wordpress",
+          "url": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202631",
           "details": {
             "id": "Wordpress",
             "message": "Use hosted Matomo instance"
@@ -8212,26 +7314,26 @@
       "cookies": [],
       "headers": {
         "alt-svc": "clear",
-        "cache-control": "max-age=275, must-revalidate",
+        "cache-control": "max-age=300, must-revalidate",
         "content-encoding": "br",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 26 Jul 2026 01:44:08 GMT",
+        "date": "Sun, 02 Aug 2026 01:43:17 GMT",
         "host-header": "WordPress.com",
-        "last-modified": "Wed, 22 Jul 2026 01:50:13 GMT",
+        "last-modified": "Sat, 01 Aug 2026 23:54:35 GMT",
         "link": "<https://blog.zenika.com/wp-json/>; rel=\"https://api.w.org/\"\n<https://blog.zenika.com/wp-json/wp/v2/pages/13972>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\"\n<https://wp.me/PbuDkM-3Dm>; rel=shortlink",
         "permissions-policy": "private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\"), private-state-token-issuance=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcaptcha.com\")",
         "server": "nginx",
-        "server-timing": "a8c-cdn, dc;desc=bur, cache;desc=STALE;dur=1.0",
+        "server-timing": "a8c-cdn, dc;desc=bur, cache;desc=STALE;dur=2.0",
         "strict-transport-security": "max-age=31536000",
         "vary": "Accept-Encoding\naccept, content-type, cookie",
         "x-ac": "20.bur _atomic_bur STALE",
         "x-hacker": "Want root?  Visit join.a8c.com and mention this header.",
-        "x-nananana": "Batcache-Hit"
+        "x-nananana": "Batcache-Set"
       },
       "endpoints": [
         {
           "hostname": "blog.zenika.com",
-          "ip": "192.0.78.207",
+          "ip": "192.0.78.185",
           "geoip": {
             "city": {
               "geoname_id": 5391959,
@@ -8318,18 +7420,19 @@
         },
         {
           "hostname": "consent.cookiebot.com",
-          "ip": "23.211.139.210",
+          "ip": "69.192.139.233",
           "geoip": {
             "city": {
-              "geoname_id": 5392171,
+              "geoname_id": 5393015,
               "names": {
-                "de": "San José",
-                "en": "San Jose",
-                "es": "San José",
-                "fr": "San José",
-                "ja": "サンノゼ",
-                "pt-BR": "San José",
-                "ru": "Сан-Хосе"
+                "de": "Santa Clara",
+                "en": "Santa Clara",
+                "es": "Santa Clara",
+                "fr": "Santa Clara",
+                "ja": "サンタクララ",
+                "pt-BR": "Santa Clara",
+                "ru": "Санта-Клара",
+                "zh-CN": "圣克拉拉"
               }
             },
             "continent": {
@@ -8362,13 +7465,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 37.3388,
-              "longitude": -121.8916,
+              "latitude": 37.353,
+              "longitude": -121.9544,
               "metro_code": 807,
               "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "95141"
+              "code": "95052"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -8598,19 +7701,18 @@
         },
         {
           "hostname": "consentcdn.cookiebot.com",
-          "ip": "23.5.240.16",
+          "ip": "23.203.208.13",
           "geoip": {
             "city": {
-              "geoname_id": 5393015,
+              "geoname_id": 5392171,
               "names": {
-                "de": "Santa Clara",
-                "en": "Santa Clara",
-                "es": "Santa Clara",
-                "fr": "Santa Clara",
-                "ja": "サンタクララ",
-                "pt-BR": "Santa Clara",
-                "ru": "Санта-Клара",
-                "zh-CN": "圣克拉拉"
+                "de": "San José",
+                "en": "San Jose",
+                "es": "San José",
+                "fr": "San José",
+                "ja": "サンノゼ",
+                "pt-BR": "San José",
+                "ru": "Сан-Хосе"
               }
             },
             "continent": {
@@ -8643,13 +7745,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 37.353,
-              "longitude": -121.9544,
+              "latitude": 37.3388,
+              "longitude": -121.8916,
               "metro_code": 807,
               "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "95052"
+              "code": "95141"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -8681,26 +7783,6 @@
                 }
               }
             ]
-          }
-        },
-        {
-          "hostname": "js.hs-scripts.com",
-          "ip": "104.16.138.209",
-          "geoip": {
-            "registered_country": {
-              "geoname_id": 6252001,
-              "iso_code": "US",
-              "names": {
-                "de": "USA",
-                "en": "United States",
-                "es": "Estados Unidos",
-                "fr": "États-Unis",
-                "ja": "アメリカ",
-                "pt-BR": "EUA",
-                "ru": "США",
-                "zh-CN": "美国"
-              }
-            }
           }
         },
         {
@@ -8878,6 +7960,26 @@
           }
         },
         {
+          "hostname": "js.hs-scripts.com",
+          "ip": "104.16.139.209",
+          "geoip": {
+            "registered_country": {
+              "geoname_id": 6252001,
+              "iso_code": "US",
+              "names": {
+                "de": "USA",
+                "en": "United States",
+                "es": "Estados Unidos",
+                "fr": "États-Unis",
+                "ja": "アメリカ",
+                "pt-BR": "EUA",
+                "ru": "США",
+                "zh-CN": "美国"
+              }
+            }
+          }
+        },
+        {
           "hostname": "stats.wp.com",
           "ip": "192.0.76.3",
           "geoip": {
@@ -8966,7 +8068,7 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "142.251.219.131",
+          "ip": "142.251.219.163",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -9817,8 +8919,8 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.17.0",
-      "@generated": "Sun, 26 Jul 2026 01:58:48",
-      "created": "2026-07-26T01:58:48.601411357Z",
+      "@generated": "Sun, 2 Aug 2026 01:57:07",
+      "created": "2026-08-02T01:57:07.760584278Z",
       "insights": [
         {
           "level": "Low",
@@ -9826,7 +8928,7 @@
           "site": "",
           "key": "insight.log.warn",
           "description": "ZAP warnings logged - see the zap.log file for details",
-          "statistic": "8"
+          "statistic": "7"
         },
         {
           "level": "Info",
@@ -9834,7 +8936,7 @@
           "site": "https://blog.zenika.com",
           "key": "insight.code.2xx",
           "description": "Percentage of responses with status code 2xx",
-          "statistic": "88"
+          "statistic": "71"
         },
         {
           "level": "Info",
@@ -9842,7 +8944,7 @@
           "site": "https://blog.zenika.com",
           "key": "insight.code.3xx",
           "description": "Percentage of responses with status code 3xx",
-          "statistic": "8"
+          "statistic": "10"
         },
         {
           "level": "Info",
@@ -9850,7 +8952,7 @@
           "site": "https://blog.zenika.com",
           "key": "insight.code.4xx",
           "description": "Percentage of responses with status code 4xx",
-          "statistic": "3"
+          "statistic": "18"
         },
         {
           "level": "Info",
@@ -9866,7 +8968,7 @@
           "site": "https://blog.zenika.com",
           "key": "insight.endpoint.ctype.application/json",
           "description": "Percentage of endpoints with content type application/json",
-          "statistic": "6"
+          "statistic": "5"
         },
         {
           "level": "Info",
@@ -9882,7 +8984,7 @@
           "site": "https://blog.zenika.com",
           "key": "insight.endpoint.ctype.image/png",
           "description": "Percentage of endpoints with content type image/png",
-          "statistic": "1"
+          "statistic": "2"
         },
         {
           "level": "Info",
@@ -9898,7 +9000,7 @@
           "site": "https://blog.zenika.com",
           "key": "insight.endpoint.ctype.text/html",
           "description": "Percentage of endpoints with content type text/html",
-          "statistic": "77"
+          "statistic": "78"
         },
         {
           "level": "Info",
@@ -9922,7 +9024,7 @@
           "site": "https://blog.zenika.com",
           "key": "insight.endpoint.method.GET",
           "description": "Percentage of endpoints with method GET",
-          "statistic": "94"
+          "statistic": "93"
         },
         {
           "level": "Info",
@@ -9930,7 +9032,7 @@
           "site": "https://blog.zenika.com",
           "key": "insight.endpoint.method.POST",
           "description": "Percentage of endpoints with method POST",
-          "statistic": "5"
+          "statistic": "6"
         },
         {
           "level": "Info",
@@ -9938,7 +9040,7 @@
           "site": "https://blog.zenika.com",
           "key": "insight.endpoint.total",
           "description": "Count of total endpoints",
-          "statistic": "619"
+          "statistic": "714"
         },
         {
           "level": "Info",
@@ -9946,7 +9048,7 @@
           "site": "https://blog.zenika.com",
           "key": "insight.response.slow",
           "description": "Percentage of slow responses",
-          "statistic": "27"
+          "statistic": "41"
         }
       ],
       "site": [
@@ -10118,13 +9220,6 @@
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>"
             },
             {
-              "name": "Non-Storable Content",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>"
-            },
-            {
               "name": "Re-examine Cache-control Directives",
               "riskcode": "0",
               "confidence": "1",
@@ -10183,7 +9278,7 @@
       {
         "requestedUrl": "https://blog.zenika.com/",
         "finalUrl": "https://blog.zenika.com/",
-        "fetchTime": "2026-07-26T01:59:08.385Z",
+        "fetchTime": "2026-08-02T01:57:25.828Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -10194,7 +9289,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.27
+            "score": 0.48
           },
           "accessibility": {
             "title": "Accessibility",
@@ -10246,53 +9341,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 19100,
+            "numericValue": 16404,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 4165,
-                  "firstMeaningfulPaint": 4165,
-                  "largestContentfulPaint": 9578,
-                  "interactive": 19100,
-                  "speedIndex": 7193,
-                  "totalBlockingTime": 1183,
-                  "maxPotentialFID": 538,
+                  "firstContentfulPaint": 3834,
+                  "firstMeaningfulPaint": 3834,
+                  "largestContentfulPaint": 9187,
+                  "interactive": 16404,
+                  "speedIndex": 8295,
+                  "totalBlockingTime": 177,
+                  "maxPotentialFID": 132,
                   "cumulativeLayoutShift": 0.010002086215549044,
                   "cumulativeLayoutShiftMainFrame": 0.010002086215549044,
                   "totalCumulativeLayoutShift": 0.010002086215549044,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 971396306,
+                  "observedTimeOriginTs": 909821874,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 971396306,
-                  "observedFirstPaint": 410,
-                  "observedFirstPaintTs": 971806504,
-                  "observedFirstContentfulPaint": 444,
-                  "observedFirstContentfulPaintTs": 971840416,
-                  "observedFirstContentfulPaintAllFrames": 444,
-                  "observedFirstContentfulPaintAllFramesTs": 971840416,
-                  "observedFirstMeaningfulPaint": 444,
-                  "observedFirstMeaningfulPaintTs": 971840416,
-                  "observedLargestContentfulPaint": 444,
-                  "observedLargestContentfulPaintTs": 971840416,
-                  "observedLargestContentfulPaintAllFrames": 444,
-                  "observedLargestContentfulPaintAllFramesTs": 971840416,
-                  "observedTraceEnd": 3775,
-                  "observedTraceEndTs": 975171531,
-                  "observedLoad": 1195,
-                  "observedLoadTs": 972591063,
-                  "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 971397498,
+                  "observedNavigationStartTs": 909821874,
+                  "observedFirstPaint": 268,
+                  "observedFirstPaintTs": 910089745,
+                  "observedFirstContentfulPaint": 268,
+                  "observedFirstContentfulPaintTs": 910089745,
+                  "observedFirstContentfulPaintAllFrames": 268,
+                  "observedFirstContentfulPaintAllFramesTs": 910089745,
+                  "observedFirstMeaningfulPaint": 300,
+                  "observedFirstMeaningfulPaintTs": 910122159,
+                  "observedLargestContentfulPaint": 300,
+                  "observedLargestContentfulPaintTs": 910122159,
+                  "observedLargestContentfulPaintAllFrames": 300,
+                  "observedLargestContentfulPaintAllFramesTs": 910122159,
+                  "observedTraceEnd": 3272,
+                  "observedTraceEndTs": 913093710,
+                  "observedLoad": 925,
+                  "observedLoadTs": 910746460,
+                  "observedDomContentLoaded": 363,
+                  "observedDomContentLoadedTs": 910184699,
                   "observedCumulativeLayoutShift": 0.010002086215549044,
                   "observedCumulativeLayoutShiftMainFrame": 0.010002086215549044,
                   "observedTotalCumulativeLayoutShift": 0.010002086215549044,
-                  "observedFirstVisualChange": 410,
-                  "observedFirstVisualChangeTs": 971806306,
-                  "observedLastVisualChange": 1126,
-                  "observedLastVisualChangeTs": 972522306,
-                  "observedSpeedIndex": 483,
-                  "observedSpeedIndexTs": 971879436
+                  "observedFirstVisualChange": 269,
+                  "observedFirstVisualChangeTs": 910090874,
+                  "observedLastVisualChange": 479,
+                  "observedLastVisualChangeTs": 910300874,
+                  "observedSpeedIndex": 307,
+                  "observedSpeedIndexTs": 910128593
                 },
                 {
                   "lcpInvalidated": false
@@ -10310,23 +9405,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 99,
-                  "numScripts": 32,
+                  "numRequests": 98,
+                  "numScripts": 31,
                   "numStylesheets": 10,
                   "numFonts": 16,
-                  "numTasks": 1976,
-                  "numTasksOver10ms": 30,
-                  "numTasksOver25ms": 10,
-                  "numTasksOver50ms": 4,
-                  "numTasksOver100ms": 1,
+                  "numTasks": 1905,
+                  "numTasksOver10ms": 18,
+                  "numTasksOver25ms": 5,
+                  "numTasksOver50ms": 0,
+                  "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
                   "rtt": 0,
-                  "throughput": 137738158.7690157,
-                  "maxRtt": 15.873,
-                  "maxServerLatency": 226.95100000000002,
-                  "totalByteWeight": 4949699,
-                  "totalTaskTime": 1169.9309999999937,
-                  "mainDocumentTransferSize": 61409
+                  "throughput": 120938574.92352638,
+                  "maxRtt": 15.978000000000002,
+                  "maxServerLatency": 225.06799999999998,
+                  "totalByteWeight": 4950129,
+                  "totalTaskTime": 597.8339999999963,
+                  "mainDocumentTransferSize": 61155
                 }
               ]
             }
@@ -10350,17 +9445,17 @@
       "httpGrade": "C-",
       "uptime": 100,
       "uptimeGrade": "A",
-      "testsslExpireSoon": false,
+      "testsslExpireSoon": true,
       "testsslExpireDate": "2026-08-30T22:29:00.000Z",
       "testsslGrade": "A+",
       "cookiesGrade": "A",
       "cookiesCount": 0,
       "trackersGrade": "F",
-      "trackersCount": 71,
+      "trackersCount": 69,
       "zapCount": 18,
       "zapGrade": "D",
-      "lighthouse_performance": 0.27,
-      "lighthouse_performanceGrade": "E",
+      "lighthouse_performance": 0.48,
+      "lighthouse_performanceGrade": "D",
       "lighthouse_accessibility": 0.93,
       "lighthouse_accessibilityGrade": "A",
       "lighthouse_best-practices": 0.92,
@@ -25243,22 +24338,22 @@
         "testsPassed": 8,
         "testsQuantity": 10,
         "responseHeaders": {
-          "age": "847673",
+          "age": "1452333",
           "cache-control": "public,max-age=0,must-revalidate",
-          "cache-status": "\"Netlify Edge\"; hit",
-          "content-length": "13936",
+          "cache-status": "\"Netlify Edge\"; hit; ttl=30083667",
+          "content-length": "13959",
           "content-type": "text/html; charset=utf-8",
-          "date": "Sun, 26 Jul 2026 02:35:29 GMT",
+          "date": "Sun, 02 Aug 2026 02:33:10 GMT",
           "etag": "\"utaqfx8d1t3jgf-df\"",
           "netlify-vary": "query=__nextDataReq|_rsc,header=x-nextjs-data|x-next-debug-logging|next-router-prefetch|next-router-segment-prefetch|next-router-state-tree|next-url|rsc|accept-encoding,cookie=__prerender_bypass|__next_preview_data",
           "server": "Netlify",
           "strict-transport-security": "max-age=31536000",
           "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
           "x-content-type-options": "nosniff",
-          "x-nextjs-date": "Sun, 19 Jul 2026 02:15:45 GMT",
+          "x-nextjs-date": "Sat, 01 Aug 2026 09:14:29 GMT",
           "x-nextjs-prerender": "1, 1",
           "x-nextjs-stale-time": "300",
-          "x-nf-request-id": "01KYE4E30QXR2RZTCVYNZ2PAV5",
+          "x-nf-request-id": "01KZ052VZHHKPZ9M1PVEA4VHN5",
           "x-powered-by": "Next.js",
           "connection": "close"
         }
@@ -27770,40 +26865,39 @@
       "trackers": [],
       "cookies": [],
       "headers": {
-        "age": "847508",
+        "age": "1452160",
         "cache-control": "public,max-age=0,must-revalidate",
-        "cache-status": "\"Netlify Durable\"; hit; ttl=30688493\n\"Next.js\"; hit\n\"Netlify Edge\"; fwd=miss",
+        "cache-status": "\"Netlify Durable\"; hit; ttl=30083839\n\"Next.js\"; hit\n\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
         "content-encoding": "br",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 26 Jul 2026 02:32:44 GMT",
+        "date": "Sun, 02 Aug 2026 02:30:17 GMT",
         "etag": "\"utaqfx8d1t3jgf-df\"",
         "netlify-vary": "query=__nextDataReq|_rsc,header=x-nextjs-data|x-next-debug-logging|next-router-prefetch|next-router-segment-prefetch|next-router-state-tree|next-url|rsc|accept-encoding,cookie=__prerender_bypass|__next_preview_data",
         "server": "Netlify",
         "strict-transport-security": "max-age=31536000",
         "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
         "x-content-type-options": "nosniff",
-        "x-nextjs-date": "Sun, 19 Jul 2026 02:15:45 GMT",
+        "x-nextjs-date": "Sat, 01 Aug 2026 09:14:29 GMT",
         "x-nextjs-prerender": "1, 1",
         "x-nextjs-stale-time": "300",
-        "x-nf-request-id": "01KYE490ZAVG1JBBW3VY8EK9ZV",
+        "x-nf-request-id": "01KZ04XJRBC0YM8DBZN8MJWGDM",
         "x-powered-by": "Next.js"
       },
       "endpoints": [
         {
           "hostname": "oss.zenika.com",
-          "ip": "98.84.224.111",
+          "ip": "52.52.192.191",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5392171,
               "names": {
-                "de": "Ashburn",
-                "en": "Ashburn",
-                "es": "Ashburn",
-                "fr": "Ashburn",
-                "ja": "アッシュバーン",
-                "pt-BR": "Ashburn",
-                "ru": "Ашберн",
-                "zh-CN": "阿什本"
+                "de": "San José",
+                "en": "San Jose",
+                "es": "San José",
+                "fr": "San José",
+                "ja": "サンノゼ",
+                "pt-BR": "San José",
+                "ru": "Сан-Хосе"
               }
             },
             "continent": {
@@ -27836,13 +26930,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 37.3388,
+              "longitude": -121.8916,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "20149"
+              "code": "95141"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -27860,17 +26954,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "de": "Virginia",
-                  "en": "Virginia",
-                  "es": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
@@ -28050,17 +27144,9 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.17.0",
-      "@generated": "Sun, 26 Jul 2026 02:34:45",
-      "created": "2026-07-26T02:34:45.851093818Z",
+      "@generated": "Sun, 2 Aug 2026 02:32:24",
+      "created": "2026-08-02T02:32:24.091798759Z",
       "insights": [
-        {
-          "level": "Low",
-          "reason": "Warning",
-          "site": "",
-          "key": "insight.log.error",
-          "description": "ZAP errors logged - see the zap.log file for details",
-          "statistic": "1"
-        },
         {
           "level": "Low",
           "reason": "Warning",
@@ -28302,7 +27388,7 @@
       {
         "requestedUrl": "https://oss.zenika.com/",
         "finalUrl": "https://oss.zenika.com/",
-        "fetchTime": "2026-07-26T02:35:02.345Z",
+        "fetchTime": "2026-08-02T02:32:41.300Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -28313,7 +27399,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.95
+            "score": 0.93
           },
           "accessibility": {
             "title": "Accessibility",
@@ -28365,53 +27451,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2079,
+            "numericValue": 2251,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 908,
-                  "firstMeaningfulPaint": 908,
-                  "largestContentfulPaint": 2258,
-                  "interactive": 2079,
-                  "speedIndex": 1236,
-                  "totalBlockingTime": 196,
-                  "maxPotentialFID": 242,
+                  "firstContentfulPaint": 905,
+                  "firstMeaningfulPaint": 905,
+                  "largestContentfulPaint": 2255,
+                  "interactive": 2251,
+                  "speedIndex": 1304,
+                  "totalBlockingTime": 257,
+                  "maxPotentialFID": 260,
                   "cumulativeLayoutShift": 0.0006790296766493055,
                   "cumulativeLayoutShiftMainFrame": 0.0006790296766493055,
                   "totalCumulativeLayoutShift": 0.0006790296766493055,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 206627270,
+                  "observedTimeOriginTs": 213900036,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 206627270,
-                  "observedFirstPaint": 118,
-                  "observedFirstPaintTs": 206745488,
-                  "observedFirstContentfulPaint": 179,
-                  "observedFirstContentfulPaintTs": 206806275,
-                  "observedFirstContentfulPaintAllFrames": 179,
-                  "observedFirstContentfulPaintAllFramesTs": 206806275,
-                  "observedFirstMeaningfulPaint": 179,
-                  "observedFirstMeaningfulPaintTs": 206806275,
-                  "observedLargestContentfulPaint": 364,
-                  "observedLargestContentfulPaintTs": 206991459,
-                  "observedLargestContentfulPaintAllFrames": 364,
-                  "observedLargestContentfulPaintAllFramesTs": 206991459,
-                  "observedTraceEnd": 2799,
-                  "observedTraceEndTs": 209425845,
-                  "observedLoad": 303,
-                  "observedLoadTs": 206930234,
+                  "observedNavigationStartTs": 213900036,
+                  "observedFirstPaint": 145,
+                  "observedFirstPaintTs": 214045510,
+                  "observedFirstContentfulPaint": 220,
+                  "observedFirstContentfulPaintTs": 214120472,
+                  "observedFirstContentfulPaintAllFrames": 220,
+                  "observedFirstContentfulPaintAllFramesTs": 214120472,
+                  "observedFirstMeaningfulPaint": 220,
+                  "observedFirstMeaningfulPaintTs": 214120472,
+                  "observedLargestContentfulPaint": 359,
+                  "observedLargestContentfulPaintTs": 214258774,
+                  "observedLargestContentfulPaintAllFrames": 359,
+                  "observedLargestContentfulPaintAllFramesTs": 214258774,
+                  "observedTraceEnd": 2770,
+                  "observedTraceEndTs": 216669986,
+                  "observedLoad": 360,
+                  "observedLoadTs": 214260199,
                   "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 206627972,
+                  "observedDomContentLoadedTs": 213901048,
                   "observedCumulativeLayoutShift": 0.0006790296766493055,
                   "observedCumulativeLayoutShiftMainFrame": 0.0006790296766493055,
                   "observedTotalCumulativeLayoutShift": 0.0006790296766493055,
-                  "observedFirstVisualChange": 118,
-                  "observedFirstVisualChangeTs": 206745270,
-                  "observedLastVisualChange": 2771,
-                  "observedLastVisualChangeTs": 209398270,
-                  "observedSpeedIndex": 640,
-                  "observedSpeedIndexTs": 207267030
+                  "observedFirstVisualChange": 220,
+                  "observedFirstVisualChangeTs": 214120036,
+                  "observedLastVisualChange": 2765,
+                  "observedLastVisualChangeTs": 216665036,
+                  "observedSpeedIndex": 653,
+                  "observedSpeedIndexTs": 214553150
                 },
                 {
                   "lcpInvalidated": false
@@ -28429,23 +27515,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 19,
+                  "numRequests": 20,
                   "numScripts": 9,
                   "numStylesheets": 1,
                   "numFonts": 2,
-                  "numTasks": 725,
-                  "numTasksOver10ms": 4,
+                  "numTasks": 689,
+                  "numTasksOver10ms": 6,
                   "numTasksOver25ms": 2,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 3.5279999999999987,
-                  "throughput": 295273907.66348475,
-                  "maxRtt": 3.5279999999999987,
-                  "maxServerLatency": 8.215000000000002,
-                  "totalByteWeight": 4593650,
-                  "totalTaskTime": 257.02399999999875,
-                  "mainDocumentTransferSize": 14521
+                  "rtt": 2.6129999999999995,
+                  "throughput": 147737292.54372177,
+                  "maxRtt": 2.6129999999999995,
+                  "maxServerLatency": 4.568999999999999,
+                  "totalByteWeight": 4327972,
+                  "totalTaskTime": 305.2509999999988,
+                  "mainDocumentTransferSize": 14554
                 }
               ]
             }
@@ -28479,7 +27565,7 @@
       "trackersCount": 0,
       "zapCount": 8,
       "zapGrade": "D",
-      "lighthouse_performance": 0.95,
+      "lighthouse_performance": 0.93,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": null,
       "lighthouse_accessibilityGrade": "F",
@@ -28510,9 +27596,9 @@
           "last-modified": "Mon, 21 Feb 2022 17:13:12 GMT",
           "x-rgw-object-type": "Normal",
           "etag": "W/\"6c4ac3dbcfd28731c0e604369e700e13\"",
-          "x-amz-request-id": "tx00000045764b9f9ce91de-006a656da6-4380bf76-default",
+          "x-amz-request-id": "tx000006c7421e746ecb942-006a6ea7bc-43165c8f-default",
           "content-type": "text/html",
-          "date": "Sun, 26 Jul 2026 02:15:02 GMT",
+          "date": "Sun, 02 Aug 2026 02:13:16 GMT",
           "transfer-encoding": "chunked",
           "vary": "Accept-Encoding",
           "connection": "close"
@@ -31815,17 +30901,17 @@
         "accept-ranges": "bytes",
         "content-encoding": "gzip",
         "content-type": "text/html",
-        "date": "Sun, 26 Jul 2026 02:12:11 GMT",
+        "date": "Sun, 02 Aug 2026 02:10:26 GMT",
         "last-modified": "Mon, 21 Feb 2022 17:13:12 GMT",
         "transfer-encoding": "chunked",
         "vary": "Accept-Encoding",
-        "x-amz-request-id": "tx000001065118d7532cdde-006a656cfb-37903bcb-default",
+        "x-amz-request-id": "tx00000cf55c569d2d3b3cd-006a6ea712-43164c21-default",
         "x-rgw-object-type": "Normal"
       },
       "endpoints": [
         {
           "hostname": "next.zenika.com",
-          "ip": "91.208.207.147",
+          "ip": "91.208.207.149",
           "geoip": {
             "continent": {
               "code": "EU",
@@ -31881,7 +30967,7 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "142.251.218.138",
+          "ip": "142.251.215.74",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -31955,7 +31041,7 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "142.251.214.35",
+          "ip": "142.251.35.67",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -32075,8 +31161,8 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.17.0",
-      "@generated": "Sun, 26 Jul 2026 02:14:16",
-      "created": "2026-07-26T02:14:16.580453449Z",
+      "@generated": "Sun, 2 Aug 2026 02:12:27",
+      "created": "2026-08-02T02:12:27.579237942Z",
       "insights": [
         {
           "level": "Info",
@@ -32287,7 +31373,7 @@
       {
         "requestedUrl": "https://next.zenika.com/",
         "finalUrl": "https://next.zenika.com/",
-        "fetchTime": "2026-07-26T02:14:33.150Z",
+        "fetchTime": "2026-08-02T02:12:43.740Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -32298,7 +31384,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.74
+            "score": 0.76
           },
           "accessibility": {
             "title": "Accessibility",
@@ -32350,53 +31436,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 3054,
+            "numericValue": 2867,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 3054,
-                  "firstMeaningfulPaint": 3054,
-                  "largestContentfulPaint": 4978,
-                  "interactive": 3054,
-                  "speedIndex": 4279,
+                  "firstContentfulPaint": 2867,
+                  "firstMeaningfulPaint": 2867,
+                  "largestContentfulPaint": 4859,
+                  "interactive": 2867,
+                  "speedIndex": 3633,
                   "totalBlockingTime": 0,
-                  "maxPotentialFID": 16,
+                  "maxPotentialFID": 54,
                   "cumulativeLayoutShift": 0.008870203653971355,
                   "cumulativeLayoutShiftMainFrame": 0.008870203653971355,
                   "totalCumulativeLayoutShift": 0.008870203653971355,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 218817648,
+                  "observedTimeOriginTs": 216168213,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 218817648,
-                  "observedFirstPaint": 1254,
-                  "observedFirstPaintTs": 220071413,
-                  "observedFirstContentfulPaint": 1254,
-                  "observedFirstContentfulPaintTs": 220071413,
-                  "observedFirstContentfulPaintAllFrames": 1254,
-                  "observedFirstContentfulPaintAllFramesTs": 220071413,
-                  "observedFirstMeaningfulPaint": 1254,
-                  "observedFirstMeaningfulPaintTs": 220071413,
-                  "observedLargestContentfulPaint": 2643,
-                  "observedLargestContentfulPaintTs": 221460500,
-                  "observedLargestContentfulPaintAllFrames": 2643,
-                  "observedLargestContentfulPaintAllFramesTs": 221460500,
-                  "observedTraceEnd": 5296,
-                  "observedTraceEndTs": 224113760,
-                  "observedLoad": 2834,
-                  "observedLoadTs": 221651217,
-                  "observedDomContentLoaded": 23,
-                  "observedDomContentLoadedTs": 218840963,
+                  "observedNavigationStartTs": 216168213,
+                  "observedFirstPaint": 1187,
+                  "observedFirstPaintTs": 217354936,
+                  "observedFirstContentfulPaint": 1187,
+                  "observedFirstContentfulPaintTs": 217354936,
+                  "observedFirstContentfulPaintAllFrames": 1187,
+                  "observedFirstContentfulPaintAllFramesTs": 217354936,
+                  "observedFirstMeaningfulPaint": 1187,
+                  "observedFirstMeaningfulPaintTs": 217354936,
+                  "observedLargestContentfulPaint": 2027,
+                  "observedLargestContentfulPaintTs": 218195565,
+                  "observedLargestContentfulPaintAllFrames": 2027,
+                  "observedLargestContentfulPaintAllFramesTs": 218195565,
+                  "observedTraceEnd": 5048,
+                  "observedTraceEndTs": 221216272,
+                  "observedLoad": 2733,
+                  "observedLoadTs": 218900736,
+                  "observedDomContentLoaded": 9,
+                  "observedDomContentLoadedTs": 216177615,
                   "observedCumulativeLayoutShift": 0.008870203653971355,
                   "observedCumulativeLayoutShiftMainFrame": 0.008870203653971355,
                   "observedTotalCumulativeLayoutShift": 0.008870203653971355,
-                  "observedFirstVisualChange": 1487,
-                  "observedFirstVisualChangeTs": 220304648,
-                  "observedLastVisualChange": 5293,
-                  "observedLastVisualChangeTs": 224110648,
-                  "observedSpeedIndex": 1660,
-                  "observedSpeedIndexTs": 220477718
+                  "observedFirstVisualChange": 1293,
+                  "observedFirstVisualChangeTs": 217461213,
+                  "observedLastVisualChange": 5044,
+                  "observedLastVisualChangeTs": 221212213,
+                  "observedSpeedIndex": 1442,
+                  "observedSpeedIndexTs": 217610405
                 },
                 {
                   "lcpInvalidated": false
@@ -32424,12 +31510,12 @@
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.504,
-                  "throughput": 12747642.511426885,
-                  "maxRtt": 137.775,
-                  "maxServerLatency": 523.596,
-                  "totalByteWeight": 2771747,
-                  "totalTaskTime": 448.4339999999943,
+                  "rtt": 9.7,
+                  "throughput": 13009821.476765389,
+                  "maxRtt": 130.432,
+                  "maxServerLatency": 32.956,
+                  "totalByteWeight": 2771788,
+                  "totalTaskTime": 464.3409999999951,
                   "mainDocumentTransferSize": 644
                 }
               ]
@@ -32462,7 +31548,7 @@
       "trackersCount": 4,
       "zapCount": 9,
       "zapGrade": "D",
-      "lighthouse_performance": 0.74,
+      "lighthouse_performance": 0.76,
       "lighthouse_performanceGrade": "B",
       "lighthouse_accessibility": 0.88,
       "lighthouse_accessibilityGrade": "A",
@@ -32489,7 +31575,7 @@
         "testsPassed": 9,
         "testsQuantity": 10,
         "responseHeaders": {
-          "date": "Sun, 26 Jul 2026 02:29:04 GMT",
+          "date": "Sun, 02 Aug 2026 02:28:11 GMT",
           "content-type": "text/html; charset=utf-8",
           "transfer-encoding": "chunked",
           "connection": "close",
@@ -32501,15 +31587,15 @@
           "referrer-policy": "strict-origin-when-cross-origin",
           "content-security-policy": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
           "strict-transport-security": "max-age=31536000; includeSubDomains",
-          "link": "<https://jobs.zenika.com/.well-known/api-catalog>; rel=\"api-catalog\",<https://assets-aws.teamtailor-cdn.com/assets/packs/css/careersite-39221891.css>; rel=preload; as=style; crossorigin=anonymous; integrity=sha384-lPoHub3usQ+naG51u4ETIcx3Yf37DbGjsY0rb8eoOTNrQltakcK3oPRH4knx4auv; nopush",
+          "link": "<https://jobs.zenika.com/.well-known/api-catalog>; rel=\"api-catalog\",<https://assets-aws.teamtailor-cdn.com/assets/packs/css/careersite-0a4af883.css>; rel=preload; as=style; crossorigin=anonymous; integrity=sha384-Zs6awu/P4UhCWCNLYqbZ3xQMqWK5dh9lnpkFT50QlyGjhC/dyqGlkWy6wFLiO2Bu; nopush",
           "cache-control": "max-age=0, public, s-maxage=5184000",
           "content-signal": "search=yes, ai-train=no, ai-input=yes",
-          "etag": "W/\"608ab3060611f2fa2c4cb8c588ddf3c8\"",
-          "x-request-id": "dd9d91f03e84db8873c4def70b26bf6d",
-          "x-varnish": "1339714938 1327485187",
-          "age": "1069173",
+          "etag": "W/\"d4e2b862b4ec293b01d3ab531be076b2\"",
+          "x-request-id": "b5717404314397028a30d8155e374016",
+          "x-varnish": "3540626881 3535224225",
+          "age": "138435",
           "section-io-cache": "Hit",
-          "section-io-id": "352531cd74441a10092768165e35a350"
+          "section-io-id": "7ded62ec84531e6d580b9edeaef4733b"
         }
       },
       "tests": {
@@ -32596,9 +31682,9 @@
           "result": "sri-implemented-and-external-scripts-loaded-securely",
           "scoreModifier": 5,
           "data": {
-            "https://assets-aws.teamtailor-cdn.com/assets/packs/js/runtime-e6b539f0de36c8f24e0e.js": {
+            "https://assets-aws.teamtailor-cdn.com/assets/packs/js/runtime-3d2a66f078e5a8f5fa5d.js": {
               "crossorigin": "anonymous",
-              "integrity": "sha384-3HDXM9vcSBqtJ6PnEzNDIgJ0AkkegTtW+kYWNLTqo0jdFw+kXyKmhxgVnfv7iT5I"
+              "integrity": "sha384-cBrkHOHn2nu2um2FNaOfRns1M84yNshdeXPS5LoGg3I1wCVh31AmwBWl+3HpfuXE"
             },
             "https://assets-aws.teamtailor-cdn.com/assets/packs/js/5217-d722161248a86ef021eb.js": {
               "crossorigin": "anonymous",
@@ -32624,9 +31710,9 @@
               "crossorigin": "anonymous",
               "integrity": "sha384-Pflrvh82gtE0Snhhc4LDPCFmxwCnfndAZbEL7+P8QKqp1cR2/u+OnWeg1erI6CWc"
             },
-            "https://assets-aws.teamtailor-cdn.com/assets/packs/js/3065-7de401fba7d360a4a095.js": {
+            "https://assets-aws.teamtailor-cdn.com/assets/packs/js/3065-a2f360e53b2b8193f5e4.js": {
               "crossorigin": "anonymous",
-              "integrity": "sha384-+Ek/FR5NwYYU5s0qoU+8osFiFq9wQH0ZgVqSB1PLK3DoJQmTDwF1eUhgt0n/eUDv"
+              "integrity": "sha384-3aRqihTTwLtwC4QhZ888n1HfFOTyrGRMRqg1ZIwwLAroqBPmGfxU766HxdnsyqPe"
             },
             "https://assets-aws.teamtailor-cdn.com/assets/packs/js/careersite-f93812d99b448ae08b14.js": {
               "crossorigin": "anonymous",
@@ -41608,11 +40694,11 @@
       "trackers": [
         {
           "type": "unknown",
-          "url": "https://assets-aws.teamtailor-cdn.com/assets/packs/css/careersite-39221891.css"
+          "url": "https://assets-aws.teamtailor-cdn.com/assets/packs/css/careersite-0a4af883.css"
         },
         {
           "type": "unknown",
-          "url": "https://assets-aws.teamtailor-cdn.com/assets/packs/js/runtime-e6b539f0de36c8f24e0e.js"
+          "url": "https://assets-aws.teamtailor-cdn.com/assets/packs/js/runtime-3d2a66f078e5a8f5fa5d.js"
         },
         {
           "type": "unknown",
@@ -41656,7 +40742,7 @@
         },
         {
           "type": "unknown",
-          "url": "https://assets-aws.teamtailor-cdn.com/assets/packs/js/3065-7de401fba7d360a4a095.js"
+          "url": "https://assets-aws.teamtailor-cdn.com/assets/packs/js/3065-a2f360e53b2b8193f5e4.js"
         },
         {
           "type": "unknown",
@@ -41673,14 +40759,6 @@
         {
           "type": "unknown",
           "url": "https://assets-aws.teamtailor-cdn.com/assets/packs/js/font-awesome-145f74e601b47a3e23cc.js"
-        },
-        {
-          "type": "unknown",
-          "url": "https://assets-aws.teamtailor-cdn.com/assets/careersite/Inter-latin-supplement-45357258adee2412721bf717a9560910e5fc0c14607a2fae48fee415863c0e67.woff2"
-        },
-        {
-          "type": "unknown",
-          "url": "https://assets-aws.teamtailor-cdn.com/assets/careersite/Roboto-latin-supplement-1805984dc2cb5c1337cbeef0eb28f12ee41737b5c600c6907a55fcb0ab1d526c.woff2"
         },
         {
           "type": "unknown",
@@ -41720,6 +40798,14 @@
         },
         {
           "type": "unknown",
+          "url": "https://assets-aws.teamtailor-cdn.com/assets/careersite/Inter-latin-supplement-45357258adee2412721bf717a9560910e5fc0c14607a2fae48fee415863c0e67.woff2"
+        },
+        {
+          "type": "unknown",
+          "url": "https://assets-aws.teamtailor-cdn.com/assets/careersite/Roboto-latin-supplement-1805984dc2cb5c1337cbeef0eb28f12ee41737b5c600c6907a55fcb0ab1d526c.woff2"
+        },
+        {
+          "type": "unknown",
           "url": "https://images.teamtailor-cdn.com/images/s3/teamtailor-production/gallery_picture-v6/image_uploads/a0f3b562-2fcc-45c0-b52c-9d3a01d5e7d3/original.jpeg"
         },
         {
@@ -41737,36 +40823,39 @@
       ],
       "cookies": [],
       "headers": {
-        "age": "1068984",
+        "age": "138251",
         "cache-control": "max-age=0, public, s-maxage=5184000",
         "content-encoding": "gzip",
         "content-security-policy": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
         "content-signal": "search=yes, ai-train=no, ai-input=yes",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 26 Jul 2026 02:25:54 GMT",
-        "etag": "W/\"608ab3060611f2fa2c4cb8c588ddf3c8\"",
-        "link": "<https://jobs.zenika.com/.well-known/api-catalog>; rel=\"api-catalog\",<https://assets-aws.teamtailor-cdn.com/assets/packs/css/careersite-39221891.css>; rel=preload; as=style; crossorigin=anonymous; integrity=sha384-lPoHub3usQ+naG51u4ETIcx3Yf37DbGjsY0rb8eoOTNrQltakcK3oPRH4knx4auv; nopush",
+        "date": "Sun, 02 Aug 2026 02:25:07 GMT",
+        "etag": "W/\"d4e2b862b4ec293b01d3ab531be076b2\"",
+        "link": "<https://jobs.zenika.com/.well-known/api-catalog>; rel=\"api-catalog\",<https://assets-aws.teamtailor-cdn.com/assets/packs/css/careersite-0a4af883.css>; rel=preload; as=style; crossorigin=anonymous; integrity=sha384-Zs6awu/P4UhCWCNLYqbZ3xQMqWK5dh9lnpkFT50QlyGjhC/dyqGlkWy6wFLiO2Bu; nopush",
         "referrer-policy": "strict-origin-when-cross-origin",
         "section-io-cache": "Hit",
-        "section-io-id": "79525bf37a8c3c2206a66537dfb711ef",
+        "section-io-id": "8a07e838dcafac61d50f0d63648d0b62",
         "strict-transport-security": "max-age=31536000; includeSubDomains",
         "vary": "Accept-Encoding\nAccept-Encoding",
         "x-content-type-options": "nosniff",
         "x-frame-options": "SAMEORIGIN",
         "x-permitted-cross-domain-policies": "none",
-        "x-request-id": "dd9d91f03e84db8873c4def70b26bf6d",
-        "x-varnish": "1338984783 1327485187",
+        "x-request-id": "b5717404314397028a30d8155e374016",
+        "x-varnish": "3541476372 3535224225",
         "x-xss-protection": "0"
       },
       "endpoints": [
         {
           "hostname": "jobs.zenika.com",
-          "ip": "207.120.32.140",
+          "ip": "207.120.32.234",
           "geoip": {
             "city": {
-              "geoname_id": 2634579,
+              "geoname_id": 2646003,
               "names": {
-                "en": "Welling"
+                "en": "Islington",
+                "fr": "District londonien d'Islington",
+                "ja": "イズリントン",
+                "ru": "Ислингтон"
               }
             },
             "continent": {
@@ -41799,12 +40888,12 @@
             },
             "location": {
               "accuracy_radius": 200,
-              "latitude": 51.462,
-              "longitude": 0.1046,
+              "latitude": 51.5327,
+              "longitude": -0.0996,
               "time_zone": "Europe/London"
             },
             "postal": {
-              "code": "DA16"
+              "code": "N1"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -41836,10 +40925,12 @@
                 }
               },
               {
-                "geoname_id": 3333124,
-                "iso_code": "BEX",
+                "geoname_id": 3333156,
+                "iso_code": "ISL",
                 "names": {
-                  "en": "Bexley"
+                  "de": "London Borough of Islington",
+                  "en": "Islington",
+                  "fr": "Islington"
                 }
               }
             ]
@@ -41847,7 +40938,7 @@
         },
         {
           "hostname": "assets-aws.teamtailor-cdn.com",
-          "ip": "18.238.238.78",
+          "ip": "108.159.227.126",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -41901,7 +40992,7 @@
         },
         {
           "hostname": "images.teamtailor-cdn.com",
-          "ip": "18.238.238.20",
+          "ip": "3.167.183.127",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -42234,8 +41325,8 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.17.0",
-      "@generated": "Sun, 26 Jul 2026 02:28:16",
-      "created": "2026-07-26T02:28:16.336634980Z",
+      "@generated": "Sun, 2 Aug 2026 02:27:24",
+      "created": "2026-08-02T02:27:24.931747700Z",
       "insights": [
         {
           "level": "Info",
@@ -42259,31 +41350,7 @@
           "site": "https://jobs.zenika.com",
           "key": "insight.code.4xx",
           "description": "Percentage of responses with status code 4xx",
-          "statistic": "21"
-        },
-        {
-          "level": "Info",
-          "reason": "Informational",
-          "site": "https://jobs.zenika.com",
-          "key": "insight.endpoint.ctype.application/linkset+json",
-          "description": "Percentage of endpoints with content type application/linkset+json",
-          "statistic": "1"
-        },
-        {
-          "level": "Info",
-          "reason": "Informational",
-          "site": "https://jobs.zenika.com",
-          "key": "insight.endpoint.ctype.application/rss+xml",
-          "description": "Percentage of endpoints with content type application/rss+xml",
-          "statistic": "1"
-        },
-        {
-          "level": "Info",
-          "reason": "Informational",
-          "site": "https://jobs.zenika.com",
-          "key": "insight.endpoint.ctype.application/xml",
-          "description": "Percentage of endpoints with content type application/xml",
-          "statistic": "1"
+          "statistic": "20"
         },
         {
           "level": "Info",
@@ -42299,7 +41366,7 @@
           "site": "https://jobs.zenika.com",
           "key": "insight.endpoint.ctype.text/markdown",
           "description": "Percentage of endpoints with content type text/markdown",
-          "statistic": "24"
+          "statistic": "23"
         },
         {
           "level": "Info",
@@ -42331,7 +41398,7 @@
           "site": "https://jobs.zenika.com",
           "key": "insight.endpoint.total",
           "description": "Count of total endpoints",
-          "statistic": "223"
+          "statistic": "226"
         },
         {
           "level": "Info",
@@ -42339,7 +41406,7 @@
           "site": "https://jobs.zenika.com",
           "key": "insight.response.slow",
           "description": "Percentage of slow responses",
-          "statistic": "75"
+          "statistic": "70"
         }
       ],
       "site": [
@@ -42555,7 +41622,7 @@
       {
         "requestedUrl": "https://jobs.zenika.com/",
         "finalUrl": "https://jobs.zenika.com/",
-        "fetchTime": "2026-07-26T02:28:33.955Z",
+        "fetchTime": "2026-08-02T02:27:40.249Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -42566,7 +41633,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.68
+            "score": 0.74
           },
           "accessibility": {
             "title": "Accessibility",
@@ -42618,53 +41685,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 5836,
+            "numericValue": 6011,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 2231,
-                  "firstMeaningfulPaint": 2882,
-                  "largestContentfulPaint": 8586,
-                  "interactive": 5836,
-                  "speedIndex": 3581,
-                  "totalBlockingTime": 89,
-                  "maxPotentialFID": 227,
+                  "firstContentfulPaint": 2354,
+                  "firstMeaningfulPaint": 2982,
+                  "largestContentfulPaint": 4782,
+                  "interactive": 6011,
+                  "speedIndex": 4025,
+                  "totalBlockingTime": 79,
+                  "maxPotentialFID": 207,
                   "cumulativeLayoutShift": 0.0004947916666666667,
                   "cumulativeLayoutShiftMainFrame": 0.0004947916666666667,
                   "totalCumulativeLayoutShift": 0.0004947916666666667,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 227856367,
+                  "observedTimeOriginTs": 217868850,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 227856367,
-                  "observedFirstPaint": 321,
-                  "observedFirstPaintTs": 228177124,
-                  "observedFirstContentfulPaint": 321,
-                  "observedFirstContentfulPaintTs": 228177124,
-                  "observedFirstContentfulPaintAllFrames": 321,
-                  "observedFirstContentfulPaintAllFramesTs": 228177124,
-                  "observedFirstMeaningfulPaint": 463,
-                  "observedFirstMeaningfulPaintTs": 228319759,
-                  "observedLargestContentfulPaint": 463,
-                  "observedLargestContentfulPaintTs": 228319759,
-                  "observedLargestContentfulPaintAllFrames": 463,
-                  "observedLargestContentfulPaintAllFramesTs": 228319759,
-                  "observedTraceEnd": 3911,
-                  "observedTraceEndTs": 231767570,
-                  "observedLoad": 537,
-                  "observedLoadTs": 228393512,
-                  "observedDomContentLoaded": 460,
-                  "observedDomContentLoadedTs": 228316845,
+                  "observedNavigationStartTs": 217868850,
+                  "observedFirstPaint": 286,
+                  "observedFirstPaintTs": 218155307,
+                  "observedFirstContentfulPaint": 286,
+                  "observedFirstContentfulPaintTs": 218155307,
+                  "observedFirstContentfulPaintAllFrames": 286,
+                  "observedFirstContentfulPaintAllFramesTs": 218155307,
+                  "observedFirstMeaningfulPaint": 401,
+                  "observedFirstMeaningfulPaintTs": 218269574,
+                  "observedLargestContentfulPaint": 401,
+                  "observedLargestContentfulPaintTs": 218269574,
+                  "observedLargestContentfulPaintAllFrames": 401,
+                  "observedLargestContentfulPaintAllFramesTs": 218269574,
+                  "observedTraceEnd": 3664,
+                  "observedTraceEndTs": 221532721,
+                  "observedLoad": 502,
+                  "observedLoadTs": 218371213,
+                  "observedDomContentLoaded": 1,
+                  "observedDomContentLoadedTs": 217869953,
                   "observedCumulativeLayoutShift": 0.0004947916666666667,
                   "observedCumulativeLayoutShiftMainFrame": 0.0004947916666666667,
                   "observedTotalCumulativeLayoutShift": 0.0004947916666666667,
-                  "observedFirstVisualChange": 321,
-                  "observedFirstVisualChangeTs": 228177367,
-                  "observedLastVisualChange": 920,
-                  "observedLastVisualChangeTs": 228776367,
-                  "observedSpeedIndex": 394,
-                  "observedSpeedIndexTs": 228250790
+                  "observedFirstVisualChange": 286,
+                  "observedFirstVisualChangeTs": 218154850,
+                  "observedLastVisualChange": 858,
+                  "observedLastVisualChangeTs": 218726850,
+                  "observedSpeedIndex": 348,
+                  "observedSpeedIndexTs": 218216791
                 },
                 {
                   "lcpInvalidated": false
@@ -42686,19 +41753,19 @@
                   "numScripts": 16,
                   "numStylesheets": 4,
                   "numFonts": 4,
-                  "numTasks": 711,
-                  "numTasksOver10ms": 7,
+                  "numTasks": 763,
+                  "numTasksOver10ms": 5,
                   "numTasksOver25ms": 2,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 4.855000000000018,
-                  "throughput": 56018828.10534407,
-                  "maxRtt": 29.099,
-                  "maxServerLatency": 10.095000000000002,
-                  "totalByteWeight": 3255221,
-                  "totalTaskTime": 362.1039999999994,
-                  "mainDocumentTransferSize": 20866
+                  "rtt": 9.271999999999998,
+                  "throughput": 66385199.24098172,
+                  "maxRtt": 29.237,
+                  "maxServerLatency": 15.092999999999993,
+                  "totalByteWeight": 3253873,
+                  "totalTaskTime": 327.29699999999906,
+                  "mainDocumentTransferSize": 20928
                 }
               ]
             }
@@ -42730,7 +41797,7 @@
       "trackersCount": 32,
       "zapCount": 15,
       "zapGrade": "D",
-      "lighthouse_performance": 0.68,
+      "lighthouse_performance": 0.74,
       "lighthouse_performanceGrade": "B",
       "lighthouse_accessibility": null,
       "lighthouse_accessibilityGrade": "F",
@@ -42757,22 +41824,22 @@
         "testsPassed": 8,
         "testsQuantity": 10,
         "responseHeaders": {
-          "age": "847673",
+          "age": "1452333",
           "cache-control": "public,max-age=0,must-revalidate",
-          "cache-status": "\"Netlify Edge\"; hit",
-          "content-length": "13936",
+          "cache-status": "\"Netlify Edge\"; hit; ttl=30083667",
+          "content-length": "13959",
           "content-type": "text/html; charset=utf-8",
-          "date": "Sun, 26 Jul 2026 02:35:29 GMT",
+          "date": "Sun, 02 Aug 2026 02:33:10 GMT",
           "etag": "\"utaqfx8d1t3jgf-df\"",
           "netlify-vary": "query=__nextDataReq|_rsc,header=x-nextjs-data|x-next-debug-logging|next-router-prefetch|next-router-segment-prefetch|next-router-state-tree|next-url|rsc|accept-encoding,cookie=__prerender_bypass|__next_preview_data",
           "server": "Netlify",
           "strict-transport-security": "max-age=31536000",
           "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
           "x-content-type-options": "nosniff",
-          "x-nextjs-date": "Sun, 19 Jul 2026 02:15:45 GMT",
+          "x-nextjs-date": "Sat, 01 Aug 2026 09:14:29 GMT",
           "x-nextjs-prerender": "1, 1",
           "x-nextjs-stale-time": "300",
-          "x-nf-request-id": "01KYE4E30QXR2RZTCVYNZ2PAV5",
+          "x-nf-request-id": "01KZ052VZHHKPZ9M1PVEA4VHN5",
           "x-powered-by": "Next.js",
           "connection": "close"
         }
@@ -45284,40 +44351,39 @@
       "trackers": [],
       "cookies": [],
       "headers": {
-        "age": "847508",
+        "age": "1452160",
         "cache-control": "public,max-age=0,must-revalidate",
-        "cache-status": "\"Netlify Durable\"; hit; ttl=30688493\n\"Next.js\"; hit\n\"Netlify Edge\"; fwd=miss",
+        "cache-status": "\"Netlify Durable\"; hit; ttl=30083839\n\"Next.js\"; hit\n\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
         "content-encoding": "br",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 26 Jul 2026 02:32:44 GMT",
+        "date": "Sun, 02 Aug 2026 02:30:17 GMT",
         "etag": "\"utaqfx8d1t3jgf-df\"",
         "netlify-vary": "query=__nextDataReq|_rsc,header=x-nextjs-data|x-next-debug-logging|next-router-prefetch|next-router-segment-prefetch|next-router-state-tree|next-url|rsc|accept-encoding,cookie=__prerender_bypass|__next_preview_data",
         "server": "Netlify",
         "strict-transport-security": "max-age=31536000",
         "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
         "x-content-type-options": "nosniff",
-        "x-nextjs-date": "Sun, 19 Jul 2026 02:15:45 GMT",
+        "x-nextjs-date": "Sat, 01 Aug 2026 09:14:29 GMT",
         "x-nextjs-prerender": "1, 1",
         "x-nextjs-stale-time": "300",
-        "x-nf-request-id": "01KYE490ZAVG1JBBW3VY8EK9ZV",
+        "x-nf-request-id": "01KZ04XJRBC0YM8DBZN8MJWGDM",
         "x-powered-by": "Next.js"
       },
       "endpoints": [
         {
           "hostname": "oss.zenika.com",
-          "ip": "98.84.224.111",
+          "ip": "52.52.192.191",
           "geoip": {
             "city": {
-              "geoname_id": 4744870,
+              "geoname_id": 5392171,
               "names": {
-                "de": "Ashburn",
-                "en": "Ashburn",
-                "es": "Ashburn",
-                "fr": "Ashburn",
-                "ja": "アッシュバーン",
-                "pt-BR": "Ashburn",
-                "ru": "Ашберн",
-                "zh-CN": "阿什本"
+                "de": "San José",
+                "en": "San Jose",
+                "es": "San José",
+                "fr": "San José",
+                "ja": "サンノゼ",
+                "pt-BR": "San José",
+                "ru": "Сан-Хосе"
               }
             },
             "continent": {
@@ -45350,13 +44416,13 @@
             },
             "location": {
               "accuracy_radius": 20,
-              "latitude": 39.0469,
-              "longitude": -77.4903,
-              "metro_code": 511,
-              "time_zone": "America/New_York"
+              "latitude": 37.3388,
+              "longitude": -121.8916,
+              "metro_code": 807,
+              "time_zone": "America/Los_Angeles"
             },
             "postal": {
-              "code": "20149"
+              "code": "95141"
             },
             "registered_country": {
               "geoname_id": 6252001,
@@ -45374,17 +44440,17 @@
             },
             "subdivisions": [
               {
-                "geoname_id": 6254928,
-                "iso_code": "VA",
+                "geoname_id": 5332921,
+                "iso_code": "CA",
                 "names": {
-                  "de": "Virginia",
-                  "en": "Virginia",
-                  "es": "Virginia",
-                  "fr": "Virginie",
-                  "ja": "バージニア州",
-                  "pt-BR": "Virgínia",
-                  "ru": "Вирджиния",
-                  "zh-CN": "弗吉尼亚州"
+                  "de": "Kalifornien",
+                  "en": "California",
+                  "es": "California",
+                  "fr": "Californie",
+                  "ja": "カリフォルニア州",
+                  "pt-BR": "Califórnia",
+                  "ru": "Калифорния",
+                  "zh-CN": "加州"
                 }
               }
             ]
@@ -45564,17 +44630,9 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.17.0",
-      "@generated": "Sun, 26 Jul 2026 02:34:45",
-      "created": "2026-07-26T02:34:45.851093818Z",
+      "@generated": "Sun, 2 Aug 2026 02:32:24",
+      "created": "2026-08-02T02:32:24.091798759Z",
       "insights": [
-        {
-          "level": "Low",
-          "reason": "Warning",
-          "site": "",
-          "key": "insight.log.error",
-          "description": "ZAP errors logged - see the zap.log file for details",
-          "statistic": "1"
-        },
         {
           "level": "Low",
           "reason": "Warning",
@@ -45816,7 +44874,7 @@
       {
         "requestedUrl": "https://oss.zenika.com/",
         "finalUrl": "https://oss.zenika.com/",
-        "fetchTime": "2026-07-26T02:35:02.345Z",
+        "fetchTime": "2026-08-02T02:32:41.300Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -45827,7 +44885,7 @@
               "snapshot"
             ],
             "id": "performance",
-            "score": 0.95
+            "score": 0.93
           },
           "accessibility": {
             "title": "Accessibility",
@@ -45879,53 +44937,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2079,
+            "numericValue": 2251,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 908,
-                  "firstMeaningfulPaint": 908,
-                  "largestContentfulPaint": 2258,
-                  "interactive": 2079,
-                  "speedIndex": 1236,
-                  "totalBlockingTime": 196,
-                  "maxPotentialFID": 242,
+                  "firstContentfulPaint": 905,
+                  "firstMeaningfulPaint": 905,
+                  "largestContentfulPaint": 2255,
+                  "interactive": 2251,
+                  "speedIndex": 1304,
+                  "totalBlockingTime": 257,
+                  "maxPotentialFID": 260,
                   "cumulativeLayoutShift": 0.0006790296766493055,
                   "cumulativeLayoutShiftMainFrame": 0.0006790296766493055,
                   "totalCumulativeLayoutShift": 0.0006790296766493055,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 206627270,
+                  "observedTimeOriginTs": 213900036,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 206627270,
-                  "observedFirstPaint": 118,
-                  "observedFirstPaintTs": 206745488,
-                  "observedFirstContentfulPaint": 179,
-                  "observedFirstContentfulPaintTs": 206806275,
-                  "observedFirstContentfulPaintAllFrames": 179,
-                  "observedFirstContentfulPaintAllFramesTs": 206806275,
-                  "observedFirstMeaningfulPaint": 179,
-                  "observedFirstMeaningfulPaintTs": 206806275,
-                  "observedLargestContentfulPaint": 364,
-                  "observedLargestContentfulPaintTs": 206991459,
-                  "observedLargestContentfulPaintAllFrames": 364,
-                  "observedLargestContentfulPaintAllFramesTs": 206991459,
-                  "observedTraceEnd": 2799,
-                  "observedTraceEndTs": 209425845,
-                  "observedLoad": 303,
-                  "observedLoadTs": 206930234,
+                  "observedNavigationStartTs": 213900036,
+                  "observedFirstPaint": 145,
+                  "observedFirstPaintTs": 214045510,
+                  "observedFirstContentfulPaint": 220,
+                  "observedFirstContentfulPaintTs": 214120472,
+                  "observedFirstContentfulPaintAllFrames": 220,
+                  "observedFirstContentfulPaintAllFramesTs": 214120472,
+                  "observedFirstMeaningfulPaint": 220,
+                  "observedFirstMeaningfulPaintTs": 214120472,
+                  "observedLargestContentfulPaint": 359,
+                  "observedLargestContentfulPaintTs": 214258774,
+                  "observedLargestContentfulPaintAllFrames": 359,
+                  "observedLargestContentfulPaintAllFramesTs": 214258774,
+                  "observedTraceEnd": 2770,
+                  "observedTraceEndTs": 216669986,
+                  "observedLoad": 360,
+                  "observedLoadTs": 214260199,
                   "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 206627972,
+                  "observedDomContentLoadedTs": 213901048,
                   "observedCumulativeLayoutShift": 0.0006790296766493055,
                   "observedCumulativeLayoutShiftMainFrame": 0.0006790296766493055,
                   "observedTotalCumulativeLayoutShift": 0.0006790296766493055,
-                  "observedFirstVisualChange": 118,
-                  "observedFirstVisualChangeTs": 206745270,
-                  "observedLastVisualChange": 2771,
-                  "observedLastVisualChangeTs": 209398270,
-                  "observedSpeedIndex": 640,
-                  "observedSpeedIndexTs": 207267030
+                  "observedFirstVisualChange": 220,
+                  "observedFirstVisualChangeTs": 214120036,
+                  "observedLastVisualChange": 2765,
+                  "observedLastVisualChangeTs": 216665036,
+                  "observedSpeedIndex": 653,
+                  "observedSpeedIndexTs": 214553150
                 },
                 {
                   "lcpInvalidated": false
@@ -45943,23 +45001,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 19,
+                  "numRequests": 20,
                   "numScripts": 9,
                   "numStylesheets": 1,
                   "numFonts": 2,
-                  "numTasks": 725,
-                  "numTasksOver10ms": 4,
+                  "numTasks": 689,
+                  "numTasksOver10ms": 6,
                   "numTasksOver25ms": 2,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 3.5279999999999987,
-                  "throughput": 295273907.66348475,
-                  "maxRtt": 3.5279999999999987,
-                  "maxServerLatency": 8.215000000000002,
-                  "totalByteWeight": 4593650,
-                  "totalTaskTime": 257.02399999999875,
-                  "mainDocumentTransferSize": 14521
+                  "rtt": 2.6129999999999995,
+                  "throughput": 147737292.54372177,
+                  "maxRtt": 2.6129999999999995,
+                  "maxServerLatency": 4.568999999999999,
+                  "totalByteWeight": 4327972,
+                  "totalTaskTime": 305.2509999999988,
+                  "mainDocumentTransferSize": 14554
                 }
               ]
             }
@@ -45993,7 +45051,7 @@
       "trackersCount": 0,
       "zapCount": 8,
       "zapGrade": "D",
-      "lighthouse_performance": 0.95,
+      "lighthouse_performance": 0.93,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": null,
       "lighthouse_accessibilityGrade": "F",
@@ -46031,9 +45089,9 @@
           "etag": "W/\"8d9-19f83dcfaad\"",
           "content-type": "text/html; charset=UTF-8",
           "content-length": "2265",
-          "date": "Sun, 26 Jul 2026 02:38:19 GMT",
+          "date": "Sun, 02 Aug 2026 02:34:07 GMT",
           "connection": "close",
-          "sozu-id": "01KYE4K8WY4FMDX4KK6EWYT0JB"
+          "sozu-id": "01KZ054KKFP2M6SSYRVD9NVM2E"
         }
       },
       "tests": {
@@ -56019,6 +55077,10 @@
           }
         },
         {
+          "type": "unknown",
+          "url": "https://zenika.faq.team/manifest.json"
+        },
+        {
           "type": "google fonts",
           "url": "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",
           "details": {
@@ -56033,10 +55095,6 @@
         {
           "type": "unknown",
           "url": "https://zenika.faq.team/assets/index-c68034df.css"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika.faq.team/manifest.json"
         },
         {
           "type": "unknown",
@@ -56119,11 +55177,11 @@
         "connection": "keep-alive",
         "content-length": "2265",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 26 Jul 2026 02:35:35 GMT",
+        "date": "Sun, 02 Aug 2026 02:31:12 GMT",
         "etag": "W/\"8d9-19f83dcfaad\"",
         "keep-alive": "timeout=5",
         "last-modified": "Tue, 21 Jul 2026 08:48:45 GMT",
-        "sozu-id": "01KYE4E82GN6H4FAAS95HR8BG9",
+        "sozu-id": "01KZ04Z90D7WD8RKRSG3YNCSPC",
         "x-powered-by": "Express"
       },
       "endpoints": [
@@ -56185,7 +55243,7 @@
         },
         {
           "hostname": "zenika.faq.team",
-          "ip": "91.208.207.214",
+          "ip": "91.208.207.215",
           "geoip": {
             "continent": {
               "code": "EU",
@@ -56261,7 +55319,7 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "142.251.215.74",
+          "ip": "142.251.41.10",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -56315,7 +55373,7 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "142.251.210.131",
+          "ip": "142.251.214.99",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -56400,8 +55458,8 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.17.0",
-      "@generated": "Sun, 26 Jul 2026 02:37:33",
-      "created": "2026-07-26T02:37:33.190643369Z",
+      "@generated": "Sun, 2 Aug 2026 02:33:15",
+      "created": "2026-08-02T02:33:15.377421735Z",
       "insights": [
         {
           "level": "Info",
@@ -56584,13 +55642,6 @@
               "confidence": "3",
               "riskdesc": "Informational (High)",
               "desc": "<p>Specifies if a navigation request was initiated by a user.</p>"
-            },
-            {
-              "name": "Storable but Non-Cacheable Content",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>"
             }
           ]
         }
@@ -56927,7 +55978,7 @@
       {
         "requestedUrl": "https://faq.zenika.com/",
         "finalUrl": "https://zenika.faq.team/",
-        "fetchTime": "2026-07-26T02:37:50.571Z",
+        "fetchTime": "2026-08-02T02:33:34.601Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://faq.zenika.com/) was redirected to https://zenika.faq.team/. Try testing the second URL directly."
         ],
@@ -56992,53 +56043,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 13293,
+            "numericValue": 13474,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 13293,
-                  "firstMeaningfulPaint": 13293,
-                  "largestContentfulPaint": 13434,
-                  "interactive": 13293,
-                  "speedIndex": 13293,
-                  "totalBlockingTime": 0,
-                  "maxPotentialFID": 16,
-                  "cumulativeLayoutShift": 0.004108704990810818,
-                  "cumulativeLayoutShiftMainFrame": 0.004108704990810818,
-                  "totalCumulativeLayoutShift": 0.004108704990810818,
+                  "firstContentfulPaint": 12898,
+                  "firstMeaningfulPaint": 12898,
+                  "largestContentfulPaint": 13308,
+                  "interactive": 13474,
+                  "speedIndex": 12898,
+                  "totalBlockingTime": 6,
+                  "maxPotentialFID": 62,
+                  "cumulativeLayoutShift": 0.005633685323927138,
+                  "cumulativeLayoutShiftMainFrame": 0.005633685323927138,
+                  "totalCumulativeLayoutShift": 0.005633685323927138,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 205923250,
+                  "observedTimeOriginTs": 227987837,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 205923250,
-                  "observedFirstPaint": 2558,
-                  "observedFirstPaintTs": 208480972,
-                  "observedFirstContentfulPaint": 2558,
-                  "observedFirstContentfulPaintTs": 208480972,
-                  "observedFirstContentfulPaintAllFrames": 2558,
-                  "observedFirstContentfulPaintAllFramesTs": 208480972,
-                  "observedFirstMeaningfulPaint": 2558,
-                  "observedFirstMeaningfulPaintTs": 208480972,
-                  "observedLargestContentfulPaint": 2558,
-                  "observedLargestContentfulPaintTs": 208480972,
-                  "observedLargestContentfulPaintAllFrames": 2558,
-                  "observedLargestContentfulPaintAllFramesTs": 208480972,
-                  "observedTraceEnd": 5408,
-                  "observedTraceEndTs": 211331635,
-                  "observedLoad": 2518,
-                  "observedLoadTs": 208441619,
-                  "observedDomContentLoaded": 0,
-                  "observedDomContentLoadedTs": 205923570,
-                  "observedCumulativeLayoutShift": 0.004108704990810818,
-                  "observedCumulativeLayoutShiftMainFrame": 0.004108704990810818,
-                  "observedTotalCumulativeLayoutShift": 0.004108704990810818,
-                  "observedFirstVisualChange": 2558,
-                  "observedFirstVisualChangeTs": 208481250,
-                  "observedLastVisualChange": 2817,
-                  "observedLastVisualChangeTs": 208740250,
-                  "observedSpeedIndex": 2566,
-                  "observedSpeedIndexTs": 208489115
+                  "observedNavigationStartTs": 227987837,
+                  "observedFirstPaint": 2448,
+                  "observedFirstPaintTs": 230435356,
+                  "observedFirstContentfulPaint": 2448,
+                  "observedFirstContentfulPaintTs": 230435356,
+                  "observedFirstContentfulPaintAllFrames": 2448,
+                  "observedFirstContentfulPaintAllFramesTs": 230435356,
+                  "observedFirstMeaningfulPaint": 2448,
+                  "observedFirstMeaningfulPaintTs": 230435356,
+                  "observedLargestContentfulPaint": 2466,
+                  "observedLargestContentfulPaintTs": 230453705,
+                  "observedLargestContentfulPaintAllFrames": 2466,
+                  "observedLargestContentfulPaintAllFramesTs": 230453705,
+                  "observedTraceEnd": 5284,
+                  "observedTraceEndTs": 233271613,
+                  "observedLoad": 2412,
+                  "observedLoadTs": 230399977,
+                  "observedDomContentLoaded": 1,
+                  "observedDomContentLoadedTs": 227988339,
+                  "observedCumulativeLayoutShift": 0.005633685323927138,
+                  "observedCumulativeLayoutShiftMainFrame": 0.005633685323927138,
+                  "observedTotalCumulativeLayoutShift": 0.005633685323927138,
+                  "observedFirstVisualChange": 2448,
+                  "observedFirstVisualChangeTs": 230435837,
+                  "observedLastVisualChange": 2710,
+                  "observedLastVisualChangeTs": 230697837,
+                  "observedSpeedIndex": 2457,
+                  "observedSpeedIndexTs": 230445267
                 },
                 {
                   "lcpInvalidated": false
@@ -57060,18 +56111,18 @@
                   "numScripts": 1,
                   "numStylesheets": 5,
                   "numFonts": 3,
-                  "numTasks": 645,
-                  "numTasksOver10ms": 2,
+                  "numTasks": 643,
+                  "numTasksOver10ms": 4,
                   "numTasksOver25ms": 1,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 9.120999999999999,
-                  "throughput": 14337100.610778853,
-                  "maxRtt": 143.35500000000002,
-                  "maxServerLatency": 28.080000000000002,
-                  "totalByteWeight": 2175580,
-                  "totalTaskTime": 253.5129999999995,
+                  "rtt": 9.980000000000002,
+                  "throughput": 16025094.722262591,
+                  "maxRtt": 134.322,
+                  "maxServerLatency": 27.006,
+                  "totalByteWeight": 2175486,
+                  "totalTaskTime": 353.7139999999994,
                   "mainDocumentTransferSize": 2651
                 }
               ]
@@ -57136,7 +56187,7 @@
           "cache-control": "public, max-age=600",
           "content-length": "10273",
           "content-type": "text/html; charset=utf-8",
-          "date": "Sun, 26 Jul 2026 02:49:19 GMT",
+          "date": "Sun, 02 Aug 2026 02:39:11 GMT",
           "etag": "\"8d015c4237eabf814dc6fd8ceca9fc6de14e2a3b\"",
           "last-modified": "Fri, 20 Mar 2026 16:08:39 GMT",
           "referrer-policy": "strict-origin-when-cross-origin",
@@ -58339,7 +57390,114 @@
         "finding": "59"
       }
     ],
-    "thirdparties": null,
+    "thirdparties": {
+      "trackers": [],
+      "cookies": [],
+      "headers": {
+        "allow": "GET, HEAD, OPTIONS",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3=\":443\"; ma=2592000",
+        "cache-control": "public, max-age=600",
+        "content-length": "10273",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Sun, 02 Aug 2026 02:35:23 GMT",
+        "etag": "\"8d015c4237eabf814dc6fd8ceca9fc6de14e2a3b\"",
+        "last-modified": "Fri, 20 Mar 2026 16:08:39 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "git-pages (git-pages)\npages-server",
+        "strict-transport-security": "max-age=63072000; includeSubdomains; preload",
+        "via": "1.1 Caddy"
+      },
+      "endpoints": [
+        {
+          "hostname": "arthurzenika.codeberg.page",
+          "ip": "217.197.84.141",
+          "geoip": {
+            "city": {
+              "geoname_id": 2950159,
+              "names": {
+                "de": "Berlin",
+                "en": "Berlin",
+                "es": "Berlín",
+                "fr": "Berlin",
+                "ja": "ベルリン",
+                "pt-BR": "Berlim",
+                "ru": "Берлин",
+                "zh-CN": "柏林"
+              }
+            },
+            "continent": {
+              "code": "EU",
+              "geoname_id": 6255148,
+              "names": {
+                "de": "Europa",
+                "en": "Europe",
+                "es": "Europa",
+                "fr": "Europe",
+                "ja": "ヨーロッパ",
+                "pt-BR": "Europa",
+                "ru": "Европа",
+                "zh-CN": "欧洲"
+              }
+            },
+            "country": {
+              "geoname_id": 2921044,
+              "is_in_european_union": true,
+              "iso_code": "DE",
+              "names": {
+                "de": "Deutschland",
+                "en": "Germany",
+                "es": "Alemania",
+                "fr": "Allemagne",
+                "ja": "ドイツ連邦共和国",
+                "pt-BR": "Alemanha",
+                "ru": "ФРГ",
+                "zh-CN": "德国"
+              }
+            },
+            "location": {
+              "accuracy_radius": 20,
+              "latitude": 52.5196,
+              "longitude": 13.4069,
+              "time_zone": "Europe/Berlin"
+            },
+            "postal": {
+              "code": "10178"
+            },
+            "registered_country": {
+              "geoname_id": 2921044,
+              "is_in_european_union": true,
+              "iso_code": "DE",
+              "names": {
+                "de": "Deutschland",
+                "en": "Germany",
+                "es": "Alemania",
+                "fr": "Allemagne",
+                "ja": "ドイツ連邦共和国",
+                "pt-BR": "Alemanha",
+                "ru": "ФРГ",
+                "zh-CN": "德国"
+              }
+            },
+            "subdivisions": [
+              {
+                "geoname_id": 2950157,
+                "iso_code": "BE",
+                "names": {
+                  "de": "Berlin",
+                  "en": "State of Berlin",
+                  "es": "Estado de Berlín",
+                  "fr": "État de Berlin",
+                  "ja": "ベルリン",
+                  "pt-BR": "Berlim",
+                  "ru": "Берлин",
+                  "zh-CN": "柏林"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
     "wappalyzer": {
       "urls": {
         "https://arthurzenika.codeberg.page/blog/": {
@@ -58386,8 +57544,8 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.17.0",
-      "@generated": "Sun, 26 Jul 2026 02:48:39",
-      "created": "2026-07-26T02:48:39.115196778Z",
+      "@generated": "Sun, 2 Aug 2026 02:38:27",
+      "created": "2026-08-02T02:38:27.342384535Z",
       "insights": [
         {
           "level": "Info",
@@ -58403,7 +57561,7 @@
           "site": "https://arthurzenika.codeberg.page",
           "key": "insight.code.3xx",
           "description": "Percentage of responses with status code 3xx",
-          "statistic": "2"
+          "statistic": "1"
         },
         {
           "level": "Info",
@@ -58443,7 +57601,7 @@
           "site": "https://arthurzenika.codeberg.page",
           "key": "insight.endpoint.ctype.text/css",
           "description": "Percentage of endpoints with content type text/css",
-          "statistic": "2"
+          "statistic": "4"
         },
         {
           "level": "Info",
@@ -58459,7 +57617,7 @@
           "site": "https://arthurzenika.codeberg.page",
           "key": "insight.endpoint.ctype.text/javascript",
           "description": "Percentage of endpoints with content type text/javascript",
-          "statistic": "2"
+          "statistic": "4"
         },
         {
           "level": "Info",
@@ -58622,7 +57780,7 @@
       {
         "requestedUrl": "https://arthurzenika.codeberg.page/blog",
         "finalUrl": "https://arthurzenika.codeberg.page/blog/",
-        "fetchTime": "2026-07-26T02:48:53.580Z",
+        "fetchTime": "2026-08-02T02:38:43.367Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://arthurzenika.codeberg.page/blog) was redirected to https://arthurzenika.codeberg.page/blog/. Try testing the second URL directly."
         ],
@@ -58687,53 +57845,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 1202,
+            "numericValue": 1215,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1202,
-                  "firstMeaningfulPaint": 1202,
-                  "largestContentfulPaint": 1202,
-                  "interactive": 1202,
-                  "speedIndex": 1674,
+                  "firstContentfulPaint": 1215,
+                  "firstMeaningfulPaint": 1215,
+                  "largestContentfulPaint": 1215,
+                  "interactive": 1215,
+                  "speedIndex": 2042,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
                   "cumulativeLayoutShift": 0,
                   "cumulativeLayoutShiftMainFrame": 0,
                   "totalCumulativeLayoutShift": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 300061220,
+                  "observedTimeOriginTs": 265529086,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 300061220,
-                  "observedFirstPaint": 814,
-                  "observedFirstPaintTs": 300874800,
-                  "observedFirstContentfulPaint": 814,
-                  "observedFirstContentfulPaintTs": 300874800,
-                  "observedFirstContentfulPaintAllFrames": 814,
-                  "observedFirstContentfulPaintAllFramesTs": 300874800,
-                  "observedFirstMeaningfulPaint": 814,
-                  "observedFirstMeaningfulPaintTs": 300874800,
-                  "observedLargestContentfulPaint": 814,
-                  "observedLargestContentfulPaintTs": 300874800,
-                  "observedLargestContentfulPaintAllFrames": 814,
-                  "observedLargestContentfulPaintAllFramesTs": 300874800,
-                  "observedTraceEnd": 3245,
-                  "observedTraceEndTs": 303305971,
-                  "observedLoad": 807,
-                  "observedLoadTs": 300868687,
-                  "observedDomContentLoaded": 0,
-                  "observedDomContentLoadedTs": 300061454,
+                  "observedNavigationStartTs": 265529086,
+                  "observedFirstPaint": 1070,
+                  "observedFirstPaintTs": 266599121,
+                  "observedFirstContentfulPaint": 1070,
+                  "observedFirstContentfulPaintTs": 266599121,
+                  "observedFirstContentfulPaintAllFrames": 1070,
+                  "observedFirstContentfulPaintAllFramesTs": 266599121,
+                  "observedFirstMeaningfulPaint": 1070,
+                  "observedFirstMeaningfulPaintTs": 266599121,
+                  "observedLargestContentfulPaint": 1070,
+                  "observedLargestContentfulPaintTs": 266599121,
+                  "observedLargestContentfulPaintAllFrames": 1070,
+                  "observedLargestContentfulPaintAllFramesTs": 266599121,
+                  "observedTraceEnd": 3528,
+                  "observedTraceEndTs": 269056693,
+                  "observedLoad": 1038,
+                  "observedLoadTs": 266566992,
+                  "observedDomContentLoaded": 5,
+                  "observedDomContentLoadedTs": 265534450,
                   "observedCumulativeLayoutShift": 0,
                   "observedCumulativeLayoutShiftMainFrame": 0,
                   "observedTotalCumulativeLayoutShift": 0,
-                  "observedFirstVisualChange": 813,
-                  "observedFirstVisualChangeTs": 300874220,
-                  "observedLastVisualChange": 813,
-                  "observedLastVisualChangeTs": 300874220,
-                  "observedSpeedIndex": 817,
-                  "observedSpeedIndexTs": 300877931
+                  "observedFirstVisualChange": 1070,
+                  "observedFirstVisualChangeTs": 266599086,
+                  "observedLastVisualChange": 1070,
+                  "observedLastVisualChangeTs": 266599086,
+                  "observedSpeedIndex": 1073,
+                  "observedSpeedIndexTs": 266602242
                 },
                 {
                   "lcpInvalidated": false
@@ -58755,18 +57913,18 @@
                   "numScripts": 1,
                   "numStylesheets": 1,
                   "numFonts": 0,
-                  "numTasks": 402,
-                  "numTasksOver10ms": 1,
-                  "numTasksOver25ms": 0,
+                  "numTasks": 387,
+                  "numTasksOver10ms": 4,
+                  "numTasksOver25ms": 1,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 125.213,
-                  "throughput": 4902089.270205779,
-                  "maxRtt": 125.213,
-                  "maxServerLatency": 1.6990000000000123,
-                  "totalByteWeight": 80677,
-                  "totalTaskTime": 44.25400000000008,
+                  "rtt": 153.084,
+                  "throughput": 4029123.964666472,
+                  "maxRtt": 153.084,
+                  "maxServerLatency": 14.727000000000004,
+                  "totalByteWeight": 80703,
+                  "totalTaskTime": 128.08600000000013,
                   "mainDocumentTransferSize": 10398
                 }
               ]
@@ -58793,6 +57951,10 @@
       "testsslExpireSoon": true,
       "testsslExpireDate": "2026-08-01T16:04:00.000Z",
       "testsslGrade": "A+",
+      "cookiesGrade": "A",
+      "cookiesCount": 0,
+      "trackersGrade": "A",
+      "trackersCount": 0,
       "zapCount": 9,
       "zapGrade": "D",
       "lighthouse_performance": 1,

@@ -9,16 +9,22 @@
     "testsPassed": 5,
     "testsQuantity": 10,
     "responseHeaders": {
+      "date": "Sun, 06 Sep 2026 01:58:58 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
       "link": "<https://training.zenika.com/en>; rel=\"alternate\"; hreflang=\"en\", <https://training.zenika.com/fr>; rel=\"alternate\"; hreflang=\"fr\", <https://training.zenika.com/>; rel=\"alternate\"; hreflang=\"x-default\", </_next/static/media/904be59b21bd51cb-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/ee40bb094c99a29a-s.p.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/css/05885f17e349e47a.css>; rel=preload; as=\"style\", </_next/static/css/2d4b29847f942bbb.css>; rel=preload; as=\"style\", </_next/static/css/f01742672d6fca9a.css>; rel=preload; as=\"style\"",
       "x-middleware-rewrite": "/fr",
       "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
       "x-powered-by": "Next.js",
       "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
-      "content-type": "text/html; charset=utf-8",
-      "date": "Sun, 30 Aug 2026 02:26:27 GMT",
-      "server": "Google Frontend",
-      "connection": "close",
-      "transfer-encoding": "chunked"
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "server": "cloudflare",
+      "cf-cache-status": "DYNAMIC",
+      "server-timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=6,cfOrigin;dur=2451",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DhX79imxygs132PYXfBttY3aCZmpTs8vWxtn8SFSbGxhP85SWw0vmkyqk2%2BhhxGeNiCQl6QwLZjdotdCtYH%2FqOpyxjea1Yqkj1h0BokSfLQACy1gMIqXqQHgOSMMd5%2B%2Fc1fUlPTO\"}]}",
+      "cf-ray": "a369df19ecc3d539-ORD",
+      "alt-svc": "h3=\":443\"; ma=86400"
     }
   },
   "tests": {
@@ -41,7 +47,7 @@
       "data": {
         "NEXT_LOCALE": {
           "domain": "training.zenika.com",
-          "expires": "2027-08-30T02:26:25.000Z",
+          "expires": "2027-09-06T01:58:56.000Z",
           "max-age": 31536000,
           "path": "/",
           "port": null,
@@ -94,9 +100,14 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-but-all-scripts-loaded-from-secure-origin",
-      "scoreModifier": 0,
-      "data": {}
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495": {
+          "crossorigin": "anonymous",
+          "integrity": "sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg=="
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",

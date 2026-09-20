@@ -1,26 +1,36 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "C",
+    "grade": "B+",
     "error": null,
-    "score": 50,
-    "statusCode": 403,
-    "testsFailed": 3,
-    "testsPassed": 7,
+    "score": 80,
+    "statusCode": 200,
+    "testsFailed": 1,
+    "testsPassed": 9,
     "testsQuantity": 10,
     "responseHeaders": {
       "connection": "close",
-      "content-length": "9",
+      "content-length": "73065",
+      "content-type": "text/html; charset=utf-8",
       "server": "nginx",
-      "x-request-id": "48ebdd9e-b87c-48aa-95d5-4903c8d983f2",
-      "x-rack-cache": "pass",
+      "x-frame-options": "SAMEORIGIN",
+      "x-xss-protection": "0",
+      "x-content-type-options": "nosniff",
+      "x-permitted-cross-domain-policies": "none",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "content-security-policy": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
+      "link": "<https://jobs.zenika.com/.well-known/api-catalog>; rel=\"api-catalog\",<https://assets-aws.teamtailor-cdn.com/assets/cookies-b3e5afe6.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-/XlzIll1NPEDkH/JVQVTHjRes32bN+N2Za30kywIhCI0xbiFkLnOpH+VCdf3FWsj; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/careersite-efca90b3.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-SQA72c7giJ6QFW6pW43laTcEeH4SosCVxswgPRpJRl0NWxTuS/PEKw9tXi53xq4X; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/font-awesome-108c934a.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-Nup3OVE57HUO/Q0rqAfNFQ/IY6YeX3Cfliaka5adn/ZDM7FHqhPeqdJfkQNaKypg; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/careersite-dc022725.css>; rel=preload; as=style; crossorigin=anonymous; integrity=sha384-qfCic99aeAcLkAbGCSFpCD6Di35F6Y7V78y/7vRTylFIY45dHvLXd5tzr+ccbkEt; nopush",
+      "content-signal": "search=yes, ai-train=no, ai-input=yes",
+      "etag": "W/\"43be342f4787238f2f85f995a9949854\"",
+      "x-request-id": "bf0b5726-5d75-4b8f-804d-da2a3d547f33",
       "accept-ranges": "bytes",
-      "date": "Sun, 13 Sep 2026 02:38:12 GMT",
+      "date": "Sun, 20 Sep 2026 02:38:29 GMT",
       "via": "1.1 varnish",
-      "x-served-by": "cache-phx1710130-PHX",
-      "x-cache": "MISS",
-      "x-cache-hits": "0",
-      "x-timer": "S1789267092.842632,VS0,VE634",
+      "age": "117864",
+      "x-served-by": "cache-chi-kmdw8640076-CHI",
+      "x-cache": "HIT",
+      "x-cache-hits": "7",
+      "x-timer": "S1789871910.848545,VS0,VE0",
       "vary": "Origin",
       "cache-control": "private, no-store",
       "strict-transport-security": "max-age=31536000"
@@ -30,13 +40,31 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-not-implemented",
-      "scoreModifier": -25,
-      "data": null,
-      "http": false,
+      "result": "csp-implemented-with-unsafe-inline",
+      "scoreModifier": -20,
+      "data": {
+        "frame-ancestors": [
+          "'self'",
+          "app.teamtailor.com",
+          "jobs.zenika.com"
+        ]
+      },
+      "http": true,
       "meta": false,
-      "policy": null,
-      "numPolicies": 0
+      "policy": {
+        "antiClickjacking": true,
+        "defaultNone": false,
+        "insecureBaseUri": true,
+        "insecureFormAction": true,
+        "insecureSchemeActive": false,
+        "insecureSchemePassive": false,
+        "strictDynamic": false,
+        "unsafeEval": false,
+        "unsafeInline": true,
+        "unsafeInlineStyle": true,
+        "unsafeObjects": true
+      },
+      "numPolicies": 1
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -64,15 +92,15 @@
         "http://jobs.zenika.com/",
         "https://jobs.zenika.com/"
       ],
-      "statusCode": 403
+      "statusCode": 200
     },
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-not-implemented",
-      "scoreModifier": 0,
-      "data": null,
-      "http": false,
+      "result": "referrer-policy-private",
+      "scoreModifier": 5,
+      "data": "strict-origin-when-cross-origin",
+      "http": true,
       "meta": false
     },
     "strict-transport-security": {
@@ -89,23 +117,36 @@
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-not-implemented-response-not-html",
-      "scoreModifier": 0,
-      "data": {}
+      "result": "sri-implemented-and-external-scripts-loaded-securely",
+      "scoreModifier": 5,
+      "data": {
+        "https://assets-aws.teamtailor-cdn.com/assets/cookies-b3e5afe6.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-/XlzIll1NPEDkH/JVQVTHjRes32bN+N2Za30kywIhCI0xbiFkLnOpH+VCdf3FWsj"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/careersite-efca90b3.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-SQA72c7giJ6QFW6pW43laTcEeH4SosCVxswgPRpJRl0NWxTuS/PEKw9tXi53xq4X"
+        },
+        "https://assets-aws.teamtailor-cdn.com/assets/font-awesome-108c934a.js": {
+          "crossorigin": "anonymous",
+          "integrity": "sha384-Nup3OVE57HUO/Q0rqAfNFQ/IY6YeX3Cfliaka5adn/ZDM7FHqhPeqdJfkQNaKypg"
+        }
+      }
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": false,
-      "result": "x-content-type-options-not-implemented",
-      "scoreModifier": -5,
-      "data": null
+      "pass": true,
+      "result": "x-content-type-options-nosniff",
+      "scoreModifier": 0,
+      "data": "nosniff"
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": false,
-      "result": "x-frame-options-not-implemented",
-      "scoreModifier": -20,
-      "data": null
+      "pass": true,
+      "result": "x-frame-options-implemented-via-csp",
+      "scoreModifier": 5,
+      "data": "SAMEORIGIN"
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",

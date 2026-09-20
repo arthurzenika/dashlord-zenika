@@ -1,17 +1,9 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 13 Sept 2026 02:06:28",
-	"created": "2026-09-13T02:06:28.620798851Z",
+	"@generated": "Sun, 20 Sept 2026 02:23:25",
+	"created": "2026-09-20T02:23:25.849593119Z",
 	"insights":[
-		{
-			"level": "Low",
-			"reason": "Warning",
-			"site": "",
-			"key": "insight.log.error",
-			"description": "ZAP errors logged - see the zap.log file for details",
-			"statistic": "1"
-		},
 		{
 			"level": "Low",
 			"reason": "Warning",
@@ -26,7 +18,7 @@
 			"site": "https://blog.zenika.com",
 			"key": "insight.code.2xx",
 			"description": "Percentage of responses with status code 2xx",
-			"statistic": "85"
+			"statistic": "69"
 		},
 		{
 			"level": "Info",
@@ -34,7 +26,7 @@
 			"site": "https://blog.zenika.com",
 			"key": "insight.code.3xx",
 			"description": "Percentage of responses with status code 3xx",
-			"statistic": "9"
+			"statistic": "12"
 		},
 		{
 			"level": "Info",
@@ -42,7 +34,7 @@
 			"site": "https://blog.zenika.com",
 			"key": "insight.code.4xx",
 			"description": "Percentage of responses with status code 4xx",
-			"statistic": "4"
+			"statistic": "17"
 		},
 		{
 			"level": "Info",
@@ -58,7 +50,7 @@
 			"site": "https://blog.zenika.com",
 			"key": "insight.endpoint.ctype.application/json",
 			"description": "Percentage of endpoints with content type application/json",
-			"statistic": "7"
+			"statistic": "4"
 		},
 		{
 			"level": "Info",
@@ -66,7 +58,15 @@
 			"site": "https://blog.zenika.com",
 			"key": "insight.endpoint.ctype.application/rss+xml",
 			"description": "Percentage of endpoints with content type application/rss+xml",
-			"statistic": "7"
+			"statistic": "5"
+		},
+		{
+			"level": "Info",
+			"reason": "Informational",
+			"site": "https://blog.zenika.com",
+			"key": "insight.endpoint.ctype.image/jpeg",
+			"description": "Percentage of endpoints with content type image/jpeg",
+			"statistic": "1"
 		},
 		{
 			"level": "Info",
@@ -82,7 +82,7 @@
 			"site": "https://blog.zenika.com",
 			"key": "insight.endpoint.ctype.text/css",
 			"description": "Percentage of endpoints with content type text/css",
-			"statistic": "3"
+			"statistic": "2"
 		},
 		{
 			"level": "Info",
@@ -90,7 +90,7 @@
 			"site": "https://blog.zenika.com",
 			"key": "insight.endpoint.ctype.text/html",
 			"description": "Percentage of endpoints with content type text/html",
-			"statistic": "75"
+			"statistic": "79"
 		},
 		{
 			"level": "Info",
@@ -98,7 +98,7 @@
 			"site": "https://blog.zenika.com",
 			"key": "insight.endpoint.ctype.text/plain",
 			"description": "Percentage of endpoints with content type text/plain",
-			"statistic": "1"
+			"statistic": "2"
 		},
 		{
 			"level": "Info",
@@ -130,7 +130,7 @@
 			"site": "https://blog.zenika.com",
 			"key": "insight.endpoint.total",
 			"description": "Count of total endpoints",
-			"statistic": "687"
+			"statistic": "747"
 		},
 		{
 			"level": "Info",
@@ -138,7 +138,7 @@
 			"site": "https://blog.zenika.com",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "40"
+			"statistic": "87"
 		}
 	],
 	"site":[ 
@@ -159,7 +159,7 @@
 					"desc": "<p>No Anti-CSRF tokens were found in a HTML submission form.</p><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge or intent in order to perform an action as the victim. The underlying cause is application functionality using predictable URL/form actions in a repeatable way. The nature of the attack is that CSRF exploits the trust that a web site has for a user. By contrast, cross-site scripting (XSS) exploits the trust that a user has for a web site. Like XSS, CSRF attacks are not necessarily cross-site, but they can be. Cross-site request forgery is also known as CSRF, XSRF, one-click attack, session riding, confused deputy, and sea surf.</p><p></p><p>CSRF attacks are effective in a number of situations, including:</p><p>    * The victim has an active session on the target site.</p><p>    * The victim is authenticated via HTTP auth on the target site.</p><p>    * The victim is on the same local network as the target site.</p><p></p><p>CSRF has primarily been used to perform an action against a target site using the victim's privileges, but recent techniques have been discovered to disclose information by gaining access to the response. The risk of information disclosure is dramatically increased when the target site is vulnerable to XSS, because XSS can be used as a platform for CSRF, allowing the attack to operate within the bounds of the same-origin policy.</p>",
 					"instances":[ 
 						{
-							"id": "25",
+							"id": "24",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -169,7 +169,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 3: \"_wp_http_referer\" \"_wpnonce\" \"action\" \"redirect_fragment\" \"source\" \"sub-type\" \"subscribe-field-blog_subscription-4\" ]."
 						},
 						{
-							"id": "41",
+							"id": "131",
 							"uri": "https://blog.zenika.com/",
 							"nodeName": "https:\/\/blog.zenika.com\/",
 							"method": "GET",
@@ -179,7 +179,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 3: \"_wp_http_referer\" \"_wpnonce\" \"action\" \"redirect_fragment\" \"source\" \"sub-type\" \"subscribe-field-blog_subscription-4\" ]."
 						},
 						{
-							"id": "106",
+							"id": "125",
 							"uri": "https://blog.zenika.com/category/themes/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/",
 							"method": "GET",
@@ -189,7 +189,7 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 3: \"_wp_http_referer\" \"_wpnonce\" \"action\" \"redirect_fragment\" \"source\" \"sub-type\" \"subscribe-field-blog_subscription-4\" ]."
 						},
 						{
-							"id": "107",
+							"id": "130",
 							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/agilite-tribus\/",
 							"method": "GET",
@@ -199,9 +199,9 @@
 							"otherinfo": "No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] was found in the following HTML form: [Form 3: \"_wp_http_referer\" \"_wpnonce\" \"action\" \"redirect_fragment\" \"source\" \"sub-type\" \"subscribe-field-blog_subscription-4\" ]."
 						},
 						{
-							"id": "111",
-							"uri": "https://blog.zenika.com/category/themes/architecture/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/architecture\/",
+							"id": "147",
+							"uri": "https://blog.zenika.com/category/themes/crafting-software/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/crafting-software\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -216,7 +216,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</p><p>https://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "10"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10038",
@@ -229,7 +229,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "15",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -239,17 +239,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "35",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "103",
+							"id": "120",
 							"uri": "https://blog.zenika.com/category/themes/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/",
 							"method": "GET",
@@ -259,7 +249,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "105",
+							"id": "128",
 							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/agilite-tribus\/",
 							"method": "GET",
@@ -269,9 +259,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "110",
-							"uri": "https://blog.zenika.com/category/themes/architecture/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/architecture\/",
+							"id": "93",
+							"uri": "https://blog.zenika.com/google-cloud-next-2024-mp4/",
+							"nodeName": "https:\/\/blog.zenika.com\/google-cloud-next-2024-mp4\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "114",
+							"uri": "https://blog.zenika.com/wp-admin/admin-ajax.php",
+							"nodeName": "https:\/\/blog.zenika.com\/wp-admin\/admin-ajax.php",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -299,8 +299,8 @@
 					"desc": "<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server.</p>",
 					"instances":[ 
 						{
-							"id": "175",
-							"uri": "https://blog.zenika.com/wp-content/mu-plugins/wpcomsh/vendor/automattic/text-media-widget-styles/css/widget-text.css?m=1789141737",
+							"id": "186",
+							"uri": "https://blog.zenika.com/wp-content/mu-plugins/wpcomsh/vendor/automattic/text-media-widget-styles/css/widget-text.css?m=1789747261",
 							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/mu-plugins\/wpcomsh\/vendor\/automattic\/text-media-widget-styles\/css\/widget-text.css (m)",
 							"method": "GET",
 							"param": "",
@@ -309,9 +309,9 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "181",
-							"uri": "https://blog.zenika.com/wp-content/plugins/coblocks/dist/js/coblocks-animation.js?m=1719276502",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/plugins\/coblocks\/dist\/js\/coblocks-animation.js (m)",
+							"id": "43",
+							"uri": "https://blog.zenika.com/wp-content/uploads/2021/10/20211001_134105_mp4_std.original.jpg",
+							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/uploads\/2021\/10\/20211001_134105_mp4_std.original.jpg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -319,9 +319,9 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "177",
-							"uri": "https://blog.zenika.com/wp-content/themes/colormag/inc/customizer/customind/assets/fontawesome/v6/css/all.min.css?m=1762940551",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/themes\/colormag\/inc\/customizer\/customind\/assets\/fontawesome\/v6\/css\/all.min.css (m)",
+							"id": "104",
+							"uri": "https://blog.zenika.com/wp-content/uploads/2024/07/google-cloud-next-2024-_mp4_hd.original.jpg",
+							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/uploads\/2024\/07\/google-cloud-next-2024-_mp4_hd.original.jpg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -329,9 +329,9 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "176",
-							"uri": "https://blog.zenika.com/wp-includes/css/dashicons.min.css?ver=7.1",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-includes\/css\/dashicons.min.css (ver)",
+							"id": "112",
+							"uri": "https://blog.zenika.com/wp-content/uploads/2024/07/ia-robot_mp4_std.original.jpg",
+							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/uploads\/2024\/07\/ia-robot_mp4_std.original.jpg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -339,9 +339,9 @@
 							"otherinfo": "The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing."
 						},
 						{
-							"id": "183",
-							"uri": "https://blog.zenika.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-includes\/js\/jquery\/jquery.min.js (ver)",
+							"id": "106",
+							"uri": "https://blog.zenika.com/wp-content/uploads/2024/07/vid20240409085739_mp4_avc_240p.original-1.jpg",
+							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/uploads\/2024\/07\/vid20240409085739_mp4_avc_240p.original-1.jpg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -356,7 +356,7 @@
 					"reference": "<p>https://vulncat.fortify.com/en/detail?category=HTML5&subcategory=Overly%20Permissive%20CORS%20Policy</p>",
 					"cweid": "264",
 					"wascid": "14",
-					"sourceid": "1066"
+					"sourceid": "1052"
 				},
 				{
 					"pluginid": "10020",
@@ -369,7 +369,7 @@
 					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "12",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -379,7 +379,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "33",
+							"id": "116",
 							"uri": "https://blog.zenika.com/",
 							"nodeName": "https:\/\/blog.zenika.com\/",
 							"method": "GET",
@@ -389,7 +389,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "100",
+							"id": "117",
 							"uri": "https://blog.zenika.com/category/themes/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/",
 							"method": "GET",
@@ -399,7 +399,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "101",
+							"id": "118",
 							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/agilite-tribus\/",
 							"method": "GET",
@@ -409,7 +409,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "108",
+							"id": "143",
 							"uri": "https://blog.zenika.com/category/themes/architecture/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/architecture\/",
 							"method": "GET",
@@ -459,7 +459,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "872",
+							"id": "279",
 							"uri": "https://blog.zenika.com/category/themes/java/feed/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/java\/feed\/",
 							"method": "GET",
@@ -469,17 +469,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "884",
-							"uri": "https://blog.zenika.com/category/themes/web/feed/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/web\/feed\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "public static void main(String[] args) {",
-							"otherinfo": ""
-						},
-						{
-							"id": "178",
+							"id": "185",
 							"uri": "https://blog.zenika.com/feed/",
 							"nodeName": "https:\/\/blog.zenika.com\/feed\/",
 							"method": "GET",
@@ -489,14 +479,14 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://nhimg.org/twitter-breach</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "1213"
+					"sourceid": "3383"
 				},
 				{
 					"pluginid": "10099",
@@ -509,9 +499,9 @@
 					"desc": "<p>Application Source Code was disclosed by the web server. - Python</p>",
 					"instances":[ 
 						{
-							"id": "876",
-							"uri": "https://blog.zenika.com/2020/11/23/challenge-brigitte-friang-write-up-solutions-2-categorie-algo/",
-							"nodeName": "https:\/\/blog.zenika.com\/2020\/11\/23\/challenge-brigitte-friang-write-up-solutions-2-categorie-algo\/",
+							"id": "309",
+							"uri": "https://blog.zenika.com/2019/07/15/decouverte-ebpf/",
+							"nodeName": "https:\/\/blog.zenika.com\/2019\/07\/15\/decouverte-ebpf\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -519,7 +509,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "875",
+							"id": "289",
 							"uri": "https://blog.zenika.com/2020/11/30/challenge-brigitte-friang-write-up-solutions-3-arene-coros/",
 							"nodeName": "https:\/\/blog.zenika.com\/2020\/11\/30\/challenge-brigitte-friang-write-up-solutions-3-arene-coros\/",
 							"method": "GET",
@@ -529,9 +519,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "881",
-							"uri": "https://blog.zenika.com/category/themes/securite/feed/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/securite\/feed\/",
+							"id": "308",
+							"uri": "https://blog.zenika.com/author/pyaillet/feed/",
+							"nodeName": "https:\/\/blog.zenika.com\/author\/pyaillet\/feed\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -546,7 +536,7 @@
 					"reference": "<p>https://nhimg.org/twitter-breach</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "3286"
+					"sourceid": "7439"
 				},
 				{
 					"pluginid": "10099",
@@ -559,17 +549,7 @@
 					"desc": "<p>Application Source Code was disclosed by the web server. - SQL</p>",
 					"instances":[ 
 						{
-							"id": "891",
-							"uri": "https://blog.zenika.com/2010/03/05/to-batch-or-not-to-batch/",
-							"nodeName": "https:\/\/blog.zenika.com\/2010\/03\/05\/to-batch-or-not-to-batch\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "insert into contact (firstname,lastname,birthdate) values (",
-							"otherinfo": ""
-						},
-						{
-							"id": "173",
+							"id": "182",
 							"uri": "https://blog.zenika.com/2025/11/26/duckdb-on-aws-lambda-the-easy-way-with-layers/",
 							"nodeName": "https:\/\/blog.zenika.com\/2025\/11\/26\/duckdb-on-aws-lambda-the-easy-way-with-layers\/",
 							"method": "GET",
@@ -579,9 +559,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "864",
-							"uri": "https://blog.zenika.com/category/themes/cloud/feed/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/cloud\/feed\/",
+							"id": "311",
+							"uri": "https://blog.zenika.com/2025/11/26/duckdb-on-aws-lambda-the-easy-way-with-layers/amp/",
+							"nodeName": "https:\/\/blog.zenika.com\/2025\/11\/26\/duckdb-on-aws-lambda-the-easy-way-with-layers\/amp\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -589,7 +569,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "873",
+							"id": "310",
+							"uri": "https://blog.zenika.com/author/bbourgeoisz/feed/",
+							"nodeName": "https:\/\/blog.zenika.com\/author\/bbourgeoisz\/feed\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "SELECT 'Hello from DuckDB",
+							"otherinfo": ""
+						},
+						{
+							"id": "281",
 							"uri": "https://blog.zenika.com/category/themes/open-source/feed/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/open-source\/feed\/",
 							"method": "GET",
@@ -597,16 +587,26 @@
 							"attack": "",
 							"evidence": "SELECT 'Hello from DuckDB",
 							"otherinfo": ""
+						},
+						{
+							"id": "312",
+							"uri": "https://blog.zenika.com/2025/11/26/duckdb-on-aws-lambda-the-easy-way-with-layers/",
+							"nodeName": "https:\/\/blog.zenika.com\/2025\/11\/26\/duckdb-on-aws-lambda-the-easy-way-with-layers\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
+							"method": "POST",
+							"param": "",
+							"attack": "",
+							"evidence": "SELECT 'Hello from DuckDB",
+							"otherinfo": ""
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"systemic": false,
 					"solution": "<p>Ensure that application Source Code is not available with alternative extensions, and ensure that source code is not present within other files or data deployed to the web server, or served by the web server.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://nhimg.org/twitter-breach</p>",
 					"cweid": "540",
 					"wascid": "13",
-					"sourceid": "4489"
+					"sourceid": "917"
 				},
 				{
 					"pluginid": "90003",
@@ -619,7 +619,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "48",
+							"id": "51",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -629,7 +629,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "49",
+							"id": "52",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -639,27 +639,27 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "51",
+							"id": "54",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script async defer id='hs-script-loader' src=\"https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=11.3.73\"></script>",
+							"evidence": "<script async defer id='hs-script-loader' src=\"https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=11.3.75\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "53",
+							"uri": "https://blog.zenika.com",
+							"nodeName": "https:\/\/blog.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<script defer src=\"https://s0.wp.com/wp-content/js/bilmur.min.js?m=202638\"></script>",
 							"otherinfo": ""
 						},
 						{
 							"id": "50",
-							"uri": "https://blog.zenika.com",
-							"nodeName": "https:\/\/blog.zenika.com",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<script defer src=\"https://s0.wp.com/wp-content/js/bilmur.min.js?m=202637\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"id": "46",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -676,37 +676,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity</p>",
 					"cweid": "345",
 					"wascid": "15",
-					"sourceid": "10"
-				},
-				{
-					"pluginid": "90022",
-					"alertRef": "90022",
-					"alert": "Application Error Disclosure",
-					"name": "Application Error Disclosure",
-					"riskcode": "1",
-					"confidence": "2",
-					"riskdesc": "Low (Medium)",
-					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
-					"instances":[ 
-						{
-							"id": "900",
-							"uri": "https://blog.zenika.com/2019/02/11/retour-sur-blackhat-london-2018-jour-2/",
-							"nodeName": "https:\/\/blog.zenika.com\/2019\/02\/11\/retour-sur-blackhat-london-2018-jour-2\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "HTTP/1.1 500 Internal Server Error",
-							"otherinfo": ""
-						}
-					],
-					"count": "1",
-					"systemic": false,
-					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
-					"otherinfo": "",
-					"reference": "",
-					"cweid": "550",
-					"wascid": "13",
-					"sourceid": "5855"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10017",
@@ -719,7 +689,7 @@
 					"desc": "<p>The page includes one or more script files from a third-party domain.</p>",
 					"instances":[ 
 						{
-							"id": "11",
+							"id": "16",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -729,23 +699,13 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "16",
+							"id": "18",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
-							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=11.3.73",
+							"param": "https://js.hs-scripts.com/19927536.js?integration=WordPress&ver=11.3.75",
 							"attack": "",
-							"evidence": "<script async defer id='hs-script-loader' src=\"https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=11.3.73\"></script>",
-							"otherinfo": ""
-						},
-						{
-							"id": "15",
-							"uri": "https://blog.zenika.com",
-							"nodeName": "https:\/\/blog.zenika.com",
-							"method": "GET",
-							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202637",
-							"attack": "",
-							"evidence": "<script defer src=\"https://s0.wp.com/wp-content/js/bilmur.min.js?m=202637\"></script>",
+							"evidence": "<script async defer id='hs-script-loader' src=\"https://js.hs-scripts.com/19927536.js?integration=WordPress&#038;ver=11.3.75\"></script>",
 							"otherinfo": ""
 						},
 						{
@@ -753,19 +713,29 @@
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
-							"param": "https://secure.gravatar.com/js/gprofiles.js?ver=202637",
+							"param": "https://s0.wp.com/wp-content/js/bilmur.min.js?m=202638",
 							"attack": "",
-							"evidence": "<script id=\"grofiles-cards-js\" src=\"https://secure.gravatar.com/js/gprofiles.js?ver=202637\"></script>",
+							"evidence": "<script defer src=\"https://s0.wp.com/wp-content/js/bilmur.min.js?m=202638\"></script>",
 							"otherinfo": ""
 						},
 						{
-							"id": "18",
+							"id": "19",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
-							"param": "https://stats.wp.com/e-202637.js",
+							"param": "https://secure.gravatar.com/js/gprofiles.js?ver=202638",
 							"attack": "",
-							"evidence": "<script data-wp-strategy=\"defer\" defer fetchpriority=\"low\" id=\"jetpack-stats-js\" src=\"https://stats.wp.com/e-202637.js\"></script>",
+							"evidence": "<script id=\"grofiles-cards-js\" src=\"https://secure.gravatar.com/js/gprofiles.js?ver=202638\"></script>",
+							"otherinfo": ""
+						},
+						{
+							"id": "20",
+							"uri": "https://blog.zenika.com",
+							"nodeName": "https:\/\/blog.zenika.com",
+							"method": "GET",
+							"param": "https://stats.wp.com/e-202638.js",
+							"attack": "",
+							"evidence": "<script data-wp-strategy=\"defer\" defer fetchpriority=\"low\" id=\"jetpack-stats-js\" src=\"https://stats.wp.com/e-202638.js\"></script>",
 							"otherinfo": ""
 						}
 					],
@@ -776,7 +746,7 @@
 					"reference": "",
 					"cweid": "829",
 					"wascid": "15",
-					"sourceid": "10"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90004",
@@ -789,7 +759,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "89",
+							"id": "84",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -799,19 +769,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "98",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/",
-							"method": "GET",
-							"param": "Cross-Origin-Embedder-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "119",
-							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/agilite-tribus\/",
+							"id": "136",
+							"uri": "https://blog.zenika.com/category/themes/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
@@ -819,7 +779,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
 					"otherinfo": "",
@@ -839,7 +799,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "90",
+							"id": "85",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -849,19 +809,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "99",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/",
-							"method": "GET",
-							"param": "Cross-Origin-Opener-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "121",
-							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/agilite-tribus\/",
+							"id": "137",
+							"uri": "https://blog.zenika.com/category/themes/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
 							"attack": "",
@@ -869,7 +819,7 @@
 							"otherinfo": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Opener-Policy header appropriately, and that it sets the Cross-Origin-Opener-Policy header to 'same-origin' for documents.</p><p>'same-origin-allow-popups' is considered as less secured and should be avoided.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Opener-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-opener-policy).</p>",
 					"otherinfo": "",
@@ -889,7 +839,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "86",
+							"id": "83",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -899,27 +849,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "97",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "118",
-							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/agilite-tribus\/",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "23",
+							"id": "11",
 							"uri": "https://blog.zenika.com/robots.txt",
 							"nodeName": "https:\/\/blog.zenika.com\/robots.txt",
 							"method": "GET",
@@ -927,46 +857,46 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "101",
+							"uri": "https://blog.zenika.com/sitemap-index-1.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/sitemap-index-1.xml",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "41",
+							"uri": "https://blog.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "42",
+							"uri": "https://blog.zenika.com/video-sitemap-1.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/video-sitemap-1.xml",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "4",
-					"systemic": false,
+					"count": "5",
+					"systemic": true,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Resource-Policy header appropriately, and that it sets the Cross-Origin-Resource-Policy header to 'same-origin' for all web pages.</p><p>'same-site' is considered as less secured and should be avoided.</p><p>If resources must be shared, set the header to 'cross-origin'.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Resource-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-resource-policy).</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "10"
-				},
-				{
-					"pluginid": "10110",
-					"alertRef": "10110",
-					"alert": "Dangerous JS Functions",
-					"name": "Dangerous JS Functions",
-					"riskcode": "1",
-					"confidence": "1",
-					"riskdesc": "Low (Low)",
-					"desc": "<p>A dangerous JS function seems to be in use that would leave the site vulnerable.</p>",
-					"instances":[ 
-						{
-							"id": "200",
-							"uri": "https://blog.zenika.com/_static/??wp-content/plugins/jetpack/_inc/build/infinite-scroll/infinity.min.js,wp-content/plugins/coblocks/dist/js/coblocks-animation.js?m=1777914508",
-							"nodeName": "https:\/\/blog.zenika.com\/_static\/ (?wp-content\/plugins\/jetpack\/_inc\/build\/i...)",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "eval(",
-							"otherinfo": ""
-						}
-					],
-					"count": "1",
-					"systemic": false,
-					"solution": "<p>See the references for security advice on the use of these functions.</p>",
-					"otherinfo": "",
-					"reference": "<p>https://v17.angular.io/guide/security</p>",
-					"cweid": "749",
-					"wascid": "-1",
-					"sourceid": "1831"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10063",
@@ -979,9 +909,9 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "172",
-							"uri": "https://blog.zenika.com/2025/11/25/%f0%9f%a4%96-deployer-son-agent-sur-google-vertex-ai-agent-engine/",
-							"nodeName": "https:\/\/blog.zenika.com\/2025\/11\/25\/\uD83E\uDD16-deployer-son-agent-sur-google-vertex-ai-agent-engine\/",
+							"id": "178",
+							"uri": "https://blog.zenika.com/2026/06/12/retour-sur-le-google-cloud-summit-2026-%e2%9b%85/",
+							"nodeName": "https:\/\/blog.zenika.com\/2026\/06\/12\/retour-sur-le-google-cloud-summit-2026-\u26C5\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -989,9 +919,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "171",
-							"uri": "https://blog.zenika.com/2026/03/24/%e2%9a%97%ef%b8%8f-a-local-agent-with-adk-and-docker-model-runner/",
-							"nodeName": "https:\/\/blog.zenika.com\/2026\/03\/24\/\u2697\uFE0F-a-local-agent-with-adk-and-docker-model-runner\/",
+							"id": "149",
+							"uri": "https://blog.zenika.com/category/themes/intelligence-artificielle/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/intelligence-artificielle\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -999,29 +929,29 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "170",
+							"id": "163",
+							"uri": "https://blog.zenika.com/category/themes/securite/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/securite\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "99",
+							"uri": "https://blog.zenika.com/google-cloud-next-2024-mp4/",
+							"nodeName": "https:\/\/blog.zenika.com\/google-cloud-next-2024-mp4\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "115",
 							"uri": "https://blog.zenika.com/wp-admin/admin-ajax.php",
 							"nodeName": "https:\/\/blog.zenika.com\/wp-admin\/admin-ajax.php",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "182",
-							"uri": "https://blog.zenika.com/wp-content/plugins/coblocks/dist/js/coblocks-animation.js?m=1719276502",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/plugins\/coblocks\/dist\/js\/coblocks-animation.js (m)",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "180",
-							"uri": "https://blog.zenika.com/xmlrpc.php?rsd",
-							"nodeName": "https:\/\/blog.zenika.com\/xmlrpc.php (rsd)",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1036,7 +966,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Permissions-Policy</p><p>https://developer.chrome.com/blog/feature-policy/</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "939"
+					"sourceid": "588"
 				},
 				{
 					"pluginid": "2",
@@ -1049,7 +979,27 @@
 					"desc": "<p>A private IP (such as 10.x.x.x, 172.x.x.x, 192.168.x.x) or an Amazon EC2 private hostname (for example, ip-10-0-56-78) has been found in the HTTP response body. This information might be helpful for further attacks targeting internal systems.</p>",
 					"instances":[ 
 						{
-							"id": "874",
+							"id": "304",
+							"uri": "https://blog.zenika.com/2013/07/31/creating-a-varnish-4-module/",
+							"nodeName": "https:\/\/blog.zenika.com\/2013\/07\/31\/creating-a-varnish-4-module\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "192.168.1.1",
+							"otherinfo": "192.168.1.1\n192.168.1.2\n192.168.1.1\n192.168.1.2\n192.168.1.1\n192.168.1.2\n192.168.2.1\n192.168.2.2\n"
+						},
+						{
+							"id": "305",
+							"uri": "https://blog.zenika.com/2015/06/01/docker-1-6-et-son-ecosysteme/",
+							"nodeName": "https:\/\/blog.zenika.com\/2015\/06\/01\/docker-1-6-et-son-ecosysteme\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "192.168.99.103:2376",
+							"otherinfo": "192.168.99.103:2376\n192.168.99.103:80\n"
+						},
+						{
+							"id": "288",
 							"uri": "https://blog.zenika.com/2020/11/30/challenge-brigitte-friang-write-up-solutions-3-arene-coros/",
 							"nodeName": "https:\/\/blog.zenika.com\/2020\/11\/30\/challenge-brigitte-friang-write-up-solutions-3-arene-coros\/",
 							"method": "GET",
@@ -1059,7 +1009,7 @@
 							"otherinfo": "192.168.0.1\n192.168.0.1\n192.168.0.1\n192.168.0.70\n192.168.0.70\n"
 						},
 						{
-							"id": "901",
+							"id": "306",
 							"uri": "https://blog.zenika.com/2022/10/07/decouverte-de-google-cloud-onboarding/",
 							"nodeName": "https:\/\/blog.zenika.com\/2022\/10\/07\/decouverte-de-google-cloud-onboarding\/",
 							"method": "GET",
@@ -1069,7 +1019,7 @@
 							"otherinfo": "10.0.0.0\n10.0.1.0\n"
 						},
 						{
-							"id": "870",
+							"id": "277",
 							"uri": "https://blog.zenika.com/2025/05/20/implementer-un-service-discovery-avec-quarkus-stork-et-consul/",
 							"nodeName": "https:\/\/blog.zenika.com\/2025\/05\/20\/implementer-un-service-discovery-avec-quarkus-stork-et-consul\/",
 							"method": "GET",
@@ -1079,7 +1029,7 @@
 							"otherinfo": "10.10.11.111\n10.10.11.112\n10.10.11.113\n10.10.11.0\n10.10.11.1\n"
 						},
 						{
-							"id": "902",
+							"id": "307",
 							"uri": "https://blog.zenika.com/author/pyaillet/feed/",
 							"nodeName": "https:\/\/blog.zenika.com\/author\/pyaillet\/feed\/",
 							"method": "GET",
@@ -1089,29 +1039,9 @@
 							"otherinfo": "10.0.0.0\n10.0.1.0\n192.168.0.1\n192.168.0.1\n192.168.0.1\n192.168.0.70\n192.168.0.70\n"
 						},
 						{
-							"id": "871",
+							"id": "278",
 							"uri": "https://blog.zenika.com/category/themes/java/feed/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/java\/feed\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "10.10.11.111",
-							"otherinfo": "10.10.11.111\n10.10.11.112\n10.10.11.113\n10.10.11.0\n10.10.11.1\n"
-						},
-						{
-							"id": "880",
-							"uri": "https://blog.zenika.com/category/themes/securite/feed/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/securite\/feed\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "192.168.0.1",
-							"otherinfo": "192.168.0.1\n192.168.0.1\n192.168.0.1\n192.168.0.70\n192.168.0.70\n"
-						},
-						{
-							"id": "883",
-							"uri": "https://blog.zenika.com/category/themes/web/feed/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/web\/feed\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1122,11 +1052,11 @@
 					"count": "7",
 					"systemic": false,
 					"solution": "<p>Remove the private IP address from the HTTP response body. For comments, use JSP/ASP/PHP comment instead of HTML/JavaScript comment which can be seen by client browsers.</p>",
-					"otherinfo": "<p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.0.1</p><p>192.168.0.70</p><p>192.168.0.70</p><p></p>",
+					"otherinfo": "<p>192.168.1.1</p><p>192.168.1.2</p><p>192.168.1.1</p><p>192.168.1.2</p><p>192.168.1.1</p><p>192.168.1.2</p><p>192.168.2.1</p><p>192.168.2.2</p><p></p>",
 					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc1918</p>",
 					"cweid": "497",
 					"wascid": "13",
-					"sourceid": "3283"
+					"sourceid": "7144"
 				},
 				{
 					"pluginid": "10035",
@@ -1139,7 +1069,7 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "888",
+							"id": "292",
 							"uri": "https://blog.zenika.com/xmlrpc.php",
 							"nodeName": "https:\/\/blog.zenika.com\/xmlrpc.php",
 							"method": "GET",
@@ -1149,7 +1079,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "179",
+							"id": "189",
 							"uri": "https://blog.zenika.com/xmlrpc.php?rsd",
 							"nodeName": "https:\/\/blog.zenika.com\/xmlrpc.php (rsd)",
 							"method": "GET",
@@ -1166,7 +1096,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "4350"
+					"sourceid": "6156"
 				},
 				{
 					"pluginid": "10096",
@@ -1179,7 +1109,7 @@
 					"desc": "<p>A timestamp was disclosed by the application/web server. - Unix</p>",
 					"instances":[ 
 						{
-							"id": "64",
+							"id": "68",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -1189,7 +1119,7 @@
 							"otherinfo": "1580826512, which evaluates to: 2020-02-04 14:28:32."
 						},
 						{
-							"id": "68",
+							"id": "72",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -1199,7 +1129,7 @@
 							"otherinfo": "1719276502, which evaluates to: 2024-06-25 00:48:22."
 						},
 						{
-							"id": "69",
+							"id": "73",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -1209,7 +1139,7 @@
 							"otherinfo": "1730206540, which evaluates to: 2024-10-29 12:55:40."
 						},
 						{
-							"id": "62",
+							"id": "64",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -1219,14 +1149,14 @@
 							"otherinfo": "1762940551, which evaluates to: 2025-11-12 09:42:31."
 						},
 						{
-							"id": "60",
+							"id": "59",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "1789141737",
-							"otherinfo": "1789141737, which evaluates to: 2026-09-11 15:48:57."
+							"evidence": "1789747261",
+							"otherinfo": "1789747261, which evaluates to: 2026-09-18 16:01:01."
 						}
 					],
 					"count": "5",
@@ -1249,7 +1179,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "76",
+							"id": "80",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -1259,39 +1189,39 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "94",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"id": "123",
-							"uri": "https://blog.zenika.com/category/themes/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"id": "115",
-							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/agilite-tribus\/",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"id": "1",
+							"id": "3",
 							"uri": "https://blog.zenika.com/robots.txt",
 							"nodeName": "https:\/\/blog.zenika.com\/robots.txt",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "4",
+							"uri": "https://blog.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/sitemap.xml",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "5",
+							"uri": "https://blog.zenika.com/video-sitemap-1.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/video-sitemap-1.xml",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
+							"id": "44",
+							"uri": "https://blog.zenika.com/wp-content/uploads/2021/10/20211001_134105_mp4_std.original.jpg",
+							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/uploads\/2021\/10\/20211001_134105_mp4_std.original.jpg",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -1319,7 +1249,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "78",
+							"id": "81",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -1329,7 +1259,7 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
 						},
 						{
-							"id": "95",
+							"id": "142",
 							"uri": "https://blog.zenika.com/",
 							"nodeName": "https:\/\/blog.zenika.com\/",
 							"method": "GET",
@@ -1339,7 +1269,17 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
 						},
 						{
-							"id": "124",
+							"id": "177",
+							"uri": "https://blog.zenika.com/category/formations/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/formations\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36",
+							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
+						},
+						{
+							"id": "134",
 							"uri": "https://blog.zenika.com/category/themes/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/",
 							"method": "GET",
@@ -1349,7 +1289,7 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
 						},
 						{
-							"id": "116",
+							"id": "141",
 							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/agilite-tribus\/",
 							"method": "GET",
@@ -1359,7 +1299,7 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
 						},
 						{
-							"id": "127",
+							"id": "157",
 							"uri": "https://blog.zenika.com/category/themes/architecture/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/architecture\/",
 							"method": "GET",
@@ -1369,27 +1309,7 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
 						},
 						{
-							"id": "148",
-							"uri": "https://blog.zenika.com/category/themes/bigdata-nosql/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/bigdata-nosql\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36",
-							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
-						},
-						{
-							"id": "163",
-							"uri": "https://blog.zenika.com/category/themes/cloud/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/cloud\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36",
-							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
-						},
-						{
-							"id": "151",
+							"id": "154",
 							"uri": "https://blog.zenika.com/category/themes/crafting-software/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/crafting-software\/",
 							"method": "GET",
@@ -1399,17 +1319,7 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
 						},
 						{
-							"id": "145",
-							"uri": "https://blog.zenika.com/category/themes/design/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/design\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36",
-							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
-						},
-						{
-							"id": "168",
+							"id": "160",
 							"uri": "https://blog.zenika.com/category/themes/devops-tribus/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/devops-tribus\/",
 							"method": "GET",
@@ -1419,14 +1329,34 @@
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
 						},
 						{
-							"id": "169",
-							"uri": "https://blog.zenika.com/category/themes/green/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/green\/",
+							"id": "176",
+							"uri": "https://blog.zenika.com/category/themes/iot-mobilite/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/iot-mobilite\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36",
 							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
+						},
+						{
+							"id": "172",
+							"uri": "https://blog.zenika.com/category/themes/java/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/java\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/wp-content/uploads/2021/10/cropped-Monogramme-logo-zenika_36x36",
+							"otherinfo": "r\uFFFD\uFFFD\u009F\uFFFD\uFFFD{^\uFFFD\uFFFD\uFFFDZ\\x001av\uFFFD\uFFFD\uFFFDm\uFFFDO\u072E\uFFFDiy\u07CC\uFFFDz \uFFFD\uFFFD\uFFFD{\uFFFDh\uFFFD\uFFFD\uFFFDzx\uFFFDk\uFFFD\uFFFD\uFFFD~"
+						},
+						{
+							"id": "32",
+							"uri": "https://blog.zenika.com/video-sitemap-1.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/video-sitemap-1.xml",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "com/ItMQ0iMQ/vid20240409085739",
+							"otherinfo": "r\uFFFD\uFFFD\"\uFFFD\\x0010\uFFFD#\\x0010\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFD\u04CD=\uFFFD\uFFFD{\uFFFD"
 						}
 					],
 					"count": "11",
@@ -1449,7 +1379,7 @@
 					"desc": "<p>This check identifies responses where the HTTP Content-Type header declares a charset different from the charset defined by the body of the HTML or XML. When there's a charset mismatch between the HTTP header and content body Web browsers can be forced into an undesirable content-sniffing mode to determine the content's correct character set.</p><p></p><p>An attacker could manipulate content on the page to be interpreted in an encoding of their choice. For example, if an attacker can control content at the beginning of the page, they could inject script using UTF-7 encoded text and manipulate some browsers into interpreting that text.</p>",
 					"instances":[ 
 						{
-							"id": "174",
+							"id": "187",
 							"uri": "https://blog.zenika.com/wp-json/oembed/1.0/embed?format=xml&url=https%3A%2F%2Fblog.zenika.com%2F",
 							"nodeName": "https:\/\/blog.zenika.com\/wp-json\/oembed\/1.0\/embed (format,url)",
 							"method": "GET",
@@ -1466,7 +1396,7 @@
 					"reference": "<p>https://code.google.com/archive/p/browsersec/wikis/Part2.wiki#Character_set_handling_and_detection</p>",
 					"cweid": "436",
 					"wascid": "15",
-					"sourceid": "1062"
+					"sourceid": "1040"
 				},
 				{
 					"pluginid": "10024",
@@ -1479,7 +1409,7 @@
 					"desc": "<p>The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.</p>",
 					"instances":[ 
 						{
-							"id": "863",
+							"id": "200",
 							"uri": "https://blog.zenika.com/category/themes/?author=ZAP&comment=Zaproxy+dolore+alias+impedit+expedita+quisquam.&email=zaproxy%40example.com&submit=Publier+un+commentaire&url=https%3A%2F%2Fzap.example.com",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/ (author,comment,email,submit,url)",
 							"method": "GET",
@@ -1489,7 +1419,7 @@
 							"otherinfo": "The URL contains email address(es)."
 						},
 						{
-							"id": "201",
+							"id": "274",
 							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/?author=ZAP&comment=Zaproxy+dolore+alias+impedit+expedita+quisquam.&email=zaproxy%40example.com&submit=Publier+un+commentaire&url=https%3A%2F%2Fzap.example.com",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/agilite-tribus\/ (author,comment,email,submit,url)",
 							"method": "GET",
@@ -1499,7 +1429,7 @@
 							"otherinfo": "The URL contains email address(es)."
 						},
 						{
-							"id": "202",
+							"id": "273",
 							"uri": "https://blog.zenika.com/category/themes/architecture/?author=ZAP&comment=Zaproxy+dolore+alias+impedit+expedita+quisquam.&email=zaproxy%40example.com&submit=Publier+un+commentaire&url=https%3A%2F%2Fzap.example.com",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/architecture\/ (author,comment,email,submit,url)",
 							"method": "GET",
@@ -1509,9 +1439,9 @@
 							"otherinfo": "The URL contains email address(es)."
 						},
 						{
-							"id": "865",
-							"uri": "https://blog.zenika.com/category/themes/bigdata-nosql/?author=ZAP&comment=Zaproxy+dolore+alias+impedit+expedita+quisquam.&email=zaproxy%40example.com&submit=Publier+un+commentaire&url=https%3A%2F%2Fzap.example.com",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/bigdata-nosql\/ (author,comment,email,submit,url)",
+							"id": "275",
+							"uri": "https://blog.zenika.com/category/themes/crafting-software/?author=ZAP&comment=Zaproxy+dolore+alias+impedit+expedita+quisquam.&email=zaproxy%40example.com&submit=Publier+un+commentaire&url=https%3A%2F%2Fzap.example.com",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/crafting-software\/ (author,comment,email,submit,url)",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
@@ -1519,9 +1449,9 @@
 							"otherinfo": "The URL contains email address(es)."
 						},
 						{
-							"id": "866",
-							"uri": "https://blog.zenika.com/category/themes/crafting-software/?author=ZAP&comment=Zaproxy+dolore+alias+impedit+expedita+quisquam.&email=zaproxy%40example.com&submit=Publier+un+commentaire&url=https%3A%2F%2Fzap.example.com",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/crafting-software\/ (author,comment,email,submit,url)",
+							"id": "276",
+							"uri": "https://blog.zenika.com/category/themes/devops-tribus/?author=ZAP&comment=Zaproxy+dolore+alias+impedit+expedita+quisquam.&email=zaproxy%40example.com&submit=Publier+un+commentaire&url=https%3A%2F%2Fzap.example.com",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/devops-tribus\/ (author,comment,email,submit,url)",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
@@ -1536,7 +1466,7 @@
 					"reference": "",
 					"cweid": "598",
 					"wascid": "13",
-					"sourceid": "2312"
+					"sourceid": "3880"
 				},
 				{
 					"pluginid": "10027",
@@ -1549,47 +1479,37 @@
 					"desc": "<p>The response appears to contain suspicious comments which may help an attacker.</p>",
 					"instances":[ 
 						{
-							"id": "42",
+							"id": "46",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "910 seconds\n\tserved from batcache in 0.004 s",
-							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in likely comment: \"<!--\n\tgenerated 252 seconds ago\n\tgenerated in 0.910 seconds\n\tserved from batcache in 0.004 seconds\n\texpires in 48 seconds\n-->\", see evidence field for the suspicious comment/snippet."
+							"evidence": "095 seconds\n\tserved from batcache in 0.006 s",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in likely comment: \"<!--\n\tgenerated 261 seconds ago\n\tgenerated in 1.095 seconds\n\tserved from batcache in 0.006 seconds\n\texpires in 39 seconds\n-->\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "92",
+							"id": "139",
 							"uri": "https://blog.zenika.com/",
 							"nodeName": "https:\/\/blog.zenika.com\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "910 seconds\n\tserved from batcache in 0.004 s",
-							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in likely comment: \"<!--\n\tgenerated 252 seconds ago\n\tgenerated in 0.910 seconds\n\tserved from batcache in 0.004 seconds\n\texpires in 48 seconds\n-->\", see evidence field for the suspicious comment/snippet."
+							"evidence": "919 seconds\n\tserved from batcache in 0.004 s",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in likely comment: \"<!--\n\tgenerated 34 seconds ago\n\tgenerated in 0.919 seconds\n\tserved from batcache in 0.004 seconds\n\texpires in 266 seconds\n-->\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "878",
-							"uri": "https://blog.zenika.com/2025/06/23/les-librairies-de-votre-starter-front-en-vue-js-en-2025/",
-							"nodeName": "https:\/\/blog.zenika.com\/2025\/06\/23\/les-librairies-de-votre-starter-front-en-vue-js-en-2025\/",
+							"id": "298",
+							"uri": "https://blog.zenika.com/2025/03/26/i-need-to-embed-some-content-in-my-frontend-how-to-choose/",
+							"nodeName": "https:\/\/blog.zenika.com\/2025\/03\/26\/i-need-to-embed-some-content-in-my-frontend-how-to-choose\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "101 seconds\n\tserved from batcache in 0.003 s",
-							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in likely comment: \"<!--\n\tgenerated 274 seconds ago\n\tgenerated in 1.101 seconds\n\tserved from batcache in 0.003 seconds\n\texpires in 26 seconds\n-->\", see evidence field for the suspicious comment/snippet."
+							"evidence": "804 seconds\n\tserved from batcache in 0.003 s",
+							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in likely comment: \"<!--\n\tgenerated 111 seconds ago\n\tgenerated in 0.804 seconds\n\tserved from batcache in 0.003 seconds\n\texpires in 189 seconds\n-->\", see evidence field for the suspicious comment/snippet."
 						},
 						{
-							"id": "120",
-							"uri": "https://blog.zenika.com/category/themes/architecture/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/architecture\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "954 seconds\n\tserved from batcache in 0.004 s",
-							"otherinfo": "The following pattern was used: \\bFROM\\b and was detected in likely comment: \"<!--\n\tgenerated 103 seconds ago\n\tgenerated in 0.954 seconds\n\tserved from batcache in 0.004 seconds\n\texpires in 197 seconds\n-->\", see evidence field for the suspicious comment/snippet."
-						},
-						{
-							"id": "889",
+							"id": "293",
 							"uri": "https://blog.zenika.com/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1785900794",
 							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/plugins\/akismet\/_inc\/akismet-frontend.js (ver)",
 							"method": "GET",
@@ -1599,10 +1519,10 @@
 							"otherinfo": "The following pattern was used: \\bUSER\\b and was detected 2 times, the first in likely comment: \"/**\n * Observe how the user enters content into the comment form in order to determine whether it's a bot or not.\n *\n * Note tha\", see evidence field for the suspicious comment/snippet."
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>",
-					"otherinfo": "<p>The following pattern was used: \\bFROM\\b and was detected in likely comment: \"<!--</p><p>\tgenerated 252 seconds ago</p><p>\tgenerated in 0.910 seconds</p><p>\tserved from batcache in 0.004 seconds</p><p>\texpires in 48 seconds</p><p>-->\", see evidence field for the suspicious comment/snippet.</p>",
+					"otherinfo": "<p>The following pattern was used: \\bFROM\\b and was detected in likely comment: \"<!--</p><p>\tgenerated 261 seconds ago</p><p>\tgenerated in 1.095 seconds</p><p>\tserved from batcache in 0.006 seconds</p><p>\texpires in 39 seconds</p><p>-->\", see evidence field for the suspicious comment/snippet.</p>",
 					"reference": "",
 					"cweid": "615",
 					"wascid": "13",
@@ -1619,7 +1539,7 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "44",
+							"id": "47",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
@@ -1629,7 +1549,7 @@
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						},
 						{
-							"id": "93",
+							"id": "140",
 							"uri": "https://blog.zenika.com/",
 							"nodeName": "https:\/\/blog.zenika.com\/",
 							"method": "GET",
@@ -1639,7 +1559,7 @@
 							"otherinfo": "A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not."
 						},
 						{
-							"id": "113",
+							"id": "132",
 							"uri": "https://blog.zenika.com/category/themes/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/",
 							"method": "GET",
@@ -1649,7 +1569,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "112",
+							"id": "138",
 							"uri": "https://blog.zenika.com/category/themes/agilite-tribus/",
 							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/agilite-tribus\/",
 							"method": "GET",
@@ -1659,9 +1579,9 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "122",
-							"uri": "https://blog.zenika.com/category/themes/architecture/",
-							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/architecture\/",
+							"id": "152",
+							"uri": "https://blog.zenika.com/category/themes/crafting-software/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/crafting-software\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1679,6 +1599,36 @@
 					"sourceid": "1"
 				},
 				{
+					"pluginid": "10049",
+					"alertRef": "10049-1",
+					"alert": "Non-Storable Content",
+					"name": "Non-Storable Content",
+					"riskcode": "0",
+					"confidence": "2",
+					"riskdesc": "Informational (Medium)",
+					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
+					"instances":[ 
+						{
+							"id": "97",
+							"uri": "https://blog.zenika.com/google-cloud-next-2024-mp4/",
+							"nodeName": "https:\/\/blog.zenika.com\/google-cloud-next-2024-mp4\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "429",
+							"otherinfo": ""
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>The content may be marked as storable by ensuring that the following conditions are satisfied:</p><p>The request method must be understood by the cache and defined as being cacheable (\"GET\", \"HEAD\", and \"POST\" are currently defined as cacheable)</p><p>The response status code must be understood by the cache (one of the 1XX, 2XX, 3XX, 4XX, or 5XX response classes are generally understood)</p><p>The \"no-store\" cache directive must not appear in the request or response header fields</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"private\" response directive must not appear in the response</p><p>For caching by \"shared\" caches such as \"proxy\" caches, the \"Authorization\" header field must not appear in the request, unless the response explicitly allows it (using one of the \"must-revalidate\", \"public\", or \"s-maxage\" Cache-Control response directives)</p><p>In addition to the conditions above, at least one of the following conditions must also be satisfied by the response:</p><p>It must contain an \"Expires\" header field</p><p>It must contain a \"max-age\" response directive</p><p>For \"shared\" caches such as \"proxy\" caches, it must contain a \"s-maxage\" response directive</p><p>It must contain a \"Cache Control Extension\" that allows it to be cached</p><p>It must have a status code that is defined as cacheable by default (200, 203, 204, 206, 300, 301, 404, 405, 410, 414, 501).</p>",
+					"otherinfo": "",
+					"reference": "<p>https://datatracker.ietf.org/doc/html/rfc7234</p><p>https://datatracker.ietf.org/doc/html/rfc7231</p><p>https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html</p>",
+					"cweid": "524",
+					"wascid": "13",
+					"sourceid": "118"
+				},
+				{
 					"pluginid": "10015",
 					"alertRef": "10015",
 					"alert": "Re-examine Cache-control Directives",
@@ -1689,37 +1639,27 @@
 					"desc": "<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "14",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
-							"evidence": "max-age=48, must-revalidate",
+							"evidence": "max-age=39, must-revalidate",
 							"otherinfo": ""
 						},
 						{
-							"id": "34",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/",
+							"id": "1",
+							"uri": "https://blog.zenika.com/video-sitemap-1.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/video-sitemap-1.xml",
 							"method": "GET",
 							"param": "cache-control",
 							"attack": "",
-							"evidence": "max-age=48, must-revalidate",
+							"evidence": "",
 							"otherinfo": ""
 						},
 						{
-							"id": "0",
-							"uri": "https://blog.zenika.com/robots.txt",
-							"nodeName": "https:\/\/blog.zenika.com\/robots.txt",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "max-age=300, must-revalidate",
-							"otherinfo": ""
-						},
-						{
-							"id": "27",
+							"id": "92",
 							"uri": "https://blog.zenika.com/wp-json/",
 							"nodeName": "https:\/\/blog.zenika.com\/wp-json\/",
 							"method": "GET",
@@ -1727,19 +1667,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"id": "24",
-							"uri": "https://blog.zenika.com/wp-json/wp/v2/pages/13972",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-json\/wp\/v2\/pages\/13972",
-							"method": "GET",
-							"param": "cache-control",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"systemic": true,
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
@@ -1759,17 +1689,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "81",
-							"uri": "https://blog.zenika.com",
-							"nodeName": "https:\/\/blog.zenika.com",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "12",
+							"id": "8",
 							"uri": "https://blog.zenika.com/robots.txt",
 							"nodeName": "https:\/\/blog.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1779,9 +1699,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
-							"uri": "https://blog.zenika.com/wp-json/wp/v2/pages/13972",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-json\/wp\/v2\/pages\/13972",
+							"id": "37",
+							"uri": "https://blog.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "35",
+							"uri": "https://blog.zenika.com/video-sitemap-1.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/video-sitemap-1.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Dest",
 							"attack": "",
@@ -1796,7 +1726,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -1809,17 +1739,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "80",
-							"uri": "https://blog.zenika.com",
-							"nodeName": "https:\/\/blog.zenika.com",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "10",
+							"id": "7",
 							"uri": "https://blog.zenika.com/robots.txt",
 							"nodeName": "https:\/\/blog.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1829,9 +1749,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "29",
-							"uri": "https://blog.zenika.com/wp-json/wp/v2/pages/13972",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-json\/wp\/v2\/pages\/13972",
+							"id": "31",
+							"uri": "https://blog.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "34",
+							"uri": "https://blog.zenika.com/video-sitemap-1.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/video-sitemap-1.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Mode",
 							"attack": "",
@@ -1846,7 +1776,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -1859,16 +1789,6 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "79",
-							"uri": "https://blog.zenika.com",
-							"nodeName": "https:\/\/blog.zenika.com",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
 							"id": "6",
 							"uri": "https://blog.zenika.com/robots.txt",
 							"nodeName": "https:\/\/blog.zenika.com\/robots.txt",
@@ -1879,9 +1799,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "28",
-							"uri": "https://blog.zenika.com/wp-json/wp/v2/pages/13972",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-json\/wp\/v2\/pages\/13972",
+							"id": "30",
+							"uri": "https://blog.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "33",
+							"uri": "https://blog.zenika.com/video-sitemap-1.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/video-sitemap-1.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-Site",
 							"attack": "",
@@ -1896,7 +1826,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "90005",
@@ -1909,17 +1839,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "82",
-							"uri": "https://blog.zenika.com",
-							"nodeName": "https:\/\/blog.zenika.com",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "13",
+							"id": "9",
 							"uri": "https://blog.zenika.com/robots.txt",
 							"nodeName": "https:\/\/blog.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1929,9 +1849,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "31",
-							"uri": "https://blog.zenika.com/wp-json/wp/v2/pages/13972",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-json\/wp\/v2\/pages\/13972",
+							"id": "39",
+							"uri": "https://blog.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/sitemap.xml",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "36",
+							"uri": "https://blog.zenika.com/video-sitemap-1.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/video-sitemap-1.xml",
 							"method": "GET",
 							"param": "Sec-Fetch-User",
 							"attack": "",
@@ -1946,7 +1876,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10049",
@@ -1959,29 +1889,29 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "84",
+							"id": "82",
 							"uri": "https://blog.zenika.com",
 							"nodeName": "https:\/\/blog.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=48",
+							"evidence": "max-age=39",
 							"otherinfo": ""
 						},
 						{
-							"id": "96",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/",
+							"id": "10",
+							"uri": "https://blog.zenika.com/robots.txt",
+							"nodeName": "https:\/\/blog.zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "max-age=48",
-							"otherinfo": ""
+							"evidence": "",
+							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "21",
-							"uri": "https://blog.zenika.com/robots.txt",
-							"nodeName": "https:\/\/blog.zenika.com\/robots.txt",
+							"id": "40",
+							"uri": "https://blog.zenika.com/sitemap.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1989,9 +1919,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "114",
-							"uri": "https://blog.zenika.com/wp-json/",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-json\/",
+							"id": "38",
+							"uri": "https://blog.zenika.com/video-sitemap-1.xml",
+							"nodeName": "https:\/\/blog.zenika.com\/video-sitemap-1.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1999,14 +1929,14 @@
 							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
 						},
 						{
-							"id": "32",
-							"uri": "https://blog.zenika.com/wp-json/wp/v2/pages/13972",
-							"nodeName": "https:\/\/blog.zenika.com\/wp-json\/wp\/v2\/pages\/13972",
+							"id": "45",
+							"uri": "https://blog.zenika.com/wp-content/uploads/2021/10/20211001_134105_mp4_std.original.jpg",
+							"nodeName": "https:\/\/blog.zenika.com\/wp-content\/uploads\/2021\/10\/20211001_134105_mp4_std.original.jpg",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "",
-							"otherinfo": "In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234."
+							"evidence": "max-age=31536000",
+							"otherinfo": ""
 						}
 					],
 					"count": "5",
@@ -2029,64 +1959,84 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"id": "462",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
+							"id": "201",
+							"uri": "https://blog.zenika.com/category/themes/?author=ZAP&comment=Zaproxy+dolore+alias+impedit+expedita+quisquam.&email=zaproxy%40example.com&submit=Publier+un+commentaire&url=https%3A%2F%2Fzap.example.com",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/ (author,comment,email,submit,url)",
+							"method": "GET",
+							"param": "submit",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/category/themes/?author=ZAP&comment=Zaproxy+dolore+alias+impedit+expedita+quisquam.&email=zaproxy%40example.com&submit=Publier+un+commentaire&url=https%3A%2F%2Fzap.example.com\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\nsubmit=Publier un commentaire\n\nThe user-controlled value was:\npublier un commentaire"
+						},
+						{
+							"id": "228",
+							"uri": "https://blog.zenika.com/category/themes/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
+							"method": "POST",
+							"param": "_wp_http_referer",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/category/themes/\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\n_wp_http_referer=/category/themes/\n\nThe user-controlled value was:\n/category/themes/"
+						},
+						{
+							"id": "227",
+							"uri": "https://blog.zenika.com/category/themes/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
 							"method": "POST",
 							"param": "_wpnonce",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\n_wpnonce=9cf1aebd94\n\nThe user-controlled value was:\n9cf1aebd94"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/category/themes/\n\nappears to include user input in:\na(n) [input] tag [value] attribute\n\nThe user input found was:\n_wpnonce=4ea6a4948e\n\nThe user-controlled value was:\n4ea6a4948e"
 						},
 						{
-							"id": "450",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
+							"id": "215",
+							"uri": "https://blog.zenika.com/category/themes/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
 							"method": "POST",
 							"param": "action",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/\n\nappears to include user input in:\na(n) [form] tag [id] attribute\n\nThe user input found was:\naction=subscribe\n\nThe user-controlled value was:\nsubscribe-blog-blog_subscription-4"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/category/themes/\n\nappears to include user input in:\na(n) [form] tag [id] attribute\n\nThe user input found was:\naction=subscribe\n\nThe user-controlled value was:\nsubscribe-blog-blog_subscription-4"
 						},
 						{
-							"id": "451",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
+							"id": "216",
+							"uri": "https://blog.zenika.com/category/themes/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
 							"method": "POST",
 							"param": "redirect_fragment",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/\n\nappears to include user input in:\na(n) [form] tag [id] attribute\n\nThe user input found was:\nredirect_fragment=subscribe-blog-blog_subscription-4\n\nThe user-controlled value was:\nsubscribe-blog-blog_subscription-4"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/category/themes/\n\nappears to include user input in:\na(n) [form] tag [id] attribute\n\nThe user input found was:\nredirect_fragment=subscribe-blog-blog_subscription-4\n\nThe user-controlled value was:\nsubscribe-blog-blog_subscription-4"
 						},
 						{
-							"id": "203",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
+							"id": "202",
+							"uri": "https://blog.zenika.com/category/themes/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
 							"method": "POST",
 							"param": "source",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/\n\nappears to include user input in:\na(n) [link] tag [href] attribute\n\nThe user input found was:\nsource=https://blog.zenika.com/\n\nThe user-controlled value was:\nhttps://blog.zenika.com/"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/category/themes/\n\nappears to include user input in:\na(n) [link] tag [href] attribute\n\nThe user input found was:\nsource=https://blog.zenika.com/category/themes/\n\nThe user-controlled value was:\nhttps://blog.zenika.com/category/themes/"
 						},
 						{
-							"id": "224",
-							"uri": "https://blog.zenika.com/",
-							"nodeName": "https:\/\/blog.zenika.com\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
+							"id": "208",
+							"uri": "https://blog.zenika.com/category/themes/",
+							"nodeName": "https:\/\/blog.zenika.com\/category\/themes\/ ()(_wp_http_referer,_wpnonce,action,email,redirect_fragment,source,sub-type)",
 							"method": "POST",
 							"param": "sub-type",
 							"attack": "",
 							"evidence": "",
-							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/\n\nappears to include user input in:\na(n) [aside] tag [class] attribute\n\nThe user input found was:\nsub-type=widget\n\nThe user-controlled value was:\nwidget widget_search clearfix widget-colormag_header_sidebar"
+							"otherinfo": "User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:\n\nhttps://blog.zenika.com/category/themes/\n\nappears to include user input in:\na(n) [aside] tag [class] attribute\n\nThe user input found was:\nsub-type=widget\n\nThe user-controlled value was:\nwidget widget_search clearfix widget-colormag_header_sidebar"
 						}
 					],
-					"count": "5",
+					"count": "7",
 					"systemic": false,
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://blog.zenika.com/</p><p></p><p>appears to include user input in:</p><p>a(n) [input] tag [value] attribute</p><p></p><p>The user input found was:</p><p>_wpnonce=9cf1aebd94</p><p></p><p>The user-controlled value was:</p><p>9cf1aebd94</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://blog.zenika.com/category/themes/?author=ZAP&comment=Zaproxy+dolore+alias+impedit+expedita+quisquam.&email=zaproxy%40example.com&submit=Publier+un+commentaire&url=https%3A%2F%2Fzap.example.com</p><p></p><p>appears to include user input in:</p><p>a(n) [input] tag [value] attribute</p><p></p><p>The user input found was:</p><p>submit=Publier un commentaire</p><p></p><p>The user-controlled value was:</p><p>publier un commentaire</p>",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "2182"
+					"sourceid": "3880"
 				}
 			]
 		}

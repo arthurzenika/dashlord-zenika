@@ -1,8 +1,8 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 13 Sept 2026 02:39:06",
-	"created": "2026-09-13T02:39:06.752295149Z",
+	"@generated": "Sun, 20 Sept 2026 02:31:37",
+	"created": "2026-09-20T02:31:37.919512311Z",
 	"insights":[
 		{
 			"level": "Low",
@@ -106,7 +106,7 @@
 			"site": "https://oss.zenika.com",
 			"key": "insight.response.slow",
 			"description": "Percentage of slow responses",
-			"statistic": "83"
+			"statistic": "77"
 		}
 	],
 	"site":[ 
@@ -137,9 +137,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "90",
-							"uri": "https://oss.zenika.com/%2Fpromote-opensource.jpeg&w=640&q=75",
-							"nodeName": "https:\/\/oss.zenika.com\/\/promote-opensource.jpeg\u0026w=640\u0026q=75",
+							"id": "41",
+							"uri": "https://oss.zenika.com/",
+							"nodeName": "https:\/\/oss.zenika.com\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -148,8 +148,8 @@
 						},
 						{
 							"id": "85",
-							"uri": "https://oss.zenika.com/%2Fzenika-opensource-logo.png&w=64&q=75",
-							"nodeName": "https:\/\/oss.zenika.com\/\/zenika-opensource-logo.png\u0026w=64\u0026q=75",
+							"uri": "https://oss.zenika.com/%2Fzenika-opensource-logo.png&w=32&q=75",
+							"nodeName": "https:\/\/oss.zenika.com\/\/zenika-opensource-logo.png\u0026w=32\u0026q=75",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -157,7 +157,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "16",
+							"id": "73",
 							"uri": "https://oss.zenika.com/robots.txt",
 							"nodeName": "https:\/\/oss.zenika.com\/robots.txt",
 							"method": "GET",
@@ -167,7 +167,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "18",
+							"id": "79",
 							"uri": "https://oss.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/oss.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -207,7 +207,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "93",
+							"id": "37",
 							"uri": "https://oss.zenika.com/",
 							"nodeName": "https:\/\/oss.zenika.com\/",
 							"method": "GET",
@@ -217,7 +217,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "118",
+							"id": "111",
 							"uri": "https://oss.zenika.com/contributors",
 							"nodeName": "https:\/\/oss.zenika.com\/contributors",
 							"method": "GET",
@@ -247,7 +247,7 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "13",
+							"id": "33",
 							"uri": "https://oss.zenika.com",
 							"nodeName": "https:\/\/oss.zenika.com",
 							"method": "GET",
@@ -255,9 +255,19 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "56",
+							"uri": "https://oss.zenika.com/",
+							"nodeName": "https:\/\/oss.zenika.com\/",
+							"method": "GET",
+							"param": "Cross-Origin-Embedder-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Embedder-Policy header appropriately, and that it sets the Cross-Origin-Embedder-Policy header to 'require-corp' for documents.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Embedder-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-embedder-policy).</p>",
 					"otherinfo": "",
@@ -277,7 +287,7 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "34",
 							"uri": "https://oss.zenika.com",
 							"nodeName": "https:\/\/oss.zenika.com",
 							"method": "GET",
@@ -285,9 +295,19 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
+						},
+						{
+							"id": "57",
+							"uri": "https://oss.zenika.com/",
+							"nodeName": "https:\/\/oss.zenika.com\/",
+							"method": "GET",
+							"param": "Cross-Origin-Opener-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
 						}
 					],
-					"count": "1",
+					"count": "2",
 					"systemic": false,
 					"solution": "<p>Ensure that the application/web server sets the Cross-Origin-Opener-Policy header appropriately, and that it sets the Cross-Origin-Opener-Policy header to 'same-origin' for documents.</p><p>'same-origin-allow-popups' is considered as less secured and should be avoided.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that supports the Cross-Origin-Opener-Policy header (https://caniuse.com/mdn-http_headers_cross-origin-opener-policy).</p>",
 					"otherinfo": "",
@@ -307,7 +327,7 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "12",
+							"id": "32",
 							"uri": "https://oss.zenika.com",
 							"nodeName": "https:\/\/oss.zenika.com",
 							"method": "GET",
@@ -317,9 +337,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "48",
-							"uri": "https://oss.zenika.com/_next/static/chunks/main-app-682b115844d0a6a0.js",
-							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/main-app-682b115844d0a6a0.js",
+							"id": "13",
+							"uri": "https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/webpack-f74eead0ea83e6da.js",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -327,7 +347,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "54",
+							"id": "36",
+							"uri": "https://oss.zenika.com/_next/static/css/a3599e7b1e5e6f94.css",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/css\/a3599e7b1e5e6f94.css",
+							"method": "GET",
+							"param": "Cross-Origin-Resource-Policy",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "27",
 							"uri": "https://oss.zenika.com/_next/static/media/22a5144ee8d83bca-s.p.woff2",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/media\/22a5144ee8d83bca-s.p.woff2",
 							"method": "GET",
@@ -337,19 +367,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "40",
+							"id": "20",
 							"uri": "https://oss.zenika.com/_next/static/media/7d4881bb7e1bf84d-s.p.woff2",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/media\/7d4881bb7e1bf84d-s.p.woff2",
-							"method": "GET",
-							"param": "Cross-Origin-Resource-Policy",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "23",
-							"uri": "https://oss.zenika.com/favicon.ico",
-							"nodeName": "https:\/\/oss.zenika.com\/favicon.ico",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -377,7 +397,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "11",
+							"id": "31",
 							"uri": "https://oss.zenika.com",
 							"nodeName": "https:\/\/oss.zenika.com",
 							"method": "GET",
@@ -387,7 +407,27 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
+							"id": "54",
+							"uri": "https://oss.zenika.com/",
+							"nodeName": "https:\/\/oss.zenika.com\/",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "60",
+							"uri": "https://oss.zenika.com/_next/static/chunks/504-d3ae62a52609c0f5.js",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/504-d3ae62a52609c0f5.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "63",
 							"uri": "https://oss.zenika.com/_next/static/chunks/main-app-682b115844d0a6a0.js",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/main-app-682b115844d0a6a0.js",
 							"method": "GET",
@@ -397,29 +437,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "58",
+							"id": "12",
 							"uri": "https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/webpack-f74eead0ea83e6da.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "51",
-							"uri": "https://oss.zenika.com/robots.txt",
-							"nodeName": "https:\/\/oss.zenika.com\/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "55",
-							"uri": "https://oss.zenika.com/sitemap.xml",
-							"nodeName": "https:\/\/oss.zenika.com\/sitemap.xml",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -457,9 +477,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "92",
-							"uri": "https://oss.zenika.com/%2Fpromote-opensource.jpeg&w=640&q=75",
-							"nodeName": "https:\/\/oss.zenika.com\/\/promote-opensource.jpeg\u0026w=640\u0026q=75",
+							"id": "52",
+							"uri": "https://oss.zenika.com/",
+							"nodeName": "https:\/\/oss.zenika.com\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -468,8 +488,8 @@
 						},
 						{
 							"id": "87",
-							"uri": "https://oss.zenika.com/%2Fzenika-opensource-logo.png&w=64&q=75",
-							"nodeName": "https:\/\/oss.zenika.com\/\/zenika-opensource-logo.png\u0026w=64\u0026q=75",
+							"uri": "https://oss.zenika.com/%2Fzenika-opensource-logo.png&w=32&q=75",
+							"nodeName": "https:\/\/oss.zenika.com\/\/zenika-opensource-logo.png\u0026w=32\u0026q=75",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -477,7 +497,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "31",
+							"id": "75",
 							"uri": "https://oss.zenika.com/robots.txt",
 							"nodeName": "https:\/\/oss.zenika.com\/robots.txt",
 							"method": "GET",
@@ -487,7 +507,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "34",
+							"id": "81",
 							"uri": "https://oss.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/oss.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -517,7 +537,7 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
-							"id": "82",
+							"id": "78",
 							"uri": "https://oss.zenika.com/_next/image?q=75&url=%2Fzenika-opensource-logo.png&w=64",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/image (q,url,w)",
 							"method": "GET",
@@ -534,7 +554,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "84"
+					"sourceid": "85"
 				},
 				{
 					"pluginid": "10094",
@@ -547,7 +567,7 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "89",
+							"id": "84",
 							"uri": "https://oss.zenika.com/_next/image?q=75&url=%2Fpromote-opensource.jpeg&w=3840",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/image (q,url,w)",
 							"method": "GET",
@@ -564,7 +584,7 @@
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "89"
+					"sourceid": "87"
 				},
 				{
 					"pluginid": "10109",
@@ -587,19 +607,19 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "91",
-							"uri": "https://oss.zenika.com/%2Fpromote-opensource.jpeg&w=640&q=75",
-							"nodeName": "https:\/\/oss.zenika.com\/\/promote-opensource.jpeg\u0026w=640\u0026q=75",
+							"id": "46",
+							"uri": "https://oss.zenika.com/",
+							"nodeName": "https:\/\/oss.zenika.com\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "<script src=\"/_next/static/chunks/4bd1b696-c023c6e3521b1417.js\" async=\"\"></script>",
-							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
+							"evidence": "<a target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 underline-offset-4 hover:underline h-10 text-accent hover:text-accent/80 p-0\" href=\"\">Access Resource<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-external-link ml-2 h-4 w-4\" aria-hidden=\"true\"><path d=\"M15 3h6v6\"></path><path d=\"M10 14 21 3\"></path><path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\"></path></svg></a>",
+							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
 							"id": "86",
-							"uri": "https://oss.zenika.com/%2Fzenika-opensource-logo.png&w=64&q=75",
-							"nodeName": "https:\/\/oss.zenika.com\/\/zenika-opensource-logo.png\u0026w=64\u0026q=75",
+							"uri": "https://oss.zenika.com/%2Fzenika-opensource-logo.png&w=32&q=75",
+							"nodeName": "https:\/\/oss.zenika.com\/\/zenika-opensource-logo.png\u0026w=32\u0026q=75",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -607,7 +627,7 @@
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "24",
+							"id": "74",
 							"uri": "https://oss.zenika.com/robots.txt",
 							"nodeName": "https:\/\/oss.zenika.com\/robots.txt",
 							"method": "GET",
@@ -617,7 +637,7 @@
 							"otherinfo": "No links have been found while there are scripts, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "25",
+							"id": "80",
 							"uri": "https://oss.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/oss.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -657,7 +677,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "94",
+							"id": "40",
 							"uri": "https://oss.zenika.com/",
 							"nodeName": "https:\/\/oss.zenika.com\/",
 							"method": "GET",
@@ -693,47 +713,47 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 2919879",
+							"evidence": "Age: 3524230",
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						},
 						{
-							"id": "27",
+							"id": "6",
+							"uri": "https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/webpack-f74eead0ea83e6da.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0",
+							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
+						},
+						{
+							"id": "30",
+							"uri": "https://oss.zenika.com/_next/static/css/a3599e7b1e5e6f94.css",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/css\/a3599e7b1e5e6f94.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0",
+							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
+						},
+						{
+							"id": "22",
+							"uri": "https://oss.zenika.com/_next/static/media/22a5144ee8d83bca-s.p.woff2",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/media\/22a5144ee8d83bca-s.p.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "Age: 0",
+							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
+						},
+						{
+							"id": "14",
 							"uri": "https://oss.zenika.com/_next/static/media/7d4881bb7e1bf84d-s.p.woff2",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/media\/7d4881bb7e1bf84d-s.p.woff2",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Age: 124",
-							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"id": "15",
-							"uri": "https://oss.zenika.com/favicon.ico",
-							"nodeName": "https:\/\/oss.zenika.com\/favicon.ico",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 2919880",
-							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"id": "26",
-							"uri": "https://oss.zenika.com/robots.txt",
-							"nodeName": "https:\/\/oss.zenika.com\/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 2919881",
-							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
-						},
-						{
-							"id": "28",
-							"uri": "https://oss.zenika.com/sitemap.xml",
-							"nodeName": "https:\/\/oss.zenika.com\/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Age: 2919881",
+							"evidence": "Age: 0",
 							"otherinfo": "The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use."
 						}
 					],
@@ -757,7 +777,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "24",
 							"uri": "https://oss.zenika.com",
 							"nodeName": "https:\/\/oss.zenika.com",
 							"method": "GET",
@@ -767,7 +787,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "32",
+							"id": "9",
+							"uri": "https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/webpack-f74eead0ea83e6da.js",
+							"method": "GET",
+							"param": "Sec-Fetch-Dest",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "17",
 							"uri": "https://oss.zenika.com/_next/static/media/7d4881bb7e1bf84d-s.p.woff2",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/media\/7d4881bb7e1bf84d-s.p.woff2",
 							"method": "GET",
@@ -775,39 +805,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"id": "20",
-							"uri": "https://oss.zenika.com/favicon.ico",
-							"nodeName": "https:\/\/oss.zenika.com\/favicon.ico",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "41",
-							"uri": "https://oss.zenika.com/robots.txt",
-							"nodeName": "https:\/\/oss.zenika.com\/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "43",
-							"uri": "https://oss.zenika.com/sitemap.xml",
-							"nodeName": "https:\/\/oss.zenika.com\/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Dest",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Dest header is included in request headers.</p>",
 					"otherinfo": "",
@@ -827,7 +827,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "7",
+							"id": "23",
 							"uri": "https://oss.zenika.com",
 							"nodeName": "https:\/\/oss.zenika.com",
 							"method": "GET",
@@ -837,7 +837,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
+							"id": "8",
+							"uri": "https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/webpack-f74eead0ea83e6da.js",
+							"method": "GET",
+							"param": "Sec-Fetch-Mode",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "16",
 							"uri": "https://oss.zenika.com/_next/static/media/7d4881bb7e1bf84d-s.p.woff2",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/media\/7d4881bb7e1bf84d-s.p.woff2",
 							"method": "GET",
@@ -845,39 +855,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"id": "19",
-							"uri": "https://oss.zenika.com/favicon.ico",
-							"nodeName": "https:\/\/oss.zenika.com\/favicon.ico",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "38",
-							"uri": "https://oss.zenika.com/robots.txt",
-							"nodeName": "https:\/\/oss.zenika.com\/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "37",
-							"uri": "https://oss.zenika.com/sitemap.xml",
-							"nodeName": "https:\/\/oss.zenika.com\/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Mode",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Mode header is included in request headers.</p>",
 					"otherinfo": "",
@@ -897,7 +877,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "6",
+							"id": "21",
 							"uri": "https://oss.zenika.com",
 							"nodeName": "https:\/\/oss.zenika.com",
 							"method": "GET",
@@ -907,7 +887,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "29",
+							"id": "7",
+							"uri": "https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/webpack-f74eead0ea83e6da.js",
+							"method": "GET",
+							"param": "Sec-Fetch-Site",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "15",
 							"uri": "https://oss.zenika.com/_next/static/media/7d4881bb7e1bf84d-s.p.woff2",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/media\/7d4881bb7e1bf84d-s.p.woff2",
 							"method": "GET",
@@ -915,39 +905,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"id": "17",
-							"uri": "https://oss.zenika.com/favicon.ico",
-							"nodeName": "https:\/\/oss.zenika.com\/favicon.ico",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "35",
-							"uri": "https://oss.zenika.com/robots.txt",
-							"nodeName": "https:\/\/oss.zenika.com\/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "36",
-							"uri": "https://oss.zenika.com/sitemap.xml",
-							"nodeName": "https:\/\/oss.zenika.com\/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-Site",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-Site header is included in request headers.</p>",
 					"otherinfo": "",
@@ -967,7 +927,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "9",
+							"id": "25",
 							"uri": "https://oss.zenika.com",
 							"nodeName": "https:\/\/oss.zenika.com",
 							"method": "GET",
@@ -977,7 +937,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "33",
+							"id": "10",
+							"uri": "https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/webpack-f74eead0ea83e6da.js",
+							"method": "GET",
+							"param": "Sec-Fetch-User",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "18",
 							"uri": "https://oss.zenika.com/_next/static/media/7d4881bb7e1bf84d-s.p.woff2",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/media\/7d4881bb7e1bf84d-s.p.woff2",
 							"method": "GET",
@@ -985,39 +955,9 @@
 							"attack": "",
 							"evidence": "",
 							"otherinfo": ""
-						},
-						{
-							"id": "21",
-							"uri": "https://oss.zenika.com/favicon.ico",
-							"nodeName": "https:\/\/oss.zenika.com\/favicon.ico",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "42",
-							"uri": "https://oss.zenika.com/robots.txt",
-							"nodeName": "https:\/\/oss.zenika.com\/robots.txt",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "45",
-							"uri": "https://oss.zenika.com/sitemap.xml",
-							"nodeName": "https:\/\/oss.zenika.com\/sitemap.xml",
-							"method": "GET",
-							"param": "Sec-Fetch-User",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "3",
 					"systemic": false,
 					"solution": "<p>Ensure that Sec-Fetch-User header is included in user initiated requests.</p>",
 					"otherinfo": "",
@@ -1037,7 +977,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "10",
+							"id": "28",
 							"uri": "https://oss.zenika.com",
 							"nodeName": "https:\/\/oss.zenika.com",
 							"method": "GET",
@@ -1047,9 +987,9 @@
 							"otherinfo": "The response is stale, and stale responses are not configured to be re-validated or blocked, using the 'must-revalidate', 'proxy-revalidate', 's-maxage', or 'max-age' response 'Cache-Control' directives."
 						},
 						{
-							"id": "46",
-							"uri": "https://oss.zenika.com/_next/static/chunks/main-app-682b115844d0a6a0.js",
-							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/main-app-682b115844d0a6a0.js",
+							"id": "11",
+							"uri": "https://oss.zenika.com/_next/static/chunks/webpack-f74eead0ea83e6da.js",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/chunks\/webpack-f74eead0ea83e6da.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1057,7 +997,27 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "39",
+							"id": "35",
+							"uri": "https://oss.zenika.com/_next/static/css/a3599e7b1e5e6f94.css",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/css\/a3599e7b1e5e6f94.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=31536000",
+							"otherinfo": ""
+						},
+						{
+							"id": "26",
+							"uri": "https://oss.zenika.com/_next/static/media/22a5144ee8d83bca-s.p.woff2",
+							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/media\/22a5144ee8d83bca-s.p.woff2",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=31536000",
+							"otherinfo": ""
+						},
+						{
+							"id": "19",
 							"uri": "https://oss.zenika.com/_next/static/media/7d4881bb7e1bf84d-s.p.woff2",
 							"nodeName": "https:\/\/oss.zenika.com\/_next\/static\/media\/7d4881bb7e1bf84d-s.p.woff2",
 							"method": "GET",
@@ -1065,26 +1025,6 @@
 							"attack": "",
 							"evidence": "max-age=31536000",
 							"otherinfo": ""
-						},
-						{
-							"id": "22",
-							"uri": "https://oss.zenika.com/favicon.ico",
-							"nodeName": "https:\/\/oss.zenika.com\/favicon.ico",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "The response is stale, and stale responses are not configured to be re-validated or blocked, using the 'must-revalidate', 'proxy-revalidate', 's-maxage', or 'max-age' response 'Cache-Control' directives."
-						},
-						{
-							"id": "49",
-							"uri": "https://oss.zenika.com/robots.txt",
-							"nodeName": "https:\/\/oss.zenika.com\/robots.txt",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "The response is stale, and stale responses are not configured to be re-validated or blocked, using the 'must-revalidate', 'proxy-revalidate', 's-maxage', or 'max-age' response 'Cache-Control' directives."
 						}
 					],
 					"count": "5",

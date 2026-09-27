@@ -19,21 +19,21 @@
       "x-permitted-cross-domain-policies": "none",
       "referrer-policy": "strict-origin-when-cross-origin",
       "content-security-policy": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
-      "link": "<https://jobs.zenika.com/.well-known/api-catalog>; rel=\"api-catalog\",<https://assets-aws.teamtailor-cdn.com/assets/cookies-b3e5afe6.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-/XlzIll1NPEDkH/JVQVTHjRes32bN+N2Za30kywIhCI0xbiFkLnOpH+VCdf3FWsj; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/careersite-efca90b3.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-SQA72c7giJ6QFW6pW43laTcEeH4SosCVxswgPRpJRl0NWxTuS/PEKw9tXi53xq4X; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/font-awesome-108c934a.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-Nup3OVE57HUO/Q0rqAfNFQ/IY6YeX3Cfliaka5adn/ZDM7FHqhPeqdJfkQNaKypg; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/careersite-dc022725.css>; rel=preload; as=style; crossorigin=anonymous; integrity=sha384-qfCic99aeAcLkAbGCSFpCD6Di35F6Y7V78y/7vRTylFIY45dHvLXd5tzr+ccbkEt; nopush",
+      "strict-transport-security": "max-age=31536000; includeSubDomains",
+      "link": "<https://jobs.zenika.com/.well-known/api-catalog>; rel=\"api-catalog\",<https://assets-aws.teamtailor-cdn.com/assets/cookies-b3e5afe6.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-/XlzIll1NPEDkH/JVQVTHjRes32bN+N2Za30kywIhCI0xbiFkLnOpH+VCdf3FWsj; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/careersite-efca90b3.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-SQA72c7giJ6QFW6pW43laTcEeH4SosCVxswgPRpJRl0NWxTuS/PEKw9tXi53xq4X; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/font-awesome-2bbc44ad.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-wvJrKr6fXfXoAnJxcq/cuQFpUIxj9sU091NYJdB/s1vWgHKDU+6p30XewuXoD/KB; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/careersite-774a5a0d.css>; rel=preload; as=style; crossorigin=anonymous; integrity=sha384-57cecOgtm9UueDuee53d8Jdrvq1HfDc1SrRsvA6stIQEGNPbtIwb7x2Fd+ELhkj0; nopush",
       "content-signal": "search=yes, ai-train=no, ai-input=yes",
-      "etag": "W/\"43be342f4787238f2f85f995a9949854\"",
-      "x-request-id": "bf0b5726-5d75-4b8f-804d-da2a3d547f33",
+      "etag": "W/\"48152bfb42ffec6ac1a842be93917f34\"",
+      "x-request-id": "2a80e196-873e-4484-97e9-ed10809c6e5c",
       "accept-ranges": "bytes",
-      "date": "Sun, 20 Sep 2026 02:38:29 GMT",
+      "date": "Sun, 27 Sep 2026 02:50:03 GMT",
       "via": "1.1 varnish",
-      "age": "117864",
-      "x-served-by": "cache-chi-kmdw8640076-CHI",
+      "age": "298438",
+      "x-served-by": "cache-iad-kiad7000070-IAD",
       "x-cache": "HIT",
-      "x-cache-hits": "7",
-      "x-timer": "S1789871910.848545,VS0,VE0",
+      "x-cache-hits": "3",
+      "x-timer": "S1790477404.896359,VS0,VE0",
       "vary": "Origin",
-      "cache-control": "private, no-store",
-      "strict-transport-security": "max-age=31536000"
+      "cache-control": "private, no-store"
     }
   },
   "tests": {
@@ -108,8 +108,8 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000",
-      "includeSubDomains": false,
+      "data": "max-age=31536000; includeSubDomains",
+      "includeSubDomains": true,
       "maxAge": 31536000,
       "preload": false,
       "preloaded": false
@@ -128,9 +128,9 @@
           "crossorigin": "anonymous",
           "integrity": "sha384-SQA72c7giJ6QFW6pW43laTcEeH4SosCVxswgPRpJRl0NWxTuS/PEKw9tXi53xq4X"
         },
-        "https://assets-aws.teamtailor-cdn.com/assets/font-awesome-108c934a.js": {
+        "https://assets-aws.teamtailor-cdn.com/assets/font-awesome-2bbc44ad.js": {
           "crossorigin": "anonymous",
-          "integrity": "sha384-Nup3OVE57HUO/Q0rqAfNFQ/IY6YeX3Cfliaka5adn/ZDM7FHqhPeqdJfkQNaKypg"
+          "integrity": "sha384-wvJrKr6fXfXoAnJxcq/cuQFpUIxj9sU091NYJdB/s1vWgHKDU+6p30XewuXoD/KB"
         }
       }
     },

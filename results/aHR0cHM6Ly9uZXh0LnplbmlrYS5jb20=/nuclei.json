@@ -41,9 +41,9 @@
       "url": "https://next.zenika.com",
       "matched-at": "https://next.zenika.com",
       "request": "POST / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 400 Bad Request\r\nContent-Length: 302\r\nAccept-Ranges: bytes\r\nContent-Type: application/xml\r\nDate: Sun, 20 Sep 2026 02:45:14 GMT\r\nX-Amz-Request-Id: tx000003a1ffd1babc53d03-006aaf48ba-43164c21-default\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><Error><Code>InvalidArgument</Code><Message>Request Content-Type is not multipart/form-data</Message><BucketName>next.zenika.com</BucketName><RequestId>tx000003a1ffd1babc53d03-006aaf48ba-43164c21-default</RequestId><HostId>43164c21-default-default</HostId></Error>",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:45:14.168387613Z",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Length: 302\r\nAccept-Ranges: bytes\r\nContent-Type: application/xml\r\nDate: Sun, 27 Sep 2026 02:52:38 GMT\r\nX-Amz-Request-Id: tx00000f1c2cb5990615e7d-006ab884f6-4380bf76-default\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><Error><Code>InvalidArgument</Code><Message>Request Content-Type is not multipart/form-data</Message><BucketName>next.zenika.com</BucketName><RequestId>tx00000f1c2cb5990615e7d-006ab884f6-4380bf76-default</RequestId><HostId>4380bf76-default-default</HostId></Error>",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:52:38.890342815Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: next.zenika.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
       "matcher-status": true
     },
@@ -85,54 +85,20 @@
       "scheme": "https",
       "url": "https://next.zenika.com",
       "matched-at": "https://next.zenika.com/",
-      "request": "GET / HTTP/1.1\r\nHost: dankh0fcr7mqajcr2j4gwnbp85hjqqdki.oast.site\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nCache-Control: no-transform\r\nAccept: */*\r\n\r\n",
-      "response": "HTTP/1.1 404 Not Found\r\nContent-Length: 280\r\naccept-ranges: bytes\r\ncontent-length: 280\r\ncontent-type: application/xml\r\ndate: Sun, 20 Sep 2026 02:45:21 GMT\r\nx-amz-request-id: tx0000036e765ccc7fc0fdf-006aaf48bf-43164c21-default\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><Error><Code>NoSuchBucket</Code><Message></Message><BucketName>dankh0fcr7mqajcr2j4gwnbp85hjqqdki.oast.site</BucketName><RequestId>tx0000036e765ccc7fc0fdf-006aaf48bf-43164c21-default</RequestId><HostId>43164c21-default-default</HostId></Error>",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:45:22.972866343Z",
+      "request": "GET / HTTP/1.1\r\nHost: das89fhe1tba74r9of9gb4kerrbcubcfm.oast.fun\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nCache-Control: no-transform\r\nAccept: */*\r\n\r\n",
+      "response": "HTTP/1.1 404 Not Found\r\nContent-Length: 279\r\naccept-ranges: bytes\r\ncontent-length: 279\r\ncontent-type: application/xml\r\ndate: Sun, 27 Sep 2026 02:52:44 GMT\r\nx-amz-request-id: tx000001d6ee8e9433f2fd6-006ab884fb-4380bf76-default\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><Error><Code>NoSuchBucket</Code><Message></Message><BucketName>das89fhe1tba74r9of9gb4kerrbcubcfm.oast.fun</BucketName><RequestId>tx000001d6ee8e9433f2fd6-006ab884fb-4380bf76-default</RequestId><HostId>4380bf76-default-default</HostId></Error>",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:52:48.146646131Z",
       "interaction": {
         "protocol": "dns",
-        "unique-id": "dankh0fcr7mqajcr2j4gwnbp85hjqqdki",
-        "full-id": "dankh0fcr7mqajcr2j4gwnbp85hjqqdki",
+        "unique-id": "das89fhe1tba74r9of9gb4kerrbcubcfm",
+        "full-id": "das89fhe1tba74r9of9gb4kerrbcubcfm",
         "q-type": "CNAME",
-        "raw-request": ";; opcode: QUERY, status: NOERROR, id: 15202\n;; flags:; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;dankh0fcr7mqajcr2j4gwnbp85hjqqdki.oast.site.\tIN\t CNAME\n",
-        "raw-response": ";; opcode: QUERY, status: NOERROR, id: 15202\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 2\n\n;; QUESTION SECTION:\n;dankh0fcr7mqajcr2j4gwnbp85hjqqdki.oast.site.\tIN\t CNAME\n\n;; ANSWER SECTION:\ndankh0fcr7mqajcr2j4gwnbp85hjqqdki.oast.site.\t3600\tIN\tA\t178.128.16.97\n\n;; AUTHORITY SECTION:\ndankh0fcr7mqajcr2j4gwnbp85hjqqdki.oast.site.\t3600\tIN\tNS\tns1.oast.site.\ndankh0fcr7mqajcr2j4gwnbp85hjqqdki.oast.site.\t3600\tIN\tNS\tns2.oast.site.\n\n;; ADDITIONAL SECTION:\nns1.oast.site.\t3600\tIN\tA\t178.128.16.97\nns2.oast.site.\t3600\tIN\tA\t178.128.16.97\n",
-        "remote-address": "91.208.207.103",
-        "timestamp": "2026-09-20T02:45:20.016667826Z"
+        "raw-request": ";; opcode: QUERY, status: NOERROR, id: 28080\n;; flags:; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;das89fhe1tba74r9of9gb4kerrbcubcfm.oast.fun.\tIN\t CNAME\n",
+        "raw-response": ";; opcode: QUERY, status: NOERROR, id: 28080\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 2\n\n;; QUESTION SECTION:\n;das89fhe1tba74r9of9gb4kerrbcubcfm.oast.fun.\tIN\t CNAME\n\n;; ANSWER SECTION:\ndas89fhe1tba74r9of9gb4kerrbcubcfm.oast.fun.\t3600\tIN\tA\t206.189.156.69\n\n;; AUTHORITY SECTION:\ndas89fhe1tba74r9of9gb4kerrbcubcfm.oast.fun.\t3600\tIN\tNS\tns1.oast.fun.\ndas89fhe1tba74r9of9gb4kerrbcubcfm.oast.fun.\t3600\tIN\tNS\tns2.oast.fun.\n\n;; ADDITIONAL SECTION:\nns1.oast.fun.\t3600\tIN\tA\t206.189.156.69\nns2.oast.fun.\t3600\tIN\tA\t206.189.156.69\n",
+        "remote-address": "91.208.207.29",
+        "timestamp": "2026-09-27T02:52:43.881359921Z"
       },
-      "matcher-status": true
-    },
-    {
-      "template": "http/technologies/aws/aws-bucket-service.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/aws-bucket-service",
-      "template-id": "aws-bucket-service",
-      "template-path": "/home/runner/nuclei-templates/http/technologies/aws/aws-bucket-service.yaml",
-      "info": {
-        "name": "Detect websites using AWS bucket storage",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "aws",
-          "tech",
-          "bucket",
-          "discovery"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "type": "http",
-      "host": "next.zenika.com",
-      "port": "443",
-      "scheme": "https",
-      "url": "https://next.zenika.com",
-      "matched-at": "https://next.zenika.com",
-      "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:16 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx00000ee773d4c72d9a45a-006aaf48f8-43164c21-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:16.244972117Z",
-      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
       "matcher-status": true
     },
     {
@@ -164,8 +130,8 @@
       "extracted-results": [
         "tls12"
       ],
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:17.595132432Z",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:41.474429842Z",
       "matcher-status": true
     },
     {
@@ -197,106 +163,31 @@
       "extracted-results": [
         "tls13"
       ],
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:17.877283429Z",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:41.761999501Z",
       "matcher-status": true
     },
     {
-      "template": "http/miscellaneous/external-service-interaction.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/external-service-interaction",
-      "template-id": "external-service-interaction",
-      "template-path": "/home/runner/nuclei-templates/http/miscellaneous/external-service-interaction.yaml",
+      "template": "http/technologies/aws/aws-bucket-service.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/aws-bucket-service",
+      "template-id": "aws-bucket-service",
+      "template-path": "/home/runner/nuclei-templates/http/technologies/aws/aws-bucket-service.yaml",
       "info": {
-        "name": "External Service Interaction",
+        "name": "Detect websites using AWS bucket storage",
         "author": [
-          "andreluna"
+          "pdteam"
         ],
         "tags": [
-          "miscellaneous",
-          "http",
-          "misc",
-          "oast",
-          "vuln"
-        ],
-        "description": "External Service interaction via Host Header Injection.",
-        "reference": [
-          "https://portswigger.net/kb/issues/00300210_external-service-interaction-http",
-          "https://success.qualys.com/support/s/article/000006843",
-          "https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/17-Testing_for_Host_Header_Injection"
+          "aws",
+          "tech",
+          "bucket",
+          "discovery"
         ],
         "severity": "info",
         "metadata": {
           "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-918"
-          ]
         }
       },
-      "type": "http",
-      "host": "next.zenika.com",
-      "port": "443",
-      "scheme": "https",
-      "url": "https://next.zenika.com",
-      "matched-at": "https://next.zenika.com/",
-      "request": "GET / HTTP/1.1\r\nHost: dankh0fcr7mqajcr2j4gihkoe35dx6gjn.oast.site\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 404 Not Found\r\nContent-Length: 280\r\nAccept-Ranges: bytes\r\nContent-Type: application/xml\r\nDate: Sun, 20 Sep 2026 02:46:18 GMT\r\nX-Amz-Request-Id: tx000004c97c431cd455ff7-006aaf48f9-43164c21-default\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><Error><Code>NoSuchBucket</Code><Message></Message><BucketName>dankh0fcr7mqajcr2j4gihkoe35dx6gjn.oast.site</BucketName><RequestId>tx000004c97c431cd455ff7-006aaf48f9-43164c21-default</RequestId><HostId>43164c21-default-default</HostId></Error>",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:22.972767971Z",
-      "interaction": {
-        "protocol": "dns",
-        "unique-id": "dankh0fcr7mqajcr2j4gihkoe35dx6gjn",
-        "full-id": "dankh0fcr7mqajcr2j4gihkoe35dx6gjn",
-        "q-type": "CNAME",
-        "raw-request": ";; opcode: QUERY, status: NOERROR, id: 45939\n;; flags:; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;dankh0fcr7mqajcr2j4gihkoe35dx6gjn.oast.site.\tIN\t CNAME\n",
-        "raw-response": ";; opcode: QUERY, status: NOERROR, id: 45939\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 2\n\n;; QUESTION SECTION:\n;dankh0fcr7mqajcr2j4gihkoe35dx6gjn.oast.site.\tIN\t CNAME\n\n;; ANSWER SECTION:\ndankh0fcr7mqajcr2j4gihkoe35dx6gjn.oast.site.\t3600\tIN\tA\t178.128.16.97\n\n;; AUTHORITY SECTION:\ndankh0fcr7mqajcr2j4gihkoe35dx6gjn.oast.site.\t3600\tIN\tNS\tns1.oast.site.\ndankh0fcr7mqajcr2j4gihkoe35dx6gjn.oast.site.\t3600\tIN\tNS\tns2.oast.site.\n\n;; ADDITIONAL SECTION:\nns1.oast.site.\t3600\tIN\tA\t178.128.16.97\nns2.oast.site.\t3600\tIN\tA\t178.128.16.97\n",
-        "remote-address": "91.208.207.103",
-        "timestamp": "2026-09-20T02:46:17.980087687Z"
-      },
-      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Host: dankh0fcr7mqajcr2j4gihkoe35dx6gjn.oast.site' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com/'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani",
-          "celbahraoui",
-          "safejulian"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic",
-          "vuln"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-693"
-          ]
-        }
-      },
-      "matcher-name": "x-content-type-options",
       "type": "http",
       "host": "next.zenika.com",
       "port": "443",
@@ -304,9 +195,9 @@
       "url": "https://next.zenika.com",
       "matched-at": "https://next.zenika.com",
       "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:22 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000005b5ed04dee0184dd-006aaf48fe-37903e17-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:23.029242224Z",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000004d3b6b21bb0071ff-006ab88545-43165c8f-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.31502605Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
       "matcher-status": true
     },
@@ -356,9 +247,9 @@
       "url": "https://next.zenika.com",
       "matched-at": "https://next.zenika.com",
       "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:22 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000005b5ed04dee0184dd-006aaf48fe-37903e17-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:23.029679866Z",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000007f920bc19c3d772d-006ab88545-431961b4-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.544465866Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
       "matcher-status": true
     },
@@ -408,165 +299,9 @@
       "url": "https://next.zenika.com",
       "matched-at": "https://next.zenika.com",
       "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:22 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000005b5ed04dee0184dd-006aaf48fe-37903e17-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:23.030097321Z",
-      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani",
-          "celbahraoui",
-          "safejulian"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic",
-          "vuln"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-693"
-          ]
-        }
-      },
-      "matcher-name": "cross-origin-resource-policy",
-      "type": "http",
-      "host": "next.zenika.com",
-      "port": "443",
-      "scheme": "https",
-      "url": "https://next.zenika.com",
-      "matched-at": "https://next.zenika.com",
-      "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:22 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000005b5ed04dee0184dd-006aaf48fe-37903e17-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:23.03049509Z",
-      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani",
-          "celbahraoui",
-          "safejulian"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic",
-          "vuln"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-693"
-          ]
-        }
-      },
-      "matcher-name": "content-security-policy",
-      "type": "http",
-      "host": "next.zenika.com",
-      "port": "443",
-      "scheme": "https",
-      "url": "https://next.zenika.com",
-      "matched-at": "https://next.zenika.com",
-      "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:22 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000005b5ed04dee0184dd-006aaf48fe-37903e17-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:23.030866579Z",
-      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani",
-          "celbahraoui",
-          "safejulian"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic",
-          "vuln"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-693"
-          ]
-        }
-      },
-      "matcher-name": "x-permitted-cross-domain-policies",
-      "type": "http",
-      "host": "next.zenika.com",
-      "port": "443",
-      "scheme": "https",
-      "url": "https://next.zenika.com",
-      "matched-at": "https://next.zenika.com",
-      "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:22 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000005b5ed04dee0184dd-006aaf48fe-37903e17-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:23.031225726Z",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000007f920bc19c3d772d-006ab88545-431961b4-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.544839476Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
       "matcher-status": true
     },
@@ -616,9 +351,61 @@
       "url": "https://next.zenika.com",
       "matched-at": "https://next.zenika.com",
       "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:22 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000005b5ed04dee0184dd-006aaf48fe-37903e17-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:23.031607164Z",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000007f920bc19c3d772d-006ab88545-431961b4-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.54510357Z",
+      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui",
+          "safejulian"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-693"
+          ]
+        }
+      },
+      "matcher-name": "cross-origin-resource-policy",
+      "type": "http",
+      "host": "next.zenika.com",
+      "port": "443",
+      "scheme": "https",
+      "url": "https://next.zenika.com",
+      "matched-at": "https://next.zenika.com",
+      "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000007f920bc19c3d772d-006ab88545-431961b4-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.545351855Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
       "matcher-status": true
     },
@@ -668,9 +455,9 @@
       "url": "https://next.zenika.com",
       "matched-at": "https://next.zenika.com",
       "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:22 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000005b5ed04dee0184dd-006aaf48fe-37903e17-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:23.031971951Z",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000007f920bc19c3d772d-006ab88545-431961b4-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.545626188Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
       "matcher-status": true
     },
@@ -720,9 +507,113 @@
       "url": "https://next.zenika.com",
       "matched-at": "https://next.zenika.com",
       "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:22 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000005b5ed04dee0184dd-006aaf48fe-37903e17-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:23.032330908Z",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000007f920bc19c3d772d-006ab88545-431961b4-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.545877479Z",
+      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui",
+          "safejulian"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-693"
+          ]
+        }
+      },
+      "matcher-name": "x-permitted-cross-domain-policies",
+      "type": "http",
+      "host": "next.zenika.com",
+      "port": "443",
+      "scheme": "https",
+      "url": "https://next.zenika.com",
+      "matched-at": "https://next.zenika.com",
+      "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000007f920bc19c3d772d-006ab88545-431961b4-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.54612376Z",
+      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui",
+          "safejulian"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-693"
+          ]
+        }
+      },
+      "matcher-name": "content-security-policy",
+      "type": "http",
+      "host": "next.zenika.com",
+      "port": "443",
+      "scheme": "https",
+      "url": "https://next.zenika.com",
+      "matched-at": "https://next.zenika.com",
+      "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000007f920bc19c3d772d-006ab88545-431961b4-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.546371844Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
       "matcher-status": true
     },
@@ -772,10 +663,119 @@
       "url": "https://next.zenika.com",
       "matched-at": "https://next.zenika.com",
       "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 20 Sep 2026 02:46:22 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000005b5ed04dee0184dd-006aaf48fe-37903e17-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:23.032710172Z",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000007f920bc19c3d772d-006ab88545-431961b4-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.54670113Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani",
+          "celbahraoui",
+          "safejulian"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic",
+          "vuln"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-693"
+          ]
+        }
+      },
+      "matcher-name": "x-content-type-options",
+      "type": "http",
+      "host": "next.zenika.com",
+      "port": "443",
+      "scheme": "https",
+      "url": "https://next.zenika.com",
+      "matched-at": "https://next.zenika.com",
+      "request": "GET / HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 27 Sep 2026 02:53:57 GMT\r\nEtag: W/\"6c4ac3dbcfd28731c0e604369e700e13\"\r\nLast-Modified: Mon, 21 Feb 2022 17:13:12 GMT\r\nVary: Accept-Encoding\r\nX-Amz-Request-Id: tx000007f920bc19c3d772d-006ab88545-431961b4-default\r\nX-Rgw-Object-Type: Normal\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n\n    <title>Svelte app</title>\n\n    <link rel=\"icon\" type=\"image/png\" href=\"/favicon.png\" />\n    <link rel=\"stylesheet\" href=\"/global.css\" />\n    <link rel=\"stylesheet\" href=\"/build/bundle.css\" />\n\n    <script defer src=\"/build/bundle.js\"></script>\n  </head>\n\n  <body></body>\n</html>\n",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:57.54708578Z",
+      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/miscellaneous/external-service-interaction.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/external-service-interaction",
+      "template-id": "external-service-interaction",
+      "template-path": "/home/runner/nuclei-templates/http/miscellaneous/external-service-interaction.yaml",
+      "info": {
+        "name": "External Service Interaction",
+        "author": [
+          "andreluna"
+        ],
+        "tags": [
+          "miscellaneous",
+          "http",
+          "misc",
+          "oast",
+          "vuln"
+        ],
+        "description": "External Service interaction via Host Header Injection.",
+        "reference": [
+          "https://portswigger.net/kb/issues/00300210_external-service-interaction-http",
+          "https://success.qualys.com/support/s/article/000006843",
+          "https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/17-Testing_for_Host_Header_Injection"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-918"
+          ]
+        }
+      },
+      "type": "http",
+      "host": "next.zenika.com",
+      "port": "443",
+      "scheme": "https",
+      "url": "https://next.zenika.com",
+      "matched-at": "https://next.zenika.com/",
+      "request": "GET / HTTP/1.1\r\nHost: das89fhe1tba74r9of9gc5r8h1fqzn3hd.oast.fun\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 404 Not Found\r\nContent-Length: 279\r\nAccept-Ranges: bytes\r\nContent-Type: application/xml\r\nDate: Sun, 27 Sep 2026 02:53:56 GMT\r\nX-Amz-Request-Id: tx00000f2b3682ff63078f5-006ab88544-43165c8f-default\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><Error><Code>NoSuchBucket</Code><Message></Message><BucketName>das89fhe1tba74r9of9gc5r8h1fqzn3hd.oast.fun</BucketName><RequestId>tx00000f2b3682ff63078f5-006ab88544-43165c8f-default</RequestId><HostId>43165c8f-default-default</HostId></Error>",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:53:58.312918239Z",
+      "interaction": {
+        "protocol": "dns",
+        "unique-id": "das89fhe1tba74r9of9gc5r8h1fqzn3hd",
+        "full-id": "das89fhe1tba74r9of9gc5r8h1fqzn3hd",
+        "q-type": "CNAME",
+        "raw-request": ";; opcode: QUERY, status: NOERROR, id: 8428\n;; flags:; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;das89fhe1tba74r9of9gc5r8h1fqzn3hd.oast.fun.\tIN\t CNAME\n",
+        "raw-response": ";; opcode: QUERY, status: NOERROR, id: 8428\n;; flags: qr aa; QUERY: 1, ANSWER: 1, AUTHORITY: 2, ADDITIONAL: 2\n\n;; QUESTION SECTION:\n;das89fhe1tba74r9of9gc5r8h1fqzn3hd.oast.fun.\tIN\t CNAME\n\n;; ANSWER SECTION:\ndas89fhe1tba74r9of9gc5r8h1fqzn3hd.oast.fun.\t3600\tIN\tA\t206.189.156.69\n\n;; AUTHORITY SECTION:\ndas89fhe1tba74r9of9gc5r8h1fqzn3hd.oast.fun.\t3600\tIN\tNS\tns1.oast.fun.\ndas89fhe1tba74r9of9gc5r8h1fqzn3hd.oast.fun.\t3600\tIN\tNS\tns2.oast.fun.\n\n;; ADDITIONAL SECTION:\nns1.oast.fun.\t3600\tIN\tA\t206.189.156.69\nns2.oast.fun.\t3600\tIN\tA\t206.189.156.69\n",
+        "remote-address": "91.208.207.29",
+        "timestamp": "2026-09-27T02:53:56.252410853Z"
+      },
+      "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Host: das89fhe1tba74r9of9gc5r8h1fqzn3hd.oast.fun' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com/'",
       "matcher-status": true
     },
     {
@@ -807,9 +807,9 @@
       "url": "https://next.zenika.com",
       "matched-at": "https://next.zenika.com/%c0",
       "request": "GET /%c0 HTTP/1.1\r\nHost: next.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 400 Bad Request\r\nContent-Length: 257\r\nAccept-Ranges: bytes\r\nContent-Type: application/xml\r\nDate: Sun, 20 Sep 2026 02:46:31 GMT\r\nX-Amz-Request-Id: tx0000000523b6aac2cee43-006aaf4907-37903bcb-default\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><Error><Code>InvalidObjectName</Code><Message></Message><BucketName>next.zenika.com</BucketName><RequestId>tx0000000523b6aac2cee43-006aaf4907-37903bcb-default</RequestId><HostId>37903bcb-default-default</HostId></Error>",
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:46:31.677793335Z",
+      "response": "HTTP/1.1 400 Bad Request\r\nContent-Length: 257\r\nAccept-Ranges: bytes\r\nContent-Type: application/xml\r\nDate: Sun, 27 Sep 2026 02:54:09 GMT\r\nX-Amz-Request-Id: tx00000928aed6a73a88224-006ab88551-43165c8f-default\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><Error><Code>InvalidObjectName</Code><Message></Message><BucketName>next.zenika.com</BucketName><RequestId>tx00000928aed6a73a88224-006ab88551-43165c8f-default</RequestId><HostId>43165c8f-default-default</HostId></Error>",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:54:10.022231978Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://next.zenika.com/%c0'",
       "matcher-status": true
     },
@@ -846,9 +846,9 @@
       "extracted-results": [
         "cellar-c2.services.clever-cloud.com"
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 5343\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;next.zenika.com.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 5343\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;next.zenika.com.\tIN\t CNAME\n\n;; ANSWER SECTION:\nnext.zenika.com.\t300\tIN\tCNAME\tcellar-c2.services.clever-cloud.com.\n",
-      "timestamp": "2026-09-20T02:47:00.979534275Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 37824\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;next.zenika.com.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 37824\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;next.zenika.com.\tIN\t CNAME\n\n;; ANSWER SECTION:\nnext.zenika.com.\t300\tIN\tCNAME\tcellar-c2.services.clever-cloud.com.\n",
+      "timestamp": "2026-09-27T02:54:20.940871264Z",
       "matcher-status": true
     },
     {
@@ -879,8 +879,8 @@
       "extracted-results": [
         "Let's Encrypt"
       ],
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:47:01.297564415Z",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:54:21.32908116Z",
       "matcher-status": true
     },
     {
@@ -911,8 +911,8 @@
       "extracted-results": [
         "next.zenika.com"
       ],
-      "ip": "91.208.207.148",
-      "timestamp": "2026-09-20T02:47:01.29773436Z",
+      "ip": "91.208.207.147",
+      "timestamp": "2026-09-27T02:54:21.329293638Z",
       "matcher-status": true
     }
   ]

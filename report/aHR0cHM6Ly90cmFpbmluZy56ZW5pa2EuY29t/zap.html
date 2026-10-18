@@ -218,7 +218,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 11 Oct 2026 02:56:11
+		Generated on Sun, 18 Oct 2026 02:10:41
 	</h3>
 
 	<h3>
@@ -243,7 +243,7 @@ td {
 					<div>High</div>
 				</td>
 				<td align="center">
-					<div>0</div>
+					<div>1</div>
 				</td>
 			</tr>
 			<tr>
@@ -305,10 +305,28 @@ td {
 					<div></div>
 				</td>
 				<td>
+					<div>ZAP errors logged - see the zap.log file for details</div>
+				</td>
+				<td align="center">
+					<div>1   </div>
+				</td>
+				</tr>
+			
+				<tr>
+				<td class="risk-1">
+					<div>Low</div>
+				</td>
+				<td>
+					<div>Warning</div>
+				</td>
+				<td>
+					<div></div>
+				</td>
+				<td>
 					<div>ZAP warnings logged - see the zap.log file for details</div>
 				</td>
 				<td align="center">
-					<div>3   </div>
+					<div>7   </div>
 				</td>
 				</tr>
 			
@@ -326,7 +344,7 @@ td {
 					<div>Percentage of responses with status code 2xx</div>
 				</td>
 				<td align="center">
-					<div>98 %</div>
+					<div>94 %</div>
 				</td>
 				</tr>
 			
@@ -344,7 +362,7 @@ td {
 					<div>Percentage of responses with status code 3xx</div>
 				</td>
 				<td align="center">
-					<div>1 %</div>
+					<div>5 %</div>
 				</td>
 				</tr>
 			
@@ -380,7 +398,7 @@ td {
 					<div>Percentage of endpoints with content type text/html</div>
 				</td>
 				<td align="center">
-					<div>99 %</div>
+					<div>96 %</div>
 				</td>
 				</tr>
 			
@@ -434,7 +452,7 @@ td {
 					<div>Count of total endpoints</div>
 				</td>
 				<td align="center">
-					<div>254   </div>
+					<div>52   </div>
 				</td>
 				</tr>
 			
@@ -484,11 +502,19 @@ td {
 					align="center">Number of Instances</th>
 			</tr>
 			<tr>
+				<td><a href="#10062">PII Disclosure</a></td>
+				<td align="center" class="risk-3">High</td>
+				
+				
+				<td align="center">1</td>
+				
+			</tr>
+			<tr>
 				<td><a href="#90022">Application Error Disclosure</a></td>
 				<td align="center" class="risk-2">Medium</td>
 				
 				
-				<td align="center">8</td>
+				<td align="center">4</td>
 				
 			</tr>
 			<tr>
@@ -676,6 +702,110 @@ td {
 		
 			<table class="results">
 				<tr height="24">
+					<th width="20%" class="risk-3"><a
+						id="10062"></a>
+						<div>High</div></th>
+					<th class="risk-3">PII Disclosure</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://training.zenika.com/fr/zenika-training">https://training.zenika.com/fr/zenika-training</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://training.zenika.com/fr/zenika-training</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">5013398881704</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>Credit Card Type detected: Maestro</div>
+							<br />
+						
+							<div>Bank Identification Number: 501339</div>
+							<br />
+						
+							<div>Brand: EBT</div>
+							<br />
+						
+							<div>Category: </div>
+							<br />
+						
+							<div>Issuer: </div>
+							
+						</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					
+					
+					<td width="80%">1</td>
+					
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Check the response for the potential presence of personally identifiable information (PII), ensure nothing sensitive is leaked by the application.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/359.html">359</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">13</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10062/">10062</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
 					<th width="20%" class="risk-2"><a
 						id="90022"></a>
 						<div>Medium</div></th>
@@ -737,78 +867,6 @@ td {
 						<td width="20%"
 							class="indent2">Node Name</td>
 						<td width="80%">https://training.zenika.com/en/formations</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Error Report</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/en/formations/121/grafana">https://training.zenika.com/en/formations/121/grafana</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/en/formations/121/grafana</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Error Report</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/en/formations/135/logging-monitoring-and-observability-in-google-cloud">https://training.zenika.com/en/formations/135/logging-monitoring-and-observability-in-google-cloud</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/en/formations/135/logging-monitoring-and-observability-in-google-cloud</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -908,83 +966,11 @@ td {
 						<td width="80%"></td>
 					</tr>
 				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/formations/121/grafana">https://training.zenika.com/fr/formations/121/grafana</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/formations/121/grafana</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Error Report</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/formations/135/logging-monitoring-and-observability-in-google-cloud">https://training.zenika.com/fr/formations/135/logging-monitoring-and-observability-in-google-cloud</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/formations/135/logging-monitoring-and-observability-in-google-cloud</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Error Report</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
 				<tr>
 					<td width="20%">Instances</td>
 					
 					
-					<td width="80%">8</td>
+					<td width="80%">4</td>
 					
 				</tr>
 				<tr>
@@ -1326,6 +1312,42 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://training.zenika.com/fr">https://training.zenika.com/fr</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://training.zenika.com/fr</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">x-frame-options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://training.zenika.com/fr/informations-pratiques">https://training.zenika.com/fr/informations-pratiques</a></td>
 					</tr>
 					<tr>
@@ -1368,42 +1390,6 @@ td {
 						<td width="20%"
 							class="indent2">Node Name</td>
 						<td width="80%">https://training.zenika.com/fr/legal-notice</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">x-frame-options</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/parcours">https://training.zenika.com/fr/parcours</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/parcours</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1837,12 +1823,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/search">https://training.zenika.com/fr/search</a></td>
+						<td width="80%"><a href="https://training.zenika.com/en/legal-notice">https://training.zenika.com/en/legal-notice</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/search</td>
+						<td width="80%">https://training.zenika.com/en/legal-notice</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1879,42 +1865,6 @@ td {
 						<td width="20%"
 							class="indent2">Node Name</td>
 						<td width="80%">https://training.zenika.com/fr/workshops-conferences</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">NEXT_LOCALE</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Set-Cookie: NEXT_LOCALE</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/zenika-training">https://training.zenika.com/fr/zenika-training</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/zenika-training</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2073,12 +2023,48 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/search">https://training.zenika.com/fr/search</a></td>
+						<td width="80%"><a href="https://training.zenika.com/en/legal-notice">https://training.zenika.com/en/legal-notice</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/search</td>
+						<td width="80%">https://training.zenika.com/en/legal-notice</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">NEXT_LOCALE</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Set-Cookie: NEXT_LOCALE</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://training.zenika.com/en/parcours">https://training.zenika.com/en/parcours</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://training.zenika.com/en/parcours</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2115,42 +2101,6 @@ td {
 						<td width="20%"
 							class="indent2">Node Name</td>
 						<td width="80%">https://training.zenika.com/fr/workshops-conferences</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">NEXT_LOCALE</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">Set-Cookie: NEXT_LOCALE</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/zenika-training">https://training.zenika.com/fr/zenika-training</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/zenika-training</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2237,12 +2187,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/informations-pratiques">https://training.zenika.com/fr/informations-pratiques</a></td>
+						<td width="80%"><a href="https://training.zenika.com">https://training.zenika.com</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/informations-pratiques</td>
+						<td width="80%">https://training.zenika.com</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2273,12 +2223,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/parcours">https://training.zenika.com/fr/parcours</a></td>
+						<td width="80%"><a href="https://training.zenika.com/fr/legal-notice">https://training.zenika.com/fr/legal-notice</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/parcours</td>
+						<td width="80%">https://training.zenika.com/fr/legal-notice</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2440,12 +2390,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/informations-pratiques">https://training.zenika.com/fr/informations-pratiques</a></td>
+						<td width="80%"><a href="https://training.zenika.com">https://training.zenika.com</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/informations-pratiques</td>
+						<td width="80%">https://training.zenika.com</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2476,12 +2426,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/parcours">https://training.zenika.com/fr/parcours</a></td>
+						<td width="80%"><a href="https://training.zenika.com/fr/legal-notice">https://training.zenika.com/fr/legal-notice</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/parcours</td>
+						<td width="80%">https://training.zenika.com/fr/legal-notice</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2646,12 +2596,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/informations-pratiques">https://training.zenika.com/fr/informations-pratiques</a></td>
+						<td width="80%"><a href="https://training.zenika.com">https://training.zenika.com</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/informations-pratiques</td>
+						<td width="80%">https://training.zenika.com</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2682,12 +2632,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/parcours">https://training.zenika.com/fr/parcours</a></td>
+						<td width="80%"><a href="https://training.zenika.com/fr/legal-notice">https://training.zenika.com/fr/legal-notice</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/parcours</td>
+						<td width="80%">https://training.zenika.com/fr/legal-notice</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3378,12 +3328,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/informations-pratiques">https://training.zenika.com/fr/informations-pratiques</a></td>
+						<td width="80%"><a href="https://training.zenika.com">https://training.zenika.com</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/informations-pratiques</td>
+						<td width="80%">https://training.zenika.com</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3414,12 +3364,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/parcours">https://training.zenika.com/fr/parcours</a></td>
+						<td width="80%"><a href="https://training.zenika.com/fr/legal-notice">https://training.zenika.com/fr/legal-notice</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/parcours</td>
+						<td width="80%">https://training.zenika.com/fr/legal-notice</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3626,12 +3576,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/informations-pratiques">https://training.zenika.com/fr/informations-pratiques</a></td>
+						<td width="80%"><a href="https://training.zenika.com">https://training.zenika.com</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/informations-pratiques</td>
+						<td width="80%">https://training.zenika.com</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3668,12 +3618,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/parcours">https://training.zenika.com/fr/parcours</a></td>
+						<td width="80%"><a href="https://training.zenika.com/fr/legal-notice">https://training.zenika.com/fr/legal-notice</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/parcours</td>
+						<td width="80%">https://training.zenika.com/fr/legal-notice</td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3923,16 +3873,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2BTKChjZxK2tvxJWfZGYKwIrpWLRsJLLrh8hESzLHO</td>
+						<td width="80%">2F1lpkdykrw8ILMZVjvbnmg8Usknn2YapvGdXufAjfAPBqsMcQI2KDOQTK</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>��</div>
-							<br />
-						
-							<div>�ĭ��V}��++�bѰ�ˮ!,�</div>
+							<div>�]e�Gr��&lt; �V;۞h&lt;R�&#39;�f��^�����q6(3�L</div>
 							
 						</td>
 					</tr>
@@ -3965,13 +3912,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2BnAS8GCz1VCnEpv5wnUSGONfefc0ckB7dx5qNQRh64QmUXz4C9wAzKetGNGVk05H6uT4sJNyNQb4AKyiQYhsusiI8tfMKT7yigtDSsoJRzl1WTidxvpYJ8dMQOmnlkT</td>
+						<td width="80%">2Fi2vRAc4Bbl9zDZUAMGIhUAUK6hvhnfWGpy0U</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>��K���UB�Jo�	�Hc�}������y�����E��/p2��cFVM9����M�����!��&quot;#�_0���(-+(%��d�w�`�1��Y</div>
+							<div>�X�����0�P&quot; P����Xjr�</div>
 							
 						</td>
 					</tr>
@@ -4004,52 +3951,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2FkTNLnPPzd5R1LMoPJp7Xa1a1eQiHAvbKgwe3MXv9</td>
+						<td width="80%">2F4BZeJn43tLrnCIJMfKje70kd4k4d</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�Y4��?7yGR̠�i�v�kW��p/l�0{s�</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/api/">https://training.zenika.com/api/</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/api/</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">4APVSF70icYGibdtJt6Rd5bmvfMPvlrGNL5tDKEA6n6b</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>��H^����m&amp;ޑw����Z�4�m� �~�</div>
+							<div>�^e�g�{K�p�$�ʍ����$�</div>
 							
 						</td>
 					</tr>
@@ -4082,13 +3990,97 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Ly2cg4vhls6SSYDJJfr1aOm2g5hDxGoSe4wCtVfd7VZfrvYzQFAo</td>
+						<td width="80%">2FyZjkVE4b7rLILlezDx8SC8nPW1cB9sjxnN4HotkKnW7ZyyK7QMqPPrGG7KujyYCmz79xW7F2Tr6tnqztxkzJAKHZH2P24rXuSbR2J</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>/-����ΒI��%��h鶃�C�j{��W��V_��3@P(</div>
+							<div>�\��ED��,��{0�� ����pl���z-���휲+����nʺ&lt;�</div>
+							<br />
+						
+							<div>l���d������d̐</div>
+							<br />
+						
+							<div>��?n+^�Gb</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://training.zenika.com/en/informations-pratiques">https://training.zenika.com/en/informations-pratiques</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://training.zenika.com/en/informations-pratiques</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">5D/informations-pratiques/page-bad4a5396beec17f</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>�?��+��b�{&gt;��������Z��i��zm�׷</div>
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://training.zenika.com/en/legal-notice">https://training.zenika.com/en/legal-notice</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://training.zenika.com/en/legal-notice</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">pZM4PFZ8yoeN0jx4clEaHUgVYDn36So</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%">
+							<div>��8&lt;V|ʇ��&lt;xrQH`9��*</div>
 							
 						</td>
 					</tr>
@@ -4121,13 +4113,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2BtvSKfCimKAtY2FgT86zzRafGnXjq0jLrifQ7EYI65RJuc2IrAfeO1ZpGaJ4W1HgJgi5aRkUP4vE9T2</td>
+						<td width="80%">2BZuNDaU1K1h3IBGgdpIhMyP9tS7RIve</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�oH�b�����?:�4Z|i׎�#.��C�#�Q&amp;�6&quot;�x�Y�f��mG��&quot;�dP�/��</div>
+							<div>�n46�ԭa܀F��H�̏�ԻD��</div>
 							
 						</td>
 					</tr>
@@ -4160,13 +4152,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2F2D2JsnFxxTrypNywOyRMlnkBNfSDiwqKTumLh88QfEl1</td>
+						<td width="80%">tjjhlTw293iaJKbXX8czLGus0Y6SHM3WZsRbi8X5OQ7xd56GtjpdlVntKWmKhIK1TCVCqgAAklhBG7x6BU0ybkejFJaRM5UcKKKPe4mLsDrtMlzz1zGBgvcTMXPKYbmbUo4Nj21N</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�]�؛&#39;S�*M��D�g�_H8���|�ė</div>
+							<div>�8�&lt;6�x�$��_�3,k�ю���f�[���9�w���:]�Y�)i����L%B�  �XA�zM2nG���3�(��{���:�2\��1���1s�a��R��mM</div>
 							
 						</td>
 					</tr>
@@ -4199,13 +4191,16 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2Fwlwy5wBze2w2D0y8eZsUxRg9qjFh8mXGr</td>
+						<td width="80%">4VKYOmp5CmMFA8aXDxOrknPwwrkDsYeqgKUPHiFL9XcCH299if</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�\%�.p7��`��Ǚ�LQ�ڣ&amp;\j</div>
+							<div>�R�:jy</div>
+							<br />
+						
+							<div>cƗ��s�¹�����!K�wo}�</div>
 							
 						</td>
 					</tr>
@@ -4238,16 +4233,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">VJktnaFMcrjvH4MZGsG0sRaAxxX59vlKqwo21KJOIaLmJ66jIcLyv7mf1eJ0PTNqHcBARFL4eGxQsX</td>
+						<td width="80%">2F89Spcgs5VpSuSZHYMoehEssOim3WgbjpI9pYeoOPcc</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>T�-��Lr�����������J�</div>
-							<br />
-						
-							<div>6ԢN!��&#39;��!�򿹟��t=3j�@DR�xlP�</div>
+							<div>�_=J� ��iJ��(z,���h��=���8�</div>
 							
 						</td>
 					</tr>
@@ -4280,13 +4272,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">2F6vksm9jiw5FBWhIg81rUNHLqq9dEAhMYFzU7nFEZonHbBDCXj4vrJcBkNyluEhSb1</td>
+						<td width="80%">2F2drJtBGwKfrrc4cU3ZlPKnLi8xbXRLmws92n7iWJ</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>�^��ɽ�,9�&quot;5�CG.��t@!1�sS���&#39;�C	x���\Cr��!I�</div>
+							<div>�]���A���8qMٔ�./1mtK�=�~�X</div>
 							
 						</td>
 					</tr>
@@ -4319,52 +4311,13 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">Wy1WNyxrnXMyRyMynYhrfqqm9sjUF7o1JU1pDScRw9T5YC2HuVwUGcRCJppxDgJmat4r6a7Y8UxVKofQdG4Z8sc92A3xWSbSgxiuCY1BjQ6AvhfAZOMTNyCwwXrpTAtUIKMkEbvo</td>
+						<td width="80%">6hRPVlAByrXuhhyIyzuwDsi7vEpsit9KmMZp0FTn5SpfpNgC</td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Other Info</td>
 						<td width="80%">
-							<div>[-V7,k�s2G#2��k~������5%Mi&#39;���`-��\�B&amp;�qfj�+���LU*��tn��=��Y&amp;҃�	�A����d�7 ��z�LT �$��</div>
-							
-						</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/sitemap.xml">https://training.zenika.com/sitemap.xml</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/sitemap.xml</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">2FcJbT9oOiay8CarfKf1lF7I4LeTvMJrVKsi66UeSpZRoZXSBpQIoEBvR8uPyLZS3sb6IJvBPylDu7AajrLbIN1</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%">
-							<div>�W	m?h:&amp;��&amp;�|���^�ී��kT�&quot;�J�Q�����@oGˏȶR��� ��?)C����� �</div>
+							<div>�OVPʵ���;�Ȼ�Jl��J��i�T��*_��</div>
 							
 						</td>
 					</tr>
@@ -4711,6 +4664,42 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://training.zenika.com">https://training.zenika.com</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Node Name</td>
+						<td width="80%">https://training.zenika.com</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">no-store</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Other Info</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://training.zenika.com/">https://training.zenika.com/</a></td>
 					</tr>
 					<tr>
@@ -4783,48 +4772,12 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/informations-pratiques">https://training.zenika.com/fr/informations-pratiques</a></td>
+						<td width="80%"><a href="https://training.zenika.com/fr/legal-notice">https://training.zenika.com/fr/legal-notice</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
 							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/informations-pratiques</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">no-store</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Other Info</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://training.zenika.com/fr/parcours">https://training.zenika.com/fr/parcours</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Node Name</td>
-						<td width="80%">https://training.zenika.com/fr/parcours</td>
+						<td width="80%">https://training.zenika.com/fr/legal-notice</td>
 					</tr>
 					<tr>
 						<td width="20%"

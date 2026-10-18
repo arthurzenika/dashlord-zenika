@@ -1,16 +1,24 @@
 {
 	"@programName": "ZAP",
 	"@version": "2.17.0",
-	"@generated": "Sun, 11 Oct 2026 02:56:11",
-	"created": "2026-10-11T02:56:11.697157908Z",
+	"@generated": "Sun, 18 Oct 2026 02:10:41",
+	"created": "2026-10-18T02:10:41.634010565Z",
 	"insights":[
+		{
+			"level": "Low",
+			"reason": "Warning",
+			"site": "",
+			"key": "insight.log.error",
+			"description": "ZAP errors logged - see the zap.log file for details",
+			"statistic": "1"
+		},
 		{
 			"level": "Low",
 			"reason": "Warning",
 			"site": "",
 			"key": "insight.log.warn",
 			"description": "ZAP warnings logged - see the zap.log file for details",
-			"statistic": "3"
+			"statistic": "7"
 		},
 		{
 			"level": "Info",
@@ -18,7 +26,7 @@
 			"site": "https://training.zenika.com",
 			"key": "insight.code.2xx",
 			"description": "Percentage of responses with status code 2xx",
-			"statistic": "98"
+			"statistic": "94"
 		},
 		{
 			"level": "Info",
@@ -26,7 +34,7 @@
 			"site": "https://training.zenika.com",
 			"key": "insight.code.3xx",
 			"description": "Percentage of responses with status code 3xx",
-			"statistic": "1"
+			"statistic": "5"
 		},
 		{
 			"level": "Info",
@@ -42,7 +50,7 @@
 			"site": "https://training.zenika.com",
 			"key": "insight.endpoint.ctype.text/html",
 			"description": "Percentage of endpoints with content type text/html",
-			"statistic": "99"
+			"statistic": "96"
 		},
 		{
 			"level": "Info",
@@ -66,7 +74,7 @@
 			"site": "https://training.zenika.com",
 			"key": "insight.endpoint.total",
 			"description": "Count of total endpoints",
-			"statistic": "254"
+			"statistic": "52"
 		},
 		{
 			"level": "Info",
@@ -85,6 +93,36 @@
 			"@ssl": "true",
 			"alerts": [ 
 				{
+					"pluginid": "10062",
+					"alertRef": "10062",
+					"alert": "PII Disclosure",
+					"name": "PII Disclosure",
+					"riskcode": "3",
+					"confidence": "3",
+					"riskdesc": "High (High)",
+					"desc": "<p>The response contains Personally Identifiable Information, such as CC number, SSN and similar sensitive data.</p>",
+					"instances":[ 
+						{
+							"id": "163",
+							"uri": "https://training.zenika.com/fr/zenika-training",
+							"nodeName": "https:\/\/training.zenika.com\/fr\/zenika-training",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "5013398881704",
+							"otherinfo": "Credit Card Type detected: Maestro\nBank Identification Number: 501339\nBrand: EBT\nCategory: \nIssuer: "
+						}
+					],
+					"count": "1",
+					"systemic": false,
+					"solution": "<p>Check the response for the potential presence of personally identifiable information (PII), ensure nothing sensitive is leaked by the application.</p>",
+					"otherinfo": "<p>Credit Card Type detected: Maestro</p><p>Bank Identification Number: 501339</p><p>Brand: EBT</p><p>Category: </p><p>Issuer: </p>",
+					"reference": "",
+					"cweid": "359",
+					"wascid": "13",
+					"sourceid": "808"
+				},
+				{
 					"pluginid": "90022",
 					"alertRef": "90022",
 					"alert": "Application Error Disclosure",
@@ -95,7 +133,7 @@
 					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
 					"instances":[ 
 						{
-							"id": "157",
+							"id": "169",
 							"uri": "https://training.zenika.com/en/contact",
 							"nodeName": "https:\/\/training.zenika.com\/en\/contact",
 							"method": "GET",
@@ -105,7 +143,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "162",
+							"id": "168",
 							"uri": "https://training.zenika.com/en/formations",
 							"nodeName": "https:\/\/training.zenika.com\/en\/formations",
 							"method": "GET",
@@ -115,27 +153,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "176",
-							"uri": "https://training.zenika.com/en/formations/121/grafana",
-							"nodeName": "https:\/\/training.zenika.com\/en\/formations\/121\/grafana",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"id": "177",
-							"uri": "https://training.zenika.com/en/formations/135/logging-monitoring-and-observability-in-google-cloud",
-							"nodeName": "https:\/\/training.zenika.com\/en\/formations\/135\/logging-monitoring-and-observability-in-google-cloud",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"id": "138",
+							"id": "148",
 							"uri": "https://training.zenika.com/fr/contact",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/contact",
 							"method": "GET",
@@ -153,36 +171,16 @@
 							"attack": "",
 							"evidence": "Error Report",
 							"otherinfo": ""
-						},
-						{
-							"id": "175",
-							"uri": "https://training.zenika.com/fr/formations/121/grafana",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/formations\/121\/grafana",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
-						},
-						{
-							"id": "178",
-							"uri": "https://training.zenika.com/fr/formations/135/logging-monitoring-and-observability-in-google-cloud",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/formations\/135\/logging-monitoring-and-observability-in-google-cloud",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Error Report",
-							"otherinfo": ""
 						}
 					],
-					"count": "8",
+					"count": "4",
 					"systemic": false,
 					"solution": "<p>Review the source code of this page. Implement custom error pages. Consider implementing a mechanism to provide a unique error reference/identifier to the client (browser) while logging the details on the server side and not exposing them to the user.</p>",
 					"otherinfo": "",
 					"reference": "",
 					"cweid": "550",
 					"wascid": "13",
-					"sourceid": "642"
+					"sourceid": "882"
 				},
 				{
 					"pluginid": "10038",
@@ -195,7 +193,7 @@
 					"desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page \u2014 covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>",
 					"instances":[ 
 						{
-							"id": "35",
+							"id": "30",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -205,7 +203,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "41",
+							"id": "50",
 							"uri": "https://training.zenika.com/fr/informations-pratiques",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
 							"method": "GET",
@@ -215,7 +213,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "86",
+							"id": "51",
 							"uri": "https://training.zenika.com/fr/legal-notice",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
@@ -225,7 +223,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "42",
+							"id": "85",
 							"uri": "https://training.zenika.com/fr/parcours",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
 							"method": "GET",
@@ -235,7 +233,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "43",
+							"id": "52",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -265,7 +263,7 @@
 					"desc": "<p>The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.</p>",
 					"instances":[ 
 						{
-							"id": "8",
+							"id": "29",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -275,7 +273,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "38",
+							"id": "83",
+							"uri": "https://training.zenika.com/fr",
+							"nodeName": "https:\/\/training.zenika.com\/fr",
+							"method": "GET",
+							"param": "x-frame-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": ""
+						},
+						{
+							"id": "47",
 							"uri": "https://training.zenika.com/fr/informations-pratiques",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
 							"method": "GET",
@@ -285,7 +293,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "85",
+							"id": "49",
 							"uri": "https://training.zenika.com/fr/legal-notice",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
@@ -295,17 +303,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "39",
-							"uri": "https://training.zenika.com/fr/parcours",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
-							"method": "GET",
-							"param": "x-frame-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": ""
-						},
-						{
-							"id": "40",
+							"id": "48",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -335,7 +333,7 @@
 					"desc": "<p>The integrity attribute is missing on a script or link tag served by an external server. The integrity tag prevents an attacker who have gained access to this server from injecting a malicious content.</p>",
 					"instances":[ 
 						{
-							"id": "79",
+							"id": "38",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -345,7 +343,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "54",
+							"id": "61",
 							"uri": "https://training.zenika.com/fr/informations-pratiques",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
 							"method": "GET",
@@ -355,7 +353,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "89",
+							"id": "57",
 							"uri": "https://training.zenika.com/fr/legal-notice",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
@@ -365,7 +363,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "48",
+							"id": "88",
 							"uri": "https://training.zenika.com/fr/parcours",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
 							"method": "GET",
@@ -375,7 +373,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "56",
+							"id": "59",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -405,7 +403,7 @@
 					"desc": "<p>A cookie has been set without the HttpOnly flag, which means that the cookie can be accessed by JavaScript. If a malicious script can be run on this page then the cookie will be accessible and can be transmitted to another site. If this is a session cookie then session hijacking may be possible.</p>",
 					"instances":[ 
 						{
-							"id": "2",
+							"id": "31",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -415,7 +413,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "99",
+							"id": "105",
 							"uri": "https://training.zenika.com/en",
 							"nodeName": "https:\/\/training.zenika.com\/en",
 							"method": "GET",
@@ -425,9 +423,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "155",
-							"uri": "https://training.zenika.com/fr/search",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/search",
+							"id": "130",
+							"uri": "https://training.zenika.com/en/legal-notice",
+							"nodeName": "https:\/\/training.zenika.com\/en\/legal-notice",
 							"method": "GET",
 							"param": "NEXT_LOCALE",
 							"attack": "",
@@ -435,7 +433,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "120",
+							"id": "136",
 							"uri": "https://training.zenika.com/fr/workshops-conferences",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/workshops-conferences",
 							"method": "GET",
@@ -443,26 +441,16 @@
 							"attack": "",
 							"evidence": "Set-Cookie: NEXT_LOCALE",
 							"otherinfo": ""
-						},
-						{
-							"id": "129",
-							"uri": "https://training.zenika.com/fr/zenika-training",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/zenika-training",
-							"method": "GET",
-							"param": "NEXT_LOCALE",
-							"attack": "",
-							"evidence": "Set-Cookie: NEXT_LOCALE",
-							"otherinfo": ""
 						}
 					],
-					"count": "5",
+					"count": "4",
 					"systemic": true,
 					"solution": "<p>Ensure that the HttpOnly flag is set for all cookies.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://owasp.org/www-community/HttpOnly</p>",
 					"cweid": "1004",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10011",
@@ -475,7 +463,7 @@
 					"desc": "<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>",
 					"instances":[ 
 						{
-							"id": "4",
+							"id": "2",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -485,7 +473,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "100",
+							"id": "106",
 							"uri": "https://training.zenika.com/en",
 							"nodeName": "https:\/\/training.zenika.com\/en",
 							"method": "GET",
@@ -495,9 +483,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "156",
-							"uri": "https://training.zenika.com/fr/search",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/search",
+							"id": "131",
+							"uri": "https://training.zenika.com/en/legal-notice",
+							"nodeName": "https:\/\/training.zenika.com\/en\/legal-notice",
 							"method": "GET",
 							"param": "NEXT_LOCALE",
 							"attack": "",
@@ -505,19 +493,19 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "121",
+							"id": "154",
+							"uri": "https://training.zenika.com/en/parcours",
+							"nodeName": "https:\/\/training.zenika.com\/en\/parcours",
+							"method": "GET",
+							"param": "NEXT_LOCALE",
+							"attack": "",
+							"evidence": "Set-Cookie: NEXT_LOCALE",
+							"otherinfo": ""
+						},
+						{
+							"id": "137",
 							"uri": "https://training.zenika.com/fr/workshops-conferences",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/workshops-conferences",
-							"method": "GET",
-							"param": "NEXT_LOCALE",
-							"attack": "",
-							"evidence": "Set-Cookie: NEXT_LOCALE",
-							"otherinfo": ""
-						},
-						{
-							"id": "132",
-							"uri": "https://training.zenika.com/fr/zenika-training",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/zenika-training",
 							"method": "GET",
 							"param": "NEXT_LOCALE",
 							"attack": "",
@@ -545,9 +533,9 @@
 					"desc": "<p>Cross-Origin-Embedder-Policy header is a response header that prevents a document from loading any cross-origin resources that don't explicitly grant the document permission (using CORP or CORS).</p>",
 					"instances":[ 
 						{
-							"id": "72",
-							"uri": "https://training.zenika.com/fr/informations-pratiques",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
+							"id": "45",
+							"uri": "https://training.zenika.com",
+							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
@@ -555,9 +543,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "59",
-							"uri": "https://training.zenika.com/fr/parcours",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
+							"id": "78",
+							"uri": "https://training.zenika.com/fr/legal-notice",
+							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
 							"param": "Cross-Origin-Embedder-Policy",
 							"attack": "",
@@ -565,7 +553,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "76",
+							"id": "80",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -575,7 +563,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "29",
+							"id": "14",
 							"uri": "https://training.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/training.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -592,7 +580,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "517"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90004",
@@ -605,9 +593,9 @@
 					"desc": "<p>Cross-Origin-Opener-Policy header is a response header that allows a site to control if others included documents share the same browsing context. Sharing the same browsing context with untrusted documents might lead to data leak.</p>",
 					"instances":[ 
 						{
-							"id": "73",
-							"uri": "https://training.zenika.com/fr/informations-pratiques",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
+							"id": "46",
+							"uri": "https://training.zenika.com",
+							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
 							"attack": "",
@@ -615,9 +603,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "60",
-							"uri": "https://training.zenika.com/fr/parcours",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
+							"id": "79",
+							"uri": "https://training.zenika.com/fr/legal-notice",
+							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
 							"param": "Cross-Origin-Opener-Policy",
 							"attack": "",
@@ -625,7 +613,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "77",
+							"id": "81",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -635,7 +623,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "30",
+							"id": "15",
 							"uri": "https://training.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/training.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -652,7 +640,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Opener-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "517"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "90004",
@@ -665,9 +653,9 @@
 					"desc": "<p>Cross-Origin-Resource-Policy header is an opt-in header designed to counter side-channels attacks like Spectre. Resource should be specifically set as shareable amongst different origins.</p>",
 					"instances":[ 
 						{
-							"id": "71",
-							"uri": "https://training.zenika.com/fr/informations-pratiques",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
+							"id": "44",
+							"uri": "https://training.zenika.com",
+							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -675,9 +663,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "58",
-							"uri": "https://training.zenika.com/fr/parcours",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
+							"id": "77",
+							"uri": "https://training.zenika.com/fr/legal-notice",
+							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
 							"param": "Cross-Origin-Resource-Policy",
 							"attack": "",
@@ -685,7 +673,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "75",
+							"id": "76",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -695,7 +683,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "20",
+							"id": "27",
 							"uri": "https://training.zenika.com/robots.txt",
 							"nodeName": "https:\/\/training.zenika.com\/robots.txt",
 							"method": "GET",
@@ -705,7 +693,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "28",
+							"id": "13",
 							"uri": "https://training.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/training.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -722,7 +710,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cross-Origin-Embedder-Policy</p>",
 					"cweid": "693",
 					"wascid": "14",
-					"sourceid": "517"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10063",
@@ -735,7 +723,7 @@
 					"desc": "<p>Permissions Policy Header is an added layer of security that helps to restrict from unauthorized access or usage of browser/client features by web resources. This policy ensures the user privacy by limiting or specifying the features of the browsers can be used by the web resources. Permissions Policy provides a set of standard HTTP headers that allow website owners to limit which features of browsers can be used by the page such as camera, microphone, location, full screen etc.</p>",
 					"instances":[ 
 						{
-							"id": "84",
+							"id": "43",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -745,7 +733,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "70",
+							"id": "82",
 							"uri": "https://training.zenika.com/fr/informations-pratiques",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
 							"method": "GET",
@@ -755,7 +743,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "94",
+							"id": "74",
 							"uri": "https://training.zenika.com/fr/legal-notice",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
@@ -765,7 +753,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "57",
+							"id": "93",
 							"uri": "https://training.zenika.com/fr/parcours",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
 							"method": "GET",
@@ -775,7 +763,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "74",
+							"id": "75",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -805,7 +793,7 @@
 					"desc": "<p>The web/application server is leaking information via one or more \"X-Powered-By\" HTTP response headers. Access to such information may facilitate attackers identifying other frameworks/components your web application is reliant upon and the vulnerabilities such components may be subject to.</p>",
 					"instances":[ 
 						{
-							"id": "81",
+							"id": "40",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -815,7 +803,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "63",
+							"id": "71",
 							"uri": "https://training.zenika.com/fr/informations-pratiques",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
 							"method": "GET",
@@ -825,7 +813,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "91",
+							"id": "66",
 							"uri": "https://training.zenika.com/fr/legal-notice",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
@@ -835,7 +823,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "50",
+							"id": "90",
 							"uri": "https://training.zenika.com/fr/parcours",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
 							"method": "GET",
@@ -845,7 +833,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "67",
+							"id": "64",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -875,9 +863,9 @@
 					"desc": "<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>",
 					"instances":[ 
 						{
-							"id": "53",
-							"uri": "https://training.zenika.com/fr/informations-pratiques",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
+							"id": "37",
+							"uri": "https://training.zenika.com",
+							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -885,9 +873,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "47",
-							"uri": "https://training.zenika.com/fr/parcours",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
+							"id": "56",
+							"uri": "https://training.zenika.com/fr/legal-notice",
+							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -895,7 +883,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "55",
+							"id": "58",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -905,7 +893,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "1",
+							"id": "3",
 							"uri": "https://training.zenika.com/robots.txt",
 							"nodeName": "https:\/\/training.zenika.com\/robots.txt",
 							"method": "GET",
@@ -932,7 +920,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</p><p>https://owasp.org/www-community/Security_Headers</p><p>https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</p><p>https://caniuse.com/stricttransportsecurity</p><p>https://datatracker.ietf.org/doc/html/rfc6797</p>",
 					"cweid": "319",
 					"wascid": "15",
-					"sourceid": "517"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10021",
@@ -945,9 +933,19 @@
 					"desc": "<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>",
 					"instances":[ 
 						{
+							"id": "39",
+							"uri": "https://training.zenika.com",
+							"nodeName": "https:\/\/training.zenika.com",
+							"method": "GET",
+							"param": "x-content-type-options",
+							"attack": "",
+							"evidence": "",
+							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
+						},
+						{
 							"id": "62",
-							"uri": "https://training.zenika.com/fr/informations-pratiques",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
+							"uri": "https://training.zenika.com/fr/legal-notice",
+							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
 							"param": "x-content-type-options",
 							"attack": "",
@@ -955,17 +953,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "49",
-							"uri": "https://training.zenika.com/fr/parcours",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
-							"method": "GET",
-							"param": "x-content-type-options",
-							"attack": "",
-							"evidence": "",
-							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
-						},
-						{
-							"id": "66",
+							"id": "63",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -975,7 +963,7 @@
 							"otherinfo": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses."
 						},
 						{
-							"id": "3",
+							"id": "4",
 							"uri": "https://training.zenika.com/robots.txt",
 							"nodeName": "https:\/\/training.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1002,7 +990,7 @@
 					"reference": "<p>https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "517"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10094",
@@ -1015,134 +1003,134 @@
 					"desc": "<p>Base64 encoded data was disclosed by the application/web server. Note: in the interests of performance not all base64 strings in the response were analyzed individually, the entire response should be looked at by the analyst/security team/developer(s).</p>",
 					"instances":[ 
 						{
-							"id": "82",
+							"id": "16",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BTKChjZxK2tvxJWfZGYKwIrpWLRsJLLrh8hESzLHO",
-							"otherinfo": "\uFFFD\\x0014\uFFFD\n\\x0018\uFFFD\u012D\uFFFD\uFFFD\\x0012V}\uFFFD\uFFFD+\\x0002+\uFFFDb\u0470\uFFFD\u02EE\\x001f!\\x0011,\uFFFD\\x001c"
+							"evidence": "2F1lpkdykrw8ILMZVjvbnmg8Usknn2YapvGdXufAjfAPBqsMcQI2KDOQTK",
+							"otherinfo": "\uFFFD]e\uFFFDGr\uFFFD\uFFFD< \uFFFD\\x0019V;\u06DEh<R\uFFFD'\uFFFDf\\x001a\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\\x000f\\x0006\uFFFD\\x000cq\\x00026(3\uFFFDL"
 						},
 						{
-							"id": "10",
+							"id": "41",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BnAS8GCz1VCnEpv5wnUSGONfefc0ckB7dx5qNQRh64QmUXz4C9wAzKetGNGVk05H6uT4sJNyNQb4AKyiQYhsusiI8tfMKT7yigtDSsoJRzl1WTidxvpYJ8dMQOmnlkT",
-							"otherinfo": "\uFFFD\\x0019\uFFFDK\uFFFD\uFFFD\uFFFDUB\uFFFDJo\uFFFD\t\uFFFDHc\uFFFD}\uFFFD\uFFFD\uFFFD\uFFFD\\x0001\uFFFD\uFFFDy\uFFFD\uFFFD\\x0011\uFFFD\uFFFD\\x0010\uFFFDE\uFFFD\uFFFD/p\\x00032\uFFFD\uFFFDcFVM9\\x001f\uFFFD\uFFFD\uFFFD\uFFFDM\uFFFD\uFFFD\\x001b\uFFFD\\x0002\uFFFD\uFFFD\\x0006!\uFFFD\uFFFD\"#\uFFFD_0\uFFFD\uFFFD\uFFFD(-\r+(%\\x001c\uFFFD\uFFFDd\uFFFDw\\x001b\uFFFD`\uFFFD\\x001d1\\x0003\uFFFD\uFFFDY\\x0013"
+							"evidence": "2Fi2vRAc4Bbl9zDZUAMGIhUAUK6hvhnfWGpy0U",
+							"otherinfo": "\uFFFDX\uFFFD\uFFFD\\x0010\\x001c\uFFFD\\x0016\uFFFD\uFFFD0\uFFFDP\\x0003\\x0006\"\\x0015\\x0000P\uFFFD\uFFFD\uFFFD\\x0019\uFFFDXjr\uFFFD"
 						},
 						{
-							"id": "33",
+							"id": "34",
 							"uri": "https://training.zenika.com/",
 							"nodeName": "https:\/\/training.zenika.com\/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2FkTNLnPPzd5R1LMoPJp7Xa1a1eQiHAvbKgwe3MXv9",
-							"otherinfo": "\uFFFDY\\x00134\uFFFD\uFFFD?7yGR\u0320\uFFFDi\uFFFDv\uFFFDkW\uFFFD\uFFFDp/l\uFFFD0{s\\x0017\uFFFD"
+							"evidence": "2F4BZeJn43tLrnCIJMfKje70kd4k4d",
+							"otherinfo": "\uFFFD^\\x0001e\uFFFDg\uFFFD{K\uFFFDp\uFFFD$\uFFFD\u028D\uFFFD\uFFFD\uFFFD\uFFFD$\uFFFD"
 						},
 						{
-							"id": "31",
-							"uri": "https://training.zenika.com/api/",
-							"nodeName": "https:\/\/training.zenika.com\/api\/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "4APVSF70icYGibdtJt6Rd5bmvfMPvlrGNL5tDKEA6n6b",
-							"otherinfo": "\uFFFD\\x0003\uFFFDH^\uFFFD\uFFFD\\x0006\uFFFD\uFFFDm&\u0791w\uFFFD\uFFFD\uFFFD\\x000f\uFFFDZ\uFFFD4\uFFFDm\\x000c\uFFFD\\x0000\uFFFD~\uFFFD"
-						},
-						{
-							"id": "114",
+							"id": "112",
 							"uri": "https://training.zenika.com/en",
 							"nodeName": "https:\/\/training.zenika.com\/en",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Ly2cg4vhls6SSYDJJfr1aOm2g5hDxGoSe4wCtVfd7VZfrvYzQFAo",
-							"otherinfo": "/-\uFFFD\uFFFD\uFFFD\uFFFD\u0392I\uFFFD\uFFFD%\uFFFD\uFFFDh\u9D83\uFFFDC\uFFFDj\\x0012{\uFFFD\\x0002\uFFFDW\uFFFD\uFFFDV_\uFFFD\uFFFD3@P("
+							"evidence": "2FyZjkVE4b7rLILlezDx8SC8nPW1cB9sjxnN4HotkKnW7ZyyK7QMqPPrGG7KujyYCmz79xW7F2Tr6tnqztxkzJAKHZH2P24rXuSbR2J",
+							"otherinfo": "\uFFFD\\\uFFFD\uFFFDED\uFFFD\uFFFD,\uFFFD\uFFFD{0\uFFFD\uFFFD \uFFFD\uFFFD\uFFFD\uFFFDp\\x001fl\uFFFD\\x0019\uFFFD\uFFFDz-\uFFFD\uFFFD\uFFFD\uD732+\uFFFD\\x000c\uFFFD\uFFFD\uFFFD\\x0018n\u02BA<\uFFFD\nl\uFFFD\uFFFD\\x0015\uFFFD\\x0017d\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDd\u0310\n\\x001d\uFFFD\uFFFD?n+^\uFFFDGb"
 						},
 						{
-							"id": "109",
+							"id": "122",
+							"uri": "https://training.zenika.com/en/informations-pratiques",
+							"nodeName": "https:\/\/training.zenika.com\/en\/informations-pratiques",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "5D/informations-pratiques/page-bad4a5396beec17f",
+							"otherinfo": "\uFFFD?\uFFFD\uFFFD+\uFFFD\uFFFDb\uFFFD{>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFDZ\uFFFD\uFFFDi\uFFFD\\x001a\uFFFDzm\uFFFD\u05F7"
+						},
+						{
+							"id": "140",
+							"uri": "https://training.zenika.com/en/legal-notice",
+							"nodeName": "https:\/\/training.zenika.com\/en\/legal-notice",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "pZM4PFZ8yoeN0jx4clEaHUgVYDn36So",
+							"otherinfo": "\uFFFD\uFFFD8<V|\u0287\uFFFD\uFFFD<xrQ\\x001a\\x001dH\\x0015`9\uFFFD\uFFFD*"
+						},
+						{
+							"id": "100",
 							"uri": "https://training.zenika.com/fr",
 							"nodeName": "https:\/\/training.zenika.com\/fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2BtvSKfCimKAtY2FgT86zzRafGnXjq0jLrifQ7EYI65RJuc2IrAfeO1ZpGaJ4W1HgJgi5aRkUP4vE9T2",
-							"otherinfo": "\uFFFD\\x001boH\uFFFD\u008Ab\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD?:\uFFFD4Z|i\u05CE\uFFFD#.\uFFFD\uFFFDC\uFFFD\\x0018#\uFFFDQ&\uFFFD6\"\uFFFD\\x001fx\uFFFDY\uFFFDf\uFFFD\uFFFDmG\uFFFD\uFFFD\"\uFFFDdP\uFFFD/\\x0013\uFFFD\uFFFD"
+							"evidence": "2BZuNDaU1K1h3IBGgdpIhMyP9tS7RIve",
+							"otherinfo": "\uFFFD\\x0016n46\uFFFD\u052Da\u0700F\uFFFD\uFFFDH\uFFFD\u030F\uFFFD\u053BD\uFFFD\uFFFD"
 						},
 						{
-							"id": "64",
+							"id": "72",
 							"uri": "https://training.zenika.com/fr/informations-pratiques",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2F2D2JsnFxxTrypNywOyRMlnkBNfSDiwqKTumLh88QfEl1",
-							"otherinfo": "\uFFFD]\uFFFD\u061B'\\x0017\\x001cS\uFFFD*M\uFFFD\\x0003\uFFFDD\uFFFDg\uFFFD\\x0013_H8\uFFFD\uFFFD\uFFFD\uE638|\uFFFD\\x0007\u0117"
+							"evidence": "tjjhlTw293iaJKbXX8czLGus0Y6SHM3WZsRbi8X5OQ7xd56GtjpdlVntKWmKhIK1TCVCqgAAklhBG7x6BU0ybkejFJaRM5UcKKKPe4mLsDrtMlzz1zGBgvcTMXPKYbmbUo4Nj21N",
+							"otherinfo": "\uFFFD8\uFFFD<6\uFFFDx\uFFFD$\uFFFD\uFFFD_\uFFFD3,k\uFFFD\u044E\uFFFD\\x001c\uFFFD\uFFFDf\uFFFD[\uFFFD\uFFFD\uFFFD9\\x000e\uFFFDw\uFFFD\uFFFD\uFFFD:]\uFFFDY\uFFFD)i\uFFFD\uFFFD\uFFFD\uFFFDL%B\uFFFD\\x0000\\x0000\uFFFDXA\\x001b\uFFFDz\\x0005M2nG\uFFFD\\x0014\uFFFD\uFFFD3\uFFFD\\x001c(\uFFFD\uFFFD{\uFFFD\uFFFD\uFFFD:\uFFFD2\\\uFFFD\uFFFD1\uFFFD\uFFFD\uFFFD\\x00131s\uFFFDa\uFFFD\uFFFDR\uFFFD\r\uFFFDmM"
 						},
 						{
-							"id": "92",
+							"id": "67",
 							"uri": "https://training.zenika.com/fr/legal-notice",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2Fwlwy5wBze2w2D0y8eZsUxRg9qjFh8mXGr",
-							"otherinfo": "\uFFFD\\%\uFFFD.p\\x00077\uFFFD\uFFFD`\uFFFD\uFFFD\u01D9\uFFFDLQ\uFFFD\u06A3\\x0016\\x001f&\\j"
+							"evidence": "4VKYOmp5CmMFA8aXDxOrknPwwrkDsYeqgKUPHiFL9XcCH299if",
+							"otherinfo": "\uFFFDR\uFFFD:jy\nc\\x0005\\x0003\u0197\\x000f\\x0013\uFFFD\uFFFDs\uFFFD\u00B9\\x0003\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x000f\\x001e!K\uFFFDw\\x0002\\x001fo}\uFFFD"
 						},
 						{
-							"id": "51",
+							"id": "91",
 							"uri": "https://training.zenika.com/fr/parcours",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "VJktnaFMcrjvH4MZGsG0sRaAxxX59vlKqwo21KJOIaLmJ66jIcLyv7mf1eJ0PTNqHcBARFL4eGxQsX",
-							"otherinfo": "T\uFFFD-\uFFFD\uFFFDLr\uFFFD\uFFFD\\x001f\uFFFD\\x0019\\x001a\uFFFD\uFFFD\uFFFD\\x0016\uFFFD\uFFFD\\x0015\uFFFD\uFFFD\uFFFDJ\uFFFD\n6\u0522N!\uFFFD\uFFFD'\uFFFD\uFFFD!\uFFFD\uDABF\uDE5F\uFFFD\uFFFDt=3j\\x001d\uFFFD@DR\uFFFDxlP\uFFFD"
+							"evidence": "2F89Spcgs5VpSuSZHYMoehEssOim3WgbjpI9pYeoOPcc",
+							"otherinfo": "\uFFFD_=J\uFFFD \uFFFD\uFFFDiJ\uFFFD\\x001d\uFFFD(z\\x0011,\uFFFD\uFFFD\uFFFDh\\x001b\uFFFD\uFFFD=\uFFFD\uFFFD\uFFFD8\uFFFD\\x001c"
 						},
 						{
-							"id": "68",
+							"id": "65",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "2F6vksm9jiw5FBWhIg81rUNHLqq9dEAhMYFzU7nFEZonHbBDCXj4vrJcBkNyluEhSb1",
-							"otherinfo": "\uFFFD^\uFFFD\uFFFD\u027D\uFFFD,9\\x0014\\x0015\uFFFD\"\\x000f5\uFFFDCG.\uFFFD\uFFFDt@!1\uFFFDsS\uFFFD\uFFFD\\x0011\uFFFD'\\x001d\uFFFDC\tx\uFFFD\uFFFD\uFFFD\\\\x0006Cr\uFFFD\uFFFD!I\uFFFD"
+							"evidence": "2F2drJtBGwKfrrc4cU3ZlPKnLi8xbXRLmws92n7iWJ",
+							"otherinfo": "\uFFFD]\uFFFD\uFFFD\uFFFDA\\x001b\\x0002\uFFFD\uFFFD\uFFFD8qM\u0654\uFFFD./1mtK\uFFFD\\x000b=\uFFFD~\uFFFDX"
 						},
 						{
-							"id": "9",
+							"id": "18",
 							"uri": "https://training.zenika.com/robots.txt",
 							"nodeName": "https:\/\/training.zenika.com\/robots.txt",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "Wy1WNyxrnXMyRyMynYhrfqqm9sjUF7o1JU1pDScRw9T5YC2HuVwUGcRCJppxDgJmat4r6a7Y8UxVKofQdG4Z8sc92A3xWSbSgxiuCY1BjQ6AvhfAZOMTNyCwwXrpTAtUIKMkEbvo",
-							"otherinfo": "[-V7,k\uFFFDs2G#2\uFFFD\uFFFDk~\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0017\uFFFD5%Mi\r'\\x0011\uFFFD\uFFFD\uFFFD`-\uFFFD\uFFFD\\\\x0014\\x0019\uFFFDB&\uFFFDq\\x000e\\x0002fj\uFFFD+\uFFFD\uFFFD\uFFFDLU*\uFFFD\uFFFDtn\\x0019\uFFFD\uFFFD=\uFFFD\r\uFFFDY&\u0483\\x0018\uFFFD\t\uFFFDA\uFFFD\\x000e\uFFFD\uFFFD\\x0017\uFFFDd\uFFFD\\x00137 \uFFFD\uFFFDz\uFFFDL\\x000bT \uFFFD$\\x0011\uFFFD\uFFFD"
-						},
-						{
-							"id": "22",
-							"uri": "https://training.zenika.com/sitemap.xml",
-							"nodeName": "https:\/\/training.zenika.com\/sitemap.xml",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "2FcJbT9oOiay8CarfKf1lF7I4LeTvMJrVKsi66UeSpZRoZXSBpQIoEBvR8uPyLZS3sb6IJvBPylDu7AajrLbIN1",
-							"otherinfo": "\uFFFDW\tm?h:&\uFFFD\uFFFD&\uFFFD|\uFFFD\uFFFD\uFFFD^\uFFFD\u0DD3\uFFFD\uFFFDkT\uFFFD\"\uFFFD\\x001eJ\uFFFDQ\uFFFD\uFFFD\uFFFD\\x0006\uFFFD\\x0008\uFFFD@oG\u02CF\u0236R\uFFFD\uFFFD\uFFFD \uFFFD\uFFFD?)C\uFFFD\uFFFD\\x001a\uFFFD\uFFFD\uFFFD \uFFFD"
+							"evidence": "6hRPVlAByrXuhhyIyzuwDsi7vEpsit9KmMZp0FTn5SpfpNgC",
+							"otherinfo": "\uFFFD\\x0014OVP\\x0001\u02B5\uFFFD\\x001c\uFFFD\uFFFD;\uFFFD\\x000e\u023B\uFFFDJl\uFFFD\uFFFDJ\uFFFD\uFFFDi\uFFFDT\uFFFD\uFFFD*_\uFFFD\uFFFD\\x0002"
 						}
 					],
 					"count": "12",
 					"systemic": false,
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\\x0014\uFFFD</p><p>\\x0018\uFFFD\u012D\uFFFD\uFFFD\\x0012V}\uFFFD\uFFFD+\\x0002+\uFFFDb\u0470\uFFFD\u02EE\\x001f!\\x0011,\uFFFD\\x001c</p>",
+					"otherinfo": "<p>\uFFFD]e\uFFFDGr\uFFFD\uFFFD< \uFFFD\\x0019V;\u06DEh<R\uFFFD'\uFFFDf\\x001a\uFFFD\uFFFD^\uFFFD\uFFFD\uFFFD\uFFFD\\x000f\\x0006\uFFFD\\x000cq\\x00026(3\uFFFDL</p>",
 					"reference": "<p>https://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "319",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10109",
@@ -1155,7 +1143,7 @@
 					"desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>",
 					"instances":[ 
 						{
-							"id": "61",
+							"id": "36",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -1165,7 +1153,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "46",
+							"id": "55",
 							"uri": "https://training.zenika.com/fr/informations-pratiques",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
 							"method": "GET",
@@ -1175,7 +1163,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "87",
+							"id": "53",
 							"uri": "https://training.zenika.com/fr/legal-notice",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
@@ -1185,7 +1173,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "44",
+							"id": "86",
 							"uri": "https://training.zenika.com/fr/parcours",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
 							"method": "GET",
@@ -1195,7 +1183,7 @@
 							"otherinfo": "Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application."
 						},
 						{
-							"id": "45",
+							"id": "54",
 							"uri": "https://training.zenika.com/fr/politique-de-confidentialite",
 							"nodeName": "https:\/\/training.zenika.com\/fr\/politique-de-confidentialite",
 							"method": "GET",
@@ -1225,7 +1213,7 @@
 					"desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>",
 					"instances":[ 
 						{
-							"id": "21",
+							"id": "28",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -1235,7 +1223,17 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "34",
+							"id": "42",
+							"uri": "https://training.zenika.com",
+							"nodeName": "https:\/\/training.zenika.com",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "no-store",
+							"otherinfo": ""
+						},
+						{
+							"id": "35",
 							"uri": "https://training.zenika.com/",
 							"nodeName": "https:\/\/training.zenika.com\/",
 							"method": "GET",
@@ -1245,7 +1243,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "32",
+							"id": "33",
 							"uri": "https://training.zenika.com/api/",
 							"nodeName": "https:\/\/training.zenika.com\/api\/",
 							"method": "GET",
@@ -1255,19 +1253,9 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "65",
-							"uri": "https://training.zenika.com/fr/informations-pratiques",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/informations-pratiques",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "no-store",
-							"otherinfo": ""
-						},
-						{
-							"id": "52",
-							"uri": "https://training.zenika.com/fr/parcours",
-							"nodeName": "https:\/\/training.zenika.com\/fr\/parcours",
+							"id": "68",
+							"uri": "https://training.zenika.com/fr/legal-notice",
+							"nodeName": "https:\/\/training.zenika.com\/fr\/legal-notice",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1335,7 +1323,7 @@
 					"desc": "<p>Specifies how and where the data would be used. For instance, if the value is audio, then the requested resource must be audio data and not any other type of resource.</p>",
 					"instances":[ 
 						{
-							"id": "15",
+							"id": "23",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -1345,7 +1333,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "16",
+							"id": "22",
 							"uri": "https://training.zenika.com/robots.txt",
 							"nodeName": "https:\/\/training.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1355,7 +1343,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "25",
+							"id": "10",
 							"uri": "https://training.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/training.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1385,7 +1373,7 @@
 					"desc": "<p>Allows to differentiate between requests for navigating between HTML pages and requests for loading resources like images, audio etc.</p>",
 					"instances":[ 
 						{
-							"id": "14",
+							"id": "20",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -1395,7 +1383,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "13",
+							"id": "21",
 							"uri": "https://training.zenika.com/robots.txt",
 							"nodeName": "https:\/\/training.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1405,7 +1393,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "24",
+							"id": "9",
 							"uri": "https://training.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/training.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1435,7 +1423,7 @@
 					"desc": "<p>Specifies the relationship between request initiator's origin and target's origin.</p>",
 					"instances":[ 
 						{
-							"id": "12",
+							"id": "17",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -1445,7 +1433,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "11",
+							"id": "19",
 							"uri": "https://training.zenika.com/robots.txt",
 							"nodeName": "https:\/\/training.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1455,7 +1443,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "23",
+							"id": "8",
 							"uri": "https://training.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/training.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1485,7 +1473,7 @@
 					"desc": "<p>Specifies if a navigation request was initiated by a user.</p>",
 					"instances":[ 
 						{
-							"id": "19",
+							"id": "24",
 							"uri": "https://training.zenika.com",
 							"nodeName": "https:\/\/training.zenika.com",
 							"method": "GET",
@@ -1495,7 +1483,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "17",
+							"id": "25",
 							"uri": "https://training.zenika.com/robots.txt",
 							"nodeName": "https:\/\/training.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1505,7 +1493,7 @@
 							"otherinfo": ""
 						},
 						{
-							"id": "26",
+							"id": "11",
 							"uri": "https://training.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/training.zenika.com\/sitemap.xml",
 							"method": "GET",
@@ -1535,7 +1523,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, and may be retrieved directly from the cache, rather than from the origin server by the caching servers, in response to similar requests from other users. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where \"shared\" caching servers such as \"proxy\" caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance.</p>",
 					"instances":[ 
 						{
-							"id": "18",
+							"id": "26",
 							"uri": "https://training.zenika.com/robots.txt",
 							"nodeName": "https:\/\/training.zenika.com\/robots.txt",
 							"method": "GET",
@@ -1565,7 +1553,7 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users.</p>",
 					"instances":[ 
 						{
-							"id": "27",
+							"id": "12",
 							"uri": "https://training.zenika.com/sitemap.xml",
 							"nodeName": "https:\/\/training.zenika.com\/sitemap.xml",
 							"method": "GET",

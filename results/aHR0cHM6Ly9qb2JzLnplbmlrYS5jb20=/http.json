@@ -1,38 +1,28 @@
 {
   "scan": {
     "algorithmVersion": 4,
-    "grade": "B+",
+    "grade": "C",
     "error": null,
-    "score": 80,
-    "statusCode": 200,
-    "testsFailed": 1,
-    "testsPassed": 9,
+    "score": 50,
+    "statusCode": 403,
+    "testsFailed": 3,
+    "testsPassed": 7,
     "testsQuantity": 10,
     "responseHeaders": {
       "connection": "close",
-      "content-length": "18975",
-      "content-type": "text/html; charset=utf-8",
+      "content-length": "9",
       "server": "nginx",
-      "x-frame-options": "SAMEORIGIN",
-      "x-xss-protection": "0",
-      "x-content-type-options": "nosniff",
-      "x-permitted-cross-domain-policies": "none",
-      "referrer-policy": "strict-origin-when-cross-origin",
-      "content-security-policy": "frame-ancestors 'self' jobs.zenika.com app.teamtailor.com app.teamtailor.com",
-      "strict-transport-security": "max-age=31536000; includeSubDomains",
-      "link": "<https://jobs.zenika.com/.well-known/api-catalog>; rel=\"api-catalog\",<https://assets-aws.teamtailor-cdn.com/assets/cookies-73b4b6b5.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-tOmqCJmpja8yT9rDxPVnPZ33ZBX4Gw8s227lvAhlvxS7ZOVJCmhSdvMOsZgmhZ7k; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/careersite-11761e4a.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-+iqoAxllCquEzFdoSPq9E6tvYw33zzvU/iCRDjADQKUqmExjUM8mATAmlPdN0aAx; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/font-awesome-2bbc44ad.js>; rel=modulepreload; as=script; crossorigin=anonymous; integrity=sha384-wvJrKr6fXfXoAnJxcq/cuQFpUIxj9sU091NYJdB/s1vWgHKDU+6p30XewuXoD/KB; nonce=; nopush,<https://assets-aws.teamtailor-cdn.com/assets/careersite-bd77697e.css>; rel=preload; as=style; crossorigin=anonymous; integrity=sha384-t8QAjHznprwWMEMGdo5D4SypV1sBps98byKMgwscoroK5QKEp+/EgLm59JIvSHEU; nopush",
-      "content-signal": "search=yes, ai-train=no, ai-input=yes",
-      "etag": "W/\"7ad7177b5505d4e76e74df54641d661f\"",
-      "x-request-id": "c5b7b8cd-6623-4895-9637-ac956796e30b",
+      "x-request-id": "7f391697-1d7e-4669-b817-fa400898baf7",
+      "x-rack-cache": "pass",
+      "strict-transport-security": "max-age=63072000; includeSubDomains",
       "accept-ranges": "bytes",
-      "date": "Sun, 01 Nov 2026 03:29:57 GMT",
+      "date": "Sun, 08 Nov 2026 03:37:55 GMT",
       "via": "1.1 varnish",
-      "age": "279822",
-      "x-served-by": "cache-dfw-kdfw8210060-DFW",
-      "x-cache": "HIT",
-      "x-cache-hits": "5",
-      "x-timer": "S1793503797.426169,VS0,VE0",
-      "vary": "Accept-Encoding, Origin",
+      "x-served-by": "cache-nyc-kteb1890038-NYC",
+      "x-cache": "MISS",
+      "x-cache-hits": "0",
+      "x-timer": "S1794109075.276236,VS0,VE266",
+      "vary": "Origin",
       "cache-control": "private, no-store"
     }
   },
@@ -40,31 +30,13 @@
     "content-security-policy": {
       "expectation": "csp-implemented-with-no-unsafe",
       "pass": false,
-      "result": "csp-implemented-with-unsafe-inline",
-      "scoreModifier": -20,
-      "data": {
-        "frame-ancestors": [
-          "'self'",
-          "app.teamtailor.com",
-          "jobs.zenika.com"
-        ]
-      },
-      "http": true,
+      "result": "csp-not-implemented",
+      "scoreModifier": -25,
+      "data": null,
+      "http": false,
       "meta": false,
-      "policy": {
-        "antiClickjacking": true,
-        "defaultNone": false,
-        "insecureBaseUri": true,
-        "insecureFormAction": true,
-        "insecureSchemeActive": false,
-        "insecureSchemePassive": false,
-        "strictDynamic": false,
-        "unsafeEval": false,
-        "unsafeInline": true,
-        "unsafeInlineStyle": true,
-        "unsafeObjects": true
-      },
-      "numPolicies": 1
+      "policy": null,
+      "numPolicies": 0
     },
     "cookies": {
       "expectation": "cookies-secure-with-httponly-sessions",
@@ -97,10 +69,10 @@
     "referrer-policy": {
       "expectation": "referrer-policy-private",
       "pass": true,
-      "result": "referrer-policy-private",
-      "scoreModifier": 5,
-      "data": "strict-origin-when-cross-origin",
-      "http": true,
+      "result": "referrer-policy-not-implemented",
+      "scoreModifier": 0,
+      "data": null,
+      "http": false,
       "meta": false
     },
     "strict-transport-security": {
@@ -108,45 +80,32 @@
       "pass": true,
       "result": "hsts-implemented-max-age-at-least-six-months",
       "scoreModifier": 0,
-      "data": "max-age=31536000; includeSubDomains",
+      "data": "max-age=63072000; includeSubDomains",
       "includeSubDomains": true,
-      "maxAge": 31536000,
+      "maxAge": 63072000,
       "preload": false,
       "preloaded": false
     },
     "subresource-integrity": {
       "expectation": "sri-implemented-and-external-scripts-loaded-securely",
       "pass": true,
-      "result": "sri-implemented-and-external-scripts-loaded-securely",
-      "scoreModifier": 5,
-      "data": {
-        "https://assets-aws.teamtailor-cdn.com/assets/cookies-73b4b6b5.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha384-tOmqCJmpja8yT9rDxPVnPZ33ZBX4Gw8s227lvAhlvxS7ZOVJCmhSdvMOsZgmhZ7k"
-        },
-        "https://assets-aws.teamtailor-cdn.com/assets/careersite-11761e4a.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha384-+iqoAxllCquEzFdoSPq9E6tvYw33zzvU/iCRDjADQKUqmExjUM8mATAmlPdN0aAx"
-        },
-        "https://assets-aws.teamtailor-cdn.com/assets/font-awesome-2bbc44ad.js": {
-          "crossorigin": "anonymous",
-          "integrity": "sha384-wvJrKr6fXfXoAnJxcq/cuQFpUIxj9sU091NYJdB/s1vWgHKDU+6p30XewuXoD/KB"
-        }
-      }
+      "result": "sri-not-implemented-response-not-html",
+      "scoreModifier": 0,
+      "data": {}
     },
     "x-content-type-options": {
       "expectation": "x-content-type-options-nosniff",
-      "pass": true,
-      "result": "x-content-type-options-nosniff",
-      "scoreModifier": 0,
-      "data": "nosniff"
+      "pass": false,
+      "result": "x-content-type-options-not-implemented",
+      "scoreModifier": -5,
+      "data": null
     },
     "x-frame-options": {
       "expectation": "x-frame-options-sameorigin-or-deny",
-      "pass": true,
-      "result": "x-frame-options-implemented-via-csp",
-      "scoreModifier": 5,
-      "data": "SAMEORIGIN"
+      "pass": false,
+      "result": "x-frame-options-not-implemented",
+      "scoreModifier": -20,
+      "data": null
     },
     "cross-origin-resource-policy": {
       "expectation": "corp-implemented-with-same-site",

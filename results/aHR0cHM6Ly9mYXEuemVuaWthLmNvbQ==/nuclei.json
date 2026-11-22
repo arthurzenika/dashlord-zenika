@@ -1,69 +1,58 @@
 [
   [
     {
-      "template": "ssl/tls-version.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/tls-version",
-      "template-id": "tls-version",
-      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "template": "http/exposures/configs/azure-domain-tenant.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/azure-domain-tenant",
+      "template-id": "azure-domain-tenant",
+      "template-path": "/home/runner/nuclei-templates/http/exposures/configs/azure-domain-tenant.yaml",
       "info": {
-        "name": "TLS Version - Detect",
+        "name": "Microsoft Entra ID Tenant ID - Detect",
         "author": [
-          "pdteam",
-          "pussycat0x"
+          "v0idc0de",
+          "tortuginator"
         ],
         "tags": [
-          "ssl",
-          "tls",
-          "discovery"
+          "azure",
+          "microsoft",
+          "cloud",
+          "exposure",
+          "entra",
+          "tenant",
+          "appproxy"
         ],
-        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "description": "Detected the Microsoft Entra ID (Azure AD) tenant ID behind a host. The target's pre-authentication redirect is checked first for a tenant GUID in the Location header or the Application Proxy x-ms-proxy-subscription-id header. If the target does not disclose the tenant, the host is resolved to its verified Azure AD domain through the login.microsoftonline.com userrealm endpoint and the tenant ID is read from the OpenID Connect discovery document.\n",
+        "reference": [
+          "https://learn.microsoft.com/en-us/entra/identity/authentication/",
+          "https://learn.microsoft.com/en-us/entra/identity/app-proxy/overview-what-is-app-proxy"
+        ],
         "severity": "info",
         "metadata": {
-          "max-request": 4
+          "max-request": 3,
+          "verified": true
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ],
+          "cvss-metrics": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
         }
       },
-      "type": "ssl",
+      "extractor-name": "tenant_id",
+      "type": "http",
       "host": "faq.zenika.com",
       "port": "443",
-      "matched-at": "faq.zenika.com:443",
+      "scheme": "https",
+      "url": "https://faq.zenika.com",
+      "matched-at": "https://login.microsoftonline.com:443/zenika.com/v2.0/.well-known/openid-configuration",
       "extracted-results": [
-        "tls12"
+        "e5a0e287-b2aa-4d9f-9b67-2208e7d0a3f7"
       ],
-      "ip": "91.208.207.218",
-      "timestamp": "2026-11-08T03:56:28.143269817Z",
-      "matcher-status": true
-    },
-    {
-      "template": "ssl/tls-version.yaml",
-      "template-url": "https://cloud.projectdiscovery.io/public/tls-version",
-      "template-id": "tls-version",
-      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
-      "info": {
-        "name": "TLS Version - Detect",
-        "author": [
-          "pdteam",
-          "pussycat0x"
-        ],
-        "tags": [
-          "ssl",
-          "tls",
-          "discovery"
-        ],
-        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 4
-        }
-      },
-      "type": "ssl",
-      "host": "faq.zenika.com",
-      "port": "443",
-      "matched-at": "faq.zenika.com:443",
-      "extracted-results": [
-        "tls13"
-      ],
-      "ip": "91.208.207.218",
-      "timestamp": "2026-11-08T03:56:28.413901979Z",
+      "request": "GET /zenika.com/v2.0/.well-known/openid-configuration HTTP/1.1\r\nHost: login.microsoftonline.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nCookie: ***\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nContent-Length: 1964\r\nAccess-Control-Allow-Methods: GET, OPTIONS\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: max-age=86400, private\r\nContent-Security-Policy-Report-Only: object-src 'none'; base-uri 'self'; script-src 'self' 'nonce-MFhBx2i9Fd-Ir49Z-ZB56Q' 'unsafe-inline' 'unsafe-eval' https://*.msauth.net https://*.msftauth.net https://*.msftauthimages.net https://*.msauthimages.net https://*.msidentity.com https://*.microsoftonline-p.com https://*.microsoftazuread-sso.com https://*.azureedge.net https://*.outlook.com https://*.office.com https://*.office365.com https://*.microsoft.com https://*.bing.com 'report-sample'; report-uri https://cspv2.core.microsoft/report/7290fd99-e070-4ee6-abdf-b2158190ceff/ESTS-UX-All\r\nContent-Type: application/json; charset=utf-8\r\nDate: Sun, 22 Nov 2026 04:33:28 GMT\r\nP3p: CP=\"DSP CUR OTPi IND OTRi ONL FIN\"\r\nSet-Cookie: ***\r\nSet-Cookie: ***\r\nSet-Cookie: ***\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Ms-Ests-Server: 2.1.25611.5 - SEC ProdSlices\r\nX-Ms-Request-Id: 7c3b4eab-6157-4d2d-92c2-56943c420600\r\nX-Ms-Srs: 1.P\r\nX-Xss-Protection: 0\r\n\r\n{\"token_endpoint\":\"https://login.microsoftonline.com/e5a0e287-b2aa-4d9f-9b67-2208e7d0a3f7/oauth2/v2.0/token\",\"token_endpoint_auth_methods_supported\":[\"client_secret_post\",\"private_key_jwt\",\"client_secret_basic\",\"self_signed_tls_client_auth\"],\"jwks_uri\":\"https://login.microsoftonline.com/e5a0e287-b2aa-4d9f-9b67-2208e7d0a3f7/discovery/v2.0/keys\",\"response_modes_supported\":[\"query\",\"fragment\",\"form_post\"],\"subject_types_supported\":[\"pairwise\"],\"id_token_signing_alg_values_supported\":[\"RS256\"],\"response_types_supported\":[\"code\",\"id_token\",\"code id_token\",\"id_token token\"],\"scopes_supported\":[\"openid\",\"profile\",\"email\",\"offline_access\"],\"issuer\":\"https://login.microsoftonline.com/e5a0e287-b2aa-4d9f-9b67-2208e7d0a3f7/v2.0\",\"request_uri_parameter_supported\":false,\"userinfo_endpoint\":\"https://graph.microsoft.com/oidc/userinfo\",\"authorization_endpoint\":\"https://login.microsoftonline.com/e5a0e287-b2aa-4d9f-9b67-2208e7d0a3f7/oauth2/v2.0/authorize\",\"device_authorization_endpoint\":\"https://login.microsoftonline.com/e5a0e287-b2aa-4d9f-9b67-2208e7d0a3f7/oauth2/v2.0/devicecode\",\"http_logout_supported\":true,\"frontchannel_logout_supported\":true,\"end_session_endpoint\":\"https://login.microsoftonline.com/e5a0e287-b2aa-4d9f-9b67-2208e7d0a3f7/oauth2/v2.0/logout\",\"claims_supported\":[\"sub\",\"iss\",\"cloud_instance_name\",\"cloud_instance_host_name\",\"cloud_graph_host_name\",\"msgraph_host\",\"aud\",\"exp\",\"iat\",\"auth_time\",\"acr\",\"nonce\",\"preferred_username\",\"name\",\"tid\",\"ver\",\"at_hash\",\"c_hash\",\"email\"],\"kerberos_endpoint\":\"https://login.microsoftonline.com/e5a0e287-b2aa-4d9f-9b67-2208e7d0a3f7/kerberos\",\"mtls_endpoint_aliases\":{\"token_endpoint\":\"https://mtlsauth.microsoft.com/e5a0e287-b2aa-4d9f-9b67-2208e7d0a3f7/oauth2/v2.0/token\"},\"tls_client_certificate_bound_access_tokens\":true,\"tenant_region_scope\":\"EU\",\"cloud_instance_name\":\"microsoftonline.com\",\"cloud_graph_host_name\":\"graph.windows.net\",\"msgraph_host\":\"graph.microsoft.com\",\"rbac_url\":\"https://pas.windows.net\"}",
+      "ip": "20.190.157.1",
+      "timestamp": "2026-11-22T04:33:28.949103751Z",
+      "curl-command": "curl -X 'GET' -d '' -H 'Cookie: ***' -H 'Host: login.microsoftonline.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://login.microsoftonline.com:443/zenika.com/v2.0/.well-known/openid-configuration'",
       "matcher-status": true
     },
     {
@@ -109,10 +98,76 @@
         "1; mode=block"
       ],
       "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 302 Found\r\nContent-Length: 45\r\nConnection: keep-alive\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 08 Nov 2026 03:56:43 GMT\r\nKeep-Alive: timeout=5\r\nLocation: https://zenika.faq.team\r\nSozu-Id: 01M6WMT9GER6ZPAD7FFPSTCPKC\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nFound. Redirecting to https://zenika.faq.team",
-      "ip": "91.208.207.218",
-      "timestamp": "2026-11-08T03:56:43.618558883Z",
+      "response": "HTTP/1.1 302 Found\r\nContent-Length: 45\r\nConnection: keep-alive\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 22 Nov 2026 04:34:04 GMT\r\nKeep-Alive: timeout=5\r\nLocation: https://zenika.faq.team\r\nSozu-Id: 01M80RGQK8CK3HYZA11RDASEJQ\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nFound. Redirecting to https://zenika.faq.team",
+      "ip": "91.208.207.222",
+      "timestamp": "2026-11-22T04:34:04.175191538Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com'",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "faq.zenika.com",
+      "port": "443",
+      "matched-at": "faq.zenika.com:443",
+      "extracted-results": [
+        "tls12"
+      ],
+      "ip": "91.208.207.222",
+      "timestamp": "2026-11-22T04:34:05.713522525Z",
+      "matcher-status": true
+    },
+    {
+      "template": "ssl/tls-version.yaml",
+      "template-url": "https://cloud.projectdiscovery.io/public/tls-version",
+      "template-id": "tls-version",
+      "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+      "info": {
+        "name": "TLS Version - Detect",
+        "author": [
+          "pdteam",
+          "pussycat0x"
+        ],
+        "tags": [
+          "ssl",
+          "tls",
+          "discovery"
+        ],
+        "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 4
+        }
+      },
+      "type": "ssl",
+      "host": "faq.zenika.com",
+      "port": "443",
+      "matched-at": "faq.zenika.com:443",
+      "extracted-results": [
+        "tls13"
+      ],
+      "ip": "91.208.207.222",
+      "timestamp": "2026-11-22T04:34:05.951522587Z",
       "matcher-status": true
     },
     {
@@ -162,9 +217,9 @@
         "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       ],
       "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nContent-Length: 2265\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nConnection: keep-alive\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 08 Nov 2026 03:56:47 GMT\r\nEtag: W/\"8d9-1a149992adf\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Sat, 17 Oct 2026 11:22:17 GMT\r\nSozu-Id: 01M6WMTCXJ3XAR0G8JEK6T9T2Y\r\nX-Powered-By: Express\r\n\r\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>FAQ</title>\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta name=\"description\" content=\"Internal Knowledge Database for your organization\" />\n\n    <meta property=\"og:site_name\" content=\"FAQ Zenika\" />\n    <meta property=\"og:title\" content=\"FAQ Zenika\" />\n    <meta property=\"og:type\" content=\"website\" />\n    <meta property=\"og:url\" content=\"https://faq.zenika.com\" />\n    <meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\" />\n    <meta property=\"og:image:alt\" content=\"Thinking emoji\" />\n    <meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\" />\n\n    <link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\" />\n    <link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\" />\n    <link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\" />\n    <link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\" />\n    <link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" />\n    <link\n      href=\"https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <link\n      rel=\"stylesheet\"\n      href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\"\n      integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\"\n      crossorigin=\"anonymous\"\n    />\n    <link\n      rel=\"stylesheet\"\n      href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\"\n      integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\"\n      crossorigin=\"anonymous\"\n    />\n    <script type=\"module\" crossorigin src=\"/assets/index-bc1ae9eb.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/index-c68034df.css\">\n  </head>\n\n  <body>\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\"></div>\n    \n  </body>\n</html>\n",
-      "ip": "91.208.207.218",
-      "timestamp": "2026-11-08T03:56:47.091307063Z",
+      "response": "HTTP/1.1 200 OK\r\nContent-Length: 2265\r\nAccept-Ranges: bytes\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=0\r\nConnection: keep-alive\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Sun, 22 Nov 2026 04:34:24 GMT\r\nEtag: W/\"8d9-1a149992adf\"\r\nKeep-Alive: timeout=5\r\nLast-Modified: Sat, 17 Oct 2026 11:22:17 GMT\r\nSozu-Id: 01M80RHBKBYQPFFDMWYFBP3Y7P\r\nX-Powered-By: Express\r\n\r\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <title>FAQ</title>\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta name=\"description\" content=\"Internal Knowledge Database for your organization\" />\n\n    <meta property=\"og:site_name\" content=\"FAQ Zenika\" />\n    <meta property=\"og:title\" content=\"FAQ Zenika\" />\n    <meta property=\"og:type\" content=\"website\" />\n    <meta property=\"og:url\" content=\"https://faq.zenika.com\" />\n    <meta property=\"og:image\" content=\"https://faq.zenika.com/img/thinking_face-200.png\" />\n    <meta property=\"og:image:alt\" content=\"Thinking emoji\" />\n    <meta property=\"og:description\" content=\"Internal Knowledge Database for your organization\" />\n\n    <link rel=\"shortcut icon\" href=\"/img/favicon/favicon.ico\" type=\"image/x-icon\" />\n    <link rel=\"icon\" href=\"/img/favicon/favicon.png\" type=\"image/png\" />\n    <link rel=\"icon\" sizes=\"32x32\" href=\"/img/favicon/favicon-32.png\" type=\"image/png\" />\n    <link rel=\"icon\" sizes=\"64x64\" href=\"/img/favicon/favicon-64.png\" type=\"image/png\" />\n    <link rel=\"icon\" sizes=\"96x96\" href=\"/img/favicon/favicon-96.png\" type=\"image/png\" />\n\n    <link rel=\"manifest\" href=\"/manifest.json\" />\n    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" />\n    <link\n      href=\"https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap\"\n      rel=\"stylesheet\"\n    />\n    <link\n      rel=\"stylesheet\"\n      href=\"https://use.fontawesome.com/releases/v5.8.2/css/solid.css\"\n      integrity=\"sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs\"\n      crossorigin=\"anonymous\"\n    />\n    <link\n      rel=\"stylesheet\"\n      href=\"https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css\"\n      integrity=\"sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J\"\n      crossorigin=\"anonymous\"\n    />\n    <script type=\"module\" crossorigin src=\"/assets/index-bc1ae9eb.js\"></script>\n    <link rel=\"stylesheet\" href=\"/assets/index-c68034df.css\">\n  </head>\n\n  <body>\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\"></div>\n    \n  </body>\n</html>\n",
+      "ip": "91.208.207.222",
+      "timestamp": "2026-11-22T04:34:24.650836658Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
       "matcher-status": true
     },
@@ -205,9 +260,9 @@
         "max-age=15552000; includeSubDomains"
       ],
       "request": "GET / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 302 Found\r\nContent-Length: 45\r\nConnection: keep-alive\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 08 Nov 2026 03:56:49 GMT\r\nKeep-Alive: timeout=5\r\nLocation: https://zenika.faq.team\r\nSozu-Id: 01M6WMTFFRXBMWQT60JG8KVWT1\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nFound. Redirecting to https://zenika.faq.team",
-      "ip": "91.208.207.218",
-      "timestamp": "2026-11-08T03:56:49.723566077Z",
+      "response": "HTTP/1.1 302 Found\r\nContent-Length: 45\r\nConnection: keep-alive\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 22 Nov 2026 04:34:34 GMT\r\nKeep-Alive: timeout=5\r\nLocation: https://zenika.faq.team\r\nSozu-Id: 01M80RHMTWGRF8BY2M6WET3YW8\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nVary: Accept\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nFound. Redirecting to https://zenika.faq.team",
+      "ip": "91.208.207.222",
+      "timestamp": "2026-11-22T04:34:34.113106967Z",
       "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com'",
       "matcher-status": true
     },
@@ -242,9 +297,9 @@
         "GET,HEAD"
       ],
       "request": "OPTIONS / HTTP/1.1\r\nHost: faq.zenika.com\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nContent-Length: 8\r\nAllow: GET,HEAD\r\nConnection: keep-alive\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 08 Nov 2026 03:56:57 GMT\r\nEtag: W/\"8-ZRAf8oNBS3Bjb/SU2GYZCmbtmXg\"\r\nKeep-Alive: timeout=5\r\nSozu-Id: 01M6WMTPPMTXMPKSWZBDJCA9KS\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nGET,HEAD",
-      "ip": "91.208.207.218",
-      "timestamp": "2026-11-08T03:56:57.108106033Z",
+      "response": "HTTP/1.1 200 OK\r\nContent-Length: 8\r\nAllow: GET,HEAD\r\nConnection: keep-alive\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 22 Nov 2026 04:34:36 GMT\r\nEtag: W/\"8-ZRAf8oNBS3Bjb/SU2GYZCmbtmXg\"\r\nKeep-Alive: timeout=5\r\nSozu-Id: 01M80RHPWTVCF9HRST1B01JXP1\r\nStrict-Transport-Security: max-age=15552000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Dns-Prefetch-Control: off\r\nX-Download-Options: noopen\r\nX-Frame-Options: SAMEORIGIN\r\nX-Xss-Protection: 1; mode=block\r\n\r\nGET,HEAD",
+      "ip": "91.208.207.222",
+      "timestamp": "2026-11-22T04:34:36.210999273Z",
       "curl-command": "curl -X 'OPTIONS' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com'",
       "matcher-status": true
     },
@@ -281,9 +336,9 @@
       "extracted-results": [
         "domain.par.clever-cloud.com"
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 18347\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 18347\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t CNAME\n\n;; ANSWER SECTION:\nfaq.zenika.com.\t300\tIN\tCNAME\tdomain.par.clever-cloud.com.\n",
-      "timestamp": "2026-11-08T03:57:06.960759102Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 25450\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 25450\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;faq.zenika.com.\tIN\t CNAME\n\n;; ANSWER SECTION:\nfaq.zenika.com.\t300\tIN\tCNAME\tdomain.par.clever-cloud.com.\n",
+      "timestamp": "2026-11-22T04:34:44.133049978Z",
       "matcher-status": true
     },
     {
@@ -314,8 +369,8 @@
       "extracted-results": [
         "Let's Encrypt"
       ],
-      "ip": "91.208.207.218",
-      "timestamp": "2026-11-08T03:57:07.216038099Z",
+      "ip": "91.208.207.222",
+      "timestamp": "2026-11-22T04:34:44.379760965Z",
       "matcher-status": true
     },
     {
@@ -346,8 +401,8 @@
       "extracted-results": [
         "faq.zenika.com"
       ],
-      "ip": "91.208.207.218",
-      "timestamp": "2026-11-08T03:57:07.216213037Z",
+      "ip": "91.208.207.222",
+      "timestamp": "2026-11-22T04:34:44.379947561Z",
       "matcher-status": true
     }
   ]

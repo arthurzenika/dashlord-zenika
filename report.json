@@ -50813,9 +50813,9 @@
           "etag": "W/\"8d9-1a149992adf\"",
           "content-type": "text/html; charset=UTF-8",
           "content-length": "2265",
-          "date": "Sun, 15 Nov 2026 04:07:49 GMT",
+          "date": "Sun, 22 Nov 2026 04:22:26 GMT",
           "connection": "close",
-          "sozu-id": "01M7EP7N70K9TE3YFGF8XGEXTM"
+          "sozu-id": "01M80QVEM3V2J9SGGHHTTDKJ2V"
         }
       },
       "tests": {
@@ -60801,6 +60801,10 @@
           }
         },
         {
+          "type": "unknown",
+          "url": "https://zenika.faq.team/manifest.json"
+        },
+        {
           "type": "google fonts",
           "url": "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",
           "details": {
@@ -60815,10 +60819,6 @@
         {
           "type": "unknown",
           "url": "https://zenika.faq.team/assets/index-c68034df.css"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika.faq.team/manifest.json"
         },
         {
           "type": "unknown",
@@ -60845,16 +60845,16 @@
           }
         },
         {
+          "type": "unknown",
+          "url": "https://zenika.faq.team/rest/configuration"
+        },
+        {
           "type": "google fonts",
           "url": "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
           "details": {
             "id": "google fonts",
             "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
           }
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika.faq.team/rest/configuration"
         },
         {
           "type": "google fonts",
@@ -60865,20 +60865,20 @@
           }
         },
         {
-          "type": "unknown",
-          "url": "https://zenika.faq.team/img/favicon/favicon.png"
-        },
-        {
-          "type": "unknown",
-          "url": "https://zenika.faq.team/img/favicon/favicon.png"
-        },
-        {
           "type": "google fonts",
           "url": "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
           "details": {
             "id": "google fonts",
             "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
           }
+        },
+        {
+          "type": "unknown",
+          "url": "https://zenika.faq.team/img/favicon/favicon.png"
+        },
+        {
+          "type": "unknown",
+          "url": "https://zenika.faq.team/img/favicon/favicon.png"
         },
         {
           "type": "google fonts",
@@ -60901,17 +60901,17 @@
         "connection": "keep-alive",
         "content-length": "2265",
         "content-type": "text/html; charset=UTF-8",
-        "date": "Sun, 15 Nov 2026 04:05:44 GMT",
+        "date": "Sun, 22 Nov 2026 04:19:16 GMT",
         "etag": "W/\"8d9-1a149992adf\"",
         "keep-alive": "timeout=5",
         "last-modified": "Sat, 17 Oct 2026 11:22:17 GMT",
-        "sozu-id": "01M7EP3TKRNVTXHNMWC2P3K84C",
+        "sozu-id": "01M80QNN4TC7S6MJWFYECYASDG",
         "x-powered-by": "Express"
       },
       "endpoints": [
         {
           "hostname": "faq.zenika.com",
-          "ip": "91.208.207.220",
+          "ip": "91.208.207.221",
           "geoip": {
             "continent": {
               "code": "EU",
@@ -61043,7 +61043,7 @@
         },
         {
           "hostname": "fonts.googleapis.com",
-          "ip": "172.253.115.95",
+          "ip": "173.194.64.95",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -61097,7 +61097,7 @@
         },
         {
           "hostname": "fonts.gstatic.com",
-          "ip": "142.251.111.94",
+          "ip": "64.233.179.94",
           "geoip": {
             "continent": {
               "code": "NA",
@@ -61182,8 +61182,8 @@
     "zap": {
       "@programName": "ZAP",
       "@version": "2.17.0",
-      "@generated": "Sun, 15 Nov 2026 04:07:12",
-      "created": "2026-11-15T04:07:12.197160781Z",
+      "@generated": "Sun, 22 Nov 2026 04:20:44",
+      "created": "2026-11-22T04:20:44.741145814Z",
       "insights": [
         {
           "level": "Info",
@@ -61381,69 +61381,56 @@
     },
     "nuclei": [
       {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://cloud.projectdiscovery.io/public/tls-version",
-        "template-id": "tls-version",
-        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+        "template": "http/exposures/configs/azure-domain-tenant.yaml",
+        "template-url": "https://cloud.projectdiscovery.io/public/azure-domain-tenant",
+        "template-id": "azure-domain-tenant",
+        "template-path": "/home/runner/nuclei-templates/http/exposures/configs/azure-domain-tenant.yaml",
         "info": {
-          "name": "TLS Version - Detect",
+          "name": "Microsoft Entra ID Tenant ID - Detect",
           "author": [
-            "pdteam",
-            "pussycat0x"
+            "v0idc0de",
+            "tortuginator"
           ],
           "tags": [
-            "ssl",
-            "tls",
-            "discovery"
+            "azure",
+            "microsoft",
+            "cloud",
+            "exposure",
+            "entra",
+            "tenant",
+            "appproxy"
           ],
-          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+          "description": "Detected the Microsoft Entra ID (Azure AD) tenant ID behind a host. The target's pre-authentication redirect is checked first for a tenant GUID in the Location header or the Application Proxy x-ms-proxy-subscription-id header. If the target does not disclose the tenant, the host is resolved to its verified Azure AD domain through the login.microsoftonline.com userrealm endpoint and the tenant ID is read from the OpenID Connect discovery document.\n",
+          "reference": [
+            "https://learn.microsoft.com/en-us/entra/identity/authentication/",
+            "https://learn.microsoft.com/en-us/entra/identity/app-proxy/overview-what-is-app-proxy"
+          ],
           "severity": "info",
           "metadata": {
-            "max-request": 4
+            "max-request": 3,
+            "verified": true
+          },
+          "classification": {
+            "cve-id": null,
+            "cwe-id": [
+              "cwe-200"
+            ],
+            "cvss-metrics": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
           }
         },
-        "type": "ssl",
+        "extractor-name": "tenant_id",
+        "type": "http",
         "host": "faq.zenika.com",
         "port": "443",
-        "matched-at": "faq.zenika.com:443",
+        "scheme": "https",
+        "url": "https://faq.zenika.com",
+        "matched-at": "https://login.microsoftonline.com:443/zenika.com/v2.0/.well-known/openid-configuration",
         "extracted-results": [
-          "tls12"
+          "e5a0e287-b2aa-4d9f-9b67-2208e7d0a3f7"
         ],
-        "ip": "91.208.207.218",
-        "timestamp": "2026-11-08T03:56:28.143269817Z",
-        "matcher-status": true
-      },
-      {
-        "template": "ssl/tls-version.yaml",
-        "template-url": "https://cloud.projectdiscovery.io/public/tls-version",
-        "template-id": "tls-version",
-        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
-        "info": {
-          "name": "TLS Version - Detect",
-          "author": [
-            "pdteam",
-            "pussycat0x"
-          ],
-          "tags": [
-            "ssl",
-            "tls",
-            "discovery"
-          ],
-          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
-          "severity": "info",
-          "metadata": {
-            "max-request": 4
-          }
-        },
-        "type": "ssl",
-        "host": "faq.zenika.com",
-        "port": "443",
-        "matched-at": "faq.zenika.com:443",
-        "extracted-results": [
-          "tls13"
-        ],
-        "ip": "91.208.207.218",
-        "timestamp": "2026-11-08T03:56:28.413901979Z",
+        "ip": "20.190.157.1",
+        "timestamp": "2026-11-22T04:33:28.949103751Z",
+        "curl-command": "curl -X 'GET' -d '' -H 'Cookie: ***' -H 'Host: login.microsoftonline.com' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://login.microsoftonline.com:443/zenika.com/v2.0/.well-known/openid-configuration'",
         "matcher-status": true
       },
       {
@@ -61488,9 +61475,75 @@
         "extracted-results": [
           "1; mode=block"
         ],
-        "ip": "91.208.207.218",
-        "timestamp": "2026-11-08T03:56:43.618558883Z",
+        "ip": "91.208.207.222",
+        "timestamp": "2026-11-22T04:34:04.175191538Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com'",
+        "matcher-status": true
+      },
+      {
+        "template": "ssl/tls-version.yaml",
+        "template-url": "https://cloud.projectdiscovery.io/public/tls-version",
+        "template-id": "tls-version",
+        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+        "info": {
+          "name": "TLS Version - Detect",
+          "author": [
+            "pdteam",
+            "pussycat0x"
+          ],
+          "tags": [
+            "ssl",
+            "tls",
+            "discovery"
+          ],
+          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 4
+          }
+        },
+        "type": "ssl",
+        "host": "faq.zenika.com",
+        "port": "443",
+        "matched-at": "faq.zenika.com:443",
+        "extracted-results": [
+          "tls12"
+        ],
+        "ip": "91.208.207.222",
+        "timestamp": "2026-11-22T04:34:05.713522525Z",
+        "matcher-status": true
+      },
+      {
+        "template": "ssl/tls-version.yaml",
+        "template-url": "https://cloud.projectdiscovery.io/public/tls-version",
+        "template-id": "tls-version",
+        "template-path": "/home/runner/nuclei-templates/ssl/tls-version.yaml",
+        "info": {
+          "name": "TLS Version - Detect",
+          "author": [
+            "pdteam",
+            "pussycat0x"
+          ],
+          "tags": [
+            "ssl",
+            "tls",
+            "discovery"
+          ],
+          "description": "TLS version detection is a security process used to determine the version of the Transport Layer Security (TLS) protocol used by a computer or server.\nIt is important to detect the TLS version in order to ensure secure communication between two computers or servers.\n",
+          "severity": "info",
+          "metadata": {
+            "max-request": 4
+          }
+        },
+        "type": "ssl",
+        "host": "faq.zenika.com",
+        "port": "443",
+        "matched-at": "faq.zenika.com:443",
+        "extracted-results": [
+          "tls13"
+        ],
+        "ip": "91.208.207.222",
+        "timestamp": "2026-11-22T04:34:05.951522587Z",
         "matcher-status": true
       },
       {
@@ -61539,8 +61592,8 @@
           "https://fonts.googleapis.com/icon?family=Material+Icons",
           "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
         ],
-        "ip": "91.208.207.218",
-        "timestamp": "2026-11-08T03:56:47.091307063Z",
+        "ip": "91.208.207.222",
+        "timestamp": "2026-11-22T04:34:24.650836658Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://faq.zenika.com/' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://zenika.faq.team'",
         "matcher-status": true
       },
@@ -61580,8 +61633,8 @@
         "extracted-results": [
           "max-age=15552000; includeSubDomains"
         ],
-        "ip": "91.208.207.218",
-        "timestamp": "2026-11-08T03:56:49.723566077Z",
+        "ip": "91.208.207.222",
+        "timestamp": "2026-11-22T04:34:34.113106967Z",
         "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com'",
         "matcher-status": true
       },
@@ -61615,8 +61668,8 @@
         "extracted-results": [
           "GET,HEAD"
         ],
-        "ip": "91.208.207.218",
-        "timestamp": "2026-11-08T03:56:57.108106033Z",
+        "ip": "91.208.207.222",
+        "timestamp": "2026-11-22T04:34:36.210999273Z",
         "curl-command": "curl -X 'OPTIONS' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://faq.zenika.com'",
         "matcher-status": true
       },
@@ -61653,7 +61706,7 @@
         "extracted-results": [
           "domain.par.clever-cloud.com"
         ],
-        "timestamp": "2026-11-08T03:57:06.960759102Z",
+        "timestamp": "2026-11-22T04:34:44.133049978Z",
         "matcher-status": true
       },
       {
@@ -61684,8 +61737,8 @@
         "extracted-results": [
           "Let's Encrypt"
         ],
-        "ip": "91.208.207.218",
-        "timestamp": "2026-11-08T03:57:07.216038099Z",
+        "ip": "91.208.207.222",
+        "timestamp": "2026-11-22T04:34:44.379760965Z",
         "matcher-status": true
       },
       {
@@ -61716,8 +61769,8 @@
         "extracted-results": [
           "faq.zenika.com"
         ],
-        "ip": "91.208.207.218",
-        "timestamp": "2026-11-08T03:57:07.216213037Z",
+        "ip": "91.208.207.222",
+        "timestamp": "2026-11-22T04:34:44.379947561Z",
         "matcher-status": true
       }
     ],
@@ -61725,7 +61778,7 @@
       {
         "requestedUrl": "https://faq.zenika.com/",
         "finalUrl": "https://zenika.faq.team/",
-        "fetchTime": "2026-11-15T04:07:24.301Z",
+        "fetchTime": "2026-11-22T04:22:02.485Z",
         "runWarnings": [
           "The page may not be loading as expected because your test URL (https://faq.zenika.com/) was redirected to https://zenika.faq.team/. Try testing the second URL directly."
         ],
@@ -61790,53 +61843,53 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 12529,
+            "numericValue": 12896,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 12529,
-                  "firstMeaningfulPaint": 12529,
-                  "largestContentfulPaint": 13665,
-                  "interactive": 12529,
-                  "speedIndex": 12529,
+                  "firstContentfulPaint": 12896,
+                  "firstMeaningfulPaint": 12896,
+                  "largestContentfulPaint": 13022,
+                  "interactive": 12896,
+                  "speedIndex": 12896,
                   "totalBlockingTime": 0,
                   "maxPotentialFID": 16,
-                  "cumulativeLayoutShift": 0.0054367888768514,
-                  "cumulativeLayoutShiftMainFrame": 0.0054367888768514,
-                  "totalCumulativeLayoutShift": 0.0054367888768514,
+                  "cumulativeLayoutShift": 0.004108704990810818,
+                  "cumulativeLayoutShiftMainFrame": 0.004108704990810818,
+                  "totalCumulativeLayoutShift": 0.004108704990810818,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 530172363,
+                  "observedTimeOriginTs": 331112507,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 530172363,
-                  "observedFirstPaint": 1433,
-                  "observedFirstPaintTs": 531605141,
-                  "observedFirstContentfulPaint": 1433,
-                  "observedFirstContentfulPaintTs": 531605141,
-                  "observedFirstContentfulPaintAllFrames": 1433,
-                  "observedFirstContentfulPaintAllFramesTs": 531605141,
-                  "observedFirstMeaningfulPaint": 1433,
-                  "observedFirstMeaningfulPaintTs": 531605141,
-                  "observedLargestContentfulPaint": 1453,
-                  "observedLargestContentfulPaintTs": 531625093,
-                  "observedLargestContentfulPaintAllFrames": 1453,
-                  "observedLargestContentfulPaintAllFramesTs": 531625093,
-                  "observedTraceEnd": 4059,
-                  "observedTraceEndTs": 534231133,
-                  "observedLoad": 1413,
-                  "observedLoadTs": 531585504,
-                  "observedDomContentLoaded": 1,
-                  "observedDomContentLoadedTs": 530173763,
-                  "observedCumulativeLayoutShift": 0.0054367888768514,
-                  "observedCumulativeLayoutShiftMainFrame": 0.0054367888768514,
-                  "observedTotalCumulativeLayoutShift": 0.0054367888768514,
-                  "observedFirstVisualChange": 1543,
-                  "observedFirstVisualChangeTs": 531715363,
-                  "observedLastVisualChange": 1593,
-                  "observedLastVisualChangeTs": 531765363,
-                  "observedSpeedIndex": 1545,
-                  "observedSpeedIndexTs": 531717618
+                  "observedNavigationStartTs": 331112507,
+                  "observedFirstPaint": 1716,
+                  "observedFirstPaintTs": 332828898,
+                  "observedFirstContentfulPaint": 1716,
+                  "observedFirstContentfulPaintTs": 332828898,
+                  "observedFirstContentfulPaintAllFrames": 1716,
+                  "observedFirstContentfulPaintAllFramesTs": 332828898,
+                  "observedFirstMeaningfulPaint": 1716,
+                  "observedFirstMeaningfulPaintTs": 332828898,
+                  "observedLargestContentfulPaint": 1716,
+                  "observedLargestContentfulPaintTs": 332828898,
+                  "observedLargestContentfulPaintAllFrames": 1716,
+                  "observedLargestContentfulPaintAllFramesTs": 332828898,
+                  "observedTraceEnd": 4457,
+                  "observedTraceEndTs": 335569538,
+                  "observedLoad": 1693,
+                  "observedLoadTs": 332805849,
+                  "observedDomContentLoaded": 0,
+                  "observedDomContentLoadedTs": 331112651,
+                  "observedCumulativeLayoutShift": 0.004108704990810818,
+                  "observedCumulativeLayoutShiftMainFrame": 0.004108704990810818,
+                  "observedTotalCumulativeLayoutShift": 0.004108704990810818,
+                  "observedFirstVisualChange": 1730,
+                  "observedFirstVisualChangeTs": 332842507,
+                  "observedLastVisualChange": 1927,
+                  "observedLastVisualChangeTs": 333039507,
+                  "observedSpeedIndex": 1739,
+                  "observedSpeedIndexTs": 332851055
                 },
                 {
                   "lcpInvalidated": false
@@ -61858,18 +61911,18 @@
                   "numScripts": 1,
                   "numStylesheets": 5,
                   "numFonts": 3,
-                  "numTasks": 532,
-                  "numTasksOver10ms": 3,
+                  "numTasks": 605,
+                  "numTasksOver10ms": 2,
                   "numTasksOver25ms": 1,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 1.9879999999999995,
-                  "throughput": 27181309.497404795,
-                  "maxRtt": 81.02300000000001,
-                  "maxServerLatency": 13.877999999999998,
-                  "totalByteWeight": 2175496,
-                  "totalTaskTime": 266.2629999999997,
+                  "rtt": 7.121,
+                  "throughput": 21882517.760417223,
+                  "maxRtt": 107.5,
+                  "maxServerLatency": 14.408000000000003,
+                  "totalByteWeight": 2175500,
+                  "totalTaskTime": 201.36299999999966,
                   "mainDocumentTransferSize": 2651
                 }
               ]
